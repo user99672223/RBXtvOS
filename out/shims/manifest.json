@@ -1,7 +1,7 @@
 {
  "sdk_version": "27.2",
  "target": "arm64-apple-tvos27.0",
- "build_id": "1a6489f",
+ "build_id": "bde5ada",
  "libraries": {
   "libtvport.dylib": {
    "install_name": "@rpath/libtvport.dylib",
