@@ -1,0 +1,843 @@
+{
+ "binary": "PlugIns/RBNotificationServiceExtension.appex/RBNotificationServiceExtension",
+ "libraries": [
+  {
+   "name": "@rpath/Backtrace.framework/Backtrace",
+   "weak": true
+  },
+  {
+   "name": "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter",
+   "weak": true
+  },
+  {
+   "name": "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+   "weak": true
+  },
+  {
+   "name": "/System/Library/Frameworks/Foundation.framework/Foundation",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libobjc.A.dylib",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libSystem.B.dylib",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/Intents.framework/Intents",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/Security.framework/Security",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/UIKit.framework/UIKit",
+   "weak": true
+  },
+  {
+   "name": "/System/Library/Frameworks/UserNotifications.framework/UserNotifications",
+   "weak": false
+  }
+ ],
+ "imports": {
+  "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
+   {
+    "name": "_OBJC_CLASS_$_NSArray",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSData",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSDate",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSDictionary",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSLocale",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableArray",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableDictionary",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableSet",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSURL",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSUserDefaults",
+    "weak": false
+   },
+   {
+    "name": "___CFConstantStringClassReference",
+    "weak": false
+   },
+   {
+    "name": "___NSArray0__struct",
+    "weak": false
+   },
+   {
+    "name": "___NSDictionary0__struct",
+    "weak": false
+   },
+   {
+    "name": "_kCFBooleanTrue",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/Foundation.framework/Foundation": [
+   {
+    "name": "_NSExtensionMain",
+    "weak": false
+   },
+   {
+    "name": "_NSLog",
+    "weak": false
+   },
+   {
+    "name": "_NSStringFromClass",
+    "weak": false
+   },
+   {
+    "name": "_NSTemporaryDirectory",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSBundle",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSCharacterSet",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSDateFormatter",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSFileManager",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSHTTPURLResponse",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSJSONSerialization",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableString",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableURLRequest",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSNumber",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSPersonNameComponents",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSString",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSURLComponents",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSURLQueryItem",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSURLSession",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSURLSessionConfiguration",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSUUID",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/Intents.framework/Intents": [
+   {
+    "name": "_OBJC_CLASS_$_INImage",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_INPerson",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_INPersonHandle",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_INSendMessageIntent",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/Security.framework/Security": [
+   {
+    "name": "_SecItemAdd",
+    "weak": false
+   },
+   {
+    "name": "_SecItemCopyMatching",
+    "weak": false
+   },
+   {
+    "name": "_SecItemDelete",
+    "weak": false
+   },
+   {
+    "name": "_SecItemUpdate",
+    "weak": false
+   },
+   {
+    "name": "_kSecAttrAccessible",
+    "weak": false
+   },
+   {
+    "name": "_kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly",
+    "weak": false
+   },
+   {
+    "name": "_kSecAttrGeneric",
+    "weak": false
+   },
+   {
+    "name": "_kSecAttrService",
+    "weak": false
+   },
+   {
+    "name": "_kSecClass",
+    "weak": false
+   },
+   {
+    "name": "_kSecClassGenericPassword",
+    "weak": false
+   },
+   {
+    "name": "_kSecMatchLimit",
+    "weak": false
+   },
+   {
+    "name": "_kSecMatchLimitOne",
+    "weak": false
+   },
+   {
+    "name": "_kSecReturnAttributes",
+    "weak": false
+   },
+   {
+    "name": "_kSecReturnData",
+    "weak": false
+   },
+   {
+    "name": "_kSecValueData",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/UIKit.framework/UIKit": [
+   {
+    "name": "_OBJC_CLASS_$_UIColor",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIDevice",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIGraphicsImageRenderer",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIGraphicsImageRendererFormat",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIImage",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIScreen",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_UITraitCollection",
+    "weak": true
+   },
+   {
+    "name": "_UIImagePNGRepresentation",
+    "weak": true
+   }
+  ],
+  "/System/Library/Frameworks/UserNotifications.framework/UserNotifications": [
+   {
+    "name": "_OBJC_CLASS_$_UNNotificationAction",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UNNotificationAttachment",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UNNotificationCategory",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UNNotificationServiceExtension",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UNUserNotificationCenter",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_UNNotificationServiceExtension",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libSystem.B.dylib": [
+   {
+    "name": "__Block_object_assign",
+    "weak": false
+   },
+   {
+    "name": "__Block_object_dispose",
+    "weak": false
+   },
+   {
+    "name": "__NSConcreteGlobalBlock",
+    "weak": false
+   },
+   {
+    "name": "__NSConcreteStackBlock",
+    "weak": false
+   },
+   {
+    "name": "__Unwind_Resume",
+    "weak": false
+   },
+   {
+    "name": "___stack_chk_fail",
+    "weak": false
+   },
+   {
+    "name": "___stack_chk_guard",
+    "weak": false
+   },
+   {
+    "name": "__availability_version_check",
+    "weak": true
+   },
+   {
+    "name": "__dispatch_main_q",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_async",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_get_global_queue",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_group_create",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_group_enter",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_group_leave",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_group_notify",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_once",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_once_f",
+    "weak": false
+   },
+   {
+    "name": "_dlsym",
+    "weak": false
+   },
+   {
+    "name": "_fclose",
+    "weak": false
+   },
+   {
+    "name": "_fopen",
+    "weak": false
+   },
+   {
+    "name": "_fread",
+    "weak": false
+   },
+   {
+    "name": "_free",
+    "weak": false
+   },
+   {
+    "name": "_fseek",
+    "weak": false
+   },
+   {
+    "name": "_ftell",
+    "weak": false
+   },
+   {
+    "name": "_malloc",
+    "weak": false
+   },
+   {
+    "name": "_rewind",
+    "weak": false
+   },
+   {
+    "name": "_sscanf",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libobjc.A.dylib": [
+   {
+    "name": "_OBJC_CLASS_$_NSObject",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_NSObject",
+    "weak": false
+   },
+   {
+    "name": "___objc_personality_v0",
+    "weak": false
+   },
+   {
+    "name": "__objc_empty_cache",
+    "weak": false
+   },
+   {
+    "name": "_objc_alloc",
+    "weak": false
+   },
+   {
+    "name": "_objc_alloc_init",
+    "weak": false
+   },
+   {
+    "name": "_objc_autoreleaseReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_enumerationMutation",
+    "weak": false
+   },
+   {
+    "name": "_objc_msgSend",
+    "weak": false
+   },
+   {
+    "name": "_objc_msgSendSuper2",
+    "weak": false
+   },
+   {
+    "name": "_objc_opt_class",
+    "weak": false
+   },
+   {
+    "name": "_objc_opt_isKindOfClass",
+    "weak": false
+   },
+   {
+    "name": "_objc_opt_new",
+    "weak": false
+   },
+   {
+    "name": "_objc_release",
+    "weak": false
+   },
+   {
+    "name": "_objc_retain",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainAutoreleaseReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainAutoreleasedReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainBlock",
+    "weak": false
+   },
+   {
+    "name": "_objc_setProperty_nonatomic_copy",
+    "weak": false
+   },
+   {
+    "name": "_objc_storeStrong",
+    "weak": false
+   },
+   {
+    "name": "_objc_sync_enter",
+    "weak": false
+   },
+   {
+    "name": "_objc_sync_exit",
+    "weak": false
+   },
+   {
+    "name": "_objc_unsafeClaimAutoreleasedReturnValue",
+    "weak": false
+   }
+  ]
+ },
+ "objc_classes": {
+  "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
+   "NSArray",
+   "NSData",
+   "NSDate",
+   "NSDictionary",
+   "NSLocale",
+   "NSMutableArray",
+   "NSMutableDictionary",
+   "NSMutableSet",
+   "NSURL",
+   "NSUserDefaults"
+  ],
+  "/System/Library/Frameworks/Foundation.framework/Foundation": [
+   "NSBundle",
+   "NSCharacterSet",
+   "NSDateFormatter",
+   "NSFileManager",
+   "NSHTTPURLResponse",
+   "NSJSONSerialization",
+   "NSMutableString",
+   "NSMutableURLRequest",
+   "NSNumber",
+   "NSPersonNameComponents",
+   "NSString",
+   "NSURLComponents",
+   "NSURLQueryItem",
+   "NSURLSession",
+   "NSURLSessionConfiguration",
+   "NSUUID"
+  ],
+  "/System/Library/Frameworks/Intents.framework/Intents": [
+   "INImage",
+   "INPerson",
+   "INPersonHandle",
+   "INSendMessageIntent"
+  ],
+  "/System/Library/Frameworks/UIKit.framework/UIKit": [
+   "UIColor",
+   "UIDevice",
+   "UIGraphicsImageRenderer",
+   "UIGraphicsImageRendererFormat",
+   "UIImage",
+   "UIScreen",
+   "UITraitCollection"
+  ],
+  "/System/Library/Frameworks/UserNotifications.framework/UserNotifications": [
+   "UNNotificationAction",
+   "UNNotificationAttachment",
+   "UNNotificationCategory",
+   "UNNotificationServiceExtension",
+   "UNUserNotificationCenter"
+  ],
+  "/usr/lib/libobjc.A.dylib": [
+   "NSObject"
+  ]
+ },
+ "selrefs": [
+  ".cxx_destruct",
+  "ECSV2HostString",
+  "GET:parameters:httpHeaders:success:failure:",
+  "JSONObjectWithData:options:error:",
+  "MIMEType",
+  "POST:httpHeaders:postData:success:failure:",
+  "URL",
+  "URLByAppendingPathComponent:",
+  "URLWithString:",
+  "UUID",
+  "UUIDString",
+  "WWWHostString",
+  "absoluteString",
+  "ackMetadata",
+  "actionID",
+  "actionWithIdentifier:title:options:",
+  "actions",
+  "addEntriesFromDictionary:",
+  "addObject:",
+  "alertSetting",
+  "alertStyle",
+  "allKeys",
+  "alphanumericCharacterSet",
+  "announcementSetting",
+  "appendString:",
+  "array",
+  "arrayWithObjects:count:",
+  "attachActionsForPayload:callback:",
+  "attachImageToNotification:format:backgroundColor:callback:",
+  "attachmentWithIdentifier:URL:options:error:",
+  "attachments",
+  "authorizationStatus",
+  "backgroundColor",
+  "badge",
+  "badgeSetting",
+  "baseDomain",
+  "basePrefix",
+  "baseURL",
+  "bestAttemptContent",
+  "body",
+  "bodyData",
+  "boolForKey:",
+  "boolValue",
+  "bounds",
+  "callContentHandler",
+  "carPlaySetting",
+  "categoryWithIdentifier:actions:intentIdentifiers:options:",
+  "clientPushEventFields",
+  "componentsWithURL:resolvingAgainstBaseURL:",
+  "content",
+  "contentByUpdatingWithProvider:error:",
+  "contentHandler",
+  "copy",
+  "count",
+  "countByEnumeratingWithState:objects:count:",
+  "createUniqueDeviceID",
+  "criticalAlertSetting",
+  "currentDevice",
+  "currentNotificationCenter",
+  "currentSessionManager",
+  "dataTaskWithRequest:completionHandler:",
+  "dataTaskWithURL:completionHandler:",
+  "dataUsingEncoding:",
+  "dataWithContentsOfURL:",
+  "date",
+  "deeplink",
+  "defaultFormat",
+  "defaultHeaders",
+  "defaultManager",
+  "defaultSessionConfiguration",
+  "deleteKeychainValue:",
+  "developerReset",
+  "dictionary",
+  "dictionaryForKey:",
+  "dictionaryWithDictionary:",
+  "dictionaryWithObjects:forKeys:count:",
+  "didReceiveNotificationRequest:withContentHandler:",
+  "downloadTaskWithURL:completionHandler:",
+  "drawInRect:",
+  "ecsv2SessionManager",
+  "enumerateKeysAndObjectsUsingBlock:",
+  "failureBlock",
+  "fileExtensionForMIMEType:",
+  "fileURLWithPath:",
+  "fillRect:",
+  "format",
+  "getLocalTime",
+  "getNotificationCategoriesWithCompletionHandler:",
+  "getNotificationSettingsWithCompletionHandler:",
+  "getUniqueDeviceID",
+  "hasPrefix:",
+  "hasSuffix:",
+  "identifier",
+  "identifierForVendor",
+  "imageWithActions:",
+  "imageWithData:",
+  "imageWithImageData:",
+  "infoDictionary",
+  "init",
+  "initWithBaseURL:",
+  "initWithBaseURL:sessionConfiguration:",
+  "initWithData:encoding:",
+  "initWithDictionary:",
+  "initWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:",
+  "initWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:isMe:",
+  "initWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:attachments:",
+  "initWithSize:format:",
+  "initWithSuccess:failure:",
+  "initWithSuiteName:",
+  "initWithValue:type:",
+  "integerForKey:",
+  "isEqualToString:",
+  "label",
+  "length",
+  "loadOrCreateUniqueDeviceID",
+  "localeWithLocaleIdentifier:",
+  "localizedDescription",
+  "lockScreenSetting",
+  "mainBundle",
+  "mainScreen",
+  "makeCommunicationNotificationWithSenderName:imageWithURL:backgroundColor:convId:callback:",
+  "mappedParameters",
+  "moveItemAtURL:toURL:error:",
+  "mutableCopy",
+  "notificationCenterSetting",
+  "notificationGuid",
+  "notificationSettingsWithCallback:",
+  "notificationVersion",
+  "objectForKey:",
+  "objectForKeyedSubscript:",
+  "objectWithDictionary:",
+  "originalRequest",
+  "parameterNameMapping",
+  "parseSuccess",
+  "path",
+  "performRequest",
+  "postPayload",
+  "postUrl",
+  "prepareRequest",
+  "queryItemWithName:value:",
+  "recipient",
+  "redText",
+  "reportPushNotificationEvent:payload:extraParams:callback:",
+  "reportReliabilityCounters",
+  "reportUserNotificationSettingsWithPayload:callback:",
+  "requestHostType",
+  "requestMethod",
+  "requestParameters",
+  "requestParametersInternal",
+  "requestPath",
+  "requestPathInternal",
+  "requestWithSuccess:failure:",
+  "requestWithURL:",
+  "requirePhoneUnlock",
+  "resolvedColorWithTraitCollection:",
+  "resume",
+  "robloxNotificationType",
+  "scale",
+  "scheduledDeliverySetting",
+  "searchDictionaryWithIdentifier:",
+  "senderAvatar",
+  "serviceExtensionTimeWillExpire",
+  "session",
+  "sessionWithConfiguration:",
+  "setAttachments:",
+  "setBaseURL:",
+  "setBestAttemptContent:",
+  "setBodyData:",
+  "setCategoryIdentifier:",
+  "setClientPushEventFields:",
+  "setContentHandler:",
+  "setDateFormat:",
+  "setFailureBlock:",
+  "setFill",
+  "setHTTPBody:",
+  "setHTTPMethod:",
+  "setInteger:forKey:",
+  "setLocale:",
+  "setNickname:",
+  "setNotificationCategories:",
+  "setObject:forKey:",
+  "setObject:forKeyedSubscript:",
+  "setQueryItems:",
+  "setScale:",
+  "setSession:",
+  "setSuccessBlock:",
+  "setThreadSafeAccessEnabled:",
+  "setURL:",
+  "setValue:forHTTPHeaderField:",
+  "sharedInstance",
+  "sharedSession",
+  "showPreviewsSetting",
+  "size",
+  "soundSetting",
+  "standardUserDefaults",
+  "statusCode",
+  "stringByAddingPercentEncodingWithAllowedCharacters:",
+  "stringByAppendingPathComponent:",
+  "stringByAppendingPathExtension:",
+  "stringByAppendingString:",
+  "stringFromDate:",
+  "stringValue",
+  "stringWithFormat:",
+  "stringWithPercentEscape",
+  "successBlock",
+  "tertiarySystemFillColor",
+  "threadId",
+  "thumbnail",
+  "timeSensitiveSetting",
+  "title",
+  "traitCollection",
+  "traitCollectionWithUserInterfaceStyle:",
+  "url",
+  "userInfo",
+  "userInterfaceStyle",
+  "validStringForString:withDefault:",
+  "valueForKey:",
+  "valueForKeyPath:",
+  "writeToURL:options:error:",
+  "wwwSessionManager"
+ ],
+ "methtypes": [
+  "@\"NSArray\"",
+  "@\"NSData\"",
+  "@\"NSDictionary\"",
+  "@\"NSMutableDictionary\"",
+  "@\"NSNumber\"",
+  "@\"NSString\"",
+  "@\"NSURL\"",
+  "@\"NSURLSession\"",
+  "@\"RBNotifExtApplePushNotificationMediaMetadataPayload\"",
+  "@\"UNMutableNotificationContent\"",
+  "@16@0:8",
+  "@24@0:8@16",
+  "@32@0:8@16@24",
+  "@32@0:8@?16@?24",
+  "@56@0:8@16@24@32@?40@?48",
+  "@?",
+  "@?16@0:8",
+  "B",
+  "B16@0:8",
+  "q16@0:8",
+  "v16@0:8",
+  "v20@0:8B16",
+  "v24@0:8@16",
+  "v24@0:8@?16",
+  "v32@0:8@16@?24",
+  "v48@0:8@16@24@32@?40",
+  "v56@0:8@16@24@32@40@?48"
+ ]
+}

@@ -1,0 +1,7818 @@
+{
+ "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+ "libraries": [
+  {
+   "name": "/usr/lib/libhvf.dylib",
+   "weak": true
+  },
+  {
+   "name": "/System/Library/Frameworks/Contacts.framework/Contacts",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers",
+   "weak": true
+  },
+  {
+   "name": "/System/Library/Frameworks/WebKit.framework/WebKit",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreMotion.framework/CoreMotion",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/GameController.framework/GameController",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreServices.framework/CoreServices",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CallKit.framework/CallKit",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreText.framework/CoreText",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/Photos.framework/Photos",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/IOSurface.framework/IOSurface",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreAudio.framework/CoreAudio",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libSystem.B.dylib",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/Foundation.framework/Foundation",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreML.framework/CoreML",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreVideo.framework/CoreVideo",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/Network.framework/Network",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/Metal.framework/Metal",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/OpenGLES.framework/OpenGLES",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libresolv.9.dylib",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/UIKit.framework/UIKit",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libobjc.A.dylib",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libc++.1.dylib",
+   "weak": false
+  }
+ ],
+ "imports": {
+  "/System/Library/Frameworks/AVFoundation.framework/AVFoundation": [
+   {
+    "name": "_AVAssetExportPresetPassthrough",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionCategoryPlayAndRecord",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionInterruptionNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionInterruptionOptionKey",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionInterruptionTypeKey",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionMediaServicesWereLostNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionMediaServicesWereResetNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionModeVoiceChat",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortAVB",
+    "weak": true
+   },
+   {
+    "name": "_AVAudioSessionPortAirPlay",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortBluetoothA2DP",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortBluetoothHFP",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortBluetoothLE",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortBuiltInMic",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortBuiltInReceiver",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortBuiltInSpeaker",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortCarAudio",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortDisplayPort",
+    "weak": true
+   },
+   {
+    "name": "_AVAudioSessionPortFireWire",
+    "weak": true
+   },
+   {
+    "name": "_AVAudioSessionPortHDMI",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortHeadphones",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortHeadsetMic",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortLineIn",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortLineOut",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortPCI",
+    "weak": true
+   },
+   {
+    "name": "_AVAudioSessionPortThunderbolt",
+    "weak": true
+   },
+   {
+    "name": "_AVAudioSessionPortUSBAudio",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionPortVirtual",
+    "weak": true
+   },
+   {
+    "name": "_AVAudioSessionRouteChangeNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionRouteChangePreviousRouteKey",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionRouteChangeReasonKey",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionSilenceSecondaryAudioHintNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVAudioSessionSilenceSecondaryAudioHintTypeKey",
+    "weak": false
+   },
+   {
+    "name": "_AVCaptureDeviceTypeBuiltInWideAngleCamera",
+    "weak": false
+   },
+   {
+    "name": "_AVCaptureDeviceWasConnectedNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVCaptureDeviceWasDisconnectedNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVCaptureSessionDidStartRunningNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVCaptureSessionDidStopRunningNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVCaptureSessionErrorKey",
+    "weak": false
+   },
+   {
+    "name": "_AVCaptureSessionInterruptionEndedNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVCaptureSessionInterruptionReasonKey",
+    "weak": false
+   },
+   {
+    "name": "_AVCaptureSessionPresetInputPriority",
+    "weak": false
+   },
+   {
+    "name": "_AVCaptureSessionRuntimeErrorNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVCaptureSessionWasInterruptedNotification",
+    "weak": false
+   },
+   {
+    "name": "_AVMediaTypeAudio",
+    "weak": false
+   },
+   {
+    "name": "_AVMediaTypeVideo",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_AVAudioSession",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_AVCaptureDevice",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_AVCaptureDeviceDiscoverySession",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_AVCaptureDeviceInput",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_AVCaptureSession",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_AVCaptureVideoDataOutput",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox": [
+   {
+    "name": "_AudioComponentFindNext",
+    "weak": false
+   },
+   {
+    "name": "_AudioComponentInstanceDispose",
+    "weak": false
+   },
+   {
+    "name": "_AudioComponentInstanceNew",
+    "weak": false
+   },
+   {
+    "name": "_AudioConverterDispose",
+    "weak": false
+   },
+   {
+    "name": "_AudioConverterFillComplexBuffer",
+    "weak": false
+   },
+   {
+    "name": "_AudioConverterGetProperty",
+    "weak": false
+   },
+   {
+    "name": "_AudioConverterGetPropertyInfo",
+    "weak": false
+   },
+   {
+    "name": "_AudioConverterNew",
+    "weak": false
+   },
+   {
+    "name": "_AudioConverterNewSpecific",
+    "weak": false
+   },
+   {
+    "name": "_AudioConverterReset",
+    "weak": false
+   },
+   {
+    "name": "_AudioConverterSetProperty",
+    "weak": false
+   },
+   {
+    "name": "_AudioFormatGetProperty",
+    "weak": false
+   },
+   {
+    "name": "_AudioOutputUnitStart",
+    "weak": false
+   },
+   {
+    "name": "_AudioOutputUnitStop",
+    "weak": false
+   },
+   {
+    "name": "_AudioUnitGetProperty",
+    "weak": false
+   },
+   {
+    "name": "_AudioUnitInitialize",
+    "weak": false
+   },
+   {
+    "name": "_AudioUnitRender",
+    "weak": false
+   },
+   {
+    "name": "_AudioUnitSetProperty",
+    "weak": false
+   },
+   {
+    "name": "_AudioUnitUninitialize",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CallKit.framework/CallKit": [
+   {
+    "name": "_OBJC_CLASS_$_CXCallController",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CXCallUpdate",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CXEndCallAction",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CXHandle",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CXProvider",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CXProviderConfiguration",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CXSetMutedCallAction",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CXStartCallAction",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CXTransaction",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/Contacts.framework/Contacts": [
+   {
+    "name": "_CNContactFamilyNameKey",
+    "weak": false
+   },
+   {
+    "name": "_CNContactGivenNameKey",
+    "weak": false
+   },
+   {
+    "name": "_CNContactPhoneNumbersKey",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CNContactFetchRequest",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CNContactStore",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
+   {
+    "name": "_CFAllocatorCreate",
+    "weak": false
+   },
+   {
+    "name": "_CFArrayGetCount",
+    "weak": false
+   },
+   {
+    "name": "_CFArrayGetValueAtIndex",
+    "weak": false
+   },
+   {
+    "name": "_CFBooleanGetValue",
+    "weak": false
+   },
+   {
+    "name": "_CFBundleGetIdentifier",
+    "weak": false
+   },
+   {
+    "name": "_CFBundleGetMainBundle",
+    "weak": false
+   },
+   {
+    "name": "_CFDataCreate",
+    "weak": false
+   },
+   {
+    "name": "_CFDictionaryAddValue",
+    "weak": false
+   },
+   {
+    "name": "_CFDictionaryContainsKey",
+    "weak": false
+   },
+   {
+    "name": "_CFDictionaryCreate",
+    "weak": false
+   },
+   {
+    "name": "_CFDictionaryCreateMutable",
+    "weak": false
+   },
+   {
+    "name": "_CFDictionaryGetCount",
+    "weak": false
+   },
+   {
+    "name": "_CFDictionaryGetValue",
+    "weak": false
+   },
+   {
+    "name": "_CFDictionaryGetValueIfPresent",
+    "weak": false
+   },
+   {
+    "name": "_CFDictionarySetValue",
+    "weak": false
+   },
+   {
+    "name": "_CFErrorCopyDescription",
+    "weak": false
+   },
+   {
+    "name": "_CFErrorGetCode",
+    "weak": false
+   },
+   {
+    "name": "_CFNotificationCenterAddObserver",
+    "weak": false
+   },
+   {
+    "name": "_CFNotificationCenterGetLocalCenter",
+    "weak": false
+   },
+   {
+    "name": "_CFNotificationCenterRemoveEveryObserver",
+    "weak": false
+   },
+   {
+    "name": "_CFNumberCreate",
+    "weak": false
+   },
+   {
+    "name": "_CFNumberGetValue",
+    "weak": false
+   },
+   {
+    "name": "_CFRelease",
+    "weak": false
+   },
+   {
+    "name": "_CFRetain",
+    "weak": false
+   },
+   {
+    "name": "_CFRunLoopAddObserver",
+    "weak": false
+   },
+   {
+    "name": "_CFRunLoopGetCurrent",
+    "weak": false
+   },
+   {
+    "name": "_CFRunLoopGetMain",
+    "weak": false
+   },
+   {
+    "name": "_CFRunLoopObserverCreateWithHandler",
+    "weak": false
+   },
+   {
+    "name": "_CFRunLoopObserverInvalidate",
+    "weak": false
+   },
+   {
+    "name": "_CFRunLoopPerformBlock",
+    "weak": false
+   },
+   {
+    "name": "_CFRunLoopRemoveObserver",
+    "weak": false
+   },
+   {
+    "name": "_CFRunLoopRunInMode",
+    "weak": false
+   },
+   {
+    "name": "_CFRunLoopStop",
+    "weak": false
+   },
+   {
+    "name": "_CFRunLoopWakeUp",
+    "weak": false
+   },
+   {
+    "name": "_CFStringConvertEncodingToIANACharSetName",
+    "weak": false
+   },
+   {
+    "name": "_CFStringConvertNSStringEncodingToEncoding",
+    "weak": false
+   },
+   {
+    "name": "_CFStringCreateWithBytes",
+    "weak": false
+   },
+   {
+    "name": "_CFStringFindWithOptions",
+    "weak": false
+   },
+   {
+    "name": "_CFStringGetBytes",
+    "weak": false
+   },
+   {
+    "name": "_CFStringGetCString",
+    "weak": false
+   },
+   {
+    "name": "_CFStringGetCStringPtr",
+    "weak": false
+   },
+   {
+    "name": "_CFStringGetLength",
+    "weak": false
+   },
+   {
+    "name": "_CFStringGetMaximumSizeForEncoding",
+    "weak": false
+   },
+   {
+    "name": "_CFUUIDCreate",
+    "weak": false
+   },
+   {
+    "name": "_CFUUIDCreateString",
+    "weak": false
+   },
+   {
+    "name": "_NSDefaultRunLoopMode",
+    "weak": false
+   },
+   {
+    "name": "_NSLocaleCountryCode",
+    "weak": false
+   },
+   {
+    "name": "_NSRunLoopCommonModes",
+    "weak": false
+   },
+   {
+    "name": "_NSSystemTimeZoneDidChangeNotification",
+    "weak": false
+   },
+   {
+    "name": "_NSURLVolumeAvailableCapacityForImportantUsageKey",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSArray",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSData",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSDate",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSDictionary",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSException",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSInputStream",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSLocale",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableArray",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableData",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableDictionary",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableOrderedSet",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableSet",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSNull",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSOutputStream",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSRunLoop",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSSet",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSTimeZone",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSTimer",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSURL",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSUserDefaults",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_EHTYPE_$_NSException",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_NSInputStream",
+    "weak": false
+   },
+   {
+    "name": "___CFConstantStringClassReference",
+    "weak": false
+   },
+   {
+    "name": "___NSArray0__",
+    "weak": false
+   },
+   {
+    "name": "___NSDictionary0__",
+    "weak": false
+   },
+   {
+    "name": "_kCFAllocatorDefault",
+    "weak": false
+   },
+   {
+    "name": "_kCFAllocatorNull",
+    "weak": false
+   },
+   {
+    "name": "_kCFBooleanFalse",
+    "weak": false
+   },
+   {
+    "name": "_kCFBooleanTrue",
+    "weak": false
+   },
+   {
+    "name": "_kCFBundleNameKey",
+    "weak": false
+   },
+   {
+    "name": "_kCFBundleVersionKey",
+    "weak": false
+   },
+   {
+    "name": "_kCFRunLoopCommonModes",
+    "weak": false
+   },
+   {
+    "name": "_kCFRunLoopDefaultMode",
+    "weak": false
+   },
+   {
+    "name": "_kCFTypeDictionaryKeyCallBacks",
+    "weak": false
+   },
+   {
+    "name": "_kCFTypeDictionaryValueCallBacks",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics": [
+   {
+    "name": "_CGAffineTransformMakeScale",
+    "weak": false
+   },
+   {
+    "name": "_CGAffineTransformMakeTranslation",
+    "weak": false
+   },
+   {
+    "name": "_CGContextDrawImage",
+    "weak": false
+   },
+   {
+    "name": "_CGContextRotateCTM",
+    "weak": false
+   },
+   {
+    "name": "_CGContextTranslateCTM",
+    "weak": false
+   },
+   {
+    "name": "_CGDataProviderCreateWithCFData",
+    "weak": false
+   },
+   {
+    "name": "_CGFontCopyPostScriptName",
+    "weak": false
+   },
+   {
+    "name": "_CGFontCreateWithDataProvider",
+    "weak": false
+   },
+   {
+    "name": "_CGImageGetHeight",
+    "weak": false
+   },
+   {
+    "name": "_CGImageGetWidth",
+    "weak": false
+   },
+   {
+    "name": "_CGPointZero",
+    "weak": false
+   },
+   {
+    "name": "_CGRectContainsPoint",
+    "weak": false
+   },
+   {
+    "name": "_CGRectEqualToRect",
+    "weak": false
+   },
+   {
+    "name": "_CGRectGetHeight",
+    "weak": false
+   },
+   {
+    "name": "_CGRectGetMaxX",
+    "weak": false
+   },
+   {
+    "name": "_CGRectGetMaxY",
+    "weak": false
+   },
+   {
+    "name": "_CGRectGetWidth",
+    "weak": false
+   },
+   {
+    "name": "_CGRectIsEmpty",
+    "weak": false
+   },
+   {
+    "name": "_CGRectZero",
+    "weak": false
+   },
+   {
+    "name": "_CGSizeZero",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics": [
+   {
+    "name": "_CHHapticDynamicParameterIDHapticIntensityControl",
+    "weak": false
+   },
+   {
+    "name": "_CHHapticEventParameterIDHapticIntensity",
+    "weak": false
+   },
+   {
+    "name": "_CHHapticEventParameterIDHapticSharpness",
+    "weak": false
+   },
+   {
+    "name": "_CHHapticEventTypeHapticContinuous",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CHHapticDynamicParameter",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CHHapticEngine",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CHHapticEvent",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CHHapticEventParameter",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CHHapticPattern",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreML.framework/CoreML": [
+   {
+    "name": "_OBJC_CLASS_$_MLFeatureValue",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MLModel",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MLModelConfiguration",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MLMultiArray",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MLPredictionOptions",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreMedia.framework/CoreMedia": [
+   {
+    "name": "_CMBlockBufferCreateContiguous",
+    "weak": false
+   },
+   {
+    "name": "_CMBlockBufferCreateWithMemoryBlock",
+    "weak": false
+   },
+   {
+    "name": "_CMBlockBufferGetDataPointer",
+    "weak": false
+   },
+   {
+    "name": "_CMBlockBufferReplaceDataBytes",
+    "weak": false
+   },
+   {
+    "name": "_CMCopyDictionaryOfAttachments",
+    "weak": false
+   },
+   {
+    "name": "_CMFormatDescriptionGetMediaSubType",
+    "weak": false
+   },
+   {
+    "name": "_CMGetAttachment",
+    "weak": false
+   },
+   {
+    "name": "_CMSampleBufferCreate",
+    "weak": false
+   },
+   {
+    "name": "_CMSampleBufferDataIsReady",
+    "weak": false
+   },
+   {
+    "name": "_CMSampleBufferGetDataBuffer",
+    "weak": false
+   },
+   {
+    "name": "_CMSampleBufferGetFormatDescription",
+    "weak": false
+   },
+   {
+    "name": "_CMSampleBufferGetImageBuffer",
+    "weak": false
+   },
+   {
+    "name": "_CMSampleBufferGetNumSamples",
+    "weak": false
+   },
+   {
+    "name": "_CMSampleBufferGetPresentationTimeStamp",
+    "weak": false
+   },
+   {
+    "name": "_CMSampleBufferGetSampleAttachmentsArray",
+    "weak": false
+   },
+   {
+    "name": "_CMSampleBufferIsValid",
+    "weak": false
+   },
+   {
+    "name": "_CMTimeGetSeconds",
+    "weak": false
+   },
+   {
+    "name": "_CMTimeMake",
+    "weak": false
+   },
+   {
+    "name": "_CMVideoFormatDescriptionCreate",
+    "weak": false
+   },
+   {
+    "name": "_CMVideoFormatDescriptionCreateFromH264ParameterSets",
+    "weak": false
+   },
+   {
+    "name": "_CMVideoFormatDescriptionCreateFromHEVCParameterSets",
+    "weak": false
+   },
+   {
+    "name": "_CMVideoFormatDescriptionGetDimensions",
+    "weak": false
+   },
+   {
+    "name": "_CMVideoFormatDescriptionGetH264ParameterSetAtIndex",
+    "weak": false
+   },
+   {
+    "name": "_CMVideoFormatDescriptionGetHEVCParameterSetAtIndex",
+    "weak": false
+   },
+   {
+    "name": "_kCMFormatDescriptionExtension_SampleDescriptionExtensionAtoms",
+    "weak": false
+   },
+   {
+    "name": "_kCMSampleAttachmentKey_NotSync",
+    "weak": false
+   },
+   {
+    "name": "_kCMSampleBufferAttachmentKey_DroppedFrameReason",
+    "weak": false
+   },
+   {
+    "name": "_kCMTimeInvalid",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreMotion.framework/CoreMotion": [
+   {
+    "name": "_OBJC_CLASS_$_CMMotionManager",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreServices.framework/CoreServices": [
+   {
+    "name": "_UTTypeCopyPreferredTagWithClass",
+    "weak": false
+   },
+   {
+    "name": "_UTTypeCreatePreferredIdentifierForTag",
+    "weak": false
+   },
+   {
+    "name": "_kUTTagClassFilenameExtension",
+    "weak": false
+   },
+   {
+    "name": "_kUTTagClassMIMEType",
+    "weak": false
+   },
+   {
+    "name": "_kUTTypeImage",
+    "weak": false
+   },
+   {
+    "name": "_kUTTypeMovie",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreText.framework/CoreText": [
+   {
+    "name": "_CTFontCopyAvailableTables",
+    "weak": false
+   },
+   {
+    "name": "_CTFontCopyTable",
+    "weak": false
+   },
+   {
+    "name": "_CTFontCreateWithName",
+    "weak": false
+   },
+   {
+    "name": "_CTFontManagerCopyAvailablePostScriptNames",
+    "weak": false
+   },
+   {
+    "name": "_CTFontManagerRegisterGraphicsFont",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreVideo.framework/CoreVideo": [
+   {
+    "name": "_CVBufferRelease",
+    "weak": false
+   },
+   {
+    "name": "_CVBufferRetain",
+    "weak": false
+   },
+   {
+    "name": "_CVImageBufferGetEncodedSize",
+    "weak": false
+   },
+   {
+    "name": "_CVMetalTextureCacheCreate",
+    "weak": false
+   },
+   {
+    "name": "_CVMetalTextureCacheCreateTextureFromImage",
+    "weak": false
+   },
+   {
+    "name": "_CVMetalTextureGetTexture",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferCreate",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferGetBaseAddress",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferGetBaseAddressOfPlane",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferGetBytesPerRow",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferGetBytesPerRowOfPlane",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferGetDataSize",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferGetHeight",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferGetHeightOfPlane",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferGetIOSurface",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferGetPixelFormatType",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferGetWidth",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferGetWidthOfPlane",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferLockBaseAddress",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferPoolCreatePixelBuffer",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferRelease",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferRetain",
+    "weak": false
+   },
+   {
+    "name": "_CVPixelBufferUnlockBaseAddress",
+    "weak": false
+   },
+   {
+    "name": "_kCVPixelBufferCGBitmapContextCompatibilityKey",
+    "weak": false
+   },
+   {
+    "name": "_kCVPixelBufferCGImageCompatibilityKey",
+    "weak": false
+   },
+   {
+    "name": "_kCVPixelBufferHeightKey",
+    "weak": false
+   },
+   {
+    "name": "_kCVPixelBufferIOSurfacePropertiesKey",
+    "weak": false
+   },
+   {
+    "name": "_kCVPixelBufferMetalCompatibilityKey",
+    "weak": false
+   },
+   {
+    "name": "_kCVPixelBufferPixelFormatTypeKey",
+    "weak": false
+   },
+   {
+    "name": "_kCVPixelBufferWidthKey",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck": [
+   {
+    "name": "_OBJC_CLASS_$_DCDevice",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/Foundation.framework/Foundation": [
+   {
+    "name": "_NSClassFromString",
+    "weak": false
+   },
+   {
+    "name": "_NSGetUncaughtExceptionHandler",
+    "weak": false
+   },
+   {
+    "name": "_NSKeyValueChangeNewKey",
+    "weak": false
+   },
+   {
+    "name": "_NSLocalizedDescriptionKey",
+    "weak": false
+   },
+   {
+    "name": "_NSLog",
+    "weak": false
+   },
+   {
+    "name": "_NSProcessInfoPowerStateDidChangeNotification",
+    "weak": false
+   },
+   {
+    "name": "_NSProcessInfoThermalStateDidChangeNotification",
+    "weak": false
+   },
+   {
+    "name": "_NSSearchPathForDirectoriesInDomains",
+    "weak": false
+   },
+   {
+    "name": "_NSSelectorFromString",
+    "weak": false
+   },
+   {
+    "name": "_NSSetUncaughtExceptionHandler",
+    "weak": false
+   },
+   {
+    "name": "_NSStringFromClass",
+    "weak": false
+   },
+   {
+    "name": "_NSStringFromSelector",
+    "weak": false
+   },
+   {
+    "name": "_NSTemporaryDirectory",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSAssertionHandler",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSAttributedString",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSAutoreleasePool",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSBundle",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSCharacterSet",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSCondition",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSDateFormatter",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSDecimalNumber",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSError",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSFileManager",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSHTTPCookie",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSHTTPCookieStorage",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSHTTPURLResponse",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSJSONSerialization",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSKeyedArchiver",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSKeyedUnarchiver",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSLayoutConstraint",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSLock",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableAttributedString",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableString",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableURLRequest",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSNotificationCenter",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSNumber",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSOperationQueue",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSProcessInfo",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSScanner",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSString",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSThread",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSURLConnection",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSURLRequest",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSURLSession",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSUUID",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSValue",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_NSError",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/GameController.framework/GameController": [
+   {
+    "name": "_GCControllerDidConnectNotification",
+    "weak": false
+   },
+   {
+    "name": "_GCControllerDidDisconnectNotification",
+    "weak": false
+   },
+   {
+    "name": "_GCMouseDidBecomeCurrentNotification",
+    "weak": true
+   },
+   {
+    "name": "_GCMouseDidConnectNotification",
+    "weak": true
+   },
+   {
+    "name": "_GCMouseDidDisconnectNotification",
+    "weak": true
+   },
+   {
+    "name": "_GCMouseDidStopBeingCurrentNotification",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_GCController",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_GCDualSenseGamepad",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_GCDualShockGamepad",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_GCMouse",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_GCXboxGamepad",
+    "weak": true
+   }
+  ],
+  "/System/Library/Frameworks/IOSurface.framework/IOSurface": [
+   {
+    "name": "_IOSurfaceGetAllocSize",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/Metal.framework/Metal": [
+   {
+    "name": "_MTLCreateSystemDefaultDevice",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MTLCaptureDescriptor",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MTLCaptureManager",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MTLCompileOptions",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MTLDepthStencilDescriptor",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MTLRenderPassDescriptor",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MTLRenderPipelineDescriptor",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MTLSamplerDescriptor",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MTLTextureDescriptor",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_MTLVertexDescriptor",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/Network.framework/Network": [
+   {
+    "name": "_nw_interface_get_name",
+    "weak": false
+   },
+   {
+    "name": "_nw_interface_get_type",
+    "weak": false
+   },
+   {
+    "name": "_nw_path_enumerate_interfaces",
+    "weak": false
+   },
+   {
+    "name": "_nw_path_get_status",
+    "weak": false
+   },
+   {
+    "name": "_nw_path_is_constrained",
+    "weak": false
+   },
+   {
+    "name": "_nw_path_is_expensive",
+    "weak": false
+   },
+   {
+    "name": "_nw_path_monitor_cancel",
+    "weak": false
+   },
+   {
+    "name": "_nw_path_monitor_create",
+    "weak": false
+   },
+   {
+    "name": "_nw_path_monitor_set_queue",
+    "weak": false
+   },
+   {
+    "name": "_nw_path_monitor_set_update_handler",
+    "weak": false
+   },
+   {
+    "name": "_nw_path_monitor_start",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/Photos.framework/Photos": [
+   {
+    "name": "_OBJC_CLASS_$_PHPhotoLibrary",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/QuartzCore.framework/QuartzCore": [
+   {
+    "name": "_CACurrentMediaTime",
+    "weak": false
+   },
+   {
+    "name": "_CAFrameRateRangeMake",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_CAEAGLLayer",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_CAMetalLayer",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration": [
+   {
+    "name": "_SCNetworkReachabilityCreateWithAddress",
+    "weak": false
+   },
+   {
+    "name": "_SCNetworkReachabilityCreateWithName",
+    "weak": false
+   },
+   {
+    "name": "_SCNetworkReachabilityGetFlags",
+    "weak": false
+   },
+   {
+    "name": "_SCNetworkReachabilityScheduleWithRunLoop",
+    "weak": false
+   },
+   {
+    "name": "_SCNetworkReachabilitySetCallback",
+    "weak": false
+   },
+   {
+    "name": "_SCNetworkReachabilityUnscheduleFromRunLoop",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/UIKit.framework/UIKit": [
+   {
+    "name": "_NSFontAttributeName",
+    "weak": false
+   },
+   {
+    "name": "_NSForegroundColorAttributeName",
+    "weak": false
+   },
+   {
+    "name": "_NSKernAttributeName",
+    "weak": false
+   },
+   {
+    "name": "_NSParagraphStyleAttributeName",
+    "weak": false
+   },
+   {
+    "name": "_NSStrokeWidthAttributeName",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableParagraphStyle",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIAlertAction",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIAlertController",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIApplication",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIButton",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIColor",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIDevice",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIFont",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIGraphicsImageRenderer",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIGraphicsImageRendererFormat",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIHoverGestureRecognizer",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIImage",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIImagePickerController",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIImageView",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIKeyCommand",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UILongPressGestureRecognizer",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UINavigationController",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIPanGestureRecognizer",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIPinchGestureRecognizer",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIPointerInteraction",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIPointerStyle",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIProgressView",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIRotationGestureRecognizer",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIScreen",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIScrollView",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UISwipeGestureRecognizer",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UITapGestureRecognizer",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UITextField",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UITextView",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIView",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIViewController",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIWindowScene",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_UITextField",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_UITextView",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_UIView",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_UIViewController",
+    "weak": false
+   },
+   {
+    "name": "_UIApplicationDidBecomeActiveNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIApplicationDidEnterBackgroundNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIApplicationOpenSettingsURLString",
+    "weak": false
+   },
+   {
+    "name": "_UIDeviceBatteryLevelDidChangeNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIDeviceBatteryStateDidChangeNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIDeviceOrientationDidChangeNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIEdgeInsetsZero",
+    "weak": false
+   },
+   {
+    "name": "_UIFontWeightMedium",
+    "weak": false
+   },
+   {
+    "name": "_UIImagePNGRepresentation",
+    "weak": false
+   },
+   {
+    "name": "_UIImagePickerControllerImageURL",
+    "weak": false
+   },
+   {
+    "name": "_UIImagePickerControllerMediaType",
+    "weak": false
+   },
+   {
+    "name": "_UIImagePickerControllerMediaURL",
+    "weak": false
+   },
+   {
+    "name": "_UIImagePickerControllerOriginalImage",
+    "weak": false
+   },
+   {
+    "name": "_UIImageWriteToSavedPhotosAlbum",
+    "weak": false
+   },
+   {
+    "name": "_UIKeyInputEscape",
+    "weak": false
+   },
+   {
+    "name": "_UIKeyboardAnimationDurationUserInfoKey",
+    "weak": false
+   },
+   {
+    "name": "_UIKeyboardDidShowNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIKeyboardFrameEndUserInfoKey",
+    "weak": false
+   },
+   {
+    "name": "_UIKeyboardWillHideNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIKeyboardWillShowNotification",
+    "weak": false
+   },
+   {
+    "name": "_UISaveVideoAtPathToSavedPhotosAlbum",
+    "weak": false
+   },
+   {
+    "name": "_UIScreenBrightnessDidChangeNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIScreenDidConnectNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIScreenDidDisconnectNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIScreenModeDidChangeNotification",
+    "weak": false
+   },
+   {
+    "name": "_UITextContentTypeOneTimeCode",
+    "weak": false
+   },
+   {
+    "name": "_UITextContentTypePassword",
+    "weak": false
+   },
+   {
+    "name": "_UITextContentTypeTelephoneNumber",
+    "weak": false
+   },
+   {
+    "name": "_UITextContentTypeUsername",
+    "weak": false
+   },
+   {
+    "name": "_UIVideoAtPathIsCompatibleWithSavedPhotosAlbum",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox": [
+   {
+    "name": "_VTCompressionSessionCompleteFrames",
+    "weak": false
+   },
+   {
+    "name": "_VTCompressionSessionCreate",
+    "weak": false
+   },
+   {
+    "name": "_VTCompressionSessionEncodeFrame",
+    "weak": false
+   },
+   {
+    "name": "_VTCompressionSessionGetPixelBufferPool",
+    "weak": false
+   },
+   {
+    "name": "_VTCompressionSessionInvalidate",
+    "weak": false
+   },
+   {
+    "name": "_VTCompressionSessionPrepareToEncodeFrames",
+    "weak": false
+   },
+   {
+    "name": "_VTCopyVideoEncoderList",
+    "weak": false
+   },
+   {
+    "name": "_VTDecompressionSessionCanAcceptFormatDescription",
+    "weak": false
+   },
+   {
+    "name": "_VTDecompressionSessionCreate",
+    "weak": false
+   },
+   {
+    "name": "_VTDecompressionSessionDecodeFrame",
+    "weak": false
+   },
+   {
+    "name": "_VTDecompressionSessionFinishDelayedFrames",
+    "weak": false
+   },
+   {
+    "name": "_VTDecompressionSessionInvalidate",
+    "weak": false
+   },
+   {
+    "name": "_VTDecompressionSessionWaitForAsynchronousFrames",
+    "weak": false
+   },
+   {
+    "name": "_VTIsHardwareDecodeSupported",
+    "weak": false
+   },
+   {
+    "name": "_VTSessionSetProperty",
+    "weak": false
+   },
+   {
+    "name": "_kVTCompressionPropertyKey_AllowFrameReordering",
+    "weak": false
+   },
+   {
+    "name": "_kVTCompressionPropertyKey_AverageBitRate",
+    "weak": false
+   },
+   {
+    "name": "_kVTCompressionPropertyKey_MaxKeyFrameInterval",
+    "weak": false
+   },
+   {
+    "name": "_kVTCompressionPropertyKey_RealTime",
+    "weak": false
+   },
+   {
+    "name": "_kVTDecompressionPropertyKey_RealTime",
+    "weak": false
+   },
+   {
+    "name": "_kVTVideoEncoderList_CodecType",
+    "weak": false
+   },
+   {
+    "name": "_kVTVideoEncoderList_EncoderName",
+    "weak": false
+   },
+   {
+    "name": "_kVTVideoEncoderList_IsHardwareAccelerated",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libSystem.B.dylib": [
+   {
+    "name": "_CCRandomGenerateBytes",
+    "weak": false
+   },
+   {
+    "name": "_NDR_record",
+    "weak": false
+   },
+   {
+    "name": "__Block_object_assign",
+    "weak": false
+   },
+   {
+    "name": "__Block_object_dispose",
+    "weak": false
+   },
+   {
+    "name": "__DefaultRuneLocale",
+    "weak": false
+   },
+   {
+    "name": "__Exit",
+    "weak": false
+   },
+   {
+    "name": "__NSConcreteGlobalBlock",
+    "weak": false
+   },
+   {
+    "name": "__NSConcreteStackBlock",
+    "weak": false
+   },
+   {
+    "name": "__Unwind_Resume",
+    "weak": false
+   },
+   {
+    "name": "___assert_rtn",
+    "weak": false
+   },
+   {
+    "name": "___chkstk_darwin",
+    "weak": false
+   },
+   {
+    "name": "___cxa_atexit",
+    "weak": false
+   },
+   {
+    "name": "___darwin_check_fd_set_overflow",
+    "weak": true
+   },
+   {
+    "name": "___deregister_frame",
+    "weak": false
+   },
+   {
+    "name": "___divti3",
+    "weak": false
+   },
+   {
+    "name": "___error",
+    "weak": false
+   },
+   {
+    "name": "___exp10",
+    "weak": false
+   },
+   {
+    "name": "___exp10f",
+    "weak": false
+   },
+   {
+    "name": "___floattidf",
+    "weak": false
+   },
+   {
+    "name": "___maskrune",
+    "weak": false
+   },
+   {
+    "name": "___memcpy_chk",
+    "weak": false
+   },
+   {
+    "name": "___memmove_chk",
+    "weak": false
+   },
+   {
+    "name": "___memset_chk",
+    "weak": false
+   },
+   {
+    "name": "___mulsc3",
+    "weak": false
+   },
+   {
+    "name": "___register_frame",
+    "weak": false
+   },
+   {
+    "name": "___sincos_stret",
+    "weak": false
+   },
+   {
+    "name": "___sincosf_stret",
+    "weak": false
+   },
+   {
+    "name": "___stack_chk_fail",
+    "weak": false
+   },
+   {
+    "name": "___stack_chk_guard",
+    "weak": false
+   },
+   {
+    "name": "___stderrp",
+    "weak": false
+   },
+   {
+    "name": "___stdinp",
+    "weak": false
+   },
+   {
+    "name": "___stdoutp",
+    "weak": false
+   },
+   {
+    "name": "___strlcat_chk",
+    "weak": false
+   },
+   {
+    "name": "___strlcpy_chk",
+    "weak": false
+   },
+   {
+    "name": "___strncpy_chk",
+    "weak": false
+   },
+   {
+    "name": "___tolower",
+    "weak": false
+   },
+   {
+    "name": "___toupper",
+    "weak": false
+   },
+   {
+    "name": "___udivti3",
+    "weak": false
+   },
+   {
+    "name": "___ulock_wait",
+    "weak": false
+   },
+   {
+    "name": "___ulock_wake",
+    "weak": false
+   },
+   {
+    "name": "___unw_add_dynamic_fde",
+    "weak": true
+   },
+   {
+    "name": "__availability_version_check",
+    "weak": true
+   },
+   {
+    "name": "__dispatch_main_q",
+    "weak": false
+   },
+   {
+    "name": "__exit",
+    "weak": false
+   },
+   {
+    "name": "__os_log_default",
+    "weak": false
+   },
+   {
+    "name": "__os_log_impl",
+    "weak": false
+   },
+   {
+    "name": "__tlv_atexit",
+    "weak": false
+   },
+   {
+    "name": "__tlv_bootstrap",
+    "weak": false
+   },
+   {
+    "name": "_abort",
+    "weak": false
+   },
+   {
+    "name": "_accept",
+    "weak": false
+   },
+   {
+    "name": "_access",
+    "weak": false
+   },
+   {
+    "name": "_acos",
+    "weak": false
+   },
+   {
+    "name": "_acosf",
+    "weak": false
+   },
+   {
+    "name": "_asin",
+    "weak": false
+   },
+   {
+    "name": "_asinf",
+    "weak": false
+   },
+   {
+    "name": "_atan",
+    "weak": false
+   },
+   {
+    "name": "_atan2",
+    "weak": false
+   },
+   {
+    "name": "_atan2f",
+    "weak": false
+   },
+   {
+    "name": "_atanf",
+    "weak": false
+   },
+   {
+    "name": "_atexit",
+    "weak": false
+   },
+   {
+    "name": "_atof",
+    "weak": false
+   },
+   {
+    "name": "_atoi",
+    "weak": false
+   },
+   {
+    "name": "_atol",
+    "weak": false
+   },
+   {
+    "name": "_atoll",
+    "weak": false
+   },
+   {
+    "name": "_backtrace",
+    "weak": false
+   },
+   {
+    "name": "_backtrace_symbols",
+    "weak": false
+   },
+   {
+    "name": "_bind",
+    "weak": false
+   },
+   {
+    "name": "_bsearch",
+    "weak": false
+   },
+   {
+    "name": "_bzero",
+    "weak": false
+   },
+   {
+    "name": "_calloc",
+    "weak": false
+   },
+   {
+    "name": "_cbrt",
+    "weak": false
+   },
+   {
+    "name": "_cbrtf",
+    "weak": false
+   },
+   {
+    "name": "_clearerr",
+    "weak": false
+   },
+   {
+    "name": "_clock",
+    "weak": false
+   },
+   {
+    "name": "_clock_get_time",
+    "weak": false
+   },
+   {
+    "name": "_clock_gettime",
+    "weak": false
+   },
+   {
+    "name": "_clock_gettime_nsec_np",
+    "weak": false
+   },
+   {
+    "name": "_close",
+    "weak": false
+   },
+   {
+    "name": "_closedir",
+    "weak": false
+   },
+   {
+    "name": "_confstr",
+    "weak": false
+   },
+   {
+    "name": "_connect",
+    "weak": false
+   },
+   {
+    "name": "_connectx",
+    "weak": false
+   },
+   {
+    "name": "_cos",
+    "weak": false
+   },
+   {
+    "name": "_cosf",
+    "weak": false
+   },
+   {
+    "name": "_cosh",
+    "weak": false
+   },
+   {
+    "name": "_coshf",
+    "weak": false
+   },
+   {
+    "name": "_difftime",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_after",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_after_f",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_async",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_async_f",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_data_create",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_get_global_queue",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_group_create",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_group_enter",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_group_leave",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_group_notify",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_once",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_once_f",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_queue_create",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_queue_create_with_target$V2",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_queue_get_label",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_release",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_semaphore_create",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_semaphore_signal",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_semaphore_wait",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_set_context",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_set_finalizer_f",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_sync",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_sync_f",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_time",
+    "weak": false
+   },
+   {
+    "name": "_dladdr",
+    "weak": false
+   },
+   {
+    "name": "_dlerror",
+    "weak": false
+   },
+   {
+    "name": "_dlsym",
+    "weak": false
+   },
+   {
+    "name": "_environ",
+    "weak": false
+   },
+   {
+    "name": "_erfcf",
+    "weak": false
+   },
+   {
+    "name": "_erff",
+    "weak": false
+   },
+   {
+    "name": "_exit",
+    "weak": false
+   },
+   {
+    "name": "_exp",
+    "weak": false
+   },
+   {
+    "name": "_exp2",
+    "weak": false
+   },
+   {
+    "name": "_exp2f",
+    "weak": false
+   },
+   {
+    "name": "_expf",
+    "weak": false
+   },
+   {
+    "name": "_expm1",
+    "weak": false
+   },
+   {
+    "name": "_fchmod",
+    "weak": false
+   },
+   {
+    "name": "_fchown",
+    "weak": false
+   },
+   {
+    "name": "_fclose",
+    "weak": false
+   },
+   {
+    "name": "_fcntl",
+    "weak": false
+   },
+   {
+    "name": "_fdopen",
+    "weak": false
+   },
+   {
+    "name": "_feof",
+    "weak": false
+   },
+   {
+    "name": "_ferror",
+    "weak": false
+   },
+   {
+    "name": "_fflush",
+    "weak": false
+   },
+   {
+    "name": "_fgets",
+    "weak": false
+   },
+   {
+    "name": "_fileno",
+    "weak": false
+   },
+   {
+    "name": "_flock",
+    "weak": false
+   },
+   {
+    "name": "_fmod",
+    "weak": false
+   },
+   {
+    "name": "_fmodf",
+    "weak": false
+   },
+   {
+    "name": "_fopen",
+    "weak": false
+   },
+   {
+    "name": "_fprintf",
+    "weak": false
+   },
+   {
+    "name": "_fputc",
+    "weak": false
+   },
+   {
+    "name": "_fputs",
+    "weak": false
+   },
+   {
+    "name": "_fread",
+    "weak": false
+   },
+   {
+    "name": "_free",
+    "weak": false
+   },
+   {
+    "name": "_freeaddrinfo",
+    "weak": false
+   },
+   {
+    "name": "_freeifaddrs",
+    "weak": false
+   },
+   {
+    "name": "_frexp",
+    "weak": false
+   },
+   {
+    "name": "_frexpf",
+    "weak": false
+   },
+   {
+    "name": "_fsctl",
+    "weak": false
+   },
+   {
+    "name": "_fseek",
+    "weak": false
+   },
+   {
+    "name": "_fseeko",
+    "weak": false
+   },
+   {
+    "name": "_fstat",
+    "weak": false
+   },
+   {
+    "name": "_fstatfs",
+    "weak": false
+   },
+   {
+    "name": "_fsync",
+    "weak": false
+   },
+   {
+    "name": "_ftell",
+    "weak": false
+   },
+   {
+    "name": "_ftello",
+    "weak": false
+   },
+   {
+    "name": "_ftruncate",
+    "weak": false
+   },
+   {
+    "name": "_futimes",
+    "weak": false
+   },
+   {
+    "name": "_fwrite",
+    "weak": false
+   },
+   {
+    "name": "_gai_strerror",
+    "weak": false
+   },
+   {
+    "name": "_getaddrinfo",
+    "weak": false
+   },
+   {
+    "name": "_getcwd",
+    "weak": false
+   },
+   {
+    "name": "_getegid",
+    "weak": false
+   },
+   {
+    "name": "_getenv",
+    "weak": false
+   },
+   {
+    "name": "_geteuid",
+    "weak": false
+   },
+   {
+    "name": "_getgid",
+    "weak": false
+   },
+   {
+    "name": "_gethostbyname",
+    "weak": false
+   },
+   {
+    "name": "_getifaddrs",
+    "weak": false
+   },
+   {
+    "name": "_getnameinfo",
+    "weak": false
+   },
+   {
+    "name": "_getpagesize",
+    "weak": false
+   },
+   {
+    "name": "_getpeername",
+    "weak": false
+   },
+   {
+    "name": "_getpid",
+    "weak": false
+   },
+   {
+    "name": "_getrlimit",
+    "weak": false
+   },
+   {
+    "name": "_getrusage",
+    "weak": false
+   },
+   {
+    "name": "_getsockname",
+    "weak": false
+   },
+   {
+    "name": "_getsockopt",
+    "weak": false
+   },
+   {
+    "name": "_gettimeofday",
+    "weak": false
+   },
+   {
+    "name": "_getuid",
+    "weak": false
+   },
+   {
+    "name": "_getxattr",
+    "weak": false
+   },
+   {
+    "name": "_gmtime",
+    "weak": false
+   },
+   {
+    "name": "_gmtime_r",
+    "weak": false
+   },
+   {
+    "name": "_host_get_clock_service",
+    "weak": false
+   },
+   {
+    "name": "_host_get_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_host_page_size",
+    "weak": false
+   },
+   {
+    "name": "_host_set_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_host_statistics",
+    "weak": false
+   },
+   {
+    "name": "_host_swap_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_hypot",
+    "weak": false
+   },
+   {
+    "name": "_hypotf",
+    "weak": false
+   },
+   {
+    "name": "_if_nametoindex",
+    "weak": false
+   },
+   {
+    "name": "_ilogb",
+    "weak": false
+   },
+   {
+    "name": "_in6addr_any",
+    "weak": false
+   },
+   {
+    "name": "_in6addr_loopback",
+    "weak": false
+   },
+   {
+    "name": "_inet_aton",
+    "weak": false
+   },
+   {
+    "name": "_inet_ntop",
+    "weak": false
+   },
+   {
+    "name": "_inet_pton",
+    "weak": false
+   },
+   {
+    "name": "_ioctl",
+    "weak": false
+   },
+   {
+    "name": "_kevent",
+    "weak": false
+   },
+   {
+    "name": "_kqueue",
+    "weak": false
+   },
+   {
+    "name": "_ldexp",
+    "weak": false
+   },
+   {
+    "name": "_ldexpf",
+    "weak": false
+   },
+   {
+    "name": "_listen",
+    "weak": false
+   },
+   {
+    "name": "_lldiv",
+    "weak": false
+   },
+   {
+    "name": "_localeconv",
+    "weak": false
+   },
+   {
+    "name": "_localtime",
+    "weak": false
+   },
+   {
+    "name": "_localtime_r",
+    "weak": false
+   },
+   {
+    "name": "_log",
+    "weak": false
+   },
+   {
+    "name": "_log10",
+    "weak": false
+   },
+   {
+    "name": "_log10f",
+    "weak": false
+   },
+   {
+    "name": "_log2",
+    "weak": false
+   },
+   {
+    "name": "_log2f",
+    "weak": false
+   },
+   {
+    "name": "_logf",
+    "weak": false
+   },
+   {
+    "name": "_longjmp",
+    "weak": false
+   },
+   {
+    "name": "_lseek",
+    "weak": false
+   },
+   {
+    "name": "_lstat",
+    "weak": false
+   },
+   {
+    "name": "_mach_absolute_time",
+    "weak": false
+   },
+   {
+    "name": "_mach_error_string",
+    "weak": false
+   },
+   {
+    "name": "_mach_host_self",
+    "weak": false
+   },
+   {
+    "name": "_mach_msg",
+    "weak": false
+   },
+   {
+    "name": "_mach_msg_destroy",
+    "weak": false
+   },
+   {
+    "name": "_mach_port_allocate",
+    "weak": false
+   },
+   {
+    "name": "_mach_port_deallocate",
+    "weak": false
+   },
+   {
+    "name": "_mach_port_insert_right",
+    "weak": false
+   },
+   {
+    "name": "_mach_port_mod_refs",
+    "weak": false
+   },
+   {
+    "name": "_mach_task_self_",
+    "weak": false
+   },
+   {
+    "name": "_mach_thread_self",
+    "weak": false
+   },
+   {
+    "name": "_mach_timebase_info",
+    "weak": false
+   },
+   {
+    "name": "_madvise",
+    "weak": false
+   },
+   {
+    "name": "_malloc",
+    "weak": false
+   },
+   {
+    "name": "_malloc_size",
+    "weak": false
+   },
+   {
+    "name": "_memchr",
+    "weak": false
+   },
+   {
+    "name": "_memcmp",
+    "weak": false
+   },
+   {
+    "name": "_memcpy",
+    "weak": false
+   },
+   {
+    "name": "_memmove",
+    "weak": false
+   },
+   {
+    "name": "_memset",
+    "weak": false
+   },
+   {
+    "name": "_memset_pattern16",
+    "weak": false
+   },
+   {
+    "name": "_memset_s",
+    "weak": false
+   },
+   {
+    "name": "_mkdir",
+    "weak": false
+   },
+   {
+    "name": "_mktime",
+    "weak": false
+   },
+   {
+    "name": "_mlock",
+    "weak": false
+   },
+   {
+    "name": "_mmap",
+    "weak": false
+   },
+   {
+    "name": "_modf",
+    "weak": false
+   },
+   {
+    "name": "_modff",
+    "weak": false
+   },
+   {
+    "name": "_mprotect",
+    "weak": false
+   },
+   {
+    "name": "_msync",
+    "weak": false
+   },
+   {
+    "name": "_munmap",
+    "weak": false
+   },
+   {
+    "name": "_nan",
+    "weak": false
+   },
+   {
+    "name": "_nanosleep",
+    "weak": false
+   },
+   {
+    "name": "_nextafterf",
+    "weak": false
+   },
+   {
+    "name": "_open",
+    "weak": false
+   },
+   {
+    "name": "_open_dprotected_np",
+    "weak": false
+   },
+   {
+    "name": "_opendir",
+    "weak": false
+   },
+   {
+    "name": "_os_log_create",
+    "weak": false
+   },
+   {
+    "name": "_os_log_type_enabled",
+    "weak": false
+   },
+   {
+    "name": "_os_release",
+    "weak": false
+   },
+   {
+    "name": "_pipe",
+    "weak": false
+   },
+   {
+    "name": "_poll",
+    "weak": false
+   },
+   {
+    "name": "_posix_memalign",
+    "weak": false
+   },
+   {
+    "name": "_pow",
+    "weak": false
+   },
+   {
+    "name": "_powf",
+    "weak": false
+   },
+   {
+    "name": "_pread",
+    "weak": false
+   },
+   {
+    "name": "_printf",
+    "weak": false
+   },
+   {
+    "name": "_pthread_atfork",
+    "weak": false
+   },
+   {
+    "name": "_pthread_attr_destroy",
+    "weak": false
+   },
+   {
+    "name": "_pthread_attr_getdetachstate",
+    "weak": false
+   },
+   {
+    "name": "_pthread_attr_init",
+    "weak": false
+   },
+   {
+    "name": "_pthread_attr_setdetachstate",
+    "weak": false
+   },
+   {
+    "name": "_pthread_attr_setschedparam",
+    "weak": false
+   },
+   {
+    "name": "_pthread_attr_setschedpolicy",
+    "weak": false
+   },
+   {
+    "name": "_pthread_attr_setstacksize",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cond_broadcast",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cond_destroy",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cond_init",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cond_signal",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cond_timedwait",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cond_timedwait_relative_np",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cond_wait",
+    "weak": false
+   },
+   {
+    "name": "_pthread_condattr_destroy",
+    "weak": false
+   },
+   {
+    "name": "_pthread_condattr_init",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cpu_number_np",
+    "weak": false
+   },
+   {
+    "name": "_pthread_create",
+    "weak": false
+   },
+   {
+    "name": "_pthread_detach",
+    "weak": false
+   },
+   {
+    "name": "_pthread_equal",
+    "weak": false
+   },
+   {
+    "name": "_pthread_exit",
+    "weak": false
+   },
+   {
+    "name": "_pthread_get_stackaddr_np",
+    "weak": false
+   },
+   {
+    "name": "_pthread_get_stacksize_np",
+    "weak": false
+   },
+   {
+    "name": "_pthread_getschedparam",
+    "weak": false
+   },
+   {
+    "name": "_pthread_getspecific",
+    "weak": false
+   },
+   {
+    "name": "_pthread_join",
+    "weak": false
+   },
+   {
+    "name": "_pthread_key_create",
+    "weak": false
+   },
+   {
+    "name": "_pthread_key_delete",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mach_thread_np",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_destroy",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_init",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_lock",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_trylock",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_unlock",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutexattr_destroy",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutexattr_init",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutexattr_setpolicy_np",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutexattr_settype",
+    "weak": false
+   },
+   {
+    "name": "_pthread_once",
+    "weak": false
+   },
+   {
+    "name": "_pthread_rwlock_destroy",
+    "weak": false
+   },
+   {
+    "name": "_pthread_rwlock_init",
+    "weak": false
+   },
+   {
+    "name": "_pthread_rwlock_rdlock",
+    "weak": false
+   },
+   {
+    "name": "_pthread_rwlock_unlock",
+    "weak": false
+   },
+   {
+    "name": "_pthread_rwlock_wrlock",
+    "weak": false
+   },
+   {
+    "name": "_pthread_self",
+    "weak": false
+   },
+   {
+    "name": "_pthread_set_qos_class_self_np",
+    "weak": false
+   },
+   {
+    "name": "_pthread_setname_np",
+    "weak": false
+   },
+   {
+    "name": "_pthread_setschedparam",
+    "weak": false
+   },
+   {
+    "name": "_pthread_setspecific",
+    "weak": false
+   },
+   {
+    "name": "_pthread_sigmask",
+    "weak": false
+   },
+   {
+    "name": "_pthread_threadid_np",
+    "weak": false
+   },
+   {
+    "name": "_puts",
+    "weak": false
+   },
+   {
+    "name": "_pwrite",
+    "weak": false
+   },
+   {
+    "name": "_qsort",
+    "weak": false
+   },
+   {
+    "name": "_raise",
+    "weak": false
+   },
+   {
+    "name": "_rand",
+    "weak": false
+   },
+   {
+    "name": "_rand_r",
+    "weak": false
+   },
+   {
+    "name": "_random",
+    "weak": false
+   },
+   {
+    "name": "_read",
+    "weak": false
+   },
+   {
+    "name": "_readdir",
+    "weak": false
+   },
+   {
+    "name": "_readdir_r",
+    "weak": false
+   },
+   {
+    "name": "_readlink",
+    "weak": false
+   },
+   {
+    "name": "_realloc",
+    "weak": false
+   },
+   {
+    "name": "_realpath$DARWIN_EXTSN",
+    "weak": false
+   },
+   {
+    "name": "_recv",
+    "weak": false
+   },
+   {
+    "name": "_recvfrom",
+    "weak": false
+   },
+   {
+    "name": "_recvmsg",
+    "weak": false
+   },
+   {
+    "name": "_remainderf",
+    "weak": false
+   },
+   {
+    "name": "_remove",
+    "weak": false
+   },
+   {
+    "name": "_removexattr",
+    "weak": false
+   },
+   {
+    "name": "_remquof",
+    "weak": false
+   },
+   {
+    "name": "_rename",
+    "weak": false
+   },
+   {
+    "name": "_rewind",
+    "weak": false
+   },
+   {
+    "name": "_rmdir",
+    "weak": false
+   },
+   {
+    "name": "_round",
+    "weak": false
+   },
+   {
+    "name": "_sched_yield",
+    "weak": false
+   },
+   {
+    "name": "_select",
+    "weak": false
+   },
+   {
+    "name": "_semaphore_create",
+    "weak": false
+   },
+   {
+    "name": "_semaphore_destroy",
+    "weak": false
+   },
+   {
+    "name": "_semaphore_signal",
+    "weak": false
+   },
+   {
+    "name": "_semaphore_wait",
+    "weak": false
+   },
+   {
+    "name": "_send",
+    "weak": false
+   },
+   {
+    "name": "_sendmsg",
+    "weak": false
+   },
+   {
+    "name": "_sendto",
+    "weak": false
+   },
+   {
+    "name": "_setbuf",
+    "weak": false
+   },
+   {
+    "name": "_setjmp",
+    "weak": false
+   },
+   {
+    "name": "_setsockopt",
+    "weak": false
+   },
+   {
+    "name": "_setvbuf",
+    "weak": false
+   },
+   {
+    "name": "_setxattr",
+    "weak": false
+   },
+   {
+    "name": "_shutdown",
+    "weak": false
+   },
+   {
+    "name": "_sigaction",
+    "weak": false
+   },
+   {
+    "name": "_signal",
+    "weak": false
+   },
+   {
+    "name": "_sigprocmask",
+    "weak": false
+   },
+   {
+    "name": "_sin",
+    "weak": false
+   },
+   {
+    "name": "_sinf",
+    "weak": false
+   },
+   {
+    "name": "_sinh",
+    "weak": false
+   },
+   {
+    "name": "_sinhf",
+    "weak": false
+   },
+   {
+    "name": "_sleep",
+    "weak": false
+   },
+   {
+    "name": "_snprintf",
+    "weak": false
+   },
+   {
+    "name": "_socket",
+    "weak": false
+   },
+   {
+    "name": "_socketpair",
+    "weak": false
+   },
+   {
+    "name": "_sprintf",
+    "weak": false
+   },
+   {
+    "name": "_srand",
+    "weak": false
+   },
+   {
+    "name": "_srandomdev",
+    "weak": false
+   },
+   {
+    "name": "_sscanf",
+    "weak": false
+   },
+   {
+    "name": "_stat",
+    "weak": false
+   },
+   {
+    "name": "_statfs",
+    "weak": false
+   },
+   {
+    "name": "_strcasecmp",
+    "weak": false
+   },
+   {
+    "name": "_strcat",
+    "weak": false
+   },
+   {
+    "name": "_strchr",
+    "weak": false
+   },
+   {
+    "name": "_strcmp",
+    "weak": false
+   },
+   {
+    "name": "_strcpy",
+    "weak": false
+   },
+   {
+    "name": "_strcspn",
+    "weak": false
+   },
+   {
+    "name": "_strdup",
+    "weak": false
+   },
+   {
+    "name": "_strerror",
+    "weak": false
+   },
+   {
+    "name": "_strerror_r",
+    "weak": false
+   },
+   {
+    "name": "_strftime",
+    "weak": false
+   },
+   {
+    "name": "_strlen",
+    "weak": false
+   },
+   {
+    "name": "_strncasecmp",
+    "weak": false
+   },
+   {
+    "name": "_strncat",
+    "weak": false
+   },
+   {
+    "name": "_strncmp",
+    "weak": false
+   },
+   {
+    "name": "_strncpy",
+    "weak": false
+   },
+   {
+    "name": "_strnlen",
+    "weak": false
+   },
+   {
+    "name": "_strpbrk",
+    "weak": false
+   },
+   {
+    "name": "_strrchr",
+    "weak": false
+   },
+   {
+    "name": "_strspn",
+    "weak": false
+   },
+   {
+    "name": "_strstr",
+    "weak": false
+   },
+   {
+    "name": "_strtod",
+    "weak": false
+   },
+   {
+    "name": "_strtof",
+    "weak": false
+   },
+   {
+    "name": "_strtol",
+    "weak": false
+   },
+   {
+    "name": "_strtoll",
+    "weak": false
+   },
+   {
+    "name": "_strtoul",
+    "weak": false
+   },
+   {
+    "name": "_strtoull",
+    "weak": false
+   },
+   {
+    "name": "_sys_icache_invalidate",
+    "weak": false
+   },
+   {
+    "name": "_sysconf",
+    "weak": false
+   },
+   {
+    "name": "_sysctl",
+    "weak": false
+   },
+   {
+    "name": "_sysctlbyname",
+    "weak": false
+   },
+   {
+    "name": "_tan",
+    "weak": false
+   },
+   {
+    "name": "_tanf",
+    "weak": false
+   },
+   {
+    "name": "_tanh",
+    "weak": false
+   },
+   {
+    "name": "_tanhf",
+    "weak": false
+   },
+   {
+    "name": "_task_get_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_task_info",
+    "weak": false
+   },
+   {
+    "name": "_task_set_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_task_swap_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_task_threads",
+    "weak": false
+   },
+   {
+    "name": "_tcgetattr",
+    "weak": false
+   },
+   {
+    "name": "_tcsetattr",
+    "weak": false
+   },
+   {
+    "name": "_thread_get_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_thread_get_state",
+    "weak": false
+   },
+   {
+    "name": "_thread_info",
+    "weak": false
+   },
+   {
+    "name": "_thread_policy_get",
+    "weak": false
+   },
+   {
+    "name": "_thread_set_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_thread_suspend",
+    "weak": false
+   },
+   {
+    "name": "_thread_swap_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_time",
+    "weak": false
+   },
+   {
+    "name": "_uname",
+    "weak": false
+   },
+   {
+    "name": "_unlink",
+    "weak": false
+   },
+   {
+    "name": "_unw_get_proc_info",
+    "weak": false
+   },
+   {
+    "name": "_unw_get_proc_name",
+    "weak": false
+   },
+   {
+    "name": "_unw_get_reg",
+    "weak": false
+   },
+   {
+    "name": "_unw_getcontext",
+    "weak": false
+   },
+   {
+    "name": "_unw_init_local",
+    "weak": false
+   },
+   {
+    "name": "_unw_step",
+    "weak": false
+   },
+   {
+    "name": "_usleep",
+    "weak": false
+   },
+   {
+    "name": "_utime",
+    "weak": false
+   },
+   {
+    "name": "_utimes",
+    "weak": false
+   },
+   {
+    "name": "_uuid_generate",
+    "weak": false
+   },
+   {
+    "name": "_vfprintf",
+    "weak": false
+   },
+   {
+    "name": "_vm_allocate",
+    "weak": false
+   },
+   {
+    "name": "_vm_deallocate",
+    "weak": false
+   },
+   {
+    "name": "_vm_page_size",
+    "weak": false
+   },
+   {
+    "name": "_vm_read",
+    "weak": false
+   },
+   {
+    "name": "_vm_read_overwrite",
+    "weak": false
+   },
+   {
+    "name": "_vm_region_recurse_64",
+    "weak": false
+   },
+   {
+    "name": "_vm_remap",
+    "weak": false
+   },
+   {
+    "name": "_vsnprintf",
+    "weak": false
+   },
+   {
+    "name": "_wcslen",
+    "weak": false
+   },
+   {
+    "name": "_wmemcmp",
+    "weak": false
+   },
+   {
+    "name": "_write",
+    "weak": false
+   },
+   {
+    "name": "_writev",
+    "weak": false
+   },
+   {
+    "name": "dyld_stub_binder",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libc++.1.dylib": [
+   {
+    "name": "__ZNKSt10bad_typeid4whatEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt11logic_error4whatEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt13bad_exception4whatEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt13runtime_error4whatEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__110error_code7messageEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE2atEm",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4copyEPcmm",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4findEPKcmm",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4findEcm",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5rfindEcm",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEmmPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__119__shared_weak_count13__get_deleterERKSt9type_info",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__123__match_any_but_newlineIcE6__execERNS_7__stateIcEE",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__14__fs10filesystem4path13__parent_pathEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__14__fs10filesystem4path16__root_directoryEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__14__fs10filesystem4path16lexically_normalEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__14__fs10filesystem4path18lexically_relativeERKS2_",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__16locale4nameEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__16locale9has_facetERNS0_2idE",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__16locale9use_facetERNS0_2idE",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__16localeeqERKS0_",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__18ios_base6getlocEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__18numpunctIcE11do_truenameEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__18numpunctIcE12do_falsenameEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__18time_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE3getES4_S4_RNS_8ios_baseERjP2tmPKcSC_",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt3__18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE3putES4_RNS_8ios_baseEcPK2tmPKcSC_",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt8bad_cast4whatEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt9bad_alloc4whatEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNKSt9exception4whatEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt10bad_typeidD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt11logic_errorC1EPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt11logic_errorC1ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt11logic_errorC2EPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt11logic_errorC2ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt11logic_errorC2ERKS_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt11logic_errorD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt11logic_errorD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt11range_errorD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt12domain_errorD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt12length_errorD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt12length_errorD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt12out_of_rangeD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt12out_of_rangeD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13bad_exceptionD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13exception_ptrC1ERKS_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13exception_ptrD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13exception_ptraSERKS_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13runtime_errorC1EPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13runtime_errorC1ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13runtime_errorC1ERKS_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13runtime_errorC2EPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13runtime_errorC2ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13runtime_errorC2ERKS_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13runtime_errorD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt13runtime_errorD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt14overflow_errorD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt15underflow_errorD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt16invalid_argumentD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt16invalid_argumentD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt19bad_optional_accessD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt20bad_array_new_lengthC1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt20bad_array_new_lengthD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__111__call_onceERVmPvPFvS2_E",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__111regex_errorC1ENS_15regex_constants10error_typeE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__111regex_errorD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__111this_thread9sleep_forERKNS_6chrono8durationIxNS_5ratioILl1ELl1000000000EEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112__get_sp_mutEPKv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112__next_primeEm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112bad_weak_ptrD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE2atEm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5eraseEmm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendERKS5_mm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEmc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKcm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertENS_11__wrap_iterIPKcEEc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKcm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6resizeEmc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7replaceEmmPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7replaceEmmPKcm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7reserveEm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__grow_byEmmmmmm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2ERKS5_mmRKS4_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSERKS5_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSEc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE6appendEPKwm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE9__grow_byEmmmmmm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE9push_backEw",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEEC2ERKS5_mmRKS4_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112future_errorC1ENS_10error_codeE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112future_errorD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112placeholders2_1E",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__112placeholders2_2E",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE3getEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE4peekEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE4readEPcl",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5seekgENS_4fposI11__mbstate_tEE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5seekgExNS_8ios_base7seekdirE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5tellgEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE6ignoreEli",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE6sentryC1ERS3_b",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE7getlineEPclc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED0Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERb",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERd",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERf",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERi",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERj",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERx",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERy",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE3putEc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE5flushEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE5writeEPKcl",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryC1ERS3_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED0Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEPKv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEPNS_15basic_streambufIcS2_EE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEb",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEd",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEf",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEi",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEj",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEl",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEs",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEt",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEx",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEy",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113basic_ostreamIwNS_11char_traitsIwEEE5writeEPKwl",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113random_deviceC1ERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113random_deviceD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__113random_deviceclEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__114__shared_countD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115__get_classnameEPKcb",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115__thread_structC1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115__thread_structD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE4swapERS3_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE4syncEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5imbueERKNS_6localeE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5uflowEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6setbufEPcl",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsgetnEPcl",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsputnEPKcl",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE7seekoffExNS_8ios_base7seekdirEj",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE7seekposENS_4fposI11__mbstate_tEEj",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE8overflowEi",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9pbackfailEi",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9showmanycEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9underflowEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115future_categoryEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__115system_categoryEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__117__assoc_sub_state13set_exceptionESt13exception_ptr",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__117__assoc_sub_state16__on_zero_sharedEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__117__assoc_sub_state4waitEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__117__assoc_sub_state9set_valueEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__117iostream_categoryEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__118condition_variable10notify_allEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__118condition_variable10notify_oneEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__118condition_variable15__do_timed_waitERNS_11unique_lockINS_5mutexEEENS_6chrono10time_pointINS5_12system_clockENS5_8durationIxNS_5ratioILl1ELl1000000000EEEEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__118condition_variableD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__119__shared_weak_count14__release_weakEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__119__shared_weak_count4lockEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__119__shared_weak_countD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__119__thread_local_dataEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__120__get_collation_nameEPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__120__throw_system_errorEiPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__14__fs10filesystem7__spaceERKNS1_4pathEPNS_10error_codeE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__14cerrE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__14coutE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__14stodERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__14stofERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__14stoiERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__14stolERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__15ctypeIcE2idE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__15mutex4lockEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__15mutex6unlockEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__15mutexD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__15stollERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__15stoulERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16__sortIRNS_6__lessIccEEPcEEvT0_S5_T_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16__sortIRNS_6__lessIddEEPdEEvT0_S5_T_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16__sortIRNS_6__lessIffEEPfEEvT0_S5_T_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16__sortIRNS_6__lessIiiEEPiEEvT0_S5_T_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16__sortIRNS_6__lessIjjEEPjEEvT0_S5_T_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16__sortIRNS_6__lessImmEEPmEEvT0_S5_T_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16__sortIRNS_6__lessIttEEPtEEvT0_S5_T_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16__sortIRNS_6__lessIxxEEPxEEvT0_S5_T_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16__sortIRNS_6__lessIyyEEPyEEvT0_S5_T_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16chrono12steady_clock3nowEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16chrono12system_clock11from_time_tEl",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16chrono12system_clock3nowEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16chrono12system_clock9to_time_tERKNS0_10time_pointIS1_NS0_8durationIxNS_5ratioILl1ELl1000000EEEEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16futureIvE3getEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16futureIvEC1EPNS_17__assoc_sub_stateE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16futureIvED1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16locale14__install_ctorERKS0_PNS0_5facetEl",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16locale2id5__getEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16locale5facet16__on_zero_sharedEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16locale5facetD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16locale7classicEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16localeC1ERKS0_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16localeC1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16localeD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16localeaSERKS0_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16stoullERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16thread20hardware_concurrencyEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16thread4joinEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16thread6detachEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__16threadD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__17codecvtIDic11__mbstate_tE2idE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__17codecvtIcc11__mbstate_tE2idE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__17codecvtIwc11__mbstate_tE2idE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__17codecvtIwc11__mbstate_tEC2Em",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__17codecvtIwc11__mbstate_tED2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__17collateIcE2idE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__17num_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18__sp_mut4lockEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18__sp_mut6unlockEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18ios_base33__set_badbit_and_consider_rethrowEv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18ios_base4initEPv",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18ios_base4moveERS0_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18ios_base4swapERS0_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18ios_base5clearEj",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18ios_base5imbueERKNS_6localeE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18ios_base7failureC1ERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEERKNS_10error_codeE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18ios_base7failureD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18ios_base7failureD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18numpunctIcE2idE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18numpunctIcEC2Em",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18numpunctIcED2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18time_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__19basic_iosIcNS_11char_traitsIcEEED2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__19to_stringEd",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__19to_stringEf",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__19to_stringEi",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__19to_stringEj",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__19to_stringEl",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__19to_stringEm",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__19to_stringEx",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__19to_stringEy",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt3__1plIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEPKS6_RKS9_",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt8bad_castC1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt8bad_castC2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt8bad_castD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt8bad_castD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt9bad_allocC1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt9bad_allocC2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt9bad_allocD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt9bad_allocD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt9exceptionD1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZNSt9exceptionD2Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZSt13get_terminatev",
+    "weak": false
+   },
+   {
+    "name": "__ZSt13set_terminatePFvvE",
+    "weak": false
+   },
+   {
+    "name": "__ZSt14get_unexpectedv",
+    "weak": false
+   },
+   {
+    "name": "__ZSt17__throw_bad_allocv",
+    "weak": false
+   },
+   {
+    "name": "__ZSt17current_exceptionv",
+    "weak": false
+   },
+   {
+    "name": "__ZSt17rethrow_exceptionSt13exception_ptr",
+    "weak": false
+   },
+   {
+    "name": "__ZSt7nothrow",
+    "weak": false
+   },
+   {
+    "name": "__ZSt9terminatev",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__111regex_errorE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__112bad_weak_ptrE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__112future_errorE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__113basic_istreamIcNS_11char_traitsIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__114basic_iostreamIcNS_11char_traitsIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__115basic_streambufIcNS_11char_traitsIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__117__assoc_sub_stateE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__119__shared_weak_countE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__16locale5facetE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__17codecvtIwc11__mbstate_tEE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__18ios_base7failureE",
+    "weak": false
+   },
+   {
+    "name": "__ZTINSt3__18numpunctIcEE",
+    "weak": false
+   },
+   {
+    "name": "__ZTIPKc",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt10bad_typeid",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt11logic_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt11range_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt12domain_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt12length_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt12out_of_range",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt13bad_exception",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt13runtime_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt14overflow_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt15underflow_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt16invalid_argument",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt18bad_variant_access",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt19bad_optional_access",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt20bad_array_new_length",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt8bad_cast",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt9bad_alloc",
+    "weak": false
+   },
+   {
+    "name": "__ZTISt9exception",
+    "weak": false
+   },
+   {
+    "name": "__ZTIf",
+    "weak": false
+   },
+   {
+    "name": "__ZTIi",
+    "weak": false
+   },
+   {
+    "name": "__ZTIj",
+    "weak": false
+   },
+   {
+    "name": "__ZTIs",
+    "weak": false
+   },
+   {
+    "name": "__ZTIt",
+    "weak": false
+   },
+   {
+    "name": "__ZTIx",
+    "weak": false
+   },
+   {
+    "name": "__ZTIy",
+    "weak": false
+   },
+   {
+    "name": "__ZTVN10__cxxabiv117__class_type_infoE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVN10__cxxabiv119__pointer_type_infoE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVN10__cxxabiv120__function_type_infoE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVN10__cxxabiv120__si_class_type_infoE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVN10__cxxabiv121__vmi_class_type_infoE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVNSt3__112bad_weak_ptrE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVNSt3__112future_errorE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVNSt3__112system_errorE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVNSt3__113basic_istreamIcNS_11char_traitsIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVNSt3__115basic_streambufIcNS_11char_traitsIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVNSt3__117__assoc_sub_stateE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVNSt3__17num_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVNSt3__18ios_base7failureE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVNSt3__19basic_iosIcNS_11char_traitsIcEEEE",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt10bad_typeid",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt11range_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt12domain_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt12length_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt12out_of_range",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt13bad_exception",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt14overflow_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt15underflow_error",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt16invalid_argument",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt18bad_variant_access",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt19bad_optional_access",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt8bad_cast",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt9bad_alloc",
+    "weak": false
+   },
+   {
+    "name": "__ZTVSt9exception",
+    "weak": false
+   },
+   {
+    "name": "__ZThn16_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZThn16_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZTv0_n24_NSt3__113basic_istreamIcNS_11char_traitsIcEEED0Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZTv0_n24_NSt3__113basic_istreamIcNS_11char_traitsIcEEED1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZTv0_n24_NSt3__113basic_ostreamIcNS_11char_traitsIcEEED0Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZTv0_n24_NSt3__113basic_ostreamIcNS_11char_traitsIcEEED1Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZTv0_n24_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev",
+    "weak": false
+   },
+   {
+    "name": "__ZTv0_n24_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev",
+    "weak": false
+   },
+   {
+    "name": "___cxa_allocate_exception",
+    "weak": false
+   },
+   {
+    "name": "___cxa_bad_cast",
+    "weak": false
+   },
+   {
+    "name": "___cxa_bad_typeid",
+    "weak": false
+   },
+   {
+    "name": "___cxa_begin_catch",
+    "weak": false
+   },
+   {
+    "name": "___cxa_demangle",
+    "weak": false
+   },
+   {
+    "name": "___cxa_end_catch",
+    "weak": false
+   },
+   {
+    "name": "___cxa_free_exception",
+    "weak": false
+   },
+   {
+    "name": "___cxa_get_exception_ptr",
+    "weak": false
+   },
+   {
+    "name": "___cxa_get_globals_fast",
+    "weak": false
+   },
+   {
+    "name": "___cxa_pure_virtual",
+    "weak": false
+   },
+   {
+    "name": "___cxa_rethrow",
+    "weak": false
+   },
+   {
+    "name": "___cxa_throw",
+    "weak": false
+   },
+   {
+    "name": "___dynamic_cast",
+    "weak": false
+   },
+   {
+    "name": "___gxx_personality_v0",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libhvf.dylib": [
+   {
+    "name": "_HVF_clear_part_cache",
+    "weak": true
+   },
+   {
+    "name": "_HVF_close_part_renderer",
+    "weak": true
+   },
+   {
+    "name": "_HVF_open_part_renderer",
+    "weak": true
+   },
+   {
+    "name": "_HVF_part_renderer_storage_size",
+    "weak": true
+   },
+   {
+    "name": "_HVF_render_current_part",
+    "weak": true
+   },
+   {
+    "name": "_HVF_render_part_axis_count",
+    "weak": true
+   },
+   {
+    "name": "_HVF_set_axis_value",
+    "weak": true
+   },
+   {
+    "name": "_HVF_set_render_part",
+    "weak": true
+   }
+  ],
+  "/usr/lib/libobjc.A.dylib": [
+   {
+    "name": "_OBJC_CLASS_$_NSObject",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_EHTYPE_id",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_NSObject",
+    "weak": false
+   },
+   {
+    "name": "___objc_personality_v0",
+    "weak": false
+   },
+   {
+    "name": "__objc_empty_cache",
+    "weak": false
+   },
+   {
+    "name": "_class_copyMethodList",
+    "weak": false
+   },
+   {
+    "name": "_class_copyPropertyList",
+    "weak": false
+   },
+   {
+    "name": "_method_getImplementation",
+    "weak": false
+   },
+   {
+    "name": "_objc_alloc",
+    "weak": false
+   },
+   {
+    "name": "_objc_alloc_init",
+    "weak": false
+   },
+   {
+    "name": "_objc_autorelease",
+    "weak": false
+   },
+   {
+    "name": "_objc_autoreleaseReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_begin_catch",
+    "weak": false
+   },
+   {
+    "name": "_objc_copyCppObjectAtomic",
+    "weak": false
+   },
+   {
+    "name": "_objc_copyWeak",
+    "weak": false
+   },
+   {
+    "name": "_objc_destroyWeak",
+    "weak": false
+   },
+   {
+    "name": "_objc_ehtype_vtable",
+    "weak": false
+   },
+   {
+    "name": "_objc_end_catch",
+    "weak": false
+   },
+   {
+    "name": "_objc_enumerationMutation",
+    "weak": false
+   },
+   {
+    "name": "_objc_exception_rethrow",
+    "weak": false
+   },
+   {
+    "name": "_objc_exception_throw",
+    "weak": false
+   },
+   {
+    "name": "_objc_getAssociatedObject",
+    "weak": false
+   },
+   {
+    "name": "_objc_getProperty",
+    "weak": false
+   },
+   {
+    "name": "_objc_initWeak",
+    "weak": false
+   },
+   {
+    "name": "_objc_loadWeakRetained",
+    "weak": false
+   },
+   {
+    "name": "_objc_moveWeak",
+    "weak": false
+   },
+   {
+    "name": "_objc_msgSend",
+    "weak": false
+   },
+   {
+    "name": "_objc_msgSendSuper2",
+    "weak": false
+   },
+   {
+    "name": "_objc_opt_class",
+    "weak": false
+   },
+   {
+    "name": "_objc_opt_isKindOfClass",
+    "weak": false
+   },
+   {
+    "name": "_objc_opt_new",
+    "weak": false
+   },
+   {
+    "name": "_objc_opt_respondsToSelector",
+    "weak": false
+   },
+   {
+    "name": "_objc_release",
+    "weak": false
+   },
+   {
+    "name": "_objc_retain",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainAutorelease",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainAutoreleaseReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainAutoreleasedReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainBlock",
+    "weak": false
+   },
+   {
+    "name": "_objc_setAssociatedObject",
+    "weak": false
+   },
+   {
+    "name": "_objc_setExceptionPreprocessor",
+    "weak": false
+   },
+   {
+    "name": "_objc_setProperty_atomic",
+    "weak": false
+   },
+   {
+    "name": "_objc_setProperty_atomic_copy",
+    "weak": false
+   },
+   {
+    "name": "_objc_setProperty_nonatomic_copy",
+    "weak": false
+   },
+   {
+    "name": "_objc_storeStrong",
+    "weak": false
+   },
+   {
+    "name": "_objc_storeWeak",
+    "weak": false
+   },
+   {
+    "name": "_objc_sync_enter",
+    "weak": false
+   },
+   {
+    "name": "_objc_sync_exit",
+    "weak": false
+   },
+   {
+    "name": "_objc_unsafeClaimAutoreleasedReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_object_getClass",
+    "weak": false
+   },
+   {
+    "name": "_object_getClassName",
+    "weak": false
+   },
+   {
+    "name": "_property_getAttributes",
+    "weak": false
+   },
+   {
+    "name": "_property_getName",
+    "weak": false
+   }
+  ],
+  "<ordinal -2>": [
+   {
+    "name": "___MIG_check__Request__exception_raise_state_identity_t",
+    "weak": false
+   },
+   {
+    "name": "___MIG_check__Request__exception_raise_state_t",
+    "weak": false
+   },
+   {
+    "name": "___MIG_check__Request__mach_exception_raise_state_identity_t",
+    "weak": false
+   },
+   {
+    "name": "___MIG_check__Request__mach_exception_raise_state_t",
+    "weak": false
+   }
+  ],
+  "<ordinal 0>": [
+   {
+    "name": "__ZGVZN13opentelemetry2v15trace10TraceState10GetDefaultEvE2ts",
+    "weak": true
+   },
+   {
+    "name": "__ZGVZN13opentelemetry2v17context14RuntimeContext10GetStorageEvE7context",
+    "weak": true
+   },
+   {
+    "name": "__ZGVZN13opentelemetry2v17context25ThreadLocalContextStorage8GetStackEvE6stack_",
+    "weak": true
+   },
+   {
+    "name": "__ZN3RBX22WidgetDataProtocolCore12ProtocolNameE",
+    "weak": true
+   },
+   {
+    "name": "__ZN3RBX22WidgetDataProtocolCore21RecentlyPlayedRequestE",
+    "weak": true
+   },
+   {
+    "name": "__ZN3RBX22WidgetDataProtocolCore29RecentlyPlayedRequestCompleteE",
+    "weak": true
+   },
+   {
+    "name": "__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIPKcEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE",
+    "weak": true
+   },
+   {
+    "name": "__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIbEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE",
+    "weak": true
+   },
+   {
+    "name": "__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIdEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE",
+    "weak": true
+   },
+   {
+    "name": "__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIxEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE",
+    "weak": true
+   },
+   {
+    "name": "__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIyEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE",
+    "weak": true
+   },
+   {
+    "name": "__ZTISt11range_error",
+    "weak": true
+   },
+   {
+    "name": "__ZTISt12domain_error",
+    "weak": true
+   },
+   {
+    "name": "__ZTISt12length_error",
+    "weak": true
+   },
+   {
+    "name": "__ZTISt12out_of_range",
+    "weak": true
+   },
+   {
+    "name": "__ZTISt14overflow_error",
+    "weak": true
+   },
+   {
+    "name": "__ZTISt15underflow_error",
+    "weak": true
+   },
+   {
+    "name": "__ZTISt16invalid_argument",
+    "weak": true
+   },
+   {
+    "name": "__ZZN13opentelemetry2v15trace10TraceState10GetDefaultEvE2ts",
+    "weak": true
+   },
+   {
+    "name": "__ZZN13opentelemetry2v17context14RuntimeContext10GetStorageEvE7context",
+    "weak": true
+   },
+   {
+    "name": "__ZZN13opentelemetry2v17context25ThreadLocalContextStorage8GetStackEvE6stack_",
+    "weak": true
+   }
+  ]
+ },
+ "objc_classes": {
+  "/System/Library/Frameworks/AVFoundation.framework/AVFoundation": [
+   "AVAudioSession",
+   "AVCaptureDevice",
+   "AVCaptureDeviceDiscoverySession",
+   "AVCaptureDeviceInput",
+   "AVCaptureSession",
+   "AVCaptureVideoDataOutput"
+  ],
+  "/System/Library/Frameworks/CallKit.framework/CallKit": [
+   "CXCallController",
+   "CXCallUpdate",
+   "CXEndCallAction",
+   "CXHandle",
+   "CXProvider",
+   "CXProviderConfiguration",
+   "CXSetMutedCallAction",
+   "CXStartCallAction",
+   "CXTransaction"
+  ],
+  "/System/Library/Frameworks/Contacts.framework/Contacts": [
+   "CNContactFetchRequest",
+   "CNContactStore"
+  ],
+  "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
+   "NSArray",
+   "NSData",
+   "NSDate",
+   "NSDictionary",
+   "NSException",
+   "NSInputStream",
+   "NSLocale",
+   "NSMutableArray",
+   "NSMutableData",
+   "NSMutableDictionary",
+   "NSMutableOrderedSet",
+   "NSMutableSet",
+   "NSNull",
+   "NSOutputStream",
+   "NSRunLoop",
+   "NSSet",
+   "NSTimeZone",
+   "NSTimer",
+   "NSURL",
+   "NSUserDefaults"
+  ],
+  "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics": [
+   "CHHapticDynamicParameter",
+   "CHHapticEngine",
+   "CHHapticEvent",
+   "CHHapticEventParameter",
+   "CHHapticPattern"
+  ],
+  "/System/Library/Frameworks/CoreML.framework/CoreML": [
+   "MLFeatureValue",
+   "MLModel",
+   "MLModelConfiguration",
+   "MLMultiArray",
+   "MLPredictionOptions"
+  ],
+  "/System/Library/Frameworks/CoreMotion.framework/CoreMotion": [
+   "CMMotionManager"
+  ],
+  "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck": [
+   "DCDevice"
+  ],
+  "/System/Library/Frameworks/Foundation.framework/Foundation": [
+   "NSAssertionHandler",
+   "NSAttributedString",
+   "NSAutoreleasePool",
+   "NSBundle",
+   "NSCharacterSet",
+   "NSCondition",
+   "NSDateFormatter",
+   "NSDecimalNumber",
+   "NSError",
+   "NSFileManager",
+   "NSHTTPCookie",
+   "NSHTTPCookieStorage",
+   "NSHTTPURLResponse",
+   "NSJSONSerialization",
+   "NSKeyedArchiver",
+   "NSKeyedUnarchiver",
+   "NSLayoutConstraint",
+   "NSLock",
+   "NSMutableAttributedString",
+   "NSMutableString",
+   "NSMutableURLRequest",
+   "NSNotificationCenter",
+   "NSNumber",
+   "NSOperationQueue",
+   "NSProcessInfo",
+   "NSScanner",
+   "NSString",
+   "NSThread",
+   "NSURLConnection",
+   "NSURLRequest",
+   "NSURLSession",
+   "NSUUID",
+   "NSValue"
+  ],
+  "/System/Library/Frameworks/GameController.framework/GameController": [
+   "GCController",
+   "GCDualSenseGamepad",
+   "GCDualShockGamepad",
+   "GCMouse",
+   "GCXboxGamepad"
+  ],
+  "/System/Library/Frameworks/Metal.framework/Metal": [
+   "MTLCaptureDescriptor",
+   "MTLCaptureManager",
+   "MTLCompileOptions",
+   "MTLDepthStencilDescriptor",
+   "MTLRenderPassDescriptor",
+   "MTLRenderPipelineDescriptor",
+   "MTLSamplerDescriptor",
+   "MTLTextureDescriptor",
+   "MTLVertexDescriptor"
+  ],
+  "/System/Library/Frameworks/Photos.framework/Photos": [
+   "PHPhotoLibrary"
+  ],
+  "/System/Library/Frameworks/QuartzCore.framework/QuartzCore": [
+   "CAEAGLLayer",
+   "CAMetalLayer"
+  ],
+  "/System/Library/Frameworks/UIKit.framework/UIKit": [
+   "NSMutableParagraphStyle",
+   "UIAlertAction",
+   "UIAlertController",
+   "UIApplication",
+   "UIButton",
+   "UIColor",
+   "UIDevice",
+   "UIFont",
+   "UIGraphicsImageRenderer",
+   "UIGraphicsImageRendererFormat",
+   "UIHoverGestureRecognizer",
+   "UIImage",
+   "UIImagePickerController",
+   "UIImageView",
+   "UIKeyCommand",
+   "UILongPressGestureRecognizer",
+   "UINavigationController",
+   "UIPanGestureRecognizer",
+   "UIPinchGestureRecognizer",
+   "UIPointerInteraction",
+   "UIPointerStyle",
+   "UIProgressView",
+   "UIRotationGestureRecognizer",
+   "UIScreen",
+   "UIScrollView",
+   "UISwipeGestureRecognizer",
+   "UITapGestureRecognizer",
+   "UITextField",
+   "UITextView",
+   "UIView",
+   "UIViewController",
+   "UIWindowScene"
+  ],
+  "/usr/lib/libobjc.A.dylib": [
+   "NSObject"
+  ]
+ },
+ "selrefs": [
+  "CGColor",
+  "CGContext",
+  "CGImage",
+  "CGRectValue",
+  "IOBufferDuration",
+  "IdentityProtocolImpl",
+  "JSONFromURLWithString:method:params:orBodyData:headers:completion:",
+  "JSONFromURLWithString:method:params:orBodyString:completion:",
+  "JSONFromURLWithString:method:params:orBodyString:headers:completion:",
+  "JSONObjectWithData:options:error:",
+  "PNGDataWithActions:",
+  "SMSProtocolImpl",
+  "URLByAppendingPathComponent:",
+  "URLByAppendingPathComponent:isDirectory:",
+  "URLForDirectory:inDomain:appropriateForURL:create:error:",
+  "URLForResource:withExtension:",
+  "URLQueryAllowedCharacterSet",
+  "URLWithString:",
+  "UTF8String",
+  "UUID",
+  "UUIDString",
+  "__NSDictionaryFromNSArray:",
+  "__cacheKeyboard",
+  "__createDictionariesForKeyPath:inDictionary:",
+  "__customGetValue:forProperty:",
+  "__customSetValue:forProperty:",
+  "__doesDictionary:matchModelWithKeyMapper:error:",
+  "__importDictionary:withKeyMapper:validation:error:",
+  "__inspectProperties",
+  "__isJSONModelSubClass:",
+  "__keyMapper",
+  "__mapString:withKeyMapper:",
+  "__properties__",
+  "__requiredPropertyNames",
+  "__reverseTransform:forProperty:",
+  "__rpcRequestWithObject:completion:",
+  "__setup__",
+  "__transform:forProperty:error:",
+  "a",
+  "abbreviation",
+  "abbreviationForDate:",
+  "absoluteString",
+  "acquireProof:request:",
+  "actionWithTitle:style:handler:",
+  "activateConstraints:",
+  "activationCount",
+  "activeCallId",
+  "activePickerVC",
+  "adConsentResolved:",
+  "adConsentResolvedCallback",
+  "addAction:",
+  "addCompletedHandler:",
+  "addGestureRecognizer:",
+  "addInput:",
+  "addInteraction:",
+  "addObject:",
+  "addObjectsFromArray:",
+  "addObserver:forKeyPath:options:context:",
+  "addObserver:selector:name:object:",
+  "addObserverForName:object:queue:usingBlock:",
+  "addOutput:",
+  "addPresentedHandler:",
+  "addScheduledHandler:",
+  "addSubview:",
+  "addTarget:action:forControlEvents:",
+  "addToRunLoop:forMode:",
+  "alertControllerWithTitle:message:preferredStyle:",
+  "allKeys",
+  "allObjects",
+  "allValues",
+  "alphanumericCharacterSet",
+  "analyticsEventReporterDelegate",
+  "appDidBecomeActive:",
+  "appStoreDelegate",
+  "appendFormat:",
+  "apple",
+  "applicationState",
+  "archivedDataWithRootObject:requiringSecureCoding:error:",
+  "argumentBuffersSupport",
+  "array",
+  "arrayOfModelsFromData:error:",
+  "arrayOfModelsFromDictionaries:error:",
+  "arrayWithArray:",
+  "arrayWithCapacity:",
+  "arrayWithObjects:count:",
+  "asyncPrintToNativeConsole:",
+  "attach:generation:",
+  "attitude",
+  "attributes",
+  "audioSession:audioUnitStartFailedWithError:",
+  "audioSession:didChangeCanPlayOrRecord:",
+  "audioSession:didChangeOutputVolume:",
+  "audioSession:didDetectPlayoutGlitch:",
+  "audioSession:didSetActive:",
+  "audioSession:failedToSetActive:error:",
+  "audioSession:willSetActive:",
+  "audioSessionDidBeginInterruption:",
+  "audioSessionDidChangeRoute:reason:previousRoute:",
+  "audioSessionDidEndInterruption:shouldResumeSession:",
+  "audioSessionDidStartPlayOrRecord:",
+  "audioSessionDidStopPlayOrRecord:",
+  "audioSessionMediaServerReset:",
+  "audioSessionMediaServerTerminated:",
+  "authorizationStatus",
+  "authorizationStatusForAccessLevel:",
+  "authorizationStatusForEntityType:",
+  "authorizationStatusForMediaType:",
+  "availableVideoCVPixelFormatTypes",
+  "b",
+  "backFaceStencil",
+  "base64EncodedStringWithOptions:",
+  "baseMapper:withModelToJSONExceptions:",
+  "baseURLString",
+  "basicGestureConfig:",
+  "batteryLevel",
+  "batteryState",
+  "becomeFirstResponder",
+  "beginConfiguration",
+  "beginGeneratingDeviceOrientationNotifications",
+  "beginInGamePurchaseFlow:",
+  "beginInGamePurchaseFlowWithPayload:payload:",
+  "beginReadOnlySelectionInTextView:atCharacterIndex:",
+  "beginScope",
+  "beginWebRTCSession:",
+  "beginningOfDocument",
+  "blackColor",
+  "blitCommandEncoder",
+  "blueColor",
+  "boolForKey:",
+  "boolValue",
+  "bottomAnchor",
+  "bounds",
+  "brightness",
+  "bringSubviewToFront:",
+  "broadcast",
+  "broadcastConnection:ofState:andSequenceNumber:",
+  "broadcastEventWithNamespace:",
+  "browserStartUrl",
+  "buffer",
+  "bundleForClass:",
+  "bundleIdentifier",
+  "bundlePath",
+  "bundleWithIdentifier:",
+  "buttonA",
+  "buttonB",
+  "buttonMask",
+  "buttonMenu",
+  "buttonOptions",
+  "buttonWithType:",
+  "buttonX",
+  "buttonY",
+  "bytes",
+  "cStringUsingEncoding:",
+  "callCancelBlockWithFailureBlock:",
+  "callController",
+  "callId",
+  "callImmediatelyIfAvailable",
+  "callStackReturnAddresses",
+  "callUUID",
+  "callback",
+  "calleeCombinedName",
+  "calleeId",
+  "callerCombinedName",
+  "callerId",
+  "cameraAnchorVC",
+  "cameraOverlayView",
+  "cameraOverlayView:didCalculatePreviewTransform:",
+  "cameraOverlayViewDidTapCancelButton:",
+  "cameraOverlayViewDidTapTakePictureButton:",
+  "cameraOverlayViewDidTapUsePhotoButton:withImage:",
+  "cameraPreviewView",
+  "canAddInput:",
+  "canAddOutput:",
+  "canGetPhoneNumber",
+  "canGetSMSOTP",
+  "canMakePurchase",
+  "canOpenURL:",
+  "canPlayOrRecord",
+  "canSendSMS",
+  "canSwitchToSettingApp:",
+  "cancel:",
+  "cancelButton",
+  "capabilitiesForHardware",
+  "captureDevices",
+  "captureSession",
+  "capturedImage",
+  "capturer:didCaptureVideoFrame:",
+  "caseInsensitiveCompare:",
+  "category",
+  "categoryOptions",
+  "centerXAnchor",
+  "characterAtIndex:",
+  "characterSetWithCharactersInString:",
+  "checkLock:",
+  "checkPermission:",
+  "checkPermissionForAudioVisual:",
+  "checkPermissionForContactsAccess",
+  "checkPermissionForPostNotifications:",
+  "checkPermissionForWriteMediaStore",
+  "checkPermissions:missingPermissions:",
+  "checkShouldShowPostNotificationsUpsell:hiddenPermissions:",
+  "checkShouldShowRequestPermissionRationale:hiddenPermissions:",
+  "class",
+  "classByResolvingClusterClasses:",
+  "classForCollectionProperty:",
+  "cleanup",
+  "cleanupAd",
+  "clearColor",
+  "close",
+  "code",
+  "colorAttachments",
+  "colorTokens",
+  "colorWithRed:green:blue:alpha:",
+  "commandBufferWithUnretainedReferences",
+  "commit",
+  "commitConfiguration",
+  "compare:",
+  "completionHandlers",
+  "componentsJoinedByString:",
+  "componentsSeparatedByString:",
+  "computeCommandEncoder",
+  "cond",
+  "configurationErrorWithDescription:",
+  "configureWebRTCSession:",
+  "confirmDisplayRefreshRateForTarget:generation:",
+  "connectedScenes",
+  "connections",
+  "conns",
+  "constraintEqualToAnchor:",
+  "constraintEqualToAnchor:multiplier:",
+  "consumeFramePresentIntervals",
+  "contactsProtocolImpl",
+  "containerURLForSecurityApplicationGroupIdentifier:",
+  "containsObject:",
+  "contentScaleFactor",
+  "contentSize",
+  "contentTypeForRequestString:",
+  "contentVerticalAlignment",
+  "contents",
+  "contentsOfDirectoryAtPath:error:",
+  "controllers",
+  "convertPoint:fromView:",
+  "convertRect:fromCoordinateSpace:",
+  "convertRect:toCoordinateSpace:",
+  "convertValue:",
+  "cookies",
+  "cookiesForURL:",
+  "cookiesWithResponseHeaderFields:forURL:",
+  "coordinateSpace",
+  "copy",
+  "copyFromBuffer:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:",
+  "copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toBuffer:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:",
+  "copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:",
+  "copyFromTexture:sourceSlice:sourceLevel:toTexture:destinationSlice:destinationLevel:sliceCount:levelCount:",
+  "count",
+  "countByEnumeratingWithState:objects:count:",
+  "createAdvancedPlayerWithPattern:error:",
+  "createDirectoryAtPath:withIntermediateDirectories:attributes:error:",
+  "createDirectoryAtURL:withIntermediateDirectories:attributes:error:",
+  "createErrorWithCode:description:",
+  "createPermissionStatusTelemetryData:",
+  "createdUtc",
+  "cropAndScaleARGBTo:",
+  "cropAndScaleNV12To:withTempBuffer:",
+  "cropAndScaleTo:withTempBuffer:",
+  "cropAndScaleWith:offsetY:cropWidth:cropHeight:scaleWidth:scaleHeight:",
+  "cropX",
+  "cropY",
+  "current",
+  "currentAllocatedSize",
+  "currentDevice",
+  "currentHandler",
+  "currentLocale",
+  "currentRoute",
+  "currentTextBoxWasChangedFromLua:",
+  "currentThread",
+  "currentTitle",
+  "currentVoIPCall",
+  "customGetter",
+  "customSetters",
+  "dark",
+  "dataPointer",
+  "dataTaskWithRequest:completionHandler:",
+  "dataType",
+  "dataU",
+  "dataUsingEncoding:",
+  "dataV",
+  "dataWithContentsOfFile:",
+  "dataWithContentsOfURL:",
+  "dataWithJSONObject:options:error:",
+  "dataWithLength:",
+  "dataY",
+  "date",
+  "dateByAddingTimeInterval:",
+  "dateFromString:",
+  "dateWithTimeIntervalSince1970:",
+  "dateWithTimeIntervalSinceNow:",
+  "dealloc",
+  "decimalDigitCharacterSet",
+  "decimalNumberWithString:",
+  "decodeObjectForKey:",
+  "decodeObjectOfClass:forKey:",
+  "decrementActivationCount",
+  "defaultCStringEncoding",
+  "defaultCaptureScope",
+  "defaultCenter",
+  "defaultFormat",
+  "defaultManager",
+  "defaultTextField",
+  "delegate",
+  "delegates",
+  "deleteCookie:",
+  "depthAttachment",
+  "description",
+  "deserializeMessageParams:",
+  "destroyInterstitialAd:",
+  "detach:",
+  "detachCurrentTarget",
+  "detachNewThreadSelector:toTarget:withObject:",
+  "detectUnseededURL:",
+  "device",
+  "deviceInputWithDevice:error:",
+  "deviceMotion",
+  "deviceOrientationDidChange:",
+  "devicePositionForSampleBuffer:",
+  "devices",
+  "dictionary",
+  "dictionaryOfModelsFromData:error:",
+  "dictionaryOfModelsFromDictionary:error:",
+  "dictionaryWithCapacity:",
+  "dictionaryWithDictionary:",
+  "dictionaryWithObject:forKey:",
+  "dictionaryWithObjects:forKeys:",
+  "dictionaryWithObjects:forKeys:count:",
+  "dictionaryWithObjectsAndKeys:",
+  "direction",
+  "disconnectAfterReceived",
+  "discoverySessionWithDeviceTypes:mediaType:position:",
+  "dismissCameraPickerAnimated:completion:",
+  "dismissViewControllerAnimated:completion:",
+  "dispatchAsyncOnType:block:",
+  "dispatchQueue",
+  "dispatchQueueForType:",
+  "dispatchThreadgroups:threadsPerThreadgroup:",
+  "displayImageForPreview:",
+  "displayIntervalMs",
+  "displayLinkCallback:",
+  "displayLinkWithTarget:selector:",
+  "displayName",
+  "displayScreenDidChange:",
+  "dmUpdateKeyboardToHidden",
+  "doPlayersMatch:player2:",
+  "domain",
+  "doubleValue",
+  "down",
+  "downloadTaskWithURL:completionHandler:",
+  "dpad",
+  "drawInRect:",
+  "drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:",
+  "drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:baseVertex:baseInstance:",
+  "drawPrimitives:vertexStart:vertexCount:instanceCount:",
+  "drawPrimitives:vertexStart:vertexCount:instanceCount:baseInstance:",
+  "duration",
+  "editingRectForBounds:",
+  "enableTrackingCallback",
+  "enabled",
+  "encodeObject:forKey:",
+  "endCall:",
+  "endEncoding",
+  "endGeneratingDeviceOrientationNotifications",
+  "endScope",
+  "endWebRTCSession:",
+  "enumerateContactsWithError:usingBlock:",
+  "enumerateContactsWithFetchRequest:error:usingBlock:",
+  "enumerateKeysAndObjectsUsingBlock:",
+  "enumerateObjectsUsingBlock:",
+  "environment",
+  "error",
+  "errorBadJSON",
+  "errorBadResponse",
+  "errorByPrependingKeyPathComponent:",
+  "errorClass",
+  "errorInputIsNil",
+  "errorInvalidDataWithMessage:",
+  "errorInvalidDataWithMissingKeys:",
+  "errorInvalidDataWithTypeMismatch:",
+  "errorModelIsInvalid",
+  "errorWithDomain:code:userInfo:",
+  "eventReporterDelegate",
+  "exception",
+  "exceptionWithName:reason:userInfo:",
+  "experimentLock",
+  "extendedGamepad",
+  "fail",
+  "failureBlock",
+  "familyName",
+  "featureNames",
+  "featureValueForName:",
+  "featureValueWithMultiArray:",
+  "featureValueWithPixelBuffer:",
+  "fetchSettingsFromCdn:withAppName:withCompletion:",
+  "file:didFinishSavingWithError:contextInfo:",
+  "fileExistsAtPath:",
+  "fileSystemRepresentation",
+  "fileURLWithPath:",
+  "firstObject",
+  "fixedCoordinateSpace",
+  "floatFromObject:",
+  "floatValue",
+  "font",
+  "fontWithName:size:",
+  "formatDescription",
+  "formats",
+  "frame",
+  "frameQueue",
+  "frameTargetMs",
+  "framesMissed",
+  "framesWithinTarget",
+  "friendlyDeviceName",
+  "friendlyGPUName",
+  "fromError:",
+  "fromResult:",
+  "fulfill",
+  "functionNames",
+  "g",
+  "gameInstanceId",
+  "gameLoaded:",
+  "gameLocaleId",
+  "gcControllerConnected:",
+  "gcControllerDisconnected:",
+  "generateMipmapsForTexture:",
+  "generateTokenWithCompletionHandler:",
+  "getAppStoreCountryCode",
+  "getBrightness",
+  "getCapabilities:",
+  "getDesiredThumbnailFormat",
+  "getFontName:",
+  "getFuture",
+  "getGestureTouchLocations:",
+  "getIncomingCallJson",
+  "getIsoCountryCode",
+  "getJSONFromURLWithString:completion:",
+  "getJSONFromURLWithString:params:completion:",
+  "getMessageIdWithDomainName:messageName:",
+  "getPaymentProviderType",
+  "getQueryInfo:adTracingId:adUnitId:experimentVariant:",
+  "getRbxSwipeDirection:",
+  "getTargetTimestamp",
+  "getUserLayerVariables:completionHandler:",
+  "getValue:",
+  "givenName",
+  "google",
+  "grantAllPurchases",
+  "gravity",
+  "grayColor",
+  "handleApplicationDidBecomeActive:",
+  "handleCancelButtonTap:",
+  "handleCaptureSessionDidStartRunning:",
+  "handleCaptureSessionDidStopRunning:",
+  "handleCaptureSessionInterruption:",
+  "handleCaptureSessionInterruptionEnded:",
+  "handleCaptureSessionRuntimeError:",
+  "handleDeviceChanged",
+  "handleEscapeKey:",
+  "handleFailureInFunction:file:lineNumber:description:",
+  "handleFailureInMethod:object:file:lineNumber:description:",
+  "handleFatalError",
+  "handleInterruptionNotification:",
+  "handleMediaServicesWereLost:",
+  "handleMediaServicesWereReset:",
+  "handleMouseTouch:withEvent:",
+  "handleNonFatalError",
+  "handleRetakeButtonTap:",
+  "handleRouteChangeNotification:",
+  "handleSilenceSecondaryAudioHintNotification:",
+  "handleTakePictureButtonTap:",
+  "handleUsePhotoButtonTap:",
+  "handler",
+  "hasCapability:",
+  "hasPrefix:",
+  "hasRetriedOnFatalError",
+  "hasSuffix:",
+  "hash",
+  "height",
+  "hiddenPointerStyle",
+  "hideKeyboard",
+  "hideKeyboardForRemoteTextBox",
+  "hitTest:withEvent:",
+  "ignoresPreferredAttributeConfigurationErrors",
+  "imageBufferValue",
+  "imageConstraint",
+  "imageNamed:",
+  "imageOrientation",
+  "imageRendererFormat",
+  "imageWithActions:",
+  "imageWithContentsOfFile:",
+  "importDateFormatter",
+  "incomingCalls",
+  "incrementActivationCount",
+  "indexPropertyName",
+  "indirectPointerHovering:",
+  "init",
+  "init:queue:callback:domain:",
+  "init:queue:callback:domain:disconnectAfterReceived:",
+  "init:queue:callback:domain:disconnectAfterReceived:callImmediatelyIfAvailable:",
+  "initAndReturnError:",
+  "initCall:calleeCombinedName:",
+  "initGestureRecognizers",
+  "initWithAction:",
+  "initWithAudioSession:",
+  "initWithBodyStream:",
+  "initWithBuffer:rotation:timeStampNs:",
+  "initWithBytes:length:encoding:",
+  "initWithBytesNoCopy:length:encoding:freeWhenDone:",
+  "initWithCString:encoding:",
+  "initWithCallId:isOutgoing:",
+  "initWithCallId:status:direction:",
+  "initWithCallUUID:",
+  "initWithCallUUID:handle:",
+  "initWithCallUUID:muted:",
+  "initWithCapacity:",
+  "initWithColorTokens:",
+  "initWithConfiguration:",
+  "initWithConnection:",
+  "initWithCpp:",
+  "initWithDark:light:",
+  "initWithData:encoding:",
+  "initWithData:error:",
+  "initWithDataPointer:shape:dataType:strides:deallocator:error:",
+  "initWithDelegate:",
+  "initWithDelegate:captureSession:",
+  "initWithDictionary:error:",
+  "initWithDictionary:withCallback:",
+  "initWithDisplayTarget:",
+  "initWithDomain:code:userInfo:",
+  "initWithEnumerator:",
+  "initWithError:",
+  "initWithEventType:parameters:relativeTime:duration:",
+  "initWithEvents:parameters:error:",
+  "initWithFrame:",
+  "initWithFrameBuffer:",
+  "initWithGoogle:apple:",
+  "initWithId:withData:withCallback:",
+  "initWithKeysToFetch:",
+  "initWithLocaleIdentifier:",
+  "initWithLocalizedName:",
+  "initWithMessageBus:",
+  "initWithModelToJSONBlock:",
+  "initWithModelToJSONDictionary:",
+  "initWithName:parameters:",
+  "initWithName:parameters:scalabilityModes:",
+  "initWithObserver:",
+  "initWithParameterID:value:",
+  "initWithParameterID:value:relativeTime:",
+  "initWithPixelBuffer:",
+  "initWithPixelBuffer:adaptedWidth:adaptedHeight:cropWidth:cropHeight:cropX:cropY:",
+  "initWithProgressViewStyle:",
+  "initWithProtocolName:methodName:request:queue:callback:",
+  "initWithProvider:nonce:browserStartUrl:",
+  "initWithProvider:status:proofType:errorClass:",
+  "initWithR:g:b:a:",
+  "initWithResult:",
+  "initWithSequenceNumber:namespace:detail:",
+  "initWithSharedState:",
+  "initWithSize:format:",
+  "initWithString:",
+  "initWithString:attributes:",
+  "initWithString:error:",
+  "initWithString:usingEncoding:error:",
+  "initWithSuiteName:",
+  "initWithTarget:action:",
+  "initWithTensors:modelDescription:",
+  "initWithType:value:",
+  "initWithURL:cachePolicy:timeoutInterval:",
+  "initWithURL:statusCode:HTTPVersion:headerFields:",
+  "initWithUUIDString:",
+  "initWithWidth:height:",
+  "initialize:experimentVariant:",
+  "initializeSdk:initializeAdUnitId:",
+  "input",
+  "inputAvailable",
+  "inputDataSource",
+  "inputDataSources",
+  "inputDescriptionsByName",
+  "inputGain",
+  "inputLatency",
+  "inputNumberOfChannels",
+  "inputPorts",
+  "inputs",
+  "insetRectToFullscreenCGRect:",
+  "install:",
+  "intValue",
+  "integerForKey:",
+  "integerValue",
+  "intersectSet:",
+  "invalidate",
+  "invertedSet",
+  "invokeAppStoreForProduct:withPayload:checkoutSessionId:completionV2:",
+  "invokeAppStoreForProduct:withPayload:completionV2:",
+  "ioBufferDuration",
+  "isActive",
+  "isAudioEnabled",
+  "isAvailable",
+  "isBatteryMonitoringEnabled",
+  "isCalleeMicEnabled",
+  "isCameraDeviceAvailable:",
+  "isConnected",
+  "isDaylightSavingTime",
+  "isEqual:",
+  "isEqualToArray:",
+  "isEqualToCodecInfo:",
+  "isEqualToDictionary:",
+  "isEqualToOutcome:",
+  "isEqualToString:",
+  "isFirstResponder",
+  "isGyroAvailable",
+  "isGyroscopeAvailable",
+  "isHidden",
+  "isIndex",
+  "isInputAvailable",
+  "isInputGainSettable",
+  "isInterrupted",
+  "isLowPowerModeEnabled",
+  "isMainThread",
+  "isMemberOfClass:",
+  "isMonitoringBatteryState",
+  "isMonitoringThermalState",
+  "isMultiThreaded",
+  "isMutable",
+  "isMuted",
+  "isOnQueueForType:",
+  "isOptional",
+  "isOutgoing",
+  "isPassword:",
+  "isPaymentsProtocolEnabled",
+  "isPinExperienceV2Available",
+  "isPlayerCorrect:",
+  "isPlayerInvalid:",
+  "isReady",
+  "isRevealPinnedExperienceAvailable",
+  "isRunning",
+  "isSourceTypeAvailable:",
+  "isStandardJSONType",
+  "isStarted",
+  "isSubclassOfClass:",
+  "isSubsetOfSet:",
+  "isSupported",
+  "isTrackingAvailable",
+  "isUnder13",
+  "keyCommandWithInput:modifierFlags:action:",
+  "keyMapper",
+  "keyWindow",
+  "keyboardAnimationDuration",
+  "keyboardDidShow:",
+  "keyboardTypeForTextInputType:",
+  "keyboardWillHide:",
+  "keyboardWillShow:",
+  "lastObject",
+  "lastPathComponent",
+  "layer",
+  "layerVariblesByLayerName",
+  "layersInUse",
+  "layoutCameraButtons",
+  "layoutCameraPreviewView",
+  "layoutSubviews",
+  "layoutTextFieldForSyncedDisplay",
+  "layoutTextViewForSyncedDisplay",
+  "layouts",
+  "left",
+  "leftShoulder",
+  "leftThumbstick",
+  "leftThumbstickButton",
+  "leftTrigger",
+  "length",
+  "lengthOfBytesUsingEncoding:",
+  "light",
+  "linkingProtocolImpl",
+  "loadInterstitialAd:adUnitId:",
+  "localTimeZone",
+  "localeIdentifier",
+  "localeSettingsDelegate",
+  "localizedDescription",
+  "localizedName",
+  "localizedStringForKey:value:table:",
+  "locationInView:",
+  "locationOfTouch:inView:",
+  "lock",
+  "lockError",
+  "lockForConfiguration",
+  "lockForConfiguration:",
+  "logBatteryLevel",
+  "logBatterySaverMode",
+  "logBatteryState",
+  "logEvent:",
+  "logScreenBrightness",
+  "logThermalState",
+  "longLongValue",
+  "longPressGesture:",
+  "lowercaseString",
+  "mainBundle",
+  "mainQueue",
+  "mainRunLoop",
+  "mainScreen",
+  "makeRequest:",
+  "makeRequest:customTelemetryData:",
+  "manualFocusRelease",
+  "mapperForSnakeCase",
+  "matchPendingPresentationsLocked",
+  "maxBufferLength",
+  "maxFrameRate",
+  "maximumDrawableCount",
+  "maximumFramesPerSecond",
+  "maximumInputNumberOfChannels",
+  "maximumOutputNumberOfChannels",
+  "mergeFromDictionary:useKeyMapping:error:",
+  "message",
+  "messageBus",
+  "methodForSelector:",
+  "methodName",
+  "mice",
+  "mid",
+  "mimeTypeForFileAtPath:",
+  "minFrameRate",
+  "minusSet:",
+  "mode",
+  "modelDescription",
+  "modelToJSONKeyBlock",
+  "modelWithContentsOfURL:configuration:error:",
+  "modifierFlags",
+  "monitorBrowserTrackerLayerLoadingStatusChanged",
+  "monitorUserLayerLoadingStatusChanged",
+  "motionDidStartListening:",
+  "mouseConnected:",
+  "mouseDidBecomeCurrent:",
+  "mouseDidStopBeingCurrent:",
+  "mouseDisconnected:",
+  "mouseInput",
+  "mouseWheelGesture:",
+  "moveItemAtURL:toURL:error:",
+  "multiArrayConstraint",
+  "multiArrayValue",
+  "multiplyByInverseOfAttitude:",
+  "mutableCopy",
+  "mutableDataU",
+  "mutableDataV",
+  "mutableDataY",
+  "name",
+  "nativeBounds",
+  "nativeHasRobloxSubscription",
+  "nativeMembershipType",
+  "nativePurchase:nativeProductId:",
+  "nativePurchase:nativeProductId:paymentSessionId:",
+  "nativePurchase:productId:payload:",
+  "nativeSignalREnabled",
+  "networkStatusForFlags:",
+  "newBufferWithLength:options:",
+  "newCaptureScopeWithDevice:",
+  "newCommandQueue",
+  "newComputePipelineStateWithFunction:error:",
+  "newDepthStencilStateWithDescriptor:",
+  "newFunctionWithName:",
+  "newLibraryWithData:error:",
+  "newLibraryWithFile:error:",
+  "newLibraryWithSource:options:error:",
+  "newRenderPipelineStateWithDescriptor:error:",
+  "newSamplerStateWithDescriptor:",
+  "newTextureWithDescriptor:",
+  "nextDaylightSavingTimeTransitionAfterDate:",
+  "nextDrawable",
+  "nonce",
+  "normalizedImageFrom:",
+  "notificationId",
+  "notifyAudioUnitStartFailedWithError:",
+  "notifyDidBeginInterruption",
+  "notifyDidChangeCanPlayOrRecord:",
+  "notifyDidChangeOutputVolume:",
+  "notifyDidChangeRouteWithReason:previousRoute:",
+  "notifyDidDetectPlayoutGlitch:",
+  "notifyDidEndInterruptionWithShouldResumeSession:",
+  "notifyDidSetActive:",
+  "notifyDidStartPlayOrRecord",
+  "notifyDidStopPlayOrRecord",
+  "notifyFailedToSetActive:error:",
+  "notifyFramePresentedAtTime:",
+  "notifyMediaServicesWereLost",
+  "notifyMediaServicesWereReset",
+  "notifyWillSetActive:",
+  "null",
+  "numberOfTouches",
+  "numberWithBool:",
+  "numberWithDouble:",
+  "numberWithFloat:",
+  "numberWithInt:",
+  "numberWithInteger:",
+  "numberWithLong:",
+  "numberWithLongLong:",
+  "numberWithUnsignedInt:",
+  "numberWithUnsignedInteger:",
+  "object",
+  "objectAtIndex:",
+  "objectAtIndexedSubscript:",
+  "objectForInfoDictionaryKey:",
+  "objectForKey:",
+  "objectForKeyedSubscript:",
+  "objectsForKeys:notFoundMarker:",
+  "observeValueForKeyPath:ofObject:change:context:",
+  "onAudioSessionActivatedCallback",
+  "onAudioSessionDeactivatedCallback",
+  "onCallingRemoved:",
+  "onCallingStateChange:",
+  "onGetContactsRequest",
+  "onHandlePlatformURL:",
+  "onHasPermissionsRequest:",
+  "onHasPostNotificationsPermissionResponse:",
+  "onIncomingCallEndedCallback",
+  "onIsTrackingAvailable:",
+  "onPermissionsRequest:",
+  "onPostNotificationsPermissionResponse:",
+  "onSendSMSRequest:",
+  "onServeInterstitialAdFailed:",
+  "onServeInterstitialAdResponse:adResponseJson:",
+  "onShouldShowPermissionUpsellRequest:",
+  "onShouldShowPostNotificationsUpsellResponse:",
+  "onShouldShowRequestPermissionRationaleRequest:",
+  "onShouldShowRequestPostNotificationsRationaleResponse:",
+  "onSupportsContactsRequest",
+  "onSupportsGetOTP:",
+  "onSupportsGetPhoneNumber:",
+  "onSupportsPermissionsRequest:",
+  "onSupportsSMSRequest:",
+  "onSystemCursorChanged",
+  "onTextBoxCombinedChanged:data:",
+  "onTextBoxPropertyChange:",
+  "onTokensCleared",
+  "onTokensUpdated:",
+  "onVoIPCallEndedCallback",
+  "onVoIPCallStartedCallback",
+  "open",
+  "openURL:",
+  "openURL:options:completionHandler:",
+  "operatingSystemVersion",
+  "orderedSetWithArray:",
+  "orientation",
+  "outputDataSource",
+  "outputDataSources",
+  "outputDescriptionsByName",
+  "outputLatency",
+  "outputNumberOfChannels",
+  "outputStreamWithURL:append:",
+  "outputVolume",
+  "outputs",
+  "overlayAttributes",
+  "overlayNativeInput",
+  "overlayOntoTextBox:",
+  "overlayPaddingInset",
+  "overrideOutputAudioPort:error:",
+  "panGesture:",
+  "parameters",
+  "path",
+  "pathExtension",
+  "performExpiringActivityWithReason:usingBlock:",
+  "permissionsProtocolImpl",
+  "phase",
+  "phoneNumbers",
+  "pickFromMediaLibrary:sourceType:successBlock:failureBlock:",
+  "pinExperience:thumbnailUrl:experienceName:",
+  "pinExperienceV2:universeId:thumbnailUrl:experienceName:",
+  "pitch",
+  "pixelBuffer",
+  "pixelFormatType",
+  "pixelsHigh",
+  "pixelsWide",
+  "placeId",
+  "playerIndex",
+  "playerPurchasing",
+  "popDebugGroup",
+  "portType",
+  "portraitBounds",
+  "position",
+  "positionFromPosition:offset:",
+  "postJSONFromURLWithString:bodyString:completion:",
+  "postJSONFromURLWithString:params:completion:",
+  "postNotificationName:object:",
+  "postNotificationName:object:userInfo:",
+  "powerStateDidChange:",
+  "predictionFromFeatures:options:error:",
+  "preferredIOBufferDuration",
+  "preferredOutputPixelFormat",
+  "preferredSampleRate",
+  "prefersPointerLocked",
+  "present",
+  "presentDrawable:",
+  "presentDrawable:atTime:",
+  "presentPickerVC:onViewController:",
+  "presentViewController:animated:completion:",
+  "presentationController",
+  "presentedTime",
+  "presentedViewController",
+  "presentingViewController",
+  "previewBackgroundView",
+  "previewImageView",
+  "previousLocationInView:",
+  "primaryLanguage",
+  "primitivesNames",
+  "printToNativeConsole:",
+  "processInfo",
+  "processPaymentConcludedForProduct:withSuccess:withReceiptId:",
+  "processorCount",
+  "proofType",
+  "propertyIsIgnored:",
+  "propertyIsOptional:",
+  "protocol",
+  "protocolForArrayProperty:",
+  "protocolName",
+  "providePaymentsDelegate",
+  "provider",
+  "publishEndCall:",
+  "publishEndCall:isOutgoing:isActive:",
+  "publishHasPermissionsResponse:missingPermissions:",
+  "publishId:params:",
+  "publishMutedState:",
+  "publishPermissionsRequestResponse:missingPermissions:",
+  "publishProtocolMethodRequest:methodName:params:customTelemetryData:",
+  "publishProtocolMethodResponse:methodName:params:responseCode:customTelemetryData:",
+  "purchaseFailInGameInvalidPlayer",
+  "purchaseFailInGameInvalidPlayerPurchase",
+  "purchaseFailInGamePlayerMismatch",
+  "purchaseProductCommon:",
+  "purchasingPlayerUserId",
+  "pushDebugGroup:",
+  "pushDelegate:",
+  "quaternion",
+  "query",
+  "queue",
+  "r",
+  "raise:format:",
+  "rangeEnclosingPosition:withGranularity:inDirection:",
+  "rangeOfCharacterFromSet:",
+  "rangeOfCharacterFromSet:options:range:",
+  "rangeOfString:",
+  "rangeOfString:options:",
+  "rangeOfString:options:range:",
+  "reachabilityWithAddress:",
+  "reason",
+  "recommendedMaxWorkingSetSize",
+  "reconfigureCaptureSessionInput",
+  "reloadInputViews",
+  "removeAllCalls",
+  "removeAllObjects",
+  "removeDelegate:",
+  "removeFromSuperview",
+  "removeIncomingCall:withEndReason:",
+  "removeInput:",
+  "removeItemAtPath:error:",
+  "removeItemAtURL:error:",
+  "removeObject:",
+  "removeObjectForKey:",
+  "removeObserver:",
+  "removeObserver:forKeyPath:",
+  "removeObserver:forKeyPath:context:",
+  "removeVoIPCall",
+  "removeZeroedDelegates",
+  "renderCommandEncoderWithDescriptor:",
+  "renderFrame:",
+  "renderPassDescriptor",
+  "replaceBytesInRange:withBytes:",
+  "replaceCharactersInRange:withString:",
+  "replaceRegion:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:",
+  "reportCallConnected:",
+  "reportCallEnded:endReason:",
+  "reportCallWithUUID:endedAtDate:reason:",
+  "reportError:withContext:withDataString:",
+  "reportEvent:withCompletionTime:",
+  "reportIncomingCall:",
+  "reportNewIncomingCallWithUUID:update:completion:",
+  "reportOutgoingCallWithUUID:connectedAtDate:",
+  "reportOutgoingCallWithUUID:startedConnectingAtDate:",
+  "reportStats:Value:",
+  "request",
+  "requestAccessForEntityType:completionHandler:",
+  "requestAccessForMediaType:completionHandler:",
+  "requestAuthorization:",
+  "requestAuthorizationForAccessLevel:handler:",
+  "requestDataFromURL:method:params:headers:handler:",
+  "requestDataFromURL:method:requestBody:headers:handler:",
+  "requestHeaderFieldsWithCookies:",
+  "requestPermission:onComplete:",
+  "requestPermissionForPostNotifications:",
+  "requestPermissions:missingPermissions:",
+  "requestPermissionsAndPresent:",
+  "requestTransaction:completion:",
+  "requestWithURL:",
+  "requestWithURL:cachePolicy:timeoutInterval:",
+  "requiresCropping",
+  "requiresScalingToWidth:height:",
+  "reservedServerAccessCode",
+  "resetKeyBoardMode:",
+  "resignFirstResponder",
+  "resourcePath",
+  "resourceURL",
+  "resourceValuesForKeys:error:",
+  "result",
+  "resume",
+  "retakeButton",
+  "returnKeyTypeForReturnKeyType:",
+  "revealPinnedExperience:",
+  "right",
+  "rightShoulder",
+  "rightThumbstick",
+  "rightThumbstickButton",
+  "rightTrigger",
+  "robloxInfoDelegate",
+  "robloxLibBundle",
+  "robloxLocaleId",
+  "roll",
+  "rootViewController",
+  "rotation",
+  "rotationGesture:",
+  "rtcSeverity",
+  "sampleRate",
+  "saveChannelPreference:",
+  "saveMediaToAlbum:",
+  "saveSettingsJSON:toFile:",
+  "scalabilityModes",
+  "scale",
+  "scanCharactersFromSet:intoString:",
+  "scanString:intoString:",
+  "scanUpToCharactersFromSet:intoString:",
+  "scanUpToString:intoString:",
+  "scannerWithString:",
+  "scheduleRefreshDisplayRefreshRate",
+  "scheduledTimerWithTimeInterval:repeats:block:",
+  "screen",
+  "screenBounds",
+  "screenMaxFps",
+  "scrollRangeToVisible:",
+  "secondaryAudioShouldBeSilencedHint",
+  "secondsFromGMT",
+  "secondsFromGMTForDate:",
+  "selectedRange",
+  "selectedThemeName",
+  "sendParameters:atTime:error:",
+  "sendSwitchToSettingsAppRequest:",
+  "sendSynchronousRequest:returningResponse:error:",
+  "sendTouchEvent:touchID:",
+  "sendTouchEvent:touchID:shouldOverride:overrideState:",
+  "serailizeCallIdJson:",
+  "serializeMessageParams:",
+  "session",
+  "set",
+  "setAccelerometerUpdateInterval:",
+  "setActive:error:",
+  "setActive:withOptions:error:",
+  "setActiveCallId:",
+  "setActiveFormat:",
+  "setActivePickerVC:",
+  "setActiveVideoMinFrameDuration:",
+  "setAdConsentResolvedCallback:",
+  "setAdConsentResolvedConn:",
+  "setAdString:adTracingId:adUnitId:adString:durationNeededEnum:durationNeededForRewardMs:isEuUser:creativeUrl:uiExperimentData:gmaAdType:isClickable:",
+  "setAlignment:",
+  "setAllCookies:",
+  "setAllowedScrollTypesMask:",
+  "setAllowedTouchTypes:",
+  "setAlphaToCoverageEnabled:",
+  "setAlwaysDiscardsLateVideoFrames:",
+  "setArrayLength:",
+  "setAttributedText:",
+  "setAutocapitalizationType:",
+  "setAutocorrectionType:",
+  "setBackgroundColor:",
+  "setBaseURLString:",
+  "setBatteryMonitoringEnabled:",
+  "setBlendingEnabled:",
+  "setBool:forKey:",
+  "setBorderColor:",
+  "setBorderWidth:",
+  "setBrightness:",
+  "setBrightnessToDefault",
+  "setBuffer:offset:atIndex:",
+  "setBufferIndex:",
+  "setBufferOffset:atIndex:",
+  "setBytes:length:atIndex:",
+  "setCallController:",
+  "setCallImmediatelyIfAvailable:",
+  "setCallback:",
+  "setCallbacksForCallStarted:forCallEnded:forAudioSessionActivad:forAudioSessionDeactivated:",
+  "setCameraAnchorVC:",
+  "setCameraDevice:",
+  "setCameraOverlayView:",
+  "setCameraViewTransform:",
+  "setCancelsTouchesInView:",
+  "setCaptureObject:",
+  "setCapturedImage:",
+  "setCategory:",
+  "setCategory:mode:options:error:",
+  "setCategory:withOptions:error:",
+  "setCategoryOptions:",
+  "setClearColor:",
+  "setClearDepth:",
+  "setClearStencil:",
+  "setClipsToBounds:",
+  "setCompareFunction:",
+  "setCompletionHandlers:",
+  "setComputePipelineState:",
+  "setComputeUnits:",
+  "setConfiguration:active:error:",
+  "setConfiguration:active:shouldSetActive:error:",
+  "setConnection:",
+  "setConns:",
+  "setContactsProtocolImpl:",
+  "setContentInset:",
+  "setContentMode:",
+  "setContentOffset:",
+  "setContentSize:",
+  "setContentVerticalAlignment:",
+  "setCookie:",
+  "setCookies:forURL:mainDocumentURL:",
+  "setCornerRadius:",
+  "setCullMode:",
+  "setCurrentDevice:",
+  "setCurrentVoIPCall:",
+  "setCustomGetter:",
+  "setCustomSetters:",
+  "setDateFormat:",
+  "setDefaultCaptureScope:",
+  "setDelaysTouchesBegan:",
+  "setDelaysTouchesEnded:",
+  "setDelegate:",
+  "setDelegate:queue:",
+  "setDepth:",
+  "setDepthAttachmentPixelFormat:",
+  "setDepthBias:slopeScale:clamp:",
+  "setDepthClipMode:",
+  "setDepthCompareFunction:",
+  "setDepthFailureOperation:",
+  "setDepthStencilPassOperation:",
+  "setDepthStencilState:",
+  "setDepthWriteEnabled:",
+  "setDestination:",
+  "setDestinationAlphaBlendFactor:",
+  "setDestinationRGBBlendFactor:",
+  "setDevice:",
+  "setDeviceMotionUpdateInterval:",
+  "setDirection:",
+  "setDisconnectAfterReceived:",
+  "setDispatchQueue:",
+  "setDisplayMaximumRefreshRate:",
+  "setDomain:",
+  "setDrawableSize:",
+  "setEditable:",
+  "setEnableTrackingCallback:",
+  "setEventDetail:",
+  "setException:",
+  "setFailureBlock:",
+  "setFont:",
+  "setFormat:",
+  "setFragmentBuffer:offset:atIndex:",
+  "setFragmentBufferOffset:atIndex:",
+  "setFragmentFunction:",
+  "setFragmentSamplerState:atIndex:",
+  "setFragmentTexture:atIndex:",
+  "setFrame:",
+  "setFramebufferOnly:",
+  "setFrontFaceStencil:",
+  "setFrontFacingWinding:",
+  "setGyroUpdateInterval:",
+  "setHTTPBody:",
+  "setHTTPBodyStream:",
+  "setHTTPMethod:",
+  "setHandler:",
+  "setHasRetriedOnFatalError:",
+  "setHasVideo:",
+  "setHeight:",
+  "setHidden:",
+  "setHttpResponse:",
+  "setIconTemplateImageData:",
+  "setIdentityProtocolImpl:",
+  "setImage:",
+  "setIncludesCallsInRecents:",
+  "setIncomingCalls:",
+  "setInputDataSource:error:",
+  "setInputGain:error:",
+  "setInputNumberOfChannels:",
+  "setInteger:forKey:",
+  "setIoBufferDuration:",
+  "setIsActive:",
+  "setIsIndex:",
+  "setIsInterrupted:",
+  "setIsLoading:",
+  "setIsMonitoringBatteryState:",
+  "setIsMonitoringThermalState:",
+  "setIsMutable:",
+  "setIsOptional:",
+  "setIsRunning:",
+  "setIsStandardJSONType:",
+  "setIsStarted:",
+  "setKeepAwake:",
+  "setKeyboardAnimationDuration:",
+  "setKeyboardType:",
+  "setLabel:",
+  "setLevel:",
+  "setLineBreakMode:",
+  "setLineFragmentPadding:",
+  "setLineSpacing:",
+  "setLinkingProtocolImpl:",
+  "setLoadAction:",
+  "setLocale:",
+  "setLocalizedCallerName:",
+  "setLodMaxClamp:",
+  "setLodMinClamp:",
+  "setLoopEnabled:",
+  "setMagFilter:",
+  "setManualFocusRelease:",
+  "setMasksToBounds:",
+  "setMaxAnisotropy:",
+  "setMaximumCallGroups:",
+  "setMaximumCallsPerCallGroup:",
+  "setMaximumDrawableCount:",
+  "setMaximumNumberOfLines:",
+  "setMaximumNumberOfTouches:",
+  "setMediaTypes:",
+  "setMessage:",
+  "setMessageBus:",
+  "setMethodName:",
+  "setMid:",
+  "setMinFilter:",
+  "setMipFilter:",
+  "setMipmapLevelCount:",
+  "setModalInPresentation:",
+  "setModalPresentationStyle:",
+  "setMode:",
+  "setMode:error:",
+  "setMouseMovedHandler:",
+  "setMultipleTouchEnabled:",
+  "setName:",
+  "setNeedsLayout",
+  "setNumberOfTouchesRequired:",
+  "setObjCVideoTrackSource:",
+  "setObject:forKey:",
+  "setObject:forKeyedSubscript:",
+  "setOffset:",
+  "setOnAudioSessionActivatedCallback:",
+  "setOnAudioSessionDeactivatedCallback:",
+  "setOnVoIPCallEndedCallback:",
+  "setOnVoIPCallStartedCallback:",
+  "setOpaque:",
+  "setOutputDataSource:error:",
+  "setOutputNumberOfChannels:",
+  "setOutputURL:",
+  "setOverlayAttributes:",
+  "setOverlayNativeInput:",
+  "setOverlayPaddingInset:",
+  "setPermissionsProtocolImpl:",
+  "setPixelFormat:",
+  "setPlayerIndex:",
+  "setPlayerPurchasing:",
+  "setPlaysHapticsOnly:",
+  "setPreferredAction:",
+  "setPreferredFrameRateRange:",
+  "setPreferredIOBufferDuration:error:",
+  "setPreferredInput:error:",
+  "setPreferredInputNumberOfChannels:error:",
+  "setPreferredOutputNumberOfChannels:error:",
+  "setPreferredSampleRate:error:",
+  "setProgress:",
+  "setProtocol:",
+  "setProtocolName:",
+  "setProvider:",
+  "setPurchasingPlayerUserId:",
+  "setQueue:",
+  "setRAddressMode:",
+  "setReadMask:",
+  "setReady:",
+  "setRemoteHandle:",
+  "setRenderPipelineState:",
+  "setRenderScheduleFps:",
+  "setRequest:",
+  "setRequestContentType:",
+  "setRequestHandlerForProtocolName:messageId:onQueue:withCallback:",
+  "setResetHandler:",
+  "setResolveLevel:",
+  "setResolveSlice:",
+  "setResolveTexture:",
+  "setResponseData:",
+  "setReturnKeyType:",
+  "setSAddressMode:",
+  "setSMSProtocolImpl:",
+  "setSampleBufferDelegate:queue:",
+  "setSampleCount:",
+  "setSampleRate:",
+  "setSamplerState:atIndex:",
+  "setScale:",
+  "setScissorRect:",
+  "setScrollsToTop:",
+  "setSecureTextEntry:",
+  "setSelectable:",
+  "setSelectedTextRange:",
+  "setSessionPreset:",
+  "setShowsCameraControls:",
+  "setShowsVerticalScrollIndicator:",
+  "setSignalRDelegate:",
+  "setSignalrControl:",
+  "setSize:",
+  "setSlice:",
+  "setSourceAlphaBlendFactor:",
+  "setSourceRGBBlendFactor:",
+  "setSourceType:",
+  "setSpellCheckingType:",
+  "setStencilAttachmentPixelFormat:",
+  "setStencilCompareFunction:",
+  "setStencilFailureOperation:",
+  "setStencilReferenceValue:",
+  "setStepFunction:",
+  "setStoppedHandler:",
+  "setStorageMode:",
+  "setStoreAction:",
+  "setStride:",
+  "setStructName:",
+  "setSuccessBlock:",
+  "setSupportedHandleTypes:",
+  "setSupportsDTMF:",
+  "setSupportsGrouping:",
+  "setSupportsHolding:",
+  "setSupportsUngrouping:",
+  "setSupportsVideo:",
+  "setTAddressMode:",
+  "setText:",
+  "setTextAlignment:",
+  "setTextColor:",
+  "setTextContainerInset:",
+  "setTextContentType:",
+  "setTexture:",
+  "setTexture:atIndex:",
+  "setTextureType:",
+  "setTimeStamp:",
+  "setTintColor:",
+  "setTitle:forState:",
+  "setTitleColor:forState:",
+  "setTrackingEnabled:",
+  "setTransform:",
+  "setTranslatesAutoresizingMaskIntoConstraints:",
+  "setTranslation:inView:",
+  "setTriangleFillMode:",
+  "setType:",
+  "setTypingAttributes:",
+  "setUsage:",
+  "setUserInteractionEnabled:",
+  "setUsesApplicationAudioSession:",
+  "setValue:",
+  "setValue:forHTTPHeaderField:",
+  "setValue:forKey:",
+  "setValue:forKeyPath:",
+  "setValueChangedHandler:",
+  "setVertexBuffer:offset:atIndex:",
+  "setVertexBufferOffset:atIndex:",
+  "setVertexDescriptor:",
+  "setVertexFunction:",
+  "setVideo:",
+  "setVideoExportPreset:",
+  "setVideoSettings:",
+  "setViewport:",
+  "setVisibilityResultBuffer:",
+  "setVisibilityResultMode:offset:",
+  "setWidth:",
+  "setWillBeRunning:",
+  "setWithArray:",
+  "setWithCapacity:",
+  "setWithObject:",
+  "setWithObjects:",
+  "setWriteMask:",
+  "setupButton:controllerNum:keyCode:gamepadType:",
+  "setupCaptureSession:",
+  "setupControllerInput:",
+  "setupControllers",
+  "setupGameKeyboard:",
+  "setupMouse:",
+  "setupSignalRWithCompletionHandler:",
+  "setupVideoDataOutput",
+  "shape",
+  "sharedApplication",
+  "sharedCaptureManager",
+  "sharedHTTPCookieStorage",
+  "sharedInstance",
+  "sharedSession",
+  "shouldShowLuaNotificationOnPinExperienceCompleted",
+  "shouldUseTextField:",
+  "showAd:adTracingId:",
+  "showKeyboardForRemoteTextBox",
+  "showSMSMessageUIWithContact:Message:usingBlock:",
+  "shutdown",
+  "signal",
+  "signalMarketplacePurchaseFinishedV2:didSucceed:checkoutSessionId:",
+  "signalRDelegate",
+  "signalrControl",
+  "size",
+  "sizeWithAttributes:",
+  "sleepForTimeInterval:",
+  "sortedArrayUsingSelector:",
+  "sourceType",
+  "standardUserDefaults",
+  "startAndReturnError:",
+  "startAtTime:error:",
+  "startCaptureWithDescriptor:error:",
+  "startCaptureWithDevice:format:fps:",
+  "startCaptureWithDevice:format:fps:completionHandler:",
+  "startDeviceMotionUpdatesToQueue:withHandler:",
+  "startDisplayLink",
+  "startMotionUpdates",
+  "startRunning",
+  "state",
+  "status",
+  "statusBarTouched:",
+  "statusCode",
+  "stencilAttachment",
+  "stop",
+  "stopAtTime:error:",
+  "stopCapture",
+  "stopCaptureWithCompletionHandler:",
+  "stopDeviceMotionUpdates",
+  "stopDisplayLink",
+  "stopNotifier",
+  "stopRunning",
+  "stopWithCompletionHandler:",
+  "storageMode",
+  "strideU",
+  "strideV",
+  "strideY",
+  "strides",
+  "string",
+  "stringByAddingPercentEncodingWithAllowedCharacters:",
+  "stringByAppendingFormat:",
+  "stringByAppendingPathComponent:",
+  "stringByAppendingString:",
+  "stringByReplacingCharactersInRange:withString:",
+  "stringByReplacingOccurrencesOfString:withString:",
+  "stringForAbslStringView:",
+  "stringForKey:",
+  "stringFromDate:",
+  "stringValue",
+  "stringWithCString:encoding:",
+  "stringWithContentsOfURL:encoding:error:",
+  "stringWithFormat:",
+  "stringWithString:",
+  "stringWithUTF8String:",
+  "structName",
+  "subscribeOnceToMessageId:onQueue:callback:",
+  "subscribeToMessageId:onQueue:callback:",
+  "subscribeToMessageId:onQueue:callback:once:",
+  "subscribeToProtocolMethodRequest:methodName:onQueue:callback:",
+  "subscribeToProtocolMethodRequest:methodName:onQueue:callback:once:",
+  "subscribeToProtocolMethodResponse:methodName:onQueue:callback:",
+  "subscribeToProtocolMethodResponse:methodName:onQueue:callback:once:",
+  "substringFromIndex:",
+  "substringToIndex:",
+  "substringWithRange:",
+  "successBlock",
+  "superclass",
+  "superview",
+  "supportedFormatsForDevice:",
+  "supportedPixelFormats",
+  "supportsDestination:",
+  "supportsFamily:",
+  "supportsFeatureSet:",
+  "supportsHaptics",
+  "supportsSwitchToSettingsApp:",
+  "supportsTextureSampleCount:",
+  "swapKeysAndValuesInDictionary:",
+  "swipeGesture:",
+  "switchToCameraMode",
+  "switchToSettingsApp:",
+  "systemFontOfSize:",
+  "systemFontOfSize:weight:",
+  "takePicture",
+  "takePictureButton",
+  "tapGesture:",
+  "targetTimestamp",
+  "text",
+  "textBoxIsFocused",
+  "textBoxWasFocused:",
+  "textBoxWasUnfocused:",
+  "textColor",
+  "textContainer",
+  "textFieldDidEndEditing:",
+  "textFieldForType:",
+  "textFieldFrame",
+  "textFieldValueChanged:",
+  "textInputMode",
+  "textRangeFromPosition:toPosition:",
+  "textRect",
+  "textRectForBounds:",
+  "textViewDidEndEditing:",
+  "texture",
+  "thermalState",
+  "timeIntervalSince1970",
+  "timeIntervalSinceDate:",
+  "timeStampNs",
+  "timeZoneWithName:",
+  "titleLabel",
+  "toDictionary",
+  "toDictionaryWithKeys:",
+  "toI420",
+  "toJSONDataWithKeys:",
+  "toJSONString",
+  "toJSONStringWithKeys:",
+  "tokenizer",
+  "topViewController2",
+  "topViewController2:",
+  "topViewControllerForSystemUI",
+  "topViewControllerForSystemUI:",
+  "touchesBegan:withEvent:",
+  "touchesCancelled:withEvent:",
+  "touchesEnded:withEvent:",
+  "touchesMoved:withEvent:",
+  "trackpadPanGesture:",
+  "traitCollection",
+  "translationInView:",
+  "twoFingerPinch:",
+  "type",
+  "unarchivedObjectOfClass:fromData:error:",
+  "unconfigureWebRTCSession:",
+  "uniqueID",
+  "unlock",
+  "unlockForConfiguration",
+  "unsignedIntValue",
+  "unsignedIntegerValue",
+  "unsignedLongLongValue",
+  "unsignedLongValue",
+  "up",
+  "updateAndCallResultHandler:",
+  "updateAssistiveTouchState",
+  "updateAudioSessionAfterEvent",
+  "updateBalance",
+  "updateCanPlayOrRecord",
+  "updateCurrentMouse:",
+  "updateDeviceCaptureFormat:fps:",
+  "updateDeviceMotion:",
+  "updateDisplayTiming:",
+  "updateMicState:",
+  "updateMouseEnabled",
+  "updateOrientation",
+  "updateSize:",
+  "updateVideoDataOutputPixelFormat:",
+  "uppercaseLetterCharacterSet",
+  "uppercaseString",
+  "urlEncode:",
+  "useManualAudio",
+  "usePhotoButton",
+  "userAcceleration",
+  "userId",
+  "userInfo",
+  "userInfoDelegate",
+  "userInterfaceIdiom",
+  "userInterfaceStyle",
+  "userLayerInitialized",
+  "username",
+  "validate:",
+  "value",
+  "valueForKey:",
+  "valueForKeyPath:",
+  "valueWithBytes:objCType:",
+  "velocity",
+  "velocityInView:",
+  "vendorName",
+  "videoRenderer",
+  "videoSupportedFrameRateRanges",
+  "view",
+  "viewControllers",
+  "visibilityResultBuffer",
+  "vsyncGapMs",
+  "wait",
+  "waitUntilDate:",
+  "webRTCConfiguration",
+  "whiteColor",
+  "width",
+  "widthAnchor",
+  "window",
+  "windows",
+  "writeJSONObject:toStream:options:error:",
+  "writeToFile:atomically:",
+  "writeToFile:atomically:encoding:error:",
+  "writeToURL:atomically:",
+  "yaw",
+  "zoomScale"
+ ],
+ "methtypes": [
+  "#",
+  "#16@0:8",
+  "#24@0:8#16",
+  "#24@0:8@16",
+  "*16@0:8",
+  ":",
+  ":16@0:8",
+  "@",
+  "@\"<CameraOverlayViewDelegate>\"",
+  "@\"<NSStreamDelegate>\"",
+  "@\"<Optional>\"",
+  "@\"<RBNativeAppStoreDelegate>\"",
+  "@\"<RBNativeLocaleSettingsDelegate>\"",
+  "@\"<RBNativeUserInfoDelegate>\"",
+  "@\"<RTCI420Buffer>\"16@0:8",
+  "@\"<RTCVideoCapturerDelegate>\"",
+  "@\"<RTCVideoFrameBuffer>\"",
+  "@\"<RTCVideoFrameBuffer>\"40@0:8i16i20i24i28i32i36",
+  "@\"<RTCVideoRenderer>\"",
+  "@\"<UIViewControllerAnimatedTransitioning>\"48@0:8@\"UINavigationController\"16q24@\"UIViewController\"32@\"UIViewController\"40",
+  "@\"<UIViewControllerInteractiveTransitioning>\"32@0:8@\"UINavigationController\"16@\"<UIViewControllerAnimatedTransitioning>\"24",
+  "@\"AVAudioSession\"",
+  "@\"AVCaptureDevice\"",
+  "@\"AVCaptureSession\"",
+  "@\"AVCaptureVideoDataOutput\"",
+  "@\"CADisplayLink\"",
+  "@\"CMAttitude\"",
+  "@\"CMMotionManager\"",
+  "@\"CXCallController\"",
+  "@\"CXProvider\"",
+  "@\"CameraOverlayView\"",
+  "@\"CustomTextField\"",
+  "@\"CustomTextView\"",
+  "@\"DJSharedSate\"",
+  "@\"MLFeatureValue\"24@0:8@\"NSString\"16",
+  "@\"MLModelDescription\"",
+  "@\"NSArray\"",
+  "@\"NSArray\"40@0:8@\"UITextView\"16{_NSRange=QQ}24",
+  "@\"NSCondition\"",
+  "@\"NSData\"",
+  "@\"NSDictionary\"",
+  "@\"NSDictionary\"16@0:8",
+  "@\"NSDictionary\"24@0:8@\"NSArray\"16",
+  "@\"NSException\"",
+  "@\"NSHTTPURLResponse\"",
+  "@\"NSLock\"",
+  "@\"NSMutableArray\"",
+  "@\"NSMutableDictionary\"",
+  "@\"NSNotificationCenter\"",
+  "@\"NSNumber\"",
+  "@\"NSObject<OS_dispatch_queue>\"",
+  "@\"NSObject<RBEventReporterDelegate>\"",
+  "@\"NSObject<RBNativeRobloxInfoDelegate>\"",
+  "@\"NSObject<RBNativeSignalRDelegate>\"",
+  "@\"NSObject<RBStartupAnalyticsReporterDelegate>\"",
+  "@\"NSOperationQueue\"",
+  "@\"NSSet\"",
+  "@\"NSSet\"16@0:8",
+  "@\"NSString\"",
+  "@\"NSString\"16@0:8",
+  "@\"NSUUID\"",
+  "@\"RBContactsProtocolImpl\"",
+  "@\"RBIdentityProtocolImpl\"",
+  "@\"RBLinkingProtocolImpl\"",
+  "@\"RBMessageBus\"",
+  "@\"RBPermissionsProtocolImpl\"",
+  "@\"RBSMSProtocolImpl\"",
+  "@\"RBScopedConnection\"",
+  "@\"RBVoIPCall\"",
+  "@\"RBXRGBA\"",
+  "@\"UIAction\"40@0:8@\"UITextView\"16@\"UITextItem\"24@\"UIAction\"32",
+  "@\"UIButton\"",
+  "@\"UIHoverGestureRecognizer\"",
+  "@\"UIImage\"",
+  "@\"UIImagePickerController\"",
+  "@\"UIImageView\"",
+  "@\"UILongPressGestureRecognizer\"",
+  "@\"UIMenu\"40@0:8@\"UITextField\"16@\"NSArray\"24@\"NSArray\"32",
+  "@\"UIMenu\"40@0:8@\"UITextView\"16@\"NSArray\"24@\"NSArray\"32",
+  "@\"UIMenu\"48@0:8@\"UITextField\"16{_NSRange=QQ}24@\"NSArray\"40",
+  "@\"UIMenu\"48@0:8@\"UITextView\"16{_NSRange=QQ}24@\"NSArray\"40",
+  "@\"UIPanGestureRecognizer\"",
+  "@\"UIPinchGestureRecognizer\"",
+  "@\"UIPointerRegion\"40@0:8@\"UIPointerInteraction\"16@\"UIPointerRegionRequest\"24@\"UIPointerRegion\"32",
+  "@\"UIPointerStyle\"32@0:8@\"UIPointerInteraction\"16@\"UIPointerRegion\"24",
+  "@\"UIRotationGestureRecognizer\"",
+  "@\"UISwipeGestureRecognizer\"",
+  "@\"UITapGestureRecognizer\"",
+  "@\"UITextItemMenuConfiguration\"40@0:8@\"UITextView\"16@\"UITextItem\"24@\"UIMenu\"32",
+  "@\"UIView\"",
+  "@\"UIView\"24@0:8@\"UIScrollView\"16",
+  "@\"UIViewController\"",
+  "@\"UIViewController\"32@0:8@\"UIPresentationController\"16q24",
+  "@16@0:8",
+  "@20@0:8f16",
+  "@20@0:8i16",
+  "@24@0:8:16",
+  "@24@0:8@\"NSCoder\"16",
+  "@24@0:8@16",
+  "@24@0:8@?16",
+  "@24@0:8B16B20",
+  "@24@0:8^v16",
+  "@24@0:8^{AudioSessionObserver=^^?}16",
+  "@24@0:8^{HTTPBodyStream=^^?}16",
+  "@24@0:8^{_NSZone=}16",
+  "@24@0:8^{__CVBuffer=}16",
+  "@24@0:8i16i20",
+  "@24@0:8q16",
+  "@24@0:8r^v16",
+  "@24@0:8r^{sockaddr=CC[14c]}16",
+  "@24@0:8{scoped_refptr<webrtc::I420BufferInterface>=^{I420BufferInterface}}16",
+  "@28@0:8@16B24",
+  "@32@0:8:16@24",
+  "@32@0:8@\"NSData\"16^@24",
+  "@32@0:8@\"NSDictionary\"16^@24",
+  "@32@0:8@16@24",
+  "@32@0:8@16@?24",
+  "@32@0:8@16^@24",
+  "@32@0:8@16q24",
+  "@32@0:8@?16@?24",
+  "@32@0:8q16@24",
+  "@32@0:8q16q24",
+  "@32@0:8r^v16@24",
+  "@32@0:8{shared_ptr<rbx::signals::scoped_connection>=^{scoped_connection}^{__shared_weak_count}}16",
+  "@36@0:8i16i20i24i28i32",
+  "@40@0:8:16@24@32",
+  "@40@0:8@16@24@32",
+  "@40@0:8@16@24@?32",
+  "@40@0:8@16@24^@32",
+  "@40@0:8@16Q24^@32",
+  "@40@0:8@16q24q32",
+  "@40@0:8@16{_NSRange=QQ}24",
+  "@40@0:8i16i20i24i28i32i36",
+  "@40@0:8q16@24@32",
+  "@44@0:8@16@24@?32B40",
+  "@48@0:8@16@24@32@?40",
+  "@48@0:8@16@24@?32@40",
+  "@48@0:8@16q24@32@40",
+  "@48@0:8@16{_NSRange=QQ}24@40",
+  "@48@0:8^{__CVBuffer=}16i24i28i32i36i40i44",
+  "@48@0:8d16d24d32d40",
+  "@48@0:8i16i20r*24r*32r*40",
+  "@48@0:8q16q24@32@40",
+  "@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16",
+  "@52@0:8@16@24@32@?40B48",
+  "@52@0:8@16@24@?32@40B48",
+  "@52@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16B48",
+  "@56@0:8@16@24@32@40@?48",
+  "@56@0:8@16@24@?32@40B48B52",
+  "@?",
+  "@?16@0:8",
+  "B",
+  "B16@0:8",
+  "B20@0:8i16",
+  "B24@0:8#16",
+  "B24@0:8:16",
+  "B24@0:8@\"NSString\"16",
+  "B24@0:8@\"Protocol\"16",
+  "B24@0:8@\"UIGestureRecognizer\"16",
+  "B24@0:8@\"UIPresentationController\"16",
+  "B24@0:8@\"UIScrollView\"16",
+  "B24@0:8@\"UITextField\"16",
+  "B24@0:8@\"UITextView\"16",
+  "B24@0:8@16",
+  "B24@0:8^@16",
+  "B24@0:8i16i20",
+  "B24@0:8q16",
+  "B28@0:8B16^@20",
+  "B28@0:8f16^@20",
+  "B32@0:8@\"CXProvider\"16@\"CXTransaction\"24",
+  "B32@0:8@\"UIGestureRecognizer\"16@\"UIEvent\"24",
+  "B32@0:8@\"UIGestureRecognizer\"16@\"UIGestureRecognizer\"24",
+  "B32@0:8@\"UIGestureRecognizer\"16@\"UIPress\"24",
+  "B32@0:8@\"UIGestureRecognizer\"16@\"UITouch\"24",
+  "B32@0:8@16@24",
+  "B32@0:8@16^@24",
+  "B32@0:8Q16^@24",
+  "B32@0:8^*16^Q24",
+  "B32@0:8^@16@24",
+  "B32@0:8^@16@?24",
+  "B32@0:8^v16^v24",
+  "B32@0:8^{__CVBuffer=}16*24",
+  "B32@0:8d16^@24",
+  "B32@0:8q16^@24",
+  "B32@0:8{shared_ptr<RBX::Instance>=^{Instance}^{__shared_weak_count}}16",
+  "B36@0:8@16@24B32",
+  "B36@0:8@16B24^@28",
+  "B40@0:8@\"UITextField\"16@\"NSArray\"24@\"NSString\"32",
+  "B40@0:8@\"UITextView\"16@\"NSArray\"24@\"NSString\"32",
+  "B40@0:8@16@24@32",
+  "B40@0:8@16@24^@32",
+  "B40@0:8@16B24B28^@32",
+  "B40@0:8@16Q24^@32",
+  "B40@0:8{CGPoint=dd}16@32",
+  "B44@0:8@16@24B32^@36",
+  "B48@0:8@\"UITextField\"16{_NSRange=QQ}24@\"NSString\"40",
+  "B48@0:8@\"UITextView\"16@\"NSTextAttachment\"24{_NSRange=QQ}32",
+  "B48@0:8@\"UITextView\"16@\"NSURL\"24{_NSRange=QQ}32",
+  "B48@0:8@\"UITextView\"16{_NSRange=QQ}24@\"NSString\"40",
+  "B48@0:8@16@24Q32^@40",
+  "B48@0:8@16@24{_NSRange=QQ}32",
+  "B48@0:8@16{_NSRange=QQ}24@40",
+  "B56@0:8@\"UITextView\"16@\"NSTextAttachment\"24{_NSRange=QQ}32q48",
+  "B56@0:8@\"UITextView\"16@\"NSURL\"24{_NSRange=QQ}32q48",
+  "B56@0:8@16@24{_NSRange=QQ}32q48",
+  "C",
+  "C16@0:8",
+  "I",
+  "I16@0:8",
+  "Q",
+  "Q16@0:8",
+  "Q24@0:8@\"UINavigationController\"16",
+  "Q24@0:8@16",
+  "S",
+  "S16@0:8",
+  "Vv16@0:8",
+  "^?",
+  "^v",
+  "^v16@0:8",
+  "^{AudioSessionObserver=^^?}",
+  "^{HTTPBodyStream=^^?}",
+  "^{_NSZone=}16@0:8",
+  "^{__CVBuffer=}",
+  "^{__CVBuffer=}16@0:8",
+  "^{__SCNetworkReachability=}",
+  "d",
+  "d16@0:8",
+  "f16@0:8",
+  "f24@0:8@16",
+  "i",
+  "i16@0:8",
+  "i24@0:8@\"NSString\"16",
+  "i24@0:8@16",
+  "i24@0:8Q16",
+  "i24@0:8i16i20",
+  "q",
+  "q16@0:8",
+  "q20@0:8I16",
+  "q20@0:8i16",
+  "q24@0:8@\"UINavigationController\"16",
+  "q24@0:8@\"UIPresentationController\"16",
+  "q24@0:8@16",
+  "q24@0:8^{opaqueCMSampleBuffer=}16",
+  "q32@0:8*16Q24",
+  "q32@0:8@\"UIPresentationController\"16@\"UITraitCollection\"24",
+  "q32@0:8@16@24",
+  "r*16@0:8",
+  "v16@0:8",
+  "v20@0:8B16",
+  "v20@0:8C16",
+  "v20@0:8I16",
+  "v20@0:8S16",
+  "v20@0:8f16",
+  "v20@0:8i16",
+  "v24@0:8#16",
+  "v24@0:8:16",
+  "v24@0:8@\"AVAudioSession\"16",
+  "v24@0:8@\"CXProvider\"16",
+  "v24@0:8@\"CameraOverlayView\"16",
+  "v24@0:8@\"NSCoder\"16",
+  "v24@0:8@\"NSString\"16",
+  "v24@0:8@\"RBXCallingState\"16",
+  "v24@0:8@\"RBXDesignTokens\"16",
+  "v24@0:8@\"RTCAudioSession\"16",
+  "v24@0:8@\"UIImagePickerController\"16",
+  "v24@0:8@\"UIPresentationController\"16",
+  "v24@0:8@\"UIScrollView\"16",
+  "v24@0:8@\"UITextField\"16",
+  "v24@0:8@\"UITextView\"16",
+  "v24@0:8@16",
+  "v24@0:8@?16",
+  "v24@0:8Q16",
+  "v24@0:8^v16",
+  "v24@0:8^{__CVBuffer=}16",
+  "v24@0:8d16",
+  "v24@0:8i16B20",
+  "v24@0:8q16",
+  "v24@0:8r*16",
+  "v24@0:8r^v16",
+  "v28@0:8@\"RTCAudioSession\"16B24",
+  "v28@0:8@\"RTCAudioSession\"16f24",
+  "v28@0:8@\"UIScrollView\"16B24",
+  "v28@0:8@16B24",
+  "v28@0:8@16I24",
+  "v28@0:8@16f24",
+  "v28@0:8@16i24",
+  "v28@0:8B16@20",
+  "v28@0:8B16@?20",
+  "v28@0:8i16@\"NSString\"20",
+  "v28@0:8i16@20",
+  "v28@0:8i16r^{ICombinedSignalData=^^?}20",
+  "v32@0:8@\"CXProvider\"16@\"AVAudioSession\"24",
+  "v32@0:8@\"CXProvider\"16@\"CXAction\"24",
+  "v32@0:8@\"CXProvider\"16@\"CXAnswerCallAction\"24",
+  "v32@0:8@\"CXProvider\"16@\"CXEndCallAction\"24",
+  "v32@0:8@\"CXProvider\"16@\"CXPlayDTMFCallAction\"24",
+  "v32@0:8@\"CXProvider\"16@\"CXSetGroupCallAction\"24",
+  "v32@0:8@\"CXProvider\"16@\"CXSetHeldCallAction\"24",
+  "v32@0:8@\"CXProvider\"16@\"CXSetMutedCallAction\"24",
+  "v32@0:8@\"CXProvider\"16@\"CXSetTranslatingCallAction\"24",
+  "v32@0:8@\"CXProvider\"16@\"CXStartCallAction\"24",
+  "v32@0:8@\"CameraOverlayView\"16@\"UIImage\"24",
+  "v32@0:8@\"NSString\"16@\"NSString\"24",
+  "v32@0:8@\"RTCAudioSession\"16@\"NSError\"24",
+  "v32@0:8@\"RTCAudioSession\"16q24",
+  "v32@0:8@\"RTCVideoCapturer\"16@\"RTCVideoFrame\"24",
+  "v32@0:8@\"UIImagePickerController\"16@\"NSDictionary\"24",
+  "v32@0:8@\"UIPresentationController\"16@\"UIPresentationController\"24",
+  "v32@0:8@\"UIScrollView\"16@\"UIView\"24",
+  "v32@0:8@\"UITextField\"16@\"<UIEditMenuInteractionAnimating>\"24",
+  "v32@0:8@\"UITextField\"16@\"UIInputSuggestion\"24",
+  "v32@0:8@\"UITextField\"16q24",
+  "v32@0:8@\"UITextView\"16@\"<UIEditMenuInteractionAnimating>\"24",
+  "v32@0:8@\"UITextView\"16@\"UIInputSuggestion\"24",
+  "v32@0:8@\"UITextView\"16@\"UITextFormattingViewController\"24",
+  "v32@0:8@16@24",
+  "v32@0:8@16@?24",
+  "v32@0:8@16B24B28",
+  "v32@0:8@16Q24",
+  "v32@0:8@16^@24",
+  "v32@0:8@16d24",
+  "v32@0:8@16f24B28",
+  "v32@0:8@16i24B28",
+  "v32@0:8@16q24",
+  "v32@0:8@?16@24",
+  "v32@0:8Q16@24",
+  "v32@0:8^{__CVBuffer=}16*24",
+  "v32@0:8f16f20f24f28",
+  "v32@0:8i16@20f28",
+  "v32@0:8i16B20@24",
+  "v32@0:8q16@\"RBXExternalIdentityRequest\"24",
+  "v32@0:8q16@24",
+  "v32@0:8q16@?24",
+  "v32@0:8r*16r^v24",
+  "v32@0:8{CGSize=dd}16",
+  "v32@0:8{shared_ptr<RBX::Instance>=^{Instance}^{__shared_weak_count}}16",
+  "v32@0:8{shared_ptr<RBX::MessageBus>=^{MessageBus}^{__shared_weak_count}}16",
+  "v32@0:8{shared_ptr<RBX::SignalrControl>=^{SignalrControl}^{__shared_weak_count}}16",
+  "v32@0:8{shared_ptr<RBX::TextBox>=^{TextBox}^{__shared_weak_count}}16",
+  "v32@0:8{shared_ptr<rbx::signals::scoped_connection>=^{scoped_connection}^{__shared_weak_count}}16",
+  "v36@0:8@\"RTCAudioSession\"16B24@\"NSError\"28",
+  "v36@0:8@\"UINavigationController\"16@\"UIViewController\"24B32",
+  "v36@0:8@16@24B32",
+  "v36@0:8@16B24@28",
+  "v36@0:8@16i24i28i32",
+  "v36@0:8B16r*20@?28",
+  "v40@0:8@\"AVCaptureOutput\"16^{opaqueCMSampleBuffer=}24@\"AVCaptureConnection\"32",
+  "v40@0:8@\"RTCAudioSession\"16Q24@\"AVAudioSessionRouteDescription\"32",
+  "v40@0:8@\"UIImagePickerController\"16@\"UIImage\"24@\"NSDictionary\"32",
+  "v40@0:8@\"UIPointerInteraction\"16@\"UIPointerRegion\"24@\"<UIPointerInteractionAnimating>\"32",
+  "v40@0:8@\"UIPresentationController\"16q24@\"<UIViewControllerTransitionCoordinator>\"32",
+  "v40@0:8@\"UIScrollView\"16@\"UIView\"24d32",
+  "v40@0:8@\"UITextView\"16@\"UITextItem\"24@\"<UIContextMenuInteractionAnimating>\"32",
+  "v40@0:8@16@24@32",
+  "v40@0:8@16@24@?32",
+  "v40@0:8@16@24^v32",
+  "v40@0:8@16@24d32",
+  "v40@0:8@16@24q32",
+  "v40@0:8@16I24B28q32",
+  "v40@0:8@16Q24@32",
+  "v40@0:8@16^{opaqueCMSampleBuffer=}24@32",
+  "v40@0:8@16q24@32",
+  "v40@0:8f16f20f24f28@32",
+  "v40@0:8q16@\"NSString\"24@\"NSString\"32",
+  "v40@0:8q16@24@32",
+  "v40@0:8{StringView=*Q}16@32",
+  "v40@0:8{basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}16",
+  "v40@0:8{map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<const std::string, std::string>>>={__tree<std::__value_type<std::string, std::string>, std::__map_value_compare<std::string, std::__value_type<std::string, std::string>, std::less<std::string>>, std::allocator<std::__value_type<std::string, std::string>>>=^v{?={__tree_end_node<std::__tree_node_base<void *> *>=^v}}{?=Q}}}16",
+  "v40@0:8{vector<unsigned char, std::allocator<unsigned char>>=**{?=*}}16",
+  "v44@0:8i16@\"NSString\"20@\"NSString\"28@\"NSString\"36",
+  "v44@0:8i16@20@28@36",
+  "v48@0:8@\"UIScrollView\"16{CGPoint=dd}24N^{CGPoint=dd}40",
+  "v48@0:8@16@24@32@40",
+  "v48@0:8@16@24@32@?40",
+  "v48@0:8@16@24@32^v40",
+  "v48@0:8@16@24q32@?40",
+  "v48@0:8@16{CGPoint=dd}24N^{CGPoint=dd}40",
+  "v48@0:8@?16@?24@?32@?40",
+  "v48@0:8Q16Q24@?32@?40",
+  "v48@0:8q16q24@\"NSString\"32@\"NSString\"40",
+  "v48@0:8q16q24@32@40",
+  "v48@0:8{UIEdgeInsets=dddd}16",
+  "v48@0:8{function<void ()>=(StorageUnion={OutOfLineStorage=^vQQ}{InlineStorage=[24C]}){PointerIntPair<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>, 1U, bool, RSL::PointerLikeTypeTraits<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>>, RSL::PointerIntPairInfo<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>, 1, RSL::PointerLikeTypeTraits<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>>>>=q}}16",
+  "v48@0:8{function<void (const std::vector<unsigned char> &)>=(StorageUnion={OutOfLineStorage=^vQQ}{InlineStorage=[24C]}){PointerIntPair<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>, 1U, bool, RSL::PointerLikeTypeTraits<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>>, RSL::PointerIntPairInfo<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>, 1, RSL::PointerLikeTypeTraits<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>>>>=q}}16",
+  "v52@0:8@16@24@32i40@44",
+  "v56@0:8@16@24@32@40@?48",
+  "v56@0:8{shared_ptr<RBX::Instance>=^{Instance}^{__shared_weak_count}}16{basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}32",
+  "v64@0:8@16@24@32@40@48@?56",
+  "v64@0:8@16@24@32@40@?48@56",
+  "v64@0:8@16{unordered_map<std::string, std::string, std::hash<std::string>, std::equal_to<std::string>, std::allocator<std::pair<const std::string, std::string>>>={__hash_table<std::__hash_value_type<std::string, std::string>, std::__unordered_map_hasher<std::string, std::__hash_value_type<std::string, std::string>, std::hash<std::string>, std::equal_to<std::string>>, std::__unordered_map_equal<std::string, std::__hash_value_type<std::string, std::string>, std::equal_to<std::string>, std::hash<std::string>>, std::allocator<std::__hash_value_type<std::string, std::string>>>={unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, std::string>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, std::string>, void *> *> *>>>={?=^^v{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, std::string>, void *> *> *>>={?=Q}}}}{?={__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, std::string>, void *> *>=^v}}{?=Q}{?=f}}}24",
+  "v72@0:8@\"CameraOverlayView\"16{CGAffineTransform=dddddd}24",
+  "v72@0:8@16{CGAffineTransform=dddddd}24",
+  "v72@0:8q16{basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}24{basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}48",
+  "v80@0:8@16@24@32@40@48@56@64@72",
+  "v80@0:8{shared_ptr<RBX::Instance>=^{Instance}^{__shared_weak_count}}16{basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}32{basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}56",
+  "v92@0:8i16@\"NSString\"20@\"NSString\"28@\"NSString\"36@\"NSString\"44q52B60@\"NSString\"64@\"NSString\"72@\"NSString\"80B88",
+  "v92@0:8i16@20@28@36@44q52B60@64@72@80B88",
+  "{AdaptiveSyncMutex=\"impl\"[8c]}",
+  "{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8",
+  "{CGRect={CGPoint=dd}{CGSize=dd}}32@0:8{Rect2D={Vector2=ff}{Vector2=ff}}16",
+  "{CGRect={CGPoint=dd}{CGSize=dd}}48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16",
+  "{ChannelRecord={basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}q}16@0:8",
+  "{DisplayRefreshRateInfo=\"rate\"d\"isVrrSupported\"B\"isAvailable\"B\"isLowPowerMode\"B\"canCapFrameRate\"B}",
+  "{FramePresentIntervals=\"intervalsNs\"{array<unsigned long long, 32UL>=\"__elems_\"[32Q]}\"count\"Q}",
+  "{FramePresentIntervals={array<unsigned long long, 32UL>=[32Q]}Q}16@0:8",
+  "{Handle<std::shared_ptr<RBX::ICallingCoreListener>, std::shared_ptr<RBX::ICallingCoreListener>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::ICallingCoreListener>=\"__ptr_\"^{ICallingCoreListener}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IDesignFoundationsCoreListener>, std::shared_ptr<RBX::IDesignFoundationsCoreListener>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IDesignFoundationsCoreListener>=\"__ptr_\"^{IDesignFoundationsCoreListener}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IDeviceDisplayHandlerCore>, std::shared_ptr<RBX::IDeviceDisplayHandlerCore>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IDeviceDisplayHandlerCore>=\"__ptr_\"^{IDeviceDisplayHandlerCore}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IExampleHandlerCore>, std::shared_ptr<RBX::IExampleHandlerCore>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IExampleHandlerCore>=\"__ptr_\"^{IExampleHandlerCore}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IExampleProtocolCoreListener>, std::shared_ptr<RBX::IExampleProtocolCoreListener>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IExampleProtocolCoreListener>=\"__ptr_\"^{IExampleProtocolCoreListener}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IExternalIdentityCoreListener>, std::shared_ptr<RBX::IExternalIdentityCoreListener>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IExternalIdentityCoreListener>=\"__ptr_\"^{IExternalIdentityCoreListener}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::INativeAdsCoreListener>, std::shared_ptr<RBX::INativeAdsCoreListener>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::INativeAdsCoreListener>=\"__ptr_\"^{INativeAdsCoreListener}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IPinShortcutHandlerCore>, std::shared_ptr<RBX::IPinShortcutHandlerCore>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IPinShortcutHandlerCore>=\"__ptr_\"^{IPinShortcutHandlerCore}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IPlatformCalling>, std::shared_ptr<RBX::IPlatformCalling>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IPlatformCalling>=\"__ptr_\"^{IPlatformCalling}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IPlatformDesignFoundations>, std::shared_ptr<RBX::IPlatformDesignFoundations>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IPlatformDesignFoundations>=\"__ptr_\"^{IPlatformDesignFoundations}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IPlatformDeviceDisplayHandler>, std::shared_ptr<RBX::IPlatformDeviceDisplayHandler>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IPlatformDeviceDisplayHandler>=\"__ptr_\"^{IPlatformDeviceDisplayHandler}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IPlatformExampleHandler>, std::shared_ptr<RBX::IPlatformExampleHandler>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IPlatformExampleHandler>=\"__ptr_\"^{IPlatformExampleHandler}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IPlatformExampleProtocol>, std::shared_ptr<RBX::IPlatformExampleProtocol>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IPlatformExampleProtocol>=\"__ptr_\"^{IPlatformExampleProtocol}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IPlatformExternalIdentity>, std::shared_ptr<RBX::IPlatformExternalIdentity>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IPlatformExternalIdentity>=\"__ptr_\"^{IPlatformExternalIdentity}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IPlatformNativeAds>, std::shared_ptr<RBX::IPlatformNativeAds>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IPlatformNativeAds>=\"__ptr_\"^{IPlatformNativeAds}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{Handle<std::shared_ptr<RBX::IPlatformPinShortcut>, std::shared_ptr<RBX::IPlatformPinShortcut>>=\"m_cache\"{shared_ptr<djinni::ProxyCache<djinni::CppProxyCacheTraits>::Pimpl>=\"__ptr_\"^{Pimpl}\"__cntrl_\"^{__shared_weak_count}}\"m_obj\"{shared_ptr<RBX::IPlatformPinShortcut>=\"__ptr_\"^{IPlatformPinShortcut}\"__cntrl_\"^{__shared_weak_count}}}",
+  "{IOSSupportUpdateLock=\"impl\"[8c]}",
+  "{Mutex=\"impl_\"{MutexImpl=\"mutex_\"{_opaque_pthread_mutex_t=\"__sig\"q\"__opaque\"[56c]}}}",
+  "{Rect2D=\"min\"{Vector2=\"x\"f\"y\"f}\"max\"{Vector2=\"x\"f\"y\"f}}",
+  "{UIEdgeInsets=\"top\"d\"left\"d\"bottom\"d\"right\"d}",
+  "{UIEdgeInsets=dddd}16@0:8",
+  "{atomic<double>=\"__a_\"{__cxx_atomic_impl<double, std::__cxx_atomic_base_impl<double>>=\"__a_value\"Ad}}",
+  "{atomic<int>=\"__a_\"{__cxx_atomic_impl<int, std::__cxx_atomic_base_impl<int>>=\"__a_value\"Ai}}",
+  "{atomic<unsigned int>=\"__a_\"{__cxx_atomic_impl<unsigned int, std::__cxx_atomic_base_impl<unsigned int>>=\"__a_value\"AI}}",
+  "{basic_string<char, std::char_traits<char>, std::allocator<char>>=\"\"{?=\"__rep_\"(__rep=\"__s\"{__short=\"__data_\"[23c]\"__size_\"b7\"__is_long_\"b1}\"__l\"{__long=\"__data_\"*\"__size_\"Q\"__cap_\"b63\"__is_long_\"b1})}}",
+  "{basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}16@0:8",
+  "{basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}24@0:8@16",
+  "{basic_string<char, std::char_traits<char>, std::allocator<char>>={?=(__rep={__short=[23c]b7b1}{__long=*Qb63b1})}}24@0:8r*16",
+  "{deque<AdaptiveSyncTargetSample, std::allocator<AdaptiveSyncTargetSample>>=\"__map_\"{__split_buffer<AdaptiveSyncTargetSample *, std::allocator<AdaptiveSyncTargetSample *>>=\"__first_\"^^{AdaptiveSyncTargetSample}\"__begin_\"^^{AdaptiveSyncTargetSample}\"__end_\"^^{AdaptiveSyncTargetSample}\"\"{?=\"__cap_\"^^{AdaptiveSyncTargetSample}}}\"__start_\"Q\"\"{?=\"__size_\"Q}}",
+  "{deque<double, std::allocator<double>>=\"__map_\"{__split_buffer<double *, std::allocator<double *>>=\"__first_\"^^d\"__begin_\"^^d\"__end_\"^^d\"\"{?=\"__cap_\"^^d}}\"__start_\"Q\"\"{?=\"__size_\"Q}}",
+  "{function<void ()>=\"storageUnion\"(StorageUnion=\"outOfLineStorage\"{OutOfLineStorage=\"storagePtr\"^v\"size\"Q\"alignment\"Q}\"inlineStorage\"{InlineStorage=\"bytes\"[24C]})\"vtableAndInlineFlag\"{PointerIntPair<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>, 1U, bool, RSL::PointerLikeTypeTraits<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>>, RSL::PointerIntPairInfo<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>, 1, RSL::PointerLikeTypeTraits<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>>>>=\"Value\"q}}",
+  "{function<void ()>=(StorageUnion={OutOfLineStorage=^vQQ}{InlineStorage=[24C]}){PointerIntPair<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>, 1U, bool, RSL::PointerLikeTypeTraits<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>>, RSL::PointerIntPairInfo<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>, 1, RSL::PointerLikeTypeTraits<RSL::PointerUnion<const RSL::Detail::TrivialVTable *, const RSL::Detail::NonTrivialVTable *>>>>=q}}16@0:8",
+  "{map<NSString *, std::shared_ptr<RBX::MLR::Tensor>, CompareNSString, std::allocator<std::pair<NSString *const, std::shared_ptr<RBX::MLR::Tensor>>>>=\"__tree_\"{__tree<std::__value_type<NSString *, std::shared_ptr<RBX::MLR::Tensor>>, std::__map_value_compare<NSString *, std::__value_type<NSString *, std::shared_ptr<RBX::MLR::Tensor>>, CompareNSString>, std::allocator<std::__value_type<NSString *, std::shared_ptr<RBX::MLR::Tensor>>>>=\"__begin_node_\"^v\"\"{?=\"__end_node_\"{__tree_end_node<std::__tree_node_base<void *> *>=\"__left_\"^v}}\"\"{?=\"__size_\"Q}}}",
+  "{map<UITouch *, unsigned int, std::less<UITouch *>, std::allocator<std::pair<UITouch *const, unsigned int>>>=\"__tree_\"{__tree<std::__value_type<UITouch *, unsigned int>, std::__map_value_compare<UITouch *, std::__value_type<UITouch *, unsigned int>, std::less<UITouch *>>, std::allocator<std::__value_type<UITouch *, unsigned int>>>=\"__begin_node_\"^v\"\"{?=\"__end_node_\"{__tree_end_node<std::__tree_node_base<void *> *>=\"__left_\"^v}}\"\"{?=\"__size_\"Q}}}",
+  "{map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<const std::string, std::string>>>=\"__tree_\"{__tree<std::__value_type<std::string, std::string>, std::__map_value_compare<std::string, std::__value_type<std::string, std::string>, std::less<std::string>>, std::allocator<std::__value_type<std::string, std::string>>>=\"__begin_node_\"^v\"\"{?=\"__end_node_\"{__tree_end_node<std::__tree_node_base<void *> *>=\"__left_\"^v}}\"\"{?=\"__size_\"Q}}}",
+  "{map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<const std::string, std::string>>>={__tree<std::__value_type<std::string, std::string>, std::__map_value_compare<std::string, std::__value_type<std::string, std::string>, std::less<std::string>>, std::allocator<std::__value_type<std::string, std::string>>>=^v{?={__tree_end_node<std::__tree_node_base<void *> *>=^v}}{?=Q}}}16@0:8",
+  "{optional<RBX::Vector2>=\"\"(?=\"__null_state_\"c\"__val_\"{Vector2=\"x\"f\"y\"f})\"__engaged_\"B}",
+  "{scoped_connection=\"con\"{connection=\"weak_slot\"{intrusive_weak_ptr<rbx::signals::slot_base>=\"p_\"^{slot_base}}}}",
+  "{scoped_refptr<webrtc::I420BufferInterface>=\"ptr_\"^{I420BufferInterface}}",
+  "{scoped_refptr<webrtc::I420BufferInterface>=^{I420BufferInterface}}16@0:8",
+  "{shared_ptr<RBX::Instance>=\"__ptr_\"^{Instance}\"__cntrl_\"^{__shared_weak_count}}",
+  "{shared_ptr<RBX::Instance>=^{Instance}^{__shared_weak_count}}16@0:8",
+  "{shared_ptr<RBX::MessageBus>=\"__ptr_\"^{MessageBus}\"__cntrl_\"^{__shared_weak_count}}",
+  "{shared_ptr<RBX::MessageBus>=^{MessageBus}^{__shared_weak_count}}16@0:8",
+  "{shared_ptr<RBX::SignalrControl>=\"__ptr_\"^{SignalrControl}\"__cntrl_\"^{__shared_weak_count}}",
+  "{shared_ptr<RBX::SignalrControl>=^{SignalrControl}^{__shared_weak_count}}16@0:8",
+  "{shared_ptr<rbx::signals::scoped_connection>=\"__ptr_\"^{scoped_connection}\"__cntrl_\"^{__shared_weak_count}}",
+  "{shared_ptr<rbx::signals::scoped_connection>=^{scoped_connection}^{__shared_weak_count}}16@0:8",
+  "{unique_ptr<webrtc::LogSink, std::default_delete<webrtc::LogSink>>=\"\"{?=\"__ptr_\"^{LogSink}}}",
+  "{unique_ptr<webrtc::VideoRendererAdapter, std::default_delete<webrtc::VideoRendererAdapter>>=\"\"{?=\"__ptr_\"^{VideoRendererAdapter}}}",
+  "{vector<RBX::Vector3, std::allocator<RBX::Vector3>>=^{Vector3}^{Vector3}{?=^{Vector3}}}24@0:8@16",
+  "{vector<__weak id<RTCAudioSessionDelegate>, std::allocator<__weak id<RTCAudioSessionDelegate>>>=\"__begin_\"^@\"__end_\"^@\"\"{?=\"__cap_\"^@}}",
+  "{vector<__weak id<RTCAudioSessionDelegate>, std::allocator<__weak id<RTCAudioSessionDelegate>>>=^@^@{?=^@}}16@0:8",
+  "{vector<bool, std::allocator<bool>>=\"__begin_\"^Q\"__size_\"Q\"\"{?=\"__cap_\"Q}}"
+ ]
+}

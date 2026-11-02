@@ -1,0 +1,1691 @@
+{
+ "/System/Library/Frameworks/AVFoundation.framework/AVFoundation": {
+  "install_name": "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+  "tbd": "System/Library/Frameworks/AVFoundation.framework/AVFoundation.tbd",
+  "present": true,
+  "symbols": 2141,
+  "objc_classes": 372,
+  "reexports": [
+   "/System/Library/Frameworks/AVFAudio.framework/AVFAudio",
+   "/System/Library/Frameworks/AVRouting.framework/AVRouting",
+   "/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture",
+   "/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+   "/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture",
+   "/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore"
+  ]
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Accelerate": {
+  "install_name": "/System/Library/Frameworks/Accelerate.framework/Accelerate",
+  "tbd": "System/Library/Frameworks/Accelerate.framework/Accelerate.tbd",
+  "present": true,
+  "symbols": 9236,
+  "objc_classes": 0,
+  "reexports": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Accelerate",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib"
+  ]
+ },
+ "/System/Library/Frameworks/AdSupport.framework/AdSupport": {
+  "install_name": "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+  "tbd": "System/Library/Frameworks/AdSupport.framework/AdSupport.tbd",
+  "present": true,
+  "symbols": 0,
+  "objc_classes": 1,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/AdSupport.framework/AdSupport"
+  ]
+ },
+ "/System/Library/Frameworks/AppIntents.framework/AppIntents": {
+  "install_name": "/System/Library/Frameworks/AppIntents.framework/AppIntents",
+  "tbd": "System/Library/Frameworks/AppIntents.framework/AppIntents.tbd",
+  "present": true,
+  "symbols": 14385,
+  "objc_classes": 16,
+  "reexports": [
+   "/System/Library/Frameworks/RelevanceKit.framework/RelevanceKit"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/AppIntents.framework/AppIntents"
+  ]
+ },
+ "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox": {
+  "install_name": "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+  "tbd": "System/Library/Frameworks/AudioToolbox.framework/AudioToolbox.tbd",
+  "present": true,
+  "symbols": 1896,
+  "objc_classes": 28,
+  "reexports": [
+   "/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+   "/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore"
+  ]
+ },
+ "/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices": {
+  "install_name": "/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices",
+  "tbd": "System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices.tbd",
+  "present": true,
+  "symbols": 114,
+  "objc_classes": 28,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices"
+  ]
+ },
+ "/System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks": {
+  "install_name": "/System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks",
+  "tbd": "System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks.tbd",
+  "present": true,
+  "symbols": 2,
+  "objc_classes": 9,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks"
+  ]
+ },
+ "/System/Library/Frameworks/CFNetwork.framework/CFNetwork": {
+  "install_name": "/System/Library/Frameworks/CFNetwork.framework/CFNetwork",
+  "tbd": "System/Library/Frameworks/CFNetwork.framework/CFNetwork.tbd",
+  "present": true,
+  "symbols": 829,
+  "objc_classes": 50,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CFNetwork.framework/CFNetwork"
+  ]
+ },
+ "/System/Library/Frameworks/CallKit.framework/CallKit": {
+  "install_name": "/System/Library/Frameworks/CallKit.framework/CallKit",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/Combine.framework/Combine": {
+  "install_name": "/System/Library/Frameworks/Combine.framework/Combine",
+  "tbd": "System/Library/Frameworks/Combine.framework/Combine.tbd",
+  "present": true,
+  "symbols": 2129,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/Combine.framework/Combine"
+  ]
+ },
+ "/System/Library/Frameworks/Contacts.framework/Contacts": {
+  "install_name": "/System/Library/Frameworks/Contacts.framework/Contacts",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/CoreAudio.framework/CoreAudio": {
+  "install_name": "/System/Library/Frameworks/CoreAudio.framework/CoreAudio",
+  "tbd": "System/Library/Frameworks/CoreAudio.framework/CoreAudio.tbd",
+  "present": true,
+  "symbols": 632,
+  "objc_classes": 1,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreAudio.framework/CoreAudio"
+  ]
+ },
+ "/System/Library/Frameworks/CoreData.framework/CoreData": {
+  "install_name": "/System/Library/Frameworks/CoreData.framework/CoreData",
+  "tbd": "System/Library/Frameworks/CoreData.framework/CoreData.tbd",
+  "present": true,
+  "symbols": 2209,
+  "objc_classes": 93,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreData.framework/CoreData"
+  ]
+ },
+ "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": {
+  "install_name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+  "tbd": "System/Library/Frameworks/CoreFoundation.framework/CoreFoundation.tbd",
+  "present": true,
+  "symbols": 2751,
+  "objc_classes": 41,
+  "reexports": [
+   "/usr/lib/libobjc.A.dylib"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+  ]
+ },
+ "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics": {
+  "install_name": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+  "tbd": "System/Library/Frameworks/CoreGraphics.framework/CoreGraphics.tbd",
+  "present": true,
+  "symbols": 4392,
+  "objc_classes": 4,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics"
+  ]
+ },
+ "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics": {
+  "install_name": "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics",
+  "tbd": "System/Library/Frameworks/CoreHaptics.framework/CoreHaptics.tbd",
+  "present": true,
+  "symbols": 90,
+  "objc_classes": 11,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics"
+  ]
+ },
+ "/System/Library/Frameworks/CoreImage.framework/CoreImage": {
+  "install_name": "/System/Library/Frameworks/CoreImage.framework/CoreImage",
+  "tbd": "System/Library/Frameworks/CoreImage.framework/CoreImage.tbd",
+  "present": true,
+  "symbols": 478,
+  "objc_classes": 32,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreImage.framework/CoreImage"
+  ]
+ },
+ "/System/Library/Frameworks/CoreLocation.framework/CoreLocation": {
+  "install_name": "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+  "tbd": "System/Library/Frameworks/CoreLocation.framework/CoreLocation.tbd",
+  "present": true,
+  "symbols": 159,
+  "objc_classes": 138,
+  "reexports": [
+   "/System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreLocation.framework/CoreLocation"
+  ]
+ },
+ "/System/Library/Frameworks/CoreML.framework/CoreML": {
+  "install_name": "/System/Library/Frameworks/CoreML.framework/CoreML",
+  "tbd": "System/Library/Frameworks/CoreML.framework/CoreML.tbd",
+  "present": true,
+  "symbols": 2835,
+  "objc_classes": 179,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreML.framework/CoreML"
+  ]
+ },
+ "/System/Library/Frameworks/CoreMedia.framework/CoreMedia": {
+  "install_name": "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+  "tbd": "System/Library/Frameworks/CoreMedia.framework/CoreMedia.tbd",
+  "present": true,
+  "symbols": 5095,
+  "objc_classes": 1,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreMedia.framework/CoreMedia"
+  ]
+ },
+ "/System/Library/Frameworks/CoreMotion.framework/CoreMotion": {
+  "install_name": "/System/Library/Frameworks/CoreMotion.framework/CoreMotion",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/CoreServices.framework/CoreServices": {
+  "install_name": "/System/Library/Frameworks/CoreServices.framework/CoreServices",
+  "tbd": "System/Library/Frameworks/CoreServices.framework/CoreServices.tbd",
+  "present": true,
+  "symbols": 507,
+  "objc_classes": 67,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreServices.framework/CoreServices"
+  ]
+ },
+ "/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight": {
+  "install_name": "/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight",
+  "tbd": "System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight.tbd",
+  "present": true,
+  "symbols": 1400,
+  "objc_classes": 113,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight"
+  ]
+ },
+ "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony": {
+  "install_name": "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/CoreText.framework/CoreText": {
+  "install_name": "/System/Library/Frameworks/CoreText.framework/CoreText",
+  "tbd": "System/Library/Frameworks/CoreText.framework/CoreText.tbd",
+  "present": true,
+  "symbols": 911,
+  "objc_classes": 6,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreText.framework/CoreText"
+  ]
+ },
+ "/System/Library/Frameworks/CoreVideo.framework/CoreVideo": {
+  "install_name": "/System/Library/Frameworks/CoreVideo.framework/CoreVideo",
+  "tbd": "System/Library/Frameworks/CoreVideo.framework/CoreVideo.tbd",
+  "present": true,
+  "symbols": 1193,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CoreVideo.framework/CoreVideo"
+  ]
+ },
+ "/System/Library/Frameworks/CryptoKit.framework/CryptoKit": {
+  "install_name": "/System/Library/Frameworks/CryptoKit.framework/CryptoKit",
+  "tbd": "System/Library/Frameworks/CryptoKit.framework/CryptoKit.tbd",
+  "present": true,
+  "symbols": 1796,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CryptoKit.framework/CryptoKit"
+  ]
+ },
+ "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange": {
+  "install_name": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck": {
+  "install_name": "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck",
+  "tbd": "System/Library/Frameworks/DeviceCheck.framework/DeviceCheck.tbd",
+  "present": true,
+  "symbols": 1,
+  "objc_classes": 5,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck"
+  ]
+ },
+ "/System/Library/Frameworks/EventKit.framework/EventKit": {
+  "install_name": "/System/Library/Frameworks/EventKit.framework/EventKit",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/EventKitUI.framework/EventKitUI": {
+  "install_name": "/System/Library/Frameworks/EventKitUI.framework/EventKitUI",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/FileProvider.framework/FileProvider": {
+  "install_name": "/System/Library/Frameworks/FileProvider.framework/FileProvider",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/Foundation.framework/Foundation": {
+  "install_name": "/System/Library/Frameworks/Foundation.framework/Foundation",
+  "tbd": "System/Library/Frameworks/Foundation.framework/Foundation.tbd",
+  "present": true,
+  "symbols": 49209,
+  "objc_classes": 315,
+  "reexports": [
+   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+   "/usr/lib/libobjc.A.dylib"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/Foundation.framework/Foundation"
+  ]
+ },
+ "/System/Library/Frameworks/GLKit.framework/GLKit": {
+  "install_name": "/System/Library/Frameworks/GLKit.framework/GLKit",
+  "tbd": "System/Library/Frameworks/GLKit.framework/GLKit.tbd",
+  "present": true,
+  "symbols": 63,
+  "objc_classes": 24,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/GLKit.framework/GLKit"
+  ]
+ },
+ "/System/Library/Frameworks/GameController.framework/GameController": {
+  "install_name": "/System/Library/Frameworks/GameController.framework/GameController",
+  "tbd": "System/Library/Frameworks/GameController.framework/GameController.tbd",
+  "present": true,
+  "symbols": 910,
+  "objc_classes": 131,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/GameController.framework/GameController"
+  ]
+ },
+ "/System/Library/Frameworks/IOSurface.framework/IOSurface": {
+  "install_name": "/System/Library/Frameworks/IOSurface.framework/IOSurface",
+  "tbd": "System/Library/Frameworks/IOSurface.framework/IOSurface.tbd",
+  "present": true,
+  "symbols": 455,
+  "objc_classes": 8,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/IOSurface.framework/IOSurface"
+  ]
+ },
+ "/System/Library/Frameworks/Intents.framework/Intents": {
+  "install_name": "/System/Library/Frameworks/Intents.framework/Intents",
+  "tbd": "System/Library/Frameworks/Intents.framework/Intents.tbd",
+  "present": true,
+  "symbols": 2864,
+  "objc_classes": 1294,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/Intents.framework/Intents"
+  ]
+ },
+ "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore": {
+  "install_name": "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore",
+  "tbd": "System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore.tbd",
+  "present": true,
+  "symbols": 5688,
+  "objc_classes": 5,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore"
+  ]
+ },
+ "/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation": {
+  "install_name": "/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation",
+  "tbd": "System/Library/Frameworks/LinkPresentation.framework/LinkPresentation.tbd",
+  "present": true,
+  "symbols": 95,
+  "objc_classes": 99,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation"
+  ]
+ },
+ "/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication": {
+  "install_name": "/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit": {
+  "install_name": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer": {
+  "install_name": "/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer",
+  "tbd": "System/Library/Frameworks/MediaPlayer.framework/MediaPlayer.tbd",
+  "present": true,
+  "symbols": 1537,
+  "objc_classes": 460,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer"
+  ]
+ },
+ "/System/Library/Frameworks/MessageUI.framework/MessageUI": {
+  "install_name": "/System/Library/Frameworks/MessageUI.framework/MessageUI",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/Metal.framework/Metal": {
+  "install_name": "/System/Library/Frameworks/Metal.framework/Metal",
+  "tbd": "System/Library/Frameworks/Metal.framework/Metal.tbd",
+  "present": true,
+  "symbols": 375,
+  "objc_classes": 314,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/Metal.framework/Metal"
+  ]
+ },
+ "/System/Library/Frameworks/MetalKit.framework/MetalKit": {
+  "install_name": "/System/Library/Frameworks/MetalKit.framework/MetalKit",
+  "tbd": "System/Library/Frameworks/MetalKit.framework/MetalKit.tbd",
+  "present": true,
+  "symbols": 24,
+  "objc_classes": 9,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/MetalKit.framework/MetalKit"
+  ]
+ },
+ "/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders": {
+  "install_name": "/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders",
+  "tbd": "System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders.tbd",
+  "present": true,
+  "symbols": 400,
+  "objc_classes": 732,
+  "reexports": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSBenchmarkLoop.framework/MPSBenchmarkLoop",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSFunctions.framework/MPSFunctions",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSHost.framework/MPSHost",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSBenchmarkLoop.framework/MPSBenchmarkLoop",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSFunctions.framework/MPSFunctions",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSHost.framework/MPSHost",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders"
+  ]
+ },
+ "/System/Library/Frameworks/MetricKit.framework/MetricKit": {
+  "install_name": "/System/Library/Frameworks/MetricKit.framework/MetricKit",
+  "tbd": "System/Library/Frameworks/MetricKit.framework/MetricKit.tbd",
+  "present": true,
+  "symbols": 31,
+  "objc_classes": 40,
+  "reexports": [
+   "/System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/MetricKit.framework/MetricKit",
+   "/System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics"
+  ]
+ },
+ "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices": {
+  "install_name": "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices",
+  "tbd": "System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices.tbd",
+  "present": true,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [
+   "/System/Library/Frameworks/CoreServices.framework/CoreServices"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices"
+  ]
+ },
+ "/System/Library/Frameworks/Network.framework/Network": {
+  "install_name": "/System/Library/Frameworks/Network.framework/Network",
+  "tbd": "System/Library/Frameworks/Network.framework/Network.tbd",
+  "present": true,
+  "symbols": 23774,
+  "objc_classes": 55,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/Network.framework/Network"
+  ]
+ },
+ "/System/Library/Frameworks/OSLog.framework/OSLog": {
+  "install_name": "/System/Library/Frameworks/OSLog.framework/OSLog",
+  "tbd": "System/Library/Frameworks/OSLog.framework/OSLog.tbd",
+  "present": true,
+  "symbols": 50,
+  "objc_classes": 9,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/OSLog.framework/OSLog"
+  ]
+ },
+ "/System/Library/Frameworks/OpenGLES.framework/OpenGLES": {
+  "install_name": "/System/Library/Frameworks/OpenGLES.framework/OpenGLES",
+  "tbd": "System/Library/Frameworks/OpenGLES.framework/OpenGLES.tbd",
+  "present": true,
+  "symbols": 485,
+  "objc_classes": 2,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/OpenGLES.framework/OpenGLES"
+  ]
+ },
+ "/System/Library/Frameworks/PDFKit.framework/PDFKit": {
+  "install_name": "/System/Library/Frameworks/PDFKit.framework/PDFKit",
+  "tbd": "System/Library/Frameworks/PDFKit.framework/PDFKit.tbd",
+  "present": true,
+  "symbols": 203,
+  "objc_classes": 24,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/PDFKit.framework/PDFKit"
+  ]
+ },
+ "/System/Library/Frameworks/PassKit.framework/PassKit": {
+  "install_name": "/System/Library/Frameworks/PassKit.framework/PassKit",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/Photos.framework/Photos": {
+  "install_name": "/System/Library/Frameworks/Photos.framework/Photos",
+  "tbd": "System/Library/Frameworks/Photos.framework/Photos.tbd",
+  "present": true,
+  "symbols": 668,
+  "objc_classes": 326,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/Photos.framework/Photos"
+  ]
+ },
+ "/System/Library/Frameworks/PhotosUI.framework/PhotosUI": {
+  "install_name": "/System/Library/Frameworks/PhotosUI.framework/PhotosUI",
+  "tbd": "System/Library/Frameworks/PhotosUI.framework/PhotosUI.tbd",
+  "present": true,
+  "symbols": 587,
+  "objc_classes": 1,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/PhotosUI.framework/PhotosUI"
+  ]
+ },
+ "/System/Library/Frameworks/PushKit.framework/PushKit": {
+  "install_name": "/System/Library/Frameworks/PushKit.framework/PushKit",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/QuartzCore.framework/QuartzCore": {
+  "install_name": "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+  "tbd": "System/Library/Frameworks/QuartzCore.framework/QuartzCore.tbd",
+  "present": true,
+  "symbols": 1104,
+  "objc_classes": 91,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/QuartzCore.framework/QuartzCore"
+  ]
+ },
+ "/System/Library/Frameworks/QuickLook.framework/QuickLook": {
+  "install_name": "/System/Library/Frameworks/QuickLook.framework/QuickLook",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/SafariServices.framework/SafariServices": {
+  "install_name": "/System/Library/Frameworks/SafariServices.framework/SafariServices",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/Security.framework/Security": {
+  "install_name": "/System/Library/Frameworks/Security.framework/Security",
+  "tbd": "System/Library/Frameworks/Security.framework/Security.tbd",
+  "present": true,
+  "symbols": 3179,
+  "objc_classes": 54,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/Security.framework/Security"
+  ]
+ },
+ "/System/Library/Frameworks/Social.framework/Social": {
+  "install_name": "/System/Library/Frameworks/Social.framework/Social",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/StoreKit.framework/StoreKit": {
+  "install_name": "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+  "tbd": "System/Library/Frameworks/StoreKit.framework/StoreKit.tbd",
+  "present": true,
+  "symbols": 2168,
+  "objc_classes": 50,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/StoreKit.framework/StoreKit"
+  ]
+ },
+ "/System/Library/Frameworks/SwiftUI.framework/SwiftUI": {
+  "install_name": "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+  "tbd": "System/Library/Frameworks/SwiftUI.framework/SwiftUI.tbd",
+  "present": true,
+  "symbols": 19354,
+  "objc_classes": 2,
+  "reexports": [
+   "/System/Library/Frameworks/CoreTransferable.framework/CoreTransferable",
+   "/System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport",
+   "/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore",
+   "/System/Library/Frameworks/UIKit.framework/UIKit"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/SwiftUI.framework/SwiftUI"
+  ]
+ },
+ "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration": {
+  "install_name": "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+  "tbd": "System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration.tbd",
+  "present": true,
+  "symbols": 1062,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration"
+  ]
+ },
+ "/System/Library/Frameworks/UIKit.framework/UIKit": {
+  "install_name": "/System/Library/Frameworks/UIKit.framework/UIKit",
+  "tbd": "System/Library/Frameworks/UIKit.framework/UIKit.tbd",
+  "present": true,
+  "symbols": 21119,
+  "objc_classes": 1639,
+  "reexports": [
+   "/System/Library/PrivateFrameworks/CollectionViewCore.framework/CollectionViewCore",
+   "/System/Library/PrivateFrameworks/PrintKitUI.framework/PrintKitUI",
+   "/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet",
+   "/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation",
+   "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore",
+   "/System/Library/SubFrameworks/UIUtilities.framework/UIUtilities"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/UIKit.framework/UIKit",
+   "/System/Library/PrivateFrameworks/CollectionViewCore.framework/CollectionViewCore",
+   "/System/Library/PrivateFrameworks/PrintKitUI.framework/PrintKitUI",
+   "/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet",
+   "/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation",
+   "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore",
+   "/System/Library/SubFrameworks/UIUtilities.framework/UIUtilities"
+  ]
+ },
+ "/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers": {
+  "install_name": "/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers",
+  "tbd": "System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers.tbd",
+  "present": true,
+  "symbols": 193,
+  "objc_classes": 1,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers"
+  ]
+ },
+ "/System/Library/Frameworks/UserNotifications.framework/UserNotifications": {
+  "install_name": "/System/Library/Frameworks/UserNotifications.framework/UserNotifications",
+  "tbd": "System/Library/Frameworks/UserNotifications.framework/UserNotifications.tbd",
+  "present": true,
+  "symbols": 99,
+  "objc_classes": 48,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/UserNotifications.framework/UserNotifications"
+  ]
+ },
+ "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox": {
+  "install_name": "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox",
+  "tbd": "System/Library/Frameworks/VideoToolbox.framework/VideoToolbox.tbd",
+  "present": true,
+  "symbols": 1352,
+  "objc_classes": 9,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox"
+  ]
+ },
+ "/System/Library/Frameworks/Vision.framework/Vision": {
+  "install_name": "/System/Library/Frameworks/Vision.framework/Vision",
+  "tbd": "System/Library/Frameworks/Vision.framework/Vision.tbd",
+  "present": true,
+  "symbols": 8980,
+  "objc_classes": 232,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/Vision.framework/Vision"
+  ]
+ },
+ "/System/Library/Frameworks/VisionKit.framework/VisionKit": {
+  "install_name": "/System/Library/Frameworks/VisionKit.framework/VisionKit",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/WebKit.framework/WebKit": {
+  "install_name": "/System/Library/Frameworks/WebKit.framework/WebKit",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/WidgetKit.framework/WidgetKit": {
+  "install_name": "/System/Library/Frameworks/WidgetKit.framework/WidgetKit",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/System/Library/Frameworks/iAd.framework/iAd": {
+  "install_name": "/System/Library/Frameworks/iAd.framework/iAd",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/libSystem.B.dylib": {
+  "install_name": "/usr/lib/libSystem.B.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/libc++.1.dylib": {
+  "install_name": "/usr/lib/libc++.1.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/libcompression.dylib": {
+  "install_name": "/usr/lib/libcompression.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/libhvf.dylib": {
+  "install_name": "/usr/lib/libhvf.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/libobjc.A.dylib": {
+  "install_name": "/usr/lib/libobjc.A.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/libresolv.9.dylib": {
+  "install_name": "/usr/lib/libresolv.9.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/libsqlite3.dylib": {
+  "install_name": "/usr/lib/libsqlite3.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/libxml2.2.dylib": {
+  "install_name": "/usr/lib/libxml2.2.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/libz.1.dylib": {
+  "install_name": "/usr/lib/libz.1.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftAVFoundation.dylib": {
+  "install_name": "/usr/lib/swift/libswiftAVFoundation.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftAccelerate.dylib": {
+  "install_name": "/usr/lib/swift/libswiftAccelerate.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftCallKit.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCallKit.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftCompression.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCompression.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftCore.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCore.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftCoreAudio.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCoreAudio.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftCoreFoundation.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCoreFoundation.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftCoreGraphics.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCoreGraphics.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftCoreImage.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCoreImage.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftCoreLocation.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCoreLocation.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftCoreMIDI.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCoreMIDI.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftCoreMedia.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCoreMedia.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftDarwin.dylib": {
+  "install_name": "/usr/lib/swift/libswiftDarwin.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftDataDetection.dylib": {
+  "install_name": "/usr/lib/swift/libswiftDataDetection.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftDispatch.dylib": {
+  "install_name": "/usr/lib/swift/libswiftDispatch.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftFileProvider.dylib": {
+  "install_name": "/usr/lib/swift/libswiftFileProvider.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftFoundation.dylib": {
+  "install_name": "/usr/lib/swift/libswiftFoundation.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftIntents.dylib": {
+  "install_name": "/usr/lib/swift/libswiftIntents.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftMetal.dylib": {
+  "install_name": "/usr/lib/swift/libswiftMetal.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftMetalKit.dylib": {
+  "install_name": "/usr/lib/swift/libswiftMetalKit.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftModelIO.dylib": {
+  "install_name": "/usr/lib/swift/libswiftModelIO.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftOSLog.dylib": {
+  "install_name": "/usr/lib/swift/libswiftOSLog.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftObjectiveC.dylib": {
+  "install_name": "/usr/lib/swift/libswiftObjectiveC.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftObservation.dylib": {
+  "install_name": "/usr/lib/swift/libswiftObservation.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftPassKit.dylib": {
+  "install_name": "/usr/lib/swift/libswiftPassKit.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftPhotosUI.dylib": {
+  "install_name": "/usr/lib/swift/libswiftPhotosUI.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftQuartzCore.dylib": {
+  "install_name": "/usr/lib/swift/libswiftQuartzCore.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftSpatial.dylib": {
+  "install_name": "/usr/lib/swift/libswiftSpatial.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftUIKit.dylib": {
+  "install_name": "/usr/lib/swift/libswiftUIKit.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib": {
+  "install_name": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftVision.dylib": {
+  "install_name": "/usr/lib/swift/libswiftVision.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftXPC.dylib": {
+  "install_name": "/usr/lib/swift/libswiftXPC.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswift_Concurrency.dylib": {
+  "install_name": "/usr/lib/swift/libswift_Concurrency.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftos.dylib": {
+  "install_name": "/usr/lib/swift/libswiftos.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ },
+ "/usr/lib/swift/libswiftsimd.dylib": {
+  "install_name": "/usr/lib/swift/libswiftsimd.dylib",
+  "tbd": null,
+  "present": false,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [],
+  "targets": [],
+  "tbd_version": null,
+  "parser": null
+ }
+}

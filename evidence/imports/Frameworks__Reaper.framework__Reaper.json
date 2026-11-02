@@ -1,0 +1,546 @@
+{
+ "binary": "Frameworks/Reaper.framework/Reaper",
+ "libraries": [
+  {
+   "name": "/usr/lib/libc++.1.dylib",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/Foundation.framework/Foundation",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libobjc.A.dylib",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libSystem.B.dylib",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/UIKit.framework/UIKit",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/swift/libswiftCore.dylib",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/swift/libswiftCoreFoundation.dylib",
+   "weak": true
+  },
+  {
+   "name": "/usr/lib/swift/libswiftDarwin.dylib",
+   "weak": true
+  },
+  {
+   "name": "/usr/lib/swift/libswiftDispatch.dylib",
+   "weak": true
+  },
+  {
+   "name": "/usr/lib/swift/libswiftObjectiveC.dylib",
+   "weak": true
+  },
+  {
+   "name": "/usr/lib/swift/libswiftXPC.dylib",
+   "weak": true
+  },
+  {
+   "name": "/usr/lib/swift/libswiftFoundation.dylib",
+   "weak": false
+  }
+ ],
+ "imports": {
+  "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
+   {
+    "name": "_OBJC_CLASS_$_NSMutableArray",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableSet",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_EHTYPE_$_NSException",
+    "weak": false
+   },
+   {
+    "name": "___CFConstantStringClassReference",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/Foundation.framework/Foundation": [
+   {
+    "name": "_OBJC_CLASS_$_NSBundle",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSNotificationCenter",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSProcessInfo",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSRegularExpression",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSString",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/UIKit.framework/UIKit": [
+   {
+    "name": "_UIApplicationDidEnterBackgroundNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIApplicationWillTerminateNotification",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libSystem.B.dylib": [
+   {
+    "name": "__Block_object_assign",
+    "weak": false
+   },
+   {
+    "name": "__NSConcreteGlobalBlock",
+    "weak": false
+   },
+   {
+    "name": "__NSConcreteStackBlock",
+    "weak": false
+   },
+   {
+    "name": "__Unwind_Resume",
+    "weak": false
+   },
+   {
+    "name": "___chkstk_darwin",
+    "weak": false
+   },
+   {
+    "name": "___stack_chk_fail",
+    "weak": false
+   },
+   {
+    "name": "___stack_chk_guard",
+    "weak": false
+   },
+   {
+    "name": "__dyld_get_image_header",
+    "weak": false
+   },
+   {
+    "name": "__dyld_get_image_name",
+    "weak": false
+   },
+   {
+    "name": "__dyld_image_count",
+    "weak": false
+   },
+   {
+    "name": "__dyld_register_func_for_add_image",
+    "weak": false
+   },
+   {
+    "name": "_abort",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_async",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_once",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_once_f",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_queue_attr_make_with_qos_class",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_queue_create",
+    "weak": false
+   },
+   {
+    "name": "_dlsym",
+    "weak": false
+   },
+   {
+    "name": "_free",
+    "weak": false
+   },
+   {
+    "name": "_getsectiondata",
+    "weak": false
+   },
+   {
+    "name": "_malloc",
+    "weak": false
+   },
+   {
+    "name": "_memcmp",
+    "weak": false
+   },
+   {
+    "name": "_memmove",
+    "weak": false
+   },
+   {
+    "name": "_os_release",
+    "weak": true
+   },
+   {
+    "name": "_os_unfair_lock_lock",
+    "weak": true
+   },
+   {
+    "name": "_os_unfair_lock_unlock",
+    "weak": true
+   },
+   {
+    "name": "_posix_memalign",
+    "weak": false
+   },
+   {
+    "name": "_pthread_getspecific",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_init",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_lock",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_unlock",
+    "weak": false
+   },
+   {
+    "name": "_pthread_setspecific",
+    "weak": false
+   },
+   {
+    "name": "_realloc",
+    "weak": false
+   },
+   {
+    "name": "_strcmp",
+    "weak": false
+   },
+   {
+    "name": "_strlen",
+    "weak": false
+   },
+   {
+    "name": "_voucher_adopt",
+    "weak": true
+   },
+   {
+    "name": "dyld_stub_binder",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libc++.1.dylib": [
+   {
+    "name": "__ZdlPv",
+    "weak": false
+   },
+   {
+    "name": "__Znwm",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libobjc.A.dylib": [
+   {
+    "name": "_OBJC_CLASS_$_NSObject",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_NSObject",
+    "weak": false
+   },
+   {
+    "name": "___objc_personality_v0",
+    "weak": false
+   },
+   {
+    "name": "__objc_empty_cache",
+    "weak": false
+   },
+   {
+    "name": "_class_getName",
+    "weak": false
+   },
+   {
+    "name": "_objc_allocWithZone",
+    "weak": false
+   },
+   {
+    "name": "_objc_alloc_init",
+    "weak": false
+   },
+   {
+    "name": "_objc_autoreleasePoolPop",
+    "weak": false
+   },
+   {
+    "name": "_objc_autoreleasePoolPush",
+    "weak": false
+   },
+   {
+    "name": "_objc_autoreleaseReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_begin_catch",
+    "weak": false
+   },
+   {
+    "name": "_objc_end_catch",
+    "weak": false
+   },
+   {
+    "name": "_objc_enumerationMutation",
+    "weak": false
+   },
+   {
+    "name": "_objc_getClass",
+    "weak": false
+   },
+   {
+    "name": "_objc_lookUpClass",
+    "weak": false
+   },
+   {
+    "name": "_objc_msgSend",
+    "weak": false
+   },
+   {
+    "name": "_objc_msgSendSuper2",
+    "weak": false
+   },
+   {
+    "name": "_objc_opt_self",
+    "weak": false
+   },
+   {
+    "name": "_objc_release",
+    "weak": false
+   },
+   {
+    "name": "_objc_retain",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainAutoreleaseReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainAutoreleasedReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainBlock",
+    "weak": false
+   },
+   {
+    "name": "_objc_storeStrong",
+    "weak": false
+   },
+   {
+    "name": "_object_getClass",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftCore.dylib": [
+   {
+    "name": "_$sBOWV",
+    "weak": false
+   },
+   {
+    "name": "_$sSRMa",
+    "weak": false
+   },
+   {
+    "name": "_$sSRyxGSTsMc",
+    "weak": false
+   },
+   {
+    "name": "_$ss5UInt8VMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss5UInt8VN",
+    "weak": false
+   },
+   {
+    "name": "__swift_stdlib_operatingSystemVersion",
+    "weak": false
+   },
+   {
+    "name": "_swift_bridgeObjectRelease",
+    "weak": false
+   },
+   {
+    "name": "_swift_errorRetain",
+    "weak": false
+   },
+   {
+    "name": "_swift_getObjectType",
+    "weak": false
+   },
+   {
+    "name": "_swift_getTypeByMangledNameInContext",
+    "weak": false
+   },
+   {
+    "name": "_swift_getTypeName",
+    "weak": false
+   },
+   {
+    "name": "_swift_getWitnessTable",
+    "weak": false
+   },
+   {
+    "name": "_swift_once",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftFoundation.dylib": [
+   {
+    "name": "_$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF",
+    "weak": false
+   },
+   {
+    "name": "_$sSS10FoundationE5bytes8encodingSSSgxh_SSAAE8EncodingVtcSTRzs5UInt8V7ElementRtzlufC",
+    "weak": false
+   },
+   {
+    "name": "_$sSS10FoundationE8EncodingV4utf8ACvgZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSS10FoundationE8EncodingVMa",
+    "weak": false
+   }
+  ],
+  "<ordinal 0>": [
+   {
+    "name": "__ZdlPv",
+    "weak": true
+   },
+   {
+    "name": "__Znwm",
+    "weak": true
+   }
+  ],
+  "<ordinal 10>": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftDispatch",
+    "weak": false
+   }
+  ],
+  "<ordinal 11>": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
+    "weak": false
+   }
+  ],
+  "<ordinal 12>": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftXPC",
+    "weak": false
+   }
+  ],
+  "<ordinal 13>": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftFoundation",
+    "weak": false
+   }
+  ],
+  "<ordinal 8>": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
+    "weak": false
+   }
+  ],
+  "<ordinal 9>": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swift_Builtin_float",
+    "weak": false
+   }
+  ]
+ },
+ "objc_classes": {
+  "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
+   "NSMutableArray",
+   "NSMutableSet"
+  ],
+  "/System/Library/Frameworks/Foundation.framework/Foundation": [
+   "NSBundle",
+   "NSNotificationCenter",
+   "NSProcessInfo",
+   "NSRegularExpression",
+   "NSString"
+  ],
+  "/usr/lib/libobjc.A.dylib": [
+   "NSObject"
+  ]
+ },
+ "selrefs": [
+  "URLByDeletingLastPathComponent",
+  "addObject:",
+  "addObjectsFromArray:",
+  "addObserver:selector:name:object:",
+  "array",
+  "containsObject:",
+  "count",
+  "countByEnumeratingWithState:objects:count:",
+  "dealloc",
+  "defaultCenter",
+  "didEnterBackground",
+  "enqueueUploadReport",
+  "executableURL",
+  "getNameWithPtr:qualified:",
+  "hasPrefix:",
+  "init",
+  "length",
+  "mainBundle",
+  "operatingSystemVersion",
+  "path",
+  "processInfo",
+  "regularExpressionWithPattern:options:error:",
+  "set",
+  "stringByReplacingMatchesInString:options:range:withTemplate:",
+  "stringWithUTF8String:",
+  "uploadReport",
+  "usedSwiftTypesInBinary:",
+  "usedTypesInBinary:",
+  "willTerminate"
+ ],
+ "methtypes": [
+  "@\"NSMutableSet\"",
+  "@\"NSObject<OS_dispatch_queue>\"",
+  "@16@0:8",
+  "@24@0:8r^{mach_header=IiiIIII}16",
+  "@24@0:8r^{mach_header_64=IiiIIIII}16",
+  "@?",
+  "v16@0:8",
+  "v24@0:8@?16"
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "Frameworks/Backtrace.framework/Backtrace": {
+  "libraries": 26,
+  "imported_symbols": 508,
+  "objc_class_imports": 34,
+  "selrefs": 117
+ },
+ "Frameworks/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter": {
+  "libraries": 5,
+  "imported_symbols": 232,
+  "objc_class_imports": 16,
+  "selrefs": 180
+ },
+ "Frameworks/Persona2.framework/Persona2": {
+  "libraries": 70,
+  "imported_symbols": 1970,
+  "objc_class_imports": 181,
+  "selrefs": 1722
+ },
+ "Frameworks/Reaper.framework/Reaper": {
+  "libraries": 13,
+  "imported_symbols": 100,
+  "objc_class_imports": 8,
+  "selrefs": 29
+ },
+ "Frameworks/RobloxLib.framework/RobloxLib": {
+  "libraries": 33,
+  "imported_symbols": 1352,
+  "objc_class_imports": 132,
+  "selrefs": 1584
+ },
+ "Frameworks/libswift_Concurrency.dylib": {
+  "libraries": 5,
+  "imported_symbols": 239,
+  "objc_class_imports": 2,
+  "selrefs": 1
+ },
+ "PlugIns/RBNotificationServiceExtension.appex/RBNotificationServiceExtension": {
+  "libraries": 11,
+  "imported_symbols": 117,
+  "objc_class_imports": 43,
+  "selrefs": 220
+ },
+ "PlugIns/RBWidgetExtension.appex/RBWidgetExtension": {
+  "libraries": 25,
+  "imported_symbols": 454,
+  "objc_class_imports": 7,
+  "selrefs": 26
+ },
+ "Roblox": {
+  "libraries": 93,
+  "imported_symbols": 2569,
+  "objc_class_imports": 274,
+  "selrefs": 12780
+ }
+}

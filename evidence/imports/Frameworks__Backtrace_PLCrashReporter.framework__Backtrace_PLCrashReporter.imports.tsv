@@ -1,0 +1,233 @@
+library	symbol	weak
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRelease	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFUUIDCreate	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFUUIDCreateFromUUIDBytes	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFUUIDCreateString	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFUUIDGetUUIDBytes	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSData	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSDate	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSDictionary	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSException	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableArray	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableDictionary	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableSet	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	___CFConstantStringClassReference	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFBundleVersionKey	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSFilePosixPermissions	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSLocalizedDescriptionKey	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSLog	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSMachErrorDomain	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSPOSIXErrorDomain	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSSearchPathForDirectoriesInDomains	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSSetUncaughtExceptionHandler	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSTemporaryDirectory	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSUnderlyingErrorKey	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSBundle	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSError	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSFileManager	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSMutableString	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSNumber	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSProcessInfo	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSScanner	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSString	0
+/usr/lib/libSystem.B.dylib	_NDR_record	0
+/usr/lib/libSystem.B.dylib	_OSAtomicCompareAndSwap32	0
+/usr/lib/libSystem.B.dylib	_OSAtomicCompareAndSwap32Barrier	0
+/usr/lib/libSystem.B.dylib	_OSAtomicCompareAndSwapPtrBarrier	0
+/usr/lib/libSystem.B.dylib	_OSAtomicDecrement32Barrier	0
+/usr/lib/libSystem.B.dylib	_OSAtomicIncrement32Barrier	0
+/usr/lib/libSystem.B.dylib	_OSMemoryBarrier	0
+/usr/lib/libSystem.B.dylib	_OSSpinLockLock	0
+/usr/lib/libSystem.B.dylib	_OSSpinLockUnlock	0
+/usr/lib/libSystem.B.dylib	__NSGetExecutablePath	0
+/usr/lib/libSystem.B.dylib	___assert_rtn	0
+/usr/lib/libSystem.B.dylib	___cxa_atexit	0
+/usr/lib/libSystem.B.dylib	___error	0
+/usr/lib/libSystem.B.dylib	___memcpy_chk	0
+/usr/lib/libSystem.B.dylib	___stack_chk_fail	0
+/usr/lib/libSystem.B.dylib	___stack_chk_guard	0
+/usr/lib/libSystem.B.dylib	___stderrp	0
+/usr/lib/libSystem.B.dylib	__dyld_register_func_for_add_image	0
+/usr/lib/libSystem.B.dylib	__dyld_register_func_for_remove_image	0
+/usr/lib/libSystem.B.dylib	_abort	0
+/usr/lib/libSystem.B.dylib	_atexit	0
+/usr/lib/libSystem.B.dylib	_atoi	0
+/usr/lib/libSystem.B.dylib	_bzero	0
+/usr/lib/libSystem.B.dylib	_calloc	0
+/usr/lib/libSystem.B.dylib	_close	0
+/usr/lib/libSystem.B.dylib	_dladdr	0
+/usr/lib/libSystem.B.dylib	_exception_raise	0
+/usr/lib/libSystem.B.dylib	_exception_raise_state	0
+/usr/lib/libSystem.B.dylib	_exception_raise_state_identity	0
+/usr/lib/libSystem.B.dylib	_exit	0
+/usr/lib/libSystem.B.dylib	_fclose	0
+/usr/lib/libSystem.B.dylib	_fcntl	0
+/usr/lib/libSystem.B.dylib	_fdopen	0
+/usr/lib/libSystem.B.dylib	_fflush	0
+/usr/lib/libSystem.B.dylib	_fileno	0
+/usr/lib/libSystem.B.dylib	_fopen	0
+/usr/lib/libSystem.B.dylib	_fprintf	0
+/usr/lib/libSystem.B.dylib	_free	0
+/usr/lib/libSystem.B.dylib	_fseek	0
+/usr/lib/libSystem.B.dylib	_ftell	0
+/usr/lib/libSystem.B.dylib	_ftello	0
+/usr/lib/libSystem.B.dylib	_ftruncate	0
+/usr/lib/libSystem.B.dylib	_fwrite	0
+/usr/lib/libSystem.B.dylib	_getenv	0
+/usr/lib/libSystem.B.dylib	_getpid	0
+/usr/lib/libSystem.B.dylib	_getprogname	0
+/usr/lib/libSystem.B.dylib	_mach_make_memory_entry_64	0
+/usr/lib/libSystem.B.dylib	_mach_msg	0
+/usr/lib/libSystem.B.dylib	_mach_msg_destroy	0
+/usr/lib/libSystem.B.dylib	_mach_port_allocate	0
+/usr/lib/libSystem.B.dylib	_mach_port_deallocate	0
+/usr/lib/libSystem.B.dylib	_mach_port_insert_right	0
+/usr/lib/libSystem.B.dylib	_mach_port_mod_refs	0
+/usr/lib/libSystem.B.dylib	_mach_port_move_member	0
+/usr/lib/libSystem.B.dylib	_mach_port_request_notification	0
+/usr/lib/libSystem.B.dylib	_mach_task_self_	0
+/usr/lib/libSystem.B.dylib	_mach_thread_self	0
+/usr/lib/libSystem.B.dylib	_malloc	0
+/usr/lib/libSystem.B.dylib	_memcpy	0
+/usr/lib/libSystem.B.dylib	_memmove	0
+/usr/lib/libSystem.B.dylib	_mig_dealloc_reply_port	0
+/usr/lib/libSystem.B.dylib	_mig_get_reply_port	0
+/usr/lib/libSystem.B.dylib	_mig_put_reply_port	0
+/usr/lib/libSystem.B.dylib	_mkdir	0
+/usr/lib/libSystem.B.dylib	_mkstemp	0
+/usr/lib/libSystem.B.dylib	_mmap	0
+/usr/lib/libSystem.B.dylib	_munmap	0
+/usr/lib/libSystem.B.dylib	_open	0
+/usr/lib/libSystem.B.dylib	_pthread_attr_destroy	0
+/usr/lib/libSystem.B.dylib	_pthread_attr_init	0
+/usr/lib/libSystem.B.dylib	_pthread_attr_setdetachstate	0
+/usr/lib/libSystem.B.dylib	_pthread_cond_destroy	0
+/usr/lib/libSystem.B.dylib	_pthread_cond_init	0
+/usr/lib/libSystem.B.dylib	_pthread_cond_signal	0
+/usr/lib/libSystem.B.dylib	_pthread_cond_wait	0
+/usr/lib/libSystem.B.dylib	_pthread_create	0
+/usr/lib/libSystem.B.dylib	_pthread_mach_thread_np	0
+/usr/lib/libSystem.B.dylib	_pthread_mutex_destroy	0
+/usr/lib/libSystem.B.dylib	_pthread_mutex_init	0
+/usr/lib/libSystem.B.dylib	_pthread_mutex_lock	0
+/usr/lib/libSystem.B.dylib	_pthread_mutex_unlock	0
+/usr/lib/libSystem.B.dylib	_raise	0
+/usr/lib/libSystem.B.dylib	_setenv	0
+/usr/lib/libSystem.B.dylib	_sigaction	0
+/usr/lib/libSystem.B.dylib	_sigaltstack	0
+/usr/lib/libSystem.B.dylib	_snprintf	0
+/usr/lib/libSystem.B.dylib	_strchr	0
+/usr/lib/libSystem.B.dylib	_strcmp	0
+/usr/lib/libSystem.B.dylib	_strdup	0
+/usr/lib/libSystem.B.dylib	_strerror	0
+/usr/lib/libSystem.B.dylib	_strlen	0
+/usr/lib/libSystem.B.dylib	_strncpy	0
+/usr/lib/libSystem.B.dylib	_sysctl	0
+/usr/lib/libSystem.B.dylib	_sysctlbyname	0
+/usr/lib/libSystem.B.dylib	_task_get_exception_ports	0
+/usr/lib/libSystem.B.dylib	_task_swap_exception_ports	0
+/usr/lib/libSystem.B.dylib	_task_threads	0
+/usr/lib/libSystem.B.dylib	_thread_get_exception_ports	0
+/usr/lib/libSystem.B.dylib	_thread_get_state	0
+/usr/lib/libSystem.B.dylib	_thread_resume	0
+/usr/lib/libSystem.B.dylib	_thread_suspend	0
+/usr/lib/libSystem.B.dylib	_thread_swap_exception_ports	0
+/usr/lib/libSystem.B.dylib	_time	0
+/usr/lib/libSystem.B.dylib	_uname	0
+/usr/lib/libSystem.B.dylib	_unlink	0
+/usr/lib/libSystem.B.dylib	_vm_allocate	0
+/usr/lib/libSystem.B.dylib	_vm_deallocate	0
+/usr/lib/libSystem.B.dylib	_vm_map	0
+/usr/lib/libSystem.B.dylib	_vm_page_mask	0
+/usr/lib/libSystem.B.dylib	_vm_page_size	0
+/usr/lib/libSystem.B.dylib	_vm_read_overwrite	0
+/usr/lib/libSystem.B.dylib	_voucher_mach_msg_set	1
+/usr/lib/libSystem.B.dylib	_write	0
+/usr/lib/libSystem.B.dylib	dyld_stub_binder	0
+/usr/lib/libobjc.A.dylib	_OBJC_CLASS_$_NSObject	0
+/usr/lib/libobjc.A.dylib	_OBJC_METACLASS_$_NSObject	0
+/usr/lib/libobjc.A.dylib	__objc_empty_cache	0
+/usr/lib/libobjc.A.dylib	_objc_alloc	0
+/usr/lib/libobjc.A.dylib	_objc_autorelease	0
+/usr/lib/libobjc.A.dylib	_objc_enumerationMutation	0
+/usr/lib/libobjc.A.dylib	_objc_msgSend	0
+/usr/lib/libobjc.A.dylib	_objc_msgSendSuper2	0
+/usr/lib/libobjc.A.dylib	_objc_release	0
+/usr/lib/libobjc.A.dylib	_objc_retain	0
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE11set_readingEb	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE13nasync_appendES3_	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE14nasync_prependES3_	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE18nasync_remove_nodeEPNS4_4nodeE	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE4nextEPNS4_4nodeE	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE9free_listEPNS4_4nodeE	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE11set_readingEb	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE13nasync_appendES3_	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE18nasync_remove_nodeEPNS4_4nodeE	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE4nextEPNS4_4nodeE	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE9free_listEPNS4_4nodeE	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE11set_readingEb	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE13nasync_appendES4_	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE18nasync_remove_nodeEPNS5_4nodeE	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE4nextEPNS5_4nodeE	1
+<ordinal 0>	__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE9free_listEPNS5_4nodeE	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE10push_stateEv	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE11apply_stateEjPNS1_28plcrash_async_dwarf_cie_infoEPK26plcrash_async_thread_statePK23plcrash_async_byteorderPS6_	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE12eval_programEP21plcrash_async_mobjectjjPNS1_28plcrash_async_dwarf_cie_infoEPNS1_16gnu_ehptr_readerIjEEPK23plcrash_async_byteordermlm	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE12get_cfa_ruleEv	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE12set_registerEjNS1_28plcrash_dwarf_cfa_reg_rule_tEj	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE15remove_registerEj	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE16set_cfa_registerEjj	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE17get_register_ruleEjPNS1_28plcrash_dwarf_cfa_reg_rule_tEPj	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE18get_register_countEv	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE18set_cfa_expressionEmm	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE23set_cfa_register_signedEji	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE9pop_stateEv	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiEC1Ev	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiEC2Ev	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE10push_stateEv	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE11apply_stateEjPNS1_28plcrash_async_dwarf_cie_infoEPK26plcrash_async_thread_statePK23plcrash_async_byteorderPS6_	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE12eval_programEP21plcrash_async_mobjectyyPNS1_28plcrash_async_dwarf_cie_infoEPNS1_16gnu_ehptr_readerIyEEPK23plcrash_async_byteordermlm	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE12get_cfa_ruleEv	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE12set_registerEjNS1_28plcrash_dwarf_cfa_reg_rule_tEy	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE15remove_registerEj	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE16set_cfa_registerEjy	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE17get_register_ruleEjPNS1_28plcrash_dwarf_cfa_reg_rule_tEPy	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE18get_register_countEv	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE18set_cfa_expressionEmm	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE23set_cfa_register_signedEjx	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE9pop_stateEv	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxEC1Ev	1
+<ordinal 0>	__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxEC2Ev	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE13set_data_baseEj	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE13set_func_baseEj	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE13set_text_baseEj	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE22set_frame_section_baseEjj	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE4readEP21plcrash_async_mobjectmlNS1_8DW_EH_PEEPjPm	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIjEC1EPK23plcrash_async_byteorder	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIjEC2EPK23plcrash_async_byteorder	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE13set_data_baseEy	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE13set_func_baseEy	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE13set_text_baseEy	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE22set_frame_section_baseEyy	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE4readEP21plcrash_async_mobjectmlNS1_8DW_EH_PEEPyPm	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIyEC1EPK23plcrash_async_byteorder	1
+<ordinal 0>	__ZN7plcrash3PL_5async16gnu_ehptr_readerIyEC2EPK23plcrash_async_byteorder	1
+<ordinal 0>	__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIjiE4nextEPjPNS1_28plcrash_dwarf_cfa_reg_rule_tES4_	1
+<ordinal 0>	__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIjiEC1EPNS1_15dwarf_cfa_stateIjiEE	1
+<ordinal 0>	__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIjiEC2EPNS1_15dwarf_cfa_stateIjiEE	1
+<ordinal 0>	__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIyxE4nextEPjPNS1_28plcrash_dwarf_cfa_reg_rule_tEPy	1
+<ordinal 0>	__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIyxEC1EPNS1_15dwarf_cfa_stateIyxEE	1
+<ordinal 0>	__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIyxEC2EPNS1_15dwarf_cfa_stateIyxEE	1
+<ordinal 0>	__ZN7plcrash3PL_5async33plcrash_async_dwarf_cie_info_initIjEE15plcrash_error_tPNS1_28plcrash_async_dwarf_cie_infoEP21plcrash_async_mobjectPK23plcrash_async_byteorderPNS1_16gnu_ehptr_readerIT_EEm	1
+<ordinal 0>	__ZN7plcrash3PL_5async33plcrash_async_dwarf_cie_info_initIyEE15plcrash_error_tPNS1_28plcrash_async_dwarf_cie_infoEP21plcrash_async_mobjectPK23plcrash_async_byteorderPNS1_16gnu_ehptr_readerIT_EEm	1
+<ordinal 0>	__ZN7plcrash3PL_5async33plcrash_async_dwarf_fde_info_initIjEE15plcrash_error_tPNS1_28plcrash_async_dwarf_fde_infoEP21plcrash_async_mobjectPK23plcrash_async_byteordermb	1
+<ordinal 0>	__ZN7plcrash3PL_5async33plcrash_async_dwarf_fde_info_initIyEE15plcrash_error_tPNS1_28plcrash_async_dwarf_fde_infoEP21plcrash_async_mobjectPK23plcrash_async_byteordermb	1
+<ordinal 0>	__ZN7plcrash3PL_5async34plcrash_async_dwarf_read_uintmax64IjEE15plcrash_error_tP21plcrash_async_mobjectPK23plcrash_async_byteordermlhPT_	1
+<ordinal 0>	__ZN7plcrash3PL_5async34plcrash_async_dwarf_read_uintmax64IyEE15plcrash_error_tP21plcrash_async_mobjectPK23plcrash_async_byteordermlhPT_	1
+<ordinal 0>	__ZN7plcrash3PL_5async35plcrash_async_dwarf_expression_evalIjiEE15plcrash_error_tP21plcrash_async_mobjectjPK26plcrash_async_thread_statePK23plcrash_async_byteordermlmPT_mSD_	1
+<ordinal 0>	__ZN7plcrash3PL_5async35plcrash_async_dwarf_expression_evalIyxEE15plcrash_error_tP21plcrash_async_mobjectjPK26plcrash_async_thread_statePK23plcrash_async_byteordermlmPT_mSD_	1
+<ordinal 0>	__ZN7plcrash3PL_5async39plcrash_async_dwarf_read_task_uintmax64IjEE15plcrash_error_tjPK23plcrash_async_byteordermlhPT_	1
+<ordinal 0>	__ZN7plcrash3PL_5async39plcrash_async_dwarf_read_task_uintmax64IyEE15plcrash_error_tjPK23plcrash_async_byteordermlhPT_	1
+<ordinal 0>	___llvm_profile_filename	1
+<ordinal 0>	___llvm_profile_raw_version	1
+<ordinal 0>	_lprofDirMode	1
