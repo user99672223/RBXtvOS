@@ -17,6 +17,8 @@ REMOVED_EXTENSIONS = ("PlugIns/",)  # extensions are removed in Phase 1/5; still
 
 def main():
     libs = set()
+    bundled = set()
+    rpath_names = set()
     classes = defaultdict(set)
     symbols = defaultdict(set)
     selectors = set()
@@ -25,8 +27,19 @@ def main():
             continue
         d = json.loads(f.read_text())
         for l in d["libraries"]:
-            if l["name"].startswith("/"):
-                libs.add(l["name"])
+            name = l["name"]
+            if name.startswith("/"):
+                libs.add(name)
+            elif name.startswith("@rpath/"):
+                # An @rpath name that is not one of Roblox's own bundled
+                # frameworks is an OS library reached through LC_RPATH, and
+                # /usr/lib/swift is the first rpath in most of these binaries.
+                # Skipping them meant the device was never asked about
+                # libswiftCoreData, which Backtrace links NON-weakly -- if that
+                # overlay were absent the app would die at launch with nothing
+                # in the symbol report to show why.
+                bundled.add(name)
+                rpath_names.add(name[len("@rpath/"):])
         for lib, lst in d["imports"].items():
             if not lib.startswith("/"):
                 continue
@@ -37,6 +50,18 @@ def main():
                 else:
                     symbols[lib].add(n)
         selectors.update(d["selrefs"])
+    # Resolve @rpath names that no bundled framework claims into their OS path.
+    install_names = set()
+    idx = EVIDENCE / "exports" / "bundle" / "_index.json"
+    if idx.is_file():
+        for rec in json.loads(idx.read_text()).values():
+            if rec.get("install_name"):
+                install_names.add(rec["install_name"])
+    for tail in sorted(rpath_names):
+        if f"@rpath/{tail}" in install_names:
+            continue  # it is one of Roblox's own frameworks
+        libs.add(f"/usr/lib/swift/{tail}")
+
     q = EVIDENCE / "queries"
     q.mkdir(exist_ok=True)
     (q / "libraries.txt").write_text("\n".join(sorted(libs)) + "\n")

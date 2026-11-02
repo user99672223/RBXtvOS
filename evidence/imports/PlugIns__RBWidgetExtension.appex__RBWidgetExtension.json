@@ -139,1867 +139,2321 @@
   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
    {
     "name": "_OBJC_CLASS_$_NSUserDefaults",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/System/Library/Frameworks/Foundation.framework/Foundation": [
    {
     "name": "_$s10Foundation11JSONDecoderC6decode_4fromxxm_AA4DataVtKSeRzlFTj",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation11JSONDecoderCACycfc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation11JSONDecoderCMa",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation14LocalizedErrorMp",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation14LocalizedErrorP10helpAnchorSSSgvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation14LocalizedErrorP13failureReasonSSSgvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation14LocalizedErrorP16errorDescriptionSSSgvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation14LocalizedErrorP18recoverySuggestionSSSgvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation14LocalizedErrorPAAE10helpAnchorSSSgvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation14LocalizedErrorPAAE13failureReasonSSSgvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation14LocalizedErrorPAAE18recoverySuggestionSSSgvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation14LocalizedErrorPs0C0Tb",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation3URLV22appendingPathComponentyACSSF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation3URLV36_unconditionallyBridgeFromObjectiveCyACSo5NSURLCSgFZ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation3URLV4pathSSvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation3URLV6stringACSgSSh_tcfC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation3URLVMa",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation3URLVMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation4DataV10contentsOf7optionsAcA3URLVh_So20NSDataReadingOptionsVtKcfC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation4DataV19_bridgeToObjectiveCSo6NSDataCyF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation4DataV36_unconditionallyBridgeFromObjectiveCyACSo6NSDataCSgFZ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation4DateV18addingTimeIntervalyACSdF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation4DateV3nowACvgZ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation4DateVACycfC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation4DateVMa",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation4DateVMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation6LocaleV7currentACvgZ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s10Foundation6LocaleVMa",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSS10FoundationE17LocalizationValueV13stringLiteralACSS_tcfC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSS10FoundationE17LocalizationValueVMa",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSS10FoundationE9localized5table6bundle6locale7commentS2SAAE17LocalizationValueV_SSSgSo8NSBundleCSgAA6LocaleVs12StaticStringVSgtcfC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5ErrorP10FoundationE20localizedDescriptionSSvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_NSExtensionMain",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSBundle",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSFileManager",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__swift_FORCE_LOAD_$_swiftFoundation",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/System/Library/Frameworks/SwiftUI.framework/SwiftUI": [
    {
     "name": "_$s4Body7SwiftUI12WidgetBundlePTl",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s4Body7SwiftUI4ViewPTl",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s4Body7SwiftUI6WidgetPTl",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI10EdgeInsetsV4_allAC12CoreGraphics7CGFloatV_tcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI10_ShapeViewVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI10_ShapeViewVyxq_GAA0D0AAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11ColorSchemeO2eeoiySbAC_ACtFZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11ColorSchemeO4darkyA2CmFWC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11ColorSchemeOMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11ColorSchemeOMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11EnvironmentV7ContentOMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11EnvironmentV7ContentOMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11EnvironmentVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11TupleWidgetVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11TupleWidgetVyACyxGxcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11TupleWidgetVyxGAA0D0AAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11_ClipEffectVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI11_ClipEffectVyxGAA12ViewModifierAAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI12WidgetBundleMp",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI12WidgetBundleP4BodyAC_AA0C0Tn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI12WidgetBundleP4body4BodyQzvgTq",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI12WidgetBundlePxycfCTq",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI12_FrameLayoutV5width6height9alignmentAC12CoreGraphics7CGFloatVSg_AjA9AlignmentVtcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI12_FrameLayoutVAA12ViewModifierAAWP",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI12_FrameLayoutVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI13AnyShapeStyleVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI13AnyShapeStyleVyACxcAA0dE0RzlufC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI13GeometryProxyV4sizeSo6CGSizeVvg",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI13GeometryProxyVMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI13GeometryProxyVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI13_HStackLayoutVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI13_ShadowEffectVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI13_VStackLayoutVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI13_VariadicViewO4TreeVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI13_ZStackLayoutVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI14FillShapeStyleVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI14GeometryReaderVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI14GeometryReaderVyxGAA4ViewAAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI14LinearGradientV8gradient10startPoint03endG0AcA0D0V_AA04UnitG0VAJtcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI14LinearGradientVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI14_PaddingLayoutVAA12ViewModifierAAWP",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI14_PaddingLayoutVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI15BackgroundStyleVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI15ModifiedContentVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI15ModifiedContentVyxq_GAA4ViewA2aERzAA0E8ModifierR_rlMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI16RoundedRectangleVMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI16RoundedRectangleVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI16_FlexFrameLayoutV8minWidth05idealG003maxG00F6Height0hJ00iJ09alignmentAC12CoreGraphics7CGFloatVSg_A5nA9AlignmentVtcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI16_FlexFrameLayoutVAA12ViewModifierAAWP",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI16_FlexFrameLayoutVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI16_OverlayModifierVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI16_OverlayModifierVyxGAA04ViewD0AAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV11colorSchemeAA05ColorF0Ovg",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV11colorSchemeAA05ColorF0OvpMV",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV11colorSchemeAA05ColorF0Ovs",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV14truncationModeAA4TextV010TruncationF0Ovg",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV14truncationModeAA4TextV010TruncationF0OvpMV",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV14truncationModeAA4TextV010TruncationF0Ovs",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV15foregroundColorAA0F0VSgvg",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV15foregroundColorAA0F0VSgvpMV",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV15foregroundColorAA0F0VSgvs",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV9lineLimitSiSgvg",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV9lineLimitSiSgvpMV",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV9lineLimitSiSgvs",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesVACycfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesVMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17VerticalAlignmentV3topACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17VerticalAlignmentV6centerACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI18LocalizedStringKeyV13stringLiteralACSS_tcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI18RoundedCornerStyleO10continuousyA2CmFWC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI18RoundedCornerStyleOMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI18_AspectRatioLayoutVAA12ViewModifierAAWP",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI18_AspectRatioLayoutVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19HorizontalAlignmentV6centerACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19HorizontalAlignmentV7leadingACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19WidgetConfigurationMp",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19_ConditionalContentV7StorageOMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19_ConditionalContentVA2A4ViewRzAaDR_rlE7storageACyxq_GAC7StorageOyxq__G_tcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19_ConditionalContentVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19_ConditionalContentVyxq_GAA4ViewA2aERzAaER_rlMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI21_ContentShapeModifierVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI21_ContentShapeModifierVyxGAA04ViewE0AAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI22HierarchicalShapeStyleV10quaternaryACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI22HierarchicalShapeStyleVAA0dE0AAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI22HierarchicalShapeStyleVN",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI24_BackgroundStyleModifierVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI24_BackgroundStyleModifierVyxGAA04ViewE0AAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI28ContainerBackgroundPlacementVMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI30HierarchicalShapeStyleModifierVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI30HierarchicalShapeStyleModifierVyxGAA0dE0AAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI30_EnvironmentKeyWritingModifierVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI30_EnvironmentKeyWritingModifierVyxGAA04ViewF0AAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI3LogO013runtimeIssuesC0So9OS_os_logCvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4EdgeO3SetV10horizontalAEvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4EdgeO3SetV3allAEvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4EdgeO3SetV3topAEvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4FontV6DesignOMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4FontV6DesignOMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4FontV6WeightV4boldAEvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4FontV6WeightV6mediumAEvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4FontV6WeightV7regularAEvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4FontV6system4size6weight6designAC12CoreGraphics7CGFloatV_AC6WeightVSgAC6DesignOSgtFZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4LinkV11destination5labelACyxG10Foundation3URLV_xyXEtcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4LinkVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4TextV14TruncationModeO4tailyA2EmFWC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4TextV14TruncationModeOMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4TextV14TruncationModeOMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4TextV15foregroundColoryAcA0E0VSgF",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4TextV4fontyAcA4FontVSgF",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4TextVAA4ViewAAWP",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4TextVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4TextVN",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4TextV_9tableName6bundle7commentAcA18LocalizedStringKeyV_SSSgSo8NSBundleCSgs06StaticI0VSgtcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4TextVyACxcSyRzlufC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewMp",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewP05_makeC04view6inputsAA01_C7OutputsVAA11_GraphValueVyxG_AA01_C6InputsVtFZTq",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewP05_makeC4List4view6inputsAA01_cE7OutputsVAA11_GraphValueVyxG_AA01_cE6InputsVtFZTq",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewP14_viewListCount6inputsSiSgAA01_ceF6InputsV_tFZTq",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewP4BodyAC_AaBTn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewP4body4BodyQzvgTq",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewPAAE05_makeC04view6inputsAA01_C7OutputsVAA11_GraphValueVyxG_AA01_C6InputsVtFZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewPAAE05_makeC4List4view6inputsAA01_cE7OutputsVAA11_GraphValueVyxG_AA01_cE6InputsVtFZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewPAAE14_viewListCount6inputsSiSgAA01_ceF6InputsV_tFZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewPAAE19containerBackground_3forQrqd___AA09ContainerE9PlacementVtAA10ShapeStyleRd__lF",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewPAAE19containerBackground_3forQrqd___AA09ContainerE9PlacementVtAA10ShapeStyleRd__lFQOMQ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorV13RGBColorSpaceO4sRGByA2EmFWC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorV13RGBColorSpaceOMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorV5blackACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorV5clearACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorV5whiteACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorV7opacityyACSdF",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorVAA10ShapeStyleAAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorVAA4ViewAAWP",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorVN",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorV_3red5green4blue7opacityA2C13RGBColorSpaceO_S4dtcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ColorVyACSo7UIColorCcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageV02uiC0ACSo7UIImageC_tcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageV12ResizingModeO7stretchyA2EmFWC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageV12ResizingModeOMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageV13renderingModeyA2C017TemplateRenderingE0OSgF",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageV21TemplateRenderingModeO8templateyA2EmFWC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageV21TemplateRenderingModeOMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageV21TemplateRenderingModeOMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageV9resizable9capInsets12resizingModeAcA04EdgeF0V_AC08ResizingH0OtF",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageVAA4ViewAAWP",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageV_6bundleACSS_So8NSBundleCSgtcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6HStackVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6HStackVyxGAA4ViewAAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6SpacerVAA4ViewAAWP",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6SpacerVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6VStackVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6VStackVyxGAA4ViewAAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6WidgetMp",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6WidgetP4BodyAC_AA0C13ConfigurationTn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6WidgetP4body4BodyQzvgTq",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6WidgetPxycfCTq",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6ZStackVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI6ZStackVyxGAA4ViewAAMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI7AnyViewVAA0D0AAWP",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI7AnyViewVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI7AnyViewVN",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI7AnyViewVyACxcAA0D0RzlufC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI7ForEachVA2A4ViewR0_rlE_2id7contentACyxq_q0_Gx_s7KeyPathCy7ElementQzq_Gq0_AKctcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI7ForEachVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI8GradientV4StopV5color8locationAeA5ColorV_12CoreGraphics7CGFloatVtcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI8GradientV4StopVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI8GradientV5stopsACSayAC4StopVG_tcfC",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI9AlignmentV10topLeadingACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI9AlignmentV11topTrailingACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI9AlignmentV13bottomLeadingACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI9AlignmentV6centerACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI9RectangleVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI9TupleViewVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI9UnitPointV3topACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI9UnitPointV6bottomACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$sxSg7SwiftUI4ViewA2bCRzlMc",
-    "weak": true
+    "weak": true,
+    "lazy": false
    }
   ],
   "/System/Library/Frameworks/UIKit.framework/UIKit": [
    {
     "name": "_OBJC_CLASS_$_UIColor",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_UIImage",
-    "weak": true
+    "weak": true,
+    "lazy": false
    }
   ],
   "/System/Library/Frameworks/WidgetKit.framework/WidgetKit": [
    {
     "name": "_$s5Entry9WidgetKit16TimelineProviderPTl",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI12WidgetBundleP0C3KitE4mainyyFZ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV9WidgetKitE12widgetFamilyAD0eH0Ovg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV9WidgetKitE12widgetFamilyAD0eH0OvpMV",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV9WidgetKitE19widgetRenderingModeAD0ehI0Vvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV9WidgetKitE19widgetRenderingModeAD0ehI0VvpMV",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI17EnvironmentValuesV9WidgetKitE19widgetRenderingModeAD0ehI0Vvs",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19WidgetConfigurationP0C3KitE11descriptionyQrqd__SyRd__lF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19WidgetConfigurationP0C3KitE11descriptionyQrqd__SyRd__lFQOMQ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19WidgetConfigurationP0C3KitE17supportedFamiliesyQrSayAD0C6FamilyOGF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19WidgetConfigurationP0C3KitE17supportedFamiliesyQrSayAD0C6FamilyOGFQOMQ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19WidgetConfigurationP0C3KitE23_contentMarginsDisabledQryF",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19WidgetConfigurationP0C3KitE23_contentMarginsDisabledQryFQOMQ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19WidgetConfigurationP0C3KitE24configurationDisplayNameyQrAA18LocalizedStringKeyVF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19WidgetConfigurationP0C3KitE24configurationDisplayNameyQrAA18LocalizedStringKeyVFQOMQ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19WidgetConfigurationP0C3KitE24configurationDisplayNameyQrqd__SyRd__lF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI19WidgetConfigurationP0C3KitE24configurationDisplayNameyQrqd__SyRd__lFQOMQ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI28ContainerBackgroundPlacementV9WidgetKitE6widgetACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewP9WidgetKitE9widgetURLyQr10Foundation0G0VSgF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI4ViewP9WidgetKitE9widgetURLyQr10Foundation0G0VSgFQOMQ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageV9WidgetKitE27widgetAccentedRenderingModeyQrAD0dghI0VSgF",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s7SwiftUI5ImageV9WidgetKitE27widgetAccentedRenderingModeyQrAD0dghI0VSgFQOMQ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A13RenderingModeV2eeoiySbAC_ACtFZ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A13RenderingModeV8accentedACvgZ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A13RenderingModeVMa",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A13RenderingModeVMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A21AccentedRenderingModeV19accentedDesaturatedACvgZ",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A21AccentedRenderingModeVMa",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A21AccentedRenderingModeVMn",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A6CenterC18reloadAllTimelinesyyFTj",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A6CenterC6sharedACvgZ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A6CenterCMa",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A6CenterCMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A6FamilyO11systemLargeyA2CmFWC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A6FamilyO11systemSmallyA2CmFWC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A6FamilyO12systemMediumyA2CmFWC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A6FamilyO17accessoryCircularyA2CmFWC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A6FamilyOMa",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit0A6FamilyOMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit13TimelineEntryMp",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit13TimelineEntryP4date10Foundation4DateVvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit13TimelineEntryP9relevanceAA0cD9RelevanceVSgvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit13TimelineEntryPAAE9relevanceAA0cD9RelevanceVSgvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit16TimelineProviderMp",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit16TimelineProviderP03getC02in10completionyAA0cD7ContextV_yAA0C0Vy5EntryQzGctFTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit16TimelineProviderP11getSnapshot2in10completionyAA0cD7ContextV_y5EntryQzctFTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit16TimelineProviderP11placeholder2in5EntryQzAA0cD7ContextV_tFTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit16TimelineProviderP5EntryAC_AA0cE0Tn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit16TimelineProviderP9relevanceAA0A9RelevanceVyytGyYaFTq",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit16TimelineProviderPAAE9relevanceAA0A9RelevanceVyytGyYaF",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit16TimelineProviderPAAE9relevanceAA0A9RelevanceVyytGyYaFTu",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit19StaticConfigurationV4kind8provider7contentACyxGSS_qd__x5EntryQyd__ctcAA16TimelineProviderRd__lufC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit19StaticConfigurationVMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit19StaticConfigurationVyxG7SwiftUI0aD0AAMc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit20TimelineReloadPolicyV5afteryAC10Foundation4DateVFZ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit20TimelineReloadPolicyV5neverACvgZ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit20TimelineReloadPolicyVMa",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit23TimelineProviderContextV6familyAA0A6FamilyOvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit8TimelineV7entries6policyACyxGSayxG_AA0C12ReloadPolicyVtcfC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$s9WidgetKit8TimelineVMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/libSystem.B.dylib": [
    {
     "name": "___chkstk_darwin",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "___stack_chk_fail",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "___stack_chk_guard",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__availability_version_check",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "__os_log_impl",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_dispatch_once_f",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_dlsym",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_fclose",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_fopen",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_fread",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_free",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_fseek",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_ftell",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_malloc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_malloc_size",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_memcpy",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_memmove",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_os_log_type_enabled",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_rewind",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_sscanf",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/libobjc.A.dylib": [
    {
     "name": "_OBJC_CLASS_$_NSObject",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_METACLASS_$_NSObject",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__objc_empty_cache",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_allocWithZone",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_autoreleaseReturnValue",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_msgSend",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_msgSendSuper2",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_opt_self",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_release_x19",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_release_x20",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_release_x21",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_release_x22",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_release_x23",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_release_x24",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_release_x25",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_release_x26",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_release_x27",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_release_x28",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_retainAutoreleasedReturnValue",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftCore.dylib": [
    {
     "name": "_$sBOWV",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sBbWV",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sBi64_WV",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sBoWV",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSE6encode2toys7Encoder_p_tKFTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSEMp",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSH13_rawHashValue4seedS2i_tFTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSH4hash4intoys6HasherVz_tFTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSH9hashValueSivgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSHMp",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSHSQTb",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSQ2eeoiySbx_xtFZTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSQMp",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSS6appendyySSF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSS8UTF8ViewV13_foreignCountSiyF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSSN",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSSSysMc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSayxGSesSeRzlMc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSayxGSksMc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSbN",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSe4fromxs7Decoder_p_tKcfCTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSeMp",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSiN",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSiSHsWP",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSiSZsMc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSiSxsWP",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSnyxGSksSxRzSZ6StrideRpzrlMc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss11_StringGutsV4growyySiF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss11_StringGutsV8copyUTF84intoSiSgSrys5UInt8VG_tF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss11_StringGutsVN",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss13_StringObjectV10sharedUTF8SRys5UInt8VGvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss15_print_unlockedyyx_q_zts16TextOutputStreamR_r0_lF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss22KeyedDecodingContainerV6decode_6forKeyS2Sm_xtKF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss22KeyedDecodingContainerVMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss22KeyedEncodingContainerV6encode_6forKeyySS_xtKF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss22KeyedEncodingContainerVMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss23CustomStringConvertibleMp",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss23CustomStringConvertibleP11descriptionSSvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss23_ContiguousArrayStorageCMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss26DefaultStringInterpolationVN",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss26DefaultStringInterpolationVs16TextOutputStreamsWP",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss27_bridgeAnythingToObjectiveCyyXlxlF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss27_stringCompareWithSmolCheck__9expectingSbs11_StringGutsV_ADs01_G16ComparisonResultOtF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss28CustomDebugStringConvertibleMp",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss28CustomDebugStringConvertibleP16debugDescriptionSSvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss28__ContiguousArrayStorageBaseCMa",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5ErrorMp",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5ErrorP19_getEmbeddedNSErroryXlSgyFTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5ErrorP5_codeSivgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5ErrorP7_domainSSvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5ErrorP9_userInfoyXlSgvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5ErrorPsE19_getEmbeddedNSErroryXlSgyF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5ErrorPsE5_codeSivg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5ErrorPsE7_domainSSvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5ErrorPsE9_userInfoyXlSgvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5UInt8VMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5print_9separator10terminatoryypd_S2StF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss6HasherV5_seedABSi_tcfC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss6HasherV8_combineyySuF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss6HasherV9_finalizeSiyF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss7DecoderP9container7keyedBys22KeyedDecodingContainerVyqd__Gqd__m_tKs9CodingKeyRd__lFTj",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss7EncoderP9container7keyedBys22KeyedEncodingContainerVyqd__Gqd__m_ts9CodingKeyRd__lFTj",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss9CodingKeyMp",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss9CodingKeyP11stringValueSSvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss9CodingKeyP11stringValuexSgSS_tcfCTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss9CodingKeyP8intValueSiSgvgTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss9CodingKeyP8intValuexSgSi_tcfCTq",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss9CodingKeyPs23CustomStringConvertibleTb",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss9CodingKeyPs28CustomDebugStringConvertibleTb",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss9CodingKeyPsE11descriptionSSvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss9CodingKeyPsE16debugDescriptionSSvg",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sytWV",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$__TtCs12_SwiftObject",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_METACLASS_$__TtCs12_SwiftObject",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__swiftEmptyArrayStorage",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_allocObject",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_arrayInitWithCopy",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_arrayInitWithTakeBackToFront",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_arrayInitWithTakeFrontToBack",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_bridgeObjectRelease",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_bridgeObjectRetain",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_deallocClassInstance",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_deallocObject",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_deletedMethodError",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_dynamicCastClass",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_errorRelease",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_errorRetain",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getAtKeyPath",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getEnumCaseMultiPayload",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getEnumTagSinglePayloadGeneric",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getErrorValue",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getKeyPath",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getObjCClassMetadata",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getObjectType",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getOpaqueTypeConformance",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getOpaqueTypeMetadata",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getSingletonMetadata",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getTypeByMangledNameInContext",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getTypeByMangledNameInContextInMetadataState",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_getWitnessTable",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_initStaticObject",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_initStructMetadata",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_isUniquelyReferenced_nonNull_native",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_once",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_release",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_release_n",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_retain",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_slowAlloc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_slowDealloc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_storeEnumTagMultiPayload",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_storeEnumTagSinglePayloadGeneric",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_unknownObjectRelease",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_unknownObjectRetain",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_unknownObjectRetain_n",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_willThrowTypedImpl",
-    "weak": true
+    "weak": true,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftCoreFoundation.dylib": [
    {
     "name": "_$s12CoreGraphics7CGFloatVMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftCoreImage.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftCoreImage",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftCoreLocation.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftCoreLocation",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftDarwin.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swift_Builtin_float",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftDispatch.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftDispatch",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftIntents.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftIntents",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftMetal.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftMetal",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftOSLog.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftOSLog",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftObjectiveC.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftQuartzCore.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftQuartzCore",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftSpatial.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftSpatial",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftUIKit.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftUIKit",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftXPC.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftXPC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswift_Concurrency.dylib": [
    {
     "name": "_swift_task_alloc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_swift_task_dealloc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftos.dylib": [
    {
     "name": "_$s2os0A4_log_3dso0B0__ySo0a1_B7_type_ta_SVSo03OS_a1_B0Cs12StaticStringVs7CVarArg_pdtF",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSo13os_log_type_ta0A0E5faultABvgZ",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__swift_FORCE_LOAD_$_swiftos",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftsimd.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftsimd",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ]
  },

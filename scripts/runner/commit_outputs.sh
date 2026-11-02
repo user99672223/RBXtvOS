@@ -2,16 +2,29 @@
 # Commit derived evidence / built artefacts to the outputs branch.
 #
 # Called from the macOS runners. Two jobs can finish at the same time, so the
-# push is retried against a fresh fetch of the branch. Only paths that are
-# allowed to leave the runner are added (see CLAUDE.md "Hard data rules"):
-# derived text under evidence/, and our own built dylibs/dSYMs under out/shims.
-# Nothing from the Roblox bundle and no Apple SDK bytes are ever present here.
+# push is retried against a fresh fetch of the branch.
+#
+# The caller names exactly which paths it produced. That matters: committing
+# the whole evidence/ tree would also carry the runner's checked-out copy of
+# files the *session* computes (missing.json, runtime_lookups.md, shims.md),
+# and fetching the outputs branch afterwards would then overwrite newer local
+# results with a stale snapshot. That happened once and silently reverted
+# missing.json, so the path list is now explicit and narrow.
+#
+# Only things allowed to leave the runner are ever passed: derived text about
+# Apple's SDKs and the device, and our own built dylibs/dSYMs. Nothing from the
+# Roblox bundle and no Apple SDK bytes (see CLAUDE.md "Hard data rules").
 set -euo pipefail
 
 BRANCH="${1:?outputs branch}"
 MESSAGE="${2:-runner outputs}"
-
-ALLOW=(evidence out/shims)
+shift 2 || true
+ALLOW=("$@")
+if [ ${#ALLOW[@]} -eq 0 ]; then
+  echo "no paths given; nothing to commit" >&2
+  exit 2
+fi
+echo "committing paths: ${ALLOW[*]}"
 
 git config user.name  "github-actions[bot]"
 git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

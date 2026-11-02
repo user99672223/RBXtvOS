@@ -1,0 +1,254 @@
+{
+ "_comment": [
+  "Per-item decisions for evidence/shims.md (CLAUDE.md Phase 3). This is the",
+  "only hand-maintained input: scripts/03_shims_md.py joins everything else",
+  "from the collected evidence so the log cannot drift from it.",
+  "Decision is STUB | REIMPLEMENT | REDIRECT; Status is UNTESTED | CALLED AT",
+  "RUNTIME | VERIFIED and only moves off UNTESTED on device-log evidence."
+ ],
+ "libraries": {
+  "/System/Library/Frameworks/UIKit.framework/UIKit": {
+   "decision": "STUB",
+   "kind": "proxy",
+   "shim": "libtvportshim-UIKit.dylib",
+   "source": "shim/proxy_UIKit.m",
+   "reason": "The iOS 26.2 header states outright that \"On iOS, this gesture recognizer doesn't recognize anything and is effectively a no-op\", so a recognizer that never leaves UIGestureRecognizerStatePossible reproduces iOS behaviour rather than approximating it, and an Apple TV has no hovering input device in any case. This is the one shim RobloxLib cannot load without: it imports the class non-weakly and eagerly. The shim implements the tvOS SDK's own declaration (which exists but is API_UNAVAILABLE(tvos)) so the signatures match exactly.",
+   "status": "UNTESTED",
+   "selectors": [
+    "initWithTarget:action:",
+    "addGestureRecognizer:"
+   ],
+   "contract": "UIKIT_EXTERN API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, tvos) @interface UIHoverGestureRecognizer : UIGestureRecognizer (UIHoverGestureRecognizer.h:22, identical in both SDKs)",
+   "missing_evidence": ""
+  },
+  "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": {
+   "decision": "STUB",
+   "kind": "proxy",
+   "shim": "libtvportshim-CoreFoundation.dylib",
+   "source": "shim/symbols.m (TVPORT_SHIM_COREFOUNDATION)",
+   "reason": "The symbol is an NSURLResourceKey, i.e. only ever used as a dictionary key for -getResourceValue:forKey:error:. tvOS's Foundation will not recognise it, so the lookup returns nil or an error, which is what a caller already sees on a volume that cannot report that capacity. Roblox uses it to size downloads, so a nil answer takes its existing failure path.",
+   "status": "UNTESTED",
+   "selectors": [],
+   "contract": "NSString * const NSURLVolumeAvailableCapacityForImportantUsageKey",
+   "missing_evidence": ""
+  },
+  "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony": {
+   "decision": "STUB",
+   "kind": "proxy",
+   "shim": "libtvportshim-CoreTelephony.dylib",
+   "source": "shim/symbols.m (TVPORT_SHIM_CORETELEPHONY)",
+   "reason": "An Apple TV has no cellular radio, so there is no radio access technology to change and nothing will ever post the notification. An observer registered for a name nobody posts is inert, which is also what happens on a Wi-Fi-only iPad. CoreTelephony is private on tvOS: it exists on the device with 5,167 exported names but has no .tbd in the SDK, so the re-export stub is generated from the device's own export list by scripts/runner/make_tbd.py.",
+   "status": "UNTESTED",
+   "selectors": [],
+   "contract": "NSString * const CTServiceRadioAccessTechnologyDidChangeNotification",
+   "missing_evidence": ""
+  },
+  "/System/Library/Frameworks/PushKit.framework/PushKit": {
+   "decision": "STUB",
+   "kind": "proxy",
+   "shim": "libtvportshim-PushKit.dylib",
+   "source": "shim/symbols.m (TVPORT_SHIM_PUSHKIT)",
+   "reason": "PKPushType is an NSString naming a class of push to register for. Registration needs the aps-environment entitlement, which a free developer account cannot provision, so the constant only has to exist for the binary to load. Confirmed narrowly: the device's PushKit exports _PKPushTypeUserNotifications but not _PKPushTypeVoIP. PushKit is private on tvOS (41 exports on device, no SDK .tbd), so its re-export stub is generated from the device's export list.",
+   "status": "UNTESTED",
+   "selectors": [],
+   "contract": "PKPushType (NSString *) PKPushTypeVoIP",
+   "missing_evidence": ""
+  },
+  "/usr/lib/swift/libswiftDarwin.dylib": {
+   "decision": "STUB",
+   "kind": "proxy",
+   "shim": "libtvportshim-libswiftDarwin.dylib",
+   "source": "shim/symbols.m (TVPORT_SHIM_SWIFTDARWIN)",
+   "reason": "Swift emits one undefined __swift_FORCE_LOAD_$_<overlay> reference per imported submodule purely so the linker pulls that overlay in; nothing ever reads the value, so a zero word is a faithful stand-in. The dylib itself is present on the device (285 exports) but does not export the seven per-submodule markers, which tvOS evidently folds in rather than shipping separately -- hence a proxy that re-exports the real dylib and adds the markers, not a stand-in.",
+   "status": "UNTESTED",
+   "selectors": [],
+   "contract": "void * __swift_FORCE_LOAD_$_swift{_errno,_math,_signal,_stdio,_time,sys_time,unistd}",
+   "missing_evidence": ""
+  },
+  "/System/Library/Frameworks/MessageUI.framework/MessageUI": {
+   "decision": "STUB",
+   "kind": "stand-in",
+   "shim": "libtvportshim-MessageUI.dylib",
+   "source": "shim/standin_MessageUI.m",
+   "reason": "+canSendMail and +canSendText return NO, which is the honest answer on a device with no Mail or Messages app and the documented way callers are meant to find out. Roblox already handles it, because an iPhone with no mail account answers the same. The setters are implemented and logged anyway so that ignoring +canSendMail shows up in the log rather than as a missing selector, and -viewDidAppear: reports Cancelled so a caller that presents it regardless is not left waiting on a delegate callback that never arrives. The metaclass import means Roblox may subclass MFMailComposeViewController, so the superclass really is UINavigationController.",
+   "status": "UNTESTED",
+   "selectors": [
+    "canSendMail",
+    "canSendText",
+    "setMailComposeDelegate:",
+    "setMessageComposeDelegate:",
+    "setSubject:",
+    "setToRecipients:",
+    "setMessageBody:isHTML:",
+    "setRecipients:",
+    "setBody:"
+   ],
+   "contract": "",
+   "missing_evidence": ""
+  },
+  "/System/Library/Frameworks/SafariServices.framework/SafariServices": {
+   "decision": "STUB",
+   "kind": "stand-in",
+   "shim": "libtvportshim-SafariServices.dylib",
+   "source": "shim/standin_SafariServices.m",
+   "reason": "Persona2 is Roblox's identity-verification SDK and uses an in-app browser to run a web flow. tvOS has no in-app browser and WebKit is absent from the device too, so there is nothing to reimplement against. The shim lets Persona2 load and fails the flow visibly: it presents nothing, logs loudly, and calls -safariViewControllerDidFinish: on the next run-loop turn so the caller's state machine completes instead of hanging. Consequence for REPORT.md: any Roblox flow needing this web view cannot work on tvOS.",
+   "status": "UNTESTED",
+   "selectors": [
+    "initWithURL:configuration:",
+    "safariViewControllerDidFinish:"
+   ],
+   "contract": "",
+   "missing_evidence": ""
+  },
+  "/System/Library/Frameworks/PDFKit.framework/PDFKit": {
+   "decision": "STUB",
+   "kind": "stand-in",
+   "shim": "libtvportshim-PDFKit.dylib",
+   "source": "shim/standin_PDFKit.m",
+   "reason": "Persona2 uses this to inspect a PDF it downloaded during the identity flow, and that flow cannot run on tvOS anyway because the SFSafariViewController web view is also absent. -initWithData: keeps the object alive and pageCount reports 0, which is what PDFKit itself returns for data it cannot parse, so the caller takes its existing \"no pages\" path rather than meeting a missing class.",
+   "status": "UNTESTED",
+   "selectors": [
+    "initWithData:",
+    "pageCount"
+   ],
+   "contract": "",
+   "missing_evidence": ""
+  },
+  "/System/Library/Frameworks/WidgetKit.framework/WidgetKit": {
+   "decision": "STUB",
+   "kind": "stand-in",
+   "shim": "libtvportshim-WidgetKit.dylib",
+   "source": "shim/symbols.m (TVPORT_SHIM_WIDGETKIT)",
+   "reason": "Roblox calls WidgetCenter.shared.reloadAllTimelines() to tell its Home Screen widget that data changed. With the widget extension removed there is no widget, and tvOS has no Home Screen widgets at all, so doing nothing is correct rather than degraded. Removing the extension accounts for 46 of the 49 WidgetKit symbols; only three remain, all from the main binary. The type metadata accessor is the one stub that can fail loudly: nothing here can synthesise Swift metadata, so it logs an error and returns NULL. Fabricating a record would fail less visibly, so the trade is deliberate and the log line names it.",
+   "status": "UNTESTED",
+   "selectors": [],
+   "contract": "Swift ABI: WidgetCenter.shared getter, reloadAllTimelines() dispatch thunk, and the type metadata accessor",
+   "missing_evidence": ""
+  },
+  "/System/Library/Frameworks/FileProvider.framework/FileProvider": {
+   "decision": "STUB",
+   "kind": "stand-in",
+   "shim": "libtvportshim-FileProvider.dylib",
+   "source": "shim/symbols.m (TVPORT_SHIM_FILEPROVIDER)",
+   "reason": "The only symbol Roblox imports from this framework is the Swift overlay's autolink marker, which exists purely to force the linker to pull the overlay in. A zero word is a faithful stand-in.",
+   "status": "UNTESTED",
+   "selectors": [],
+   "contract": "void * __swift_FORCE_LOAD_$_swiftFileProvider",
+   "missing_evidence": ""
+  },
+  "/usr/lib/swift/libswiftCallKit.dylib": {
+   "decision": "STUB",
+   "kind": "stand-in",
+   "shim": "libtvportshim-libswiftCallKit.dylib",
+   "source": "shim/symbols.m (TVPORT_SHIM_SWIFTCALLKIT)",
+   "reason": "An Apple TV cannot place or receive phone calls, so a VoIP provider configuration has nothing to configure. The setter accepts the handle-type set and discards it; the autolink marker is inert by construction.",
+   "status": "UNTESTED",
+   "selectors": [],
+   "contract": "void * __swift_FORCE_LOAD_$_swiftCallKit",
+   "missing_evidence": ""
+  },
+  "/usr/lib/swift/libswiftCoreMIDI.dylib": {
+   "decision": "STUB",
+   "kind": "stand-in",
+   "shim": "libtvportshim-libswiftCoreMIDI.dylib",
+   "source": "shim/symbols.m (TVPORT_SHIM_SWIFTCOREMIDI)",
+   "reason": "The overlay is absent from the device and the only symbol Roblox imports from it is the Swift autolink marker, which exists purely to force the linker to pull the overlay in. Nothing reads the value, so a zero word is a faithful stand-in.",
+   "status": "UNTESTED",
+   "selectors": [],
+   "contract": "void * __swift_FORCE_LOAD_$_swiftCoreMIDI",
+   "missing_evidence": ""
+  },
+  "/usr/lib/swift/libswiftDataDetection.dylib": {
+   "decision": "STUB",
+   "kind": "stand-in",
+   "shim": "libtvportshim-libswiftDataDetection.dylib",
+   "source": "shim/symbols.m (TVPORT_SHIM_SWIFTDATADETECTION)",
+   "reason": "The overlay is absent from the device and the only symbol Roblox imports from it is the Swift autolink marker, which exists purely to force the linker to pull the overlay in. Nothing reads the value, so a zero word is a faithful stand-in.",
+   "status": "UNTESTED",
+   "selectors": [],
+   "contract": "void * __swift_FORCE_LOAD_$_swiftDataDetection",
+   "missing_evidence": ""
+  },
+  "/usr/lib/swift/libswiftFileProvider.dylib": {
+   "decision": "STUB",
+   "kind": "stand-in",
+   "shim": "libtvportshim-libswiftFileProvider.dylib",
+   "source": "shim/symbols.m (TVPORT_SHIM_SWIFTFILEPROVIDER)",
+   "reason": "The overlay is absent from the device and the only symbol Roblox imports from it is the Swift autolink marker, which exists purely to force the linker to pull the overlay in. Nothing reads the value, so a zero word is a faithful stand-in.",
+   "status": "UNTESTED",
+   "selectors": [],
+   "contract": "void * __swift_FORCE_LOAD_$_swiftFileProvider",
+   "missing_evidence": ""
+  },
+  "/usr/lib/swift/libswiftPassKit.dylib": {
+   "decision": "STUB",
+   "kind": "stand-in",
+   "shim": "libtvportshim-libswiftPassKit.dylib",
+   "source": "shim/symbols.m (TVPORT_SHIM_SWIFTPASSKIT)",
+   "reason": "The overlay is absent from the device and the only symbol Roblox imports from it is the Swift autolink marker, which exists purely to force the linker to pull the overlay in. Nothing reads the value, so a zero word is a faithful stand-in.",
+   "status": "UNTESTED",
+   "selectors": [],
+   "contract": "void * __swift_FORCE_LOAD_$_swiftPassKit",
+   "missing_evidence": ""
+  }
+ },
+ "load_command_only": {
+  "/System/Library/Frameworks/QuickLook.framework/QuickLook": {
+   "imported_by": [
+    "Roblox"
+   ],
+   "symbols_imported": 0,
+   "missing_evidence": "absent from the device cache (device_24K122) and from tvOS SDK 27.2; linked with a non-weak LC_LOAD_DYLIB",
+   "decision": "STUB (load-command satisfaction only)",
+   "reason": "With no imported symbols there is no behaviour to reproduce, so an empty loadable library is exactly equivalent to the real one from this process's point of view. It is needed because dyld requires a non-weak LC_LOAD_DYLIB to name something loadable whether or not anything is imported from it -- these would have killed the launch while the symbol-level report said everything resolved.",
+   "status": "UNTESTED",
+   "shim": "libtvportshim-QuickLook.dylib"
+  },
+  "/System/Library/Frameworks/iAd.framework/iAd": {
+   "imported_by": [
+    "Roblox"
+   ],
+   "symbols_imported": 0,
+   "missing_evidence": "absent from the device cache (device_24K122) and from tvOS SDK 27.2; linked with a non-weak LC_LOAD_DYLIB",
+   "decision": "STUB (load-command satisfaction only)",
+   "reason": "With no imported symbols there is no behaviour to reproduce, so an empty loadable library is exactly equivalent to the real one from this process's point of view. It is needed because dyld requires a non-weak LC_LOAD_DYLIB to name something loadable whether or not anything is imported from it -- these would have killed the launch while the symbol-level report said everything resolved.",
+   "status": "UNTESTED",
+   "shim": "libtvportshim-iAd.dylib"
+  },
+  "/System/Library/Frameworks/EventKitUI.framework/EventKitUI": {
+   "imported_by": [
+    "Roblox"
+   ],
+   "symbols_imported": 0,
+   "missing_evidence": "absent from the device cache (device_24K122) and from tvOS SDK 27.2; linked with a non-weak LC_LOAD_DYLIB",
+   "decision": "STUB (load-command satisfaction only)",
+   "reason": "With no imported symbols there is no behaviour to reproduce, so an empty loadable library is exactly equivalent to the real one from this process's point of view. It is needed because dyld requires a non-weak LC_LOAD_DYLIB to name something loadable whether or not anything is imported from it -- these would have killed the launch while the symbol-level report said everything resolved.",
+   "status": "UNTESTED",
+   "shim": "libtvportshim-EventKitUI.dylib"
+  }
+ },
+ "our_code": {
+  "platform identity (shim/platform_identity.m)": {
+   "what": "UIDevice systemName/model/localizedModel/userInterfaceIdiom and UITraitCollection userInterfaceIdiom report iPadOS/iPad/UIUserInterfaceIdiomPad instead of tvOS/Apple TV/UIUserInterfaceIdiomTV.",
+   "evidence": "tvOS returns UIUserInterfaceIdiomTV, an idiom Roblox's iPhone/iPad build never handles; iOS SDK 26.2 declares the types these getters return (recorded by the UIDevice-identity and UIUserInterfaceIdiom-enum targets in evidence/queries/ios_header_targets.json).",
+   "decision": "REDIRECT",
+   "reason": "Roblox's UI has no layouts, assets or code paths for the TV idiom, so whatever branch it selects is untested at best. Answering the way iPadOS would is a compatibility shim in the same sense as the rest of Phase 4. Swizzled rather than replaced, keeping the original IMP, so the log records the real tvOS value next to what was returned. Scope is deliberately local: it changes what UIKit answers inside this process, not Roblox's code, not its tamper checks and nothing server-facing. systemVersion is left truthful so crash reports stay useful, and Info.plist keeps UIDeviceFamily=[3]/AppleTVOS because tvOS will not install the app otherwise.",
+   "status": "UNTESTED"
+  },
+  "Siri Remote cursor (cursor/)": {
+   "what": "A pointer overlay driven by the Siri Remote, turning a clickpad press into a tap on screens built for touch.",
+   "evidence": "GCEventViewController.h:20 and :42 (tvOS SDK 27.2) for the focus-engine bypass and its exact condition; GCMicroGamepad.h:63 for the profile; GCController.h:50-72 for the lifecycle notifications; UIPress.h:26 and UIResponder.h:112 for Play/Pause.",
+   "decision": "REDIRECT",
+   "reason": "Roblox's menus have no focusable UIKit controls for the focus engine to drive, so without a pointer they cannot be used. Gameplay is left alone: the cursor hides itself when an extended gamepad appears.",
+   "status": "UNTESTED",
+   "private_api": "UITouch's _locationInWindow/_window/_view/_phase ivars, used only for click-to-tap preference 2 (delivering touches to the engine's render view). Every ivar is looked up with class_getInstanceVariable at runtime and the whole path is refused if any is absent, so an OS change degrades to \"cursor cannot click this view\" rather than crashing. Their presence on tvOS 27.2 is checked by the uitouch-ivars and uitouch-class queries in evidence/queries/device_queries.json. UNVERIFIED until that output lands."
+  },
+  "logging (tvlog/)": {
+   "what": "os_log under subsystem tvport with categories shim/cursor/input/lifecycle/storage/crash, mirrored to a rotated file in Caches, plus a startup banner, per-shim first-call backtraces and call counts, and crash handlers.",
+   "evidence": "Apple's tvOS guide states an app \"can only access 500 KB of persistent storage that is local to the device (using the NSUserDefaults class)\" and that \"all other data must be purgeable by the operating system when space is low\", so the file mirror is a convenience and os_log is the record.",
+   "decision": "REDIRECT",
+   "reason": "The device is the only place the UNTESTED statuses above can be settled, so the build has to say what it did. The signal handler is async-signal-safe (write(2) only, no malloc, no os_log, no stdio) and both it and the uncaught-exception handler chain to whatever was installed before, so the process still dies and tvOS still writes its own crash report.",
+   "status": "UNTESTED"
+  }
+ }
+}

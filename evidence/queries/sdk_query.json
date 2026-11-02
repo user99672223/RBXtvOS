@@ -85,9 +85,11 @@
   "/usr/lib/swift/libswiftAVFoundation.dylib",
   "/usr/lib/swift/libswiftAccelerate.dylib",
   "/usr/lib/swift/libswiftCallKit.dylib",
+  "/usr/lib/swift/libswiftCloudKit.dylib",
   "/usr/lib/swift/libswiftCompression.dylib",
   "/usr/lib/swift/libswiftCore.dylib",
   "/usr/lib/swift/libswiftCoreAudio.dylib",
+  "/usr/lib/swift/libswiftCoreData.dylib",
   "/usr/lib/swift/libswiftCoreFoundation.dylib",
   "/usr/lib/swift/libswiftCoreGraphics.dylib",
   "/usr/lib/swift/libswiftCoreImage.dylib",
@@ -1344,6 +1346,9 @@
   "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck": [
    "_DCErrorDomain"
   ],
+  "/System/Library/Frameworks/FileProvider.framework/FileProvider": [
+   "__swift_FORCE_LOAD_$_swiftFileProvider"
+  ],
   "/System/Library/Frameworks/Foundation.framework/Foundation": [
    "_$s10Foundation11JSONDecoderC6decode_4fromxxm_AA4DataVtKSeRzlFTj",
    "_$s10Foundation11JSONDecoderCACycfc",
@@ -1432,7 +1437,8 @@
    "_NSUnderlyingErrorKey",
    "_NSUserActivityTypeBrowsingWeb",
    "_NSUserDefaultsDidChangeNotification",
-   "__NSDictionaryOfVariableBindings"
+   "__NSDictionaryOfVariableBindings",
+   "__swift_FORCE_LOAD_$_swiftFoundation"
   ],
   "/System/Library/Frameworks/GameController.framework/GameController": [
    "_GCControllerDidConnectNotification",
@@ -3328,10 +3334,18 @@
   "/usr/lib/swift/libswiftAVFoundation.dylib": [
    "_$sSo20AVAssetExportSessionC12AVFoundationE6export2to2as9isolationy10Foundation3URLV_So10AVFileTypeaScA_pSgYitYaKF",
    "_$sSo20AVAssetExportSessionC12AVFoundationE6export2to2as9isolationy10Foundation3URLV_So10AVFileTypeaScA_pSgYitYaKFTu",
-   "_$sSo20AVCapturePhotoOutputC12AVFoundationE19supportedFlashModesSaySo0aF4ModeVGvg"
+   "_$sSo20AVCapturePhotoOutputC12AVFoundationE19supportedFlashModesSaySo0aF4ModeVGvg",
+   "__swift_FORCE_LOAD_$_swiftAVFoundation"
+  ],
+  "/usr/lib/swift/libswiftAccelerate.dylib": [
+   "__swift_FORCE_LOAD_$_swiftAccelerate"
   ],
   "/usr/lib/swift/libswiftCallKit.dylib": [
-   "_$sSo23CXProviderConfigurationC7CallKitE20supportedHandleTypesShySo12CXHandleTypeVGvs"
+   "_$sSo23CXProviderConfigurationC7CallKitE20supportedHandleTypesShySo12CXHandleTypeVGvs",
+   "__swift_FORCE_LOAD_$_swiftCallKit"
+  ],
+  "/usr/lib/swift/libswiftCompression.dylib": [
+   "__swift_FORCE_LOAD_$_swiftCompression"
   ],
   "/usr/lib/swift/libswiftCore.dylib": [
    "_$s15_ObjectiveCTypes01_A11CBridgeablePTl",
@@ -4030,13 +4044,17 @@
    "_swift_willThrow",
    "_swift_willThrowTypedImpl"
   ],
+  "/usr/lib/swift/libswiftCoreAudio.dylib": [
+   "__swift_FORCE_LOAD_$_swiftCoreAudio"
+  ],
   "/usr/lib/swift/libswiftCoreFoundation.dylib": [
    "_$s12CoreGraphics7CGFloatVMn",
    "_$s14CoreFoundation9_CFObjectMp",
    "_$s14CoreFoundation9_CFObjectPAAE2eeoiySbx_xtFZ",
    "_$s14CoreFoundation9_CFObjectPAAE4hash4intoys6HasherVz_tF",
    "_$s14CoreFoundation9_CFObjectPAAE9hashValueSivg",
-   "_$s14CoreFoundation9_CFObjectPSHTb"
+   "_$s14CoreFoundation9_CFObjectPSHTb",
+   "__swift_FORCE_LOAD_$_swiftCoreFoundation"
   ],
   "/usr/lib/swift/libswiftCoreGraphics.dylib": [
    "_$s12CoreGraphics14CGPathFillRuleO7windingyA2CmFWC",
@@ -4062,16 +4080,38 @@
    "_$sSo7CGPointVSE12CoreGraphicsMc",
    "_$sSo7CGPointVSe12CoreGraphicsMc"
   ],
+  "/usr/lib/swift/libswiftCoreImage.dylib": [
+   "__swift_FORCE_LOAD_$_swiftCoreImage"
+  ],
+  "/usr/lib/swift/libswiftCoreLocation.dylib": [
+   "__swift_FORCE_LOAD_$_swiftCoreLocation"
+  ],
+  "/usr/lib/swift/libswiftCoreMIDI.dylib": [
+   "__swift_FORCE_LOAD_$_swiftCoreMIDI"
+  ],
   "/usr/lib/swift/libswiftCoreMedia.dylib": [
    "_$sSo6CMTimea9CoreMediaE7isValidSbvg",
-   "_$sSo6CMTimea9CoreMediaE7secondsSdvg"
+   "_$sSo6CMTimea9CoreMediaE7secondsSdvg",
+   "__swift_FORCE_LOAD_$_swiftCoreMedia"
   ],
   "/usr/lib/swift/libswiftDarwin.dylib": [
    "_$s6Darwin5noErrs5Int32Vvg",
    "_$s6Darwin6S_IFMTs6UInt16Vvg",
    "_$s6Darwin7S_IFDIRs6UInt16Vvg",
    "_$s6Darwin7S_IFLNKs6UInt16Vvg",
-   "_$s6Darwin7S_IFREGs6UInt16Vvg"
+   "_$s6Darwin7S_IFREGs6UInt16Vvg",
+   "__swift_FORCE_LOAD_$_swiftDarwin",
+   "__swift_FORCE_LOAD_$_swift_Builtin_float",
+   "__swift_FORCE_LOAD_$_swift_errno",
+   "__swift_FORCE_LOAD_$_swift_math",
+   "__swift_FORCE_LOAD_$_swift_signal",
+   "__swift_FORCE_LOAD_$_swift_stdio",
+   "__swift_FORCE_LOAD_$_swift_time",
+   "__swift_FORCE_LOAD_$_swiftsys_time",
+   "__swift_FORCE_LOAD_$_swiftunistd"
+  ],
+  "/usr/lib/swift/libswiftDataDetection.dylib": [
+   "__swift_FORCE_LOAD_$_swiftDataDetection"
   ],
   "/usr/lib/swift/libswiftDispatch.dylib": [
    "_$s8Dispatch0A12TimeIntervalO7secondsyACSicACmFWC",
@@ -4117,7 +4157,11 @@
    "_$sSo17OS_dispatch_queueC8DispatchE4sync7executexxyKXE_tKlF",
    "_$sSo17OS_dispatch_queueC8DispatchE5async5group3qos5flags7executeySo0a1_b1_F0CSg_AC0D3QoSVAC0D13WorkItemFlagsVyyXBtF",
    "_$sSo17OS_dispatch_queueC8DispatchE5label3qos10attributes20autoreleaseFrequency6targetABSS_AC0D3QoSVAbCE10AttributesVAbCE011AutoreleaseI0OABSgtcfC",
-   "_$sSo17OS_dispatch_queueC8DispatchE6global3qosAbC0D3QoSV0G6SClassO_tFZ"
+   "_$sSo17OS_dispatch_queueC8DispatchE6global3qosAbC0D3QoSV0G6SClassO_tFZ",
+   "__swift_FORCE_LOAD_$_swiftDispatch"
+  ],
+  "/usr/lib/swift/libswiftFileProvider.dylib": [
+   "__swift_FORCE_LOAD_$_swiftFileProvider"
   ],
   "/usr/lib/swift/libswiftFoundation.dylib": [
    "_$s10Foundation10CocoaErrorV03_nsC0So7NSErrorCvg",
@@ -4464,10 +4508,24 @@
    "_$sSy10FoundationE8containsySbqd__SyRd__lF",
    "_$ss5ErrorP10FoundationAC13CustomNSErrorRzrlE5_codeSivg",
    "_$ss5ErrorP10FoundationAC13CustomNSErrorRzrlE7_domainSSvg",
-   "_$ss5ErrorP10FoundationE20localizedDescriptionSSvg"
+   "_$ss5ErrorP10FoundationE20localizedDescriptionSSvg",
+   "__swift_FORCE_LOAD_$_swiftFoundation"
+  ],
+  "/usr/lib/swift/libswiftIntents.dylib": [
+   "__swift_FORCE_LOAD_$_swiftIntents"
+  ],
+  "/usr/lib/swift/libswiftMetal.dylib": [
+   "__swift_FORCE_LOAD_$_swiftMetal"
+  ],
+  "/usr/lib/swift/libswiftMetalKit.dylib": [
+   "__swift_FORCE_LOAD_$_swiftMetalKit"
+  ],
+  "/usr/lib/swift/libswiftModelIO.dylib": [
+   "__swift_FORCE_LOAD_$_swiftModelIO"
   ],
   "/usr/lib/swift/libswiftOSLog.dylib": [
-   "_$sSo10OSLogStoreC0A0E10getEntries4with2at8matchings11AnySequenceVySo0A5EntryCGSo0A17EnumeratorOptionsV_So0A8PositionCSgSo11NSPredicateCSgtKF"
+   "_$sSo10OSLogStoreC0A0E10getEntries4with2at8matchings11AnySequenceVySo0A5EntryCGSo0A17EnumeratorOptionsV_So0A8PositionCSgSo11NSPredicateCSgtKF",
+   "__swift_FORCE_LOAD_$_swiftOSLog"
   ],
   "/usr/lib/swift/libswiftObjectiveC.dylib": [
    "_$s10ObjectiveC8ObjCBoolVMn",
@@ -4475,10 +4533,14 @@
    "_$sSo8NSObjectC10ObjectiveCE2eeoiySbAB_ABtFZ",
    "_$sSo8NSObjectC10ObjectiveCE4hash4intoys6HasherVz_tF",
    "_$sSo8NSObjectC10ObjectiveCE9hashValueSivg",
-   "_$sSo8NSObjectCSH10ObjectiveCMc"
+   "_$sSo8NSObjectCSH10ObjectiveCMc",
+   "__swift_FORCE_LOAD_$_swiftObjectiveC"
   ],
   "/usr/lib/swift/libswiftObservation.dylib": [
    "_$s11Observation10ObservableMp"
+  ],
+  "/usr/lib/swift/libswiftPassKit.dylib": [
+   "__swift_FORCE_LOAD_$_swiftPassKit"
   ],
   "/usr/lib/swift/libswiftPhotosUI.dylib": [
    "_$s8PhotosUI14PHPickerFilterV6imagesACvgZ",
@@ -4496,7 +4558,11 @@
    "_$sSo22PHPickerViewControllerC8PhotosUIE8delegateAC0abC8Delegate_pSgvs"
   ],
   "/usr/lib/swift/libswiftQuartzCore.dylib": [
-   "_$sSo13CATransform3DV10QuartzCoreE19_bridgeToObjectiveCSo7NSValueCyF"
+   "_$sSo13CATransform3DV10QuartzCoreE19_bridgeToObjectiveCSo7NSValueCyF",
+   "__swift_FORCE_LOAD_$_swiftQuartzCore"
+  ],
+  "/usr/lib/swift/libswiftSpatial.dylib": [
+   "__swift_FORCE_LOAD_$_swiftSpatial"
   ],
   "/usr/lib/swift/libswiftUIKit.dylib": [
    "_$s10Foundation9IndexPathV5UIKitE3row7sectionACSi_SitcfC",
@@ -4511,7 +4577,8 @@
    "_$sSo8UIButtonC5UIKitE13ConfigurationV5plainAEyFZ",
    "_$sSo8UIButtonC5UIKitE13ConfigurationVMa",
    "_$sSo8UIButtonC5UIKitE13ConfigurationVMn",
-   "_$sSo8UIButtonC5UIKitE13configurationAbCE13ConfigurationVSgvs"
+   "_$sSo8UIButtonC5UIKitE13configurationAbCE13ConfigurationVSgvs",
+   "__swift_FORCE_LOAD_$_swiftUIKit"
   ],
   "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib": [
    "_$s22UniformTypeIdentifiers6UTTypeV17filenameExtension12conformingToACSgSS_ACtcfC",
@@ -4521,10 +4588,14 @@
    "_$s22UniformTypeIdentifiers6UTTypeV4jpegACvgZ",
    "_$s22UniformTypeIdentifiers6UTTypeV7contentACvgZ",
    "_$s22UniformTypeIdentifiers6UTTypeVMa",
-   "_$s22UniformTypeIdentifiers6UTTypeVMn"
+   "_$s22UniformTypeIdentifiers6UTTypeVMn",
+   "__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers"
   ],
   "/usr/lib/swift/libswiftVision.dylib": [
    "_$sSo22VNFaceLandmarkRegion2DC6VisionE13pointsInImage9imageSizeSaySo7CGPointVGSo6CGSizeV_tF"
+  ],
+  "/usr/lib/swift/libswiftXPC.dylib": [
+   "__swift_FORCE_LOAD_$_swiftXPC"
   ],
   "/usr/lib/swift/libswift_Concurrency.dylib": [
    "_swift_task_alloc",
@@ -4538,7 +4609,11 @@
    "_$sSo13os_log_type_ta0A0E5errorABvgZ",
    "_$sSo13os_log_type_ta0A0E5faultABvgZ",
    "_$sSo13os_log_type_ta0A0E7defaultABvgZ",
-   "_$sSo9OS_os_logC0B0E9subsystem8categoryABSS_SStcfC"
+   "_$sSo9OS_os_logC0B0E9subsystem8categoryABSS_SStcfC",
+   "__swift_FORCE_LOAD_$_swiftos"
+  ],
+  "/usr/lib/swift/libswiftsimd.dylib": [
+   "__swift_FORCE_LOAD_$_swiftsimd"
   ]
  },
  "selectors": [

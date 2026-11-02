@@ -10,7 +10,7 @@
     "stop the workflow from running on unrelated pushes to its own sources."
   ],
   "enabled": true,
-  "nonce": 2,
+  "nonce": 3,
   "runner": "xcode-27",
   "device": "AppleTV14,1",
   "tvos_version": "27.2",
@@ -47,5 +47,8 @@
     "macos-26": "macOS 26.6.2 (25G83), aa rejects LZRaven: Error 0xbd035000",
     "xcode-27": "macOS 27.0.1 (26A434) arm64, image xcode-27-arm64 20261026.0314.1, aa lzraven round-trip OK, Xcode 27.2 with tvOS SDK 27.2",
     "macos-27": "label does not exist on this account (job never scheduled)"
-  }
+  },
+  "_rerun_notes": [
+    "nonce 3: sdk_query.json gained /usr/lib/swift/libswiftCoreData.dylib and libswiftCloudKit.dylib. The query generator only collected libraries whose install name starts with /, so @rpath-named OS Swift overlays were never asked about. Backtrace.framework links @rpath/libswiftCoreData.dylib NON-weakly, so if that overlay is absent on the device the app dies at launch with nothing in the symbol report to explain it. This run settles both."
+  ]
 }

@@ -110,7 +110,8 @@ jobs:
           chmod +x scripts/runner/commit_outputs.sh
           ./scripts/runner/commit_outputs.sh \
             "${{ github.event.inputs.outputs_branch || 'outputs' }}" \
-            "sdk-evidence: tvOS SDK ${TVOS_LABEL}"
+            "sdk-evidence: tvOS SDK ${TVOS_LABEL}" \\
+            evidence/exports evidence/sdk
 
   ios:
     runs-on: ${{ github.event.inputs.ios_runner || 'macos-26' }}
@@ -168,4 +169,5 @@ jobs:
           chmod +x scripts/runner/commit_outputs.sh
           ./scripts/runner/commit_outputs.sh \
             "${{ github.event.inputs.outputs_branch || 'outputs' }}" \
-            "sdk-evidence: iOS SDK ${IOS_LABEL}"
+            "sdk-evidence: iOS SDK ${IOS_LABEL}" \\
+            evidence/exports evidence/sdk

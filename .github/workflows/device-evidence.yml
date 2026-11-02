@@ -205,4 +205,5 @@ jobs:
         run: |
           ./scripts/runner/commit_outputs.sh \
             '${{ needs.config.outputs.outputs_branch }}' \
-            'device-evidence: tvOS ${{ steps.resolve.outputs.version }} (${{ steps.resolve.outputs.build }}) ${{ needs.config.outputs.device }}'
+            'device-evidence: tvOS ${{ steps.resolve.outputs.version }} (${{ steps.resolve.outputs.build }}) ${{ needs.config.outputs.device }}' \\
+            evidence/exports evidence/sdk evidence/device_queries
