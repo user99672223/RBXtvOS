@@ -56,7 +56,23 @@ UITextField, UITextView, UIView, UIViewController`, plus private archive helpers
 `_UIRelationshipTraitStorage(Record)`, `UITableViewCellContentView`, `UIRuntimeAccessibilityConfiguration`,
 `UINibKeyValuePair`) and Foundation value classes.
 
-Candidates to check against the device cache in Phase 2 (each goes into `missing.json` if absent):
+**RESOLVED against the device's export lists (source 1, tvOS 27.2 / 24K122).**
+All 21 instantiated classes and all 14 private archive helpers are present, so
+no nib should fail for a missing class. Note why none of them appeared in
+`missing.json`: a nib resolves classes **by name at runtime** through
+`NSClassFromString`, so nothing imports `_OBJC_CLASS_$_<name>` and neither the
+import tables nor the Phase 5 resolution check can see them. They had to be
+checked directly.
+
+| Class | Device (24K122) | tvOS SDK 27.2 | Provided by |
+|---|---|---|---|
+| `UIDatePicker` | PRESENT | **public** (`UIKit.tbd` exports it) | UIKitCore |
+| `UIProgressView`, `UIPageControl` | PRESENT | — | UIKitCore |
+| `NSLayoutConstraint` | PRESENT | — | **Foundation**, not UIKit |
+| `UIClassSwapper`, `UIProxyObject`, `UITapRecognizer`, `UIButtonContent`, `_UISystemBackgroundView`, `_UITableViewCellSeparatorView`, `UIRuntimeAccessibilityConfiguration`, `UINibKeyValuePair`, `UIImageNibPlaceholder`, `UITableViewCellContentView`, `_UITraitStorageList` | PRESENT | private | UIKitCore |
+| every other class listed above | PRESENT | — | UIKitCore / Foundation |
+
+Original Phase 1 candidate list, kept for the record:
 
 | Class | Used by | Status |
 |---|---|---|

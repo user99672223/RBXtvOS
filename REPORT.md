@@ -266,18 +266,33 @@ the Home screen will probably show a placeholder. Building one needs `actool`
 and merging it would mean sending Roblox's catalog to the runner — not allowed —
 so the iOS catalog is kept and the placeholder accepted.
 
-### 4. `UIDatePicker` and the nibs. Partly settled.
+### 4. Nib classes — RESOLVED, no longer a risk.
 
-36 compiled `NIBArchive` files. `RBBirthdayPickerController.nib` instantiates
-`UIDatePicker`, flagged in Phase 1 as the class most likely missing. It did
-**not** appear in the missing list, because nothing imports
-`_OBJC_CLASS_$_UIDatePicker` — a nib resolves its classes by **name at runtime**
-via `NSClassFromString`, which no import table can show. The
-`uidatepicker-class` query in `evidence/queries/device_queries.json` asks the
-device directly; **UNVERIFIED until that output lands.** If it is absent, the
-sign-up birthday screen will fail to instantiate, and the fix is another
-stand-in class. Whether tvOS honours `UILaunchStoryboardName` is also
-UNVERIFIED.
+36 compiled `NIBArchive` files. Phase 1 flagged `UIDatePicker` (used by
+`RBBirthdayPickerController.nib`) as the class most likely to be missing, and it
+never appeared in the shim list — not because it is present, but because nothing
+*imports* `_OBJC_CLASS_$_UIDatePicker`. A nib resolves its classes **by name at
+runtime** through `NSClassFromString`, so no import table can show them and the
+Phase 5 check cannot either.
+
+Checked directly against the device's export lists instead. **All 21 classes the
+nibs instantiate are present on tvOS 27.2**, and so are all 14 of the private
+archive helpers:
+
+- `UIDatePicker` is not merely present, it is **public** — tvOS SDK 27.2's
+  `UIKit.tbd` exports it.
+- `UIProgressView`, `UIPageControl`, `UIButton`, `UITextField`, `UITextView`,
+  `UICollectionView`, `UINavigationBar`, `UIStackView` and the rest: present.
+- `NSLayoutConstraint` is present, provided by **Foundation** rather than UIKit.
+- The archive internals — `UIClassSwapper`, `UIProxyObject`, `UITapRecognizer`,
+  `UIButtonContent`, `_UISystemBackgroundView`,
+  `_UITableViewCellSeparatorView`, `UIRuntimeAccessibilityConfiguration`,
+  `UINibKeyValuePair`, `UIImageNibPlaceholder`,
+  `UITableViewCellContentView`, `_UITraitStorageList`: all present.
+
+So no nib should fail to instantiate for a missing class. Whether tvOS honours
+`UILaunchStoryboardName` for the launch screen is still UNVERIFIED, but that is
+cosmetic — a missing launch image, not a failure.
 
 ### 5. Storage. Known limitation.
 
