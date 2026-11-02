@@ -4,21 +4,25 @@ name: sdk-evidence
 # major version, and the iOS SDK Roblox was built against. Only derived text is
 # committed back (symbol lists, availability annotations, header excerpts).
 # No Apple SDK files and no Roblox files are ever uploaded or printed here.
+#
+# Expressions use `github.event.inputs.*`, not `inputs.*`: the `inputs` context
+# does not exist for a `push` event and referencing it fails workflow parsing
+# for every trigger, which is what broke the first version of this file.
 
 on:
   workflow_dispatch:
     inputs:
-      tvos_runner:
-        description: 'Runner label carrying the tvOS SDK (e.g. macos-26, macos-15)'
+      runner:
+        description: 'Runner label to use for both SDK jobs (e.g. macos-26, macos-15)'
         default: 'macos-26'
       tvos_xcode:
-        description: 'Xcode version to select for the tvOS SDK (blank = runner default)'
+        description: 'Xcode to select for the tvOS SDK, as in /Applications/Xcode_<v>.app (blank = runner default)'
         default: ''
-      ios_runner:
-        description: 'Runner label carrying the iOS SDK Roblox used'
-        default: 'macos-26'
       ios_xcode:
-        description: 'Xcode version to select for the iOS SDK (blank = runner default)'
+        description: 'Xcode to select for the iOS SDK (blank = runner default)'
+        default: ''
+      probe_runner:
+        description: 'Extra runner label to probe for available Xcodes/SDKs (blank = skip)'
         default: ''
       outputs_branch:
         description: 'Branch to commit derived evidence to'
@@ -30,61 +34,108 @@ on:
       - '.github/workflows/sdk-evidence.yml'
       - 'scripts/runner/sdk_evidence.py'
       - 'scripts/runner/tbd.py'
+      - 'scripts/runner/commit_outputs.sh'
       - 'evidence/queries/sdk_query.json'
+      - 'evidence/queries/ios_targets.json'
 
 permissions:
   contents: write
 
 jobs:
+  # Records what every image actually ships, so SDK versions are recorded
+  # rather than assumed (CLAUDE.md evidence source 2/3 bookkeeping).
   probe:
-    # Report what every available macOS image actually has, so the exact SDK
-    # versions used are recorded rather than assumed.
     strategy:
       fail-fast: false
       matrix:
         runner: [macos-26, macos-15]
     runs-on: ${{ matrix.runner }}
+    timeout-minutes: 20
     steps:
       - name: Available Xcodes and SDKs
         run: |
-          echo "### ${{ matrix.runner }}"
+          echo "### image: ${{ matrix.runner }}  (ImageVersion=${ImageVersion:-unknown})"
           sw_vers
-          ls /Applications | grep -i '^Xcode' || true
+          echo "--- /Applications/Xcode* ---"
+          ls -d /Applications/Xcode*.app 2>/dev/null || true
           for app in /Applications/Xcode*.app; do
             [ -d "$app" ] || continue
-            echo "--- $app"
-            "$app/Contents/Developer/usr/bin/xcodebuild" -version 2>/dev/null || true
-            DEVELOPER_DIR="$app/Contents/Developer" xcodebuild -showsdks 2>/dev/null | sed -n '1,80p' || true
+            echo "=== $app"
+            DEVELOPER_DIR="$app/Contents/Developer" xcodebuild -version 2>/dev/null || true
+            DEVELOPER_DIR="$app/Contents/Developer" xcodebuild -showsdks 2>/dev/null || true
+          done
+      - name: Apple Archive (aa) capability
+        # tvOS 27 OTA payloads use LZRaven (pbzm), which only Apple's `aa` can
+        # decode. This decides whether device evidence (source 1) can be
+        # extracted on this image at all.
+        run: |
+          echo "--- which aa ---"; which aa || echo "aa NOT FOUND"
+          echo "--- aa version ---"; aa version 2>&1 | head -20 || true
+          echo "--- compression algorithms aa advertises ---"
+          aa --help 2>&1 | head -60 || true
+          echo "--- does aa name lzraven/raven anywhere? ---"
+          (aa --help 2>&1; aa version 2>&1) | grep -io 'raven[a-z0-9]*' | sort -u || echo "no raven mention"
+          echo "--- libAppleArchive version ---"
+          ls -l /usr/lib/libAppleArchive.dylib 2>/dev/null || true
+          otool -L "$(which aa)" 2>/dev/null | head -10 || true
+
+  # Optional probe of a label that may not exist on this account (e.g. a
+  # preview image). Kept separate so a label that never schedules cannot
+  # block the real jobs.
+  probe-extra:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.probe_runner != '' }}
+    runs-on: ${{ github.event.inputs.probe_runner }}
+    timeout-minutes: 20
+    steps:
+      - name: Available Xcodes and SDKs
+        run: |
+          echo "### image: ${{ github.event.inputs.probe_runner }} (ImageVersion=${ImageVersion:-unknown})"
+          sw_vers
+          ls -d /Applications/Xcode*.app 2>/dev/null || true
+          for app in /Applications/Xcode*.app; do
+            [ -d "$app" ] || continue
+            echo "=== $app"
+            DEVELOPER_DIR="$app/Contents/Developer" xcodebuild -version 2>/dev/null || true
+            DEVELOPER_DIR="$app/Contents/Developer" xcodebuild -showsdks 2>/dev/null || true
           done
 
   tvos:
-    needs: probe
-    runs-on: ${{ github.event_name == 'workflow_dispatch' && inputs.tvos_runner || 'macos-26' }}
+    runs-on: ${{ github.event.inputs.runner || 'macos-26' }}
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - name: Select Xcode
         run: |
-          WANT="${{ github.event_name == 'workflow_dispatch' && inputs.tvos_xcode || '' }}"
-          if [ -n "$WANT" ] && [ -d "/Applications/Xcode_${WANT}.app" ]; then
-            sudo xcode-select -s "/Applications/Xcode_${WANT}.app/Contents/Developer"
+          WANT="${{ github.event.inputs.tvos_xcode }}"
+          if [ -n "$WANT" ]; then
+            if [ -d "/Applications/Xcode_${WANT}.app" ]; then
+              sudo xcode-select -s "/Applications/Xcode_${WANT}.app/Contents/Developer"
+            else
+              echo "::warning::Xcode_${WANT}.app not present; using runner default"
+              ls -d /Applications/Xcode*.app || true
+            fi
           fi
           xcodebuild -version
       - name: Record environment
         run: |
           mkdir -p evidence/sdk
           {
-            echo "## tvOS SDK runner"
+            echo "## tvOS SDK runner (evidence source 2)"
+            echo
             echo '```'
-            echo "runner: ${{ runner.os }} / $(sw_vers -productVersion) / image ${ImageVersion:-unknown}"
-            echo "runner label: ${{ github.event_name == 'workflow_dispatch' && inputs.tvos_runner || 'macos-26' }}"
+            echo "runner label: ${{ github.event.inputs.runner || 'macos-26' }}"
+            echo "image version: ${ImageVersion:-unknown}"
+            sw_vers
             xcodebuild -version
             echo "DEVELOPER_DIR=$(xcode-select -p)"
             echo "--- xcodebuild -showsdks ---"
             xcodebuild -showsdks
-            echo "--- appletvos SDK path/version ---"
-            xcrun --sdk appletvos --show-sdk-path || true
-            xcrun --sdk appletvos --show-sdk-version || true
-            xcrun --sdk appletvos --show-sdk-build-version || true
+            echo "--- appletvos ---"
+            echo "sdk-path:    $(xcrun --sdk appletvos --show-sdk-path 2>&1)"
+            echo "sdk-version: $(xcrun --sdk appletvos --show-sdk-version 2>&1)"
+            echo "sdk-build:   $(xcrun --sdk appletvos --show-sdk-build-version 2>&1)"
+            echo "--- all Xcodes on this image ---"
+            ls -d /Applications/Xcode*.app 2>/dev/null || true
             echo '```'
           } > evidence/sdk/tvos_environment.md
           cat evidence/sdk/tvos_environment.md
@@ -94,39 +145,51 @@ jobs:
           SDK=$(xcrun --sdk appletvos --show-sdk-path)
           VER=$(xcrun --sdk appletvos --show-sdk-version)
           echo "tvOS SDK $VER at $SDK"
-          python3 -m pip install --quiet pyyaml || true
+          python3 -m pip install --quiet --break-system-packages pyyaml 2>/dev/null \
+            || python3 -m pip install --quiet pyyaml 2>/dev/null || true
           python3 scripts/runner/sdk_evidence.py tvos "$SDK" "tvos${VER}"
-          echo "tvos_label=tvos${VER}" >> "$GITHUB_ENV"
+          echo "TVOS_LABEL=tvos${VER}" >> "$GITHUB_ENV"
       - name: Commit derived evidence
-        env:
-          BRANCH: ${{ github.event_name == 'workflow_dispatch' && inputs.outputs_branch || 'outputs' }}
-        run: ./scripts/runner/commit_outputs.sh "$BRANCH" "sdk-evidence: tvOS SDK ($tvos_label)"
+        run: |
+          ./scripts/runner/commit_outputs.sh \
+            "${{ github.event.inputs.outputs_branch || 'outputs' }}" \
+            "sdk-evidence: tvOS SDK ${TVOS_LABEL}"
 
   ios:
-    needs: probe
-    runs-on: ${{ github.event_name == 'workflow_dispatch' && inputs.ios_runner || 'macos-26' }}
+    runs-on: ${{ github.event.inputs.runner || 'macos-26' }}
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - name: Select Xcode
         run: |
-          WANT="${{ github.event_name == 'workflow_dispatch' && inputs.ios_xcode || '' }}"
-          if [ -n "$WANT" ] && [ -d "/Applications/Xcode_${WANT}.app" ]; then
-            sudo xcode-select -s "/Applications/Xcode_${WANT}.app/Contents/Developer"
+          WANT="${{ github.event.inputs.ios_xcode }}"
+          if [ -n "$WANT" ]; then
+            if [ -d "/Applications/Xcode_${WANT}.app" ]; then
+              sudo xcode-select -s "/Applications/Xcode_${WANT}.app/Contents/Developer"
+            else
+              echo "::warning::Xcode_${WANT}.app not present; using runner default"
+              ls -d /Applications/Xcode*.app || true
+            fi
           fi
           xcodebuild -version
       - name: Record environment
         run: |
           mkdir -p evidence/sdk
           {
-            echo "## iOS SDK runner"
+            echo "## iOS SDK runner (evidence source 3)"
+            echo
             echo '```'
-            echo "runner label: ${{ github.event_name == 'workflow_dispatch' && inputs.ios_runner || 'macos-26' }}"
+            echo "runner label: ${{ github.event.inputs.runner || 'macos-26' }}"
+            echo "image version: ${ImageVersion:-unknown}"
+            sw_vers
             xcodebuild -version
             echo "DEVELOPER_DIR=$(xcode-select -p)"
+            echo "--- xcodebuild -showsdks ---"
             xcodebuild -showsdks
-            xcrun --sdk iphoneos --show-sdk-path || true
-            xcrun --sdk iphoneos --show-sdk-version || true
-            xcrun --sdk iphoneos --show-sdk-build-version || true
+            echo "--- iphoneos ---"
+            echo "sdk-path:    $(xcrun --sdk iphoneos --show-sdk-path 2>&1)"
+            echo "sdk-version: $(xcrun --sdk iphoneos --show-sdk-version 2>&1)"
+            echo "sdk-build:   $(xcrun --sdk iphoneos --show-sdk-build-version 2>&1)"
             echo '```'
           } > evidence/sdk/ios_environment.md
           cat evidence/sdk/ios_environment.md
@@ -136,12 +199,14 @@ jobs:
           SDK=$(xcrun --sdk iphoneos --show-sdk-path)
           VER=$(xcrun --sdk iphoneos --show-sdk-version)
           echo "iOS SDK $VER at $SDK"
-          python3 -m pip install --quiet pyyaml || true
+          python3 -m pip install --quiet --break-system-packages pyyaml 2>/dev/null \
+            || python3 -m pip install --quiet pyyaml 2>/dev/null || true
           TARGETS=""
-          [ -f evidence/queries/ios_targets.json ] && TARGETS=evidence/queries/ios_targets.json
+          if [ -f evidence/queries/ios_targets.json ]; then TARGETS=evidence/queries/ios_targets.json; fi
           python3 scripts/runner/sdk_evidence.py ios "$SDK" "ios${VER}" $TARGETS
-          echo "ios_label=ios${VER}" >> "$GITHUB_ENV"
+          echo "IOS_LABEL=ios${VER}" >> "$GITHUB_ENV"
       - name: Commit derived evidence
-        env:
-          BRANCH: ${{ github.event_name == 'workflow_dispatch' && inputs.outputs_branch || 'outputs' }}
-        run: ./scripts/runner/commit_outputs.sh "$BRANCH" "sdk-evidence: iOS SDK ($ios_label)"
+        run: |
+          ./scripts/runner/commit_outputs.sh \
+            "${{ github.event.inputs.outputs_branch || 'outputs' }}" \
+            "sdk-evidence: iOS SDK ${IOS_LABEL}"
