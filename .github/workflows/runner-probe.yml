@@ -1,0 +1,69 @@
+name: runner-probe
+
+# Finds out which macOS runner labels this account can actually schedule, and
+# whether any of them ships an `aa` that decodes LZRaven (pbzm).
+#
+# This matters because tvOS 27.x OTA payloads use LZRaven, macOS 26.6.2's `aa`
+# fails on it ("Parsing failed", Error 0xbd035000), and evidence source 1 (the
+# device's own dyld shared cache) cannot be extracted without it. Each label
+# is its own job with fail-fast disabled, so a label that cannot be scheduled
+# only fails its own leg.
+#
+# Triggered by editing evidence/queries/runner_probe.json (see the comment in
+# device-evidence.yml for why dispatch is unavailable here).
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'claude/**'
+    paths:
+      - '.github/workflows/runner-probe.yml'
+      - 'evidence/queries/runner_probe.json'
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    strategy:
+      fail-fast: false
+      matrix:
+        label: [macos-27, macos-26, macos-latest, xcode-27]
+    runs-on: ${{ matrix.label }}
+    timeout-minutes: 15
+    steps:
+      - name: Identify the image
+        run: |
+          echo "### requested label: ${{ matrix.label }}"
+          sw_vers
+          echo "ImageVersion=${ImageVersion:-unknown}"
+          echo "arch: $(uname -m)"
+          echo "aa: $(which aa || echo 'NOT FOUND')"
+          echo "--- Xcodes ---"
+          ls -d /Applications/Xcode*.app 2>/dev/null || true
+          echo "--- highest tvOS SDK ---"
+          for app in /Applications/Xcode*.app; do
+            [ -d "$app" ] || continue
+            DEVELOPER_DIR="$app/Contents/Developer" xcodebuild -showsdks 2>/dev/null \
+              | grep -oE 'appletvos[0-9.]+' || true
+          done | sort -u -V | tail -3
+
+      - name: Can aa decode LZRaven?
+        # Build a tiny LZRaven-compressed archive and read it back. If `aa`
+        # cannot even produce one, it has no LZRaven support at all.
+        run: |
+          set +e
+          mkdir -p /tmp/t && echo hello > /tmp/t/f.txt
+          echo "--- try to create an lzraven archive ---"
+          aa archive -d /tmp/t -o /tmp/t.aar -a lzraven -v 2>&1 | head -20
+          echo "create exit=$?"
+          echo "--- list it back ---"
+          aa list -i /tmp/t.aar -v 2>&1 | head -20
+          echo "list exit=$?"
+          echo "--- algorithms aa accepts ---"
+          for alg in lzraven raven lzfse lzbitmap zlib lz4 lzma; do
+            rm -f /tmp/a.aar
+            aa archive -d /tmp/t -o /tmp/a.aar -a "$alg" >/dev/null 2>&1 \
+              && echo "  $alg: OK" || echo "  $alg: unsupported"
+          done
