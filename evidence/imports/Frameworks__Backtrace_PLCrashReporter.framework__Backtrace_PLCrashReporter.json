@@ -1,0 +1,1267 @@
+{
+ "binary": "Frameworks/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter",
+ "libraries": [
+  {
+   "name": "/usr/lib/libc++.1.dylib",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/Foundation.framework/Foundation",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libobjc.A.dylib",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libSystem.B.dylib",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+   "weak": false
+  }
+ ],
+ "imports": {
+  "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
+   {
+    "name": "_CFRelease",
+    "weak": false
+   },
+   {
+    "name": "_CFUUIDCreate",
+    "weak": false
+   },
+   {
+    "name": "_CFUUIDCreateFromUUIDBytes",
+    "weak": false
+   },
+   {
+    "name": "_CFUUIDCreateString",
+    "weak": false
+   },
+   {
+    "name": "_CFUUIDGetUUIDBytes",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSData",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSDate",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSDictionary",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSException",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableArray",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableDictionary",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableSet",
+    "weak": false
+   },
+   {
+    "name": "___CFConstantStringClassReference",
+    "weak": false
+   },
+   {
+    "name": "_kCFBundleVersionKey",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/Foundation.framework/Foundation": [
+   {
+    "name": "_NSFilePosixPermissions",
+    "weak": false
+   },
+   {
+    "name": "_NSLocalizedDescriptionKey",
+    "weak": false
+   },
+   {
+    "name": "_NSLog",
+    "weak": false
+   },
+   {
+    "name": "_NSMachErrorDomain",
+    "weak": false
+   },
+   {
+    "name": "_NSPOSIXErrorDomain",
+    "weak": false
+   },
+   {
+    "name": "_NSSearchPathForDirectoriesInDomains",
+    "weak": false
+   },
+   {
+    "name": "_NSSetUncaughtExceptionHandler",
+    "weak": false
+   },
+   {
+    "name": "_NSTemporaryDirectory",
+    "weak": false
+   },
+   {
+    "name": "_NSUnderlyingErrorKey",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSBundle",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSError",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSFileManager",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableString",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSNumber",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSProcessInfo",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSScanner",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSString",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libSystem.B.dylib": [
+   {
+    "name": "_NDR_record",
+    "weak": false
+   },
+   {
+    "name": "_OSAtomicCompareAndSwap32",
+    "weak": false
+   },
+   {
+    "name": "_OSAtomicCompareAndSwap32Barrier",
+    "weak": false
+   },
+   {
+    "name": "_OSAtomicCompareAndSwapPtrBarrier",
+    "weak": false
+   },
+   {
+    "name": "_OSAtomicDecrement32Barrier",
+    "weak": false
+   },
+   {
+    "name": "_OSAtomicIncrement32Barrier",
+    "weak": false
+   },
+   {
+    "name": "_OSMemoryBarrier",
+    "weak": false
+   },
+   {
+    "name": "_OSSpinLockLock",
+    "weak": false
+   },
+   {
+    "name": "_OSSpinLockUnlock",
+    "weak": false
+   },
+   {
+    "name": "__NSGetExecutablePath",
+    "weak": false
+   },
+   {
+    "name": "___assert_rtn",
+    "weak": false
+   },
+   {
+    "name": "___cxa_atexit",
+    "weak": false
+   },
+   {
+    "name": "___error",
+    "weak": false
+   },
+   {
+    "name": "___memcpy_chk",
+    "weak": false
+   },
+   {
+    "name": "___stack_chk_fail",
+    "weak": false
+   },
+   {
+    "name": "___stack_chk_guard",
+    "weak": false
+   },
+   {
+    "name": "___stderrp",
+    "weak": false
+   },
+   {
+    "name": "__dyld_register_func_for_add_image",
+    "weak": false
+   },
+   {
+    "name": "__dyld_register_func_for_remove_image",
+    "weak": false
+   },
+   {
+    "name": "_abort",
+    "weak": false
+   },
+   {
+    "name": "_atexit",
+    "weak": false
+   },
+   {
+    "name": "_atoi",
+    "weak": false
+   },
+   {
+    "name": "_bzero",
+    "weak": false
+   },
+   {
+    "name": "_calloc",
+    "weak": false
+   },
+   {
+    "name": "_close",
+    "weak": false
+   },
+   {
+    "name": "_dladdr",
+    "weak": false
+   },
+   {
+    "name": "_exception_raise",
+    "weak": false
+   },
+   {
+    "name": "_exception_raise_state",
+    "weak": false
+   },
+   {
+    "name": "_exception_raise_state_identity",
+    "weak": false
+   },
+   {
+    "name": "_exit",
+    "weak": false
+   },
+   {
+    "name": "_fclose",
+    "weak": false
+   },
+   {
+    "name": "_fcntl",
+    "weak": false
+   },
+   {
+    "name": "_fdopen",
+    "weak": false
+   },
+   {
+    "name": "_fflush",
+    "weak": false
+   },
+   {
+    "name": "_fileno",
+    "weak": false
+   },
+   {
+    "name": "_fopen",
+    "weak": false
+   },
+   {
+    "name": "_fprintf",
+    "weak": false
+   },
+   {
+    "name": "_free",
+    "weak": false
+   },
+   {
+    "name": "_fseek",
+    "weak": false
+   },
+   {
+    "name": "_ftell",
+    "weak": false
+   },
+   {
+    "name": "_ftello",
+    "weak": false
+   },
+   {
+    "name": "_ftruncate",
+    "weak": false
+   },
+   {
+    "name": "_fwrite",
+    "weak": false
+   },
+   {
+    "name": "_getenv",
+    "weak": false
+   },
+   {
+    "name": "_getpid",
+    "weak": false
+   },
+   {
+    "name": "_getprogname",
+    "weak": false
+   },
+   {
+    "name": "_mach_make_memory_entry_64",
+    "weak": false
+   },
+   {
+    "name": "_mach_msg",
+    "weak": false
+   },
+   {
+    "name": "_mach_msg_destroy",
+    "weak": false
+   },
+   {
+    "name": "_mach_port_allocate",
+    "weak": false
+   },
+   {
+    "name": "_mach_port_deallocate",
+    "weak": false
+   },
+   {
+    "name": "_mach_port_insert_right",
+    "weak": false
+   },
+   {
+    "name": "_mach_port_mod_refs",
+    "weak": false
+   },
+   {
+    "name": "_mach_port_move_member",
+    "weak": false
+   },
+   {
+    "name": "_mach_port_request_notification",
+    "weak": false
+   },
+   {
+    "name": "_mach_task_self_",
+    "weak": false
+   },
+   {
+    "name": "_mach_thread_self",
+    "weak": false
+   },
+   {
+    "name": "_malloc",
+    "weak": false
+   },
+   {
+    "name": "_memcpy",
+    "weak": false
+   },
+   {
+    "name": "_memmove",
+    "weak": false
+   },
+   {
+    "name": "_mig_dealloc_reply_port",
+    "weak": false
+   },
+   {
+    "name": "_mig_get_reply_port",
+    "weak": false
+   },
+   {
+    "name": "_mig_put_reply_port",
+    "weak": false
+   },
+   {
+    "name": "_mkdir",
+    "weak": false
+   },
+   {
+    "name": "_mkstemp",
+    "weak": false
+   },
+   {
+    "name": "_mmap",
+    "weak": false
+   },
+   {
+    "name": "_munmap",
+    "weak": false
+   },
+   {
+    "name": "_open",
+    "weak": false
+   },
+   {
+    "name": "_pthread_attr_destroy",
+    "weak": false
+   },
+   {
+    "name": "_pthread_attr_init",
+    "weak": false
+   },
+   {
+    "name": "_pthread_attr_setdetachstate",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cond_destroy",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cond_init",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cond_signal",
+    "weak": false
+   },
+   {
+    "name": "_pthread_cond_wait",
+    "weak": false
+   },
+   {
+    "name": "_pthread_create",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mach_thread_np",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_destroy",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_init",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_lock",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_unlock",
+    "weak": false
+   },
+   {
+    "name": "_raise",
+    "weak": false
+   },
+   {
+    "name": "_setenv",
+    "weak": false
+   },
+   {
+    "name": "_sigaction",
+    "weak": false
+   },
+   {
+    "name": "_sigaltstack",
+    "weak": false
+   },
+   {
+    "name": "_snprintf",
+    "weak": false
+   },
+   {
+    "name": "_strchr",
+    "weak": false
+   },
+   {
+    "name": "_strcmp",
+    "weak": false
+   },
+   {
+    "name": "_strdup",
+    "weak": false
+   },
+   {
+    "name": "_strerror",
+    "weak": false
+   },
+   {
+    "name": "_strlen",
+    "weak": false
+   },
+   {
+    "name": "_strncpy",
+    "weak": false
+   },
+   {
+    "name": "_sysctl",
+    "weak": false
+   },
+   {
+    "name": "_sysctlbyname",
+    "weak": false
+   },
+   {
+    "name": "_task_get_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_task_swap_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_task_threads",
+    "weak": false
+   },
+   {
+    "name": "_thread_get_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_thread_get_state",
+    "weak": false
+   },
+   {
+    "name": "_thread_resume",
+    "weak": false
+   },
+   {
+    "name": "_thread_suspend",
+    "weak": false
+   },
+   {
+    "name": "_thread_swap_exception_ports",
+    "weak": false
+   },
+   {
+    "name": "_time",
+    "weak": false
+   },
+   {
+    "name": "_uname",
+    "weak": false
+   },
+   {
+    "name": "_unlink",
+    "weak": false
+   },
+   {
+    "name": "_vm_allocate",
+    "weak": false
+   },
+   {
+    "name": "_vm_deallocate",
+    "weak": false
+   },
+   {
+    "name": "_vm_map",
+    "weak": false
+   },
+   {
+    "name": "_vm_page_mask",
+    "weak": false
+   },
+   {
+    "name": "_vm_page_size",
+    "weak": false
+   },
+   {
+    "name": "_vm_read_overwrite",
+    "weak": false
+   },
+   {
+    "name": "_voucher_mach_msg_set",
+    "weak": true
+   },
+   {
+    "name": "_write",
+    "weak": false
+   },
+   {
+    "name": "dyld_stub_binder",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libobjc.A.dylib": [
+   {
+    "name": "_OBJC_CLASS_$_NSObject",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_NSObject",
+    "weak": false
+   },
+   {
+    "name": "__objc_empty_cache",
+    "weak": false
+   },
+   {
+    "name": "_objc_alloc",
+    "weak": false
+   },
+   {
+    "name": "_objc_autorelease",
+    "weak": false
+   },
+   {
+    "name": "_objc_enumerationMutation",
+    "weak": false
+   },
+   {
+    "name": "_objc_msgSend",
+    "weak": false
+   },
+   {
+    "name": "_objc_msgSendSuper2",
+    "weak": false
+   },
+   {
+    "name": "_objc_release",
+    "weak": false
+   },
+   {
+    "name": "_objc_retain",
+    "weak": false
+   }
+  ],
+  "<ordinal 0>": [
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE11set_readingEb",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE13nasync_appendES3_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE14nasync_prependES3_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE18nasync_remove_nodeEPNS4_4nodeE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE4nextEPNS4_4nodeE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE9free_listEPNS4_4nodeE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE11set_readingEb",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE13nasync_appendES3_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE18nasync_remove_nodeEPNS4_4nodeE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE4nextEPNS4_4nodeE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE9free_listEPNS4_4nodeE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE11set_readingEb",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE13nasync_appendES4_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE18nasync_remove_nodeEPNS5_4nodeE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE4nextEPNS5_4nodeE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE9free_listEPNS5_4nodeE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE10push_stateEv",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE11apply_stateEjPNS1_28plcrash_async_dwarf_cie_infoEPK26plcrash_async_thread_statePK23plcrash_async_byteorderPS6_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE12eval_programEP21plcrash_async_mobjectjjPNS1_28plcrash_async_dwarf_cie_infoEPNS1_16gnu_ehptr_readerIjEEPK23plcrash_async_byteordermlm",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE12get_cfa_ruleEv",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE12set_registerEjNS1_28plcrash_dwarf_cfa_reg_rule_tEj",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE15remove_registerEj",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE16set_cfa_registerEjj",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE17get_register_ruleEjPNS1_28plcrash_dwarf_cfa_reg_rule_tEPj",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE18get_register_countEv",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE18set_cfa_expressionEmm",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE23set_cfa_register_signedEji",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE9pop_stateEv",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiEC1Ev",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiEC2Ev",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE10push_stateEv",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE11apply_stateEjPNS1_28plcrash_async_dwarf_cie_infoEPK26plcrash_async_thread_statePK23plcrash_async_byteorderPS6_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE12eval_programEP21plcrash_async_mobjectyyPNS1_28plcrash_async_dwarf_cie_infoEPNS1_16gnu_ehptr_readerIyEEPK23plcrash_async_byteordermlm",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE12get_cfa_ruleEv",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE12set_registerEjNS1_28plcrash_dwarf_cfa_reg_rule_tEy",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE15remove_registerEj",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE16set_cfa_registerEjy",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE17get_register_ruleEjPNS1_28plcrash_dwarf_cfa_reg_rule_tEPy",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE18get_register_countEv",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE18set_cfa_expressionEmm",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE23set_cfa_register_signedEjx",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE9pop_stateEv",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxEC1Ev",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxEC2Ev",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE13set_data_baseEj",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE13set_func_baseEj",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE13set_text_baseEj",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE22set_frame_section_baseEjj",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE4readEP21plcrash_async_mobjectmlNS1_8DW_EH_PEEPjPm",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjEC1EPK23plcrash_async_byteorder",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjEC2EPK23plcrash_async_byteorder",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE13set_data_baseEy",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE13set_func_baseEy",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE13set_text_baseEy",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE22set_frame_section_baseEyy",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE4readEP21plcrash_async_mobjectmlNS1_8DW_EH_PEEPyPm",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyEC1EPK23plcrash_async_byteorder",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyEC2EPK23plcrash_async_byteorder",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIjiE4nextEPjPNS1_28plcrash_dwarf_cfa_reg_rule_tES4_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIjiEC1EPNS1_15dwarf_cfa_stateIjiEE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIjiEC2EPNS1_15dwarf_cfa_stateIjiEE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIyxE4nextEPjPNS1_28plcrash_dwarf_cfa_reg_rule_tEPy",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIyxEC1EPNS1_15dwarf_cfa_stateIyxEE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIyxEC2EPNS1_15dwarf_cfa_stateIyxEE",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async33plcrash_async_dwarf_cie_info_initIjEE15plcrash_error_tPNS1_28plcrash_async_dwarf_cie_infoEP21plcrash_async_mobjectPK23plcrash_async_byteorderPNS1_16gnu_ehptr_readerIT_EEm",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async33plcrash_async_dwarf_cie_info_initIyEE15plcrash_error_tPNS1_28plcrash_async_dwarf_cie_infoEP21plcrash_async_mobjectPK23plcrash_async_byteorderPNS1_16gnu_ehptr_readerIT_EEm",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async33plcrash_async_dwarf_fde_info_initIjEE15plcrash_error_tPNS1_28plcrash_async_dwarf_fde_infoEP21plcrash_async_mobjectPK23plcrash_async_byteordermb",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async33plcrash_async_dwarf_fde_info_initIyEE15plcrash_error_tPNS1_28plcrash_async_dwarf_fde_infoEP21plcrash_async_mobjectPK23plcrash_async_byteordermb",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async34plcrash_async_dwarf_read_uintmax64IjEE15plcrash_error_tP21plcrash_async_mobjectPK23plcrash_async_byteordermlhPT_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async34plcrash_async_dwarf_read_uintmax64IyEE15plcrash_error_tP21plcrash_async_mobjectPK23plcrash_async_byteordermlhPT_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async35plcrash_async_dwarf_expression_evalIjiEE15plcrash_error_tP21plcrash_async_mobjectjPK26plcrash_async_thread_statePK23plcrash_async_byteordermlmPT_mSD_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async35plcrash_async_dwarf_expression_evalIyxEE15plcrash_error_tP21plcrash_async_mobjectjPK26plcrash_async_thread_statePK23plcrash_async_byteordermlmPT_mSD_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async39plcrash_async_dwarf_read_task_uintmax64IjEE15plcrash_error_tjPK23plcrash_async_byteordermlhPT_",
+    "weak": true
+   },
+   {
+    "name": "__ZN7plcrash3PL_5async39plcrash_async_dwarf_read_task_uintmax64IyEE15plcrash_error_tjPK23plcrash_async_byteordermlhPT_",
+    "weak": true
+   },
+   {
+    "name": "___llvm_profile_filename",
+    "weak": true
+   },
+   {
+    "name": "___llvm_profile_raw_version",
+    "weak": true
+   },
+   {
+    "name": "_lprofDirMode",
+    "weak": true
+   }
+  ]
+ },
+ "objc_classes": {
+  "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
+   "NSData",
+   "NSDate",
+   "NSDictionary",
+   "NSException",
+   "NSMutableArray",
+   "NSMutableDictionary",
+   "NSMutableSet"
+  ],
+  "/System/Library/Frameworks/Foundation.framework/Foundation": [
+   "NSBundle",
+   "NSError",
+   "NSFileManager",
+   "NSMutableString",
+   "NSNumber",
+   "NSProcessInfo",
+   "NSScanner",
+   "NSString"
+  ],
+  "/usr/lib/libobjc.A.dylib": [
+   "NSObject"
+  ]
+ },
+ "selrefs": [
+  "UTF8String",
+  "addObject:",
+  "address",
+  "appendFormat:",
+  "appendString:",
+  "applicationIdentifier",
+  "applicationInfo",
+  "applicationMarketingVersion",
+  "applicationVersion",
+  "arrayWithCapacity:",
+  "asyncSafeRepresentation",
+  "behavior",
+  "bundleIdentifier",
+  "bytes",
+  "cStringUsingEncoding:",
+  "callStackReturnAddresses",
+  "class",
+  "code",
+  "codeType",
+  "copySendRightForServerAndReturningError:",
+  "count",
+  "countByEnumeratingWithState:objects:count:",
+  "crashReportDirectory",
+  "crashReportPath",
+  "crashed",
+  "createDirectoryAtPath:withIntermediateDirectories:attributes:error:",
+  "currentHostInfo",
+  "currentProcessInfo",
+  "darwinVersion",
+  "dataUsingEncoding:allowLossyConversion:",
+  "dataWithBytes:length:",
+  "dataWithContentsOfFile:",
+  "dataWithContentsOfFile:options:error:",
+  "dateWithTimeIntervalSince1970:",
+  "dealloc",
+  "decodeCrashData:error:",
+  "defaultConfiguration",
+  "defaultManager",
+  "dictionaryWithObject:forKey:",
+  "dictionaryWithObjectsAndKeys:",
+  "enableCrashReporterAndReturnError:",
+  "enableMachExceptionServerWithPreviousPortSet:callback:context:error:",
+  "errorWithDomain:code:userInfo:",
+  "exceptionInfo",
+  "exceptionName",
+  "exceptionPortWithMask:error:",
+  "exceptionReason",
+  "extractApplicationInfo:error:",
+  "extractExceptionInfo:error:",
+  "extractImageInfo:error:",
+  "extractMachExceptionInfo:error:",
+  "extractMachineInfo:error:",
+  "extractProcessInfo:error:",
+  "extractProcessorInfo:error:",
+  "extractSignalInfo:error:",
+  "extractStackFrameInfo:error:",
+  "extractSymbolInfo:error:",
+  "extractSystemInfo:processorInfo:error:",
+  "extractThreadInfo:error:",
+  "fileExistsAtPath:",
+  "fileSystemRepresentation",
+  "flavor",
+  "formatStackFrame:frameIndex:report:lp64:",
+  "generateLiveReportAndReturnError:",
+  "generateLiveReportWithException:error:",
+  "generateLiveReportWithThread:error:",
+  "generateLiveReportWithThread:exception:error:",
+  "hasExceptionInfo",
+  "hasImageUUID",
+  "hasMachineInfo",
+  "hasProcessInfo",
+  "imageBaseAddress",
+  "imageForAddress:",
+  "imageName",
+  "imageSize",
+  "imageUUID",
+  "images",
+  "infoDictionary",
+  "init",
+  "initWithApplicationIdentifier:appVersion:appMarketingVersion:configuration:",
+  "initWithApplicationIdentifier:applicationVersion:applicationMarketingVersion:",
+  "initWithAsyncSafeRepresentation:",
+  "initWithBundle:configuration:",
+  "initWithBytes:length:encoding:",
+  "initWithBytesNoCopy:length:encoding:freeWhenDone:",
+  "initWithCallBack:context:error:",
+  "initWithCodeType:baseAddress:size:name:uuid:",
+  "initWithConfiguration:",
+  "initWithExceptionName:reason:",
+  "initWithExceptionName:reason:stackFrames:",
+  "initWithInstructionPointer:symbolInfo:",
+  "initWithModelName:processorInfo:processorCount:logicalProcessorCount:",
+  "initWithOperatingSystem:operatingSystemVersion:operatingSystemBuild:architecture:processorInfo:timestamp:",
+  "initWithProcessID:",
+  "initWithProcessName:processID:processPath:processStartTime:parentProcessName:parentProcessID:native:",
+  "initWithRegisterName:registerValue:",
+  "initWithServerPort:mask:behavior:flavor:",
+  "initWithSignalHandlerType:symbolicationStrategy:",
+  "initWithSignalHandlerType:symbolicationStrategy:shouldRegisterUncaughtExceptionHandler:",
+  "initWithSignalName:code:address:",
+  "initWithSymbolName:startAddress:endAddress:",
+  "initWithThreadNumber:stackFrames:crashed:registers:",
+  "initWithType:codes:",
+  "initWithTypeEncoding:type:subtype:",
+  "instructionPointer",
+  "isEqual:",
+  "lastPathComponent",
+  "length",
+  "loadPendingCrashReportDataAndReturnError:",
+  "localizedStringForKey:value:table:",
+  "machineInfo",
+  "mainBundle",
+  "mapToAsyncSymbolicationStrategy:",
+  "mask",
+  "modelName",
+  "name",
+  "numberWithUnsignedInteger:",
+  "numberWithUnsignedLong:",
+  "numberWithUnsignedLongLong:",
+  "objectAtIndex:",
+  "objectForKey:",
+  "operatingSystem",
+  "operatingSystemBuild",
+  "operatingSystemVersion",
+  "parentProcessID",
+  "parentProcessName",
+  "populateCrashReportDirectoryAndReturnError:",
+  "processID",
+  "processInfo",
+  "processName",
+  "processPath",
+  "processorInfo",
+  "purgePendingCrashReportAndReturnError:",
+  "queuedCrashReportDirectory",
+  "raise:format:",
+  "rangeOfString:",
+  "reason",
+  "registerForTask:previousPortSet:error:",
+  "registerHandlerForSignal:callback:context:error:",
+  "registerHandlerWithSignal:error:",
+  "registerName",
+  "registerValue",
+  "registers",
+  "removeItemAtPath:error:",
+  "scanInteger:",
+  "scanString:intoString:",
+  "scannerWithString:",
+  "server_port",
+  "setObject:forKey:",
+  "setWithCapacity:",
+  "sharedHandler",
+  "shouldRegisterUncaughtExceptionHandler",
+  "signalHandlerType",
+  "signalInfo",
+  "sortedArrayUsingFunction:context:",
+  "stackFrames",
+  "startAddress",
+  "startTime",
+  "string",
+  "stringByAppendingFormat:",
+  "stringByAppendingPathComponent:",
+  "stringByReplacingOccurrencesOfString:withString:",
+  "stringValue",
+  "stringValueForCrashReport:withTextFormat:",
+  "stringWithFormat:",
+  "stringWithUTF8String:",
+  "substringFromIndex:",
+  "subtype",
+  "symbolInfo",
+  "symbolName",
+  "symbolicationStrategy",
+  "synthesizeProcessorInfoFromArchitecture:error:",
+  "systemInfo",
+  "threadNumber",
+  "threads",
+  "timestamp",
+  "type",
+  "typeEncoding",
+  "unsignedLongLongValue",
+  "uuidRef"
+ ],
+ "methtypes": [
+  "@\"NSArray\"",
+  "@\"NSData\"32@0:8@\"PLCrashReport\"16^@24",
+  "@\"NSDate\"",
+  "@\"NSSet\"",
+  "@\"NSString\"",
+  "@\"PLCrashMachExceptionPortSet\"",
+  "@\"PLCrashMachExceptionServer\"",
+  "@\"PLCrashReportApplicationInfo\"",
+  "@\"PLCrashReportExceptionInfo\"",
+  "@\"PLCrashReportMachExceptionInfo\"",
+  "@\"PLCrashReportMachineInfo\"",
+  "@\"PLCrashReportProcessInfo\"",
+  "@\"PLCrashReportProcessorInfo\"",
+  "@\"PLCrashReportSignalInfo\"",
+  "@\"PLCrashReportSymbolInfo\"",
+  "@\"PLCrashReportSystemInfo\"",
+  "@\"PLCrashReporterConfig\"",
+  "@16@0:8",
+  "@20@0:8I16",
+  "@20@0:8i16",
+  "@244@0:8{plcrash_mach_exception_port_set=I[14I][14I][14i][14i]}16",
+  "@24@0:8@16",
+  "@24@0:8Q16",
+  "@24@0:8^@16",
+  "@28@0:8@16i24",
+  "@28@0:8I16^@20",
+  "@28@0:8i16Q20",
+  "@28@0:8i16^@20",
+  "@32@0:8@16@24",
+  "@32@0:8@16Q24",
+  "@32@0:8@16^@24",
+  "@32@0:8I16I20^@24",
+  "@32@0:8I16I20i24i28",
+  "@32@0:8Q16@24",
+  "@32@0:8Q16Q24",
+  "@32@0:8^{_Plcrash__CrashReport={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}^{_Plcrash__CrashReport__SystemInfo}^{_Plcrash__CrashReport__ApplicationInfo}Q^^{_Plcrash__CrashReport__Thread}Q^^{_Plcrash__CrashReport__BinaryImage}^{_Plcrash__CrashReport__Exception}^{_Plcrash__CrashReport__Signal}^{_Plcrash__CrashReport__ProcessInfo}^{_Plcrash__CrashReport__MachineInfo}^{_Plcrash__CrashReport__ReportInfo}}16^@24",
+  "@32@0:8^{_Plcrash__CrashReport__ApplicationInfo={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}***}16^@24",
+  "@32@0:8^{_Plcrash__CrashReport__Exception={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}**Q^^{_Plcrash__CrashReport__Thread__StackFrame}}16^@24",
+  "@32@0:8^{_Plcrash__CrashReport__MachineInfo={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}*^{_Plcrash__CrashReport__Processor}II}16^@24",
+  "@32@0:8^{_Plcrash__CrashReport__ProcessInfo={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}*I**IiiQ}16^@24",
+  "@32@0:8^{_Plcrash__CrashReport__Processor={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}iiQQ}16^@24",
+  "@32@0:8^{_Plcrash__CrashReport__Signal={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}**Q^{_Plcrash__CrashReport__Signal__MachException}}16^@24",
+  "@32@0:8^{_Plcrash__CrashReport__Signal__MachException={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}QQ^Q}16^@24",
+  "@32@0:8^{_Plcrash__CrashReport__Symbol={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}*QiQ}16^@24",
+  "@32@0:8^{_Plcrash__CrashReport__Thread__StackFrame={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}Q^{_Plcrash__CrashReport__Symbol}}16^@24",
+  "@36@0:8I16@20^@28",
+  "@36@0:8Q16Q24B32",
+  "@36@0:8i16Q20Q28",
+  "@40@0:8@16@24@32",
+  "@40@0:8@16@24Q32",
+  "@40@0:8@16Q24Q32",
+  "@40@0:8^?16^v24^@32",
+  "@40@0:8^{_Plcrash__CrashReport__SystemInfo={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}ii*iq*}16@24^@32",
+  "@40@0:8i16@20i28@32",
+  "@44@0:8@16Q24@32B40",
+  "@44@0:8q16@24B32@36",
+  "@48@0:8@16@24@32@40",
+  "@48@0:8@16@24Q32Q40",
+  "@48@0:8^@16^?24^v32^@40",
+  "@48@0:8i16@20@28i36@40",
+  "@56@0:8@16Q24Q32@40@48",
+  "@56@0:8i16@20@28i36@40@48",
+  "@68@0:8@16Q24@32@40@48Q56B64",
+  "B",
+  "B16@0:8",
+  "B24@0:8^@16",
+  "B28@0:8i16^@20",
+  "B36@0:8I16^@20^@28",
+  "B44@0:8i16^?20^v28^@36",
+  "I",
+  "I16@0:8",
+  "I24@0:8^@16",
+  "Q",
+  "Q16@0:8",
+  "Q40@0:8^{?=Q^@^Q[5Q]}16^@24Q32",
+  "^{_PLCrashReportDecoder=^{_Plcrash__CrashReport}}",
+  "^{_Plcrash__CrashReport={ProtobufCMessage=^{ProtobufCMessageDescriptor}I^{ProtobufCMessageUnknownField}}^{_Plcrash__CrashReport__SystemInfo}^{_Plcrash__CrashReport__ApplicationInfo}Q^^{_Plcrash__CrashReport__Thread}Q^^{_Plcrash__CrashReport__BinaryImage}^{_Plcrash__CrashReport__Exception}^{_Plcrash__CrashReport__Signal}^{_Plcrash__CrashReport__ProcessInfo}^{_Plcrash__CrashReport__MachineInfo}^{_Plcrash__CrashReport__ReportInfo}}32@0:8@16^@24",
+  "^{__CFUUID=}",
+  "^{__CFUUID=}16@0:8",
+  "^{plcrash_exception_server_context=IIII^?^v{_opaque_pthread_mutex_t=q[56c]}{_opaque_pthread_cond_t=q[40c]}IB}",
+  "i",
+  "i16@0:8",
+  "i24@0:8Q16",
+  "q",
+  "q16@0:8",
+  "v16@0:8",
+  "v24@0:8^{PLCrashReporterCallbacks=S^v^?}16",
+  "{PLCrashHostInfoVersion=\"major\"Q\"minor\"Q\"revision\"Q}",
+  "{PLCrashHostInfoVersion=QQQ}16@0:8",
+  "{__darwin_sigaltstack=\"ss_sp\"^v\"ss_size\"Q\"ss_flags\"i}",
+  "{plcrash_mach_exception_port_set=\"count\"I\"masks\"[14I]\"ports\"[14I]\"behaviors\"[14i]\"flavors\"[14i]}",
+  "{plcrash_mach_exception_port_set=I[14I][14I][14i][14i]}16@0:8",
+  "{timeval=\"tv_sec\"q\"tv_usec\"i}",
+  "{timeval=qi}16@0:8"
+ ]
+}

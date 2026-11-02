@@ -1,0 +1,2367 @@
+{
+ "binary": "Frameworks/Backtrace.framework/Backtrace",
+ "libraries": [
+  {
+   "name": "/usr/lib/libc++.1.dylib",
+   "weak": false
+  },
+  {
+   "name": "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/Foundation.framework/Foundation",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libobjc.A.dylib",
+   "weak": false
+  },
+  {
+   "name": "/usr/lib/libSystem.B.dylib",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreData.framework/CoreData",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+   "weak": false
+  },
+  {
+   "name": "/System/Library/Frameworks/UIKit.framework/UIKit",
+   "weak": false
+  },
+  {
+   "name": "@rpath/libswiftCloudKit.dylib",
+   "weak": true
+  },
+  {
+   "name": "@rpath/libswiftCore.dylib",
+   "weak": false
+  },
+  {
+   "name": "@rpath/libswiftCoreData.dylib",
+   "weak": false
+  },
+  {
+   "name": "@rpath/libswiftCoreFoundation.dylib",
+   "weak": true
+  },
+  {
+   "name": "@rpath/libswiftCoreGraphics.dylib",
+   "weak": false
+  },
+  {
+   "name": "@rpath/libswiftCoreImage.dylib",
+   "weak": true
+  },
+  {
+   "name": "@rpath/libswiftCoreLocation.dylib",
+   "weak": true
+  },
+  {
+   "name": "@rpath/libswiftDarwin.dylib",
+   "weak": true
+  },
+  {
+   "name": "@rpath/libswiftDispatch.dylib",
+   "weak": false
+  },
+  {
+   "name": "@rpath/libswiftFoundation.dylib",
+   "weak": false
+  },
+  {
+   "name": "@rpath/libswiftMetal.dylib",
+   "weak": true
+  },
+  {
+   "name": "@rpath/libswiftObjectiveC.dylib",
+   "weak": false
+  },
+  {
+   "name": "@rpath/libswiftQuartzCore.dylib",
+   "weak": true
+  },
+  {
+   "name": "@rpath/libswiftUIKit.dylib",
+   "weak": true
+  }
+ ],
+ "imports": {
+  "/System/Library/Frameworks/CoreData.framework/CoreData": [
+   {
+    "name": "_NSSQLiteStoreType",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSEntityDescription",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSFetchRequest",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSManagedObject",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSManagedObjectContext",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSManagedObjectModel",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSPersistentContainer",
+    "weak": true
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSPersistentStore",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSPersistentStoreCoordinator",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_NSManagedObject",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
+   {
+    "name": "_NSURLFileSizeKey",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSData",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSDictionary",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSMutableData",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSUserDefaults",
+    "weak": false
+   },
+   {
+    "name": "_kCFBundleVersionKey",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics": [
+   {
+    "name": "_CGRectGetHeight",
+    "weak": false
+   },
+   {
+    "name": "_CGRectGetWidth",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/CoreLocation.framework/CoreLocation": [
+   {
+    "name": "_OBJC_CLASS_$_CLLocationManager",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/Foundation.framework/Foundation": [
+   {
+    "name": "_OBJC_CLASS_$_NSBlockOperation",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSBundle",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSDateFormatter",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSFileManager",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSHTTPURLResponse",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSJSONSerialization",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSNotificationCenter",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSOperationQueue",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSPredicate",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSProcessInfo",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSSortDescriptor",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSURLSession",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSURLSessionConfiguration",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_NSUUID",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices": [
+   {
+    "name": "_UTTypeCopyPreferredTagWithClass",
+    "weak": false
+   },
+   {
+    "name": "_UTTypeCreatePreferredIdentifierForTag",
+    "weak": false
+   },
+   {
+    "name": "_kUTTagClassFilenameExtension",
+    "weak": false
+   },
+   {
+    "name": "_kUTTagClassMIMEType",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration": [
+   {
+    "name": "_SCNetworkReachabilityCreateWithAddress",
+    "weak": false
+   },
+   {
+    "name": "_SCNetworkReachabilityGetFlags",
+    "weak": false
+   }
+  ],
+  "/System/Library/Frameworks/UIKit.framework/UIKit": [
+   {
+    "name": "_OBJC_CLASS_$_UIDevice",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_UIScreen",
+    "weak": false
+   },
+   {
+    "name": "_UIApplicationDidBecomeActiveNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIApplicationDidEnterBackgroundNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIApplicationDidReceiveMemoryWarningNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIApplicationWillEnterForegroundNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIApplicationWillResignActiveNotification",
+    "weak": false
+   },
+   {
+    "name": "_UIApplicationWillTerminateNotification",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libSystem.B.dylib": [
+   {
+    "name": "__Block_copy",
+    "weak": false
+   },
+   {
+    "name": "__Block_release",
+    "weak": false
+   },
+   {
+    "name": "__NSConcreteStackBlock",
+    "weak": false
+   },
+   {
+    "name": "___error",
+    "weak": false
+   },
+   {
+    "name": "___stack_chk_fail",
+    "weak": false
+   },
+   {
+    "name": "___stack_chk_guard",
+    "weak": false
+   },
+   {
+    "name": "___stderrp",
+    "weak": false
+   },
+   {
+    "name": "__dyld_register_func_for_add_image",
+    "weak": false
+   },
+   {
+    "name": "_abort",
+    "weak": false
+   },
+   {
+    "name": "_arc4random",
+    "weak": false
+   },
+   {
+    "name": "_atexit",
+    "weak": false
+   },
+   {
+    "name": "_atoi",
+    "weak": false
+   },
+   {
+    "name": "_bzero",
+    "weak": false
+   },
+   {
+    "name": "_calloc",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_once_f",
+    "weak": false
+   },
+   {
+    "name": "_dispatch_semaphore_create",
+    "weak": false
+   },
+   {
+    "name": "_dladdr",
+    "weak": false
+   },
+   {
+    "name": "_dlsym",
+    "weak": false
+   },
+   {
+    "name": "_exit",
+    "weak": false
+   },
+   {
+    "name": "_fclose",
+    "weak": false
+   },
+   {
+    "name": "_fcntl",
+    "weak": false
+   },
+   {
+    "name": "_fdopen",
+    "weak": false
+   },
+   {
+    "name": "_fflush",
+    "weak": false
+   },
+   {
+    "name": "_fileno",
+    "weak": false
+   },
+   {
+    "name": "_fopen",
+    "weak": false
+   },
+   {
+    "name": "_fprintf",
+    "weak": false
+   },
+   {
+    "name": "_free",
+    "weak": false
+   },
+   {
+    "name": "_fseek",
+    "weak": false
+   },
+   {
+    "name": "_ftell",
+    "weak": false
+   },
+   {
+    "name": "_ftello",
+    "weak": false
+   },
+   {
+    "name": "_ftruncate",
+    "weak": false
+   },
+   {
+    "name": "_fwrite",
+    "weak": false
+   },
+   {
+    "name": "_getdtablesize",
+    "weak": false
+   },
+   {
+    "name": "_getenv",
+    "weak": false
+   },
+   {
+    "name": "_getpagesize",
+    "weak": false
+   },
+   {
+    "name": "_getpid",
+    "weak": false
+   },
+   {
+    "name": "_getsectiondata",
+    "weak": false
+   },
+   {
+    "name": "_gettimeofday",
+    "weak": false
+   },
+   {
+    "name": "_host_statistics64",
+    "weak": false
+   },
+   {
+    "name": "_mach_host_self",
+    "weak": false
+   },
+   {
+    "name": "_mach_task_self_",
+    "weak": false
+   },
+   {
+    "name": "_malloc",
+    "weak": false
+   },
+   {
+    "name": "_malloc_size",
+    "weak": false
+   },
+   {
+    "name": "_memcmp",
+    "weak": false
+   },
+   {
+    "name": "_memcpy",
+    "weak": false
+   },
+   {
+    "name": "_memmove",
+    "weak": false
+   },
+   {
+    "name": "_mkdir",
+    "weak": false
+   },
+   {
+    "name": "_mmap",
+    "weak": false
+   },
+   {
+    "name": "_munmap",
+    "weak": false
+   },
+   {
+    "name": "_open",
+    "weak": false
+   },
+   {
+    "name": "_posix_memalign",
+    "weak": false
+   },
+   {
+    "name": "_processor_set_default",
+    "weak": false
+   },
+   {
+    "name": "_processor_set_statistics",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_init",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_lock",
+    "weak": false
+   },
+   {
+    "name": "_pthread_mutex_unlock",
+    "weak": false
+   },
+   {
+    "name": "_realloc",
+    "weak": false
+   },
+   {
+    "name": "_setenv",
+    "weak": false
+   },
+   {
+    "name": "_sigaction",
+    "weak": false
+   },
+   {
+    "name": "_snprintf",
+    "weak": false
+   },
+   {
+    "name": "_strchr",
+    "weak": false
+   },
+   {
+    "name": "_strcmp",
+    "weak": false
+   },
+   {
+    "name": "_strdup",
+    "weak": false
+   },
+   {
+    "name": "_strerror",
+    "weak": false
+   },
+   {
+    "name": "_strlen",
+    "weak": false
+   },
+   {
+    "name": "_strncpy",
+    "weak": false
+   },
+   {
+    "name": "_sysctl",
+    "weak": false
+   },
+   {
+    "name": "_task_info",
+    "weak": false
+   },
+   {
+    "name": "_task_threads",
+    "weak": false
+   },
+   {
+    "name": "_uname",
+    "weak": false
+   },
+   {
+    "name": "_vm_deallocate",
+    "weak": false
+   },
+   {
+    "name": "dyld_stub_binder",
+    "weak": false
+   }
+  ],
+  "/usr/lib/libobjc.A.dylib": [
+   {
+    "name": "_OBJC_CLASS_$_NSObject",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$_NSObject",
+    "weak": false
+   },
+   {
+    "name": "__objc_empty_cache",
+    "weak": false
+   },
+   {
+    "name": "_objc_allocWithZone",
+    "weak": false
+   },
+   {
+    "name": "_objc_autorelease",
+    "weak": false
+   },
+   {
+    "name": "_objc_autoreleaseReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_getClass",
+    "weak": false
+   },
+   {
+    "name": "_objc_lookUpClass",
+    "weak": false
+   },
+   {
+    "name": "_objc_msgSend",
+    "weak": false
+   },
+   {
+    "name": "_objc_msgSendSuper2",
+    "weak": false
+   },
+   {
+    "name": "_objc_release",
+    "weak": false
+   },
+   {
+    "name": "_objc_retain",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainAutoreleaseReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_retainAutoreleasedReturnValue",
+    "weak": false
+   },
+   {
+    "name": "_objc_setHook_getClass",
+    "weak": true
+   }
+  ],
+  "<ordinal 0>": [
+   {
+    "name": "___llvm_profile_filename",
+    "weak": true
+   },
+   {
+    "name": "___llvm_profile_raw_version",
+    "weak": true
+   },
+   {
+    "name": "_lprofDirMode",
+    "weak": true
+   }
+  ],
+  "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter": [
+   {
+    "name": "_OBJC_CLASS_$_PLCrashReport",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_PLCrashReporter",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$_PLCrashReporterConfig",
+    "weak": false
+   }
+  ],
+  "@rpath/libswiftCloudKit.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCloudKit",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftCore.dylib": [
+   {
+    "name": "_$s15_ObjectiveCTypes01_A11CBridgeablePTl",
+    "weak": false
+   },
+   {
+    "name": "_$s8RawValueSYTl",
+    "weak": false
+   },
+   {
+    "name": "_$sBOWV",
+    "weak": false
+   },
+   {
+    "name": "_$sBbWV",
+    "weak": false
+   },
+   {
+    "name": "_$sBi32_WV",
+    "weak": false
+   },
+   {
+    "name": "_$sBi64_WV",
+    "weak": false
+   },
+   {
+    "name": "_$sBoWV",
+    "weak": false
+   },
+   {
+    "name": "_$sSE6encode2toys7Encoder_p_tKFTq",
+    "weak": false
+   },
+   {
+    "name": "_$sSEMp",
+    "weak": false
+   },
+   {
+    "name": "_$sSH13_rawHashValue4seedS2i_tFTq",
+    "weak": false
+   },
+   {
+    "name": "_$sSH4hash4intoys6HasherVz_tFTq",
+    "weak": false
+   },
+   {
+    "name": "_$sSH9hashValueSivgTq",
+    "weak": false
+   },
+   {
+    "name": "_$sSHMp",
+    "weak": false
+   },
+   {
+    "name": "_$sSHSQTb",
+    "weak": false
+   },
+   {
+    "name": "_$sSKsSS7ElementRtzrlE6joined9separatorS2S_tF",
+    "weak": false
+   },
+   {
+    "name": "_$sSQ2eeoiySbx_xtFZTq",
+    "weak": false
+   },
+   {
+    "name": "_$sSQMp",
+    "weak": false
+   },
+   {
+    "name": "_$sSS10describingSSx_tclufC",
+    "weak": false
+   },
+   {
+    "name": "_$sSS14validatingUTF8SSSgSPys4Int8VG_tcfC",
+    "weak": false
+   },
+   {
+    "name": "_$sSS4hash4intoys6HasherVz_tF",
+    "weak": false
+   },
+   {
+    "name": "_$sSS5write2toyxz_ts16TextOutputStreamRzlF",
+    "weak": false
+   },
+   {
+    "name": "_$sSS6appendyySSF",
+    "weak": false
+   },
+   {
+    "name": "_$sSS9hashValueSivg",
+    "weak": false
+   },
+   {
+    "name": "_$sSSN",
+    "weak": false
+   },
+   {
+    "name": "_$sSSSHsWP",
+    "weak": false
+   },
+   {
+    "name": "_$sSSSysMc",
+    "weak": false
+   },
+   {
+    "name": "_$sSY8rawValue03RawB0QzvgTq",
+    "weak": false
+   },
+   {
+    "name": "_$sSY8rawValuexSg03RawB0Qz_tcfCTq",
+    "weak": false
+   },
+   {
+    "name": "_$sSYMp",
+    "weak": false
+   },
+   {
+    "name": "_$sSYsSERzSS8RawValueSYRtzrlE6encode2toys7Encoder_p_tKF",
+    "weak": false
+   },
+   {
+    "name": "_$sSYsSeRzSS8RawValueSYRtzrlE4fromxs7Decoder_p_tKcfC",
+    "weak": false
+   },
+   {
+    "name": "_$sSa11descriptionSSvg",
+    "weak": false
+   },
+   {
+    "name": "_$sSa28_allocateBufferUninitialized15minimumCapacitys06_ArrayB0VyxGSi_tFZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSaMa",
+    "weak": false
+   },
+   {
+    "name": "_$sSayxGSKsMc",
+    "weak": false
+   },
+   {
+    "name": "_$sSayxGSTsMc",
+    "weak": false
+   },
+   {
+    "name": "_$sSbN",
+    "weak": false
+   },
+   {
+    "name": "_$sSdN",
+    "weak": false
+   },
+   {
+    "name": "_$sSe4fromxs7Decoder_p_tKcfCTq",
+    "weak": false
+   },
+   {
+    "name": "_$sSeMp",
+    "weak": false
+   },
+   {
+    "name": "_$sSfN",
+    "weak": false
+   },
+   {
+    "name": "_$sSh15minimumCapacityShyxGSi_tcfC",
+    "weak": false
+   },
+   {
+    "name": "_$sSh8IteratorV6_cocoaAByx_Gs10__CocoaSetVAACn_tcfC",
+    "weak": false
+   },
+   {
+    "name": "_$sSi9hashValueSivg",
+    "weak": false
+   },
+   {
+    "name": "_$sSiN",
+    "weak": false
+   },
+   {
+    "name": "_$sSiSzsMc",
+    "weak": false
+   },
+   {
+    "name": "_$sSt4next7ElementQzSgyFTj",
+    "weak": false
+   },
+   {
+    "name": "_$sSuN",
+    "weak": false
+   },
+   {
+    "name": "_$sSzsE11descriptionSSvg",
+    "weak": false
+   },
+   {
+    "name": "_$ss018_bridgeAnyObjectToB0yypyXlSgF",
+    "weak": false
+   },
+   {
+    "name": "_$ss10SetAlgebraPyxqd__ncSTRd__7ElementQyd__ACRtzlufCTj",
+    "weak": false
+   },
+   {
+    "name": "_$ss10_HashTableV8nextHole9atOrAfterAB6BucketVAF_tF",
+    "weak": false
+   },
+   {
+    "name": "_$ss10__CocoaSetV12makeIteratorAB0D0CyF",
+    "weak": false
+   },
+   {
+    "name": "_$ss10__CocoaSetV5countSivg",
+    "weak": false
+   },
+   {
+    "name": "_$ss10__CocoaSetV6member3foryXlSgyXl_tF",
+    "weak": false
+   },
+   {
+    "name": "_$ss10__CocoaSetV8IteratorC4nextyXlSgyF",
+    "weak": false
+   },
+   {
+    "name": "_$ss10__CocoaSetV8IteratorCMa",
+    "weak": false
+   },
+   {
+    "name": "_$ss10__CocoaSetV8IteratorCStsWP",
+    "weak": false
+   },
+   {
+    "name": "_$ss11_MergeErrorON",
+    "weak": false
+   },
+   {
+    "name": "_$ss11_SetStorageC4copy8originalAByxGs05__RawaB0C_tFZ",
+    "weak": false
+   },
+   {
+    "name": "_$ss11_SetStorageC6resize8original8capacity4moveAByxGs05__RawaB0C_SiSbtFZ",
+    "weak": false
+   },
+   {
+    "name": "_$ss11_SetStorageC7convert_8capacityAByxGs07__CocoaA0V_SitFZ",
+    "weak": false
+   },
+   {
+    "name": "_$ss11_SetStorageC8allocate8capacityAByxGSi_tFZ",
+    "weak": false
+   },
+   {
+    "name": "_$ss11_SetStorageCMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss11_StringGutsV4growyySiF",
+    "weak": false
+   },
+   {
+    "name": "_$ss12StaticStringVMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss13OpaquePointerVMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss15_print_unlockedyyx_q_zts16TextOutputStreamR_r0_lF",
+    "weak": false
+   },
+   {
+    "name": "_$ss17_assertionFailure__4file4line5flagss5NeverOs12StaticStringV_SSAHSus6UInt32VtF",
+    "weak": false
+   },
+   {
+    "name": "_$ss18_CocoaArrayWrapperV8endIndexSivg",
+    "weak": false
+   },
+   {
+    "name": "_$ss18_CocoaArrayWrapperVyyXlSicig",
+    "weak": false
+   },
+   {
+    "name": "_$ss18_DictionaryStorageC4copy8originalAByxq_Gs05__RawaB0C_tFZ",
+    "weak": false
+   },
+   {
+    "name": "_$ss18_DictionaryStorageC6resize8original8capacity4moveAByxq_Gs05__RawaB0C_SiSbtFZ",
+    "weak": false
+   },
+   {
+    "name": "_$ss18_DictionaryStorageC8allocate8capacityAByxq_GSi_tFZ",
+    "weak": false
+   },
+   {
+    "name": "_$ss18_DictionaryStorageCMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss20_SwiftNewtypeWrapperMp",
+    "weak": false
+   },
+   {
+    "name": "_$ss20_SwiftNewtypeWrapperPSYTb",
+    "weak": false
+   },
+   {
+    "name": "_$ss20_SwiftNewtypeWrapperPs35_HasCustomAnyHashableRepresentationTb",
+    "weak": false
+   },
+   {
+    "name": "_$ss20_SwiftNewtypeWrapperPsSHRzSH8RawValueSYRpzrlE20_toCustomAnyHashables0hI0VSgyF",
+    "weak": false
+   },
+   {
+    "name": "_$ss21_ObjectiveCBridgeableMp",
+    "weak": false
+   },
+   {
+    "name": "_$ss21_ObjectiveCBridgeableP016_forceBridgeFromA1C_6resulty01_A5CTypeQz_xSgztFZTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss21_ObjectiveCBridgeableP024_conditionallyBridgeFromA1C_6resultSb01_A5CTypeQz_xSgztFZTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss21_ObjectiveCBridgeableP026_unconditionallyBridgeFromA1Cyx01_A5CTypeQzSgFZTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss21_ObjectiveCBridgeableP09_bridgeToA1C01_A5CTypeQzyFTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss21_findStringSwitchCase5cases6stringSiSays06StaticB0VG_SStF",
+    "weak": false
+   },
+   {
+    "name": "_$ss22KeyedDecodingContainerV15decodeIfPresent_6forKeyqd__Sgqd__m_xtKSeRd__lF",
+    "weak": false
+   },
+   {
+    "name": "_$ss22KeyedDecodingContainerV6decode_6forKeyS2Sm_xtKF",
+    "weak": false
+   },
+   {
+    "name": "_$ss22KeyedDecodingContainerV6decode_6forKeyS2bm_xtKF",
+    "weak": false
+   },
+   {
+    "name": "_$ss22KeyedDecodingContainerV6decode_6forKeyqd__qd__m_xtKSeRd__lF",
+    "weak": false
+   },
+   {
+    "name": "_$ss22KeyedDecodingContainerVMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss22KeyedEncodingContainerV15encodeIfPresent_6forKeyyqd__Sg_xtKSERd__lF",
+    "weak": false
+   },
+   {
+    "name": "_$ss22KeyedEncodingContainerV6encode_6forKeyySS_xtKF",
+    "weak": false
+   },
+   {
+    "name": "_$ss22KeyedEncodingContainerV6encode_6forKeyySb_xtKF",
+    "weak": false
+   },
+   {
+    "name": "_$ss22KeyedEncodingContainerV6encode_6forKeyyqd___xtKSERd__lF",
+    "weak": false
+   },
+   {
+    "name": "_$ss22KeyedEncodingContainerVMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss23CustomStringConvertibleMp",
+    "weak": false
+   },
+   {
+    "name": "_$ss23CustomStringConvertibleP11descriptionSSvgTj",
+    "weak": false
+   },
+   {
+    "name": "_$ss23CustomStringConvertibleP11descriptionSSvgTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss23_ContiguousArrayStorageCMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss26DefaultStringInterpolationVN",
+    "weak": false
+   },
+   {
+    "name": "_$ss26DefaultStringInterpolationVs16TextOutputStreamsWP",
+    "weak": false
+   },
+   {
+    "name": "_$ss26_stdlib_isOSVersionAtLeastyBi1_Bw_BwBwtF",
+    "weak": false
+   },
+   {
+    "name": "_$ss27_stringCompareWithSmolCheck__9expectingSbs11_StringGutsV_ADs01_G16ComparisonResultOtF",
+    "weak": false
+   },
+   {
+    "name": "_$ss28CustomDebugStringConvertibleMp",
+    "weak": false
+   },
+   {
+    "name": "_$ss28CustomDebugStringConvertibleP16debugDescriptionSSvgTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss32_diagnoseUnexpectedEnumCaseValue4type03rawE0s5NeverOxm_q_tr0_lF",
+    "weak": false
+   },
+   {
+    "name": "_$ss35_HasCustomAnyHashableRepresentationMp",
+    "weak": false
+   },
+   {
+    "name": "_$ss35_HasCustomAnyHashableRepresentationP03_tobcD0s0cD0VSgyFTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss38_bridgeAnythingNonVerbatimToObjectiveCyyXlxnlF",
+    "weak": false
+   },
+   {
+    "name": "_$ss4Int8VMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss4Int8VN",
+    "weak": false
+   },
+   {
+    "name": "_$ss50ELEMENT_TYPE_OF_SET_VIOLATES_HASHABLE_REQUIREMENTSys5NeverOypXpF",
+    "weak": false
+   },
+   {
+    "name": "_$ss53KEY_TYPE_OF_DICTIONARY_VIOLATES_HASHABLE_REQUIREMENTSys5NeverOypXpF",
+    "weak": false
+   },
+   {
+    "name": "_$ss5ErrorMp",
+    "weak": false
+   },
+   {
+    "name": "_$ss5ErrorP19_getEmbeddedNSErroryXlSgyFTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss5ErrorP5_codeSivgTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss5ErrorP7_domainSSvgTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss5ErrorP9_userInfoyXlSgvgTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss5ErrorPsE19_getEmbeddedNSErroryXlSgyF",
+    "weak": false
+   },
+   {
+    "name": "_$ss5ErrorPsE5_codeSivg",
+    "weak": false
+   },
+   {
+    "name": "_$ss5ErrorPsE7_domainSSvg",
+    "weak": false
+   },
+   {
+    "name": "_$ss5ErrorPsE9_userInfoyXlSgvg",
+    "weak": false
+   },
+   {
+    "name": "_$ss5Int16VMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss5Int32VMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss5Int32VN",
+    "weak": false
+   },
+   {
+    "name": "_$ss5Int32VSzsMc",
+    "weak": false
+   },
+   {
+    "name": "_$ss5Int64VMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss5UInt8VMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss5print_9separator10terminatoryypd_S2StF",
+    "weak": false
+   },
+   {
+    "name": "_$ss6HasherV5_seedABSi_tcfC",
+    "weak": false
+   },
+   {
+    "name": "_$ss6HasherV8_combineyySuF",
+    "weak": false
+   },
+   {
+    "name": "_$ss6HasherV9_finalizeSiyF",
+    "weak": false
+   },
+   {
+    "name": "_$ss6UInt16VMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss6UInt32VMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss6UInt32VN",
+    "weak": false
+   },
+   {
+    "name": "_$ss6UInt32VSzsMc",
+    "weak": false
+   },
+   {
+    "name": "_$ss6UInt64VMn",
+    "weak": false
+   },
+   {
+    "name": "_$ss6UInt64VN",
+    "weak": false
+   },
+   {
+    "name": "_$ss7CVarArgMp",
+    "weak": false
+   },
+   {
+    "name": "_$ss7DecoderP9container7keyedBys22KeyedDecodingContainerVyqd__Gqd__m_tKs9CodingKeyRd__lFTj",
+    "weak": false
+   },
+   {
+    "name": "_$ss7EncoderP9container7keyedBys22KeyedEncodingContainerVyqd__Gqd__m_ts9CodingKeyRd__lFTj",
+    "weak": false
+   },
+   {
+    "name": "_$ss9CodingKeyMp",
+    "weak": false
+   },
+   {
+    "name": "_$ss9CodingKeyP11stringValueSSvgTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss9CodingKeyP11stringValuexSgSS_tcfCTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss9CodingKeyP8intValueSiSgvgTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss9CodingKeyP8intValuexSgSi_tcfCTq",
+    "weak": false
+   },
+   {
+    "name": "_$ss9CodingKeyPs23CustomStringConvertibleTb",
+    "weak": false
+   },
+   {
+    "name": "_$ss9CodingKeyPs28CustomDebugStringConvertibleTb",
+    "weak": false
+   },
+   {
+    "name": "_$ss9CodingKeyPsE11descriptionSSvg",
+    "weak": false
+   },
+   {
+    "name": "_$ss9CodingKeyPsE16debugDescriptionSSvg",
+    "weak": false
+   },
+   {
+    "name": "_$syXlN",
+    "weak": false
+   },
+   {
+    "name": "_$sypN",
+    "weak": false
+   },
+   {
+    "name": "_$sytWV",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_CLASS_$__TtCs12_SwiftObject",
+    "weak": false
+   },
+   {
+    "name": "_OBJC_METACLASS_$__TtCs12_SwiftObject",
+    "weak": false
+   },
+   {
+    "name": "__swiftEmptyArrayStorage",
+    "weak": false
+   },
+   {
+    "name": "__swiftEmptyDictionarySingleton",
+    "weak": false
+   },
+   {
+    "name": "__swiftEmptySetSingleton",
+    "weak": false
+   },
+   {
+    "name": "__swift_stdlib_reportUnimplementedInitializer",
+    "weak": false
+   },
+   {
+    "name": "_swift_allocBox",
+    "weak": false
+   },
+   {
+    "name": "_swift_allocError",
+    "weak": false
+   },
+   {
+    "name": "_swift_allocObject",
+    "weak": false
+   },
+   {
+    "name": "_swift_allocateGenericClassMetadata",
+    "weak": false
+   },
+   {
+    "name": "_swift_arrayDestroy",
+    "weak": false
+   },
+   {
+    "name": "_swift_arrayInitWithCopy",
+    "weak": false
+   },
+   {
+    "name": "_swift_arrayInitWithTakeBackToFront",
+    "weak": false
+   },
+   {
+    "name": "_swift_arrayInitWithTakeFrontToBack",
+    "weak": false
+   },
+   {
+    "name": "_swift_beginAccess",
+    "weak": false
+   },
+   {
+    "name": "_swift_bridgeObjectRelease",
+    "weak": false
+   },
+   {
+    "name": "_swift_bridgeObjectRelease_n",
+    "weak": false
+   },
+   {
+    "name": "_swift_bridgeObjectRetain",
+    "weak": false
+   },
+   {
+    "name": "_swift_bridgeObjectRetain_n",
+    "weak": false
+   },
+   {
+    "name": "_swift_checkMetadataState",
+    "weak": false
+   },
+   {
+    "name": "_swift_deallocClassInstance",
+    "weak": false
+   },
+   {
+    "name": "_swift_deallocObject",
+    "weak": false
+   },
+   {
+    "name": "_swift_deallocPartialClassInstance",
+    "weak": false
+   },
+   {
+    "name": "_swift_deletedMethodError",
+    "weak": false
+   },
+   {
+    "name": "_swift_dynamicCast",
+    "weak": false
+   },
+   {
+    "name": "_swift_dynamicCastClass",
+    "weak": false
+   },
+   {
+    "name": "_swift_dynamicCastObjCClass",
+    "weak": false
+   },
+   {
+    "name": "_swift_endAccess",
+    "weak": false
+   },
+   {
+    "name": "_swift_errorRelease",
+    "weak": false
+   },
+   {
+    "name": "_swift_errorRetain",
+    "weak": false
+   },
+   {
+    "name": "_swift_getAtKeyPath",
+    "weak": false
+   },
+   {
+    "name": "_swift_getEnumCaseMultiPayload",
+    "weak": false
+   },
+   {
+    "name": "_swift_getEnumTagSinglePayloadGeneric",
+    "weak": false
+   },
+   {
+    "name": "_swift_getErrorValue",
+    "weak": false
+   },
+   {
+    "name": "_swift_getForeignTypeMetadata",
+    "weak": false
+   },
+   {
+    "name": "_swift_getGenericMetadata",
+    "weak": false
+   },
+   {
+    "name": "_swift_getInitializedObjCClass",
+    "weak": false
+   },
+   {
+    "name": "_swift_getKeyPath",
+    "weak": false
+   },
+   {
+    "name": "_swift_getObjCClassFromMetadata",
+    "weak": false
+   },
+   {
+    "name": "_swift_getObjCClassMetadata",
+    "weak": false
+   },
+   {
+    "name": "_swift_getObjectType",
+    "weak": false
+   },
+   {
+    "name": "_swift_getSingletonMetadata",
+    "weak": false
+   },
+   {
+    "name": "_swift_getTupleTypeLayout2",
+    "weak": false
+   },
+   {
+    "name": "_swift_getTypeByMangledNameInContext",
+    "weak": false
+   },
+   {
+    "name": "_swift_getWitnessTable",
+    "weak": false
+   },
+   {
+    "name": "_swift_initClassMetadata2",
+    "weak": false
+   },
+   {
+    "name": "_swift_initEnumMetadataMultiPayload",
+    "weak": false
+   },
+   {
+    "name": "_swift_initEnumMetadataSinglePayload",
+    "weak": false
+   },
+   {
+    "name": "_swift_initStackObject",
+    "weak": false
+   },
+   {
+    "name": "_swift_initStaticObject",
+    "weak": false
+   },
+   {
+    "name": "_swift_initStructMetadata",
+    "weak": false
+   },
+   {
+    "name": "_swift_isUniquelyReferenced_nonNull_native",
+    "weak": false
+   },
+   {
+    "name": "_swift_isaMask",
+    "weak": false
+   },
+   {
+    "name": "_swift_makeBoxUnique",
+    "weak": false
+   },
+   {
+    "name": "_swift_once",
+    "weak": false
+   },
+   {
+    "name": "_swift_projectBox",
+    "weak": false
+   },
+   {
+    "name": "_swift_release",
+    "weak": false
+   },
+   {
+    "name": "_swift_release_n",
+    "weak": false
+   },
+   {
+    "name": "_swift_retain",
+    "weak": false
+   },
+   {
+    "name": "_swift_setDeallocating",
+    "weak": false
+   },
+   {
+    "name": "_swift_slowAlloc",
+    "weak": false
+   },
+   {
+    "name": "_swift_storeEnumTagMultiPayload",
+    "weak": false
+   },
+   {
+    "name": "_swift_storeEnumTagSinglePayloadGeneric",
+    "weak": false
+   },
+   {
+    "name": "_swift_unknownObjectRelease",
+    "weak": false
+   },
+   {
+    "name": "_swift_unknownObjectRelease_n",
+    "weak": false
+   },
+   {
+    "name": "_swift_unknownObjectRetain",
+    "weak": false
+   },
+   {
+    "name": "_swift_unknownObjectRetain_n",
+    "weak": false
+   },
+   {
+    "name": "_swift_unknownObjectWeakAssign",
+    "weak": false
+   },
+   {
+    "name": "_swift_unknownObjectWeakDestroy",
+    "weak": false
+   },
+   {
+    "name": "_swift_unknownObjectWeakInit",
+    "weak": false
+   },
+   {
+    "name": "_swift_unknownObjectWeakLoadStrong",
+    "weak": false
+   },
+   {
+    "name": "_swift_updateClassMetadata2",
+    "weak": false
+   },
+   {
+    "name": "_swift_willThrow",
+    "weak": false
+   }
+  ],
+  "@rpath/libswiftCoreData.dylib": [
+   {
+    "name": "_$sSo22NSManagedObjectContextC8CoreDataE5count3forSiSo14NSFetchRequestCyxG_tKSo0hI6ResultRzlF",
+    "weak": false
+   },
+   {
+    "name": "_$sSo22NSManagedObjectContextC8CoreDataE5fetchySayxGSo14NSFetchRequestCyxGKSo0gH6ResultRzlF",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreData",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftCoreFoundation.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftCoreGraphics.dylib": [
+   {
+    "name": "_$s12CoreGraphics7CGFloatVN",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreGraphics",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftCoreImage.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreImage",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftCoreLocation.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreLocation",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftDarwin.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftDarwin",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftDispatch.dylib": [
+   {
+    "name": "_$s8Dispatch0A12TimeIntervalO11nanosecondsyACSicACmFWC",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A12TimeIntervalO7secondsyACSicACmFWC",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A12TimeIntervalOMa",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A13WorkItemFlagsVMa",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A13WorkItemFlagsVMn",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A13WorkItemFlagsVs10SetAlgebraAAMc",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A3QoSV10backgroundACvgZ",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A3QoSV11unspecifiedACvgZ",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A3QoSVMa",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A4TimeV3nowACyFZ",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A4TimeVMa",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A8WorkItemC3qos5flags5blockAcA0A3QoSV_AA0abC5FlagsVyyXBtcfc",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch0A8WorkItemCMa",
+    "weak": false
+   },
+   {
+    "name": "_$s8Dispatch1poiyAA0A4TimeVAD_AA0aB8IntervalOtF",
+    "weak": false
+   },
+   {
+    "name": "_$sSo17OS_dispatch_queueC8DispatchE10AttributesVMa",
+    "weak": false
+   },
+   {
+    "name": "_$sSo17OS_dispatch_queueC8DispatchE10AttributesVMn",
+    "weak": false
+   },
+   {
+    "name": "_$sSo17OS_dispatch_queueC8DispatchE10AttributesVs10SetAlgebraACMc",
+    "weak": false
+   },
+   {
+    "name": "_$sSo17OS_dispatch_queueC8DispatchE20AutoreleaseFrequencyO7inherityA2EmFWC",
+    "weak": false
+   },
+   {
+    "name": "_$sSo17OS_dispatch_queueC8DispatchE20AutoreleaseFrequencyOMa",
+    "weak": false
+   },
+   {
+    "name": "_$sSo17OS_dispatch_queueC8DispatchE5label3qos10attributes20autoreleaseFrequency6targetABSS_AC0D3QoSVAbCE10AttributesVAbCE011AutoreleaseI0OABSgtcfC",
+    "weak": false
+   },
+   {
+    "name": "_$sSo18OS_dispatch_sourceC8DispatchE10TimerFlagsVMa",
+    "weak": false
+   },
+   {
+    "name": "_$sSo18OS_dispatch_sourceC8DispatchE10TimerFlagsVMn",
+    "weak": false
+   },
+   {
+    "name": "_$sSo18OS_dispatch_sourceC8DispatchE10TimerFlagsVs10SetAlgebraACMc",
+    "weak": false
+   },
+   {
+    "name": "_$sSo18OS_dispatch_sourceC8DispatchE15makeTimerSource5flags5queueSo0a1_b1_C6_timer_pAbCE0F5FlagsV_So0a1_b1_I0CSgtFZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSo18OS_dispatch_sourceP8DispatchE15setEventHandler3qos5flags7handleryAC0D3QoSV_AC0D13WorkItemFlagsVyyXBSgtF",
+    "weak": false
+   },
+   {
+    "name": "_$sSo18OS_dispatch_sourceP8DispatchE15setEventHandler7handleryAC0D8WorkItemC_tF",
+    "weak": false
+   },
+   {
+    "name": "_$sSo18OS_dispatch_sourceP8DispatchE6cancelyyF",
+    "weak": false
+   },
+   {
+    "name": "_$sSo18OS_dispatch_sourceP8DispatchE6resumeyyF",
+    "weak": false
+   },
+   {
+    "name": "_$sSo18OS_dispatch_sourceP8DispatchE7suspendyyF",
+    "weak": false
+   },
+   {
+    "name": "_$sSo21OS_dispatch_semaphoreC8DispatchE4waityyF",
+    "weak": false
+   },
+   {
+    "name": "_$sSo21OS_dispatch_semaphoreC8DispatchE6signalSiyF",
+    "weak": false
+   },
+   {
+    "name": "_$sSo24OS_dispatch_source_timerP8DispatchE8schedule8deadline9repeating6leewayyAC0E4TimeV_AC0eJ8IntervalOAKtF",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftDispatch",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftFoundation.dylib": [
+   {
+    "name": "_$s10Foundation10URLRequestV10httpMethodSSSgvs",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation10URLRequestV19_bridgeToObjectiveCSo12NSURLRequestCyF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation10URLRequestV36_unconditionallyBridgeFromObjectiveCyACSo12NSURLRequestCSgFZ",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation10URLRequestV3url11cachePolicy15timeoutIntervalAcA3URLV_So017NSURLRequestCacheE0VSdtcfC",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation10URLRequestV8httpBodyAA4DataVSgvs",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation10URLRequestV8setValue_18forHTTPHeaderFieldySSSg_SStF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation10URLRequestVMa",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation10URLRequestVMn",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation10URLRequestVs23CustomStringConvertibleAAMc",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation12URLQueryItemV4name5valueACSSh_SSSghtcfC",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation12URLQueryItemVMa",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation12URLQueryItemVMn",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation13URLComponentsV10queryItemsSayAA12URLQueryItemVGSgvs",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation13URLComponentsV3urlAA3URLVSgvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation13URLComponentsV6stringACSgSSh_tcfC",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation13URLComponentsVMa",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation13URLComponentsVMn",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation17URLResourceValuesV20isExcludedFromBackupSbSgvs",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation17URLResourceValuesV8fileSizeSiSgvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation17URLResourceValuesVACycfC",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation17URLResourceValuesVMa",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation19PropertyListDecoderC6decode_4fromxxm_AA4DataVtKSeRzlFTj",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation19PropertyListDecoderCACycfc",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation19PropertyListDecoderCMa",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation19PropertyListEncoderC6encodeyAA4DataVxKSERzlFTj",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation19PropertyListEncoderCACycfc",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation19PropertyListEncoderCMa",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation22_convertErrorToNSErrorySo0E0Cs0C0_pF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation22_convertNSErrorToErrorys0E0_pSo0C0CSgF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV06isFileB0Sbvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV08absoluteB0ACvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV13pathExtensionSSvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV14absoluteStringSSvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV14resourceValues7forKeysAA011URLResourceD0VShySo16NSURLResourceKeyaG_tKF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV15fileURLWithPathACSSh_tcfC",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV17lastPathComponentSSvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV17setResourceValuesyyAA011URLResourceE0VKF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV19_bridgeToObjectiveCSo5NSURLCyF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV22appendingPathComponentyACSSF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV25deletingLastPathComponentACyF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV36_unconditionallyBridgeFromObjectiveCyACSo5NSURLCSgFZ",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLV4pathSSvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLVMa",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLVMn",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation3URLVs23CustomStringConvertibleAAMc",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DataV11referencingACSo6NSDataCh_tcfC",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DataV19_bridgeToObjectiveCSo6NSDataCyF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DataV36_unconditionallyBridgeFromObjectiveCyACSo6NSDataCSgFZ",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DataV5write2to7optionsyAA3URLV_So20NSDataWritingOptionsVtKF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DataVMn",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DataVN",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DataVSEAAMc",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DataVSeAAMc",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DateV19_bridgeToObjectiveCSo6NSDateCyF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DateV21timeIntervalSince1970Sdvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DateVACycfC",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DateVMa",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4DateVs23CustomStringConvertibleAAMc",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4UUIDV10uuidStringACSgSSh_tcfC",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4UUIDV10uuidStringSSvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4UUIDVACycfC",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4UUIDVMa",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation4UUIDVMn",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation6LocaleV10regionCodeSSSgvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation6LocaleV12languageCodeSSSgvg",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation6LocaleV15localizedString13forRegionCodeSSSgSS_tF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation6LocaleV15localizedString15forLanguageCodeSSSgSS_tF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation6LocaleV19_bridgeToObjectiveCSo8NSLocaleCyF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation6LocaleV7currentACvgZ",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation6LocaleVMa",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation8TimeZoneV19_bridgeToObjectiveCSo06NSTimeC0CyF",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation8TimeZoneV7currentACvgZ",
+    "weak": false
+   },
+   {
+    "name": "_$s10Foundation8TimeZoneVMa",
+    "weak": false
+   },
+   {
+    "name": "_$sSD10FoundationE19_bridgeToObjectiveCSo12NSDictionaryCyF",
+    "weak": false
+   },
+   {
+    "name": "_$sSD10FoundationE34_conditionallyBridgeFromObjectiveC_6resultSbSo12NSDictionaryC_SDyxq_GSgztFZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSD10FoundationE36_unconditionallyBridgeFromObjectiveCySDyxq_GSo12NSDictionaryCSgFZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF",
+    "weak": false
+   },
+   {
+    "name": "_$sSS10FoundationE26_forceBridgeFromObjectiveC_6resultySo8NSStringC_SSSgztFZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSS10FoundationE34_conditionallyBridgeFromObjectiveC_6resultSbSo8NSStringC_SSSgztFZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSS10FoundationE36_unconditionallyBridgeFromObjectiveCySSSo8NSStringCSgFZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSS10FoundationE8EncodingV4utf8ACvgZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSS10FoundationE8EncodingVMa",
+    "weak": false
+   },
+   {
+    "name": "_$sSSs7CVarArg10FoundationMc",
+    "weak": false
+   },
+   {
+    "name": "_$sSa10FoundationE19_bridgeToObjectiveCSo7NSArrayCyF",
+    "weak": false
+   },
+   {
+    "name": "_$sSa10FoundationE36_unconditionallyBridgeFromObjectiveCySayxGSo7NSArrayCSgFZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSh10FoundationE19_bridgeToObjectiveCSo5NSSetCyF",
+    "weak": false
+   },
+   {
+    "name": "_$sSh10FoundationE36_unconditionallyBridgeFromObjectiveCyShyxGSo5NSSetCSgFZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSi10FoundationE19_bridgeToObjectiveCSo8NSNumberCyF",
+    "weak": false
+   },
+   {
+    "name": "_$sSo11NSPredicateC10FoundationE6format_ABSSh_s7CVarArg_pdtcfC",
+    "weak": false
+   },
+   {
+    "name": "_$sSy10FoundationE4data5using20allowLossyConversionAA4DataVSgSSAAE8EncodingV_SbtF",
+    "weak": false
+   },
+   {
+    "name": "_$ss5ErrorP10FoundationE20localizedDescriptionSSvg",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftFoundation",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftMetal.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftMetal",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftObjectiveC.dylib": [
+   {
+    "name": "_$sSo8NSObjectC10ObjectiveCE13_rawHashValue4seedS2i_tF",
+    "weak": false
+   },
+   {
+    "name": "_$sSo8NSObjectC10ObjectiveCE2eeoiySbAB_ABtFZ",
+    "weak": false
+   },
+   {
+    "name": "_$sSo8NSObjectCSH10ObjectiveCMc",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftQuartzCore.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftQuartzCore",
+    "weak": true
+   }
+  ],
+  "@rpath/libswiftUIKit.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftUIKit",
+    "weak": true
+   }
+  ]
+ },
+ "objc_classes": {
+  "/System/Library/Frameworks/CoreData.framework/CoreData": [
+   "NSEntityDescription",
+   "NSFetchRequest",
+   "NSManagedObject",
+   "NSManagedObjectContext",
+   "NSManagedObjectModel",
+   "NSPersistentContainer",
+   "NSPersistentStore",
+   "NSPersistentStoreCoordinator"
+  ],
+  "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
+   "NSData",
+   "NSDictionary",
+   "NSMutableData",
+   "NSUserDefaults"
+  ],
+  "/System/Library/Frameworks/CoreLocation.framework/CoreLocation": [
+   "CLLocationManager"
+  ],
+  "/System/Library/Frameworks/Foundation.framework/Foundation": [
+   "NSBlockOperation",
+   "NSBundle",
+   "NSDateFormatter",
+   "NSFileManager",
+   "NSHTTPURLResponse",
+   "NSJSONSerialization",
+   "NSNotificationCenter",
+   "NSOperationQueue",
+   "NSPredicate",
+   "NSProcessInfo",
+   "NSSortDescriptor",
+   "NSURLSession",
+   "NSURLSessionConfiguration",
+   "NSUUID"
+  ],
+  "/System/Library/Frameworks/UIKit.framework/UIKit": [
+   "UIDevice",
+   "UIScreen"
+  ],
+  "/usr/lib/libobjc.A.dylib": [
+   "NSObject"
+  ],
+  "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter": [
+   "PLCrashReport",
+   "PLCrashReporter",
+   "PLCrashReporterConfig"
+  ],
+  "@rpath/libswiftCore.dylib": [
+   "_TtCs12_SwiftObject"
+  ]
+ },
+ "selrefs": [
+  "JSONObjectWithData:options:error:",
+  "URL",
+  "URLForResource:withExtension:",
+  "URLsForDirectory:inDomains:",
+  "UUIDString",
+  "activeProcessorCount",
+  "addObserver:selector:name:object:",
+  "addOperation:",
+  "addPersistentStoreWithType:configuration:URL:options:error:",
+  "appendData:",
+  "applicationWillEnterForeground",
+  "attachmentPaths",
+  "authorizationStatus",
+  "batteryLevel",
+  "batteryState",
+  "blockOperationWithBlock:",
+  "bounds",
+  "brightness",
+  "bundleForClass:",
+  "bundleIdentifier",
+  "connectionDidFail:",
+  "createDirectoryAtPath:withIntermediateDirectories:attributes:error:",
+  "createFileAtPath:contents:attributes:",
+  "currentDevice",
+  "dataTaskWithRequest:completionHandler:",
+  "dataWithJSONObject:options:error:",
+  "dealloc",
+  "defaultCenter",
+  "defaultConfiguration",
+  "defaultDirectoryURL",
+  "defaultManager",
+  "deleteObject:",
+  "description",
+  "destroyPersistentStoreAtURL:withType:options:error:",
+  "didBecomeActiveNotification",
+  "didEnterBackgroundNotification",
+  "didReachLimit:",
+  "enableCrashReporterAndReturnError:",
+  "entityForName:inManagedObjectContext:",
+  "ephemeralSessionConfiguration",
+  "fileExistsAtPath:",
+  "generateLiveReportWithException:error:",
+  "handleLowMemoryWarning",
+  "handleTermination",
+  "hasPendingCrashReport",
+  "hashProperty",
+  "hostName",
+  "init",
+  "initWithConcurrencyType:",
+  "initWithConfiguration:",
+  "initWithConfiguration:crashReporter:error:",
+  "initWithContentsOfURL:",
+  "initWithContentsOfURL:error:",
+  "initWithContentsOfURL:options:error:",
+  "initWithData:error:",
+  "initWithEntity:insertIntoManagedObjectContext:",
+  "initWithEntityName:",
+  "initWithKey:ascending:",
+  "initWithManagedObjectModel:",
+  "initWithName:managedObjectModel:",
+  "initWithReporter:",
+  "isBatteryMonitoringEnabled",
+  "isConfiguration:compatibleWithStoreMetadata:",
+  "length",
+  "loadPendingCrashReportDataAndReturnError:",
+  "loadPersistentStoresWithCompletionHandler:",
+  "locationServicesEnabled",
+  "mainBundle",
+  "mainScreen",
+  "metadataForPersistentStoreOfType:URL:options:error:",
+  "name",
+  "nativeBounds",
+  "nativeScale",
+  "newBackgroundContext",
+  "objectForInfoDictionaryKey:",
+  "operatingSystemVersionString",
+  "orientation",
+  "persistentStoreCoordinator",
+  "persistentStores",
+  "processInfo",
+  "processorCount",
+  "purgePendingCrashReportAndReturnError:",
+  "removeItemAtURL:error:",
+  "removeObserver:",
+  "reportData",
+  "respondsToSelector:",
+  "resume",
+  "save:",
+  "scale",
+  "screens",
+  "serverDidRespond:",
+  "sessionWithConfiguration:",
+  "setCompletionBlock:",
+  "setCrashCallbacks:",
+  "setDateFormat:",
+  "setFetchLimit:",
+  "setLocale:",
+  "setMaxConcurrentOperationCount:",
+  "setName:",
+  "setObject:forKey:",
+  "setPersistentStoreCoordinator:",
+  "setPredicate:",
+  "setReturnsObjectsAsFaults:",
+  "setSortDescriptors:",
+  "setTimeZone:",
+  "setUnderlyingQueue:",
+  "setValue:forKey:",
+  "standardUserDefaults",
+  "statusCode",
+  "stringByDeletingPathExtension",
+  "stringFromDate:",
+  "valueForKey:",
+  "willResignActiveNotification",
+  "willSend:",
+  "willSendRequest:",
+  "writeToURL:atomically:",
+  "writeToURL:error:"
+ ],
+ "methtypes": []
+}
