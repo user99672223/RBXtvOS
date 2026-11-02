@@ -1,0 +1,220 @@
+# device query gc-cursor-classes
+# why: Confirm on the device, not just in the SDK, that the two classes the cursor depends on exist: GCEventViewController (focus-engine bypass) and GCMicroGamepad (the Siri Remote profile).
+# argv: /opt/homebrew/bin/ipsw dyld macho /tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e /System/Library/Frameworks/GameController.framework/GameController --objc
+# label: 24K122
+# returncode: 0
+# grep: @interface (GCEventViewController|GCMicroGamepad|GCController)[^A-Za-z0-9_]  (matching lines: 3)
+
+-[GCBatteryXPCProxyServerEndpoint acceptClient:onConnection:error:];
+-[GCBatteryXPCProxyServerEndpoint fetchBatteryWithReply:];
+-[GCBatteryXPCProxyServerEndpoint initWithIdentifier:initialValue:];
+-[GCBatteryXPCProxyServerEndpoint invalidateClient];
+-[GCBatteryXPCProxyServerEndpoint receiverDescription];
+
+@end
+
+@interface GCColor : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    f _red;
+    f _green;
+    f _blue;
+}
+
+@property (Tf,R,V_red) red;
+@property (Tf,R,V_green) green;
+@property (Tf,R,V_blue) blue;
+
+/* class methods */
++[GCColor supportsSecureCoding];
+
+/* instance methods */
+-[GCColor encodeWithCoder:];
+-[GCColor initWithCoder:];
+-[GCColor copyWithZone:];
+-[GCColor description];
+-[GCColor red];
+-[GCColor blue];
+-[GCColor green];
+-[GCColor initWithRed:green:blue:];
+-[GCColor initWithColorPreset:];
+
+@end
+
+@interface GCController : NSObject <_GCIPCObject, GCDevice> {
+    /* instance variables */
+    @"NSObject<OS_dispatch_queue>" _handlerQueue;
+    @"<NSCopying><NSObject><NSSecureCoding>" _identifier;
+    @"NSArray" _components;
+    @"<GCDeviceSpatial>" _spatial;
+    @"_GCControllerInputComponent" _input;
+    @"GCPhysicalInputProfile" _physicalInput;
+    @"GCMotion" _motion;
+    @"<GCControllerMotionConfigurableSensors>" _motionConfigurableSensors;
+    @"<GCControllerSettingsComponent>" _settings;
+    @"<GCControllerPlayerIndicator>" _playerIndicator;
+    @"<GCDeviceLightComponent>" _light;
+    @"<GCDeviceBatteryComponent>" _battery;
+    @"<GCSystemGestureComponent>" _systemGesture;
+    @? _controllerPausedHandler;
+    @"<GCNamedProfile>" _profile;
+    @ _coalescingDelegate;
+    @"_GCControllerInputComponent" _legacy_input;
+    @"NSMutableArray" _hidServices;
+    @"NSString" _physicalDeviceUniqueID;
+    @"NSString" _debugName;
+    @"NSString" _vendorName;
+    @"NSString" _description;
+    Q _deviceHash;
+    q _playerIndex;
+    B _physicalDeviceUsesCompass;
+    B _forwarded;
+    B _allHIDDevicesConnected;
+    B _published;
+    B _snapshot;
+    @"GCControllerAttributes" __attributesFacade;
+    @"<GCControllerProductInfo>" __productInfoFacade;
+    @"<_GCControllerHapticsComponent>" _hapticCapabilityInfo;
+    @"GCDeviceType" __cachedDeviceType;
+    {?="types"[6A^v]"results"[6AB]"next"AC} __cachedConformances;
+-[GCDualShockGamepad touchpadButton];
+-[GCDualShockGamepad touchpadSecondary];
+
+@end
+
+@interface GCEAAccessoryManagerWrapper : NSObject
+
+/* class methods */
++[GCEAAccessoryManagerWrapper observers];
++[GCEAAccessoryManagerWrapper registerForLocalNotificationsWithObserver:];
++[GCEAAccessoryManagerWrapper unregisterForLocalNotificationsWithObserver:];
+
+@end
+
+@interface GCEventInteraction : NSObject {
+    /* instance variables */
+    B _receivesEventsInView;
+    Q _handledEventTypes;
+}
+
+@property (TQ,N,V_handledEventTypes) handledEventTypes;
+@property (TB,N,V_receivesEventsInView) receivesEventsInView;
+
+/* class methods */
++[GCEventInteraction initialize];
+
+/* instance methods */
+-[GCEventInteraction setReceivesEventsInView:];
+-[GCEventInteraction init];
+-[GCEventInteraction setHandledEventTypes:];
+-[GCEventInteraction handledEventTypes];
+-[GCEventInteraction receivesEventsInView];
+
+@end
+
+@interface GCEventViewController : NSObject {
+    /* instance variables */
+    [1096C] padding;
+    B _controllerUserInteractionEnabled;
+    B _controllerUserInteractionEnabledSetExternally;
+    B _internalControllerUserInteractionEnabled;
+}
+
+@property (TB,N,V_controllerUserInteractionEnabled) controllerUserInteractionEnabled;
+
+/* class methods */
++[GCEventViewController initialize];
+
+/* instance methods */
+-[GCEventViewController controllerUserInteractionEnabled];
+-[GCEventViewController controllerUserInteractionEnabledSetExternally];
+-[GCEventViewController internalControllerUserInteractionEnabled];
+-[GCEventViewController setControllerUserInteractionEnabled:];
+-[GCEventViewController setInternalControllerUserInteractionEnabled:];
+
+@end
+
+@interface GCExtendedGamepad : GCPhysicalInputProfile <_GCGamepadEventSink, NSSecureCoding> {
+    /* instance variables */
+    q _buttonHomeUsage;
+    q _buttonMenuUsage;
+    q _buttonOptionsUsage;
+    @? _valueChangedHandler;
+    @"GCControllerDirectionPad" _dpad;
+    @"GCControllerButtonInput" _button0;
+    @"GCControllerButtonInput" _button1;
+    @"GCControllerButtonInput" _button2;
+    @"GCControllerButtonInput" _button3;
+    @"GCControllerDirectionPad" _leftThumbstick;
+    @"GCControllerDirectionPad" _rightThumbstick;
+    @"GCControllerButtonInput" _leftShoulder;
+
+@end
+
+@interface GCLogicalDeviceAnalytics : NSObject {
+    /* instance variables */
+    @"NSDate" _curSessionStartTime;
+    @"NSDate" _firstSessionStartTime;
+    B _eventSent;
+    @"<NSObject><NSCopying><NSSecureCoding>" _controllerID;
+    @"NSString" _bundleID;
+    @"NSString" _productCategory;
+    @"NSMutableArray" _sessionIntervals;
+}
+
+@property (T@"NSMutableArray",&,N,V_sessionIntervals) sessionIntervals;
+@property (T@"<NSObject><NSCopying><NSSecureCoding>",R,&,N,V_controllerID) controllerID;
+@property (T@"NSString",R,&,N,V_bundleID) bundleID;
+@property (T@"NSString",R,&,N,V_productCategory) productCategory;
+
+/* instance methods */
+-[GCLogicalDeviceAnalytics resumeSession];
+-[GCLogicalDeviceAnalytics bundleID];
+-[GCLogicalDeviceAnalytics productCategory];
+-[GCLogicalDeviceAnalytics description];
+-[GCLogicalDeviceAnalytics controllerID];
+-[GCLogicalDeviceAnalytics flushSessionAndSendCAEvent];
+-[GCLogicalDeviceAnalytics initWithAnonymousIdentifier:bundleIdentifier:productCategory:];
+-[GCLogicalDeviceAnalytics pauseSession];
+-[GCLogicalDeviceAnalytics sessionActiveDuration];
+-[GCLogicalDeviceAnalytics sessionIntervals];
+-[GCLogicalDeviceAnalytics sessionTotalDuration];
+-[GCLogicalDeviceAnalytics setSessionIntervals:];
+
+@end
+
+@interface GCMicroGamepad : GCPhysicalInputProfile <NSSecureCoding> {
+    /* instance variables */
+    @? _valueChangedHandler;
+    q _deviceType;
+    B _reportsAbsoluteDpadValues;
+    B _allowsRotation;
+    @"GCControllerButtonInput" _button0;
+    @"GCControllerButtonInput" _button1;
+    @"GCControllerDirectionPad" _dpad;
+    @"GCControllerButtonInput" _buttonMenu;
+}
+
+@property (T@"GCController",R,W,D,N) controller;
+@property (T@?,C,N,V_valueChangedHandler) valueChangedHandler;
+@property (T@"GCControllerDirectionPad",R,N,V_dpad) dpad;
+@property (T@"GCControllerButtonInput",R,N,V_button0) buttonA;
+@property (T@"GCControllerButtonInput",R,N,V_button1) buttonX;
+@property (T@"GCControllerButtonInput",R,N,V_buttonMenu) buttonMenu;
+@property (TB,N,V_reportsAbsoluteDpadValues) reportsAbsoluteDpadValues;
+@property (TB,N,V_allowsRotation) allowsRotation;
+
+/* class methods */
++[GCMicroGamepad supportsSecureCoding];
++[GCMicroGamepad _current];
+
+/* instance methods */
+-[GCMicroGamepad initWithIdentifier:];
+-[GCMicroGamepad encodeWithCoder:];
+-[GCMicroGamepad initWithCoder:];
+-[GCMicroGamepad name];
+-[GCMicroGamepad productCategory];
+-[GCMicroGamepad setLastEventTimestamp:];
+-[GCMicroGamepad allowsRotation];
+-[GCMicroGamepad buttonMenu];
+-[GCMicroGamepad setAllowsRotation:];
+-[GCMicroGamepad button1];

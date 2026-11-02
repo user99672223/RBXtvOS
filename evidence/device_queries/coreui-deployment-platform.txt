@@ -5,11 +5,6 @@
 # returncode: 0
 # stderr: • Searching for strings: deploymentPlatform
 
-0x1f3e629d0: "deploymentPlatformVersion"	image=libobjc.A.dylib
-0x1f42c48d0: "deploymentPlatformString"	image=libobjc.A.dylib
-0x1f4841cd0: "deploymentPlatform"	image=libobjc.A.dylib
-0x1f66cb9f4: "TQ,V_deploymentPlatform"	image=libobjc.A.dylib
-0x1f66cc172: "_deploymentPlatform"	image=libobjc.A.dylib
 0x0: "-[MPSGraphExecutableSerializationDescriptor deploymentPlatform]"	offset=0x1794bddc	mapping=sub_cache (.symbols)
 0x0: "_objc_msgSend$deploymentPlatform"	offset=0x18de7a53	mapping=sub_cache (.symbols)
 0x0: "-[CUIMutableStructuredThemeStore deploymentPlatformString]"	offset=0x209de71c	mapping=sub_cache (.symbols)
@@ -18,3 +13,8 @@
 0x0: "-[CUIStructuredThemeStore deploymentPlatform]"	offset=0x209f6003	mapping=sub_cache (.symbols)
 0x0: "_objc_msgSend$deploymentPlatformString"	offset=0x20a19f12	mapping=sub_cache (.symbols)
 0x0: "-[CUIPlaceholderCUICommonAssetStorage deploymentPlatformString]"	offset=0x224df1be	mapping=sub_cache (.symbols)
+0x1f3e629d0: "deploymentPlatformVersion"	image=libobjc.A.dylib
+0x1f42c48d0: "deploymentPlatformString"	image=libobjc.A.dylib
+0x1f4841cd0: "deploymentPlatform"	image=libobjc.A.dylib
+0x1f66cb9f4: "TQ,V_deploymentPlatform"	image=libobjc.A.dylib
+0x1f66cc172: "_deploymentPlatform"	image=libobjc.A.dylib

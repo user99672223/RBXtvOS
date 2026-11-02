@@ -84,13 +84,32 @@ exactly this way.
 
 ## Caveats recorded
 
-* `dyld-1378` is the newest published source at the time of writing. The device
-  runs tvOS 27.2 (24K122); the `dyld-version` string from the device's own cache
-  is collected by the `dyld-version` query in
-  `evidence/queries/device_queries.json` so the two can be compared. The
-  re-export rule above is long-standing, but the exact shipped version is
-  recorded rather than assumed. **Status: version match UNVERIFIED until that
-  query's output lands.**
+* **The versions do not match, and that is now measured rather than open.** The
+  device's own cache carries
+
+  ```
+  0x180518980: "@(#)PROGRAM:dyld  PROJECT:dyld-27104"   image=dyld
+  ```
+
+  so tvOS 27.2 (24K122) ships **`dyld-27104`**, while the newest *published*
+  open-source drop is **`dyld-1378`** — the version numbering was rebased onto
+  the OS train, so the gap is not 25,726 revisions, but it is a different build
+  and Apple has published no source for it.
+
+  What that does and does not undermine: the two-level-namespace rule quoted
+  above is long-standing behaviour that umbrella frameworks have depended on
+  for over a decade, and the device's own UIKit relies on it right now (its
+  `LC_REEXPORT_DYLIB` list names UIKitCore, PrintKitUI and ShareSheet, and
+  51,191 of the names reachable from "UIKit" on this device arrive that way).
+  So the mechanism is certainly present on the device. What cannot be claimed
+  is that the *code path* was read from the exact binary that will run.
+  **Status: mechanism VERIFIED on the device by observation; source reading
+  done against a different build (`dyld-1378` vs `dyld-27104`).**
+
+* The `objc-version` query found only the bare string `objc4` in
+  `libobjc.A.dylib` with no version suffix, so the objc4 revision this device
+  ships is **UNVERIFIED**. Nothing here depends on it: the shims rely on
+  ordinary class realization, not on any objc4 internal.
 * Symbol-level re-export aliases (`EXPORT_SYMBOL_FLAGS_REEXPORT` inside the
   trie, handled at line 3269) are a separate mechanism and are not used here.
 * This says nothing about *ObjC class* realization, only about symbol binding.

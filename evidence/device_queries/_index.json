@@ -12,96 +12,6 @@
   "truncated": false,
   "bytes": 29132
  },
- "uitouch-ivars": {
-  "why": "Phase 6 click-to-tap preference 2 needs to set a synthesized UITouch's location, window, view and phase. Those are private ivars, so their presence and names on tvOS 27.2 must come from the device itself before any code touches them.",
-  "argv": [
-   "dyld",
-   "macho",
-   "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
-   "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore",
-   "--objc"
-  ],
-  "returncode": 0,
-  "grep": "^\\s*(@interface|@property|\\s+[A-Za-z_].*_(location|window|view|phase|tapCount|timestamp))",
-  "matching_lines": 36320,
-  "truncated": true,
-  "bytes": 200016
- },
- "uitouch-class": {
-  "why": "The UITouch class declaration as the device actually has it, including ivar layout.",
-  "argv": [
-   "dyld",
-   "objc",
-   "class",
-   "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
-   "UITouch"
-  ],
-  "returncode": 1,
-  "grep": null,
-  "matching_lines": null,
-  "truncated": false,
-  "bytes": 0
- },
- "uievent-class": {
-  "why": "Synthesizing a touch needs a UIEvent to carry it; same private-ivar question.",
-  "argv": [
-   "dyld",
-   "objc",
-   "class",
-   "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
-   "UIEvent"
-  ],
-  "returncode": 1,
-  "grep": null,
-  "matching_lines": null,
-  "truncated": false,
-  "bytes": 0
- },
- "gcmicrogamepad-class": {
-  "why": "Confirm the Siri Remote's micro gamepad profile exists on the device, not just in the SDK.",
-  "argv": [
-   "dyld",
-   "objc",
-   "class",
-   "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
-   "GCMicroGamepad"
-  ],
-  "returncode": 1,
-  "grep": null,
-  "matching_lines": null,
-  "truncated": false,
-  "bytes": 0
- },
- "gceventviewcontroller-class": {
-  "why": "Confirm the focus-engine bypass class exists on the device.",
-  "argv": [
-   "dyld",
-   "objc",
-   "class",
-   "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
-   "GCEventViewController"
-  ],
-  "returncode": 1,
-  "grep": null,
-  "matching_lines": null,
-  "truncated": false,
-  "bytes": 0
- },
- "uidatepicker-class": {
-  "why": "Phase 1 flagged UIDatePicker (RBBirthdayPickerController.nib) as the class most likely missing on tvOS. This asks the device directly.",
-  "argv": [
-   "dyld",
-   "objc",
-   "class",
-   "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
-   "UIDatePicker"
-  ],
-  "returncode": 1,
-  "grep": null,
-  "matching_lines": null,
-  "truncated": false,
-  "bytes": 0
- },
  "metal-newlibrarywithdata": {
   "why": "Phase 1's biggest launch risk: whether tvOS Metal accepts Roblox's iOS-compiled metallib blobs. Looks for the loader entry point in the device's Metal.",
   "argv": [
@@ -132,32 +42,92 @@
   "truncated": false,
   "bytes": 1138
  },
+ "uitouch-ivars": {
+  "why": "Phase 6 click-to-tap preference 2 sets a synthesized UITouch's location, window, view and phase. Those are private ivars, so their names on tvOS 27.2 must come from the device. Anchored on the class declaration this time: the previous broad @property pattern matched 36,320 lines and was truncated before UITouch appeared.",
+  "argv": [
+   "dyld",
+   "macho",
+   "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
+   "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore",
+   "--objc"
+  ],
+  "returncode": 0,
+  "grep": "@interface UITouch[^A-Za-z0-9_]",
+  "matching_lines": 1,
+  "truncated": false,
+  "bytes": 7987
+ },
+ "uievent-ivars": {
+  "why": "A synthesized touch is carried by a UIEvent; same private-ivar question.",
+  "argv": [
+   "dyld",
+   "macho",
+   "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
+   "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore",
+   "--objc"
+  ],
+  "returncode": 0,
+  "grep": "@interface UIEvent[^A-Za-z0-9_]",
+  "matching_lines": 1,
+  "truncated": false,
+  "bytes": 6263
+ },
+ "uidatepicker-class": {
+  "why": "Cross-check the nib-class finding against the class dump: UIDatePicker is exported by the device's UIKit and by tvOS SDK 27.2's UIKit.tbd, so it should appear here with its real superclass.",
+  "argv": [
+   "dyld",
+   "macho",
+   "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
+   "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore",
+   "--objc"
+  ],
+  "returncode": 0,
+  "grep": "@interface UIDatePicker[^A-Za-z0-9_]",
+  "matching_lines": 1,
+  "truncated": false,
+  "bytes": 2303
+ },
+ "gc-cursor-classes": {
+  "why": "Confirm on the device, not just in the SDK, that the two classes the cursor depends on exist: GCEventViewController (focus-engine bypass) and GCMicroGamepad (the Siri Remote profile).",
+  "argv": [
+   "dyld",
+   "macho",
+   "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
+   "/System/Library/Frameworks/GameController.framework/GameController",
+   "--objc"
+  ],
+  "returncode": 0,
+  "grep": "@interface (GCEventViewController|GCMicroGamepad|GCController)[^A-Za-z0-9_]",
+  "matching_lines": 3,
+  "truncated": false,
+  "bytes": 7052
+ },
  "dyld-version": {
-  "why": "Evidence source 5: match Apple's open-source dyld to the version this device ships.",
+  "why": "Evidence source 5: the dyld version this device ships, to compare against the dyld-1378 source the proxy mechanism was checked against. The previous search term 'dyld-1' matched only its own prefix.",
   "argv": [
    "dyld",
    "str",
    "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
-   "dyld-1"
+   "PROJECT:dyld"
   ],
   "returncode": 0,
   "grep": null,
   "matching_lines": null,
   "truncated": false,
-  "bytes": 59
+  "bytes": 194
  },
  "objc-version": {
-  "why": "Evidence source 5: match Apple's open-source objc4 to the version this device ships.",
+  "why": "Evidence source 5: the objc4 version this device ships. The previous term 'objc4-' returned nothing.",
   "argv": [
    "dyld",
    "str",
    "/tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e",
-   "objc4-"
+   "objc4"
   ],
   "returncode": 0,
   "grep": null,
   "matching_lines": null,
   "truncated": false,
-  "bytes": 0
+  "bytes": 43
  }
 }

@@ -1,0 +1,188 @@
+# device query uievent-ivars
+# why: A synthesized touch is carried by a UIEvent; same private-ivar question.
+# argv: /opt/homebrew/bin/ipsw dyld macho /tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore --objc
+# label: 24K122
+# returncode: 0
+# grep: @interface UIEvent[^A-Za-z0-9_]  (matching lines: 1)
+
+    @"NSLayoutConstraint" _firstRowHeightConstraint;
+    d _cutoutHeight;
+}
+
+@property (Td,N,V_cutoutHeight) cutoutHeight;
+
+/* instance methods */
+-[UIEmojiAndStickerBackgroundView initWithFrame:];
+-[UIEmojiAndStickerBackgroundView createHittableView];
+-[UIEmojiAndStickerBackgroundView cutoutHeight];
+-[UIEmojiAndStickerBackgroundView setCutoutHeight:];
+
+@end
+
+@interface UIEmojiAndStickerCollectionViewConfiguration : NSObject {
+    /* instance variables */
+    @"UITextInputTraits" _textInputTraits;
+}
+
+@property (T@"UITextInputTraits",&,N,V_textInputTraits) textInputTraits;
+
+/* instance methods */
+-[UIEmojiAndStickerCollectionViewConfiguration textInputTraits];
+-[UIEmojiAndStickerCollectionViewConfiguration setTextInputTraits:];
+
+@end
+
+@interface UIEmojiAndStickerCollectionViewController : UIViewController <UIKeyboardLayoutStarDelegate> {
+    /* instance variables */
+    @"UIKeyboardLayoutStar" _layout;
+    @"UIKBScreenTraits" _screenTraits;
+    @"UIEmojiAndStickerBackgroundView" _backgroundView;
+    @"UIEmojiNoResultsView" _noResultsView;
+    B _previousShowsNoResultsView;
+    @"STKEmojiAndStickerCollectionViewConfiguration" _configuration;
+    @"<UIEmojiAndStickerCollectionViewControllerDelegate>" _delegate;
+    @"NSString" _bundleId;
+}
+
+@property (T@"STKEmojiAndStickerCollectionViewConfiguration",&,N,V_configuration) configuration;
+@property (T@"<UIEmojiAndStickerCollectionViewControllerDelegate>",W,N,V_delegate) delegate;
+@property (T@,R,N) emojiKeyManager;
+@property (T@"NSString",C,N,V_bundleId) bundleId;
+@property (T@"NSArray",&,N) searchResults;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[UIEmojiAndStickerCollectionViewController handleKeyEvent:];
+-[UIEmojiAndStickerCollectionViewController setBundleId:];
+-[UIEmojiAndStickerCollectionViewController emojiKeyManager];
+-[UIEmojiAndStickerCollectionViewController viewWillLayoutSubviews];
+-[UIEmojiAndStickerCollectionViewController searchResults];
+-[UIEmojiAndStickerCollectionViewController _canShowWhileLocked];
+-[UIEmojiAndStickerCollectionViewController setSearchResults:];
+-[UIEmojiAndStickerCollectionViewController bundleId];
+-[UIEmojiAndStickerCollectionViewController viewWillDisappear:];
+-[UIEmojiAndStickerCollectionViewController initWithConfiguration:];
+-[UIEmojiAndStickerCollectionViewController init];
+-[UIEmojiAndStickerCollectionViewController configuration];
+-[UIEmojiAndStickerCollectionViewController viewDidLoad];
+-[UIEmojiAndStickerCollectionViewController delegate];
+-[UIEmojiAndStickerCollectionViewController setConfiguration:];
+-[UIEmojiAndStickerCollectionViewController setDelegate:];
+-[UIEmojiAndStickerCollectionViewController viewIsAppearing:];
+-[UIEmojiAndStickerCollectionViewController addNoResultsViewIfNeeded];
+-[UIEmojiAndStickerCollectionViewController handleHardwareKeyboardEvent:];
+-[UIEmojiAndStickerCollectionViewController handleKeyUIEvent:dismiss:];
+
+@end
+
+@interface UIEmojiNoResultsView : UIView {
+    /* instance variables */
+    @"UILabel" _noResultsLabel;
+    @"UILabel" _createNewEmojiLabel;
+    B _supportsGenmoji;
+}
+
+@property (TB,N,V_supportsGenmoji) supportsGenmoji;
+
+/* instance methods */
+-[UIEmojiNoResultsView initWithFrame:];
+-[UIEmojiNoResultsView supportsGenmoji];
+-[UIEmojiNoResultsView createNewEmoji];
+-[UIEmojiNoResultsView setSupportsGenmoji:];
+
+@end
+
+@interface UIEvent : NSObject {
+    /* instance variables */
+    ^{__GSEvent=} _gsEvent;
+    ^{__IOHIDEvent=} _hidEvent;
+    B _hasValidModifiers;
+    @"UIScreen" _cachedScreen;
+    @"NSMutableSet" _eventObservers;
+    @"NSMutableOrderedSet" _hitTestObservers;
+    B _isInteractionBehaviorInactive;
+    Q _lastPointerSenderID;
+    d _timestamp;
+    @"UIEventEnvironment" _eventEnvironment;
+    d __initialTouchTimestamp;
+}
+
+@property (Td,N,S_setTimestamp:,V_timestamp) timestamp;
+@property (T@"NSSet",R,N) _allWindows;
+@property (T@"NSSet",R,N) _dispatchWindows;
+@property (TQ,R,N) _inputPrecision;
+@property (Td,R,N,V__initialTouchTimestamp) _initialTouchTimestamp;
+@property (T@"BKSHIDEventAuthenticationMessage",R,N) _authenticationMessage;
+@property (Tq,R,N) type;
+@property (Tq,R,N) subtype;
+@property (Tq,R,N) modifierFlags;
+@property (Tq,R,N) buttonMask;
+@property (T@"NSSet",R,N) allTouches;
+
+/* class methods */
++[UIEvent _inputPrecisionForTouches:];
+
+/* instance methods */
+-[UIEvent subtype];
+-[UIEvent _modifiedInput];
+-[UIEvent _init];
+-[UIEvent coalescedTouchesForTouch:];
+-[UIEvent modifierFlags];
+-[UIEvent _modifierFlags];
+-[UIEvent _cloneEvent];
+-[UIEvent _gestureRecognizerNoLongerNeedsSendEvent:];
+-[UIEvent touchesForGestureRecognizer:];
+-[UIEvent touchesForWindow:];
+-[UIEvent allTouches];
+-[UIEvent _screen];
+-[UIEvent _touchesForGestureRecognizer:];
+-[UIEvent _componentsForGestureRecognizer:];
+-[UIEvent touchesForView:];
+-[UIEvent _isPhysicalKeyEvent];
+-[UIEvent _initialTouchTimestamp];
+-[UIEvent _shakeState];
+-[UIEvent _digitizerLocation];
+-[UIEvent _unmodifiedInput];
+-[UIEvent _cleanupAfterDispatch];
+-[UIEvent timestamp];
+-[UIEvent _setHIDEvent:];
+-[UIEvent _sendEventToResponder:];
+-[UIEvent _inputPrecision];
+-[UIEvent type];
+-[UIEvent _isKeyDown];
+-[UIEvent dealloc];
+-[UIEvent _initWithEvent:touches:];
+-[UIEvent _gestureRecognizersForWindow:];
+-[UIEvent _removeGestureRecognizer:fromComponents:];
+-[UIEvent predictedTouchesForTouch:];
+-[UIEvent _allWindows];
+-[UIEvent _sendEventToGestureRecognizer:];
+-[UIEvent _shouldSkipEventDeliveryWithIgnoreInteractionEvents:];
+-[UIEvent _authenticationMessage];
+-[UIEvent _buttonMask];
+-[UIEvent _clickCount];
+-[UIEvent _didSendEvent];
+-[UIEvent _dispatchWindows];
+-[UIEvent _focusHeading];
+-[UIEvent _gsEvent];
+-[UIEvent _hidEvent];
+-[UIEvent _initWithEnvironment:];
+-[UIEvent _isInteractionBehaviorInactive];
+-[UIEvent _isTouchRoutingPolicyBased];
+-[UIEvent _keyModifierFlags];
+-[UIEvent _moveDirection];
+-[UIEvent _removeGestureRecognizersSendingCancelledEvent:];
+-[UIEvent _setGSEvent:];
+-[UIEvent _setTimestamp:];
+-[UIEvent _swipeVelocityWithError:];
+-[UIEvent _triggeringPhysicalButton];
+-[UIEvent _wasDeliveredToGestureRecognizers];
+-[UIEvent _wheelVelocity];
+-[UIEvent buttonMask];
+
+@end
+
+@interface UIEventDispatcher : NSObject <UIEventFetcherSink> {

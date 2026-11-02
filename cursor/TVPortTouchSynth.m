@@ -9,14 +9,35 @@
 
 #include "../tvlog/tvlog.h"
 
-// Candidate ivar names, in the order they are tried. UIKit has spelled these
-// differently across releases, so each slot holds alternatives and whichever
-// the device actually has is used. Which one was found is logged, and the
-// device's own UIKitCore is the authority (see device_queries.json).
+// Candidate ivar names, in the order they are tried, each slot holding the
+// alternatives seen across releases. Which one was found is logged.
+//
+// These are no longer guesses. The device's own UIKitCore for tvOS 27.2
+// (24K122) declares (uitouch-ivars in evidence/queries/device_queries.json):
+//
+//   @interface UITouch : NSObject <_UIResponderForwardableEventComponent> {
+//       q _phase;  Q _tapCount;  d _timestamp;
+//       @"UIWindow" _window;
+//       @"UIResponder<_UIGestureRecognizerContainer>" _responder;
+//       @"UIView" _cachedResponderView;
+//       @"UIView" _warpedIntoView;
+//       {CGPoint} _locationInWindow;
+//       {CGPoint} _previousLocationInWindow;
+//       ...
+//   }
+//
+// The important correction: **there is no `_view` ivar.** An earlier version of
+// this file required one, so the probe would have reported UNAVAILABLE and
+// click-to-tap preference 2 would have been silently disabled for good -- the
+// guard would have held, but the feature would simply never have worked. The
+// view is carried by `_cachedResponderView`, with `_responder` holding the
+// responder it was hit-tested to. Both are set: a UIView is a UIResponder, and
+// -[UITouch view] derives from the responder on modern UIKit.
 static const char *const kLocationIvars[]  = { "_locationInWindow", "_location", NULL };
 static const char *const kPreviousIvars[]  = { "_previousLocationInWindow", "_previousLocation", NULL };
 static const char *const kWindowIvars[]    = { "_window", NULL };
-static const char *const kViewIvars[]      = { "_view", NULL };
+static const char *const kViewIvars[]      = { "_cachedResponderView", "_view", "_warpedIntoView", NULL };
+static const char *const kResponderIvars[] = { "_responder", NULL };
 static const char *const kPhaseIvars[]     = { "_phase", NULL };
 static const char *const kTapCountIvars[]  = { "_tapCount", NULL };
 static const char *const kTimestampIvars[] = { "_timestamp", NULL };
@@ -26,6 +47,7 @@ typedef struct {
     Ivar previousLocation;
     Ivar window;
     Ivar view;
+    Ivar responder;
     Ivar phase;
     Ivar tapCount;
     Ivar timestamp;
@@ -78,6 +100,8 @@ static void note(NSMutableString *out, const char *slot, Ivar iv, const char *na
         note(sReport, "window", sLayout.window, n);
         sLayout.view = find_ivar(touchClass, kViewIvars, &n);
         note(sReport, "view", sLayout.view, n);
+        sLayout.responder = find_ivar(touchClass, kResponderIvars, &n);
+        note(sReport, "responder", sLayout.responder, n);
         sLayout.phase = find_ivar(touchClass, kPhaseIvars, &n);
         note(sReport, "phase", sLayout.phase, n);
         sLayout.tapCount = find_ivar(touchClass, kTapCountIvars, &n);
@@ -145,6 +169,9 @@ static void set_double_ivar(id obj, Ivar iv, double v) {
     set_cgpoint_ivar(touch, sLayout.previousLocation, inWindow);
     set_object_ivar(touch, sLayout.window, window);
     set_object_ivar(touch, sLayout.view, view);
+    // A UIView is a UIResponder, and -[UITouch view] derives from the
+    // responder on this UIKit, so both slots point at the hit view.
+    set_object_ivar(touch, sLayout.responder, view);
     set_int_ivar(touch, sLayout.tapCount, 1);
     set_double_ivar(touch, sLayout.timestamp, [[NSProcessInfo processInfo] systemUptime]);
 
@@ -166,6 +193,7 @@ static void set_double_ivar(id obj, Ivar iv, double v) {
     // the views (it should not, but this costs nothing).
     set_object_ivar(touch, sLayout.window, nil);
     set_object_ivar(touch, sLayout.view, nil);
+    set_object_ivar(touch, sLayout.responder, nil);
 
     TVLOG_D(TVLogCursor, "synthesized tap on %s at (%.1f, %.1f) window (%.1f, %.1f)",
             object_getClassName(view), point.x, point.y, inWindow.x, inWindow.y);
