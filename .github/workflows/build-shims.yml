@@ -1,0 +1,129 @@
+name: build-shims
+
+# Phase 4 build. Compiles the shim libraries and the injected tvport library
+# for arm64-apple-tvos against the tvOS SDK, produces dSYMs, and pushes both to
+# the outputs branch for the session to fetch.
+#
+# Nothing from the Roblox bundle is present in this job: the inputs are our own
+# sources plus the tvOS SDK. The outputs are our own binaries, which CLAUDE.md
+# allows on the outputs branch.
+#
+# Runs on xcode-27, whose tvOS SDK is 27.2 and matches the device exactly.
+# Triggered by pushing a change to the shim sources, the build script, or
+# evidence/queries/shim_build_request.json (see device-evidence.yml for why
+# workflow_dispatch is unavailable on this repository).
+
+on:
+  workflow_dispatch:
+    inputs:
+      runner:
+        description: 'Runner label (needs a tvOS SDK)'
+        default: 'xcode-27'
+      tvos_sdk_version:
+        description: 'tvOS SDK version to select'
+        default: '27.2'
+      tvos_min:
+        description: 'Minimum tvOS version to build for'
+        default: '27.0'
+      outputs_branch:
+        default: 'outputs'
+  push:
+    branches:
+      - 'claude/**'
+    paths:
+      - '.github/workflows/build-shims.yml'
+      - 'scripts/build_shims.sh'
+      - 'shim/**'
+      - 'tvlog/**'
+      - 'cursor/**'
+      - 'evidence/queries/shim_build_request.json'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ${{ github.event.inputs.runner || 'xcode-27' }}
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select the tvOS SDK
+        run: |
+          set -euo pipefail
+          chmod +x scripts/runner/select_xcode.sh
+          DEV=$(scripts/runner/select_xcode.sh appletvos \
+                "${{ github.event.inputs.tvos_sdk_version || '27.2' }}")
+          echo "DEVELOPER_DIR=$DEV" >> "$GITHUB_ENV"
+
+      - name: Record environment
+        run: |
+          mkdir -p out/shims
+          {
+            echo "## shim build environment (Phase 4)"
+            echo
+            echo '```'
+            echo "runner label: ${{ github.event.inputs.runner || 'xcode-27' }}"
+            echo "image version: ${ImageVersion:-unknown}"
+            sw_vers
+            xcodebuild -version
+            echo "DEVELOPER_DIR=$DEVELOPER_DIR"
+            echo "tvOS SDK path:    $(xcrun --sdk appletvos --show-sdk-path)"
+            echo "tvOS SDK version: $(xcrun --sdk appletvos --show-sdk-version)"
+            echo "tvOS SDK build:   $(xcrun --sdk appletvos --show-sdk-build-version)"
+            echo "clang: $(xcrun --sdk appletvos -f clang)"
+            xcrun --sdk appletvos clang --version | head -2
+            echo "git commit: $(git rev-parse HEAD)"
+            echo '```'
+          } > out/shims/build_environment.md
+          cat out/shims/build_environment.md
+
+      - name: Build
+        env:
+          TVOS_MIN: ${{ github.event.inputs.tvos_min || '27.0' }}
+        run: |
+          set -euo pipefail
+          chmod +x scripts/build_shims.sh
+          TVPORT_BUILD_ID="$(git rev-parse --short HEAD)" ./scripts/build_shims.sh
+
+      - name: Check every shim is tvOS-targeted and has what it promised
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, pathlib, sys
+          m = json.loads(pathlib.Path('out/shims/manifest.json').read_text())
+          bad = []
+          for name, rec in sorted(m['libraries'].items()):
+              # platform 3 is PLATFORM_TVOS; anything else will not load on the device
+              if str(rec['platform']) not in ('3', 'TVOS', 'tvos'):
+                  bad.append(f"{name}: platform={rec['platform']!r}, expected tvOS")
+              if not rec['install_name'] or not rec['install_name'].startswith('@rpath/'):
+                  bad.append(f"{name}: install_name={rec['install_name']!r}, expected @rpath/...")
+          # the proxies must actually carry a re-export, or every other symbol
+          # Roblox imports from that library would stop resolving
+          proxies = {
+              'libtvportshim-UIKit.dylib',
+              'libtvportshim-CoreFoundation.dylib',
+              'libtvportshim-CoreTelephony.dylib',
+              'libtvportshim-PushKit.dylib',
+              'libtvportshim-libswiftDarwin.dylib',
+          }
+          for name in proxies:
+              rec = m['libraries'].get(name)
+              if rec is None:
+                  bad.append(f"{name}: not built")
+              elif not rec['reexports']:
+                  bad.append(f"{name}: no LC_REEXPORT_DYLIB; a proxy without one "
+                             f"would break every other import from that library")
+          for b in bad:
+              print(f"::error::{b}")
+          print(f"checked {len(m['libraries'])} libraries, {len(bad)} problems")
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Commit the built libraries and dSYMs
+        run: |
+          chmod +x scripts/runner/commit_outputs.sh
+          ./scripts/runner/commit_outputs.sh \
+            "${{ github.event.inputs.outputs_branch || 'outputs' }}" \
+            "build-shims: tvOS SDK $(xcrun --sdk appletvos --show-sdk-version) ($(git rev-parse --short HEAD))"
