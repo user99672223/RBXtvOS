@@ -3,42 +3,97 @@ name: device-evidence
 # Evidence source 1: the device's own system libraries, from the dyld shared
 # cache in Apple's OTA for AppleTV14,1 at the target tvOS build.
 #
-# This has to run on macOS. The tvOS 27.x OTA stores its payloadv2 members with
-# LZRaven (pbzm) compression, which cannot be decoded on Linux at all -- ipsw
-# shells out to Apple's `aa` for it. The session therefore downloads nothing
-# here and only fetches the derived text back from the outputs branch.
+# This has to run on macOS. tvOS 27.x OTAs compress their payloadv2 members
+# with LZRaven (pbzm), which cannot be decoded on Linux at all -- ipsw shells
+# out to Apple's `aa` for it. The session therefore downloads nothing here and
+# only fetches the derived text back from the outputs branch.
 #
-# Only export lists, install names and re-export edges are committed. The cache
-# and the OTA stay on the runner (CLAUDE.md "Hard data rules").
+# Only export lists, install names and re-export edges are committed. The OTA
+# and the cache stay on the runner (CLAUDE.md "Hard data rules").
+#
+# Triggering: `workflow_dispatch` only reaches workflows that exist on the
+# repository's default branch, which this project cannot change (the session's
+# GitHub proxy refuses repository settings writes). So the run is instead
+# driven by a committed request file, evidence/queries/device_request.json,
+# which also keeps every run's parameters under version control. Bump its
+# "nonce" and push to ask for another run.
 
 on:
   workflow_dispatch:
     inputs:
       runner:
         description: 'macOS runner label (needs an `aa` that decodes LZRaven)'
-        default: 'macos-26'
+        default: ''
       device:
         description: 'Device identifier'
-        default: 'AppleTV14,1'
+        default: ''
       tvos_build:
-        description: 'tvOS build to use (blank = latest signed for the device)'
+        description: 'tvOS build (blank = whatever the request file says)'
         default: ''
       tvos_version:
-        description: 'tvOS version to use (blank = latest signed)'
+        description: 'tvOS version (blank = whatever the request file says)'
         default: ''
       dyld_arch:
         description: 'dyld_shared_cache architecture'
-        default: 'arm64e'
+        default: ''
       outputs_branch:
         description: 'Branch to commit derived evidence to'
-        default: 'outputs'
+        default: ''
+  push:
+    branches:
+      - 'claude/**'
+    paths:
+      - '.github/workflows/device-evidence.yml'
+      - 'scripts/runner/device_evidence.py'
+      - 'evidence/queries/device_request.json'
 
 permissions:
   contents: write
 
 jobs:
+  config:
+    runs-on: ubuntu-latest
+    outputs:
+      runner: ${{ steps.c.outputs.runner }}
+      device: ${{ steps.c.outputs.device }}
+      tvos_build: ${{ steps.c.outputs.tvos_build }}
+      tvos_version: ${{ steps.c.outputs.tvos_version }}
+      dyld_arch: ${{ steps.c.outputs.dyld_arch }}
+      outputs_branch: ${{ steps.c.outputs.outputs_branch }}
+      enabled: ${{ steps.c.outputs.enabled }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: c
+        name: Merge dispatch inputs over the committed request
+        env:
+          IN_RUNNER: ${{ github.event.inputs.runner }}
+          IN_DEVICE: ${{ github.event.inputs.device }}
+          IN_BUILD: ${{ github.event.inputs.tvos_build }}
+          IN_VERSION: ${{ github.event.inputs.tvos_version }}
+          IN_ARCH: ${{ github.event.inputs.dyld_arch }}
+          IN_BRANCH: ${{ github.event.inputs.outputs_branch }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, pathlib
+          p = pathlib.Path('evidence/queries/device_request.json')
+          req = json.loads(p.read_text()) if p.is_file() else {}
+          def pick(env, key, default=''):
+              v = os.environ.get(env) or ''
+              return v or str(req.get(key, default) or default)
+          print(f"runner={pick('IN_RUNNER','runner','macos-26')}")
+          print(f"device={pick('IN_DEVICE','device','AppleTV14,1')}")
+          print(f"tvos_build={pick('IN_BUILD','tvos_build')}")
+          print(f"tvos_version={pick('IN_VERSION','tvos_version')}")
+          print(f"dyld_arch={pick('IN_ARCH','dyld_arch','arm64e')}")
+          print(f"outputs_branch={pick('IN_BRANCH','outputs_branch','outputs')}")
+          print(f"enabled={str(req.get('enabled', True)).lower()}")
+          PY
+          cat "$GITHUB_OUTPUT"
+
   device:
-    runs-on: ${{ github.event.inputs.runner || 'macos-26' }}
+    needs: config
+    if: needs.config.outputs.enabled == 'true'
+    runs-on: ${{ needs.config.outputs.runner }}
     timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
@@ -50,7 +105,7 @@ jobs:
             echo "## device-evidence runner (evidence source 1)"
             echo
             echo '```'
-            echo "runner label: ${{ github.event.inputs.runner || 'macos-26' }}"
+            echo "runner label: ${{ needs.config.outputs.runner }}"
             echo "image version: ${ImageVersion:-unknown}"
             sw_vers
             echo "aa: $(which aa || echo 'NOT FOUND')"
@@ -67,9 +122,9 @@ jobs:
       - name: Resolve the OTA
         id: resolve
         env:
-          DEVICE: ${{ github.event.inputs.device || 'AppleTV14,1' }}
-          WANT_BUILD: ${{ github.event.inputs.tvos_build }}
-          WANT_VER: ${{ github.event.inputs.tvos_version }}
+          DEVICE: ${{ needs.config.outputs.device }}
+          WANT_BUILD: ${{ needs.config.outputs.tvos_build }}
+          WANT_VER: ${{ needs.config.outputs.tvos_version }}
         run: |
           set -euo pipefail
           ARGS=(--platform tvos --device "$DEVICE" --json)
@@ -117,7 +172,7 @@ jobs:
 
       - name: Extract the dyld shared cache
         env:
-          ARCH: ${{ github.event.inputs.dyld_arch || 'arm64e' }}
+          ARCH: ${{ needs.config.outputs.dyld_arch }}
         run: |
           set -euo pipefail
           # decrypt the AppleEncryptedArchive wrapper (key comes from Apple)
@@ -141,11 +196,10 @@ jobs:
             CACHE=$(find /tmp/dsc -type f -name 'dyld_shared_cache_*' | sort | head -1)
           fi
           echo "using cache: $CACHE"
-          LABEL='${{ steps.resolve.outputs.build }}'
-          python3 scripts/runner/device_evidence.py "$CACHE" "$LABEL"
+          python3 scripts/runner/device_evidence.py "$CACHE" '${{ steps.resolve.outputs.build }}'
 
       - name: Commit derived evidence
         run: |
           ./scripts/runner/commit_outputs.sh \
-            "${{ github.event.inputs.outputs_branch || 'outputs' }}" \
-            "device-evidence: tvOS ${{ steps.resolve.outputs.version }} (${{ steps.resolve.outputs.build }}) ${{ github.event.inputs.device || 'AppleTV14,1' }}"
+            '${{ needs.config.outputs.outputs_branch }}' \
+            'device-evidence: tvOS ${{ steps.resolve.outputs.version }} (${{ steps.resolve.outputs.build }}) ${{ needs.config.outputs.device }}'

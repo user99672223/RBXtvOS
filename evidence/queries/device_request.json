@@ -1,0 +1,43 @@
+{
+  "_comment": [
+    "Request for the device-evidence workflow (CLAUDE.md evidence source 1).",
+    "workflow_dispatch only reaches workflows present on the repository's",
+    "default branch, and this session's GitHub proxy refuses repository",
+    "settings writes, so the default branch cannot be moved to the working",
+    "branch. The workflow is therefore triggered by pushing a change to this",
+    "file, which also puts every run's parameters under version control.",
+    "Bump 'nonce' and push to request another run; set 'enabled' false to",
+    "stop the workflow from running on unrelated pushes to its own sources."
+  ],
+  "enabled": true,
+  "nonce": 1,
+  "runner": "macos-26",
+  "device": "AppleTV14,1",
+  "tvos_version": "27.2",
+  "tvos_build": "24K122",
+  "dyld_arch": "arm64e",
+  "outputs_branch": "outputs",
+  "_resolved_in_session": {
+    "comment": [
+      "Recorded in the session from gdmf.apple.com/v2/pmv and",
+      "gdmf.apple.com/v2/assets on 2026-11-02. The full SoftwareUpdate asset",
+      "was downloaded and its sha256 verified against what Apple advertises,",
+      "but its payloadv2 members use LZRaven (pbzm) compression, which no",
+      "Linux tool can decode, so extraction moves to the macOS runner."
+    ],
+    "latest_signed_tvos_for_device": "27.2 (24K122), posted 2026-10-26, expires 2027-01-31",
+    "ota_asset_type": "com.apple.MobileAsset.SoftwareUpdate",
+    "ota_delivery": "full",
+    "ota_download_size": 4966055936,
+    "ota_sha256": "b436615ce265a597cdaf2d78ff9b09acb54dced24b9e13bb14fb304845f85c9c",
+    "ota_info": {
+      "Version": "27.2",
+      "BuildVersion": "24K122",
+      "FileSystem": "141-10510-176.dmg",
+      "device": "Apple TV 4K (3rd generation)",
+      "board": "AppleTV14,1_J255AP_24K122",
+      "soc": "A15 Bionic (ARMv8.5-A), t8110",
+      "kernelcache": "kernelcache.release.j255"
+    }
+  }
+}
