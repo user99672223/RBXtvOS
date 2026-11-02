@@ -22,6 +22,18 @@
    "weak": false
   }
  ],
+ "rpaths": [
+  "@executable_path/Frameworks",
+  "@loader_path/Frameworks"
+ ],
+ "install_name": "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter",
+ "ordinal_table": {
+  "1": "/usr/lib/libc++.1.dylib",
+  "2": "/System/Library/Frameworks/Foundation.framework/Foundation",
+  "3": "/usr/lib/libobjc.A.dylib",
+  "4": "/usr/lib/libSystem.B.dylib",
+  "5": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+ },
  "imports": {
   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
    {
@@ -651,7 +663,7 @@
     "weak": false
    }
   ],
-  "<ordinal 0>": [
+  "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter": [
    {
     "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE11set_readingEb",
     "weak": true

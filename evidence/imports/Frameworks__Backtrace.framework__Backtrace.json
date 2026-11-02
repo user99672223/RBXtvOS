@@ -106,6 +106,43 @@
    "weak": true
   }
  ],
+ "rpaths": [
+  "/usr/lib/swift",
+  "@executable_path/Frameworks",
+  "@loader_path/Frameworks",
+  "@executable_path/../../Frameworks",
+  "@executable_path/Frameworks",
+  "@loader_path/Frameworks"
+ ],
+ "install_name": "@rpath/Backtrace.framework/Backtrace",
+ "ordinal_table": {
+  "1": "/usr/lib/libc++.1.dylib",
+  "2": "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter",
+  "3": "/System/Library/Frameworks/Foundation.framework/Foundation",
+  "4": "/usr/lib/libobjc.A.dylib",
+  "5": "/usr/lib/libSystem.B.dylib",
+  "6": "/System/Library/Frameworks/CoreData.framework/CoreData",
+  "7": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+  "8": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+  "9": "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+  "10": "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices",
+  "11": "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+  "12": "/System/Library/Frameworks/UIKit.framework/UIKit",
+  "13": "@rpath/libswiftCloudKit.dylib",
+  "14": "@rpath/libswiftCore.dylib",
+  "15": "@rpath/libswiftCoreData.dylib",
+  "16": "@rpath/libswiftCoreFoundation.dylib",
+  "17": "@rpath/libswiftCoreGraphics.dylib",
+  "18": "@rpath/libswiftCoreImage.dylib",
+  "19": "@rpath/libswiftCoreLocation.dylib",
+  "20": "@rpath/libswiftDarwin.dylib",
+  "21": "@rpath/libswiftDispatch.dylib",
+  "22": "@rpath/libswiftFoundation.dylib",
+  "23": "@rpath/libswiftMetal.dylib",
+  "24": "@rpath/libswiftObjectiveC.dylib",
+  "25": "@rpath/libswiftQuartzCore.dylib",
+  "26": "@rpath/libswiftUIKit.dylib"
+ },
  "imports": {
   "/System/Library/Frameworks/CoreData.framework/CoreData": [
    {
@@ -663,7 +700,7 @@
     "weak": true
    }
   ],
-  "<ordinal 0>": [
+  "@rpath/Backtrace.framework/Backtrace": [
    {
     "name": "___llvm_profile_filename",
     "weak": true

@@ -36,6 +36,7 @@ library	symbol	weak
 /System/Library/Frameworks/Foundation.framework/Foundation	_NSExtensionMain	0
 /System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSBundle	0
 /System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSFileManager	0
+/System/Library/Frameworks/Foundation.framework/Foundation	__swift_FORCE_LOAD_$_swiftFoundation	0
 /System/Library/Frameworks/SwiftUI.framework/SwiftUI	_$s4Body7SwiftUI12WidgetBundlePTl	1
 /System/Library/Frameworks/SwiftUI.framework/SwiftUI	_$s4Body7SwiftUI4ViewPTl	1
 /System/Library/Frameworks/SwiftUI.framework/SwiftUI	_$s4Body7SwiftUI6WidgetPTl	1
@@ -432,24 +433,23 @@ library	symbol	weak
 /usr/lib/swift/libswiftCore.dylib	_swift_unknownObjectRetain_n	0
 /usr/lib/swift/libswiftCore.dylib	_swift_willThrowTypedImpl	1
 /usr/lib/swift/libswiftCoreFoundation.dylib	_$s12CoreGraphics7CGFloatVMn	0
+/usr/lib/swift/libswiftCoreFoundation.dylib	__swift_FORCE_LOAD_$_swiftCoreFoundation	0
+/usr/lib/swift/libswiftCoreImage.dylib	__swift_FORCE_LOAD_$_swiftCoreImage	0
+/usr/lib/swift/libswiftCoreLocation.dylib	__swift_FORCE_LOAD_$_swiftCoreLocation	0
+/usr/lib/swift/libswiftDarwin.dylib	__swift_FORCE_LOAD_$_swift_Builtin_float	0
+/usr/lib/swift/libswiftDispatch.dylib	__swift_FORCE_LOAD_$_swiftDispatch	0
+/usr/lib/swift/libswiftIntents.dylib	__swift_FORCE_LOAD_$_swiftIntents	0
+/usr/lib/swift/libswiftMetal.dylib	__swift_FORCE_LOAD_$_swiftMetal	0
+/usr/lib/swift/libswiftOSLog.dylib	__swift_FORCE_LOAD_$_swiftOSLog	0
+/usr/lib/swift/libswiftObjectiveC.dylib	__swift_FORCE_LOAD_$_swiftObjectiveC	0
+/usr/lib/swift/libswiftQuartzCore.dylib	__swift_FORCE_LOAD_$_swiftQuartzCore	0
+/usr/lib/swift/libswiftSpatial.dylib	__swift_FORCE_LOAD_$_swiftSpatial	0
+/usr/lib/swift/libswiftUIKit.dylib	__swift_FORCE_LOAD_$_swiftUIKit	0
+/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib	__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers	0
+/usr/lib/swift/libswiftXPC.dylib	__swift_FORCE_LOAD_$_swiftXPC	0
 /usr/lib/swift/libswift_Concurrency.dylib	_swift_task_alloc	0
 /usr/lib/swift/libswift_Concurrency.dylib	_swift_task_dealloc	0
 /usr/lib/swift/libswiftos.dylib	_$s2os0A4_log_3dso0B0__ySo0a1_B7_type_ta_SVSo03OS_a1_B0Cs12StaticStringVs7CVarArg_pdtF	0
 /usr/lib/swift/libswiftos.dylib	_$sSo13os_log_type_ta0A0E5faultABvgZ	0
-<ordinal 10>	__swift_FORCE_LOAD_$_swiftCoreImage	0
-<ordinal 11>	__swift_FORCE_LOAD_$_swiftCoreLocation	0
-<ordinal 12>	__swift_FORCE_LOAD_$_swift_Builtin_float	0
-<ordinal 13>	__swift_FORCE_LOAD_$_swiftDispatch	0
-<ordinal 14>	__swift_FORCE_LOAD_$_swiftIntents	0
-<ordinal 15>	__swift_FORCE_LOAD_$_swiftMetal	0
-<ordinal 16>	__swift_FORCE_LOAD_$_swiftOSLog	0
-<ordinal 17>	__swift_FORCE_LOAD_$_swiftObjectiveC	0
-<ordinal 18>	__swift_FORCE_LOAD_$_swiftQuartzCore	0
-<ordinal 19>	__swift_FORCE_LOAD_$_swiftSpatial	0
-<ordinal 20>	__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers	0
-<ordinal 21>	__swift_FORCE_LOAD_$_swiftXPC	0
-<ordinal 23>	__swift_FORCE_LOAD_$_swiftos	0
-<ordinal 24>	__swift_FORCE_LOAD_$_swiftsimd	0
-<ordinal 25>	__swift_FORCE_LOAD_$_swiftUIKit	0
-<ordinal 3>	__swift_FORCE_LOAD_$_swiftFoundation	0
-<ordinal 9>	__swift_FORCE_LOAD_$_swiftCoreFoundation	0
+/usr/lib/swift/libswiftos.dylib	__swift_FORCE_LOAD_$_swiftos	0
+/usr/lib/swift/libswiftsimd.dylib	__swift_FORCE_LOAD_$_swiftsimd	0

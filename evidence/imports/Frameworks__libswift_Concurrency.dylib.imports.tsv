@@ -85,10 +85,6 @@ library	symbol	weak
 /usr/lib/libobjc.A.dylib	_objc_autoreleasePoolPop	0
 /usr/lib/libobjc.A.dylib	_objc_autoreleasePoolPush	0
 /usr/lib/libobjc.A.dylib	_objc_msgSendSuper2	0
-<ordinal 0>	__ZGVZN7__swift9__runtime4llvm7hashing6detail18get_execution_seedEvE4seed	1
-<ordinal 0>	__ZZN7__swift9__runtime4llvm7hashing6detail18get_execution_seedEvE4seed	1
-<ordinal 0>	__ZdlPv	1
-<ordinal 0>	__Znwm	1
 @rpath/libswiftCore.dylib	_$s8RawValueSYTl	0
 @rpath/libswiftCore.dylib	_$sBOWV	0
 @rpath/libswiftCore.dylib	_$sBi64_WV	0
@@ -238,3 +234,7 @@ library	symbol	weak
 @rpath/libswiftCore.dylib	_swift_unexpectedError	0
 @rpath/libswiftCore.dylib	_swift_unknownObjectRelease	0
 @rpath/libswiftCore.dylib	_swift_willThrow	0
+@rpath/libswift_Concurrency.dylib	__ZGVZN7__swift9__runtime4llvm7hashing6detail18get_execution_seedEvE4seed	1
+@rpath/libswift_Concurrency.dylib	__ZZN7__swift9__runtime4llvm7hashing6detail18get_execution_seedEvE4seed	1
+@rpath/libswift_Concurrency.dylib	__ZdlPv	1
+@rpath/libswift_Concurrency.dylib	__Znwm	1

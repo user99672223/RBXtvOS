@@ -102,6 +102,39 @@
    "weak": true
   }
  ],
+ "rpaths": [
+  "/usr/lib/swift",
+  "@executable_path/Frameworks",
+  "@executable_path/../../Frameworks"
+ ],
+ "install_name": null,
+ "ordinal_table": {
+  "1": "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+  "2": "/System/Library/Frameworks/WidgetKit.framework/WidgetKit",
+  "3": "/System/Library/Frameworks/Foundation.framework/Foundation",
+  "4": "/usr/lib/libobjc.A.dylib",
+  "5": "/usr/lib/libSystem.B.dylib",
+  "6": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+  "7": "/System/Library/Frameworks/UIKit.framework/UIKit",
+  "8": "/usr/lib/swift/libswiftCore.dylib",
+  "9": "/usr/lib/swift/libswiftCoreFoundation.dylib",
+  "10": "/usr/lib/swift/libswiftCoreImage.dylib",
+  "11": "/usr/lib/swift/libswiftCoreLocation.dylib",
+  "12": "/usr/lib/swift/libswiftDarwin.dylib",
+  "13": "/usr/lib/swift/libswiftDispatch.dylib",
+  "14": "/usr/lib/swift/libswiftIntents.dylib",
+  "15": "/usr/lib/swift/libswiftMetal.dylib",
+  "16": "/usr/lib/swift/libswiftOSLog.dylib",
+  "17": "/usr/lib/swift/libswiftObjectiveC.dylib",
+  "18": "/usr/lib/swift/libswiftQuartzCore.dylib",
+  "19": "/usr/lib/swift/libswiftSpatial.dylib",
+  "20": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+  "21": "/usr/lib/swift/libswiftXPC.dylib",
+  "22": "/usr/lib/swift/libswift_Concurrency.dylib",
+  "23": "/usr/lib/swift/libswiftos.dylib",
+  "24": "/usr/lib/swift/libswiftsimd.dylib",
+  "25": "/usr/lib/swift/libswiftUIKit.dylib"
+ },
  "imports": {
   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
    {
@@ -252,6 +285,10 @@
    },
    {
     "name": "_OBJC_CLASS_$_NSFileManager",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftFoundation",
     "weak": false
    }
   ],
@@ -1851,6 +1888,88 @@
    {
     "name": "_$s12CoreGraphics7CGFloatVMn",
     "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftCoreImage.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreImage",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftCoreLocation.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreLocation",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftDarwin.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swift_Builtin_float",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftDispatch.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftDispatch",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftIntents.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftIntents",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftMetal.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftMetal",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftOSLog.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftOSLog",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftObjectiveC.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftQuartzCore.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftQuartzCore",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftSpatial.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftSpatial",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftUIKit.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftUIKit",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftXPC.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftXPC",
+    "weak": false
    }
   ],
   "/usr/lib/swift/libswift_Concurrency.dylib": [
@@ -1871,107 +1990,15 @@
    {
     "name": "_$sSo13os_log_type_ta0A0E5faultABvgZ",
     "weak": false
-   }
-  ],
-  "<ordinal 10>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftCoreImage",
-    "weak": false
-   }
-  ],
-  "<ordinal 11>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftCoreLocation",
-    "weak": false
-   }
-  ],
-  "<ordinal 12>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swift_Builtin_float",
-    "weak": false
-   }
-  ],
-  "<ordinal 13>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftDispatch",
-    "weak": false
-   }
-  ],
-  "<ordinal 14>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftIntents",
-    "weak": false
-   }
-  ],
-  "<ordinal 15>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftMetal",
-    "weak": false
-   }
-  ],
-  "<ordinal 16>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftOSLog",
-    "weak": false
-   }
-  ],
-  "<ordinal 17>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
-    "weak": false
-   }
-  ],
-  "<ordinal 18>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftQuartzCore",
-    "weak": false
-   }
-  ],
-  "<ordinal 19>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftSpatial",
-    "weak": false
-   }
-  ],
-  "<ordinal 20>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers",
-    "weak": false
-   }
-  ],
-  "<ordinal 21>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftXPC",
-    "weak": false
-   }
-  ],
-  "<ordinal 23>": [
+   },
    {
     "name": "__swift_FORCE_LOAD_$_swiftos",
     "weak": false
    }
   ],
-  "<ordinal 24>": [
+  "/usr/lib/swift/libswiftsimd.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftsimd",
-    "weak": false
-   }
-  ],
-  "<ordinal 25>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftUIKit",
-    "weak": false
-   }
-  ],
-  "<ordinal 3>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftFoundation",
-    "weak": false
-   }
-  ],
-  "<ordinal 9>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
     "weak": false
    }
   ]

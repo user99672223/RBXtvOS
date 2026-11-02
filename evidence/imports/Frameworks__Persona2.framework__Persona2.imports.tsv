@@ -799,6 +799,8 @@ library	symbol	weak
 /usr/lib/swift/libswiftAVFoundation.dylib	_$sSo20AVAssetExportSessionC12AVFoundationE6export2to2as9isolationy10Foundation3URLV_So10AVFileTypeaScA_pSgYitYaKF	1
 /usr/lib/swift/libswiftAVFoundation.dylib	_$sSo20AVAssetExportSessionC12AVFoundationE6export2to2as9isolationy10Foundation3URLV_So10AVFileTypeaScA_pSgYitYaKFTu	1
 /usr/lib/swift/libswiftAVFoundation.dylib	_$sSo20AVCapturePhotoOutputC12AVFoundationE19supportedFlashModesSaySo0aF4ModeVGvg	0
+/usr/lib/swift/libswiftAVFoundation.dylib	__swift_FORCE_LOAD_$_swiftAVFoundation	0
+/usr/lib/swift/libswiftCompression.dylib	__swift_FORCE_LOAD_$_swiftCompression	0
 /usr/lib/swift/libswiftCore.dylib	_$s15_ObjectiveCTypes01_A11CBridgeablePTl	0
 /usr/lib/swift/libswiftCore.dylib	_$s16FloatLiteralTypes013ExpressibleByaB0PTl	0
 /usr/lib/swift/libswiftCore.dylib	_$s17StringLiteralTypes013ExpressibleByaB0PTl	0
@@ -1461,11 +1463,13 @@ library	symbol	weak
 /usr/lib/swift/libswiftCore.dylib	_swift_weakLoadStrong	0
 /usr/lib/swift/libswiftCore.dylib	_swift_willThrow	0
 /usr/lib/swift/libswiftCore.dylib	_swift_willThrowTypedImpl	1
+/usr/lib/swift/libswiftCoreAudio.dylib	__swift_FORCE_LOAD_$_swiftCoreAudio	0
 /usr/lib/swift/libswiftCoreFoundation.dylib	_$s14CoreFoundation9_CFObjectMp	0
 /usr/lib/swift/libswiftCoreFoundation.dylib	_$s14CoreFoundation9_CFObjectPAAE2eeoiySbx_xtFZ	0
 /usr/lib/swift/libswiftCoreFoundation.dylib	_$s14CoreFoundation9_CFObjectPAAE4hash4intoys6HasherVz_tF	0
 /usr/lib/swift/libswiftCoreFoundation.dylib	_$s14CoreFoundation9_CFObjectPAAE9hashValueSivg	0
 /usr/lib/swift/libswiftCoreFoundation.dylib	_$s14CoreFoundation9_CFObjectPSHTb	0
+/usr/lib/swift/libswiftCoreFoundation.dylib	__swift_FORCE_LOAD_$_swiftCoreFoundation	0
 /usr/lib/swift/libswiftCoreGraphics.dylib	_$s12CoreGraphics14CGPathFillRuleO7windingyA2CmFWC	0
 /usr/lib/swift/libswiftCoreGraphics.dylib	_$s12CoreGraphics14CGPathFillRuleOMa	0
 /usr/lib/swift/libswiftCoreGraphics.dylib	_$s12CoreGraphics7CGFloatVMn	0
@@ -1488,13 +1492,27 @@ library	symbol	weak
 /usr/lib/swift/libswiftCoreGraphics.dylib	_$sSo6CGSizeVSE12CoreGraphicsMc	0
 /usr/lib/swift/libswiftCoreGraphics.dylib	_$sSo7CGPointVSE12CoreGraphicsMc	0
 /usr/lib/swift/libswiftCoreGraphics.dylib	_$sSo7CGPointVSe12CoreGraphicsMc	0
+/usr/lib/swift/libswiftCoreImage.dylib	__swift_FORCE_LOAD_$_swiftCoreImage	0
+/usr/lib/swift/libswiftCoreLocation.dylib	__swift_FORCE_LOAD_$_swiftCoreLocation	0
+/usr/lib/swift/libswiftCoreMIDI.dylib	__swift_FORCE_LOAD_$_swiftCoreMIDI	0
 /usr/lib/swift/libswiftCoreMedia.dylib	_$sSo6CMTimea9CoreMediaE7isValidSbvg	0
 /usr/lib/swift/libswiftCoreMedia.dylib	_$sSo6CMTimea9CoreMediaE7secondsSdvg	0
+/usr/lib/swift/libswiftCoreMedia.dylib	__swift_FORCE_LOAD_$_swiftCoreMedia	0
 /usr/lib/swift/libswiftDarwin.dylib	_$s6Darwin5noErrs5Int32Vvg	0
 /usr/lib/swift/libswiftDarwin.dylib	_$s6Darwin6S_IFMTs6UInt16Vvg	0
 /usr/lib/swift/libswiftDarwin.dylib	_$s6Darwin7S_IFDIRs6UInt16Vvg	0
 /usr/lib/swift/libswiftDarwin.dylib	_$s6Darwin7S_IFLNKs6UInt16Vvg	0
 /usr/lib/swift/libswiftDarwin.dylib	_$s6Darwin7S_IFREGs6UInt16Vvg	0
+/usr/lib/swift/libswiftDarwin.dylib	__swift_FORCE_LOAD_$_swiftDarwin	0
+/usr/lib/swift/libswiftDarwin.dylib	__swift_FORCE_LOAD_$_swift_Builtin_float	0
+/usr/lib/swift/libswiftDarwin.dylib	__swift_FORCE_LOAD_$_swift_errno	0
+/usr/lib/swift/libswiftDarwin.dylib	__swift_FORCE_LOAD_$_swift_math	0
+/usr/lib/swift/libswiftDarwin.dylib	__swift_FORCE_LOAD_$_swift_signal	0
+/usr/lib/swift/libswiftDarwin.dylib	__swift_FORCE_LOAD_$_swift_stdio	0
+/usr/lib/swift/libswiftDarwin.dylib	__swift_FORCE_LOAD_$_swift_time	0
+/usr/lib/swift/libswiftDarwin.dylib	__swift_FORCE_LOAD_$_swiftsys_time	0
+/usr/lib/swift/libswiftDarwin.dylib	__swift_FORCE_LOAD_$_swiftunistd	0
+/usr/lib/swift/libswiftDataDetection.dylib	__swift_FORCE_LOAD_$_swiftDataDetection	0
 /usr/lib/swift/libswiftDispatch.dylib	_$s8Dispatch0A12TimeIntervalO7secondsyACSicACmFWC	0
 /usr/lib/swift/libswiftDispatch.dylib	_$s8Dispatch0A12TimeIntervalOMa	0
 /usr/lib/swift/libswiftDispatch.dylib	_$s8Dispatch0A13WorkItemFlagsVMa	0
@@ -1531,6 +1549,8 @@ library	symbol	weak
 /usr/lib/swift/libswiftDispatch.dylib	_$sSo17OS_dispatch_queueC8DispatchE5async5group3qos5flags7executeySo0a1_b1_F0CSg_AC0D3QoSVAC0D13WorkItemFlagsVyyXBtF	0
 /usr/lib/swift/libswiftDispatch.dylib	_$sSo17OS_dispatch_queueC8DispatchE5label3qos10attributes20autoreleaseFrequency6targetABSS_AC0D3QoSVAbCE10AttributesVAbCE011AutoreleaseI0OABSgtcfC	0
 /usr/lib/swift/libswiftDispatch.dylib	_$sSo17OS_dispatch_queueC8DispatchE6global3qosAbC0D3QoSV0G6SClassO_tFZ	0
+/usr/lib/swift/libswiftDispatch.dylib	__swift_FORCE_LOAD_$_swiftDispatch	0
+/usr/lib/swift/libswiftFileProvider.dylib	__swift_FORCE_LOAD_$_swiftFileProvider	0
 /usr/lib/swift/libswiftFoundation.dylib	_$s10Foundation10CocoaErrorV03_nsC0So7NSErrorCvg	0
 /usr/lib/swift/libswiftFoundation.dylib	_$s10Foundation10CocoaErrorV4CodeV14fileNoSuchFileAEvgZ	0
 /usr/lib/swift/libswiftFoundation.dylib	_$s10Foundation10CocoaErrorV4CodeV18fileReadNoSuchFileAEvgZ	0
@@ -1829,14 +1849,21 @@ library	symbol	weak
 /usr/lib/swift/libswiftFoundation.dylib	_$ss5ErrorP10FoundationAC13CustomNSErrorRzrlE5_codeSivg	0
 /usr/lib/swift/libswiftFoundation.dylib	_$ss5ErrorP10FoundationAC13CustomNSErrorRzrlE7_domainSSvg	0
 /usr/lib/swift/libswiftFoundation.dylib	_$ss5ErrorP10FoundationE20localizedDescriptionSSvg	0
+/usr/lib/swift/libswiftFoundation.dylib	__swift_FORCE_LOAD_$_swiftFoundation	0
+/usr/lib/swift/libswiftMetal.dylib	__swift_FORCE_LOAD_$_swiftMetal	0
+/usr/lib/swift/libswiftMetalKit.dylib	__swift_FORCE_LOAD_$_swiftMetalKit	0
+/usr/lib/swift/libswiftModelIO.dylib	__swift_FORCE_LOAD_$_swiftModelIO	0
 /usr/lib/swift/libswiftOSLog.dylib	_$sSo10OSLogStoreC0A0E10getEntries4with2at8matchings11AnySequenceVySo0A5EntryCGSo0A17EnumeratorOptionsV_So0A8PositionCSgSo11NSPredicateCSgtKF	1
+/usr/lib/swift/libswiftOSLog.dylib	__swift_FORCE_LOAD_$_swiftOSLog	0
 /usr/lib/swift/libswiftObjectiveC.dylib	_$s10ObjectiveC8ObjCBoolVMn	0
 /usr/lib/swift/libswiftObjectiveC.dylib	_$sSo8NSObjectC10ObjectiveCE13_rawHashValue4seedS2i_tF	0
 /usr/lib/swift/libswiftObjectiveC.dylib	_$sSo8NSObjectC10ObjectiveCE2eeoiySbAB_ABtFZ	0
 /usr/lib/swift/libswiftObjectiveC.dylib	_$sSo8NSObjectC10ObjectiveCE4hash4intoys6HasherVz_tF	0
 /usr/lib/swift/libswiftObjectiveC.dylib	_$sSo8NSObjectC10ObjectiveCE9hashValueSivg	0
 /usr/lib/swift/libswiftObjectiveC.dylib	_$sSo8NSObjectCSH10ObjectiveCMc	0
+/usr/lib/swift/libswiftObjectiveC.dylib	__swift_FORCE_LOAD_$_swiftObjectiveC	0
 /usr/lib/swift/libswiftObservation.dylib	_$s11Observation10ObservableMp	1
+/usr/lib/swift/libswiftPassKit.dylib	__swift_FORCE_LOAD_$_swiftPassKit	0
 /usr/lib/swift/libswiftPhotosUI.dylib	_$s8PhotosUI14PHPickerFilterV6imagesACvgZ	1
 /usr/lib/swift/libswiftPhotosUI.dylib	_$s8PhotosUI14PHPickerFilterVMa	1
 /usr/lib/swift/libswiftPhotosUI.dylib	_$s8PhotosUI14PHPickerFilterVMn	1
@@ -1851,6 +1878,8 @@ library	symbol	weak
 /usr/lib/swift/libswiftPhotosUI.dylib	_$sSo22PHPickerViewControllerC8PhotosUIE13configurationAbC0A13ConfigurationV_tcfC	1
 /usr/lib/swift/libswiftPhotosUI.dylib	_$sSo22PHPickerViewControllerC8PhotosUIE8delegateAC0abC8Delegate_pSgvs	1
 /usr/lib/swift/libswiftQuartzCore.dylib	_$sSo13CATransform3DV10QuartzCoreE19_bridgeToObjectiveCSo7NSValueCyF	0
+/usr/lib/swift/libswiftQuartzCore.dylib	__swift_FORCE_LOAD_$_swiftQuartzCore	0
+/usr/lib/swift/libswiftSpatial.dylib	__swift_FORCE_LOAD_$_swiftSpatial	0
 /usr/lib/swift/libswiftUIKit.dylib	_$s10Foundation9IndexPathV5UIKitE3row7sectionACSi_SitcfC	0
 /usr/lib/swift/libswiftUIKit.dylib	_$s10Foundation9IndexPathV5UIKitE3rowSivg	0
 /usr/lib/swift/libswiftUIKit.dylib	_$s10Foundation9IndexPathV5UIKitE4itemSivg	0
@@ -1864,13 +1893,16 @@ library	symbol	weak
 /usr/lib/swift/libswiftUIKit.dylib	_$sSo8UIButtonC5UIKitE13ConfigurationVMa	1
 /usr/lib/swift/libswiftUIKit.dylib	_$sSo8UIButtonC5UIKitE13ConfigurationVMn	1
 /usr/lib/swift/libswiftUIKit.dylib	_$sSo8UIButtonC5UIKitE13configurationAbCE13ConfigurationVSgvs	1
+/usr/lib/swift/libswiftUIKit.dylib	__swift_FORCE_LOAD_$_swiftUIKit	0
 /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib	_$s22UniformTypeIdentifiers6UTTypeV17filenameExtension12conformingToACSgSS_ACtcfC	1
 /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib	_$s22UniformTypeIdentifiers6UTTypeV17preferredMIMETypeSSSgvg	1
 /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib	_$s22UniformTypeIdentifiers6UTTypeV4dataACvgZ	1
 /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib	_$s22UniformTypeIdentifiers6UTTypeV4jpegACvgZ	1
 /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib	_$s22UniformTypeIdentifiers6UTTypeVMa	1
 /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib	_$s22UniformTypeIdentifiers6UTTypeVMn	1
+/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib	__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers	0
 /usr/lib/swift/libswiftVision.dylib	_$sSo22VNFaceLandmarkRegion2DC6VisionE13pointsInImage9imageSizeSaySo7CGPointVGSo6CGSizeV_tF	0
+/usr/lib/swift/libswiftXPC.dylib	__swift_FORCE_LOAD_$_swiftXPC	0
 /usr/lib/swift/libswiftos.dylib	_$s2os0A4_log_3dso0B04type_ys12StaticStringV_SVSgSo03OS_a1_B0CSo0a1_b1_D2_tas7CVarArg_pdtF	0
 /usr/lib/swift/libswiftos.dylib	_$sSo13os_log_type_ta0A0E4infoABvgZ	0
 /usr/lib/swift/libswiftos.dylib	_$sSo13os_log_type_ta0A0E5debugABvgZ	0
@@ -1878,42 +1910,10 @@ library	symbol	weak
 /usr/lib/swift/libswiftos.dylib	_$sSo13os_log_type_ta0A0E5faultABvgZ	0
 /usr/lib/swift/libswiftos.dylib	_$sSo13os_log_type_ta0A0E7defaultABvgZ	0
 /usr/lib/swift/libswiftos.dylib	_$sSo9OS_os_logC0B0E9subsystem8categoryABSS_SStcfC	0
-<ordinal 0>	__ZdlPv	1
-<ordinal 0>	__Znwm	1
-<ordinal 39>	__swift_FORCE_LOAD_$_swiftAVFoundation	0
-<ordinal 40>	__swift_FORCE_LOAD_$_swiftCompression	0
-<ordinal 42>	__swift_FORCE_LOAD_$_swiftCoreAudio	0
-<ordinal 43>	__swift_FORCE_LOAD_$_swiftCoreFoundation	0
-<ordinal 44>	__swift_FORCE_LOAD_$_swiftCoreImage	0
-<ordinal 45>	__swift_FORCE_LOAD_$_swiftCoreLocation	0
-<ordinal 46>	__swift_FORCE_LOAD_$_swiftCoreMIDI	0
-<ordinal 47>	__swift_FORCE_LOAD_$_swiftCoreMedia	0
-<ordinal 48>	__swift_FORCE_LOAD_$_swiftDarwin	0
-<ordinal 48>	__swift_FORCE_LOAD_$_swift_Builtin_float	0
-<ordinal 48>	__swift_FORCE_LOAD_$_swift_errno	0
-<ordinal 48>	__swift_FORCE_LOAD_$_swift_math	0
-<ordinal 48>	__swift_FORCE_LOAD_$_swift_signal	0
-<ordinal 48>	__swift_FORCE_LOAD_$_swift_stdio	0
-<ordinal 48>	__swift_FORCE_LOAD_$_swift_time	0
-<ordinal 48>	__swift_FORCE_LOAD_$_swiftsys_time	0
-<ordinal 48>	__swift_FORCE_LOAD_$_swiftunistd	0
-<ordinal 49>	__swift_FORCE_LOAD_$_swiftDataDetection	0
-<ordinal 50>	__swift_FORCE_LOAD_$_swiftDispatch	0
-<ordinal 51>	__swift_FORCE_LOAD_$_swiftFileProvider	0
-<ordinal 52>	__swift_FORCE_LOAD_$_swiftMetal	0
-<ordinal 53>	__swift_FORCE_LOAD_$_swiftMetalKit	0
-<ordinal 54>	__swift_FORCE_LOAD_$_swiftModelIO	0
-<ordinal 55>	__swift_FORCE_LOAD_$_swiftOSLog	0
-<ordinal 56>	__swift_FORCE_LOAD_$_swiftObjectiveC	0
-<ordinal 58>	__swift_FORCE_LOAD_$_swiftPassKit	0
-<ordinal 59>	__swift_FORCE_LOAD_$_swiftQuartzCore	0
-<ordinal 60>	__swift_FORCE_LOAD_$_swiftSpatial	0
-<ordinal 61>	__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers	0
-<ordinal 62>	__swift_FORCE_LOAD_$_swiftXPC	0
-<ordinal 63>	__swift_FORCE_LOAD_$_swiftos	0
-<ordinal 64>	__swift_FORCE_LOAD_$_swiftsimd	0
-<ordinal 66>	__swift_FORCE_LOAD_$_swiftFoundation	0
-<ordinal 67>	__swift_FORCE_LOAD_$_swiftUIKit	0
+/usr/lib/swift/libswiftos.dylib	__swift_FORCE_LOAD_$_swiftos	0
+/usr/lib/swift/libswiftsimd.dylib	__swift_FORCE_LOAD_$_swiftsimd	0
+@rpath/Persona2.framework/Persona2	__ZdlPv	1
+@rpath/Persona2.framework/Persona2	__Znwm	1
 @rpath/libswift_Concurrency.dylib	_$sScA15unownedExecutorScevgTj	1
 @rpath/libswift_Concurrency.dylib	_$sScA15unownedExecutorScevgTq	1
 @rpath/libswift_Concurrency.dylib	_$sScAMp	1

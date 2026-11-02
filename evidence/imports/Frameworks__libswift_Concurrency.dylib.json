@@ -22,6 +22,15 @@
    "weak": false
   }
  ],
+ "rpaths": [],
+ "install_name": "@rpath/libswift_Concurrency.dylib",
+ "ordinal_table": {
+  "1": "/usr/lib/libobjc.A.dylib",
+  "2": "/usr/lib/libc++.1.dylib",
+  "3": "/usr/lib/libSystem.B.dylib",
+  "4": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+  "5": "@rpath/libswiftCore.dylib"
+ },
  "imports": {
   "/usr/lib/libSystem.B.dylib": [
    {
@@ -371,24 +380,6 @@
    {
     "name": "_objc_msgSendSuper2",
     "weak": false
-   }
-  ],
-  "<ordinal 0>": [
-   {
-    "name": "__ZGVZN7__swift9__runtime4llvm7hashing6detail18get_execution_seedEvE4seed",
-    "weak": true
-   },
-   {
-    "name": "__ZZN7__swift9__runtime4llvm7hashing6detail18get_execution_seedEvE4seed",
-    "weak": true
-   },
-   {
-    "name": "__ZdlPv",
-    "weak": true
-   },
-   {
-    "name": "__Znwm",
-    "weak": true
    }
   ],
   "@rpath/libswiftCore.dylib": [
@@ -987,6 +978,24 @@
    {
     "name": "_swift_willThrow",
     "weak": false
+   }
+  ],
+  "@rpath/libswift_Concurrency.dylib": [
+   {
+    "name": "__ZGVZN7__swift9__runtime4llvm7hashing6detail18get_execution_seedEvE4seed",
+    "weak": true
+   },
+   {
+    "name": "__ZZN7__swift9__runtime4llvm7hashing6detail18get_execution_seedEvE4seed",
+    "weak": true
+   },
+   {
+    "name": "__ZdlPv",
+    "weak": true
+   },
+   {
+    "name": "__Znwm",
+    "weak": true
    }
   ]
  },

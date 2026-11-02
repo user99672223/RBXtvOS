@@ -2,46 +2,55 @@
  "Frameworks/Backtrace.framework/Backtrace": {
   "install_name": "@rpath/Backtrace.framework/Backtrace",
   "exports": 335,
+  "source": "export_trie",
   "file": "Frameworks__Backtrace.framework__Backtrace.txt"
  },
  "Frameworks/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter": {
   "install_name": "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter",
   "exports": 340,
+  "source": "export_trie",
   "file": "Frameworks__Backtrace_PLCrashReporter.framework__Backtrace_PLCrashReporter.txt"
  },
  "Frameworks/Persona2.framework/Persona2": {
   "install_name": "@rpath/Persona2.framework/Persona2",
-  "exports": 248,
+  "exports": 4060,
+  "source": "export_trie",
   "file": "Frameworks__Persona2.framework__Persona2.txt"
  },
  "Frameworks/Reaper.framework/Reaper": {
   "install_name": "@rpath/Reaper.framework/Reaper",
   "exports": 19,
+  "source": "export_trie",
   "file": "Frameworks__Reaper.framework__Reaper.txt"
  },
  "Frameworks/RobloxLib.framework/RobloxLib": {
   "install_name": "@rpath/RobloxLib.framework/RobloxLib",
   "exports": 11374,
+  "source": "export_trie",
   "file": "Frameworks__RobloxLib.framework__RobloxLib.txt"
  },
  "Frameworks/libswift_Concurrency.dylib": {
   "install_name": "@rpath/libswift_Concurrency.dylib",
-  "exports": 251,
+  "exports": 966,
+  "source": "export_trie",
   "file": "Frameworks__libswift_Concurrency.dylib.txt"
  },
  "PlugIns/RBNotificationServiceExtension.appex/RBNotificationServiceExtension": {
   "install_name": null,
   "exports": 1,
+  "source": "export_trie",
   "file": "PlugIns__RBNotificationServiceExtension.appex__RBNotificationServiceExtension.txt"
  },
  "PlugIns/RBWidgetExtension.appex/RBWidgetExtension": {
   "install_name": null,
-  "exports": 4,
+  "exports": 58,
+  "source": "export_trie",
   "file": "PlugIns__RBWidgetExtension.appex__RBWidgetExtension.txt"
  },
  "Roblox": {
   "install_name": null,
   "exports": 1,
+  "source": "export_trie",
   "file": "Roblox.txt"
  }
 }

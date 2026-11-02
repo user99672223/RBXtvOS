@@ -87,15 +87,15 @@ library	symbol	weak
 /usr/lib/swift/libswiftCore.dylib	_swift_getTypeName	0
 /usr/lib/swift/libswiftCore.dylib	_swift_getWitnessTable	0
 /usr/lib/swift/libswiftCore.dylib	_swift_once	0
+/usr/lib/swift/libswiftCoreFoundation.dylib	__swift_FORCE_LOAD_$_swiftCoreFoundation	0
+/usr/lib/swift/libswiftDarwin.dylib	__swift_FORCE_LOAD_$_swift_Builtin_float	0
+/usr/lib/swift/libswiftDispatch.dylib	__swift_FORCE_LOAD_$_swiftDispatch	0
 /usr/lib/swift/libswiftFoundation.dylib	_$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF	0
 /usr/lib/swift/libswiftFoundation.dylib	_$sSS10FoundationE5bytes8encodingSSSgxh_SSAAE8EncodingVtcSTRzs5UInt8V7ElementRtzlufC	0
 /usr/lib/swift/libswiftFoundation.dylib	_$sSS10FoundationE8EncodingV4utf8ACvgZ	0
 /usr/lib/swift/libswiftFoundation.dylib	_$sSS10FoundationE8EncodingVMa	0
-<ordinal 0>	__ZdlPv	1
-<ordinal 0>	__Znwm	1
-<ordinal 10>	__swift_FORCE_LOAD_$_swiftDispatch	0
-<ordinal 11>	__swift_FORCE_LOAD_$_swiftObjectiveC	0
-<ordinal 12>	__swift_FORCE_LOAD_$_swiftXPC	0
-<ordinal 13>	__swift_FORCE_LOAD_$_swiftFoundation	0
-<ordinal 8>	__swift_FORCE_LOAD_$_swiftCoreFoundation	0
-<ordinal 9>	__swift_FORCE_LOAD_$_swift_Builtin_float	0
+/usr/lib/swift/libswiftFoundation.dylib	__swift_FORCE_LOAD_$_swiftFoundation	0
+/usr/lib/swift/libswiftObjectiveC.dylib	__swift_FORCE_LOAD_$_swiftObjectiveC	0
+/usr/lib/swift/libswiftXPC.dylib	__swift_FORCE_LOAD_$_swiftXPC	0
+@rpath/Reaper.framework/Reaper	__ZdlPv	1
+@rpath/Reaper.framework/Reaper	__Znwm	1
