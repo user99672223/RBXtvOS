@@ -38,1171 +38,939 @@
   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
    {
     "name": "_CFRelease",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_CFUUIDCreate",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_CFUUIDCreateFromUUIDBytes",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_CFUUIDCreateString",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_CFUUIDGetUUIDBytes",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSData",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSDate",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSDictionary",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSException",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSMutableArray",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSMutableDictionary",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSMutableSet",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "___CFConstantStringClassReference",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_kCFBundleVersionKey",
-    "weak": false,
-    "lazy": false
+    "weak": false
    }
   ],
   "/System/Library/Frameworks/Foundation.framework/Foundation": [
    {
     "name": "_NSFilePosixPermissions",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_NSLocalizedDescriptionKey",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_NSLog",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_NSMachErrorDomain",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_NSPOSIXErrorDomain",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_NSSearchPathForDirectoriesInDomains",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_NSSetUncaughtExceptionHandler",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_NSTemporaryDirectory",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_NSUnderlyingErrorKey",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSBundle",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSError",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSFileManager",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSMutableString",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSNumber",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSProcessInfo",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSScanner",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSString",
-    "weak": false,
-    "lazy": false
+    "weak": false
    }
   ],
   "/usr/lib/libSystem.B.dylib": [
    {
     "name": "_NDR_record",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OSAtomicCompareAndSwap32",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_OSAtomicCompareAndSwap32Barrier",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_OSAtomicCompareAndSwapPtrBarrier",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_OSAtomicDecrement32Barrier",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_OSAtomicIncrement32Barrier",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_OSMemoryBarrier",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_OSSpinLockLock",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_OSSpinLockUnlock",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "__NSGetExecutablePath",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "___assert_rtn",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "___cxa_atexit",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "___error",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "___memcpy_chk",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "___stack_chk_fail",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "___stack_chk_guard",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "___stderrp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "__dyld_register_func_for_add_image",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "__dyld_register_func_for_remove_image",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_abort",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_atexit",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_atoi",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_bzero",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_calloc",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_close",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_dladdr",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_exception_raise",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_exception_raise_state",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_exception_raise_state_identity",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_exit",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fclose",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fcntl",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fdopen",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fflush",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fileno",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fopen",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fprintf",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_free",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_fseek",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_ftell",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_ftello",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_ftruncate",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fwrite",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_getenv",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_getpid",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_getprogname",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_make_memory_entry_64",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_msg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_msg_destroy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_port_allocate",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_port_deallocate",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_port_insert_right",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_port_mod_refs",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_port_move_member",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_port_request_notification",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_task_self_",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_mach_thread_self",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_malloc",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_memcpy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_memmove",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mig_dealloc_reply_port",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mig_get_reply_port",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mig_put_reply_port",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mkdir",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mkstemp",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mmap",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_munmap",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_open",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_attr_destroy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_attr_init",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_attr_setdetachstate",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_cond_destroy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_cond_init",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_cond_signal",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_cond_wait",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_create",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_mach_thread_np",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_mutex_destroy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_mutex_init",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_mutex_lock",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_mutex_unlock",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_raise",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_setenv",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_sigaction",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_sigaltstack",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_snprintf",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strchr",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strcmp",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strdup",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strerror",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strlen",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strncpy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_sysctl",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_sysctlbyname",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_task_get_exception_ports",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_task_swap_exception_ports",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_task_threads",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_thread_get_exception_ports",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_thread_get_state",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_thread_resume",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_thread_suspend",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_thread_swap_exception_ports",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_time",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_uname",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_unlink",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_vm_allocate",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_vm_deallocate",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_vm_map",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_vm_page_mask",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_vm_page_size",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_vm_read_overwrite",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_voucher_mach_msg_set",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "_write",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "dyld_stub_binder",
-    "weak": false,
-    "lazy": false
+    "weak": false
    }
   ],
   "/usr/lib/libobjc.A.dylib": [
    {
     "name": "_OBJC_CLASS_$_NSObject",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_METACLASS_$_NSObject",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "__objc_empty_cache",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_objc_alloc",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_autorelease",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_enumerationMutation",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_msgSend",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_msgSendSuper2",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_release",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_retain",
-    "weak": false,
-    "lazy": true
+    "weak": false
    }
   ],
   "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter": [
    {
     "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE11set_readingEb",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE13nasync_appendES3_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE14nasync_prependES3_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE18nasync_remove_nodeEPNS4_4nodeE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE4nextEPNS4_4nodeE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listI28plcrash_signal_user_callbackE9free_listEPNS4_4nodeE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE11set_readingEb",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE13nasync_appendES3_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE18nasync_remove_nodeEPNS4_4nodeE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE4nextEPNS4_4nodeE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listI29plcrash_signal_handler_actionE9free_listEPNS4_4nodeE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE11set_readingEb",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE13nasync_appendES4_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE18nasync_remove_nodeEPNS5_4nodeE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE4nextEPNS5_4nodeE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async10async_listIP19plcrash_async_imageE9free_listEPNS5_4nodeE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE10push_stateEv",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE11apply_stateEjPNS1_28plcrash_async_dwarf_cie_infoEPK26plcrash_async_thread_statePK23plcrash_async_byteorderPS6_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE12eval_programEP21plcrash_async_mobjectjjPNS1_28plcrash_async_dwarf_cie_infoEPNS1_16gnu_ehptr_readerIjEEPK23plcrash_async_byteordermlm",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE12get_cfa_ruleEv",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE12set_registerEjNS1_28plcrash_dwarf_cfa_reg_rule_tEj",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE15remove_registerEj",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE16set_cfa_registerEjj",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE17get_register_ruleEjPNS1_28plcrash_dwarf_cfa_reg_rule_tEPj",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE18get_register_countEv",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE18set_cfa_expressionEmm",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE23set_cfa_register_signedEji",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiE9pop_stateEv",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiEC1Ev",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIjiEC2Ev",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE10push_stateEv",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE11apply_stateEjPNS1_28plcrash_async_dwarf_cie_infoEPK26plcrash_async_thread_statePK23plcrash_async_byteorderPS6_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE12eval_programEP21plcrash_async_mobjectyyPNS1_28plcrash_async_dwarf_cie_infoEPNS1_16gnu_ehptr_readerIyEEPK23plcrash_async_byteordermlm",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE12get_cfa_ruleEv",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE12set_registerEjNS1_28plcrash_dwarf_cfa_reg_rule_tEy",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE15remove_registerEj",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE16set_cfa_registerEjy",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE17get_register_ruleEjPNS1_28plcrash_dwarf_cfa_reg_rule_tEPy",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE18get_register_countEv",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE18set_cfa_expressionEmm",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE23set_cfa_register_signedEjx",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxE9pop_stateEv",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxEC1Ev",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async15dwarf_cfa_stateIyxEC2Ev",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE13set_data_baseEj",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE13set_func_baseEj",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE13set_text_baseEj",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE22set_frame_section_baseEjj",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjE4readEP21plcrash_async_mobjectmlNS1_8DW_EH_PEEPjPm",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjEC1EPK23plcrash_async_byteorder",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIjEC2EPK23plcrash_async_byteorder",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE13set_data_baseEy",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE13set_func_baseEy",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE13set_text_baseEy",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE22set_frame_section_baseEyy",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyE4readEP21plcrash_async_mobjectmlNS1_8DW_EH_PEEPyPm",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyEC1EPK23plcrash_async_byteorder",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async16gnu_ehptr_readerIyEC2EPK23plcrash_async_byteorder",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIjiE4nextEPjPNS1_28plcrash_dwarf_cfa_reg_rule_tES4_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIjiEC1EPNS1_15dwarf_cfa_stateIjiEE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIjiEC2EPNS1_15dwarf_cfa_stateIjiEE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIyxE4nextEPjPNS1_28plcrash_dwarf_cfa_reg_rule_tEPy",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIyxEC1EPNS1_15dwarf_cfa_stateIyxEE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async24dwarf_cfa_state_iteratorIyxEC2EPNS1_15dwarf_cfa_stateIyxEE",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async33plcrash_async_dwarf_cie_info_initIjEE15plcrash_error_tPNS1_28plcrash_async_dwarf_cie_infoEP21plcrash_async_mobjectPK23plcrash_async_byteorderPNS1_16gnu_ehptr_readerIT_EEm",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async33plcrash_async_dwarf_cie_info_initIyEE15plcrash_error_tPNS1_28plcrash_async_dwarf_cie_infoEP21plcrash_async_mobjectPK23plcrash_async_byteorderPNS1_16gnu_ehptr_readerIT_EEm",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async33plcrash_async_dwarf_fde_info_initIjEE15plcrash_error_tPNS1_28plcrash_async_dwarf_fde_infoEP21plcrash_async_mobjectPK23plcrash_async_byteordermb",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async33plcrash_async_dwarf_fde_info_initIyEE15plcrash_error_tPNS1_28plcrash_async_dwarf_fde_infoEP21plcrash_async_mobjectPK23plcrash_async_byteordermb",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async34plcrash_async_dwarf_read_uintmax64IjEE15plcrash_error_tP21plcrash_async_mobjectPK23plcrash_async_byteordermlhPT_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async34plcrash_async_dwarf_read_uintmax64IyEE15plcrash_error_tP21plcrash_async_mobjectPK23plcrash_async_byteordermlhPT_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async35plcrash_async_dwarf_expression_evalIjiEE15plcrash_error_tP21plcrash_async_mobjectjPK26plcrash_async_thread_statePK23plcrash_async_byteordermlmPT_mSD_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async35plcrash_async_dwarf_expression_evalIyxEE15plcrash_error_tP21plcrash_async_mobjectjPK26plcrash_async_thread_statePK23plcrash_async_byteordermlmPT_mSD_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async39plcrash_async_dwarf_read_task_uintmax64IjEE15plcrash_error_tjPK23plcrash_async_byteordermlhPT_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "__ZN7plcrash3PL_5async39plcrash_async_dwarf_read_task_uintmax64IyEE15plcrash_error_tjPK23plcrash_async_byteordermlhPT_",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "___llvm_profile_filename",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "___llvm_profile_raw_version",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "_lprofDirMode",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ]
  },

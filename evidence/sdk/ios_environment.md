@@ -2,47 +2,31 @@
 
 ```
 runner label: macos-26
-image version: 20261021.0445.8
+image version: 20261026.0455.2
 ProductName:		macOS
 ProductVersion:		26.6.2
 BuildVersion:		25G83
-Xcode 26.6
-Build version 17F113
-DEVELOPER_DIR=/Applications/Xcode_26.6.app/Contents/Developer
---- xcodebuild -showsdks ---
-DriverKit SDKs:
-	DriverKit 25.5                	-sdk driverkit25.5
-
-iOS SDKs:
-	iOS 26.5                      	-sdk iphoneos26.5
-
-iOS Simulator SDKs:
-	Simulator - iOS 26.5          	-sdk iphonesimulator26.5
-
-macOS SDKs:
-	macOS 26.5                    	-sdk macosx26.5
-	macOS 26.5                    	-sdk macosx26.5
-
-tvOS SDKs:
-	tvOS 26.5                     	-sdk appletvos26.5
-
-tvOS Simulator SDKs:
-	Simulator - tvOS 26.5         	-sdk appletvsimulator26.5
-
-visionOS SDKs:
-	visionOS 26.5                 	-sdk xros26.5
-
-visionOS Simulator SDKs:
-	Simulator - visionOS 26.5     	-sdk xrsimulator26.5
-
-watchOS SDKs:
-	watchOS 26.5                  	-sdk watchos26.5
-
-watchOS Simulator SDKs:
-	Simulator - watchOS 26.5      	-sdk watchsimulator26.5
-
+Xcode 26.3
+Build version 17C529
+DEVELOPER_DIR=/Applications/Xcode_26.3.app/Contents/Developer
 --- iphoneos ---
-sdk-path:    /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk
-sdk-version: 26.5
-sdk-build:   23F81a
+sdk-path:    /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk
+sdk-version: 26.2
+sdk-build:   23C57
+--- every Xcode and iOS SDK on this image ---
+/Applications/Xcode_26.0.1.app: Xcode 26.0.1  [iphoneos26.0 ]
+/Applications/Xcode_26.0.app: Xcode 26.0.1  [iphoneos26.0 ]
+/Applications/Xcode_26.1.1.app: Xcode 26.1.1  [iphoneos26.1 ]
+/Applications/Xcode_26.1.app: Xcode 26.1.1  [iphoneos26.1 ]
+/Applications/Xcode_26.2.0.app: Xcode 26.2  [iphoneos26.2 ]
+/Applications/Xcode_26.2.app: Xcode 26.2  [iphoneos26.2 ]
+/Applications/Xcode_26.3.0.app: Xcode 26.3  [iphoneos26.2 ]
+/Applications/Xcode_26.3.app: Xcode 26.3  [iphoneos26.2 ]
+/Applications/Xcode_26.4.1.app: Xcode 26.4.1  [iphoneos26.4 ]
+/Applications/Xcode_26.4.app: Xcode 26.4.1  [iphoneos26.4 ]
+/Applications/Xcode_26.5.0.app: Xcode 26.5  [iphoneos26.5 ]
+/Applications/Xcode_26.5.app: Xcode 26.5  [iphoneos26.5 ]
+/Applications/Xcode_26.6.0.app: Xcode 26.6  [iphoneos26.5 ]
+/Applications/Xcode_26.6.app: Xcode 26.6  [iphoneos26.5 ]
+/Applications/Xcode.app: Xcode 26.6  [iphoneos26.5 ]
 ```

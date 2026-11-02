@@ -147,2593 +147,2085 @@
   "/System/Library/Frameworks/CoreData.framework/CoreData": [
    {
     "name": "_NSSQLiteStoreType",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSEntityDescription",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSFetchRequest",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSManagedObject",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSManagedObjectContext",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSManagedObjectModel",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSPersistentContainer",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "_OBJC_CLASS_$_NSPersistentStore",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSPersistentStoreCoordinator",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_METACLASS_$_NSManagedObject",
-    "weak": false,
-    "lazy": false
+    "weak": false
    }
   ],
   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
    {
     "name": "_NSURLFileSizeKey",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSData",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSDictionary",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSMutableData",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSUserDefaults",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_kCFBundleVersionKey",
-    "weak": false,
-    "lazy": false
+    "weak": false
    }
   ],
   "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics": [
    {
     "name": "_CGRectGetHeight",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_CGRectGetWidth",
-    "weak": false,
-    "lazy": true
+    "weak": false
    }
   ],
   "/System/Library/Frameworks/CoreLocation.framework/CoreLocation": [
    {
     "name": "_OBJC_CLASS_$_CLLocationManager",
-    "weak": false,
-    "lazy": false
+    "weak": false
    }
   ],
   "/System/Library/Frameworks/Foundation.framework/Foundation": [
    {
     "name": "_OBJC_CLASS_$_NSBlockOperation",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSBundle",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSDateFormatter",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSFileManager",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSHTTPURLResponse",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSJSONSerialization",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSNotificationCenter",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSOperationQueue",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSPredicate",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSProcessInfo",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSSortDescriptor",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSURLSession",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSURLSessionConfiguration",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_NSUUID",
-    "weak": false,
-    "lazy": false
+    "weak": false
    }
   ],
   "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices": [
    {
     "name": "_UTTypeCopyPreferredTagWithClass",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_UTTypeCreatePreferredIdentifierForTag",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_kUTTagClassFilenameExtension",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_kUTTagClassMIMEType",
-    "weak": false,
-    "lazy": false
+    "weak": false
    }
   ],
   "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration": [
    {
     "name": "_SCNetworkReachabilityCreateWithAddress",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_SCNetworkReachabilityGetFlags",
-    "weak": false,
-    "lazy": true
+    "weak": false
    }
   ],
   "/System/Library/Frameworks/UIKit.framework/UIKit": [
    {
     "name": "_OBJC_CLASS_$_UIDevice",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_UIScreen",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_UIApplicationDidBecomeActiveNotification",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_UIApplicationDidEnterBackgroundNotification",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_UIApplicationDidReceiveMemoryWarningNotification",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_UIApplicationWillEnterForegroundNotification",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_UIApplicationWillResignActiveNotification",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_UIApplicationWillTerminateNotification",
-    "weak": false,
-    "lazy": false
+    "weak": false
    }
   ],
   "/usr/lib/libSystem.B.dylib": [
    {
     "name": "__Block_copy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "__Block_release",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "__NSConcreteStackBlock",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "___error",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "___stack_chk_fail",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "___stack_chk_guard",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "___stderrp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "__dyld_register_func_for_add_image",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_abort",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_arc4random",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_atexit",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_atoi",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_bzero",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_calloc",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_dispatch_once_f",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_dispatch_semaphore_create",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_dladdr",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_dlsym",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_exit",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fclose",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fcntl",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fdopen",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fflush",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fileno",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fopen",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fprintf",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_free",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_fseek",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_ftell",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_ftello",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_ftruncate",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_fwrite",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_getdtablesize",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_getenv",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_getpagesize",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_getpid",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_getsectiondata",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_gettimeofday",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_host_statistics64",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_host_self",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mach_task_self_",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_malloc",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_malloc_size",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_memcmp",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_memcpy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_memmove",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mkdir",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_mmap",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_munmap",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_open",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_posix_memalign",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_processor_set_default",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_processor_set_statistics",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_mutex_init",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_mutex_lock",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_pthread_mutex_unlock",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_realloc",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_setenv",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_sigaction",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_snprintf",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strchr",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strcmp",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strdup",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strerror",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strlen",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_strncpy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_sysctl",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_task_info",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_task_threads",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_uname",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_vm_deallocate",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "dyld_stub_binder",
-    "weak": false,
-    "lazy": false
+    "weak": false
    }
   ],
   "/usr/lib/libobjc.A.dylib": [
    {
     "name": "_OBJC_CLASS_$_NSObject",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_METACLASS_$_NSObject",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "__objc_empty_cache",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_objc_allocWithZone",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_autorelease",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_autoreleaseReturnValue",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_getClass",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_lookUpClass",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_msgSend",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_msgSendSuper2",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_release",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_retain",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_retainAutoreleaseReturnValue",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_retainAutoreleasedReturnValue",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_objc_setHook_getClass",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/Backtrace.framework/Backtrace": [
    {
     "name": "___llvm_profile_filename",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "___llvm_profile_raw_version",
-    "weak": true,
-    "lazy": false
+    "weak": true
    },
    {
     "name": "_lprofDirMode",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter": [
    {
     "name": "_OBJC_CLASS_$_PLCrashReport",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_PLCrashReporter",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$_PLCrashReporterConfig",
-    "weak": false,
-    "lazy": false
+    "weak": false
    }
   ],
   "@rpath/libswiftCloudKit.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftCloudKit",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftCore.dylib": [
    {
     "name": "_$s15_ObjectiveCTypes01_A11CBridgeablePTl",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s8RawValueSYTl",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sBOWV",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sBbWV",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sBi32_WV",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sBi64_WV",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sBoWV",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSE6encode2toys7Encoder_p_tKFTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSEMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSH13_rawHashValue4seedS2i_tFTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSH4hash4intoys6HasherVz_tFTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSH9hashValueSivgTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSHMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSHSQTb",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSKsSS7ElementRtzrlE6joined9separatorS2S_tF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSQ2eeoiySbx_xtFZTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSQMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSS10describingSSx_tclufC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSS14validatingUTF8SSSgSPys4Int8VG_tcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSS4hash4intoys6HasherVz_tF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSS5write2toyxz_ts16TextOutputStreamRzlF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSS6appendyySSF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSS9hashValueSivg",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSSN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSSSHsWP",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSSSysMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSY8rawValue03RawB0QzvgTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSY8rawValuexSg03RawB0Qz_tcfCTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSYMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSYsSERzSS8RawValueSYRtzrlE6encode2toys7Encoder_p_tKF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSYsSeRzSS8RawValueSYRtzrlE4fromxs7Decoder_p_tKcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSa11descriptionSSvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSa28_allocateBufferUninitialized15minimumCapacitys06_ArrayB0VyxGSi_tFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSaMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSayxGSKsMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSayxGSTsMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSbN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSdN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSe4fromxs7Decoder_p_tKcfCTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSeMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSfN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSh15minimumCapacityShyxGSi_tcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSh8IteratorV6_cocoaAByx_Gs10__CocoaSetVAACn_tcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSi9hashValueSivg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSiN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSiSzsMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSt4next7ElementQzSgyFTj",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSuN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSzsE11descriptionSSvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss018_bridgeAnyObjectToB0yypyXlSgF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss10SetAlgebraPyxqd__ncSTRd__7ElementQyd__ACRtzlufCTj",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss10_HashTableV8nextHole9atOrAfterAB6BucketVAF_tF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss10__CocoaSetV12makeIteratorAB0D0CyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss10__CocoaSetV5countSivg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss10__CocoaSetV6member3foryXlSgyXl_tF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss10__CocoaSetV8IteratorC4nextyXlSgyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss10__CocoaSetV8IteratorCMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss10__CocoaSetV8IteratorCStsWP",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss11_MergeErrorON",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss11_SetStorageC4copy8originalAByxGs05__RawaB0C_tFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss11_SetStorageC6resize8original8capacity4moveAByxGs05__RawaB0C_SiSbtFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss11_SetStorageC7convert_8capacityAByxGs07__CocoaA0V_SitFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss11_SetStorageC8allocate8capacityAByxGSi_tFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss11_SetStorageCMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss11_StringGutsV4growyySiF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss12StaticStringVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss13OpaquePointerVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss15_print_unlockedyyx_q_zts16TextOutputStreamR_r0_lF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss17_assertionFailure__4file4line5flagss5NeverOs12StaticStringV_SSAHSus6UInt32VtF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss18_CocoaArrayWrapperV8endIndexSivg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss18_CocoaArrayWrapperVyyXlSicig",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss18_DictionaryStorageC4copy8originalAByxq_Gs05__RawaB0C_tFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss18_DictionaryStorageC6resize8original8capacity4moveAByxq_Gs05__RawaB0C_SiSbtFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss18_DictionaryStorageC8allocate8capacityAByxq_GSi_tFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss18_DictionaryStorageCMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss20_SwiftNewtypeWrapperMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss20_SwiftNewtypeWrapperPSYTb",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss20_SwiftNewtypeWrapperPs35_HasCustomAnyHashableRepresentationTb",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss20_SwiftNewtypeWrapperPsSHRzSH8RawValueSYRpzrlE20_toCustomAnyHashables0hI0VSgyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss21_ObjectiveCBridgeableMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss21_ObjectiveCBridgeableP016_forceBridgeFromA1C_6resulty01_A5CTypeQz_xSgztFZTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss21_ObjectiveCBridgeableP024_conditionallyBridgeFromA1C_6resultSb01_A5CTypeQz_xSgztFZTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss21_ObjectiveCBridgeableP026_unconditionallyBridgeFromA1Cyx01_A5CTypeQzSgFZTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss21_ObjectiveCBridgeableP09_bridgeToA1C01_A5CTypeQzyFTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss21_findStringSwitchCase5cases6stringSiSays06StaticB0VG_SStF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss22KeyedDecodingContainerV15decodeIfPresent_6forKeyqd__Sgqd__m_xtKSeRd__lF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss22KeyedDecodingContainerV6decode_6forKeyS2Sm_xtKF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss22KeyedDecodingContainerV6decode_6forKeyS2bm_xtKF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss22KeyedDecodingContainerV6decode_6forKeyqd__qd__m_xtKSeRd__lF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss22KeyedDecodingContainerVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss22KeyedEncodingContainerV15encodeIfPresent_6forKeyyqd__Sg_xtKSERd__lF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss22KeyedEncodingContainerV6encode_6forKeyySS_xtKF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss22KeyedEncodingContainerV6encode_6forKeyySb_xtKF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss22KeyedEncodingContainerV6encode_6forKeyyqd___xtKSERd__lF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss22KeyedEncodingContainerVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss23CustomStringConvertibleMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss23CustomStringConvertibleP11descriptionSSvgTj",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss23CustomStringConvertibleP11descriptionSSvgTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss23_ContiguousArrayStorageCMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss26DefaultStringInterpolationVN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss26DefaultStringInterpolationVs16TextOutputStreamsWP",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss26_stdlib_isOSVersionAtLeastyBi1_Bw_BwBwtF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss27_stringCompareWithSmolCheck__9expectingSbs11_StringGutsV_ADs01_G16ComparisonResultOtF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss28CustomDebugStringConvertibleMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss28CustomDebugStringConvertibleP16debugDescriptionSSvgTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss32_diagnoseUnexpectedEnumCaseValue4type03rawE0s5NeverOxm_q_tr0_lF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss35_HasCustomAnyHashableRepresentationMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss35_HasCustomAnyHashableRepresentationP03_tobcD0s0cD0VSgyFTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss38_bridgeAnythingNonVerbatimToObjectiveCyyXlxnlF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss4Int8VMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss4Int8VN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss50ELEMENT_TYPE_OF_SET_VIOLATES_HASHABLE_REQUIREMENTSys5NeverOypXpF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss53KEY_TYPE_OF_DICTIONARY_VIOLATES_HASHABLE_REQUIREMENTSys5NeverOypXpF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss5ErrorMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss5ErrorP19_getEmbeddedNSErroryXlSgyFTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss5ErrorP5_codeSivgTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss5ErrorP7_domainSSvgTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss5ErrorP9_userInfoyXlSgvgTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss5ErrorPsE19_getEmbeddedNSErroryXlSgyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss5ErrorPsE5_codeSivg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss5ErrorPsE7_domainSSvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss5ErrorPsE9_userInfoyXlSgvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss5Int16VMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss5Int32VMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss5Int32VN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss5Int32VSzsMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss5Int64VMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss5UInt8VMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss5print_9separator10terminatoryypd_S2StF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss6HasherV5_seedABSi_tcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss6HasherV8_combineyySuF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss6HasherV9_finalizeSiyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss6UInt16VMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss6UInt32VMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss6UInt32VN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss6UInt32VSzsMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss6UInt64VMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss6UInt64VN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss7CVarArgMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss7DecoderP9container7keyedBys22KeyedDecodingContainerVyqd__Gqd__m_tKs9CodingKeyRd__lFTj",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss7EncoderP9container7keyedBys22KeyedEncodingContainerVyqd__Gqd__m_ts9CodingKeyRd__lFTj",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss9CodingKeyMp",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss9CodingKeyP11stringValueSSvgTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss9CodingKeyP11stringValuexSgSS_tcfCTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss9CodingKeyP8intValueSiSgvgTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss9CodingKeyP8intValuexSgSi_tcfCTq",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss9CodingKeyPs23CustomStringConvertibleTb",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss9CodingKeyPs28CustomDebugStringConvertibleTb",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$ss9CodingKeyPsE11descriptionSSvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss9CodingKeyPsE16debugDescriptionSSvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$syXlN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sypN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sytWV",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_CLASS_$__TtCs12_SwiftObject",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_OBJC_METACLASS_$__TtCs12_SwiftObject",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "__swiftEmptyArrayStorage",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "__swiftEmptyDictionarySingleton",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "__swiftEmptySetSingleton",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "__swift_stdlib_reportUnimplementedInitializer",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_allocBox",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_allocError",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_allocObject",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_allocateGenericClassMetadata",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_arrayDestroy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_arrayInitWithCopy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_arrayInitWithTakeBackToFront",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_arrayInitWithTakeFrontToBack",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_beginAccess",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_bridgeObjectRelease",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_bridgeObjectRelease_n",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_bridgeObjectRetain",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_bridgeObjectRetain_n",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_checkMetadataState",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_deallocClassInstance",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_deallocObject",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_deallocPartialClassInstance",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_deletedMethodError",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_swift_dynamicCast",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_dynamicCastClass",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_dynamicCastObjCClass",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_endAccess",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_errorRelease",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_errorRetain",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getAtKeyPath",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getEnumCaseMultiPayload",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getEnumTagSinglePayloadGeneric",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getErrorValue",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getForeignTypeMetadata",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getGenericMetadata",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getInitializedObjCClass",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getKeyPath",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getObjCClassFromMetadata",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getObjCClassMetadata",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getObjectType",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getSingletonMetadata",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getTupleTypeLayout2",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getTypeByMangledNameInContext",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_getWitnessTable",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_initClassMetadata2",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_initEnumMetadataMultiPayload",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_initEnumMetadataSinglePayload",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_initStackObject",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_initStaticObject",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_initStructMetadata",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_isUniquelyReferenced_nonNull_native",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_isaMask",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_swift_makeBoxUnique",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_once",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_projectBox",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_release",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_release_n",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_retain",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_setDeallocating",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_slowAlloc",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_storeEnumTagMultiPayload",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_storeEnumTagSinglePayloadGeneric",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_unknownObjectRelease",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_unknownObjectRelease_n",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_unknownObjectRetain",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_unknownObjectRetain_n",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_unknownObjectWeakAssign",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_unknownObjectWeakDestroy",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_unknownObjectWeakInit",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_unknownObjectWeakLoadStrong",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_updateClassMetadata2",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_swift_willThrow",
-    "weak": false,
-    "lazy": true
+    "weak": false
    }
   ],
   "@rpath/libswiftCoreData.dylib": [
    {
     "name": "_$sSo22NSManagedObjectContextC8CoreDataE5count3forSiSo14NSFetchRequestCyxG_tKSo0hI6ResultRzlF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo22NSManagedObjectContextC8CoreDataE5fetchySayxGSo14NSFetchRequestCyxGKSo0gH6ResultRzlF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "__swift_FORCE_LOAD_$_swiftCoreData",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftCoreFoundation.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftCoreGraphics.dylib": [
    {
     "name": "_$s12CoreGraphics7CGFloatVN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "__swift_FORCE_LOAD_$_swiftCoreGraphics",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftCoreImage.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftCoreImage",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftCoreLocation.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftCoreLocation",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftDarwin.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftDarwin",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftDispatch.dylib": [
    {
     "name": "_$s8Dispatch0A12TimeIntervalO11nanosecondsyACSicACmFWC",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A12TimeIntervalO7secondsyACSicACmFWC",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A12TimeIntervalOMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A13WorkItemFlagsVMa",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A13WorkItemFlagsVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A13WorkItemFlagsVs10SetAlgebraAAMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A3QoSV10backgroundACvgZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A3QoSV11unspecifiedACvgZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A3QoSVMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A4TimeV3nowACyFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A4TimeVMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A8WorkItemC3qos5flags5blockAcA0A3QoSV_AA0abC5FlagsVyyXBtcfc",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s8Dispatch0A8WorkItemCMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s8Dispatch1poiyAA0A4TimeVAD_AA0aB8IntervalOtF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo17OS_dispatch_queueC8DispatchE10AttributesVMa",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSo17OS_dispatch_queueC8DispatchE10AttributesVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSo17OS_dispatch_queueC8DispatchE10AttributesVs10SetAlgebraACMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSo17OS_dispatch_queueC8DispatchE20AutoreleaseFrequencyO7inherityA2EmFWC",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSo17OS_dispatch_queueC8DispatchE20AutoreleaseFrequencyOMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo17OS_dispatch_queueC8DispatchE5label3qos10attributes20autoreleaseFrequency6targetABSS_AC0D3QoSVAbCE10AttributesVAbCE011AutoreleaseI0OABSgtcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo18OS_dispatch_sourceC8DispatchE10TimerFlagsVMa",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSo18OS_dispatch_sourceC8DispatchE10TimerFlagsVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSo18OS_dispatch_sourceC8DispatchE10TimerFlagsVs10SetAlgebraACMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSo18OS_dispatch_sourceC8DispatchE15makeTimerSource5flags5queueSo0a1_b1_C6_timer_pAbCE0F5FlagsV_So0a1_b1_I0CSgtFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo18OS_dispatch_sourceP8DispatchE15setEventHandler3qos5flags7handleryAC0D3QoSV_AC0D13WorkItemFlagsVyyXBSgtF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo18OS_dispatch_sourceP8DispatchE15setEventHandler7handleryAC0D8WorkItemC_tF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo18OS_dispatch_sourceP8DispatchE6cancelyyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo18OS_dispatch_sourceP8DispatchE6resumeyyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo18OS_dispatch_sourceP8DispatchE7suspendyyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo21OS_dispatch_semaphoreC8DispatchE4waityyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo21OS_dispatch_semaphoreC8DispatchE6signalSiyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo24OS_dispatch_source_timerP8DispatchE8schedule8deadline9repeating6leewayyAC0E4TimeV_AC0eJ8IntervalOAKtF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "__swift_FORCE_LOAD_$_swiftDispatch",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftFoundation.dylib": [
    {
     "name": "_$s10Foundation10URLRequestV10httpMethodSSSgvs",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation10URLRequestV19_bridgeToObjectiveCSo12NSURLRequestCyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation10URLRequestV36_unconditionallyBridgeFromObjectiveCyACSo12NSURLRequestCSgFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation10URLRequestV3url11cachePolicy15timeoutIntervalAcA3URLV_So017NSURLRequestCacheE0VSdtcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation10URLRequestV8httpBodyAA4DataVSgvs",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation10URLRequestV8setValue_18forHTTPHeaderFieldySSSg_SStF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation10URLRequestVMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation10URLRequestVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation10URLRequestVs23CustomStringConvertibleAAMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation12URLQueryItemV4name5valueACSSh_SSSghtcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation12URLQueryItemVMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation12URLQueryItemVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation13URLComponentsV10queryItemsSayAA12URLQueryItemVGSgvs",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation13URLComponentsV3urlAA3URLVSgvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation13URLComponentsV6stringACSgSSh_tcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation13URLComponentsVMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation13URLComponentsVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation17URLResourceValuesV20isExcludedFromBackupSbSgvs",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation17URLResourceValuesV8fileSizeSiSgvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation17URLResourceValuesVACycfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation17URLResourceValuesVMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation19PropertyListDecoderC6decode_4fromxxm_AA4DataVtKSeRzlFTj",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation19PropertyListDecoderCACycfc",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation19PropertyListDecoderCMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation19PropertyListEncoderC6encodeyAA4DataVxKSERzlFTj",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation19PropertyListEncoderCACycfc",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation19PropertyListEncoderCMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation22_convertErrorToNSErrorySo0E0Cs0C0_pF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation22_convertNSErrorToErrorys0E0_pSo0C0CSgF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV06isFileB0Sbvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV08absoluteB0ACvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV13pathExtensionSSvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV14absoluteStringSSvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV14resourceValues7forKeysAA011URLResourceD0VShySo16NSURLResourceKeyaG_tKF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV15fileURLWithPathACSSh_tcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV17lastPathComponentSSvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV17setResourceValuesyyAA011URLResourceE0VKF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV19_bridgeToObjectiveCSo5NSURLCyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV22appendingPathComponentyACSSF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV25deletingLastPathComponentACyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV36_unconditionallyBridgeFromObjectiveCyACSo5NSURLCSgFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLV4pathSSvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLVMa",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation3URLVs23CustomStringConvertibleAAMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DataV11referencingACSo6NSDataCh_tcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DataV19_bridgeToObjectiveCSo6NSDataCyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DataV36_unconditionallyBridgeFromObjectiveCyACSo6NSDataCSgFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DataV5write2to7optionsyAA3URLV_So20NSDataWritingOptionsVtKF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DataVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DataVN",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DataVSEAAMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DataVSeAAMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DateV19_bridgeToObjectiveCSo6NSDateCyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DateV21timeIntervalSince1970Sdvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DateVACycfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DateVMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4DateVs23CustomStringConvertibleAAMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation4UUIDV10uuidStringACSgSSh_tcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4UUIDV10uuidStringSSvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4UUIDVACycfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4UUIDVMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation4UUIDVMn",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$s10Foundation6LocaleV10regionCodeSSSgvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation6LocaleV12languageCodeSSSgvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation6LocaleV15localizedString13forRegionCodeSSSgSS_tF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation6LocaleV15localizedString15forLanguageCodeSSSgSS_tF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation6LocaleV19_bridgeToObjectiveCSo8NSLocaleCyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation6LocaleV7currentACvgZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation6LocaleVMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation8TimeZoneV19_bridgeToObjectiveCSo06NSTimeC0CyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation8TimeZoneV7currentACvgZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$s10Foundation8TimeZoneVMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSD10FoundationE19_bridgeToObjectiveCSo12NSDictionaryCyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSD10FoundationE34_conditionallyBridgeFromObjectiveC_6resultSbSo12NSDictionaryC_SDyxq_GSgztFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSD10FoundationE36_unconditionallyBridgeFromObjectiveCySDyxq_GSo12NSDictionaryCSgFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSS10FoundationE26_forceBridgeFromObjectiveC_6resultySo8NSStringC_SSSgztFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSS10FoundationE34_conditionallyBridgeFromObjectiveC_6resultSbSo8NSStringC_SSSgztFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSS10FoundationE36_unconditionallyBridgeFromObjectiveCySSSo8NSStringCSgFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSS10FoundationE8EncodingV4utf8ACvgZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSS10FoundationE8EncodingVMa",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSSs7CVarArg10FoundationMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "_$sSa10FoundationE19_bridgeToObjectiveCSo7NSArrayCyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSa10FoundationE36_unconditionallyBridgeFromObjectiveCySayxGSo7NSArrayCSgFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSh10FoundationE19_bridgeToObjectiveCSo5NSSetCyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSh10FoundationE36_unconditionallyBridgeFromObjectiveCyShyxGSo5NSSetCSgFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSi10FoundationE19_bridgeToObjectiveCSo8NSNumberCyF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo11NSPredicateC10FoundationE6format_ABSSh_s7CVarArg_pdtcfC",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSy10FoundationE4data5using20allowLossyConversionAA4DataVSgSSAAE8EncodingV_SbtF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$ss5ErrorP10FoundationE20localizedDescriptionSSvg",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "__swift_FORCE_LOAD_$_swiftFoundation",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftMetal.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftMetal",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftObjectiveC.dylib": [
    {
     "name": "_$sSo8NSObjectC10ObjectiveCE13_rawHashValue4seedS2i_tF",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo8NSObjectC10ObjectiveCE2eeoiySbAB_ABtFZ",
-    "weak": false,
-    "lazy": true
+    "weak": false
    },
    {
     "name": "_$sSo8NSObjectCSH10ObjectiveCMc",
-    "weak": false,
-    "lazy": false
+    "weak": false
    },
    {
     "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftQuartzCore.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftQuartzCore",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ],
   "@rpath/libswiftUIKit.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftUIKit",
-    "weak": true,
-    "lazy": false
+    "weak": true
    }
   ]
  },

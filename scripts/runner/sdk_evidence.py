@@ -91,7 +91,10 @@ def grep_headers(sdk: Path, pattern: str, extra_args=()):
     dirs = [str(d) for d in header_dirs(sdk)]
     if not dirs:
         return []
-    cmd = ["grep", "-rn", "--include=*.h", "--include=*.apinotes", *extra_args,
+    # -R, not -r: -r skips symlinks found during traversal, and some SDK
+    # framework Headers directories are symlinks (SafariServices returned zero
+    # hits for a plain substring although SFSafariViewController.h is present).
+    cmd = ["grep", "-Rn", "--include=*.h", "--include=*.apinotes", *extra_args,
            "-E", pattern, *dirs]
     try:
         r = subprocess.run(cmd, capture_output=True, text=True, timeout=900)
@@ -158,10 +161,10 @@ def run_tvos(sdk: Path, out_dir: Path, label: str):
     if wanted:
         # one grep for all @interface declarations, then filter
         hits = grep_headers(
-            sdk, r"^[[:space:]]*(@interface|@protocol)[[:space:]]+[A-Za-z_][A-Za-z0-9_]*")
+            sdk, r"(@interface|@protocol)[[:space:]]+[A-Za-z_][A-Za-z0-9_]*")
         by_class = {}
         for rel, ln, text in hits:
-            m = re.match(r"^\s*@(?:interface|protocol)\s+([A-Za-z_][A-Za-z0-9_]*)", text)
+            m = re.search(r"@(?:interface|protocol)\s+([A-Za-z_][A-Za-z0-9_]*)", text)
             if m:
                 by_class.setdefault(m.group(1), []).append((rel, int(ln), text))
         for cls in wanted:
@@ -355,11 +358,10 @@ def run_ios(sdk: Path, out_dir: Path, label: str, targets_file: Path | None):
         selectors = set(q["selectors"])
         symbols = []
 
-    hits = grep_headers(
-        sdk, r"^[[:space:]]*@interface[[:space:]]+[A-Za-z_][A-Za-z0-9_]*")
+    hits = grep_headers(sdk, r"@interface[[:space:]]+[A-Za-z_][A-Za-z0-9_]*")
     by_class = {}
     for rel, ln, text in hits:
-        m = re.match(r"^\s*@interface\s+([A-Za-z_][A-Za-z0-9_]*)", text)
+        m = re.search(r"@interface\s+([A-Za-z_][A-Za-z0-9_]*)", text)
         if m:
             by_class.setdefault(m.group(1), []).append((rel, int(ln), text))
 
@@ -370,8 +372,8 @@ def run_ios(sdk: Path, out_dir: Path, label: str, targets_file: Path | None):
         iface = None
         headers = sorted({d[0] for d in decls})
         for rel, ln, text in decls:
-            m = re.match(r"^\s*@interface\s+" + re.escape(cls) +
-                         r"\s*:\s*([A-Za-z_][A-Za-z0-9_]*)\s*(<[^>]*>)?", text)
+            m = re.search(r"@interface\s+" + re.escape(cls) +
+                          r"\s*:\s*([A-Za-z_][A-Za-z0-9_]*)\s*(<[^>]*>)?", text)
             if m:
                 iface = {"header": rel, "line": ln, "decl": text.strip(),
                          "superclass": m.group(1),

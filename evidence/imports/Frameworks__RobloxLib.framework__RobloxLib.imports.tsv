@@ -1,1353 +1,1353 @@
-library	symbol	weak	lazy
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAssetExportPresetPassthrough	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionCategoryPlayAndRecord	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionInterruptionNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionInterruptionOptionKey	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionInterruptionTypeKey	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionMediaServicesWereLostNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionMediaServicesWereResetNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionModeVoiceChat	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortAVB	1	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortAirPlay	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBluetoothA2DP	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBluetoothHFP	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBluetoothLE	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBuiltInMic	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBuiltInReceiver	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBuiltInSpeaker	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortCarAudio	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortDisplayPort	1	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortFireWire	1	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortHDMI	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortHeadphones	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortHeadsetMic	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortLineIn	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortLineOut	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortPCI	1	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortThunderbolt	1	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortUSBAudio	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortVirtual	1	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionRouteChangeNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionRouteChangePreviousRouteKey	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionRouteChangeReasonKey	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionSilenceSecondaryAudioHintNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionSilenceSecondaryAudioHintTypeKey	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureDeviceTypeBuiltInWideAngleCamera	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureDeviceWasConnectedNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureDeviceWasDisconnectedNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionDidStartRunningNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionDidStopRunningNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionErrorKey	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionInterruptionEndedNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionInterruptionReasonKey	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionPresetInputPriority	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionRuntimeErrorNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionWasInterruptedNotification	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVMediaTypeAudio	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVMediaTypeVideo	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVAudioSession	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVCaptureDevice	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVCaptureDeviceDiscoverySession	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVCaptureDeviceInput	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVCaptureSession	0	0
-/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVCaptureVideoDataOutput	0	0
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioComponentFindNext	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioComponentInstanceDispose	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioComponentInstanceNew	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterDispose	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterFillComplexBuffer	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterGetProperty	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterGetPropertyInfo	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterNew	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterNewSpecific	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterReset	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterSetProperty	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioFormatGetProperty	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioOutputUnitStart	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioOutputUnitStop	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioUnitGetProperty	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioUnitInitialize	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioUnitRender	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioUnitSetProperty	0	1
-/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioUnitUninitialize	0	1
-/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXCallController	0	0
-/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXCallUpdate	0	0
-/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXEndCallAction	0	0
-/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXHandle	0	0
-/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXProvider	0	0
-/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXProviderConfiguration	0	0
-/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXSetMutedCallAction	0	0
-/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXStartCallAction	0	0
-/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXTransaction	0	0
-/System/Library/Frameworks/Contacts.framework/Contacts	_CNContactFamilyNameKey	0	0
-/System/Library/Frameworks/Contacts.framework/Contacts	_CNContactGivenNameKey	0	0
-/System/Library/Frameworks/Contacts.framework/Contacts	_CNContactPhoneNumbersKey	0	0
-/System/Library/Frameworks/Contacts.framework/Contacts	_OBJC_CLASS_$_CNContactFetchRequest	0	0
-/System/Library/Frameworks/Contacts.framework/Contacts	_OBJC_CLASS_$_CNContactStore	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFAllocatorCreate	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFArrayGetCount	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFArrayGetValueAtIndex	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFBooleanGetValue	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFBundleGetIdentifier	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFBundleGetMainBundle	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDataCreate	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryAddValue	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryContainsKey	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryCreate	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryCreateMutable	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryGetCount	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryGetValue	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryGetValueIfPresent	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionarySetValue	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFErrorCopyDescription	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFErrorGetCode	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFNotificationCenterAddObserver	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFNotificationCenterGetLocalCenter	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFNotificationCenterRemoveEveryObserver	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFNumberCreate	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFNumberGetValue	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRelease	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRetain	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopAddObserver	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopGetCurrent	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopGetMain	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopObserverCreateWithHandler	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopObserverInvalidate	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopPerformBlock	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopRemoveObserver	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopRunInMode	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopStop	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopWakeUp	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringConvertEncodingToIANACharSetName	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringConvertNSStringEncodingToEncoding	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringCreateWithBytes	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringFindWithOptions	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringGetBytes	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringGetCString	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringGetCStringPtr	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringGetLength	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringGetMaximumSizeForEncoding	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFUUIDCreate	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFUUIDCreateString	0	1
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_NSDefaultRunLoopMode	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_NSLocaleCountryCode	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_NSRunLoopCommonModes	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_NSSystemTimeZoneDidChangeNotification	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_NSURLVolumeAvailableCapacityForImportantUsageKey	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSArray	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSData	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSDate	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSDictionary	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSException	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSInputStream	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSLocale	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableArray	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableData	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableDictionary	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableOrderedSet	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableSet	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSNull	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSOutputStream	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSRunLoop	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSSet	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSTimeZone	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSTimer	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSURL	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSUserDefaults	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_EHTYPE_$_NSException	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_METACLASS_$_NSInputStream	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	___CFConstantStringClassReference	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	___NSArray0__	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	___NSDictionary0__	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFAllocatorDefault	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFAllocatorNull	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFBooleanFalse	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFBooleanTrue	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFBundleNameKey	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFBundleVersionKey	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFRunLoopCommonModes	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFRunLoopDefaultMode	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFTypeDictionaryKeyCallBacks	0	0
-/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFTypeDictionaryValueCallBacks	0	0
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGAffineTransformMakeScale	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGAffineTransformMakeTranslation	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGContextDrawImage	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGContextRotateCTM	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGContextTranslateCTM	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGDataProviderCreateWithCFData	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGFontCopyPostScriptName	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGFontCreateWithDataProvider	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGImageGetHeight	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGImageGetWidth	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGPointZero	0	0
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectContainsPoint	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectEqualToRect	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectGetHeight	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectGetMaxX	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectGetMaxY	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectGetWidth	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectIsEmpty	0	1
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectZero	0	0
-/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGSizeZero	0	0
-/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_CHHapticDynamicParameterIDHapticIntensityControl	0	0
-/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_CHHapticEventParameterIDHapticIntensity	0	0
-/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_CHHapticEventParameterIDHapticSharpness	0	0
-/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_CHHapticEventTypeHapticContinuous	0	0
-/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_OBJC_CLASS_$_CHHapticDynamicParameter	0	0
-/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_OBJC_CLASS_$_CHHapticEngine	0	0
-/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_OBJC_CLASS_$_CHHapticEvent	0	0
-/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_OBJC_CLASS_$_CHHapticEventParameter	0	0
-/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_OBJC_CLASS_$_CHHapticPattern	0	0
-/System/Library/Frameworks/CoreML.framework/CoreML	_OBJC_CLASS_$_MLFeatureValue	0	0
-/System/Library/Frameworks/CoreML.framework/CoreML	_OBJC_CLASS_$_MLModel	0	0
-/System/Library/Frameworks/CoreML.framework/CoreML	_OBJC_CLASS_$_MLModelConfiguration	0	0
-/System/Library/Frameworks/CoreML.framework/CoreML	_OBJC_CLASS_$_MLMultiArray	0	0
-/System/Library/Frameworks/CoreML.framework/CoreML	_OBJC_CLASS_$_MLPredictionOptions	0	0
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMBlockBufferCreateContiguous	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMBlockBufferCreateWithMemoryBlock	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMBlockBufferGetDataPointer	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMBlockBufferReplaceDataBytes	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMCopyDictionaryOfAttachments	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMFormatDescriptionGetMediaSubType	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMGetAttachment	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferCreate	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferDataIsReady	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetDataBuffer	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetFormatDescription	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetImageBuffer	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetNumSamples	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetPresentationTimeStamp	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetSampleAttachmentsArray	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferIsValid	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMTimeGetSeconds	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMTimeMake	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionCreate	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionCreateFromH264ParameterSets	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionCreateFromHEVCParameterSets	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionGetDimensions	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionGetH264ParameterSetAtIndex	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionGetHEVCParameterSetAtIndex	0	1
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_kCMFormatDescriptionExtension_SampleDescriptionExtensionAtoms	0	0
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_kCMSampleAttachmentKey_NotSync	0	0
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_kCMSampleBufferAttachmentKey_DroppedFrameReason	0	0
-/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_kCMTimeInvalid	0	0
-/System/Library/Frameworks/CoreMotion.framework/CoreMotion	_OBJC_CLASS_$_CMMotionManager	0	0
-/System/Library/Frameworks/CoreServices.framework/CoreServices	_UTTypeCopyPreferredTagWithClass	0	1
-/System/Library/Frameworks/CoreServices.framework/CoreServices	_UTTypeCreatePreferredIdentifierForTag	0	1
-/System/Library/Frameworks/CoreServices.framework/CoreServices	_kUTTagClassFilenameExtension	0	0
-/System/Library/Frameworks/CoreServices.framework/CoreServices	_kUTTagClassMIMEType	0	0
-/System/Library/Frameworks/CoreServices.framework/CoreServices	_kUTTypeImage	0	0
-/System/Library/Frameworks/CoreServices.framework/CoreServices	_kUTTypeMovie	0	0
-/System/Library/Frameworks/CoreText.framework/CoreText	_CTFontCopyAvailableTables	0	1
-/System/Library/Frameworks/CoreText.framework/CoreText	_CTFontCopyTable	0	1
-/System/Library/Frameworks/CoreText.framework/CoreText	_CTFontCreateWithName	0	1
-/System/Library/Frameworks/CoreText.framework/CoreText	_CTFontManagerCopyAvailablePostScriptNames	0	1
-/System/Library/Frameworks/CoreText.framework/CoreText	_CTFontManagerRegisterGraphicsFont	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVBufferRelease	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVBufferRetain	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVImageBufferGetEncodedSize	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVMetalTextureCacheCreate	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVMetalTextureCacheCreateTextureFromImage	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVMetalTextureGetTexture	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferCreate	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetBaseAddress	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetBaseAddressOfPlane	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetBytesPerRow	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetBytesPerRowOfPlane	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetDataSize	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetHeight	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetHeightOfPlane	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetIOSurface	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetPixelFormatType	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetWidth	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetWidthOfPlane	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferLockBaseAddress	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferPoolCreatePixelBuffer	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferRelease	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferRetain	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferUnlockBaseAddress	0	1
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferCGBitmapContextCompatibilityKey	0	0
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferCGImageCompatibilityKey	0	0
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferHeightKey	0	0
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferIOSurfacePropertiesKey	0	0
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferMetalCompatibilityKey	0	0
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferPixelFormatTypeKey	0	0
-/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferWidthKey	0	0
-/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck	_OBJC_CLASS_$_DCDevice	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSClassFromString	0	1
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSGetUncaughtExceptionHandler	0	1
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSKeyValueChangeNewKey	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSLocalizedDescriptionKey	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSLog	0	1
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSProcessInfoPowerStateDidChangeNotification	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSProcessInfoThermalStateDidChangeNotification	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSSearchPathForDirectoriesInDomains	0	1
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSSelectorFromString	0	1
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSSetUncaughtExceptionHandler	0	1
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSStringFromClass	0	1
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSStringFromSelector	0	1
-/System/Library/Frameworks/Foundation.framework/Foundation	_NSTemporaryDirectory	0	1
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSAssertionHandler	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSAttributedString	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSAutoreleasePool	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSBundle	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSCharacterSet	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSCondition	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSDateFormatter	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSDecimalNumber	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSError	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSFileManager	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSHTTPCookie	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSHTTPCookieStorage	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSHTTPURLResponse	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSJSONSerialization	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSKeyedArchiver	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSKeyedUnarchiver	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSLayoutConstraint	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSLock	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSMutableAttributedString	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSMutableString	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSMutableURLRequest	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSNotificationCenter	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSNumber	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSOperationQueue	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSProcessInfo	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSScanner	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSString	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSThread	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSURLConnection	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSURLRequest	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSURLSession	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSUUID	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSValue	0	0
-/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_METACLASS_$_NSError	0	0
-/System/Library/Frameworks/GameController.framework/GameController	_GCControllerDidConnectNotification	0	0
-/System/Library/Frameworks/GameController.framework/GameController	_GCControllerDidDisconnectNotification	0	0
-/System/Library/Frameworks/GameController.framework/GameController	_GCMouseDidBecomeCurrentNotification	1	0
-/System/Library/Frameworks/GameController.framework/GameController	_GCMouseDidConnectNotification	1	0
-/System/Library/Frameworks/GameController.framework/GameController	_GCMouseDidDisconnectNotification	1	0
-/System/Library/Frameworks/GameController.framework/GameController	_GCMouseDidStopBeingCurrentNotification	1	0
-/System/Library/Frameworks/GameController.framework/GameController	_OBJC_CLASS_$_GCController	0	0
-/System/Library/Frameworks/GameController.framework/GameController	_OBJC_CLASS_$_GCDualSenseGamepad	1	0
-/System/Library/Frameworks/GameController.framework/GameController	_OBJC_CLASS_$_GCDualShockGamepad	1	0
-/System/Library/Frameworks/GameController.framework/GameController	_OBJC_CLASS_$_GCMouse	1	0
-/System/Library/Frameworks/GameController.framework/GameController	_OBJC_CLASS_$_GCXboxGamepad	1	0
-/System/Library/Frameworks/IOSurface.framework/IOSurface	_IOSurfaceGetAllocSize	0	1
-/System/Library/Frameworks/Metal.framework/Metal	_MTLCreateSystemDefaultDevice	0	1
-/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLCaptureDescriptor	0	0
-/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLCaptureManager	0	0
-/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLCompileOptions	0	0
-/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLDepthStencilDescriptor	0	0
-/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLRenderPassDescriptor	0	0
-/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLRenderPipelineDescriptor	0	0
-/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLSamplerDescriptor	0	0
-/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLTextureDescriptor	0	0
-/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLVertexDescriptor	0	0
-/System/Library/Frameworks/Network.framework/Network	_nw_interface_get_name	0	1
-/System/Library/Frameworks/Network.framework/Network	_nw_interface_get_type	0	1
-/System/Library/Frameworks/Network.framework/Network	_nw_path_enumerate_interfaces	0	1
-/System/Library/Frameworks/Network.framework/Network	_nw_path_get_status	0	1
-/System/Library/Frameworks/Network.framework/Network	_nw_path_is_constrained	0	1
-/System/Library/Frameworks/Network.framework/Network	_nw_path_is_expensive	0	1
-/System/Library/Frameworks/Network.framework/Network	_nw_path_monitor_cancel	0	1
-/System/Library/Frameworks/Network.framework/Network	_nw_path_monitor_create	0	1
-/System/Library/Frameworks/Network.framework/Network	_nw_path_monitor_set_queue	0	1
-/System/Library/Frameworks/Network.framework/Network	_nw_path_monitor_set_update_handler	0	1
-/System/Library/Frameworks/Network.framework/Network	_nw_path_monitor_start	0	1
-/System/Library/Frameworks/Photos.framework/Photos	_OBJC_CLASS_$_PHPhotoLibrary	0	0
-/System/Library/Frameworks/QuartzCore.framework/QuartzCore	_CACurrentMediaTime	0	1
-/System/Library/Frameworks/QuartzCore.framework/QuartzCore	_CAFrameRateRangeMake	1	1
-/System/Library/Frameworks/QuartzCore.framework/QuartzCore	_OBJC_CLASS_$_CAEAGLLayer	0	0
-/System/Library/Frameworks/QuartzCore.framework/QuartzCore	_OBJC_CLASS_$_CAMetalLayer	0	0
-/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilityCreateWithAddress	0	1
-/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilityCreateWithName	0	1
-/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilityGetFlags	0	1
-/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilityScheduleWithRunLoop	0	1
-/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilitySetCallback	0	1
-/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilityUnscheduleFromRunLoop	0	1
-/System/Library/Frameworks/UIKit.framework/UIKit	_NSFontAttributeName	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_NSForegroundColorAttributeName	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_NSKernAttributeName	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_NSParagraphStyleAttributeName	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_NSStrokeWidthAttributeName	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_NSMutableParagraphStyle	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIAlertAction	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIAlertController	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIApplication	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIButton	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIColor	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIDevice	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIFont	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIGraphicsImageRenderer	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIGraphicsImageRendererFormat	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIHoverGestureRecognizer	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIImage	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIImagePickerController	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIImageView	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIKeyCommand	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UILongPressGestureRecognizer	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UINavigationController	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIPanGestureRecognizer	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIPinchGestureRecognizer	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIPointerInteraction	1	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIPointerStyle	1	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIProgressView	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIRotationGestureRecognizer	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIScreen	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIScrollView	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UISwipeGestureRecognizer	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UITapGestureRecognizer	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UITextField	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UITextView	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIView	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIViewController	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIWindowScene	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_METACLASS_$_UITextField	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_METACLASS_$_UITextView	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_METACLASS_$_UIView	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_METACLASS_$_UIViewController	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIApplicationDidBecomeActiveNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIApplicationDidEnterBackgroundNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIApplicationOpenSettingsURLString	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIDeviceBatteryLevelDidChangeNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIDeviceBatteryStateDidChangeNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIDeviceOrientationDidChangeNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIEdgeInsetsZero	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIFontWeightMedium	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIImagePNGRepresentation	0	1
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIImagePickerControllerImageURL	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIImagePickerControllerMediaType	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIImagePickerControllerMediaURL	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIImagePickerControllerOriginalImage	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIImageWriteToSavedPhotosAlbum	0	1
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyInputEscape	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyboardAnimationDurationUserInfoKey	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyboardDidShowNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyboardFrameEndUserInfoKey	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyboardWillHideNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyboardWillShowNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UISaveVideoAtPathToSavedPhotosAlbum	0	1
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIScreenBrightnessDidChangeNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIScreenDidConnectNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIScreenDidDisconnectNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIScreenModeDidChangeNotification	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UITextContentTypeOneTimeCode	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UITextContentTypePassword	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UITextContentTypeTelephoneNumber	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UITextContentTypeUsername	0	0
-/System/Library/Frameworks/UIKit.framework/UIKit	_UIVideoAtPathIsCompatibleWithSavedPhotosAlbum	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionCompleteFrames	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionCreate	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionEncodeFrame	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionGetPixelBufferPool	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionInvalidate	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionPrepareToEncodeFrames	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCopyVideoEncoderList	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionCanAcceptFormatDescription	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionCreate	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionDecodeFrame	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionFinishDelayedFrames	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionInvalidate	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionWaitForAsynchronousFrames	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTIsHardwareDecodeSupported	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTSessionSetProperty	0	1
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTCompressionPropertyKey_AllowFrameReordering	0	0
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTCompressionPropertyKey_AverageBitRate	0	0
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTCompressionPropertyKey_MaxKeyFrameInterval	0	0
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTCompressionPropertyKey_RealTime	0	0
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTDecompressionPropertyKey_RealTime	0	0
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTVideoEncoderList_CodecType	0	0
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTVideoEncoderList_EncoderName	0	0
-/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTVideoEncoderList_IsHardwareAccelerated	0	0
-/usr/lib/libSystem.B.dylib	_CCRandomGenerateBytes	0	1
-/usr/lib/libSystem.B.dylib	_NDR_record	0	0
-/usr/lib/libSystem.B.dylib	__Block_object_assign	0	1
-/usr/lib/libSystem.B.dylib	__Block_object_dispose	0	1
-/usr/lib/libSystem.B.dylib	__DefaultRuneLocale	0	0
-/usr/lib/libSystem.B.dylib	__Exit	0	1
-/usr/lib/libSystem.B.dylib	__NSConcreteGlobalBlock	0	0
-/usr/lib/libSystem.B.dylib	__NSConcreteStackBlock	0	0
-/usr/lib/libSystem.B.dylib	__Unwind_Resume	0	1
-/usr/lib/libSystem.B.dylib	___assert_rtn	0	1
-/usr/lib/libSystem.B.dylib	___chkstk_darwin	0	0
-/usr/lib/libSystem.B.dylib	___cxa_atexit	0	1
-/usr/lib/libSystem.B.dylib	___darwin_check_fd_set_overflow	1	0
-/usr/lib/libSystem.B.dylib	___deregister_frame	0	1
-/usr/lib/libSystem.B.dylib	___divti3	0	1
-/usr/lib/libSystem.B.dylib	___error	0	1
-/usr/lib/libSystem.B.dylib	___exp10	0	1
-/usr/lib/libSystem.B.dylib	___exp10f	0	1
-/usr/lib/libSystem.B.dylib	___floattidf	0	1
-/usr/lib/libSystem.B.dylib	___maskrune	0	1
-/usr/lib/libSystem.B.dylib	___memcpy_chk	0	1
-/usr/lib/libSystem.B.dylib	___memmove_chk	0	1
-/usr/lib/libSystem.B.dylib	___memset_chk	0	1
-/usr/lib/libSystem.B.dylib	___mulsc3	0	1
-/usr/lib/libSystem.B.dylib	___register_frame	0	1
-/usr/lib/libSystem.B.dylib	___sincos_stret	0	1
-/usr/lib/libSystem.B.dylib	___sincosf_stret	0	1
-/usr/lib/libSystem.B.dylib	___stack_chk_fail	0	1
-/usr/lib/libSystem.B.dylib	___stack_chk_guard	0	0
-/usr/lib/libSystem.B.dylib	___stderrp	0	0
-/usr/lib/libSystem.B.dylib	___stdinp	0	0
-/usr/lib/libSystem.B.dylib	___stdoutp	0	0
-/usr/lib/libSystem.B.dylib	___strlcat_chk	0	1
-/usr/lib/libSystem.B.dylib	___strlcpy_chk	0	1
-/usr/lib/libSystem.B.dylib	___strncpy_chk	0	1
-/usr/lib/libSystem.B.dylib	___tolower	0	1
-/usr/lib/libSystem.B.dylib	___toupper	0	1
-/usr/lib/libSystem.B.dylib	___udivti3	0	1
-/usr/lib/libSystem.B.dylib	___ulock_wait	0	1
-/usr/lib/libSystem.B.dylib	___ulock_wake	0	1
-/usr/lib/libSystem.B.dylib	___unw_add_dynamic_fde	1	0
-/usr/lib/libSystem.B.dylib	__availability_version_check	1	0
-/usr/lib/libSystem.B.dylib	__dispatch_main_q	0	0
-/usr/lib/libSystem.B.dylib	__exit	0	1
-/usr/lib/libSystem.B.dylib	__os_log_default	0	0
-/usr/lib/libSystem.B.dylib	__os_log_impl	0	1
-/usr/lib/libSystem.B.dylib	__tlv_atexit	0	1
-/usr/lib/libSystem.B.dylib	__tlv_bootstrap	0	0
-/usr/lib/libSystem.B.dylib	_abort	0	1
-/usr/lib/libSystem.B.dylib	_accept	0	1
-/usr/lib/libSystem.B.dylib	_access	0	0
-/usr/lib/libSystem.B.dylib	_acos	0	0
-/usr/lib/libSystem.B.dylib	_acosf	0	1
-/usr/lib/libSystem.B.dylib	_asin	0	0
-/usr/lib/libSystem.B.dylib	_asinf	0	1
-/usr/lib/libSystem.B.dylib	_atan	0	0
-/usr/lib/libSystem.B.dylib	_atan2	0	0
-/usr/lib/libSystem.B.dylib	_atan2f	0	1
-/usr/lib/libSystem.B.dylib	_atanf	0	1
-/usr/lib/libSystem.B.dylib	_atexit	0	1
-/usr/lib/libSystem.B.dylib	_atof	0	1
-/usr/lib/libSystem.B.dylib	_atoi	0	1
-/usr/lib/libSystem.B.dylib	_atol	0	1
-/usr/lib/libSystem.B.dylib	_atoll	0	1
-/usr/lib/libSystem.B.dylib	_backtrace	0	1
-/usr/lib/libSystem.B.dylib	_backtrace_symbols	0	1
-/usr/lib/libSystem.B.dylib	_bind	0	1
-/usr/lib/libSystem.B.dylib	_bsearch	0	1
-/usr/lib/libSystem.B.dylib	_bzero	0	1
-/usr/lib/libSystem.B.dylib	_calloc	0	0
-/usr/lib/libSystem.B.dylib	_cbrt	0	1
-/usr/lib/libSystem.B.dylib	_cbrtf	0	1
-/usr/lib/libSystem.B.dylib	_clearerr	0	1
-/usr/lib/libSystem.B.dylib	_clock	0	1
-/usr/lib/libSystem.B.dylib	_clock_get_time	0	1
-/usr/lib/libSystem.B.dylib	_clock_gettime	0	1
-/usr/lib/libSystem.B.dylib	_clock_gettime_nsec_np	0	1
-/usr/lib/libSystem.B.dylib	_close	0	0
-/usr/lib/libSystem.B.dylib	_closedir	0	1
-/usr/lib/libSystem.B.dylib	_confstr	0	1
-/usr/lib/libSystem.B.dylib	_connect	0	1
-/usr/lib/libSystem.B.dylib	_connectx	0	1
-/usr/lib/libSystem.B.dylib	_cos	0	0
-/usr/lib/libSystem.B.dylib	_cosf	0	1
-/usr/lib/libSystem.B.dylib	_cosh	0	0
-/usr/lib/libSystem.B.dylib	_coshf	0	1
-/usr/lib/libSystem.B.dylib	_difftime	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_after	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_after_f	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_async	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_async_f	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_data_create	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_get_global_queue	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_group_create	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_group_enter	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_group_leave	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_group_notify	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_once	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_once_f	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_queue_create	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_queue_create_with_target$V2	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_queue_get_label	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_release	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_semaphore_create	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_semaphore_signal	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_semaphore_wait	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_set_context	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_set_finalizer_f	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_sync	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_sync_f	0	1
-/usr/lib/libSystem.B.dylib	_dispatch_time	0	1
-/usr/lib/libSystem.B.dylib	_dladdr	0	1
-/usr/lib/libSystem.B.dylib	_dlerror	0	1
-/usr/lib/libSystem.B.dylib	_dlsym	0	1
-/usr/lib/libSystem.B.dylib	_environ	0	0
-/usr/lib/libSystem.B.dylib	_erfcf	0	1
-/usr/lib/libSystem.B.dylib	_erff	0	1
-/usr/lib/libSystem.B.dylib	_exit	0	1
-/usr/lib/libSystem.B.dylib	_exp	0	0
-/usr/lib/libSystem.B.dylib	_exp2	0	1
-/usr/lib/libSystem.B.dylib	_exp2f	0	1
-/usr/lib/libSystem.B.dylib	_expf	0	1
-/usr/lib/libSystem.B.dylib	_expm1	0	1
-/usr/lib/libSystem.B.dylib	_fchmod	0	0
-/usr/lib/libSystem.B.dylib	_fchown	0	0
-/usr/lib/libSystem.B.dylib	_fclose	0	0
-/usr/lib/libSystem.B.dylib	_fcntl	0	0
-/usr/lib/libSystem.B.dylib	_fdopen	0	1
-/usr/lib/libSystem.B.dylib	_feof	0	1
-/usr/lib/libSystem.B.dylib	_ferror	0	1
-/usr/lib/libSystem.B.dylib	_fflush	0	1
-/usr/lib/libSystem.B.dylib	_fgets	0	1
-/usr/lib/libSystem.B.dylib	_fileno	0	1
-/usr/lib/libSystem.B.dylib	_flock	0	1
-/usr/lib/libSystem.B.dylib	_fmod	0	0
-/usr/lib/libSystem.B.dylib	_fmodf	0	1
-/usr/lib/libSystem.B.dylib	_fopen	0	1
-/usr/lib/libSystem.B.dylib	_fprintf	0	1
-/usr/lib/libSystem.B.dylib	_fputc	0	1
-/usr/lib/libSystem.B.dylib	_fputs	0	1
-/usr/lib/libSystem.B.dylib	_fread	0	0
-/usr/lib/libSystem.B.dylib	_free	0	0
-/usr/lib/libSystem.B.dylib	_freeaddrinfo	0	1
-/usr/lib/libSystem.B.dylib	_freeifaddrs	0	1
-/usr/lib/libSystem.B.dylib	_frexp	0	0
-/usr/lib/libSystem.B.dylib	_frexpf	0	1
-/usr/lib/libSystem.B.dylib	_fsctl	0	1
-/usr/lib/libSystem.B.dylib	_fseek	0	1
-/usr/lib/libSystem.B.dylib	_fseeko	0	1
-/usr/lib/libSystem.B.dylib	_fstat	0	0
-/usr/lib/libSystem.B.dylib	_fstatfs	0	1
-/usr/lib/libSystem.B.dylib	_fsync	0	1
-/usr/lib/libSystem.B.dylib	_ftell	0	1
-/usr/lib/libSystem.B.dylib	_ftello	0	1
-/usr/lib/libSystem.B.dylib	_ftruncate	0	0
-/usr/lib/libSystem.B.dylib	_futimes	0	1
-/usr/lib/libSystem.B.dylib	_fwrite	0	0
-/usr/lib/libSystem.B.dylib	_gai_strerror	0	1
-/usr/lib/libSystem.B.dylib	_getaddrinfo	0	1
-/usr/lib/libSystem.B.dylib	_getcwd	0	0
-/usr/lib/libSystem.B.dylib	_getegid	0	1
-/usr/lib/libSystem.B.dylib	_getenv	0	1
-/usr/lib/libSystem.B.dylib	_geteuid	0	0
-/usr/lib/libSystem.B.dylib	_getgid	0	1
-/usr/lib/libSystem.B.dylib	_gethostbyname	0	1
-/usr/lib/libSystem.B.dylib	_getifaddrs	0	1
-/usr/lib/libSystem.B.dylib	_getnameinfo	0	1
-/usr/lib/libSystem.B.dylib	_getpagesize	0	1
-/usr/lib/libSystem.B.dylib	_getpeername	0	1
-/usr/lib/libSystem.B.dylib	_getpid	0	1
-/usr/lib/libSystem.B.dylib	_getrlimit	0	1
-/usr/lib/libSystem.B.dylib	_getrusage	0	1
-/usr/lib/libSystem.B.dylib	_getsockname	0	1
-/usr/lib/libSystem.B.dylib	_getsockopt	0	1
-/usr/lib/libSystem.B.dylib	_gettimeofday	0	1
-/usr/lib/libSystem.B.dylib	_getuid	0	1
-/usr/lib/libSystem.B.dylib	_getxattr	0	1
-/usr/lib/libSystem.B.dylib	_gmtime	0	1
-/usr/lib/libSystem.B.dylib	_gmtime_r	0	1
-/usr/lib/libSystem.B.dylib	_host_get_clock_service	0	1
-/usr/lib/libSystem.B.dylib	_host_get_exception_ports	0	0
-/usr/lib/libSystem.B.dylib	_host_page_size	0	1
-/usr/lib/libSystem.B.dylib	_host_set_exception_ports	0	0
-/usr/lib/libSystem.B.dylib	_host_statistics	0	1
-/usr/lib/libSystem.B.dylib	_host_swap_exception_ports	0	0
-/usr/lib/libSystem.B.dylib	_hypot	0	1
-/usr/lib/libSystem.B.dylib	_hypotf	0	1
-/usr/lib/libSystem.B.dylib	_if_nametoindex	0	1
-/usr/lib/libSystem.B.dylib	_ilogb	0	1
-/usr/lib/libSystem.B.dylib	_in6addr_any	0	0
-/usr/lib/libSystem.B.dylib	_in6addr_loopback	0	0
-/usr/lib/libSystem.B.dylib	_inet_aton	0	1
-/usr/lib/libSystem.B.dylib	_inet_ntop	0	1
-/usr/lib/libSystem.B.dylib	_inet_pton	0	1
-/usr/lib/libSystem.B.dylib	_ioctl	0	1
-/usr/lib/libSystem.B.dylib	_kevent	0	1
-/usr/lib/libSystem.B.dylib	_kqueue	0	1
-/usr/lib/libSystem.B.dylib	_ldexp	0	0
-/usr/lib/libSystem.B.dylib	_ldexpf	0	1
-/usr/lib/libSystem.B.dylib	_listen	0	1
-/usr/lib/libSystem.B.dylib	_lldiv	0	1
-/usr/lib/libSystem.B.dylib	_localeconv	0	1
-/usr/lib/libSystem.B.dylib	_localtime	0	1
-/usr/lib/libSystem.B.dylib	_localtime_r	0	1
-/usr/lib/libSystem.B.dylib	_log	0	0
-/usr/lib/libSystem.B.dylib	_log10	0	0
-/usr/lib/libSystem.B.dylib	_log10f	0	1
-/usr/lib/libSystem.B.dylib	_log2	0	0
-/usr/lib/libSystem.B.dylib	_log2f	0	1
-/usr/lib/libSystem.B.dylib	_logf	0	1
-/usr/lib/libSystem.B.dylib	_longjmp	0	0
-/usr/lib/libSystem.B.dylib	_lseek	0	1
-/usr/lib/libSystem.B.dylib	_lstat	0	0
-/usr/lib/libSystem.B.dylib	_mach_absolute_time	0	1
-/usr/lib/libSystem.B.dylib	_mach_error_string	0	1
-/usr/lib/libSystem.B.dylib	_mach_host_self	0	1
-/usr/lib/libSystem.B.dylib	_mach_msg	0	1
-/usr/lib/libSystem.B.dylib	_mach_msg_destroy	0	1
-/usr/lib/libSystem.B.dylib	_mach_port_allocate	0	1
-/usr/lib/libSystem.B.dylib	_mach_port_deallocate	0	1
-/usr/lib/libSystem.B.dylib	_mach_port_insert_right	0	1
-/usr/lib/libSystem.B.dylib	_mach_port_mod_refs	0	1
-/usr/lib/libSystem.B.dylib	_mach_task_self_	0	0
-/usr/lib/libSystem.B.dylib	_mach_thread_self	0	1
-/usr/lib/libSystem.B.dylib	_mach_timebase_info	0	1
-/usr/lib/libSystem.B.dylib	_madvise	0	1
-/usr/lib/libSystem.B.dylib	_malloc	0	0
-/usr/lib/libSystem.B.dylib	_malloc_size	0	1
-/usr/lib/libSystem.B.dylib	_memchr	0	1
-/usr/lib/libSystem.B.dylib	_memcmp	0	1
-/usr/lib/libSystem.B.dylib	_memcpy	0	1
-/usr/lib/libSystem.B.dylib	_memmove	0	1
-/usr/lib/libSystem.B.dylib	_memset	0	1
-/usr/lib/libSystem.B.dylib	_memset_pattern16	0	1
-/usr/lib/libSystem.B.dylib	_memset_s	0	1
-/usr/lib/libSystem.B.dylib	_mkdir	0	0
-/usr/lib/libSystem.B.dylib	_mktime	0	1
-/usr/lib/libSystem.B.dylib	_mlock	0	1
-/usr/lib/libSystem.B.dylib	_mmap	0	0
-/usr/lib/libSystem.B.dylib	_modf	0	0
-/usr/lib/libSystem.B.dylib	_modff	0	1
-/usr/lib/libSystem.B.dylib	_mprotect	0	1
-/usr/lib/libSystem.B.dylib	_msync	0	1
-/usr/lib/libSystem.B.dylib	_munmap	0	0
-/usr/lib/libSystem.B.dylib	_nan	0	1
-/usr/lib/libSystem.B.dylib	_nanosleep	0	1
-/usr/lib/libSystem.B.dylib	_nextafterf	0	1
-/usr/lib/libSystem.B.dylib	_open	0	1
-/usr/lib/libSystem.B.dylib	_open_dprotected_np	0	1
-/usr/lib/libSystem.B.dylib	_opendir	0	1
-/usr/lib/libSystem.B.dylib	_os_log_create	0	1
-/usr/lib/libSystem.B.dylib	_os_log_type_enabled	0	1
-/usr/lib/libSystem.B.dylib	_os_release	0	1
-/usr/lib/libSystem.B.dylib	_pipe	0	1
-/usr/lib/libSystem.B.dylib	_poll	0	1
-/usr/lib/libSystem.B.dylib	_posix_memalign	0	1
-/usr/lib/libSystem.B.dylib	_pow	0	0
-/usr/lib/libSystem.B.dylib	_powf	0	1
-/usr/lib/libSystem.B.dylib	_pread	0	0
-/usr/lib/libSystem.B.dylib	_printf	0	1
-/usr/lib/libSystem.B.dylib	_pthread_atfork	0	1
-/usr/lib/libSystem.B.dylib	_pthread_attr_destroy	0	1
-/usr/lib/libSystem.B.dylib	_pthread_attr_getdetachstate	0	1
-/usr/lib/libSystem.B.dylib	_pthread_attr_init	0	1
-/usr/lib/libSystem.B.dylib	_pthread_attr_setdetachstate	0	1
-/usr/lib/libSystem.B.dylib	_pthread_attr_setschedparam	0	1
-/usr/lib/libSystem.B.dylib	_pthread_attr_setschedpolicy	0	1
-/usr/lib/libSystem.B.dylib	_pthread_attr_setstacksize	0	1
-/usr/lib/libSystem.B.dylib	_pthread_cond_broadcast	0	1
-/usr/lib/libSystem.B.dylib	_pthread_cond_destroy	0	1
-/usr/lib/libSystem.B.dylib	_pthread_cond_init	0	1
-/usr/lib/libSystem.B.dylib	_pthread_cond_signal	0	1
-/usr/lib/libSystem.B.dylib	_pthread_cond_timedwait	0	1
-/usr/lib/libSystem.B.dylib	_pthread_cond_timedwait_relative_np	0	1
-/usr/lib/libSystem.B.dylib	_pthread_cond_wait	0	1
-/usr/lib/libSystem.B.dylib	_pthread_condattr_destroy	0	1
-/usr/lib/libSystem.B.dylib	_pthread_condattr_init	0	1
-/usr/lib/libSystem.B.dylib	_pthread_cpu_number_np	0	1
-/usr/lib/libSystem.B.dylib	_pthread_create	0	1
-/usr/lib/libSystem.B.dylib	_pthread_detach	0	1
-/usr/lib/libSystem.B.dylib	_pthread_equal	0	1
-/usr/lib/libSystem.B.dylib	_pthread_exit	0	1
-/usr/lib/libSystem.B.dylib	_pthread_get_stackaddr_np	0	1
-/usr/lib/libSystem.B.dylib	_pthread_get_stacksize_np	0	1
-/usr/lib/libSystem.B.dylib	_pthread_getschedparam	0	1
-/usr/lib/libSystem.B.dylib	_pthread_getspecific	0	1
-/usr/lib/libSystem.B.dylib	_pthread_join	0	1
-/usr/lib/libSystem.B.dylib	_pthread_key_create	0	1
-/usr/lib/libSystem.B.dylib	_pthread_key_delete	0	1
-/usr/lib/libSystem.B.dylib	_pthread_mach_thread_np	0	1
-/usr/lib/libSystem.B.dylib	_pthread_mutex_destroy	0	1
-/usr/lib/libSystem.B.dylib	_pthread_mutex_init	0	1
-/usr/lib/libSystem.B.dylib	_pthread_mutex_lock	0	1
-/usr/lib/libSystem.B.dylib	_pthread_mutex_trylock	0	1
-/usr/lib/libSystem.B.dylib	_pthread_mutex_unlock	0	1
-/usr/lib/libSystem.B.dylib	_pthread_mutexattr_destroy	0	1
-/usr/lib/libSystem.B.dylib	_pthread_mutexattr_init	0	1
-/usr/lib/libSystem.B.dylib	_pthread_mutexattr_setpolicy_np	0	1
-/usr/lib/libSystem.B.dylib	_pthread_mutexattr_settype	0	1
-/usr/lib/libSystem.B.dylib	_pthread_once	0	1
-/usr/lib/libSystem.B.dylib	_pthread_rwlock_destroy	0	1
-/usr/lib/libSystem.B.dylib	_pthread_rwlock_init	0	1
-/usr/lib/libSystem.B.dylib	_pthread_rwlock_rdlock	0	1
-/usr/lib/libSystem.B.dylib	_pthread_rwlock_unlock	0	1
-/usr/lib/libSystem.B.dylib	_pthread_rwlock_wrlock	0	1
-/usr/lib/libSystem.B.dylib	_pthread_self	0	1
-/usr/lib/libSystem.B.dylib	_pthread_set_qos_class_self_np	0	1
-/usr/lib/libSystem.B.dylib	_pthread_setname_np	0	1
-/usr/lib/libSystem.B.dylib	_pthread_setschedparam	0	1
-/usr/lib/libSystem.B.dylib	_pthread_setspecific	0	1
-/usr/lib/libSystem.B.dylib	_pthread_sigmask	0	1
-/usr/lib/libSystem.B.dylib	_pthread_threadid_np	0	1
-/usr/lib/libSystem.B.dylib	_puts	0	1
-/usr/lib/libSystem.B.dylib	_pwrite	0	0
-/usr/lib/libSystem.B.dylib	_qsort	0	1
-/usr/lib/libSystem.B.dylib	_raise	0	1
-/usr/lib/libSystem.B.dylib	_rand	0	1
-/usr/lib/libSystem.B.dylib	_rand_r	0	1
-/usr/lib/libSystem.B.dylib	_random	0	1
-/usr/lib/libSystem.B.dylib	_read	0	0
-/usr/lib/libSystem.B.dylib	_readdir	0	1
-/usr/lib/libSystem.B.dylib	_readdir_r	0	1
-/usr/lib/libSystem.B.dylib	_readlink	0	0
-/usr/lib/libSystem.B.dylib	_realloc	0	0
-/usr/lib/libSystem.B.dylib	_realpath$DARWIN_EXTSN	0	1
-/usr/lib/libSystem.B.dylib	_recv	0	1
-/usr/lib/libSystem.B.dylib	_recvfrom	0	1
-/usr/lib/libSystem.B.dylib	_recvmsg	0	1
-/usr/lib/libSystem.B.dylib	_remainderf	0	1
-/usr/lib/libSystem.B.dylib	_remove	0	1
-/usr/lib/libSystem.B.dylib	_removexattr	0	1
-/usr/lib/libSystem.B.dylib	_remquof	0	1
-/usr/lib/libSystem.B.dylib	_rename	0	1
-/usr/lib/libSystem.B.dylib	_rewind	0	1
-/usr/lib/libSystem.B.dylib	_rmdir	0	0
-/usr/lib/libSystem.B.dylib	_round	0	0
-/usr/lib/libSystem.B.dylib	_sched_yield	0	1
-/usr/lib/libSystem.B.dylib	_select	0	1
-/usr/lib/libSystem.B.dylib	_semaphore_create	0	1
-/usr/lib/libSystem.B.dylib	_semaphore_destroy	0	1
-/usr/lib/libSystem.B.dylib	_semaphore_signal	0	1
-/usr/lib/libSystem.B.dylib	_semaphore_wait	0	1
-/usr/lib/libSystem.B.dylib	_send	0	1
-/usr/lib/libSystem.B.dylib	_sendmsg	0	1
-/usr/lib/libSystem.B.dylib	_sendto	0	1
-/usr/lib/libSystem.B.dylib	_setbuf	0	1
-/usr/lib/libSystem.B.dylib	_setjmp	0	1
-/usr/lib/libSystem.B.dylib	_setsockopt	0	1
-/usr/lib/libSystem.B.dylib	_setvbuf	0	1
-/usr/lib/libSystem.B.dylib	_setxattr	0	1
-/usr/lib/libSystem.B.dylib	_shutdown	0	1
-/usr/lib/libSystem.B.dylib	_sigaction	0	1
-/usr/lib/libSystem.B.dylib	_signal	0	1
-/usr/lib/libSystem.B.dylib	_sigprocmask	0	1
-/usr/lib/libSystem.B.dylib	_sin	0	0
-/usr/lib/libSystem.B.dylib	_sinf	0	1
-/usr/lib/libSystem.B.dylib	_sinh	0	0
-/usr/lib/libSystem.B.dylib	_sinhf	0	1
-/usr/lib/libSystem.B.dylib	_sleep	0	1
-/usr/lib/libSystem.B.dylib	_snprintf	0	1
-/usr/lib/libSystem.B.dylib	_socket	0	1
-/usr/lib/libSystem.B.dylib	_socketpair	0	1
-/usr/lib/libSystem.B.dylib	_sprintf	0	1
-/usr/lib/libSystem.B.dylib	_srand	0	1
-/usr/lib/libSystem.B.dylib	_srandomdev	0	1
-/usr/lib/libSystem.B.dylib	_sscanf	0	1
-/usr/lib/libSystem.B.dylib	_stat	0	0
-/usr/lib/libSystem.B.dylib	_statfs	0	1
-/usr/lib/libSystem.B.dylib	_strcasecmp	0	1
-/usr/lib/libSystem.B.dylib	_strcat	0	1
-/usr/lib/libSystem.B.dylib	_strchr	0	1
-/usr/lib/libSystem.B.dylib	_strcmp	0	0
-/usr/lib/libSystem.B.dylib	_strcpy	0	1
-/usr/lib/libSystem.B.dylib	_strcspn	0	1
-/usr/lib/libSystem.B.dylib	_strdup	0	0
-/usr/lib/libSystem.B.dylib	_strerror	0	1
-/usr/lib/libSystem.B.dylib	_strerror_r	0	1
-/usr/lib/libSystem.B.dylib	_strftime	0	1
-/usr/lib/libSystem.B.dylib	_strlen	0	1
-/usr/lib/libSystem.B.dylib	_strncasecmp	0	1
-/usr/lib/libSystem.B.dylib	_strncat	0	1
-/usr/lib/libSystem.B.dylib	_strncmp	0	1
-/usr/lib/libSystem.B.dylib	_strncpy	0	1
-/usr/lib/libSystem.B.dylib	_strnlen	0	1
-/usr/lib/libSystem.B.dylib	_strpbrk	0	1
-/usr/lib/libSystem.B.dylib	_strrchr	0	1
-/usr/lib/libSystem.B.dylib	_strspn	0	1
-/usr/lib/libSystem.B.dylib	_strstr	0	1
-/usr/lib/libSystem.B.dylib	_strtod	0	1
-/usr/lib/libSystem.B.dylib	_strtof	0	1
-/usr/lib/libSystem.B.dylib	_strtol	0	1
-/usr/lib/libSystem.B.dylib	_strtoll	0	1
-/usr/lib/libSystem.B.dylib	_strtoul	0	1
-/usr/lib/libSystem.B.dylib	_strtoull	0	1
-/usr/lib/libSystem.B.dylib	_sys_icache_invalidate	0	1
-/usr/lib/libSystem.B.dylib	_sysconf	0	1
-/usr/lib/libSystem.B.dylib	_sysctl	0	1
-/usr/lib/libSystem.B.dylib	_sysctlbyname	0	1
-/usr/lib/libSystem.B.dylib	_tan	0	0
-/usr/lib/libSystem.B.dylib	_tanf	0	1
-/usr/lib/libSystem.B.dylib	_tanh	0	0
-/usr/lib/libSystem.B.dylib	_tanhf	0	1
-/usr/lib/libSystem.B.dylib	_task_get_exception_ports	0	0
-/usr/lib/libSystem.B.dylib	_task_info	0	1
-/usr/lib/libSystem.B.dylib	_task_set_exception_ports	0	0
-/usr/lib/libSystem.B.dylib	_task_swap_exception_ports	0	0
-/usr/lib/libSystem.B.dylib	_task_threads	0	1
-/usr/lib/libSystem.B.dylib	_tcgetattr	0	1
-/usr/lib/libSystem.B.dylib	_tcsetattr	0	1
-/usr/lib/libSystem.B.dylib	_thread_get_exception_ports	0	0
-/usr/lib/libSystem.B.dylib	_thread_get_state	0	1
-/usr/lib/libSystem.B.dylib	_thread_info	0	1
-/usr/lib/libSystem.B.dylib	_thread_policy_get	0	1
-/usr/lib/libSystem.B.dylib	_thread_set_exception_ports	0	0
-/usr/lib/libSystem.B.dylib	_thread_suspend	0	1
-/usr/lib/libSystem.B.dylib	_thread_swap_exception_ports	0	0
-/usr/lib/libSystem.B.dylib	_time	0	1
-/usr/lib/libSystem.B.dylib	_uname	0	1
-/usr/lib/libSystem.B.dylib	_unlink	0	0
-/usr/lib/libSystem.B.dylib	_unw_get_proc_info	0	1
-/usr/lib/libSystem.B.dylib	_unw_get_proc_name	0	1
-/usr/lib/libSystem.B.dylib	_unw_get_reg	0	1
-/usr/lib/libSystem.B.dylib	_unw_getcontext	0	1
-/usr/lib/libSystem.B.dylib	_unw_init_local	0	1
-/usr/lib/libSystem.B.dylib	_unw_step	0	1
-/usr/lib/libSystem.B.dylib	_usleep	0	1
-/usr/lib/libSystem.B.dylib	_utime	0	1
-/usr/lib/libSystem.B.dylib	_utimes	0	1
-/usr/lib/libSystem.B.dylib	_uuid_generate	0	1
-/usr/lib/libSystem.B.dylib	_vfprintf	0	1
-/usr/lib/libSystem.B.dylib	_vm_allocate	0	1
-/usr/lib/libSystem.B.dylib	_vm_deallocate	0	1
-/usr/lib/libSystem.B.dylib	_vm_page_size	0	0
-/usr/lib/libSystem.B.dylib	_vm_read	0	1
-/usr/lib/libSystem.B.dylib	_vm_read_overwrite	0	1
-/usr/lib/libSystem.B.dylib	_vm_region_recurse_64	0	1
-/usr/lib/libSystem.B.dylib	_vm_remap	0	1
-/usr/lib/libSystem.B.dylib	_vsnprintf	0	1
-/usr/lib/libSystem.B.dylib	_wcslen	0	1
-/usr/lib/libSystem.B.dylib	_wmemcmp	0	1
-/usr/lib/libSystem.B.dylib	_write	0	0
-/usr/lib/libSystem.B.dylib	_writev	0	1
-/usr/lib/libSystem.B.dylib	dyld_stub_binder	0	0
-/usr/lib/libc++.1.dylib	__ZNKSt10bad_typeid4whatEv	0	0
-/usr/lib/libc++.1.dylib	__ZNKSt11logic_error4whatEv	0	0
-/usr/lib/libc++.1.dylib	__ZNKSt13bad_exception4whatEv	0	0
-/usr/lib/libc++.1.dylib	__ZNKSt13runtime_error4whatEv	0	0
-/usr/lib/libc++.1.dylib	__ZNKSt3__110error_code7messageEv	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE2atEm	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4copyEPcmm	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4findEPKcmm	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4findEcm	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5rfindEcm	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEmmPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__119__shared_weak_count13__get_deleterERKSt9type_info	0	0
-/usr/lib/libc++.1.dylib	__ZNKSt3__123__match_any_but_newlineIcE6__execERNS_7__stateIcEE	0	0
-/usr/lib/libc++.1.dylib	__ZNKSt3__14__fs10filesystem4path13__parent_pathEv	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__14__fs10filesystem4path16__root_directoryEv	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__14__fs10filesystem4path16lexically_normalEv	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__14__fs10filesystem4path18lexically_relativeERKS2_	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__16locale4nameEv	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__16locale9has_facetERNS0_2idE	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__16locale9use_facetERNS0_2idE	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__16localeeqERKS0_	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__18ios_base6getlocEv	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__18numpunctIcE11do_truenameEv	0	0
-/usr/lib/libc++.1.dylib	__ZNKSt3__18numpunctIcE12do_falsenameEv	0	0
-/usr/lib/libc++.1.dylib	__ZNKSt3__18time_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE3getES4_S4_RNS_8ios_baseERjP2tmPKcSC_	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt3__18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE3putES4_RNS_8ios_baseEcPK2tmPKcSC_	0	1
-/usr/lib/libc++.1.dylib	__ZNKSt8bad_cast4whatEv	0	0
-/usr/lib/libc++.1.dylib	__ZNKSt9bad_alloc4whatEv	0	0
-/usr/lib/libc++.1.dylib	__ZNKSt9exception4whatEv	0	0
-/usr/lib/libc++.1.dylib	__ZNSt10bad_typeidD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt11logic_errorC1EPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt11logic_errorC1ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt11logic_errorC2EPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt11logic_errorC2ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt11logic_errorC2ERKS_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt11logic_errorD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt11logic_errorD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt11range_errorD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt12domain_errorD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt12length_errorD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt12length_errorD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt12out_of_rangeD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt12out_of_rangeD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt13bad_exceptionD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt13exception_ptrC1ERKS_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt13exception_ptrD1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt13exception_ptraSERKS_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC1EPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC1ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC1ERKS_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC2EPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC2ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC2ERKS_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt14overflow_errorD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt15underflow_errorD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt16invalid_argumentD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt16invalid_argumentD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt19bad_optional_accessD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt20bad_array_new_lengthC1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt20bad_array_new_lengthD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__111__call_onceERVmPvPFvS2_E	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__111regex_errorC1ENS_15regex_constants10error_typeE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__111regex_errorD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__111this_thread9sleep_forERKNS_6chrono8durationIxNS_5ratioILl1ELl1000000000EEEEE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112__get_sp_mutEPKv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112__next_primeEm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112bad_weak_ptrD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE2atEm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5eraseEmm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendERKS5_mm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEmc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKcm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertENS_11__wrap_iterIPKcEEc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKcm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6resizeEmc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7replaceEmmPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7replaceEmmPKcm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7reserveEm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__grow_byEmmmmmm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2ERKS5_mmRKS4_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSERKS5_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSEc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE6appendEPKwm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE9__grow_byEmmmmmm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE9push_backEw	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEEC2ERKS5_mmRKS4_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112future_errorC1ENS_10error_codeE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__112future_errorD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__112placeholders2_1E	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__112placeholders2_2E	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE3getEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE4peekEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE4readEPcl	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5seekgENS_4fposI11__mbstate_tEE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5seekgExNS_8ios_base7seekdirE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5tellgEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE6ignoreEli	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE6sentryC1ERS3_b	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE7getlineEPclc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED0Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERb	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERd	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERf	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERi	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERj	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERx	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERy	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE3putEc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE5flushEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE5writeEPKcl	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryC1ERS3_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryD1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED0Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEPKv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEPNS_15basic_streambufIcS2_EE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEb	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEd	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEf	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEi	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEj	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEl	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEs	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEt	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEx	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEy	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIwNS_11char_traitsIwEEE5writeEPKwl	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113random_deviceC1ERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__113random_deviceD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__113random_deviceclEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__114__shared_countD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__115__get_classnameEPKcb	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__115__thread_structC1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__115__thread_structD1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE4swapERS3_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE4syncEv	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5imbueERKNS_6localeE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5uflowEv	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6setbufEPcl	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsgetnEPcl	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsputnEPKcl	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE7seekoffExNS_8ios_base7seekdirEj	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE7seekposENS_4fposI11__mbstate_tEEj	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE8overflowEi	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9pbackfailEi	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9showmanycEv	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9underflowEv	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__115future_categoryEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__115system_categoryEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__117__assoc_sub_state13set_exceptionESt13exception_ptr	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__117__assoc_sub_state16__on_zero_sharedEv	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__117__assoc_sub_state4waitEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__117__assoc_sub_state9set_valueEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__117iostream_categoryEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__118condition_variable10notify_allEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__118condition_variable10notify_oneEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__118condition_variable15__do_timed_waitERNS_11unique_lockINS_5mutexEEENS_6chrono10time_pointINS5_12system_clockENS5_8durationIxNS_5ratioILl1ELl1000000000EEEEEEE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__118condition_variableD1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__119__shared_weak_count14__release_weakEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__119__shared_weak_count4lockEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__119__shared_weak_countD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__119__thread_local_dataEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__120__get_collation_nameEPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__120__throw_system_errorEiPKc	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__14__fs10filesystem7__spaceERKNS1_4pathEPNS_10error_codeE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__14cerrE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__14coutE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__14stodERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__14stofERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__14stoiERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__14stolERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__15ctypeIcE2idE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__15mutex4lockEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__15mutex6unlockEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__15mutexD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__15stollERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__15stoulERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIccEEPcEEvT0_S5_T_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIddEEPdEEvT0_S5_T_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIffEEPfEEvT0_S5_T_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIiiEEPiEEvT0_S5_T_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIjjEEPjEEvT0_S5_T_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessImmEEPmEEvT0_S5_T_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIttEEPtEEvT0_S5_T_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIxxEEPxEEvT0_S5_T_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIyyEEPyEEvT0_S5_T_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16chrono12steady_clock3nowEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16chrono12system_clock11from_time_tEl	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16chrono12system_clock3nowEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16chrono12system_clock9to_time_tERKNS0_10time_pointIS1_NS0_8durationIxNS_5ratioILl1ELl1000000EEEEEEE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16futureIvE3getEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16futureIvEC1EPNS_17__assoc_sub_stateE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16futureIvED1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16locale14__install_ctorERKS0_PNS0_5facetEl	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16locale2id5__getEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16locale5facet16__on_zero_sharedEv	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__16locale5facetD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16locale7classicEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16localeC1ERKS0_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16localeC1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16localeD1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16localeaSERKS0_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16stoullERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16thread20hardware_concurrencyEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16thread4joinEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16thread6detachEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__16threadD1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__17codecvtIDic11__mbstate_tE2idE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__17codecvtIcc11__mbstate_tE2idE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__17codecvtIwc11__mbstate_tE2idE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__17codecvtIwc11__mbstate_tEC2Em	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__17codecvtIwc11__mbstate_tED2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__17collateIcE2idE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__17num_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__18__sp_mut4lockEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18__sp_mut6unlockEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base33__set_badbit_and_consider_rethrowEv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base4initEPv	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base4moveERS0_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base4swapERS0_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base5clearEj	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base5imbueERKNS_6localeE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base7failureC1ERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEERKNS_10error_codeE	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base7failureD1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base7failureD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18numpunctIcE2idE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__18numpunctIcEC2Em	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18numpunctIcED2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__18time_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE	0	0
-/usr/lib/libc++.1.dylib	__ZNSt3__19basic_iosIcNS_11char_traitsIcEEED2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEd	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEf	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEi	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEj	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEl	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEm	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEx	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEy	0	1
-/usr/lib/libc++.1.dylib	__ZNSt3__1plIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEPKS6_RKS9_	0	1
-/usr/lib/libc++.1.dylib	__ZNSt8bad_castC1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt8bad_castC2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt8bad_castD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt8bad_castD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt9bad_allocC1Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt9bad_allocC2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt9bad_allocD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt9bad_allocD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZNSt9exceptionD1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZNSt9exceptionD2Ev	0	1
-/usr/lib/libc++.1.dylib	__ZSt13get_terminatev	0	1
-/usr/lib/libc++.1.dylib	__ZSt13set_terminatePFvvE	0	1
-/usr/lib/libc++.1.dylib	__ZSt14get_unexpectedv	0	1
-/usr/lib/libc++.1.dylib	__ZSt17__throw_bad_allocv	0	1
-/usr/lib/libc++.1.dylib	__ZSt17current_exceptionv	0	1
-/usr/lib/libc++.1.dylib	__ZSt17rethrow_exceptionSt13exception_ptr	0	1
-/usr/lib/libc++.1.dylib	__ZSt7nothrow	0	0
-/usr/lib/libc++.1.dylib	__ZSt9terminatev	0	1
-/usr/lib/libc++.1.dylib	__ZTINSt3__111regex_errorE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__112bad_weak_ptrE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__112future_errorE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__113basic_istreamIcNS_11char_traitsIcEEEE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__114basic_iostreamIcNS_11char_traitsIcEEEE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__115basic_streambufIcNS_11char_traitsIcEEEE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__117__assoc_sub_stateE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__119__shared_weak_countE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__16locale5facetE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__17codecvtIwc11__mbstate_tEE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__18ios_base7failureE	0	0
-/usr/lib/libc++.1.dylib	__ZTINSt3__18numpunctIcEE	0	0
-/usr/lib/libc++.1.dylib	__ZTIPKc	0	0
-/usr/lib/libc++.1.dylib	__ZTISt10bad_typeid	0	0
-/usr/lib/libc++.1.dylib	__ZTISt11logic_error	0	0
-/usr/lib/libc++.1.dylib	__ZTISt11range_error	0	0
-/usr/lib/libc++.1.dylib	__ZTISt12domain_error	0	0
-/usr/lib/libc++.1.dylib	__ZTISt12length_error	0	0
-/usr/lib/libc++.1.dylib	__ZTISt12out_of_range	0	0
-/usr/lib/libc++.1.dylib	__ZTISt13bad_exception	0	0
-/usr/lib/libc++.1.dylib	__ZTISt13runtime_error	0	0
-/usr/lib/libc++.1.dylib	__ZTISt14overflow_error	0	0
-/usr/lib/libc++.1.dylib	__ZTISt15underflow_error	0	0
-/usr/lib/libc++.1.dylib	__ZTISt16invalid_argument	0	0
-/usr/lib/libc++.1.dylib	__ZTISt18bad_variant_access	0	0
-/usr/lib/libc++.1.dylib	__ZTISt19bad_optional_access	0	0
-/usr/lib/libc++.1.dylib	__ZTISt20bad_array_new_length	0	0
-/usr/lib/libc++.1.dylib	__ZTISt8bad_cast	0	0
-/usr/lib/libc++.1.dylib	__ZTISt9bad_alloc	0	0
-/usr/lib/libc++.1.dylib	__ZTISt9exception	0	0
-/usr/lib/libc++.1.dylib	__ZTIf	0	0
-/usr/lib/libc++.1.dylib	__ZTIi	0	0
-/usr/lib/libc++.1.dylib	__ZTIj	0	0
-/usr/lib/libc++.1.dylib	__ZTIs	0	0
-/usr/lib/libc++.1.dylib	__ZTIt	0	0
-/usr/lib/libc++.1.dylib	__ZTIx	0	0
-/usr/lib/libc++.1.dylib	__ZTIy	0	0
-/usr/lib/libc++.1.dylib	__ZTVN10__cxxabiv117__class_type_infoE	0	0
-/usr/lib/libc++.1.dylib	__ZTVN10__cxxabiv119__pointer_type_infoE	0	0
-/usr/lib/libc++.1.dylib	__ZTVN10__cxxabiv120__function_type_infoE	0	0
-/usr/lib/libc++.1.dylib	__ZTVN10__cxxabiv120__si_class_type_infoE	0	0
-/usr/lib/libc++.1.dylib	__ZTVN10__cxxabiv121__vmi_class_type_infoE	0	0
-/usr/lib/libc++.1.dylib	__ZTVNSt3__112bad_weak_ptrE	0	0
-/usr/lib/libc++.1.dylib	__ZTVNSt3__112future_errorE	0	0
-/usr/lib/libc++.1.dylib	__ZTVNSt3__112system_errorE	0	0
-/usr/lib/libc++.1.dylib	__ZTVNSt3__113basic_istreamIcNS_11char_traitsIcEEEE	0	0
-/usr/lib/libc++.1.dylib	__ZTVNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE	0	0
-/usr/lib/libc++.1.dylib	__ZTVNSt3__115basic_streambufIcNS_11char_traitsIcEEEE	0	0
-/usr/lib/libc++.1.dylib	__ZTVNSt3__117__assoc_sub_stateE	0	0
-/usr/lib/libc++.1.dylib	__ZTVNSt3__17num_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE	0	0
-/usr/lib/libc++.1.dylib	__ZTVNSt3__18ios_base7failureE	0	0
-/usr/lib/libc++.1.dylib	__ZTVNSt3__19basic_iosIcNS_11char_traitsIcEEEE	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt10bad_typeid	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt11range_error	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt12domain_error	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt12length_error	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt12out_of_range	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt13bad_exception	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt14overflow_error	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt15underflow_error	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt16invalid_argument	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt18bad_variant_access	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt19bad_optional_access	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt8bad_cast	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt9bad_alloc	0	0
-/usr/lib/libc++.1.dylib	__ZTVSt9exception	0	0
-/usr/lib/libc++.1.dylib	__ZThn16_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev	0	0
-/usr/lib/libc++.1.dylib	__ZThn16_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__113basic_istreamIcNS_11char_traitsIcEEED0Ev	0	0
-/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__113basic_istreamIcNS_11char_traitsIcEEED1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__113basic_ostreamIcNS_11char_traitsIcEEED0Ev	0	0
-/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__113basic_ostreamIcNS_11char_traitsIcEEED1Ev	0	0
-/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev	0	0
-/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev	0	0
-/usr/lib/libc++.1.dylib	___cxa_allocate_exception	0	1
-/usr/lib/libc++.1.dylib	___cxa_bad_cast	0	1
-/usr/lib/libc++.1.dylib	___cxa_bad_typeid	0	1
-/usr/lib/libc++.1.dylib	___cxa_begin_catch	0	1
-/usr/lib/libc++.1.dylib	___cxa_demangle	0	1
-/usr/lib/libc++.1.dylib	___cxa_end_catch	0	1
-/usr/lib/libc++.1.dylib	___cxa_free_exception	0	1
-/usr/lib/libc++.1.dylib	___cxa_get_exception_ptr	0	1
-/usr/lib/libc++.1.dylib	___cxa_get_globals_fast	0	1
-/usr/lib/libc++.1.dylib	___cxa_pure_virtual	0	0
-/usr/lib/libc++.1.dylib	___cxa_rethrow	0	1
-/usr/lib/libc++.1.dylib	___cxa_throw	0	1
-/usr/lib/libc++.1.dylib	___dynamic_cast	0	1
-/usr/lib/libc++.1.dylib	___gxx_personality_v0	0	0
-/usr/lib/libhvf.dylib	_HVF_clear_part_cache	1	1
-/usr/lib/libhvf.dylib	_HVF_close_part_renderer	1	1
-/usr/lib/libhvf.dylib	_HVF_open_part_renderer	1	1
-/usr/lib/libhvf.dylib	_HVF_part_renderer_storage_size	1	1
-/usr/lib/libhvf.dylib	_HVF_render_current_part	1	1
-/usr/lib/libhvf.dylib	_HVF_render_part_axis_count	1	1
-/usr/lib/libhvf.dylib	_HVF_set_axis_value	1	1
-/usr/lib/libhvf.dylib	_HVF_set_render_part	1	1
-/usr/lib/libobjc.A.dylib	_OBJC_CLASS_$_NSObject	0	0
-/usr/lib/libobjc.A.dylib	_OBJC_EHTYPE_id	0	0
-/usr/lib/libobjc.A.dylib	_OBJC_METACLASS_$_NSObject	0	0
-/usr/lib/libobjc.A.dylib	___objc_personality_v0	0	0
-/usr/lib/libobjc.A.dylib	__objc_empty_cache	0	0
-/usr/lib/libobjc.A.dylib	_class_copyMethodList	0	1
-/usr/lib/libobjc.A.dylib	_class_copyPropertyList	0	1
-/usr/lib/libobjc.A.dylib	_method_getImplementation	0	1
-/usr/lib/libobjc.A.dylib	_objc_alloc	0	1
-/usr/lib/libobjc.A.dylib	_objc_alloc_init	0	1
-/usr/lib/libobjc.A.dylib	_objc_autorelease	0	1
-/usr/lib/libobjc.A.dylib	_objc_autoreleaseReturnValue	0	1
-/usr/lib/libobjc.A.dylib	_objc_begin_catch	0	1
-/usr/lib/libobjc.A.dylib	_objc_copyCppObjectAtomic	0	1
-/usr/lib/libobjc.A.dylib	_objc_copyWeak	0	1
-/usr/lib/libobjc.A.dylib	_objc_destroyWeak	0	1
-/usr/lib/libobjc.A.dylib	_objc_ehtype_vtable	0	0
-/usr/lib/libobjc.A.dylib	_objc_end_catch	0	1
-/usr/lib/libobjc.A.dylib	_objc_enumerationMutation	0	1
-/usr/lib/libobjc.A.dylib	_objc_exception_rethrow	0	1
-/usr/lib/libobjc.A.dylib	_objc_exception_throw	0	1
-/usr/lib/libobjc.A.dylib	_objc_getAssociatedObject	0	1
-/usr/lib/libobjc.A.dylib	_objc_getProperty	0	1
-/usr/lib/libobjc.A.dylib	_objc_initWeak	0	1
-/usr/lib/libobjc.A.dylib	_objc_loadWeakRetained	0	1
-/usr/lib/libobjc.A.dylib	_objc_moveWeak	0	1
-/usr/lib/libobjc.A.dylib	_objc_msgSend	0	0
-/usr/lib/libobjc.A.dylib	_objc_msgSendSuper2	0	1
-/usr/lib/libobjc.A.dylib	_objc_opt_class	0	1
-/usr/lib/libobjc.A.dylib	_objc_opt_isKindOfClass	0	1
-/usr/lib/libobjc.A.dylib	_objc_opt_new	0	1
-/usr/lib/libobjc.A.dylib	_objc_opt_respondsToSelector	0	1
-/usr/lib/libobjc.A.dylib	_objc_release	0	1
-/usr/lib/libobjc.A.dylib	_objc_retain	0	1
-/usr/lib/libobjc.A.dylib	_objc_retainAutorelease	0	1
-/usr/lib/libobjc.A.dylib	_objc_retainAutoreleaseReturnValue	0	1
-/usr/lib/libobjc.A.dylib	_objc_retainAutoreleasedReturnValue	0	1
-/usr/lib/libobjc.A.dylib	_objc_retainBlock	0	1
-/usr/lib/libobjc.A.dylib	_objc_setAssociatedObject	0	1
-/usr/lib/libobjc.A.dylib	_objc_setExceptionPreprocessor	0	1
-/usr/lib/libobjc.A.dylib	_objc_setProperty_atomic	0	1
-/usr/lib/libobjc.A.dylib	_objc_setProperty_atomic_copy	0	1
-/usr/lib/libobjc.A.dylib	_objc_setProperty_nonatomic_copy	0	1
-/usr/lib/libobjc.A.dylib	_objc_storeStrong	0	1
-/usr/lib/libobjc.A.dylib	_objc_storeWeak	0	1
-/usr/lib/libobjc.A.dylib	_objc_sync_enter	0	1
-/usr/lib/libobjc.A.dylib	_objc_sync_exit	0	1
-/usr/lib/libobjc.A.dylib	_objc_unsafeClaimAutoreleasedReturnValue	0	1
-/usr/lib/libobjc.A.dylib	_object_getClass	0	1
-/usr/lib/libobjc.A.dylib	_object_getClassName	0	1
-/usr/lib/libobjc.A.dylib	_property_getAttributes	0	1
-/usr/lib/libobjc.A.dylib	_property_getName	0	1
-<flat-namespace>	___MIG_check__Request__exception_raise_state_identity_t	0	1
-<flat-namespace>	___MIG_check__Request__exception_raise_state_t	0	1
-<flat-namespace>	___MIG_check__Request__mach_exception_raise_state_identity_t	0	1
-<flat-namespace>	___MIG_check__Request__mach_exception_raise_state_t	0	1
-@rpath/RobloxLib.framework/RobloxLib	__ZGVZN13opentelemetry2v15trace10TraceState10GetDefaultEvE2ts	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZGVZN13opentelemetry2v17context14RuntimeContext10GetStorageEvE7context	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZGVZN13opentelemetry2v17context25ThreadLocalContextStorage8GetStackEvE6stack_	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX22WidgetDataProtocolCore12ProtocolNameE	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX22WidgetDataProtocolCore21RecentlyPlayedRequestE	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX22WidgetDataProtocolCore29RecentlyPlayedRequestCompleteE	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIPKcEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIbEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIdEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIxEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIyEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZTISt11range_error	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZTISt12domain_error	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZTISt12length_error	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZTISt12out_of_range	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZTISt14overflow_error	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZTISt15underflow_error	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZTISt16invalid_argument	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZZN13opentelemetry2v15trace10TraceState10GetDefaultEvE2ts	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZZN13opentelemetry2v17context14RuntimeContext10GetStorageEvE7context	1	0
-@rpath/RobloxLib.framework/RobloxLib	__ZZN13opentelemetry2v17context25ThreadLocalContextStorage8GetStackEvE6stack_	1	0
+library	symbol	weak
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAssetExportPresetPassthrough	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionCategoryPlayAndRecord	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionInterruptionNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionInterruptionOptionKey	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionInterruptionTypeKey	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionMediaServicesWereLostNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionMediaServicesWereResetNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionModeVoiceChat	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortAVB	1
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortAirPlay	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBluetoothA2DP	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBluetoothHFP	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBluetoothLE	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBuiltInMic	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBuiltInReceiver	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortBuiltInSpeaker	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortCarAudio	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortDisplayPort	1
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortFireWire	1
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortHDMI	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortHeadphones	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortHeadsetMic	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortLineIn	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortLineOut	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortPCI	1
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortThunderbolt	1
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortUSBAudio	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionPortVirtual	1
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionRouteChangeNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionRouteChangePreviousRouteKey	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionRouteChangeReasonKey	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionSilenceSecondaryAudioHintNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVAudioSessionSilenceSecondaryAudioHintTypeKey	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureDeviceTypeBuiltInWideAngleCamera	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureDeviceWasConnectedNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureDeviceWasDisconnectedNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionDidStartRunningNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionDidStopRunningNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionErrorKey	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionInterruptionEndedNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionInterruptionReasonKey	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionPresetInputPriority	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionRuntimeErrorNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVCaptureSessionWasInterruptedNotification	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVMediaTypeAudio	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_AVMediaTypeVideo	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVAudioSession	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVCaptureDevice	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVCaptureDeviceDiscoverySession	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVCaptureDeviceInput	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVCaptureSession	0
+/System/Library/Frameworks/AVFoundation.framework/AVFoundation	_OBJC_CLASS_$_AVCaptureVideoDataOutput	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioComponentFindNext	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioComponentInstanceDispose	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioComponentInstanceNew	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterDispose	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterFillComplexBuffer	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterGetProperty	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterGetPropertyInfo	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterNew	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterNewSpecific	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterReset	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioConverterSetProperty	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioFormatGetProperty	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioOutputUnitStart	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioOutputUnitStop	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioUnitGetProperty	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioUnitInitialize	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioUnitRender	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioUnitSetProperty	0
+/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox	_AudioUnitUninitialize	0
+/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXCallController	0
+/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXCallUpdate	0
+/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXEndCallAction	0
+/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXHandle	0
+/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXProvider	0
+/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXProviderConfiguration	0
+/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXSetMutedCallAction	0
+/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXStartCallAction	0
+/System/Library/Frameworks/CallKit.framework/CallKit	_OBJC_CLASS_$_CXTransaction	0
+/System/Library/Frameworks/Contacts.framework/Contacts	_CNContactFamilyNameKey	0
+/System/Library/Frameworks/Contacts.framework/Contacts	_CNContactGivenNameKey	0
+/System/Library/Frameworks/Contacts.framework/Contacts	_CNContactPhoneNumbersKey	0
+/System/Library/Frameworks/Contacts.framework/Contacts	_OBJC_CLASS_$_CNContactFetchRequest	0
+/System/Library/Frameworks/Contacts.framework/Contacts	_OBJC_CLASS_$_CNContactStore	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFAllocatorCreate	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFArrayGetCount	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFArrayGetValueAtIndex	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFBooleanGetValue	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFBundleGetIdentifier	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFBundleGetMainBundle	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDataCreate	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryAddValue	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryContainsKey	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryCreate	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryCreateMutable	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryGetCount	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryGetValue	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionaryGetValueIfPresent	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFDictionarySetValue	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFErrorCopyDescription	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFErrorGetCode	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFNotificationCenterAddObserver	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFNotificationCenterGetLocalCenter	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFNotificationCenterRemoveEveryObserver	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFNumberCreate	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFNumberGetValue	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRelease	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRetain	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopAddObserver	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopGetCurrent	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopGetMain	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopObserverCreateWithHandler	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopObserverInvalidate	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopPerformBlock	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopRemoveObserver	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopRunInMode	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopStop	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFRunLoopWakeUp	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringConvertEncodingToIANACharSetName	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringConvertNSStringEncodingToEncoding	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringCreateWithBytes	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringFindWithOptions	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringGetBytes	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringGetCString	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringGetCStringPtr	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringGetLength	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFStringGetMaximumSizeForEncoding	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFUUIDCreate	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_CFUUIDCreateString	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_NSDefaultRunLoopMode	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_NSLocaleCountryCode	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_NSRunLoopCommonModes	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_NSSystemTimeZoneDidChangeNotification	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_NSURLVolumeAvailableCapacityForImportantUsageKey	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSArray	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSData	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSDate	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSDictionary	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSException	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSInputStream	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSLocale	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableArray	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableData	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableDictionary	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableOrderedSet	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSMutableSet	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSNull	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSOutputStream	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSRunLoop	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSSet	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSTimeZone	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSTimer	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSURL	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_CLASS_$_NSUserDefaults	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_EHTYPE_$_NSException	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_OBJC_METACLASS_$_NSInputStream	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	___CFConstantStringClassReference	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	___NSArray0__	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	___NSDictionary0__	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFAllocatorDefault	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFAllocatorNull	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFBooleanFalse	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFBooleanTrue	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFBundleNameKey	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFBundleVersionKey	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFRunLoopCommonModes	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFRunLoopDefaultMode	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFTypeDictionaryKeyCallBacks	0
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation	_kCFTypeDictionaryValueCallBacks	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGAffineTransformMakeScale	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGAffineTransformMakeTranslation	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGContextDrawImage	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGContextRotateCTM	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGContextTranslateCTM	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGDataProviderCreateWithCFData	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGFontCopyPostScriptName	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGFontCreateWithDataProvider	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGImageGetHeight	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGImageGetWidth	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGPointZero	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectContainsPoint	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectEqualToRect	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectGetHeight	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectGetMaxX	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectGetMaxY	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectGetWidth	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectIsEmpty	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGRectZero	0
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics	_CGSizeZero	0
+/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_CHHapticDynamicParameterIDHapticIntensityControl	0
+/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_CHHapticEventParameterIDHapticIntensity	0
+/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_CHHapticEventParameterIDHapticSharpness	0
+/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_CHHapticEventTypeHapticContinuous	0
+/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_OBJC_CLASS_$_CHHapticDynamicParameter	0
+/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_OBJC_CLASS_$_CHHapticEngine	0
+/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_OBJC_CLASS_$_CHHapticEvent	0
+/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_OBJC_CLASS_$_CHHapticEventParameter	0
+/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics	_OBJC_CLASS_$_CHHapticPattern	0
+/System/Library/Frameworks/CoreML.framework/CoreML	_OBJC_CLASS_$_MLFeatureValue	0
+/System/Library/Frameworks/CoreML.framework/CoreML	_OBJC_CLASS_$_MLModel	0
+/System/Library/Frameworks/CoreML.framework/CoreML	_OBJC_CLASS_$_MLModelConfiguration	0
+/System/Library/Frameworks/CoreML.framework/CoreML	_OBJC_CLASS_$_MLMultiArray	0
+/System/Library/Frameworks/CoreML.framework/CoreML	_OBJC_CLASS_$_MLPredictionOptions	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMBlockBufferCreateContiguous	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMBlockBufferCreateWithMemoryBlock	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMBlockBufferGetDataPointer	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMBlockBufferReplaceDataBytes	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMCopyDictionaryOfAttachments	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMFormatDescriptionGetMediaSubType	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMGetAttachment	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferCreate	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferDataIsReady	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetDataBuffer	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetFormatDescription	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetImageBuffer	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetNumSamples	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetPresentationTimeStamp	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferGetSampleAttachmentsArray	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMSampleBufferIsValid	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMTimeGetSeconds	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMTimeMake	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionCreate	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionCreateFromH264ParameterSets	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionCreateFromHEVCParameterSets	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionGetDimensions	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionGetH264ParameterSetAtIndex	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_CMVideoFormatDescriptionGetHEVCParameterSetAtIndex	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_kCMFormatDescriptionExtension_SampleDescriptionExtensionAtoms	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_kCMSampleAttachmentKey_NotSync	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_kCMSampleBufferAttachmentKey_DroppedFrameReason	0
+/System/Library/Frameworks/CoreMedia.framework/CoreMedia	_kCMTimeInvalid	0
+/System/Library/Frameworks/CoreMotion.framework/CoreMotion	_OBJC_CLASS_$_CMMotionManager	0
+/System/Library/Frameworks/CoreServices.framework/CoreServices	_UTTypeCopyPreferredTagWithClass	0
+/System/Library/Frameworks/CoreServices.framework/CoreServices	_UTTypeCreatePreferredIdentifierForTag	0
+/System/Library/Frameworks/CoreServices.framework/CoreServices	_kUTTagClassFilenameExtension	0
+/System/Library/Frameworks/CoreServices.framework/CoreServices	_kUTTagClassMIMEType	0
+/System/Library/Frameworks/CoreServices.framework/CoreServices	_kUTTypeImage	0
+/System/Library/Frameworks/CoreServices.framework/CoreServices	_kUTTypeMovie	0
+/System/Library/Frameworks/CoreText.framework/CoreText	_CTFontCopyAvailableTables	0
+/System/Library/Frameworks/CoreText.framework/CoreText	_CTFontCopyTable	0
+/System/Library/Frameworks/CoreText.framework/CoreText	_CTFontCreateWithName	0
+/System/Library/Frameworks/CoreText.framework/CoreText	_CTFontManagerCopyAvailablePostScriptNames	0
+/System/Library/Frameworks/CoreText.framework/CoreText	_CTFontManagerRegisterGraphicsFont	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVBufferRelease	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVBufferRetain	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVImageBufferGetEncodedSize	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVMetalTextureCacheCreate	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVMetalTextureCacheCreateTextureFromImage	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVMetalTextureGetTexture	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferCreate	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetBaseAddress	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetBaseAddressOfPlane	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetBytesPerRow	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetBytesPerRowOfPlane	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetDataSize	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetHeight	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetHeightOfPlane	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetIOSurface	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetPixelFormatType	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetWidth	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferGetWidthOfPlane	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferLockBaseAddress	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferPoolCreatePixelBuffer	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferRelease	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferRetain	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_CVPixelBufferUnlockBaseAddress	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferCGBitmapContextCompatibilityKey	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferCGImageCompatibilityKey	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferHeightKey	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferIOSurfacePropertiesKey	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferMetalCompatibilityKey	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferPixelFormatTypeKey	0
+/System/Library/Frameworks/CoreVideo.framework/CoreVideo	_kCVPixelBufferWidthKey	0
+/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck	_OBJC_CLASS_$_DCDevice	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSClassFromString	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSGetUncaughtExceptionHandler	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSKeyValueChangeNewKey	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSLocalizedDescriptionKey	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSLog	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSProcessInfoPowerStateDidChangeNotification	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSProcessInfoThermalStateDidChangeNotification	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSSearchPathForDirectoriesInDomains	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSSelectorFromString	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSSetUncaughtExceptionHandler	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSStringFromClass	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSStringFromSelector	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_NSTemporaryDirectory	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSAssertionHandler	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSAttributedString	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSAutoreleasePool	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSBundle	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSCharacterSet	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSCondition	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSDateFormatter	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSDecimalNumber	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSError	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSFileManager	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSHTTPCookie	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSHTTPCookieStorage	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSHTTPURLResponse	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSJSONSerialization	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSKeyedArchiver	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSKeyedUnarchiver	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSLayoutConstraint	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSLock	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSMutableAttributedString	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSMutableString	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSMutableURLRequest	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSNotificationCenter	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSNumber	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSOperationQueue	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSProcessInfo	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSScanner	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSString	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSThread	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSURLConnection	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSURLRequest	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSURLSession	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSUUID	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_CLASS_$_NSValue	0
+/System/Library/Frameworks/Foundation.framework/Foundation	_OBJC_METACLASS_$_NSError	0
+/System/Library/Frameworks/GameController.framework/GameController	_GCControllerDidConnectNotification	0
+/System/Library/Frameworks/GameController.framework/GameController	_GCControllerDidDisconnectNotification	0
+/System/Library/Frameworks/GameController.framework/GameController	_GCMouseDidBecomeCurrentNotification	1
+/System/Library/Frameworks/GameController.framework/GameController	_GCMouseDidConnectNotification	1
+/System/Library/Frameworks/GameController.framework/GameController	_GCMouseDidDisconnectNotification	1
+/System/Library/Frameworks/GameController.framework/GameController	_GCMouseDidStopBeingCurrentNotification	1
+/System/Library/Frameworks/GameController.framework/GameController	_OBJC_CLASS_$_GCController	0
+/System/Library/Frameworks/GameController.framework/GameController	_OBJC_CLASS_$_GCDualSenseGamepad	1
+/System/Library/Frameworks/GameController.framework/GameController	_OBJC_CLASS_$_GCDualShockGamepad	1
+/System/Library/Frameworks/GameController.framework/GameController	_OBJC_CLASS_$_GCMouse	1
+/System/Library/Frameworks/GameController.framework/GameController	_OBJC_CLASS_$_GCXboxGamepad	1
+/System/Library/Frameworks/IOSurface.framework/IOSurface	_IOSurfaceGetAllocSize	0
+/System/Library/Frameworks/Metal.framework/Metal	_MTLCreateSystemDefaultDevice	0
+/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLCaptureDescriptor	0
+/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLCaptureManager	0
+/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLCompileOptions	0
+/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLDepthStencilDescriptor	0
+/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLRenderPassDescriptor	0
+/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLRenderPipelineDescriptor	0
+/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLSamplerDescriptor	0
+/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLTextureDescriptor	0
+/System/Library/Frameworks/Metal.framework/Metal	_OBJC_CLASS_$_MTLVertexDescriptor	0
+/System/Library/Frameworks/Network.framework/Network	_nw_interface_get_name	0
+/System/Library/Frameworks/Network.framework/Network	_nw_interface_get_type	0
+/System/Library/Frameworks/Network.framework/Network	_nw_path_enumerate_interfaces	0
+/System/Library/Frameworks/Network.framework/Network	_nw_path_get_status	0
+/System/Library/Frameworks/Network.framework/Network	_nw_path_is_constrained	0
+/System/Library/Frameworks/Network.framework/Network	_nw_path_is_expensive	0
+/System/Library/Frameworks/Network.framework/Network	_nw_path_monitor_cancel	0
+/System/Library/Frameworks/Network.framework/Network	_nw_path_monitor_create	0
+/System/Library/Frameworks/Network.framework/Network	_nw_path_monitor_set_queue	0
+/System/Library/Frameworks/Network.framework/Network	_nw_path_monitor_set_update_handler	0
+/System/Library/Frameworks/Network.framework/Network	_nw_path_monitor_start	0
+/System/Library/Frameworks/Photos.framework/Photos	_OBJC_CLASS_$_PHPhotoLibrary	0
+/System/Library/Frameworks/QuartzCore.framework/QuartzCore	_CACurrentMediaTime	0
+/System/Library/Frameworks/QuartzCore.framework/QuartzCore	_CAFrameRateRangeMake	1
+/System/Library/Frameworks/QuartzCore.framework/QuartzCore	_OBJC_CLASS_$_CAEAGLLayer	0
+/System/Library/Frameworks/QuartzCore.framework/QuartzCore	_OBJC_CLASS_$_CAMetalLayer	0
+/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilityCreateWithAddress	0
+/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilityCreateWithName	0
+/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilityGetFlags	0
+/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilityScheduleWithRunLoop	0
+/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilitySetCallback	0
+/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration	_SCNetworkReachabilityUnscheduleFromRunLoop	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_NSFontAttributeName	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_NSForegroundColorAttributeName	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_NSKernAttributeName	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_NSParagraphStyleAttributeName	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_NSStrokeWidthAttributeName	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_NSMutableParagraphStyle	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIAlertAction	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIAlertController	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIApplication	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIButton	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIColor	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIDevice	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIFont	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIGraphicsImageRenderer	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIGraphicsImageRendererFormat	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIHoverGestureRecognizer	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIImage	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIImagePickerController	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIImageView	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIKeyCommand	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UILongPressGestureRecognizer	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UINavigationController	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIPanGestureRecognizer	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIPinchGestureRecognizer	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIPointerInteraction	1
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIPointerStyle	1
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIProgressView	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIRotationGestureRecognizer	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIScreen	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIScrollView	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UISwipeGestureRecognizer	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UITapGestureRecognizer	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UITextField	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UITextView	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIView	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIViewController	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_CLASS_$_UIWindowScene	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_METACLASS_$_UITextField	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_METACLASS_$_UITextView	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_METACLASS_$_UIView	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_OBJC_METACLASS_$_UIViewController	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIApplicationDidBecomeActiveNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIApplicationDidEnterBackgroundNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIApplicationOpenSettingsURLString	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIDeviceBatteryLevelDidChangeNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIDeviceBatteryStateDidChangeNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIDeviceOrientationDidChangeNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIEdgeInsetsZero	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIFontWeightMedium	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIImagePNGRepresentation	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIImagePickerControllerImageURL	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIImagePickerControllerMediaType	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIImagePickerControllerMediaURL	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIImagePickerControllerOriginalImage	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIImageWriteToSavedPhotosAlbum	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyInputEscape	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyboardAnimationDurationUserInfoKey	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyboardDidShowNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyboardFrameEndUserInfoKey	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyboardWillHideNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIKeyboardWillShowNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UISaveVideoAtPathToSavedPhotosAlbum	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIScreenBrightnessDidChangeNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIScreenDidConnectNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIScreenDidDisconnectNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIScreenModeDidChangeNotification	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UITextContentTypeOneTimeCode	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UITextContentTypePassword	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UITextContentTypeTelephoneNumber	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UITextContentTypeUsername	0
+/System/Library/Frameworks/UIKit.framework/UIKit	_UIVideoAtPathIsCompatibleWithSavedPhotosAlbum	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionCompleteFrames	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionCreate	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionEncodeFrame	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionGetPixelBufferPool	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionInvalidate	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCompressionSessionPrepareToEncodeFrames	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTCopyVideoEncoderList	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionCanAcceptFormatDescription	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionCreate	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionDecodeFrame	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionFinishDelayedFrames	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionInvalidate	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTDecompressionSessionWaitForAsynchronousFrames	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTIsHardwareDecodeSupported	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_VTSessionSetProperty	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTCompressionPropertyKey_AllowFrameReordering	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTCompressionPropertyKey_AverageBitRate	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTCompressionPropertyKey_MaxKeyFrameInterval	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTCompressionPropertyKey_RealTime	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTDecompressionPropertyKey_RealTime	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTVideoEncoderList_CodecType	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTVideoEncoderList_EncoderName	0
+/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox	_kVTVideoEncoderList_IsHardwareAccelerated	0
+/usr/lib/libSystem.B.dylib	_CCRandomGenerateBytes	0
+/usr/lib/libSystem.B.dylib	_NDR_record	0
+/usr/lib/libSystem.B.dylib	__Block_object_assign	0
+/usr/lib/libSystem.B.dylib	__Block_object_dispose	0
+/usr/lib/libSystem.B.dylib	__DefaultRuneLocale	0
+/usr/lib/libSystem.B.dylib	__Exit	0
+/usr/lib/libSystem.B.dylib	__NSConcreteGlobalBlock	0
+/usr/lib/libSystem.B.dylib	__NSConcreteStackBlock	0
+/usr/lib/libSystem.B.dylib	__Unwind_Resume	0
+/usr/lib/libSystem.B.dylib	___assert_rtn	0
+/usr/lib/libSystem.B.dylib	___chkstk_darwin	0
+/usr/lib/libSystem.B.dylib	___cxa_atexit	0
+/usr/lib/libSystem.B.dylib	___darwin_check_fd_set_overflow	1
+/usr/lib/libSystem.B.dylib	___deregister_frame	0
+/usr/lib/libSystem.B.dylib	___divti3	0
+/usr/lib/libSystem.B.dylib	___error	0
+/usr/lib/libSystem.B.dylib	___exp10	0
+/usr/lib/libSystem.B.dylib	___exp10f	0
+/usr/lib/libSystem.B.dylib	___floattidf	0
+/usr/lib/libSystem.B.dylib	___maskrune	0
+/usr/lib/libSystem.B.dylib	___memcpy_chk	0
+/usr/lib/libSystem.B.dylib	___memmove_chk	0
+/usr/lib/libSystem.B.dylib	___memset_chk	0
+/usr/lib/libSystem.B.dylib	___mulsc3	0
+/usr/lib/libSystem.B.dylib	___register_frame	0
+/usr/lib/libSystem.B.dylib	___sincos_stret	0
+/usr/lib/libSystem.B.dylib	___sincosf_stret	0
+/usr/lib/libSystem.B.dylib	___stack_chk_fail	0
+/usr/lib/libSystem.B.dylib	___stack_chk_guard	0
+/usr/lib/libSystem.B.dylib	___stderrp	0
+/usr/lib/libSystem.B.dylib	___stdinp	0
+/usr/lib/libSystem.B.dylib	___stdoutp	0
+/usr/lib/libSystem.B.dylib	___strlcat_chk	0
+/usr/lib/libSystem.B.dylib	___strlcpy_chk	0
+/usr/lib/libSystem.B.dylib	___strncpy_chk	0
+/usr/lib/libSystem.B.dylib	___tolower	0
+/usr/lib/libSystem.B.dylib	___toupper	0
+/usr/lib/libSystem.B.dylib	___udivti3	0
+/usr/lib/libSystem.B.dylib	___ulock_wait	0
+/usr/lib/libSystem.B.dylib	___ulock_wake	0
+/usr/lib/libSystem.B.dylib	___unw_add_dynamic_fde	1
+/usr/lib/libSystem.B.dylib	__availability_version_check	1
+/usr/lib/libSystem.B.dylib	__dispatch_main_q	0
+/usr/lib/libSystem.B.dylib	__exit	0
+/usr/lib/libSystem.B.dylib	__os_log_default	0
+/usr/lib/libSystem.B.dylib	__os_log_impl	0
+/usr/lib/libSystem.B.dylib	__tlv_atexit	0
+/usr/lib/libSystem.B.dylib	__tlv_bootstrap	0
+/usr/lib/libSystem.B.dylib	_abort	0
+/usr/lib/libSystem.B.dylib	_accept	0
+/usr/lib/libSystem.B.dylib	_access	0
+/usr/lib/libSystem.B.dylib	_acos	0
+/usr/lib/libSystem.B.dylib	_acosf	0
+/usr/lib/libSystem.B.dylib	_asin	0
+/usr/lib/libSystem.B.dylib	_asinf	0
+/usr/lib/libSystem.B.dylib	_atan	0
+/usr/lib/libSystem.B.dylib	_atan2	0
+/usr/lib/libSystem.B.dylib	_atan2f	0
+/usr/lib/libSystem.B.dylib	_atanf	0
+/usr/lib/libSystem.B.dylib	_atexit	0
+/usr/lib/libSystem.B.dylib	_atof	0
+/usr/lib/libSystem.B.dylib	_atoi	0
+/usr/lib/libSystem.B.dylib	_atol	0
+/usr/lib/libSystem.B.dylib	_atoll	0
+/usr/lib/libSystem.B.dylib	_backtrace	0
+/usr/lib/libSystem.B.dylib	_backtrace_symbols	0
+/usr/lib/libSystem.B.dylib	_bind	0
+/usr/lib/libSystem.B.dylib	_bsearch	0
+/usr/lib/libSystem.B.dylib	_bzero	0
+/usr/lib/libSystem.B.dylib	_calloc	0
+/usr/lib/libSystem.B.dylib	_cbrt	0
+/usr/lib/libSystem.B.dylib	_cbrtf	0
+/usr/lib/libSystem.B.dylib	_clearerr	0
+/usr/lib/libSystem.B.dylib	_clock	0
+/usr/lib/libSystem.B.dylib	_clock_get_time	0
+/usr/lib/libSystem.B.dylib	_clock_gettime	0
+/usr/lib/libSystem.B.dylib	_clock_gettime_nsec_np	0
+/usr/lib/libSystem.B.dylib	_close	0
+/usr/lib/libSystem.B.dylib	_closedir	0
+/usr/lib/libSystem.B.dylib	_confstr	0
+/usr/lib/libSystem.B.dylib	_connect	0
+/usr/lib/libSystem.B.dylib	_connectx	0
+/usr/lib/libSystem.B.dylib	_cos	0
+/usr/lib/libSystem.B.dylib	_cosf	0
+/usr/lib/libSystem.B.dylib	_cosh	0
+/usr/lib/libSystem.B.dylib	_coshf	0
+/usr/lib/libSystem.B.dylib	_difftime	0
+/usr/lib/libSystem.B.dylib	_dispatch_after	0
+/usr/lib/libSystem.B.dylib	_dispatch_after_f	0
+/usr/lib/libSystem.B.dylib	_dispatch_async	0
+/usr/lib/libSystem.B.dylib	_dispatch_async_f	0
+/usr/lib/libSystem.B.dylib	_dispatch_data_create	0
+/usr/lib/libSystem.B.dylib	_dispatch_get_global_queue	0
+/usr/lib/libSystem.B.dylib	_dispatch_group_create	0
+/usr/lib/libSystem.B.dylib	_dispatch_group_enter	0
+/usr/lib/libSystem.B.dylib	_dispatch_group_leave	0
+/usr/lib/libSystem.B.dylib	_dispatch_group_notify	0
+/usr/lib/libSystem.B.dylib	_dispatch_once	0
+/usr/lib/libSystem.B.dylib	_dispatch_once_f	0
+/usr/lib/libSystem.B.dylib	_dispatch_queue_create	0
+/usr/lib/libSystem.B.dylib	_dispatch_queue_create_with_target$V2	0
+/usr/lib/libSystem.B.dylib	_dispatch_queue_get_label	0
+/usr/lib/libSystem.B.dylib	_dispatch_release	0
+/usr/lib/libSystem.B.dylib	_dispatch_semaphore_create	0
+/usr/lib/libSystem.B.dylib	_dispatch_semaphore_signal	0
+/usr/lib/libSystem.B.dylib	_dispatch_semaphore_wait	0
+/usr/lib/libSystem.B.dylib	_dispatch_set_context	0
+/usr/lib/libSystem.B.dylib	_dispatch_set_finalizer_f	0
+/usr/lib/libSystem.B.dylib	_dispatch_sync	0
+/usr/lib/libSystem.B.dylib	_dispatch_sync_f	0
+/usr/lib/libSystem.B.dylib	_dispatch_time	0
+/usr/lib/libSystem.B.dylib	_dladdr	0
+/usr/lib/libSystem.B.dylib	_dlerror	0
+/usr/lib/libSystem.B.dylib	_dlsym	0
+/usr/lib/libSystem.B.dylib	_environ	0
+/usr/lib/libSystem.B.dylib	_erfcf	0
+/usr/lib/libSystem.B.dylib	_erff	0
+/usr/lib/libSystem.B.dylib	_exit	0
+/usr/lib/libSystem.B.dylib	_exp	0
+/usr/lib/libSystem.B.dylib	_exp2	0
+/usr/lib/libSystem.B.dylib	_exp2f	0
+/usr/lib/libSystem.B.dylib	_expf	0
+/usr/lib/libSystem.B.dylib	_expm1	0
+/usr/lib/libSystem.B.dylib	_fchmod	0
+/usr/lib/libSystem.B.dylib	_fchown	0
+/usr/lib/libSystem.B.dylib	_fclose	0
+/usr/lib/libSystem.B.dylib	_fcntl	0
+/usr/lib/libSystem.B.dylib	_fdopen	0
+/usr/lib/libSystem.B.dylib	_feof	0
+/usr/lib/libSystem.B.dylib	_ferror	0
+/usr/lib/libSystem.B.dylib	_fflush	0
+/usr/lib/libSystem.B.dylib	_fgets	0
+/usr/lib/libSystem.B.dylib	_fileno	0
+/usr/lib/libSystem.B.dylib	_flock	0
+/usr/lib/libSystem.B.dylib	_fmod	0
+/usr/lib/libSystem.B.dylib	_fmodf	0
+/usr/lib/libSystem.B.dylib	_fopen	0
+/usr/lib/libSystem.B.dylib	_fprintf	0
+/usr/lib/libSystem.B.dylib	_fputc	0
+/usr/lib/libSystem.B.dylib	_fputs	0
+/usr/lib/libSystem.B.dylib	_fread	0
+/usr/lib/libSystem.B.dylib	_free	0
+/usr/lib/libSystem.B.dylib	_freeaddrinfo	0
+/usr/lib/libSystem.B.dylib	_freeifaddrs	0
+/usr/lib/libSystem.B.dylib	_frexp	0
+/usr/lib/libSystem.B.dylib	_frexpf	0
+/usr/lib/libSystem.B.dylib	_fsctl	0
+/usr/lib/libSystem.B.dylib	_fseek	0
+/usr/lib/libSystem.B.dylib	_fseeko	0
+/usr/lib/libSystem.B.dylib	_fstat	0
+/usr/lib/libSystem.B.dylib	_fstatfs	0
+/usr/lib/libSystem.B.dylib	_fsync	0
+/usr/lib/libSystem.B.dylib	_ftell	0
+/usr/lib/libSystem.B.dylib	_ftello	0
+/usr/lib/libSystem.B.dylib	_ftruncate	0
+/usr/lib/libSystem.B.dylib	_futimes	0
+/usr/lib/libSystem.B.dylib	_fwrite	0
+/usr/lib/libSystem.B.dylib	_gai_strerror	0
+/usr/lib/libSystem.B.dylib	_getaddrinfo	0
+/usr/lib/libSystem.B.dylib	_getcwd	0
+/usr/lib/libSystem.B.dylib	_getegid	0
+/usr/lib/libSystem.B.dylib	_getenv	0
+/usr/lib/libSystem.B.dylib	_geteuid	0
+/usr/lib/libSystem.B.dylib	_getgid	0
+/usr/lib/libSystem.B.dylib	_gethostbyname	0
+/usr/lib/libSystem.B.dylib	_getifaddrs	0
+/usr/lib/libSystem.B.dylib	_getnameinfo	0
+/usr/lib/libSystem.B.dylib	_getpagesize	0
+/usr/lib/libSystem.B.dylib	_getpeername	0
+/usr/lib/libSystem.B.dylib	_getpid	0
+/usr/lib/libSystem.B.dylib	_getrlimit	0
+/usr/lib/libSystem.B.dylib	_getrusage	0
+/usr/lib/libSystem.B.dylib	_getsockname	0
+/usr/lib/libSystem.B.dylib	_getsockopt	0
+/usr/lib/libSystem.B.dylib	_gettimeofday	0
+/usr/lib/libSystem.B.dylib	_getuid	0
+/usr/lib/libSystem.B.dylib	_getxattr	0
+/usr/lib/libSystem.B.dylib	_gmtime	0
+/usr/lib/libSystem.B.dylib	_gmtime_r	0
+/usr/lib/libSystem.B.dylib	_host_get_clock_service	0
+/usr/lib/libSystem.B.dylib	_host_get_exception_ports	0
+/usr/lib/libSystem.B.dylib	_host_page_size	0
+/usr/lib/libSystem.B.dylib	_host_set_exception_ports	0
+/usr/lib/libSystem.B.dylib	_host_statistics	0
+/usr/lib/libSystem.B.dylib	_host_swap_exception_ports	0
+/usr/lib/libSystem.B.dylib	_hypot	0
+/usr/lib/libSystem.B.dylib	_hypotf	0
+/usr/lib/libSystem.B.dylib	_if_nametoindex	0
+/usr/lib/libSystem.B.dylib	_ilogb	0
+/usr/lib/libSystem.B.dylib	_in6addr_any	0
+/usr/lib/libSystem.B.dylib	_in6addr_loopback	0
+/usr/lib/libSystem.B.dylib	_inet_aton	0
+/usr/lib/libSystem.B.dylib	_inet_ntop	0
+/usr/lib/libSystem.B.dylib	_inet_pton	0
+/usr/lib/libSystem.B.dylib	_ioctl	0
+/usr/lib/libSystem.B.dylib	_kevent	0
+/usr/lib/libSystem.B.dylib	_kqueue	0
+/usr/lib/libSystem.B.dylib	_ldexp	0
+/usr/lib/libSystem.B.dylib	_ldexpf	0
+/usr/lib/libSystem.B.dylib	_listen	0
+/usr/lib/libSystem.B.dylib	_lldiv	0
+/usr/lib/libSystem.B.dylib	_localeconv	0
+/usr/lib/libSystem.B.dylib	_localtime	0
+/usr/lib/libSystem.B.dylib	_localtime_r	0
+/usr/lib/libSystem.B.dylib	_log	0
+/usr/lib/libSystem.B.dylib	_log10	0
+/usr/lib/libSystem.B.dylib	_log10f	0
+/usr/lib/libSystem.B.dylib	_log2	0
+/usr/lib/libSystem.B.dylib	_log2f	0
+/usr/lib/libSystem.B.dylib	_logf	0
+/usr/lib/libSystem.B.dylib	_longjmp	0
+/usr/lib/libSystem.B.dylib	_lseek	0
+/usr/lib/libSystem.B.dylib	_lstat	0
+/usr/lib/libSystem.B.dylib	_mach_absolute_time	0
+/usr/lib/libSystem.B.dylib	_mach_error_string	0
+/usr/lib/libSystem.B.dylib	_mach_host_self	0
+/usr/lib/libSystem.B.dylib	_mach_msg	0
+/usr/lib/libSystem.B.dylib	_mach_msg_destroy	0
+/usr/lib/libSystem.B.dylib	_mach_port_allocate	0
+/usr/lib/libSystem.B.dylib	_mach_port_deallocate	0
+/usr/lib/libSystem.B.dylib	_mach_port_insert_right	0
+/usr/lib/libSystem.B.dylib	_mach_port_mod_refs	0
+/usr/lib/libSystem.B.dylib	_mach_task_self_	0
+/usr/lib/libSystem.B.dylib	_mach_thread_self	0
+/usr/lib/libSystem.B.dylib	_mach_timebase_info	0
+/usr/lib/libSystem.B.dylib	_madvise	0
+/usr/lib/libSystem.B.dylib	_malloc	0
+/usr/lib/libSystem.B.dylib	_malloc_size	0
+/usr/lib/libSystem.B.dylib	_memchr	0
+/usr/lib/libSystem.B.dylib	_memcmp	0
+/usr/lib/libSystem.B.dylib	_memcpy	0
+/usr/lib/libSystem.B.dylib	_memmove	0
+/usr/lib/libSystem.B.dylib	_memset	0
+/usr/lib/libSystem.B.dylib	_memset_pattern16	0
+/usr/lib/libSystem.B.dylib	_memset_s	0
+/usr/lib/libSystem.B.dylib	_mkdir	0
+/usr/lib/libSystem.B.dylib	_mktime	0
+/usr/lib/libSystem.B.dylib	_mlock	0
+/usr/lib/libSystem.B.dylib	_mmap	0
+/usr/lib/libSystem.B.dylib	_modf	0
+/usr/lib/libSystem.B.dylib	_modff	0
+/usr/lib/libSystem.B.dylib	_mprotect	0
+/usr/lib/libSystem.B.dylib	_msync	0
+/usr/lib/libSystem.B.dylib	_munmap	0
+/usr/lib/libSystem.B.dylib	_nan	0
+/usr/lib/libSystem.B.dylib	_nanosleep	0
+/usr/lib/libSystem.B.dylib	_nextafterf	0
+/usr/lib/libSystem.B.dylib	_open	0
+/usr/lib/libSystem.B.dylib	_open_dprotected_np	0
+/usr/lib/libSystem.B.dylib	_opendir	0
+/usr/lib/libSystem.B.dylib	_os_log_create	0
+/usr/lib/libSystem.B.dylib	_os_log_type_enabled	0
+/usr/lib/libSystem.B.dylib	_os_release	0
+/usr/lib/libSystem.B.dylib	_pipe	0
+/usr/lib/libSystem.B.dylib	_poll	0
+/usr/lib/libSystem.B.dylib	_posix_memalign	0
+/usr/lib/libSystem.B.dylib	_pow	0
+/usr/lib/libSystem.B.dylib	_powf	0
+/usr/lib/libSystem.B.dylib	_pread	0
+/usr/lib/libSystem.B.dylib	_printf	0
+/usr/lib/libSystem.B.dylib	_pthread_atfork	0
+/usr/lib/libSystem.B.dylib	_pthread_attr_destroy	0
+/usr/lib/libSystem.B.dylib	_pthread_attr_getdetachstate	0
+/usr/lib/libSystem.B.dylib	_pthread_attr_init	0
+/usr/lib/libSystem.B.dylib	_pthread_attr_setdetachstate	0
+/usr/lib/libSystem.B.dylib	_pthread_attr_setschedparam	0
+/usr/lib/libSystem.B.dylib	_pthread_attr_setschedpolicy	0
+/usr/lib/libSystem.B.dylib	_pthread_attr_setstacksize	0
+/usr/lib/libSystem.B.dylib	_pthread_cond_broadcast	0
+/usr/lib/libSystem.B.dylib	_pthread_cond_destroy	0
+/usr/lib/libSystem.B.dylib	_pthread_cond_init	0
+/usr/lib/libSystem.B.dylib	_pthread_cond_signal	0
+/usr/lib/libSystem.B.dylib	_pthread_cond_timedwait	0
+/usr/lib/libSystem.B.dylib	_pthread_cond_timedwait_relative_np	0
+/usr/lib/libSystem.B.dylib	_pthread_cond_wait	0
+/usr/lib/libSystem.B.dylib	_pthread_condattr_destroy	0
+/usr/lib/libSystem.B.dylib	_pthread_condattr_init	0
+/usr/lib/libSystem.B.dylib	_pthread_cpu_number_np	0
+/usr/lib/libSystem.B.dylib	_pthread_create	0
+/usr/lib/libSystem.B.dylib	_pthread_detach	0
+/usr/lib/libSystem.B.dylib	_pthread_equal	0
+/usr/lib/libSystem.B.dylib	_pthread_exit	0
+/usr/lib/libSystem.B.dylib	_pthread_get_stackaddr_np	0
+/usr/lib/libSystem.B.dylib	_pthread_get_stacksize_np	0
+/usr/lib/libSystem.B.dylib	_pthread_getschedparam	0
+/usr/lib/libSystem.B.dylib	_pthread_getspecific	0
+/usr/lib/libSystem.B.dylib	_pthread_join	0
+/usr/lib/libSystem.B.dylib	_pthread_key_create	0
+/usr/lib/libSystem.B.dylib	_pthread_key_delete	0
+/usr/lib/libSystem.B.dylib	_pthread_mach_thread_np	0
+/usr/lib/libSystem.B.dylib	_pthread_mutex_destroy	0
+/usr/lib/libSystem.B.dylib	_pthread_mutex_init	0
+/usr/lib/libSystem.B.dylib	_pthread_mutex_lock	0
+/usr/lib/libSystem.B.dylib	_pthread_mutex_trylock	0
+/usr/lib/libSystem.B.dylib	_pthread_mutex_unlock	0
+/usr/lib/libSystem.B.dylib	_pthread_mutexattr_destroy	0
+/usr/lib/libSystem.B.dylib	_pthread_mutexattr_init	0
+/usr/lib/libSystem.B.dylib	_pthread_mutexattr_setpolicy_np	0
+/usr/lib/libSystem.B.dylib	_pthread_mutexattr_settype	0
+/usr/lib/libSystem.B.dylib	_pthread_once	0
+/usr/lib/libSystem.B.dylib	_pthread_rwlock_destroy	0
+/usr/lib/libSystem.B.dylib	_pthread_rwlock_init	0
+/usr/lib/libSystem.B.dylib	_pthread_rwlock_rdlock	0
+/usr/lib/libSystem.B.dylib	_pthread_rwlock_unlock	0
+/usr/lib/libSystem.B.dylib	_pthread_rwlock_wrlock	0
+/usr/lib/libSystem.B.dylib	_pthread_self	0
+/usr/lib/libSystem.B.dylib	_pthread_set_qos_class_self_np	0
+/usr/lib/libSystem.B.dylib	_pthread_setname_np	0
+/usr/lib/libSystem.B.dylib	_pthread_setschedparam	0
+/usr/lib/libSystem.B.dylib	_pthread_setspecific	0
+/usr/lib/libSystem.B.dylib	_pthread_sigmask	0
+/usr/lib/libSystem.B.dylib	_pthread_threadid_np	0
+/usr/lib/libSystem.B.dylib	_puts	0
+/usr/lib/libSystem.B.dylib	_pwrite	0
+/usr/lib/libSystem.B.dylib	_qsort	0
+/usr/lib/libSystem.B.dylib	_raise	0
+/usr/lib/libSystem.B.dylib	_rand	0
+/usr/lib/libSystem.B.dylib	_rand_r	0
+/usr/lib/libSystem.B.dylib	_random	0
+/usr/lib/libSystem.B.dylib	_read	0
+/usr/lib/libSystem.B.dylib	_readdir	0
+/usr/lib/libSystem.B.dylib	_readdir_r	0
+/usr/lib/libSystem.B.dylib	_readlink	0
+/usr/lib/libSystem.B.dylib	_realloc	0
+/usr/lib/libSystem.B.dylib	_realpath$DARWIN_EXTSN	0
+/usr/lib/libSystem.B.dylib	_recv	0
+/usr/lib/libSystem.B.dylib	_recvfrom	0
+/usr/lib/libSystem.B.dylib	_recvmsg	0
+/usr/lib/libSystem.B.dylib	_remainderf	0
+/usr/lib/libSystem.B.dylib	_remove	0
+/usr/lib/libSystem.B.dylib	_removexattr	0
+/usr/lib/libSystem.B.dylib	_remquof	0
+/usr/lib/libSystem.B.dylib	_rename	0
+/usr/lib/libSystem.B.dylib	_rewind	0
+/usr/lib/libSystem.B.dylib	_rmdir	0
+/usr/lib/libSystem.B.dylib	_round	0
+/usr/lib/libSystem.B.dylib	_sched_yield	0
+/usr/lib/libSystem.B.dylib	_select	0
+/usr/lib/libSystem.B.dylib	_semaphore_create	0
+/usr/lib/libSystem.B.dylib	_semaphore_destroy	0
+/usr/lib/libSystem.B.dylib	_semaphore_signal	0
+/usr/lib/libSystem.B.dylib	_semaphore_wait	0
+/usr/lib/libSystem.B.dylib	_send	0
+/usr/lib/libSystem.B.dylib	_sendmsg	0
+/usr/lib/libSystem.B.dylib	_sendto	0
+/usr/lib/libSystem.B.dylib	_setbuf	0
+/usr/lib/libSystem.B.dylib	_setjmp	0
+/usr/lib/libSystem.B.dylib	_setsockopt	0
+/usr/lib/libSystem.B.dylib	_setvbuf	0
+/usr/lib/libSystem.B.dylib	_setxattr	0
+/usr/lib/libSystem.B.dylib	_shutdown	0
+/usr/lib/libSystem.B.dylib	_sigaction	0
+/usr/lib/libSystem.B.dylib	_signal	0
+/usr/lib/libSystem.B.dylib	_sigprocmask	0
+/usr/lib/libSystem.B.dylib	_sin	0
+/usr/lib/libSystem.B.dylib	_sinf	0
+/usr/lib/libSystem.B.dylib	_sinh	0
+/usr/lib/libSystem.B.dylib	_sinhf	0
+/usr/lib/libSystem.B.dylib	_sleep	0
+/usr/lib/libSystem.B.dylib	_snprintf	0
+/usr/lib/libSystem.B.dylib	_socket	0
+/usr/lib/libSystem.B.dylib	_socketpair	0
+/usr/lib/libSystem.B.dylib	_sprintf	0
+/usr/lib/libSystem.B.dylib	_srand	0
+/usr/lib/libSystem.B.dylib	_srandomdev	0
+/usr/lib/libSystem.B.dylib	_sscanf	0
+/usr/lib/libSystem.B.dylib	_stat	0
+/usr/lib/libSystem.B.dylib	_statfs	0
+/usr/lib/libSystem.B.dylib	_strcasecmp	0
+/usr/lib/libSystem.B.dylib	_strcat	0
+/usr/lib/libSystem.B.dylib	_strchr	0
+/usr/lib/libSystem.B.dylib	_strcmp	0
+/usr/lib/libSystem.B.dylib	_strcpy	0
+/usr/lib/libSystem.B.dylib	_strcspn	0
+/usr/lib/libSystem.B.dylib	_strdup	0
+/usr/lib/libSystem.B.dylib	_strerror	0
+/usr/lib/libSystem.B.dylib	_strerror_r	0
+/usr/lib/libSystem.B.dylib	_strftime	0
+/usr/lib/libSystem.B.dylib	_strlen	0
+/usr/lib/libSystem.B.dylib	_strncasecmp	0
+/usr/lib/libSystem.B.dylib	_strncat	0
+/usr/lib/libSystem.B.dylib	_strncmp	0
+/usr/lib/libSystem.B.dylib	_strncpy	0
+/usr/lib/libSystem.B.dylib	_strnlen	0
+/usr/lib/libSystem.B.dylib	_strpbrk	0
+/usr/lib/libSystem.B.dylib	_strrchr	0
+/usr/lib/libSystem.B.dylib	_strspn	0
+/usr/lib/libSystem.B.dylib	_strstr	0
+/usr/lib/libSystem.B.dylib	_strtod	0
+/usr/lib/libSystem.B.dylib	_strtof	0
+/usr/lib/libSystem.B.dylib	_strtol	0
+/usr/lib/libSystem.B.dylib	_strtoll	0
+/usr/lib/libSystem.B.dylib	_strtoul	0
+/usr/lib/libSystem.B.dylib	_strtoull	0
+/usr/lib/libSystem.B.dylib	_sys_icache_invalidate	0
+/usr/lib/libSystem.B.dylib	_sysconf	0
+/usr/lib/libSystem.B.dylib	_sysctl	0
+/usr/lib/libSystem.B.dylib	_sysctlbyname	0
+/usr/lib/libSystem.B.dylib	_tan	0
+/usr/lib/libSystem.B.dylib	_tanf	0
+/usr/lib/libSystem.B.dylib	_tanh	0
+/usr/lib/libSystem.B.dylib	_tanhf	0
+/usr/lib/libSystem.B.dylib	_task_get_exception_ports	0
+/usr/lib/libSystem.B.dylib	_task_info	0
+/usr/lib/libSystem.B.dylib	_task_set_exception_ports	0
+/usr/lib/libSystem.B.dylib	_task_swap_exception_ports	0
+/usr/lib/libSystem.B.dylib	_task_threads	0
+/usr/lib/libSystem.B.dylib	_tcgetattr	0
+/usr/lib/libSystem.B.dylib	_tcsetattr	0
+/usr/lib/libSystem.B.dylib	_thread_get_exception_ports	0
+/usr/lib/libSystem.B.dylib	_thread_get_state	0
+/usr/lib/libSystem.B.dylib	_thread_info	0
+/usr/lib/libSystem.B.dylib	_thread_policy_get	0
+/usr/lib/libSystem.B.dylib	_thread_set_exception_ports	0
+/usr/lib/libSystem.B.dylib	_thread_suspend	0
+/usr/lib/libSystem.B.dylib	_thread_swap_exception_ports	0
+/usr/lib/libSystem.B.dylib	_time	0
+/usr/lib/libSystem.B.dylib	_uname	0
+/usr/lib/libSystem.B.dylib	_unlink	0
+/usr/lib/libSystem.B.dylib	_unw_get_proc_info	0
+/usr/lib/libSystem.B.dylib	_unw_get_proc_name	0
+/usr/lib/libSystem.B.dylib	_unw_get_reg	0
+/usr/lib/libSystem.B.dylib	_unw_getcontext	0
+/usr/lib/libSystem.B.dylib	_unw_init_local	0
+/usr/lib/libSystem.B.dylib	_unw_step	0
+/usr/lib/libSystem.B.dylib	_usleep	0
+/usr/lib/libSystem.B.dylib	_utime	0
+/usr/lib/libSystem.B.dylib	_utimes	0
+/usr/lib/libSystem.B.dylib	_uuid_generate	0
+/usr/lib/libSystem.B.dylib	_vfprintf	0
+/usr/lib/libSystem.B.dylib	_vm_allocate	0
+/usr/lib/libSystem.B.dylib	_vm_deallocate	0
+/usr/lib/libSystem.B.dylib	_vm_page_size	0
+/usr/lib/libSystem.B.dylib	_vm_read	0
+/usr/lib/libSystem.B.dylib	_vm_read_overwrite	0
+/usr/lib/libSystem.B.dylib	_vm_region_recurse_64	0
+/usr/lib/libSystem.B.dylib	_vm_remap	0
+/usr/lib/libSystem.B.dylib	_vsnprintf	0
+/usr/lib/libSystem.B.dylib	_wcslen	0
+/usr/lib/libSystem.B.dylib	_wmemcmp	0
+/usr/lib/libSystem.B.dylib	_write	0
+/usr/lib/libSystem.B.dylib	_writev	0
+/usr/lib/libSystem.B.dylib	dyld_stub_binder	0
+/usr/lib/libc++.1.dylib	__ZNKSt10bad_typeid4whatEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt11logic_error4whatEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt13bad_exception4whatEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt13runtime_error4whatEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__110error_code7messageEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE2atEm	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4copyEPcmm	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4findEPKcmm	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4findEcm	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5rfindEcm	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEPKc	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEmmPKc	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__119__shared_weak_count13__get_deleterERKSt9type_info	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__123__match_any_but_newlineIcE6__execERNS_7__stateIcEE	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__14__fs10filesystem4path13__parent_pathEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__14__fs10filesystem4path16__root_directoryEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__14__fs10filesystem4path16lexically_normalEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__14__fs10filesystem4path18lexically_relativeERKS2_	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__16locale4nameEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__16locale9has_facetERNS0_2idE	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__16locale9use_facetERNS0_2idE	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__16localeeqERKS0_	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__18ios_base6getlocEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__18numpunctIcE11do_truenameEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__18numpunctIcE12do_falsenameEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__18time_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE3getES4_S4_RNS_8ios_baseERjP2tmPKcSC_	0
+/usr/lib/libc++.1.dylib	__ZNKSt3__18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE3putES4_RNS_8ios_baseEcPK2tmPKcSC_	0
+/usr/lib/libc++.1.dylib	__ZNKSt8bad_cast4whatEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt9bad_alloc4whatEv	0
+/usr/lib/libc++.1.dylib	__ZNKSt9exception4whatEv	0
+/usr/lib/libc++.1.dylib	__ZNSt10bad_typeidD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt11logic_errorC1EPKc	0
+/usr/lib/libc++.1.dylib	__ZNSt11logic_errorC1ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZNSt11logic_errorC2EPKc	0
+/usr/lib/libc++.1.dylib	__ZNSt11logic_errorC2ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZNSt11logic_errorC2ERKS_	0
+/usr/lib/libc++.1.dylib	__ZNSt11logic_errorD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt11logic_errorD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt11range_errorD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt12domain_errorD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt12length_errorD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt12length_errorD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt12out_of_rangeD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt12out_of_rangeD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt13bad_exceptionD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt13exception_ptrC1ERKS_	0
+/usr/lib/libc++.1.dylib	__ZNSt13exception_ptrD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt13exception_ptraSERKS_	0
+/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC1EPKc	0
+/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC1ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC1ERKS_	0
+/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC2EPKc	0
+/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC2ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorC2ERKS_	0
+/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt13runtime_errorD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt14overflow_errorD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt15underflow_errorD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt16invalid_argumentD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt16invalid_argumentD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt19bad_optional_accessD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt20bad_array_new_lengthC1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt20bad_array_new_lengthD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__111__call_onceERVmPvPFvS2_E	0
+/usr/lib/libc++.1.dylib	__ZNSt3__111regex_errorC1ENS_15regex_constants10error_typeE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__111regex_errorD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__111this_thread9sleep_forERKNS_6chrono8durationIxNS_5ratioILl1ELl1000000000EEEEE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112__get_sp_mutEPKv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112__next_primeEm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112bad_weak_ptrD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE2atEm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5eraseEmm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendERKS5_mm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEmc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKcm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertENS_11__wrap_iterIPKcEEc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKcm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6resizeEmc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7replaceEmmPKc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7replaceEmmPKcm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7reserveEm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__grow_byEmmmmmm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2ERKS5_mmRKS4_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSERKS5_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSEc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE6appendEPKwm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE9__grow_byEmmmmmm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE9push_backEw	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEEC2ERKS5_mmRKS4_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112future_errorC1ENS_10error_codeE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112future_errorD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112placeholders2_1E	0
+/usr/lib/libc++.1.dylib	__ZNSt3__112placeholders2_2E	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE3getEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE4peekEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE4readEPcl	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5seekgENS_4fposI11__mbstate_tEE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5seekgExNS_8ios_base7seekdirE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5tellgEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE6ignoreEli	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE6sentryC1ERS3_b	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE7getlineEPclc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED0Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERb	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERd	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERf	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERi	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERj	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERx	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_istreamIcNS_11char_traitsIcEEErsERy	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE3putEc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE5flushEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE5writeEPKcl	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryC1ERS3_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED0Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEED2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEPKv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEPNS_15basic_streambufIcS2_EE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEb	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEd	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEf	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEi	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEj	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEl	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEs	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEt	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEx	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEy	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113basic_ostreamIwNS_11char_traitsIwEEE5writeEPKwl	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113random_deviceC1ERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113random_deviceD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__113random_deviceclEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__114__shared_countD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115__get_classnameEPKcb	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115__thread_structC1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115__thread_structD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE4swapERS3_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE4syncEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5imbueERKNS_6localeE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5uflowEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6setbufEPcl	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsgetnEPcl	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE6xsputnEPKcl	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE7seekoffExNS_8ios_base7seekdirEj	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE7seekposENS_4fposI11__mbstate_tEEj	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE8overflowEi	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9pbackfailEi	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9showmanycEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE9underflowEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115future_categoryEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__115system_categoryEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__117__assoc_sub_state13set_exceptionESt13exception_ptr	0
+/usr/lib/libc++.1.dylib	__ZNSt3__117__assoc_sub_state16__on_zero_sharedEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__117__assoc_sub_state4waitEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__117__assoc_sub_state9set_valueEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__117iostream_categoryEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__118condition_variable10notify_allEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__118condition_variable10notify_oneEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__118condition_variable15__do_timed_waitERNS_11unique_lockINS_5mutexEEENS_6chrono10time_pointINS5_12system_clockENS5_8durationIxNS_5ratioILl1ELl1000000000EEEEEEE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__118condition_variableD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__119__shared_weak_count14__release_weakEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__119__shared_weak_count4lockEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__119__shared_weak_countD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__119__thread_local_dataEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__120__get_collation_nameEPKc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__120__throw_system_errorEiPKc	0
+/usr/lib/libc++.1.dylib	__ZNSt3__14__fs10filesystem7__spaceERKNS1_4pathEPNS_10error_codeE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__14cerrE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__14coutE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__14stodERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__14stofERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__14stoiERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi	0
+/usr/lib/libc++.1.dylib	__ZNSt3__14stolERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi	0
+/usr/lib/libc++.1.dylib	__ZNSt3__15ctypeIcE2idE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__15mutex4lockEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__15mutex6unlockEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__15mutexD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__15stollERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi	0
+/usr/lib/libc++.1.dylib	__ZNSt3__15stoulERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIccEEPcEEvT0_S5_T_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIddEEPdEEvT0_S5_T_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIffEEPfEEvT0_S5_T_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIiiEEPiEEvT0_S5_T_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIjjEEPjEEvT0_S5_T_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessImmEEPmEEvT0_S5_T_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIttEEPtEEvT0_S5_T_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIxxEEPxEEvT0_S5_T_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16__sortIRNS_6__lessIyyEEPyEEvT0_S5_T_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16chrono12steady_clock3nowEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16chrono12system_clock11from_time_tEl	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16chrono12system_clock3nowEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16chrono12system_clock9to_time_tERKNS0_10time_pointIS1_NS0_8durationIxNS_5ratioILl1ELl1000000EEEEEEE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16futureIvE3getEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16futureIvEC1EPNS_17__assoc_sub_stateE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16futureIvED1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16locale14__install_ctorERKS0_PNS0_5facetEl	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16locale2id5__getEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16locale5facet16__on_zero_sharedEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16locale5facetD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16locale7classicEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16localeC1ERKS0_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16localeC1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16localeD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16localeaSERKS0_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16stoullERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPmi	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16thread20hardware_concurrencyEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16thread4joinEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16thread6detachEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__16threadD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__17codecvtIDic11__mbstate_tE2idE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__17codecvtIcc11__mbstate_tE2idE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__17codecvtIwc11__mbstate_tE2idE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__17codecvtIwc11__mbstate_tEC2Em	0
+/usr/lib/libc++.1.dylib	__ZNSt3__17codecvtIwc11__mbstate_tED2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__17collateIcE2idE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__17num_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18__sp_mut4lockEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18__sp_mut6unlockEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base33__set_badbit_and_consider_rethrowEv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base4initEPv	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base4moveERS0_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base4swapERS0_	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base5clearEj	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base5imbueERKNS_6localeE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base7failureC1ERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEERKNS_10error_codeE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base7failureD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18ios_base7failureD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18numpunctIcE2idE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18numpunctIcEC2Em	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18numpunctIcED2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18time_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE	0
+/usr/lib/libc++.1.dylib	__ZNSt3__19basic_iosIcNS_11char_traitsIcEEED2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEd	0
+/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEf	0
+/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEi	0
+/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEj	0
+/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEl	0
+/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEm	0
+/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEx	0
+/usr/lib/libc++.1.dylib	__ZNSt3__19to_stringEy	0
+/usr/lib/libc++.1.dylib	__ZNSt3__1plIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEPKS6_RKS9_	0
+/usr/lib/libc++.1.dylib	__ZNSt8bad_castC1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt8bad_castC2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt8bad_castD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt8bad_castD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt9bad_allocC1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt9bad_allocC2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt9bad_allocD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt9bad_allocD2Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt9exceptionD1Ev	0
+/usr/lib/libc++.1.dylib	__ZNSt9exceptionD2Ev	0
+/usr/lib/libc++.1.dylib	__ZSt13get_terminatev	0
+/usr/lib/libc++.1.dylib	__ZSt13set_terminatePFvvE	0
+/usr/lib/libc++.1.dylib	__ZSt14get_unexpectedv	0
+/usr/lib/libc++.1.dylib	__ZSt17__throw_bad_allocv	0
+/usr/lib/libc++.1.dylib	__ZSt17current_exceptionv	0
+/usr/lib/libc++.1.dylib	__ZSt17rethrow_exceptionSt13exception_ptr	0
+/usr/lib/libc++.1.dylib	__ZSt7nothrow	0
+/usr/lib/libc++.1.dylib	__ZSt9terminatev	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__111regex_errorE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__112bad_weak_ptrE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__112future_errorE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__113basic_istreamIcNS_11char_traitsIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__114basic_iostreamIcNS_11char_traitsIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__115basic_streambufIcNS_11char_traitsIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__117__assoc_sub_stateE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__119__shared_weak_countE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__16locale5facetE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__17codecvtIwc11__mbstate_tEE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__18ios_base7failureE	0
+/usr/lib/libc++.1.dylib	__ZTINSt3__18numpunctIcEE	0
+/usr/lib/libc++.1.dylib	__ZTIPKc	0
+/usr/lib/libc++.1.dylib	__ZTISt10bad_typeid	0
+/usr/lib/libc++.1.dylib	__ZTISt11logic_error	0
+/usr/lib/libc++.1.dylib	__ZTISt11range_error	0
+/usr/lib/libc++.1.dylib	__ZTISt12domain_error	0
+/usr/lib/libc++.1.dylib	__ZTISt12length_error	0
+/usr/lib/libc++.1.dylib	__ZTISt12out_of_range	0
+/usr/lib/libc++.1.dylib	__ZTISt13bad_exception	0
+/usr/lib/libc++.1.dylib	__ZTISt13runtime_error	0
+/usr/lib/libc++.1.dylib	__ZTISt14overflow_error	0
+/usr/lib/libc++.1.dylib	__ZTISt15underflow_error	0
+/usr/lib/libc++.1.dylib	__ZTISt16invalid_argument	0
+/usr/lib/libc++.1.dylib	__ZTISt18bad_variant_access	0
+/usr/lib/libc++.1.dylib	__ZTISt19bad_optional_access	0
+/usr/lib/libc++.1.dylib	__ZTISt20bad_array_new_length	0
+/usr/lib/libc++.1.dylib	__ZTISt8bad_cast	0
+/usr/lib/libc++.1.dylib	__ZTISt9bad_alloc	0
+/usr/lib/libc++.1.dylib	__ZTISt9exception	0
+/usr/lib/libc++.1.dylib	__ZTIf	0
+/usr/lib/libc++.1.dylib	__ZTIi	0
+/usr/lib/libc++.1.dylib	__ZTIj	0
+/usr/lib/libc++.1.dylib	__ZTIs	0
+/usr/lib/libc++.1.dylib	__ZTIt	0
+/usr/lib/libc++.1.dylib	__ZTIx	0
+/usr/lib/libc++.1.dylib	__ZTIy	0
+/usr/lib/libc++.1.dylib	__ZTVN10__cxxabiv117__class_type_infoE	0
+/usr/lib/libc++.1.dylib	__ZTVN10__cxxabiv119__pointer_type_infoE	0
+/usr/lib/libc++.1.dylib	__ZTVN10__cxxabiv120__function_type_infoE	0
+/usr/lib/libc++.1.dylib	__ZTVN10__cxxabiv120__si_class_type_infoE	0
+/usr/lib/libc++.1.dylib	__ZTVN10__cxxabiv121__vmi_class_type_infoE	0
+/usr/lib/libc++.1.dylib	__ZTVNSt3__112bad_weak_ptrE	0
+/usr/lib/libc++.1.dylib	__ZTVNSt3__112future_errorE	0
+/usr/lib/libc++.1.dylib	__ZTVNSt3__112system_errorE	0
+/usr/lib/libc++.1.dylib	__ZTVNSt3__113basic_istreamIcNS_11char_traitsIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZTVNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZTVNSt3__115basic_streambufIcNS_11char_traitsIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZTVNSt3__117__assoc_sub_stateE	0
+/usr/lib/libc++.1.dylib	__ZTVNSt3__17num_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE	0
+/usr/lib/libc++.1.dylib	__ZTVNSt3__18ios_base7failureE	0
+/usr/lib/libc++.1.dylib	__ZTVNSt3__19basic_iosIcNS_11char_traitsIcEEEE	0
+/usr/lib/libc++.1.dylib	__ZTVSt10bad_typeid	0
+/usr/lib/libc++.1.dylib	__ZTVSt11range_error	0
+/usr/lib/libc++.1.dylib	__ZTVSt12domain_error	0
+/usr/lib/libc++.1.dylib	__ZTVSt12length_error	0
+/usr/lib/libc++.1.dylib	__ZTVSt12out_of_range	0
+/usr/lib/libc++.1.dylib	__ZTVSt13bad_exception	0
+/usr/lib/libc++.1.dylib	__ZTVSt14overflow_error	0
+/usr/lib/libc++.1.dylib	__ZTVSt15underflow_error	0
+/usr/lib/libc++.1.dylib	__ZTVSt16invalid_argument	0
+/usr/lib/libc++.1.dylib	__ZTVSt18bad_variant_access	0
+/usr/lib/libc++.1.dylib	__ZTVSt19bad_optional_access	0
+/usr/lib/libc++.1.dylib	__ZTVSt8bad_cast	0
+/usr/lib/libc++.1.dylib	__ZTVSt9bad_alloc	0
+/usr/lib/libc++.1.dylib	__ZTVSt9exception	0
+/usr/lib/libc++.1.dylib	__ZThn16_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev	0
+/usr/lib/libc++.1.dylib	__ZThn16_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev	0
+/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__113basic_istreamIcNS_11char_traitsIcEEED0Ev	0
+/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__113basic_istreamIcNS_11char_traitsIcEEED1Ev	0
+/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__113basic_ostreamIcNS_11char_traitsIcEEED0Ev	0
+/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__113basic_ostreamIcNS_11char_traitsIcEEED1Ev	0
+/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev	0
+/usr/lib/libc++.1.dylib	__ZTv0_n24_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev	0
+/usr/lib/libc++.1.dylib	___cxa_allocate_exception	0
+/usr/lib/libc++.1.dylib	___cxa_bad_cast	0
+/usr/lib/libc++.1.dylib	___cxa_bad_typeid	0
+/usr/lib/libc++.1.dylib	___cxa_begin_catch	0
+/usr/lib/libc++.1.dylib	___cxa_demangle	0
+/usr/lib/libc++.1.dylib	___cxa_end_catch	0
+/usr/lib/libc++.1.dylib	___cxa_free_exception	0
+/usr/lib/libc++.1.dylib	___cxa_get_exception_ptr	0
+/usr/lib/libc++.1.dylib	___cxa_get_globals_fast	0
+/usr/lib/libc++.1.dylib	___cxa_pure_virtual	0
+/usr/lib/libc++.1.dylib	___cxa_rethrow	0
+/usr/lib/libc++.1.dylib	___cxa_throw	0
+/usr/lib/libc++.1.dylib	___dynamic_cast	0
+/usr/lib/libc++.1.dylib	___gxx_personality_v0	0
+/usr/lib/libhvf.dylib	_HVF_clear_part_cache	1
+/usr/lib/libhvf.dylib	_HVF_close_part_renderer	1
+/usr/lib/libhvf.dylib	_HVF_open_part_renderer	1
+/usr/lib/libhvf.dylib	_HVF_part_renderer_storage_size	1
+/usr/lib/libhvf.dylib	_HVF_render_current_part	1
+/usr/lib/libhvf.dylib	_HVF_render_part_axis_count	1
+/usr/lib/libhvf.dylib	_HVF_set_axis_value	1
+/usr/lib/libhvf.dylib	_HVF_set_render_part	1
+/usr/lib/libobjc.A.dylib	_OBJC_CLASS_$_NSObject	0
+/usr/lib/libobjc.A.dylib	_OBJC_EHTYPE_id	0
+/usr/lib/libobjc.A.dylib	_OBJC_METACLASS_$_NSObject	0
+/usr/lib/libobjc.A.dylib	___objc_personality_v0	0
+/usr/lib/libobjc.A.dylib	__objc_empty_cache	0
+/usr/lib/libobjc.A.dylib	_class_copyMethodList	0
+/usr/lib/libobjc.A.dylib	_class_copyPropertyList	0
+/usr/lib/libobjc.A.dylib	_method_getImplementation	0
+/usr/lib/libobjc.A.dylib	_objc_alloc	0
+/usr/lib/libobjc.A.dylib	_objc_alloc_init	0
+/usr/lib/libobjc.A.dylib	_objc_autorelease	0
+/usr/lib/libobjc.A.dylib	_objc_autoreleaseReturnValue	0
+/usr/lib/libobjc.A.dylib	_objc_begin_catch	0
+/usr/lib/libobjc.A.dylib	_objc_copyCppObjectAtomic	0
+/usr/lib/libobjc.A.dylib	_objc_copyWeak	0
+/usr/lib/libobjc.A.dylib	_objc_destroyWeak	0
+/usr/lib/libobjc.A.dylib	_objc_ehtype_vtable	0
+/usr/lib/libobjc.A.dylib	_objc_end_catch	0
+/usr/lib/libobjc.A.dylib	_objc_enumerationMutation	0
+/usr/lib/libobjc.A.dylib	_objc_exception_rethrow	0
+/usr/lib/libobjc.A.dylib	_objc_exception_throw	0
+/usr/lib/libobjc.A.dylib	_objc_getAssociatedObject	0
+/usr/lib/libobjc.A.dylib	_objc_getProperty	0
+/usr/lib/libobjc.A.dylib	_objc_initWeak	0
+/usr/lib/libobjc.A.dylib	_objc_loadWeakRetained	0
+/usr/lib/libobjc.A.dylib	_objc_moveWeak	0
+/usr/lib/libobjc.A.dylib	_objc_msgSend	0
+/usr/lib/libobjc.A.dylib	_objc_msgSendSuper2	0
+/usr/lib/libobjc.A.dylib	_objc_opt_class	0
+/usr/lib/libobjc.A.dylib	_objc_opt_isKindOfClass	0
+/usr/lib/libobjc.A.dylib	_objc_opt_new	0
+/usr/lib/libobjc.A.dylib	_objc_opt_respondsToSelector	0
+/usr/lib/libobjc.A.dylib	_objc_release	0
+/usr/lib/libobjc.A.dylib	_objc_retain	0
+/usr/lib/libobjc.A.dylib	_objc_retainAutorelease	0
+/usr/lib/libobjc.A.dylib	_objc_retainAutoreleaseReturnValue	0
+/usr/lib/libobjc.A.dylib	_objc_retainAutoreleasedReturnValue	0
+/usr/lib/libobjc.A.dylib	_objc_retainBlock	0
+/usr/lib/libobjc.A.dylib	_objc_setAssociatedObject	0
+/usr/lib/libobjc.A.dylib	_objc_setExceptionPreprocessor	0
+/usr/lib/libobjc.A.dylib	_objc_setProperty_atomic	0
+/usr/lib/libobjc.A.dylib	_objc_setProperty_atomic_copy	0
+/usr/lib/libobjc.A.dylib	_objc_setProperty_nonatomic_copy	0
+/usr/lib/libobjc.A.dylib	_objc_storeStrong	0
+/usr/lib/libobjc.A.dylib	_objc_storeWeak	0
+/usr/lib/libobjc.A.dylib	_objc_sync_enter	0
+/usr/lib/libobjc.A.dylib	_objc_sync_exit	0
+/usr/lib/libobjc.A.dylib	_objc_unsafeClaimAutoreleasedReturnValue	0
+/usr/lib/libobjc.A.dylib	_object_getClass	0
+/usr/lib/libobjc.A.dylib	_object_getClassName	0
+/usr/lib/libobjc.A.dylib	_property_getAttributes	0
+/usr/lib/libobjc.A.dylib	_property_getName	0
+<flat-namespace>	___MIG_check__Request__exception_raise_state_identity_t	0
+<flat-namespace>	___MIG_check__Request__exception_raise_state_t	0
+<flat-namespace>	___MIG_check__Request__mach_exception_raise_state_identity_t	0
+<flat-namespace>	___MIG_check__Request__mach_exception_raise_state_t	0
+@rpath/RobloxLib.framework/RobloxLib	__ZGVZN13opentelemetry2v15trace10TraceState10GetDefaultEvE2ts	1
+@rpath/RobloxLib.framework/RobloxLib	__ZGVZN13opentelemetry2v17context14RuntimeContext10GetStorageEvE7context	1
+@rpath/RobloxLib.framework/RobloxLib	__ZGVZN13opentelemetry2v17context25ThreadLocalContextStorage8GetStackEvE6stack_	1
+@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX22WidgetDataProtocolCore12ProtocolNameE	1
+@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX22WidgetDataProtocolCore21RecentlyPlayedRequestE	1
+@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX22WidgetDataProtocolCore29RecentlyPlayedRequestCompleteE	1
+@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIPKcEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE	1
+@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIbEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE	1
+@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIdEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE	1
+@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIxEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE	1
+@rpath/RobloxLib.framework/RobloxLib	__ZN3RBX9Telemetry15FieldsContainer10isKeyValidIyEEbNS_10StringViewERKT_NS0_27BehaviorOnDuplicateFieldKeyE	1
+@rpath/RobloxLib.framework/RobloxLib	__ZTISt11range_error	1
+@rpath/RobloxLib.framework/RobloxLib	__ZTISt12domain_error	1
+@rpath/RobloxLib.framework/RobloxLib	__ZTISt12length_error	1
+@rpath/RobloxLib.framework/RobloxLib	__ZTISt12out_of_range	1
+@rpath/RobloxLib.framework/RobloxLib	__ZTISt14overflow_error	1
+@rpath/RobloxLib.framework/RobloxLib	__ZTISt15underflow_error	1
+@rpath/RobloxLib.framework/RobloxLib	__ZTISt16invalid_argument	1
+@rpath/RobloxLib.framework/RobloxLib	__ZZN13opentelemetry2v15trace10TraceState10GetDefaultEvE2ts	1
+@rpath/RobloxLib.framework/RobloxLib	__ZZN13opentelemetry2v17context14RuntimeContext10GetStorageEvE7context	1
+@rpath/RobloxLib.framework/RobloxLib	__ZZN13opentelemetry2v17context25ThreadLocalContextStorage8GetStackEvE6stack_	1
