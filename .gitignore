@@ -1,0 +1,17 @@
+# Roblox files never leave the session (see CLAUDE.md "Hard data rules")
+input/
+work/
+out/
+*.ipa
+*.ipa.part*
+*.app/
+*.dylib
+*.dSYM/
+*.metallib
+*.car
+# Apple SDK / system files
+*.tbd
+dyld_shared_cache*
+cache/
+__pycache__/
+.venv/

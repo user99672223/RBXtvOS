@@ -1,0 +1,2274 @@
+{
+ "app": "Roblox.app",
+ "entitlements": {
+  "Frameworks/Backtrace.framework/Backtrace": {},
+  "Frameworks/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter": {},
+  "Frameworks/Persona2.framework/Persona2": {},
+  "Frameworks/Reaper.framework/Reaper": {},
+  "Frameworks/RobloxLib.framework/RobloxLib": {},
+  "Frameworks/libswift_Concurrency.dylib": {},
+  "PlugIns/RBNotificationServiceExtension.appex/RBNotificationServiceExtension": {
+   "application-identifier": "2CFABCH843.com.roblox.robloxmobile.RBNotificationServiceExtension",
+   "aps-environment": "production",
+   "com.apple.developer.team-identifier": "2CFABCH843",
+   "com.apple.security.application-groups": [
+    "group.com.roblox.robloxmobile"
+   ]
+  },
+  "PlugIns/RBWidgetExtension.appex/RBWidgetExtension": {
+   "application-identifier": "2CFABCH843.com.roblox.robloxmobile.RBWidgetExtension",
+   "com.apple.developer.team-identifier": "2CFABCH843",
+   "com.apple.security.application-groups": [
+    "group.com.roblox.robloxmobile"
+   ]
+  },
+  "Roblox": {
+   "application-identifier": "7L5Z22E4SQ.com.roblox.robloxmobile",
+   "aps-environment": "production",
+   "com.apple.developer.applesignin": [
+    "Default"
+   ],
+   "com.apple.developer.associated-domains": [
+    "applinks:go.roblox.com",
+    "applinks:ro.blox.com",
+    "applinks:roblox.onelink.me",
+    "applinks:www.roblox.com",
+    "applinks:roblox.com",
+    "webcredentials:roblox.com",
+    "applinks:connections.roblox.com"
+   ],
+   "com.apple.developer.authentication-services.autofill-credential-provider": true,
+   "com.apple.developer.declared-age-range": true,
+   "com.apple.developer.kernel.extended-virtual-addressing": true,
+   "com.apple.developer.kernel.increased-memory-limit": true,
+   "com.apple.developer.storekit.request-data": true,
+   "com.apple.developer.team-identifier": "2CFABCH843",
+   "com.apple.developer.usernotifications.communication": true,
+   "com.apple.developer.usernotifications.time-sensitive": true,
+   "com.apple.security.application-groups": [
+    "group.com.roblox.robloxmobile"
+   ]
+  }
+ },
+ "extensions": [
+  {
+   "NSExtensionPointIdentifier": "com.apple.usernotifications.service",
+   "NSExtensionPrincipalClass": "NotificationService",
+   "keys": [
+    "NSExtensionAttributes",
+    "NSExtensionPointIdentifier",
+    "NSExtensionPrincipalClass"
+   ],
+   "path": "PlugIns/RBNotificationServiceExtension.appex"
+  },
+  {
+   "NSExtensionPointIdentifier": "com.apple.widgetkit-extension",
+   "NSExtensionPrincipalClass": null,
+   "keys": [
+    "NSExtensionPointIdentifier"
+   ],
+   "path": "PlugIns/RBWidgetExtension.appex"
+  }
+ ],
+ "machos": [
+  {
+   "path": "Frameworks/Backtrace.framework/Backtrace",
+   "size": 729616,
+   "slices": [
+    {
+     "build_version": {
+      "minos": "9.0.0",
+      "platform": "TYPE.VERSION_MIN_IPHONEOS",
+      "sdk": "14.4.0"
+     },
+     "cpu": "ARM64",
+     "cryptid": 0,
+     "filetype": "DYLIB",
+     "has_code_signature": true,
+     "libraries": [
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "ID_DYLIB",
+       "name": "@rpath/Backtrace.framework/Backtrace"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "904.4.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libc++.1.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter"
+      },
+      {
+       "compat": "300.0.0",
+       "current": "1774.101.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Foundation.framework/Foundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "228.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libobjc.A.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1292.60.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1044.3.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreData.framework/CoreData"
+      },
+      {
+       "compat": "150.0.0",
+       "current": "1774.101.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      },
+      {
+       "compat": "64.0.0",
+       "current": "1463.3.2",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2420.12.16",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreLocation.framework/CoreLocation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1116.3.7",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1109.60.2",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "4006.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/UIKit.framework/UIKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "970.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/libswiftCloudKit.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1200.2.41",
+       "kind": "LOAD_DYLIB",
+       "name": "@rpath/libswiftCore.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "@rpath/libswiftCoreData.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.6.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/libswiftCoreFoundation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "@rpath/libswiftCoreGraphics.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/libswiftCoreImage.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "5.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/libswiftCoreLocation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/libswiftDarwin.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "4.40.2",
+       "kind": "LOAD_DYLIB",
+       "name": "@rpath/libswiftDispatch.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "20.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "@rpath/libswiftFoundation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.3.1",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/libswiftMetal.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "@rpath/libswiftObjectiveC.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/libswiftQuartzCore.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "19.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/libswiftUIKit.dylib"
+      }
+     ],
+     "subtype": 0
+    }
+   ]
+  },
+  {
+   "path": "Frameworks/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter",
+   "size": 725904,
+   "slices": [
+    {
+     "build_version": {
+      "minos": "9.0.0",
+      "platform": "TYPE.VERSION_MIN_IPHONEOS",
+      "sdk": "14.4.0"
+     },
+     "cpu": "ARM64",
+     "cryptid": 0,
+     "filetype": "DYLIB",
+     "has_code_signature": true,
+     "libraries": [
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "ID_DYLIB",
+       "name": "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "904.4.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libc++.1.dylib"
+      },
+      {
+       "compat": "300.0.0",
+       "current": "1774.101.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Foundation.framework/Foundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "228.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libobjc.A.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1292.60.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+       "compat": "150.0.0",
+       "current": "1774.101.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      }
+     ],
+     "subtype": 0
+    }
+   ]
+  },
+  {
+   "path": "Frameworks/Persona2.framework/Persona2",
+   "size": 7664384,
+   "slices": [
+    {
+     "build_version": {
+      "minos": "13.0.0",
+      "platform": "iOS",
+      "platform_id": 2,
+      "sdk": "18.1.0",
+      "tools": [
+       "LD 1115.7.3"
+      ]
+     },
+     "cpu": "ARM64",
+     "cryptid": 0,
+     "filetype": "DYLIB",
+     "has_code_signature": true,
+     "libraries": [
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "ID_DYLIB",
+       "name": "@rpath/Persona2.framework/Persona2"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/VisionKit.framework/VisionKit"
+      },
+      {
+       "compat": "300.0.0",
+       "current": "3107.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Foundation.framework/Foundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "228.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libobjc.A.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1351.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/AVFoundation.framework/AVFoundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1000.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "619.2.8",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "338.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Combine.framework/Combine"
+      },
+      {
+       "compat": "150.0.0",
+       "current": "3107.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      },
+      {
+       "compat": "64.0.0",
+       "current": "1883.1.10",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "6.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreImage.framework/CoreImage"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2949.0.12",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreLocation.framework/CoreLocation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3175.11.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreMedia.framework/CoreMedia"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2949.0.12",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreMotion.framework/CoreMotion"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1226.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreServices.framework/CoreServices"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "844.1.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreText.framework/CoreText"
+      },
+      {
+       "compat": "1.2.0",
+       "current": "1.5.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreVideo.framework/CoreVideo"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CryptoKit.framework/CryptoKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "367.3.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Metal.framework/Metal"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "168.6.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/MetalKit.framework/MetalKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "128.1.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1612.40.4",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/OSLog.framework/OSLog"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/PDFKit.framework/PDFKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/PassKit.framework/PassKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "712.0.210",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/PhotosUI.framework/PhotosUI"
+      },
+      {
+       "compat": "1.2.0",
+       "current": "1.11.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/QuartzCore.framework/QuartzCore"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/SafariServices.framework/SafariServices"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "61439.42.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Security.framework/Security"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "6.1.19",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/SwiftUI.framework/SwiftUI"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1347.40.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "8117.1.109",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/UIKit.framework/UIKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "8.0.41",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Vision.framework/Vision"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1800.101.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libc++.1.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libcompression.dylib"
+      },
+      {
+       "compat": "10.0.0",
+       "current": "10.9.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libxml2.2.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.2.12",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libz.1.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2300.10.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftAVFoundation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "8.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCompression.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftCore.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "328.204.30",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreAudio.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "120.100.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreFoundation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2.1.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreImage.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "41.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreLocation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "6.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreMIDI.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3175.11.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreMedia.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "228.0.13",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftDarwin.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "797.1.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftDataDetection.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "49.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftDispatch.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2732.40.30",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftFileProvider.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "367.3.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftMetal.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.3.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftMetalKit.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftModelIO.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "8.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftOSLog.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "10.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftObjectiveC.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftObservation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1591.2.8",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftPassKit.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "4.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftQuartzCore.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftSpatial.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "823.4.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "62.0.1",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftXPC.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1062.0.2",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftos.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "21.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftsimd.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/libswift_Concurrency.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftFoundation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftUIKit.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreGraphics.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "712.0.210",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftPhotosUI.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "8.0.41",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftVision.dylib"
+      }
+     ],
+     "subtype": 0
+    }
+   ]
+  },
+  {
+   "path": "Frameworks/Reaper.framework/Reaper",
+   "size": 107856,
+   "slices": [
+    {
+     "build_version": {
+      "minos": "13.0.0",
+      "platform": "iOS",
+      "platform_id": 2,
+      "sdk": "26.2.0",
+      "tools": [
+       "LD 1230.1.0"
+      ]
+     },
+     "cpu": "ARM64",
+     "cryptid": 0,
+     "filetype": "DYLIB",
+     "has_code_signature": true,
+     "libraries": [
+      {
+       "compat": "0.0.0",
+       "current": "0.0.0",
+       "kind": "ID_DYLIB",
+       "name": "@rpath/Reaper.framework/Reaper"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2000.67.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libc++.1.dylib"
+      },
+      {
+       "compat": "300.0.0",
+       "current": "4201.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Foundation.framework/Foundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "228.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libobjc.A.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1356.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+       "compat": "150.0.0",
+       "current": "4201.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "9126.2.4",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/UIKit.framework/UIKit"
+      },
+      {
+       "compat": "0.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftCore.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "120.100.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreFoundation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "347.40.2",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftDarwin.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "56.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftDispatch.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "951.1.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftObjectiveC.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "105.0.14",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftXPC.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftFoundation.dylib"
+      }
+     ],
+     "subtype": 0
+    }
+   ]
+  },
+  {
+   "path": "Frameworks/RobloxLib.framework/RobloxLib",
+   "size": 106854560,
+   "slices": [
+    {
+     "build_version": {
+      "minos": "13.0.0",
+      "platform": "iOS",
+      "platform_id": 2,
+      "sdk": "26.2.0",
+      "tools": [
+       "LD 1230.1.0"
+      ]
+     },
+     "cpu": "ARM64",
+     "cryptid": 0,
+     "filetype": "DYLIB",
+     "has_code_signature": true,
+     "libraries": [
+      {
+       "compat": "0.0.0",
+       "current": "0.0.0",
+       "kind": "ID_DYLIB",
+       "name": "@rpath/RobloxLib.framework/RobloxLib"
+      },
+      {
+       "compat": "0.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/libhvf.dylib"
+      },
+      {
+       "compat": "0.0.0",
+       "current": "3804.255.31",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Contacts.framework/Contacts"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "709.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "623.1.14",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/WebKit.framework/WebKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3064.0.10",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreMotion.framework/CoreMotion"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "13.2.8",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/GameController.framework/GameController"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1226.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreServices.framework/CoreServices"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CallKit.framework/CallKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "877.2.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreText.framework/CoreText"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "822.0.140",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Photos.framework/Photos"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/AVFoundation.framework/AVFoundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3290.6.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreMedia.framework/CoreMedia"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/IOSurface.framework/IOSurface"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3290.6.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox"
+      },
+      {
+       "compat": "64.0.0",
+       "current": "1965.2.3",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1000.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreAudio.framework/CoreAudio"
+      },
+      {
+       "compat": "150.0.0",
+       "current": "4201.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1356.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+       "compat": "300.0.0",
+       "current": "4201.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Foundation.framework/Foundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreML.framework/CoreML"
+      },
+      {
+       "compat": "1.2.0",
+       "current": "726.2.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreVideo.framework/CoreVideo"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "5569.60.39",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Network.framework/Network"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "370.64.2",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Metal.framework/Metal"
+      },
+      {
+       "compat": "1.2.0",
+       "current": "1193.47.2",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/QuartzCore.framework/QuartzCore"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/OpenGLES.framework/OpenGLES"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libresolv.9.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "9126.2.4",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/UIKit.framework/UIKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1385.60.3",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "228.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libobjc.A.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2000.67.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libc++.1.dylib"
+      }
+     ],
+     "subtype": 0
+    }
+   ]
+  },
+  {
+   "path": "Frameworks/libswift_Concurrency.dylib",
+   "size": 417072,
+   "slices": [
+    {
+     "build_version": {
+      "minos": "7.0.0",
+      "platform": "TYPE.VERSION_MIN_IPHONEOS",
+      "sdk": "16.1.0"
+     },
+     "cpu": "ARM64",
+     "cryptid": 0,
+     "filetype": "DYLIB",
+     "has_code_signature": true,
+     "libraries": [
+      {
+       "compat": "1.0.0",
+       "current": "5.7.2",
+       "kind": "ID_DYLIB",
+       "name": "@rpath/libswift_Concurrency.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "228.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libobjc.A.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1300.32.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libc++.1.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1319.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+       "compat": "150.0.0",
+       "current": "1949.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "5.7.0",
+       "kind": "LOAD_DYLIB",
+       "name": "@rpath/libswiftCore.dylib"
+      }
+     ],
+     "subtype": 0
+    }
+   ]
+  },
+  {
+   "path": "PlugIns/RBNotificationServiceExtension.appex/RBNotificationServiceExtension",
+   "size": 146288,
+   "slices": [
+    {
+     "build_version": {
+      "minos": "14.0.0",
+      "platform": "iOS",
+      "platform_id": 2,
+      "sdk": "26.2.0",
+      "tools": [
+       "LD 1230.1.0"
+      ]
+     },
+     "cpu": "ARM64",
+     "cryptid": 0,
+     "filetype": "EXECUTE",
+     "has_code_signature": true,
+     "libraries": [
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/Backtrace.framework/Backtrace"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "7.2.5",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/SwiftUI.framework/SwiftUI"
+      },
+      {
+       "compat": "300.0.0",
+       "current": "4201.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Foundation.framework/Foundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "228.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libobjc.A.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1356.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+       "compat": "150.0.0",
+       "current": "4201.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Intents.framework/Intents"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "61901.60.40",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Security.framework/Security"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "9126.2.4",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/UIKit.framework/UIKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/UserNotifications.framework/UserNotifications"
+      }
+     ],
+     "subtype": 0
+    }
+   ]
+  },
+  {
+   "path": "PlugIns/RBWidgetExtension.appex/RBWidgetExtension",
+   "size": 250160,
+   "slices": [
+    {
+     "build_version": {
+      "minos": "16.0.0",
+      "platform": "iOS",
+      "platform_id": 2,
+      "sdk": "26.2.0",
+      "tools": [
+       "LD 1230.1.0"
+      ]
+     },
+     "cpu": "ARM64",
+     "cryptid": 0,
+     "filetype": "EXECUTE",
+     "has_code_signature": true,
+     "libraries": [
+      {
+       "compat": "1.0.0",
+       "current": "7.2.5",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/SwiftUI.framework/SwiftUI"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "664.2.7",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/WidgetKit.framework/WidgetKit"
+      },
+      {
+       "compat": "300.0.0",
+       "current": "4201.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Foundation.framework/Foundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "228.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libobjc.A.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1356.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+       "compat": "150.0.0",
+       "current": "4201.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "9126.2.4",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/UIKit.framework/UIKit"
+      },
+      {
+       "compat": "0.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftCore.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "120.100.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreFoundation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2.2.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreImage.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "53.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreLocation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "347.40.2",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftDarwin.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "56.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftDispatch.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "12.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftIntents.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "370.64.2",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftMetal.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "10.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftOSLog.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "951.1.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftObjectiveC.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "5.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftQuartzCore.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftSpatial.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "879.2.4",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "105.0.14",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftXPC.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswift_Concurrency.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1076.40.2",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftos.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "23.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftsimd.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftUIKit.dylib"
+      }
+     ],
+     "subtype": 0
+    }
+   ]
+  },
+  {
+   "path": "Roblox",
+   "size": 10231552,
+   "slices": [
+    {
+     "build_version": {
+      "minos": "14.0.0",
+      "platform": "iOS",
+      "platform_id": 2,
+      "sdk": "26.2.0",
+      "tools": [
+       "LD 1230.1.0"
+      ]
+     },
+     "cpu": "ARM64",
+     "cryptid": 0,
+     "filetype": "EXECUTE",
+     "has_code_signature": true,
+     "libraries": [
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/Backtrace.framework/Backtrace"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/MetricKit.framework/MetricKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "7.2.5",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/SwiftUI.framework/SwiftUI"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "288.6.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1523.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreData.framework/CoreData"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "623.1.14",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore"
+      },
+      {
+       "compat": "9.0.0",
+       "current": "380.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libsqlite3.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "822.0.140",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/PhotosUI.framework/PhotosUI"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2000.67.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libc++.1.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "623.1.14",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CallKit.framework/CallKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "822.0.140",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Photos.framework/Photos"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1016.203.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/QuickLook.framework/QuickLook"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "877.2.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreText.framework/CoreText"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/AdSupport.framework/AdSupport"
+      },
+      {
+       "compat": "0.0.0",
+       "current": "3804.255.31",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Contacts.framework/Contacts"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3064.0.10",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreMotion.framework/CoreMotion"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "129.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/GLKit.framework/GLKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/iAd.framework/iAd"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "623.1.14",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/WebKit.framework/WebKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "4.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Accelerate.framework/Accelerate"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "61901.60.40",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Security.framework/Security"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "@rpath/Persona2.framework/Persona2"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/PushKit.framework/PushKit"
+      },
+      {
+       "compat": "300.0.0",
+       "current": "4201.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Foundation.framework/Foundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "87.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/Social.framework/Social"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "13.2.8",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/GameController.framework/GameController"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/AVFoundation.framework/AVFoundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1226.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreServices.framework/CoreServices"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1934.2.3",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/EventKit.framework/EventKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/EventKitUI.framework/EventKitUI"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2005.62.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication"
+      },
+      {
+       "compat": "0.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "@rpath/RobloxLib.framework/RobloxLib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3864.255.41",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/MessageUI.framework/MessageUI"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/StoreKit.framework/StoreKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3860.255.31",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CFNetwork.framework/CFNetwork"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "9126.2.4",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/UIKit.framework/UIKit"
+      },
+      {
+       "compat": "1.2.0",
+       "current": "1193.47.2",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/QuartzCore.framework/QuartzCore"
+      },
+      {
+       "compat": "0.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "@rpath/Reaper.framework/Reaper"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/OpenGLES.framework/OpenGLES"
+      },
+      {
+       "compat": "64.0.0",
+       "current": "1965.2.3",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1385.60.3",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "228.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libobjc.A.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1356.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+       "compat": "0.0.0",
+       "current": "300.2.3",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/AppIntents.framework/AppIntents"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3023.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Combine.framework/Combine"
+      },
+      {
+       "compat": "150.0.0",
+       "current": "4201.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3290.6.1",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreMedia.framework/CoreMedia"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2400.18.100",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/CryptoKit.framework/CryptoKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3882.60.27",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/FileProvider.framework/FileProvider"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "5569.60.39",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/Network.framework/Network"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "709.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/UserNotifications.framework/UserNotifications"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "664.2.7",
+       "kind": "LOAD_DYLIB",
+       "name": "/System/Library/Frameworks/WidgetKit.framework/WidgetKit"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libcompression.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.2.12",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/libz.1.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2395.6.1",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftAVFoundation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "77.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftAccelerate.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "5.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftCallKit.dylib"
+      },
+      {
+       "compat": "0.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftCore.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "411.255.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreAudio.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "120.100.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreFoundation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2.2.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreImage.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "53.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreLocation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "6.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreMIDI.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "3290.6.1",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreMedia.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "347.40.2",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftDarwin.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "821.1.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftDataDetection.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "56.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftDispatch.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "12.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftIntents.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "370.64.2",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftMetal.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.3.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftMetalKit.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "2.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftModelIO.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "10.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftOSLog.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "951.1.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftObjectiveC.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1642.3.5",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftPassKit.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "5.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftQuartzCore.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftSpatial.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "879.2.4",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "105.0.14",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftXPC.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1076.40.2",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftos.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "23.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftsimd.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "0.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "@rpath/libswift_Concurrency.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftFoundation.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "1.0.0",
+       "kind": "LOAD_WEAK_DYLIB",
+       "name": "/usr/lib/swift/libswiftUIKit.dylib"
+      },
+      {
+       "compat": "1.0.0",
+       "current": "120.100.0",
+       "kind": "LOAD_DYLIB",
+       "name": "/usr/lib/swift/libswiftCoreGraphics.dylib"
+      }
+     ],
+     "subtype": 0
+    }
+   ]
+  }
+ ],
+ "main_plist_all_keys": [
+  "AppUpgradeKey",
+  "AppsFlyerDevKey",
+  "BGTaskSchedulerPermittedIdentifiers",
+  "BuildMachineOSBuild",
+  "CADisableMinimumFrameDurationOnPhone",
+  "CFBundleDevelopmentRegion",
+  "CFBundleDisplayName",
+  "CFBundleExecutable",
+  "CFBundleIcons",
+  "CFBundleIcons~ipad",
+  "CFBundleIdentifier",
+  "CFBundleInfoDictionaryVersion",
+  "CFBundleLocalizations",
+  "CFBundleName",
+  "CFBundlePackageType",
+  "CFBundleShortVersionString",
+  "CFBundleSignature",
+  "CFBundleSupportedPlatforms",
+  "CFBundleURLTypes",
+  "CFBundleVersion",
+  "DTAppStoreToolsBuild",
+  "DTCompiler",
+  "DTPlatformBuild",
+  "DTPlatformName",
+  "DTPlatformVersion",
+  "DTSDKBuild",
+  "DTSDKName",
+  "DTXcode",
+  "DTXcodeBuild",
+  "DistributionType",
+  "FIREBASE_ANALYTICS_COLLECTION_ENABLED",
+  "FirebaseAutomaticScreenReportingEnabled",
+  "GADApplicationIdentifier",
+  "GCSupportsGameMode",
+  "GIDClientID",
+  "GIDServerClientID",
+  "GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS",
+  "GuiBuilderDisplayStatsIndex",
+  "HockeySDKAppId",
+  "ITSAppUsesNonExemptEncryption",
+  "LSApplicationQueriesSchemes",
+  "LSRequiresIPhoneOS",
+  "LSSupportsGameMode",
+  "MinimumOSVersion",
+  "NSAdvertisingAttributionReportEndpoint",
+  "NSBonjourServices",
+  "NSCameraUsageDescription",
+  "NSContactsUsageDescription",
+  "NSHumanReadableCopyright",
+  "NSLocalNetworkUsageDescription",
+  "NSLocationWhenInUseUsageDescription",
+  "NSMicrophoneUsageDescription",
+  "NSMotionUsageDescription",
+  "NSPhotoLibraryAddUsageDescription",
+  "NSPhotoLibraryUsageDescription",
+  "NSUserActivityTypes",
+  "PioneerPlaceId",
+  "RBWhitelistedDomain",
+  "RbxBaseUrl",
+  "RobloxChannel",
+  "SKAdNetworkItems",
+  "UIAppFonts",
+  "UIBackgroundModes",
+  "UIDeviceFamily",
+  "UILaunchStoryboardName",
+  "UIPrerenderedIcon",
+  "UIRequiredDeviceCapabilities",
+  "UIRequiresFullScreen",
+  "UIStatusBarHidden",
+  "UIStatusBarHidden~ipad",
+  "UIStatusBarStyle",
+  "UISupportedInterfaceOrientations",
+  "UISupportedInterfaceOrientations~ipad",
+  "UIViewControllerBasedStatusBarAppearance",
+  "iTunesAppId"
+ ],
+ "plists": {
+  "Frameworks/Backtrace.framework/Info.plist": {
+   "CFBundleExecutable": "Backtrace",
+   "CFBundleIdentifier": "Backtrace.io.Backtrace",
+   "CFBundleShortVersionString": "1.0",
+   "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+   ],
+   "CFBundleVersion": "1",
+   "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+   "DTPlatformBuild": "18D46",
+   "DTPlatformName": "iphoneos",
+   "DTPlatformVersion": "14.4",
+   "DTSDKBuild": "18D46",
+   "DTSDKName": "iphoneos14.4",
+   "DTXcode": "1240",
+   "DTXcodeBuild": "12D4e",
+   "MinimumOSVersion": "9.0",
+   "UIDeviceFamily": [
+    1,
+    2
+   ]
+  },
+  "Frameworks/Backtrace_PLCrashReporter.framework/Info.plist": {
+   "CFBundleExecutable": "Backtrace_PLCrashReporter",
+   "CFBundleIdentifier": "org.cocoapods.Backtrace-PLCrashReporter",
+   "CFBundleShortVersionString": "1.5.4",
+   "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+   ],
+   "CFBundleVersion": "1",
+   "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+   "DTPlatformBuild": "18D46",
+   "DTPlatformName": "iphoneos",
+   "DTPlatformVersion": "14.4",
+   "DTSDKBuild": "18D46",
+   "DTSDKName": "iphoneos14.4",
+   "DTXcode": "1240",
+   "DTXcodeBuild": "12D4e",
+   "MinimumOSVersion": "9.0",
+   "UIDeviceFamily": [
+    1,
+    2
+   ]
+  },
+  "Frameworks/Persona2.framework/Info.plist": {
+   "CFBundleExecutable": "Persona2",
+   "CFBundleIdentifier": "com.withpersona.sdk.Persona2",
+   "CFBundleShortVersionString": "2.38.0",
+   "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+   ],
+   "CFBundleVersion": "1",
+   "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+   "DTPlatformBuild": "22B74",
+   "DTPlatformName": "iphoneos",
+   "DTPlatformVersion": "18.1",
+   "DTSDKBuild": "22B74",
+   "DTSDKName": "iphoneos18.1",
+   "DTXcode": "1610",
+   "DTXcodeBuild": "16B40",
+   "MinimumOSVersion": "13.0",
+   "UIDeviceFamily": [
+    1,
+    2
+   ],
+   "UIRequiredDeviceCapabilities": [
+    "arm64"
+   ]
+  },
+  "Frameworks/Reaper.framework/Info.plist": {
+   "CFBundleExecutable": "Reaper",
+   "CFBundleIdentifier": "reaper-ios.Reaper",
+   "CFBundleShortVersionString": "1.0",
+   "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+   ],
+   "CFBundleVersion": "1",
+   "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+   "DTPlatformBuild": "23C57",
+   "DTPlatformName": "iphoneos",
+   "DTPlatformVersion": "26.2",
+   "DTSDKBuild": "23C57",
+   "DTSDKName": "iphoneos26.2",
+   "DTXcode": "2630",
+   "DTXcodeBuild": "17C529",
+   "MinimumOSVersion": "13.0",
+   "UIDeviceFamily": [
+    1,
+    2
+   ],
+   "UIRequiredDeviceCapabilities": [
+    "arm64"
+   ]
+  },
+  "Frameworks/RobloxLib.framework/Info.plist": {
+   "CFBundleExecutable": "RobloxLib",
+   "CFBundleIdentifier": "com.roblox.RobloxLib",
+   "CFBundleShortVersionString": "2.745.1138",
+   "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+   ],
+   "CFBundleVersion": "2.745.1138",
+   "DTCompiler": "rbx.xcode-26.3.86e7edf29360594c245eed3f6fd126a30e93c960",
+   "DTPlatformBuild": "23C57",
+   "DTPlatformName": "iphoneos",
+   "DTPlatformVersion": "26.2",
+   "DTSDKBuild": "23C57",
+   "DTSDKName": "iphoneos26.2",
+   "DTXcode": "2630",
+   "DTXcodeBuild": "17C529",
+   "MinimumOSVersion": "13.0",
+   "UIDeviceFamily": [
+    1
+   ],
+   "UIRequiredDeviceCapabilities": [
+    "arm64"
+   ]
+  },
+  "Info.plist": {
+   "CFBundleExecutable": "Roblox",
+   "CFBundleIdentifier": "com.roblox.robloxmobile",
+   "CFBundleShortVersionString": "2.745.1138",
+   "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+   ],
+   "CFBundleVersion": "2.745.1138",
+   "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+   "DTPlatformBuild": "23C57",
+   "DTPlatformName": "iphoneos",
+   "DTPlatformVersion": "26.2",
+   "DTSDKBuild": "23C57",
+   "DTSDKName": "iphoneos26.2",
+   "DTXcode": "2630",
+   "DTXcodeBuild": "17C529",
+   "LSRequiresIPhoneOS": true,
+   "MinimumOSVersion": "14.0",
+   "UIDeviceFamily": [
+    1,
+    2
+   ],
+   "UIRequiredDeviceCapabilities": [
+    "arm64"
+   ]
+  },
+  "PlugIns/RBNotificationServiceExtension.appex/Info.plist": {
+   "CFBundleExecutable": "RBNotificationServiceExtension",
+   "CFBundleIdentifier": "com.roblox.robloxmobile.RBNotificationServiceExtension",
+   "CFBundleShortVersionString": "2.745.1138",
+   "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+   ],
+   "CFBundleVersion": "2.745.1138",
+   "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+   "DTPlatformBuild": "23C57",
+   "DTPlatformName": "iphoneos",
+   "DTPlatformVersion": "26.2",
+   "DTSDKBuild": "23C57",
+   "DTSDKName": "iphoneos26.2",
+   "DTXcode": "2630",
+   "DTXcodeBuild": "17C529",
+   "MinimumOSVersion": "14.0",
+   "UIDeviceFamily": [
+    1,
+    2
+   ],
+   "UIRequiredDeviceCapabilities": [
+    "arm64"
+   ]
+  },
+  "PlugIns/RBWidgetExtension.appex/Info.plist": {
+   "CFBundleExecutable": "RBWidgetExtension",
+   "CFBundleIdentifier": "com.roblox.robloxmobile.RBWidgetExtension",
+   "CFBundleShortVersionString": "2.745.1138",
+   "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+   ],
+   "CFBundleVersion": "2.745.1138",
+   "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+   "DTPlatformBuild": "23C57",
+   "DTPlatformName": "iphoneos",
+   "DTPlatformVersion": "26.2",
+   "DTSDKBuild": "23C57",
+   "DTSDKName": "iphoneos26.2",
+   "DTXcode": "2630",
+   "DTXcodeBuild": "17C529",
+   "MinimumOSVersion": "16.0",
+   "UIDeviceFamily": [
+    1,
+    2
+   ],
+   "UIRequiredDeviceCapabilities": [
+    "arm64"
+   ]
+  }
+ }
+}
