@@ -27,16 +27,31 @@ developer account and sideload.
 | dyld shared cache | `arm64e`, 2,709 images | extracted from that OTA |
 | **tvOS SDK (source 2)** | **27.2** (SDK build 24K117), Xcode 27.2 | `xcrun --sdk appletvos`; image `xcode-27-arm64` 20261026.0314.1, macOS 27.0.1 (26A434) |
 | **iOS SDK (source 3)** | **26.2**, Xcode 26.3 | `macos-26` image; exact match for Roblox's own build SDK |
-| dyld source (source 5) | `dyld-1378` | `github.com/apple-oss-distributions/dyld` |
+| dyld on the device | **`dyld-27104`** | version string in the device's own cache |
+| dyld source read (source 5) | `dyld-1378` | newest published drop; **not the same build** — see below |
 | Shim build target | `arm64-apple-tvos27.0` | min OS 27.0 so it installs on any tvOS 27.x |
 | `ipsw` | built from source, commit `a8f1f52` | `cgo` required |
 | LIEF | 1.0.0 (`1.0.0-d05b3499b`) | session |
 
-**Recorded mismatches.** The tvOS SDK is 27.2 and reports SDK build 24K117
-while the device is 24K122 — same version, different build. The device's own
-export lists (source 1) are the authority used for every "is it there"
-decision, so this does not affect the shim list; it only means the public
-headers are from a slightly earlier build of the same release.
+**Recorded mismatches.**
+
+- The tvOS SDK is 27.2 and reports SDK build 24K117 while the device is 24K122 —
+  same version, different build. The device's own export lists (source 1) are
+  the authority used for every "is it there" decision, so this does not affect
+  the shim list; it only means the public headers are from a slightly earlier
+  build of the same release.
+- The device ships **`dyld-27104`**; the re-export mechanism the proxies depend
+  on was read from the newest *published* source, **`dyld-1378`**. The numbering
+  was rebased onto the OS train, so this is a different build and Apple has
+  published no source for it. The rule itself is not in doubt — the device's own
+  UIKit depends on it right now, with UIKitCore, PrintKitUI and ShareSheet in
+  its `LC_REEXPORT_DYLIB` list and 51,191 names reachable through it — but the
+  claim is "mechanism observed on the device, source read against a different
+  build", not "source read for this build". Detail in
+  `evidence/dyld_reexport.md`.
+- `libobjc.A.dylib` yields only the bare string `objc4` with no revision, so the
+  objc4 version is **UNVERIFIED**. Nothing here depends on it: the shims rely on
+  ordinary class realization, not on any objc4 internal.
 
 ---
 
@@ -180,9 +195,9 @@ ordinals from the patched files:
 ```
 device evidence : device_24K122
 shim dylibs     : 19
-resolved        : 7150
-weak-missing    : 104  (dyld binds these to NULL; app still loads)
-lazy-missing    : 6    (bound on first call, not at launch)
+resolved        : 7153
+weak-missing    : 103  (dyld binds these to NULL; app still loads)
+lazy-missing    : 4    (bound on first call, not at launch)
 unloadable libs : 0  <- must be 0 to pass
 BLOCKERS        : 0  <- must be 0 to pass
 ```
@@ -323,15 +338,39 @@ Identity / age verification (Persona2 needs `SFSafariViewController`; WebKit is
 absent from the device too), mail and SMS composition, widgets, anything
 cellular.
 
-### 8. Private API in the cursor. UNVERIFIED.
+### 8. Private API in the cursor. RESOLVED, and it found a real bug.
 
-Click-to-tap preference 2 sets a synthesized `UITouch`'s `_locationInWindow`,
-`_window`, `_view` and `_phase`. Every ivar is looked up with
-`class_getInstanceVariable` at runtime and the whole path is refused if any is
-missing, so an OS change degrades to "the cursor cannot click this view" rather
-than crashing. Their presence on tvOS 27.2 is checked by the `uitouch-ivars` and
-`uitouch-class` queries; **UNVERIFIED until that output lands.** Preferences 1
-(`UIControl`) and 3 (gesture recognizer) use no private API.
+Click-to-tap preference 2 synthesizes a `UITouch`. The device's own UIKitCore
+for tvOS 27.2 declares:
+
+```
+@interface UITouch : NSObject <_UIResponderForwardableEventComponent> {
+    q _phase;  Q _tapCount;  d _timestamp;
+    @"UIWindow" _window;
+    @"UIResponder<_UIGestureRecognizerContainer>" _responder;
+    @"UIView" _cachedResponderView;
+    @"UIView" _warpedIntoView;
+    {CGPoint} _locationInWindow;
+    {CGPoint} _previousLocationInWindow;
+    ...
+}
+```
+
+**There is no `_view` ivar**, and an earlier version of this code required one.
+The runtime guard would have held — no crash — but the probe would have
+reported `UNAVAILABLE` and preference 2 would never have worked on any screen.
+That matters more than it sounds: Roblox's gameplay and most of its UI are drawn
+into one engine-owned view rather than into `UIControl`s, so preference 2 is the
+route that covers the majority of screens. Only source-1 evidence could surface
+this, because a guard that silently disables a feature looks identical to a
+feature that is working.
+
+Fixed: the view slot now tries `_cachedResponderView`, `_view` then
+`_warpedIntoView`, and `_responder` is set as well (a `UIView` is a
+`UIResponder`, and `-[UITouch view]` derives from the responder on this UIKit).
+Every other name used is confirmed present on the device. Preferences 1
+(`UIControl`) and 3 (gesture recognizer) use no private API. The startup banner
+prints the probe result, so the first device log states which ivars were found.
 
 ---
 
@@ -479,7 +518,7 @@ RUNTIME` or `VERIFIED`, and tells us which of the risks above is the real one.
 
 | File | What |
 |---|---|
-| `out/Roblox-tvOS-unsigned.ipa` | the unsigned tvOS IPA, 104,592,112 B, 846 entries |
+| `out/Roblox-tvOS-unsigned.ipa` | the unsigned tvOS IPA, 104,592,267 B, 846 entries, `sha256 5afdb45c…2742` |
 | `out/entitlements.plist` | free-account entitlements |
 | `out/dSYMs/` | 19 dSYM bundles for our own code |
 | `out/package_manifest.json` | sizes, SHA-256, bundle keys, Phase 5 totals |
@@ -499,6 +538,7 @@ Supporting evidence, all committed:
 | `evidence/resources.md` | metallib / asset catalog / nib analysis |
 | `evidence/inventory.md` | Phase 1 bundle inventory |
 | `evidence/exports/` | device and SDK export lists |
+| `evidence/device_queries/` | targeted class/ivar dumps from the device cache, with `_README.md` on how to read them without being misled |
 
 ### Re-running against a new Roblox version
 

@@ -22,10 +22,10 @@
   "libtvportshim-libswiftPassKit.dylib"
  ],
  "totals": {
-  "resolved": 7150,
+  "resolved": 7153,
   "blockers": 0,
-  "weak_missing": 104,
-  "lazy_missing": 6,
+  "weak_missing": 103,
+  "lazy_missing": 4,
   "unloadable_non_weak_libraries": 0,
   "absent_weak_libraries": 6
  },
@@ -89,10 +89,10 @@
  ],
  "per_binary": {
   "Frameworks/Backtrace.framework/Backtrace": {
-   "resolved": 504,
+   "resolved": 507,
    "blockers": 0,
-   "weak_missing": 2,
-   "lazy_missing": 2
+   "weak_missing": 1,
+   "lazy_missing": 0
   },
   "Frameworks/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter": {
    "resolved": 232,
@@ -257,18 +257,6 @@
    "tried": [
     "device:/usr/lib/swift/libswiftCloudKit.dylib",
     "device:/usr/lib/swift/libswiftCloudKit.dylib"
-   ]
-  },
-  {
-   "binary": "Frameworks/Backtrace.framework/Backtrace",
-   "library": "@rpath/libswiftCoreData.dylib",
-   "symbol": "__swift_FORCE_LOAD_$_swiftCoreData",
-   "weak": true,
-   "lazy": false,
-   "library_found": true,
-   "tried": [
-    "device:/usr/lib/swift/libswiftCoreData.dylib",
-    "device:/usr/lib/swift/libswiftCoreData.dylib"
    ]
   },
   {
@@ -1395,30 +1383,6 @@
   }
  ],
  "lazy_missing": [
-  {
-   "binary": "Frameworks/Backtrace.framework/Backtrace",
-   "library": "@rpath/libswiftCoreData.dylib",
-   "symbol": "_$sSo22NSManagedObjectContextC8CoreDataE5count3forSiSo14NSFetchRequestCyxG_tKSo0hI6ResultRzlF",
-   "weak": false,
-   "lazy": true,
-   "library_found": true,
-   "tried": [
-    "device:/usr/lib/swift/libswiftCoreData.dylib",
-    "device:/usr/lib/swift/libswiftCoreData.dylib"
-   ]
-  },
-  {
-   "binary": "Frameworks/Backtrace.framework/Backtrace",
-   "library": "@rpath/libswiftCoreData.dylib",
-   "symbol": "_$sSo22NSManagedObjectContextC8CoreDataE5fetchySayxGSo14NSFetchRequestCyxGKSo0gH6ResultRzlF",
-   "weak": false,
-   "lazy": true,
-   "library_found": true,
-   "tried": [
-    "device:/usr/lib/swift/libswiftCoreData.dylib",
-    "device:/usr/lib/swift/libswiftCoreData.dylib"
-   ]
-  },
   {
    "binary": "Frameworks/RobloxLib.framework/RobloxLib",
    "library": "<flat-namespace>",
