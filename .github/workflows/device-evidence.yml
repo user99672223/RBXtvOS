@@ -3,10 +3,13 @@ name: device-evidence
 # Evidence source 1: the device's own system libraries, from the dyld shared
 # cache in Apple's OTA for AppleTV14,1 at the target tvOS build.
 #
-# This has to run on macOS. tvOS 27.x OTAs compress their payloadv2 members
-# with LZRaven (pbzm), which cannot be decoded on Linux at all -- ipsw shells
-# out to Apple's `aa` for it. The session therefore downloads nothing here and
-# only fetches the derived text back from the outputs branch.
+# This has to run on macOS 27. tvOS 27.x OTAs compress their payloadv2 members
+# with LZRaven (pbzm); ipsw has no decoder of its own and shells out to Apple's
+# `aa`, whose LZRaven support arrived in macOS 27. Measured, not assumed:
+#   macos-26 (macOS 26.6.2) -> aa rejects an LZRaven sample, Error 0xbd035000
+#   xcode-27 (macOS 27.0.1) -> `aa archive -a lzraven` round-trips, lzraven OK
+# So this runs on xcode-27. The session downloads nothing here and only fetches
+# the derived text back from the outputs branch.
 #
 # Only export lists, install names and re-export edges are committed. The OTA
 # and the cache stay on the runner (CLAUDE.md "Hard data rules").
@@ -22,7 +25,7 @@ on:
   workflow_dispatch:
     inputs:
       runner:
-        description: 'macOS runner label (needs an `aa` that decodes LZRaven)'
+        description: 'macOS runner label (needs macOS 27 for LZRaven)'
         default: ''
       device:
         description: 'Device identifier'
@@ -80,7 +83,7 @@ jobs:
           def pick(env, key, default=''):
               v = os.environ.get(env) or ''
               return v or str(req.get(key, default) or default)
-          print(f"runner={pick('IN_RUNNER','runner','macos-26')}")
+          print(f"runner={pick('IN_RUNNER','runner','xcode-27')}")
           print(f"device={pick('IN_DEVICE','device','AppleTV14,1')}")
           print(f"tvos_build={pick('IN_BUILD','tvos_build')}")
           print(f"tvos_version={pick('IN_VERSION','tvos_version')}")
@@ -94,7 +97,7 @@ jobs:
     needs: config
     if: needs.config.outputs.enabled == 'true'
     runs-on: ${{ needs.config.outputs.runner }}
-    timeout-minutes: 180
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
 

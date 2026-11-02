@@ -36,11 +36,20 @@ for attempt in 1 2 3 4 5; do
     find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} + 2>/dev/null || true
   fi
 
+  # Overlay this job's files onto whatever the branch already has. Do NOT
+  # remove the destination first: concurrent jobs (tvOS SDK and iOS SDK, or a
+  # later device-evidence run) write different files under the same top-level
+  # directory, and wiping it makes whichever job commits last erase the
+  # others' evidence.
   for p in "${ALLOW[@]}"; do
-    if [ -e "$STAGE/$p" ]; then
+    if [ -d "$STAGE/$p" ]; then
+      mkdir -p "$p"
+      # copy contents, not the directory itself, so nothing nests one level down
+      (cd "$STAGE/$p" && tar cf - .) | (cd "$p" && tar xf -)
+      git add -A "$p"
+    elif [ -e "$STAGE/$p" ]; then
       mkdir -p "$(dirname "$p")"
-      rm -rf "$p"
-      cp -R "$STAGE/$p" "$(dirname "$p")/"
+      cp "$STAGE/$p" "$p"
       git add -A "$p"
     fi
   done

@@ -36,15 +36,28 @@ QUERY = EVIDENCE / "queries" / "sdk_query.json"
 def sdk_rel_candidates(lib_path: str):
     """Map a Mach-O install name to candidate .tbd paths inside an SDK.
 
-    `/System/Library/Frameworks/UIKit.framework/UIKit` ->
-      System/Library/Frameworks/UIKit.framework/UIKit.tbd
-    Also tries the PrivateFrameworks location and the versioned shim layout.
+    A framework binary has no extension, so the stub just gains one:
+      /System/Library/Frameworks/UIKit.framework/UIKit
+        -> System/Library/Frameworks/UIKit.framework/UIKit.tbd
+
+    A dylib's stub *replaces* the extension rather than appending to it:
+      /usr/lib/libSystem.B.dylib        -> usr/lib/libSystem.B.tbd
+      /usr/lib/swift/libswiftCore.dylib -> usr/lib/swift/libswiftCore.tbd
+
+    Getting that wrong made every /usr/lib and /usr/lib/swift entry look
+    absent from both SDKs, which the iOS cross-check (CLAUDE.md Phase 2.3,
+    "rule out parsing errors") is there to catch.
     """
     p = lib_path.lstrip("/")
+    if p.endswith(".dylib"):
+        yield p[: -len(".dylib")] + ".tbd"
     yield p + ".tbd"
     if "/Frameworks/" in p:
-        yield p.replace("/Frameworks/", "/PrivateFrameworks/") + ".tbd"
-    # some dylibs are stubbed under usr/lib with the same name
+        base = p.replace("/Frameworks/", "/PrivateFrameworks/")
+        if base.endswith(".dylib"):
+            yield base[: -len(".dylib")] + ".tbd"
+        yield base + ".tbd"
+    # a few libraries ship as a real file in the SDK rather than a stub
     yield p
 
 
