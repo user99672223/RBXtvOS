@@ -10,7 +10,7 @@
     "stop the workflow from running on unrelated pushes to its own sources."
   ],
   "enabled": true,
-  "nonce": 3,
+  "nonce": 4,
   "runner": "xcode-27",
   "device": "AppleTV14,1",
   "tvos_version": "27.2",
@@ -49,6 +49,7 @@
     "macos-27": "label does not exist on this account (job never scheduled)"
   },
   "_rerun_notes": [
-    "nonce 3: sdk_query.json gained /usr/lib/swift/libswiftCoreData.dylib and libswiftCloudKit.dylib. The query generator only collected libraries whose install name starts with /, so @rpath-named OS Swift overlays were never asked about. Backtrace.framework links @rpath/libswiftCoreData.dylib NON-weakly, so if that overlay is absent on the device the app dies at launch with nothing in the symbol report to explain it. This run settles both."
+    "nonce 3: sdk_query.json gained /usr/lib/swift/libswiftCoreData.dylib and libswiftCloudKit.dylib. The query generator only collected libraries whose install name starts with /, so @rpath-named OS Swift overlays were never asked about. Backtrace.framework links @rpath/libswiftCoreData.dylib NON-weakly, so if that overlay is absent on the device the app dies at launch with nothing in the symbol report to explain it. This run settles both.",
+    "nonce 4: the nonce-3 run extracted the cache and wrote the export lists, then died decoding an ipsw UIKitCore --objc dump as strict UTF-8 (0xf2 at offset 5612522). Because that raised inside the same step, the commit was skipped and a successful 5 GB extraction produced nothing. Queries now capture bytes and decode with errors=replace, and the whole query set is wrapped so it cannot discard the export lists."
   ]
 }

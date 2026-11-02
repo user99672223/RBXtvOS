@@ -140,12 +140,18 @@ def run_device_queries(cache: Path, label: str):
         argv = [IPSW] + [str(cache) if a == "<CACHE>" else a for a in args]
         timeout = int(q.get("timeout", 1800))
         try:
-            r = subprocess.run(argv, capture_output=True, text=True, timeout=timeout)
-            text = r.stdout or ""
-            err = (r.stderr or "").strip()
+            # Capture bytes, not text. An `ipsw dyld macho --objc` dump of
+            # UIKitCore contains bytes that are not valid UTF-8 (a strict
+            # decode died on 0xf2 at offset 5,612,522), and a decode error
+            # must not cost us the query -- let alone the whole job.
+            r = subprocess.run(argv, capture_output=True, timeout=timeout)
+            text = (r.stdout or b"").decode("utf-8", "replace")
+            err = (r.stderr or b"").decode("utf-8", "replace").strip()
             rc = r.returncode
         except subprocess.TimeoutExpired:
             text, err, rc = "", f"timed out after {timeout}s", -1
+        except Exception as e:  # a broken query must not lose the other output
+            text, err, rc = "", f"{type(e).__name__}: {e}", -1
 
         pattern = q.get("grep")
         if pattern and text:
@@ -244,7 +250,15 @@ def main():
 
     (sdk_dir / f"device_{label}_libraries.json").write_text(json.dumps(results, indent=1))
 
-    run_device_queries(cache, label)
+    # The export lists above are the primary output and are already written.
+    # The targeted queries are supplementary, so a failure in them must not
+    # fail the job: when it did, the commit step was skipped and an otherwise
+    # successful 5 GB extraction produced nothing.
+    try:
+        run_device_queries(cache, label)
+    except Exception as e:
+        print(f"::warning::targeted cache queries failed ({type(e).__name__}: {e}); "
+              f"the export lists are unaffected and still committed")
     present = sum(1 for v in results.values() if v.get("present_in_cache"))
     absent = [k for k, v in results.items() if not v.get("present_in_cache")]
     print(f"resolved {len(results)} libraries ({present} present, {len(absent)} absent)")
