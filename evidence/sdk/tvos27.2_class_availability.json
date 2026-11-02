@@ -8501,6 +8501,48 @@
     ]
    },
    {
+    "header": "System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h",
+    "line": 32,
+    "decl": "UIKIT_EXTERN @interface NSUserActivity (UISceneActivationConditions)",
+    "availability_tokens": [
+     "API_AVAILABLE",
+     "API_UNAVAILABLE"
+    ],
+    "context": [
+     "@end",
+     "",
+     "",
+     "UIKIT_EXTERN @interface NSUserActivity (UISceneActivationConditions)",
+     "// used with UISceneActivationConditions to customize what scene should be activated for a user activity",
+     "@property (nullable, nonatomic, copy) NSString *targetContentIdentifier API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos); //  default nil",
+     "@end",
+     "",
+     "NS_HEADER_AUDIT_END(nullability, sendability)",
+     ""
+    ]
+   },
+   {
+    "header": "System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h",
+    "line": 12,
+    "decl": "UIKIT_EXTERN API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, tvos) @interface NSUserActivity (NSItemProvider) <NSItemProviderReading, NSItemProviderWriting>",
+    "availability_tokens": [
+     "API_AVAILABLE",
+     "API_UNAVAILABLE"
+    ],
+    "context": [
+     "#import <Foundation/Foundation.h>",
+     "#import <UIKit/UIKitDefines.h>",
+     "",
+     "UIKIT_EXTERN API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, tvos) @interface NSUserActivity (NSItemProvider) <NSItemProviderReading, NSItemProviderWriting>",
+     "@end",
+     "",
+     "",
+     "#else",
+     "#import <UIKitCore/NSUserActivity+NSItemProvider.h>",
+     "#endif"
+    ]
+   },
+   {
     "header": "System/Library/Frameworks/Intents.framework/Headers/NSUserActivity+IntentsAdditions.h",
     "line": 15,
     "decl": "@interface NSUserActivity (IntentsAdditions)",
@@ -8519,47 +8561,6 @@
      "// A human-understandable string that can be used to suggest a voice shortcut phrase to the user",
      "@property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSString *suggestedInvocationPhrase API_AVAILABLE(ios(12.0), macos(12.0), watchos(5.0)) API_UNAVAILABLE(tvos);",
      ""
-    ]
-   },
-   {
-    "header": "System/Library/Frameworks/CoreImage.framework/Headers/CIBarcodeDescriptor.h",
-    "line": 422,
-    "decl": "@interface NSUserActivity (CIBarcodeDescriptor)",
-    "availability_tokens": [
-     "API_AVAILABLE"
-    ],
-    "context": [
-     "",
-     "@class NSUserActivity;",
-     "",
-     "@interface NSUserActivity (CIBarcodeDescriptor)",
-     "",
-     "/// The scanned code in the user activity passed in by system scanner.",
-     "///",
-     "/// This property is optional. This value is present if the user activity was created from a source that detected a QR code or other code symbol.",
-     "///",
-     "@property (nonatomic, nullable, readonly, copy) CIBarcodeDescriptor *detectedBarcodeDescriptor API_AVAILABLE(macos(10.13.4), ios(11.3), tvos(11.3));"
-    ]
-   },
-   {
-    "header": "System/Library/Frameworks/CoreSpotlight.framework/Headers/CSSearchableItemAttributeSet.h",
-    "line": 85,
-    "decl": "@interface NSUserActivity (CSSearchableItemAttributeSet)",
-    "availability_tokens": [
-     "API_AVAILABLE",
-     "API_UNAVAILABLE"
-    ],
-    "context": [
-     "//Attributes to be indexed for a given NSUserActivity",
-     "API_AVAILABLE(macos(10.11), ios(9.0), visionos(1.0))",
-     "API_UNAVAILABLE(tvos, watchos)",
-     "@interface NSUserActivity (CSSearchableItemAttributeSet)",
-     "",
-     "@property (nullable, copy) CSSearchableItemAttributeSet *contentAttributeSet;",
-     "",
-     "@end",
-     "",
-     "NS_ASSUME_NONNULL_END"
     ]
    }
   ]
@@ -8942,12 +8943,58 @@
   "decls": []
  },
  "SKAdImpression": {
-  "declared_in_headers": false,
-  "decls": []
+  "declared_in_headers": true,
+  "decls": [
+   {
+    "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKAdImpression.h",
+    "line": 13,
+    "decl": "SK_EXTERN_CLASS API_AVAILABLE(ios(14.5)) API_UNAVAILABLE(macos, watchos, visionos) __TVOS_PROHIBITED @interface SKAdImpression : NSObject",
+    "availability_tokens": [
+     "API_AVAILABLE",
+     "API_UNAVAILABLE",
+     "__TVOS_PROHIBITED"
+    ],
+    "context": [
+     "",
+     "NS_ASSUME_NONNULL_BEGIN",
+     "",
+     "SK_EXTERN_CLASS API_AVAILABLE(ios(14.5)) API_UNAVAILABLE(macos, watchos, visionos) __TVOS_PROHIBITED @interface SKAdImpression : NSObject",
+     "",
+     "#if TARGET_OS_IOS && !TARGET_OS_MACCATALYST",
+     "",
+     "- (instancetype)initWithSourceAppStoreItemIdentifier:(NSNumber *)sourceAppStoreItemIdentifier advertisedAppStoreItemIdentifier:(NSNumber *)advertisedAppStoreItemIdentifier adNetworkIdentifier:(NSString *)adNetworkIdentifier adCampaignIdentifier:(NSNumber *)adCampaignIdentifier adImpressionIdentifier:(NSString *)adImpressionIdentifier timestamp:(NSNumber *)timestamp signature:(NSString *)signature version:(NSString *)version API_AVAILABLE(ios(16.0)) API_UNAVAILABLE(macos,watchos,visionos) __TVOS_PROHIBITED;",
+     "",
+     "#endif"
+    ]
+   }
+  ]
  },
  "SKAdNetwork": {
-  "declared_in_headers": false,
-  "decls": []
+  "declared_in_headers": true,
+  "decls": [
+   {
+    "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKAdNetwork.h",
+    "line": 20,
+    "decl": "SK_EXTERN_CLASS API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, visionos) __TVOS_PROHIBITED @interface SKAdNetwork : NSObject",
+    "availability_tokens": [
+     "API_AVAILABLE",
+     "API_UNAVAILABLE",
+     "__TVOS_PROHIBITED"
+    ],
+    "context": [
+     "SK_EXTERN SKAdNetworkCoarseConversionValue const SKAdNetworkCoarseConversionValueMedium  API_AVAILABLE(ios(16.1)) API_UNAVAILABLE(macos,watchos,visionos) __TVOS_PROHIBITED;",
+     "SK_EXTERN SKAdNetworkCoarseConversionValue const SKAdNetworkCoarseConversionValueLow  API_AVAILABLE(ios(16.1)) API_UNAVAILABLE(macos,watchos,visionos) __TVOS_PROHIBITED;",
+     "",
+     "SK_EXTERN_CLASS API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, visionos) __TVOS_PROHIBITED @interface SKAdNetwork : NSObject",
+     "",
+     "// Source apps should call these methods for performing a non-mediated attribution",
+     "+ (void)startImpression:(SKAdImpression *)impression completionHandler:(nullable void (^)(NSError *__nullable error))completion NS_SWIFT_NAME(startImpression(_:completionHandler:)) API_AVAILABLE(ios(14.5)) API_UNAVAILABLE(macos, watchos, visionos) __TVOS_PROHIBITED;",
+     "",
+     "+ (void)endImpression:(SKAdImpression *)impression completionHandler:(nullable void (^)(NSError *__nullable error))completion NS_SWIFT_NAME(endImpression(_:completionHandler:)) API_AVAILABLE(ios(14.5)) API_UNAVAILABLE(macos, watchos, visionos) __TVOS_PROHIBITED;",
+     ""
+    ]
+   }
+  ]
  },
  "SKMutablePayment": {
   "declared_in_headers": true,
@@ -9106,8 +9153,53 @@
   ]
  },
  "SKStoreProductViewController": {
-  "declared_in_headers": false,
-  "decls": []
+  "declared_in_headers": true,
+  "decls": [
+   {
+    "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKStoreProductViewController.h",
+    "line": 24,
+    "decl": "SK_EXTERN_CLASS API_AVAILABLE(ios(6.0), macCatalyst(13.0), macos(11.0)) API_UNAVAILABLE(visionos) __TVOS_PROHIBITED @interface SKStoreProductViewController : NSViewController",
+    "availability_tokens": [
+     "API_AVAILABLE",
+     "API_UNAVAILABLE",
+     "__TVOS_PROHIBITED"
+    ],
+    "context": [
+     "",
+     "/* View controller to display iTunes Store product information */",
+     "#if TARGET_OS_OSX",
+     "SK_EXTERN_CLASS API_AVAILABLE(ios(6.0), macCatalyst(13.0), macos(11.0)) API_UNAVAILABLE(visionos) __TVOS_PROHIBITED @interface SKStoreProductViewController : NSViewController",
+     "#else",
+     "SK_EXTERN_CLASS API_AVAILABLE(ios(6.0), macCatalyst(13.0), macos(11.0)) API_UNAVAILABLE(visionos) __TVOS_PROHIBITED @interface SKStoreProductViewController : UIViewController",
+     "#endif",
+     "",
+     "// Delegate for product page events",
+     "@property(nonatomic, weak, nullable) id <SKStoreProductViewControllerDelegate> delegate API_AVAILABLE(ios(6.0), macCatalyst(13.0), macos(11.0)) API_UNAVAILABLE(visionos) __TVOS_PROHIBITED;"
+    ]
+   },
+   {
+    "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKStoreProductViewController.h",
+    "line": 26,
+    "decl": "SK_EXTERN_CLASS API_AVAILABLE(ios(6.0), macCatalyst(13.0), macos(11.0)) API_UNAVAILABLE(visionos) __TVOS_PROHIBITED @interface SKStoreProductViewController : UIViewController",
+    "availability_tokens": [
+     "API_AVAILABLE",
+     "API_UNAVAILABLE",
+     "__TVOS_PROHIBITED"
+    ],
+    "context": [
+     "#if TARGET_OS_OSX",
+     "SK_EXTERN_CLASS API_AVAILABLE(ios(6.0), macCatalyst(13.0), macos(11.0)) API_UNAVAILABLE(visionos) __TVOS_PROHIBITED @interface SKStoreProductViewController : NSViewController",
+     "#else",
+     "SK_EXTERN_CLASS API_AVAILABLE(ios(6.0), macCatalyst(13.0), macos(11.0)) API_UNAVAILABLE(visionos) __TVOS_PROHIBITED @interface SKStoreProductViewController : UIViewController",
+     "#endif",
+     "",
+     "// Delegate for product page events",
+     "@property(nonatomic, weak, nullable) id <SKStoreProductViewControllerDelegate> delegate API_AVAILABLE(ios(6.0), macCatalyst(13.0), macos(11.0)) API_UNAVAILABLE(visionos) __TVOS_PROHIBITED;",
+     "",
+     "// Load product view for the product with the given parameters. See below for parameters (SKStoreProductParameter*)."
+    ]
+   }
+  ]
  },
  "SKStoreReviewController": {
   "declared_in_headers": true,
@@ -9210,8 +9302,31 @@
   ]
  },
  "UIActivity": {
-  "declared_in_headers": false,
-  "decls": []
+  "declared_in_headers": true,
+  "decls": [
+   {
+    "header": "System/Library/Frameworks/UIKit.framework/Headers/UIActivity.h",
+    "line": 44,
+    "decl": "API_AVAILABLE(ios(6.0)) API_UNAVAILABLE(watchos) __TVOS_PROHIBITED @interface UIActivity : NSObject",
+    "availability_tokens": [
+     "API_AVAILABLE",
+     "API_UNAVAILABLE",
+     "__TVOS_PROHIBITED"
+    ],
+    "context": [
+     "    UIActivityCategoryShare,",
+     "} API_AVAILABLE(ios(7.0)) API_UNAVAILABLE(watchos) __TVOS_PROHIBITED;",
+     "",
+     "API_AVAILABLE(ios(6.0)) API_UNAVAILABLE(watchos) __TVOS_PROHIBITED @interface UIActivity : NSObject",
+     "",
+     "// override methods",
+     "@property(class, nonatomic, readonly) UIActivityCategory activityCategory API_AVAILABLE(ios(7.0)) API_UNAVAILABLE(watchos); // default is UIActivityCategoryAction.",
+     "",
+     "@property(nonatomic, readonly, nullable) UIActivityType activityType;       // default returns nil. subclass may override to return custom activity type that is reported to completion handler",
+     "@property(nonatomic, readonly, nullable) NSString *activityTitle;      // default returns nil. subclass must override and must return non-nil value"
+    ]
+   }
+  ]
  },
  "UIActivityIndicatorView": {
   "declared_in_headers": true,
@@ -9242,6 +9357,29 @@
  "UIActivityViewController": {
   "declared_in_headers": true,
   "decls": [
+   {
+    "header": "System/Library/Frameworks/UIKit.framework/Headers/UIActivityViewController.h",
+    "line": 26,
+    "decl": "API_AVAILABLE(ios(6.0)) API_UNAVAILABLE(watchos) __TVOS_PROHIBITED @interface UIActivityViewController : UIViewController",
+    "availability_tokens": [
+     "API_AVAILABLE",
+     "API_UNAVAILABLE",
+     "NS_UNAVAILABLE",
+     "__TVOS_PROHIBITED"
+    ],
+    "context": [
+     "typedef void (^UIActivityViewControllerCompletionHandler)(UIActivityType __nullable activityType, BOOL completed) API_AVAILABLE(ios(6.0)) API_UNAVAILABLE(watchos);",
+     "typedef void (^UIActivityViewControllerCompletionWithItemsHandler)(UIActivityType __nullable activityType, BOOL completed, NSArray * __nullable returnedItems, NSError * __nullable activityError) API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(watchos);",
+     "",
+     "API_AVAILABLE(ios(6.0)) API_UNAVAILABLE(watchos) __TVOS_PROHIBITED @interface UIActivityViewController : UIViewController",
+     "",
+     "- (instancetype)init NS_UNAVAILABLE;",
+     "- (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil NS_UNAVAILABLE;",
+     "- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;",
+     "- (instancetype)initWithActivityItems:(NSArray *)activityItems applicationActivities:(nullable NSArray<__kindof UIActivity *> *)applicationActivities NS_DESIGNATED_INITIALIZER;",
+     ""
+    ]
+   },
    {
     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIActivityViewController.h",
     "line": 48,
@@ -9530,8 +9668,29 @@
   ]
  },
  "UIBezierPath": {
-  "declared_in_headers": false,
-  "decls": []
+  "declared_in_headers": true,
+  "decls": [
+   {
+    "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
+    "line": 17,
+    "decl": "UIKIT_EXTERN API_AVAILABLE(ios(3.2), watchos(2.0)) @interface UIBezierPath : NSObject<NSCopying, NSSecureCoding>",
+    "availability_tokens": [
+     "API_AVAILABLE"
+    ],
+    "context": [
+     "",
+     "NS_HEADER_AUDIT_BEGIN(nullability, sendability)",
+     "",
+     "UIKIT_EXTERN API_AVAILABLE(ios(3.2), watchos(2.0)) @interface UIBezierPath : NSObject<NSCopying, NSSecureCoding>",
+     "",
+     "+ (instancetype)bezierPath;",
+     "+ (instancetype)bezierPathWithRect:(CGRect)rect;",
+     "+ (instancetype)bezierPathWithOvalInRect:(CGRect)rect;",
+     "+ (instancetype)bezierPathWithRoundedRect:(CGRect)rect cornerRadius:(CGFloat)cornerRadius; // rounds all corners with the same horizontal and vertical radius",
+     "+ (instancetype)bezierPathWithRoundedRect:(CGRect)rect byRoundingCorners:(UIRectCorner)corners cornerRadii:(CGSize)cornerRadii;"
+    ]
+   }
+  ]
  },
  "UIBlurEffect": {
   "declared_in_headers": true,
@@ -10181,8 +10340,30 @@
   ]
  },
  "UIHoverGestureRecognizer": {
-  "declared_in_headers": false,
-  "decls": []
+  "declared_in_headers": true,
+  "decls": [
+   {
+    "header": "System/Library/Frameworks/UIKit.framework/Headers/UIHoverGestureRecognizer.h",
+    "line": 22,
+    "decl": "UIKIT_EXTERN API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, tvos) @interface UIHoverGestureRecognizer : UIGestureRecognizer",
+    "availability_tokens": [
+     "API_AVAILABLE",
+     "API_UNAVAILABLE"
+    ],
+    "context": [
+     "//",
+     "// On iOS, this gesture recognizer doesn't recognize anything and is effectively",
+     "// a no-op.",
+     "UIKIT_EXTERN API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, tvos) @interface UIHoverGestureRecognizer : UIGestureRecognizer",
+     "",
+     "/// The normalized distance from the screen of the hovering device. This value will be 1 at the maximum distance",
+     "/// from the screen and will approach 0 as the device gets closer to the screen. Will always return 0 for devices that",
+     "/// don't support z offset.",
+     "@property (nonatomic, readonly) CGFloat zOffset API_AVAILABLE(ios(16.1));",
+     ""
+    ]
+   }
+  ]
  },
  "UIImage": {
   "declared_in_headers": true,
@@ -11130,6 +11311,27 @@
     ]
    },
    {
+    "header": "System/Library/Frameworks/UIKit.framework/Headers/UISceneEnhancedStateRestoration.h",
+    "line": 13,
+    "decl": "API_AVAILABLE(ios(15.0)) @interface UIScene (UISceneEnhancedStateRestoration)",
+    "availability_tokens": [
+     "API_AVAILABLE",
+     "API_UNAVAILABLE"
+    ],
+    "context": [
+     "",
+     "NS_HEADER_AUDIT_BEGIN(nullability, sendability)",
+     "",
+     "API_AVAILABLE(ios(15.0)) @interface UIScene (UISceneEnhancedStateRestoration)",
+     "",
+     "- (void)extendStateRestoration API_UNAVAILABLE(watchos);",
+     "- (void)completeStateRestoration API_UNAVAILABLE(watchos);",
+     "",
+     "@end",
+     ""
+    ]
+   },
+   {
     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIScene+AVAudioSession.h",
     "line": 14,
     "decl": "@interface UIScene (AVAudioSession)",
@@ -11170,27 +11372,6 @@
      "// An initializer for subclasses, will be called by UIKit and not intended to be called by applications.",
      "- (instancetype)initWithSession:(UISceneSession *)session connectionOptions:(UISceneConnectionOptions *)connectionOptions NS_DESIGNATED_INITIALIZER;",
      ""
-    ]
-   },
-   {
-    "header": "System/Library/Frameworks/UIKit.framework/Headers/UISceneSystemProtectionManager.h",
-    "line": 32,
-    "decl": "@interface UIScene (SystemProtection)",
-    "availability_tokens": [
-     "API_AVAILABLE",
-     "API_UNAVAILABLE"
-    ],
-    "context": [
-     "@end",
-     "",
-     "UIKIT_EXTERN API_AVAILABLE(ios(18.0)) API_UNAVAILABLE(visionos) API_UNAVAILABLE(watchos, tvos)",
-     "@interface UIScene (SystemProtection)",
-     "",
-     "@property (nonatomic, readonly, nullable) UISceneSystemProtectionManager *systemProtectionManager;",
-     "",
-     "@end",
-     "",
-     "NS_HEADER_AUDIT_END(nullability, sendability)"
     ]
    }
   ]
@@ -12356,6 +12537,27 @@
   "declared_in_headers": true,
   "decls": [
    {
+    "header": "System/Library/Frameworks/UIKit.framework/Headers/UIScreenshotService.h",
+    "line": 36,
+    "decl": "UIKIT_EXTERN API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(visionos) @interface UIWindowScene (UIScreenshotService)",
+    "availability_tokens": [
+     "API_AVAILABLE",
+     "API_UNAVAILABLE"
+    ],
+    "context": [
+     "@end",
+     "",
+     "",
+     "UIKIT_EXTERN API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(visionos) @interface UIWindowScene (UIScreenshotService)",
+     "/*!",
+     " @abstract The screenshot object associated with the scene",
+     " @discussion This is non-null if the screenshot service is available for this window scene",
+     " */",
+     "@property (nonatomic, readonly, nullable) UIScreenshotService *screenshotService;",
+     ""
+    ]
+   },
+   {
     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIWindowScene.h",
     "line": 22,
     "decl": "@interface UIWindowScene : UIScene",
@@ -12416,27 +12618,6 @@
      "API_AVAILABLE(macCatalyst(13.0)) NS_SWIFT_UI_ACTOR",
      "@interface UITitlebar : NSObject",
      ""
-    ]
-   },
-   {
-    "header": "System/Library/Frameworks/UIKit.framework/Headers/UIFocusSystem+UIKitAdditions.h",
-    "line": 22,
-    "decl": "@interface UIWindowScene (UIFocusSystem)",
-    "availability_tokens": [
-     "API_AVAILABLE",
-     "API_UNAVAILABLE"
-    ],
-    "context": [
-     "@end",
-     "",
-     "",
-     "@interface UIWindowScene (UIFocusSystem)",
-     "/// Returns the focus system that is responsible for this scene or nil if this scene does not support focus.",
-     "@property (nullable, nonatomic, readonly) UIFocusSystem *focusSystem API_AVAILABLE(ios(15.0), tvos(15.0)) API_UNAVAILABLE(watchos);",
-     "",
-     "@end",
-     "",
-     "NS_HEADER_AUDIT_END(nullability, sendability)"
     ]
    }
   ]
@@ -12703,6 +12884,26 @@
   "decls": [
    {
     "header": "System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UTType.h",
+    "line": 33,
+    "decl": "UT_EXPORT_CLASS UT_SUBCLASSING_RESTRICTED NS_SWIFT_SENDABLE @interface UTType : NSObject <NSCopying, NSSecureCoding>",
+    "availability_tokens": [
+     "NS_UNAVAILABLE"
+    ],
+    "context": [
+     "",
+     "\t\\sa https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/",
+     "*/",
+     "UT_EXPORT_CLASS UT_SUBCLASSING_RESTRICTED NS_SWIFT_SENDABLE @interface UTType : NSObject <NSCopying, NSSecureCoding>",
+     "+ (instancetype)new NS_UNAVAILABLE;",
+     "- (instancetype)init NS_UNAVAILABLE;",
+     "",
+     "/**",
+     "\t\\brief Create a type given a type identifier.",
+     ""
+    ]
+   },
+   {
+    "header": "System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UTType.h",
     "line": 258,
     "decl": "@interface UTType (Conformance)",
     "availability_tokens": [],
@@ -12753,26 +12954,6 @@
      "",
      "\t\\param identifier The type identifier for which a type is desired.",
      ""
-    ]
-   },
-   {
-    "header": "System/Library/Frameworks/ShazamKit.framework/Headers/UTType+SHShazamAdditions.h",
-    "line": 16,
-    "decl": "@interface UTType (SHShazamAdditions)",
-    "availability_tokens": [
-     "API_AVAILABLE"
-    ],
-    "context": [
-     "NS_HEADER_AUDIT_BEGIN(nullability)",
-     "",
-     "SH_EXPORT API_AVAILABLE(macos(13.0), ios(16.0), tvos(16.0), watchos(9.0))",
-     "@interface UTType (SHShazamAdditions)",
-     "",
-     "/// A type representing the @c SHSignature file format with the .shazamsignature extension",
-     "@property (NS_NONATOMIC_IOSONLY, strong, readonly, class) UTType *SHSignatureContentType  NS_REFINED_FOR_SWIFT;",
-     "",
-     "/// A type representing the @c SHCustomCatalog file format with the .shazamcatalog extension",
-     "@property (NS_NONATOMIC_IOSONLY, strong, readonly, class) UTType *SHCustomCatalogContentType NS_REFINED_FOR_SWIFT;"
     ]
    }
   ]

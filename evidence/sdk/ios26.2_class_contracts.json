@@ -18277,9 +18277,7 @@
    "System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h",
    "System/Library/Frameworks/Intents.framework/Headers/NSUserActivity+IntentsAdditions.h",
    "System/Library/Frameworks/MapKit.framework/Headers/NSUserActivity+MKMapItem.h",
-   "System/Library/Frameworks/MediaPlayer.framework/Headers/NSUserActivity+MediaPlayerAdditions.h",
-   "System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h",
-   "System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
+   "System/Library/Frameworks/MediaPlayer.framework/Headers/NSUserActivity+MediaPlayerAdditions.h"
   ],
   "all_interface_lines": [
    {
@@ -18291,16 +18289,6 @@
     "header": "System/Library/Frameworks/MediaPlayer.framework/Headers/NSUserActivity+MediaPlayerAdditions.h",
     "line": 13,
     "decl": "@interface NSUserActivity (MediaPlayerAdditions)"
-   },
-   {
-    "header": "System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h",
-    "line": 32,
-    "decl": "UIKIT_EXTERN @interface NSUserActivity (UISceneActivationConditions)"
-   },
-   {
-    "header": "System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h",
-    "line": 12,
-    "decl": "UIKIT_EXTERN API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, tvos) @interface NSUserActivity (NSItemProvider) <NSItemProviderReading, NSItemProviderWriting>"
    },
    {
     "header": "System/Library/Frameworks/CoreNFC.framework/Headers/NSUserActivity+CoreNFC.h",
@@ -18321,6 +18309,16 @@
     "header": "System/Library/Frameworks/ClassKit.framework/Headers/NSUserActivity+CLSDeepLinks.h",
     "line": 13,
     "decl": "@interface NSUserActivity (CLSDeepLinks)"
+   },
+   {
+    "header": "System/Library/Frameworks/CoreSpotlight.framework/Headers/CSSearchableItemAttributeSet.h",
+    "line": 87,
+    "decl": "@interface NSUserActivity (CSSearchableItemAttributeSet)"
+   },
+   {
+    "header": "System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h",
+    "line": 20,
+    "decl": "@interface NSUserActivity : NSObject"
    }
   ],
   "referenced_selector_decls": {
@@ -18334,11 +18332,6 @@
      "header": "System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h",
      "line": 28,
      "decl": "- (instancetype)init API_DEPRECATED(\"Use initWithActivityType: with a specific activity type string\", macosx(10.10, 10.12), ios(8.0,10.0), watchos(2.0,3.0), tvos(9.0,10.0));"
-    },
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h",
-     "line": 17,
-     "decl": "- (instancetype)init NS_DESIGNATED_INITIALIZER;"
     }
    ],
    "invalidate": [
@@ -19231,54 +19224,18 @@
   "referenced_selector_decls": {}
  },
  "SKAdImpression": {
-  "declared_in_headers": true,
-  "interface": {
-   "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKAdImpression.h",
-   "line": 13,
-   "decl": "SK_EXTERN_CLASS API_AVAILABLE(ios(14.5)) API_UNAVAILABLE(macos, watchos, visionos) __TVOS_PROHIBITED @interface SKAdImpression : NSObject",
-   "superclass": "NSObject",
-   "protocols": []
-  },
-  "headers": [
-   "System/Library/Frameworks/StoreKit.framework/Headers/SKAdImpression.h"
-  ],
-  "all_interface_lines": [
-   {
-    "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKAdImpression.h",
-    "line": 13,
-    "decl": "SK_EXTERN_CLASS API_AVAILABLE(ios(14.5)) API_UNAVAILABLE(macos, watchos, visionos) __TVOS_PROHIBITED @interface SKAdImpression : NSObject"
-   }
-  ],
+  "declared_in_headers": false,
+  "interface": null,
+  "headers": [],
+  "all_interface_lines": [],
   "referenced_selector_decls": {}
  },
  "SKAdNetwork": {
-  "declared_in_headers": true,
-  "interface": {
-   "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKAdNetwork.h",
-   "line": 20,
-   "decl": "SK_EXTERN_CLASS API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, visionos) __TVOS_PROHIBITED @interface SKAdNetwork : NSObject",
-   "superclass": "NSObject",
-   "protocols": []
-  },
-  "headers": [
-   "System/Library/Frameworks/StoreKit.framework/Headers/SKAdNetwork.h"
-  ],
-  "all_interface_lines": [
-   {
-    "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKAdNetwork.h",
-    "line": 20,
-    "decl": "SK_EXTERN_CLASS API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, visionos) __TVOS_PROHIBITED @interface SKAdNetwork : NSObject"
-   }
-  ],
-  "referenced_selector_decls": {
-   "registerAppForAdNetworkAttribution": [
-    {
-     "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKAdNetwork.h",
-     "line": 28,
-     "decl": "+ (void)registerAppForAdNetworkAttribution API_DEPRECATED(\"Use updatePostbackConversionValue:completionHandler: instead.\", ios(11.3, 15.4)) API_UNAVAILABLE(macos, watchos, visionos) __TVOS_PROHIBITED;"
-    }
-   ]
-  }
+  "declared_in_headers": false,
+  "interface": null,
+  "headers": [],
+  "all_interface_lines": [],
+  "referenced_selector_decls": {}
  },
  "SKMutablePayment": {
   "declared_in_headers": true,
@@ -19532,29 +19489,10 @@
   }
  },
  "SKStoreProductViewController": {
-  "declared_in_headers": true,
-  "interface": {
-   "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKStoreProductViewController.h",
-   "line": 24,
-   "decl": "SK_EXTERN_CLASS API_AVAILABLE(ios(6.0), macCatalyst(13.0), macos(11.0)) API_UNAVAILABLE(visionos) __TVOS_PROHIBITED @interface SKStoreProductViewController : NSViewController",
-   "superclass": "NSViewController",
-   "protocols": []
-  },
-  "headers": [
-   "System/Library/Frameworks/StoreKit.framework/Headers/SKStoreProductViewController.h"
-  ],
-  "all_interface_lines": [
-   {
-    "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKStoreProductViewController.h",
-    "line": 24,
-    "decl": "SK_EXTERN_CLASS API_AVAILABLE(ios(6.0), macCatalyst(13.0), macos(11.0)) API_UNAVAILABLE(visionos) __TVOS_PROHIBITED @interface SKStoreProductViewController : NSViewController"
-   },
-   {
-    "header": "System/Library/Frameworks/StoreKit.framework/Headers/SKStoreProductViewController.h",
-    "line": 26,
-    "decl": "SK_EXTERN_CLASS API_AVAILABLE(ios(6.0), macCatalyst(13.0), macos(11.0)) API_UNAVAILABLE(visionos) __TVOS_PROHIBITED @interface SKStoreProductViewController : UIViewController"
-   }
-  ],
+  "declared_in_headers": false,
+  "interface": null,
+  "headers": [],
+  "all_interface_lines": [],
   "referenced_selector_decls": {}
  },
  "SKStoreReviewController": {
@@ -19716,40 +19654,11 @@
   }
  },
  "UIActivity": {
-  "declared_in_headers": true,
-  "interface": {
-   "header": "System/Library/Frameworks/UIKit.framework/Headers/UIActivity.h",
-   "line": 44,
-   "decl": "API_AVAILABLE(ios(6.0)) API_UNAVAILABLE(watchos) __TVOS_PROHIBITED @interface UIActivity : NSObject",
-   "superclass": "NSObject",
-   "protocols": []
-  },
-  "headers": [
-   "System/Library/Frameworks/UIKit.framework/Headers/UIActivity.h"
-  ],
-  "all_interface_lines": [
-   {
-    "header": "System/Library/Frameworks/UIKit.framework/Headers/UIActivity.h",
-    "line": 44,
-    "decl": "API_AVAILABLE(ios(6.0)) API_UNAVAILABLE(watchos) __TVOS_PROHIBITED @interface UIActivity : NSObject"
-   }
-  ],
-  "referenced_selector_decls": {
-   "canPerformWithActivityItems:": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIActivity.h",
-     "line": 53,
-     "decl": "- (BOOL)canPerformWithActivityItems:(NSArray *)activityItems; // override this to return availability of activity based on items. default returns NO"
-    }
-   ],
-   "activityDidFinish:": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIActivity.h",
-     "line": 61,
-     "decl": "- (void)activityDidFinish:(BOOL)completed; // activity must call this when activity is finished"
-    }
-   ]
-  }
+  "declared_in_headers": false,
+  "interface": null,
+  "headers": [],
+  "all_interface_lines": [],
+  "referenced_selector_decls": {}
  },
  "UIActivityIndicatorView": {
   "declared_in_headers": true,
@@ -19791,22 +19700,11 @@
  },
  "UIActivityViewController": {
   "declared_in_headers": true,
-  "interface": {
-   "header": "System/Library/Frameworks/UIKit.framework/Headers/UIActivityViewController.h",
-   "line": 26,
-   "decl": "API_AVAILABLE(ios(6.0)) API_UNAVAILABLE(watchos) __TVOS_PROHIBITED @interface UIActivityViewController : UIViewController",
-   "superclass": "UIViewController",
-   "protocols": []
-  },
+  "interface": null,
   "headers": [
    "System/Library/Frameworks/UIKit.framework/Headers/UIActivityViewController.h"
   ],
   "all_interface_lines": [
-   {
-    "header": "System/Library/Frameworks/UIKit.framework/Headers/UIActivityViewController.h",
-    "line": 26,
-    "decl": "API_AVAILABLE(ios(6.0)) API_UNAVAILABLE(watchos) __TVOS_PROHIBITED @interface UIActivityViewController : UIViewController"
-   },
    {
     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIActivityViewController.h",
     "line": 48,
@@ -20107,120 +20005,11 @@
   }
  },
  "UIBezierPath": {
-  "declared_in_headers": true,
-  "interface": {
-   "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-   "line": 17,
-   "decl": "UIKIT_EXTERN API_AVAILABLE(ios(3.2), watchos(2.0)) @interface UIBezierPath : NSObject<NSCopying, NSSecureCoding>",
-   "superclass": "NSObject",
-   "protocols": [
-    "NSCopying",
-    "NSSecureCoding"
-   ]
-  },
-  "headers": [
-   "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h"
-  ],
-  "all_interface_lines": [
-   {
-    "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-    "line": 17,
-    "decl": "UIKIT_EXTERN API_AVAILABLE(ios(3.2), watchos(2.0)) @interface UIBezierPath : NSObject<NSCopying, NSSecureCoding>"
-   }
-  ],
-  "referenced_selector_decls": {
-   "bezierPath": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 19,
-     "decl": "+ (instancetype)bezierPath;"
-    }
-   ],
-   "bezierPathWithRect:": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 20,
-     "decl": "+ (instancetype)bezierPathWithRect:(CGRect)rect;"
-    }
-   ],
-   "bezierPathWithOvalInRect:": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 21,
-     "decl": "+ (instancetype)bezierPathWithOvalInRect:(CGRect)rect;"
-    }
-   ],
-   "bezierPathWithRoundedRect:cornerRadius:": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 22,
-     "decl": "+ (instancetype)bezierPathWithRoundedRect:(CGRect)rect cornerRadius:(CGFloat)cornerRadius; // rounds all corners with the same horizontal and vertical radius"
-    }
-   ],
-   "bezierPathWithArcCenter:radius:startAngle:endAngle:clockwise:": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 24,
-     "decl": "+ (instancetype)bezierPathWithArcCenter:(CGPoint)center radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle clockwise:(BOOL)clockwise;"
-    }
-   ],
-   "init": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 27,
-     "decl": "- (instancetype)init NS_DESIGNATED_INITIALIZER;"
-    }
-   ],
-   "CGPath": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 33,
-     "decl": "- (CGPathRef)CGPath NS_RETURNS_INNER_POINTER CF_RETURNS_NOT_RETAINED;"
-    }
-   ],
-   "moveToPoint:": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 37,
-     "decl": "- (void)moveToPoint:(CGPoint)point;"
-    }
-   ],
-   "addLineToPoint:": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 38,
-     "decl": "- (void)addLineToPoint:(CGPoint)point;"
-    }
-   ],
-   "removeAllPoints": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 44,
-     "decl": "- (void)removeAllPoints;"
-    }
-   ],
-   "appendPath:": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 48,
-     "decl": "- (void)appendPath:(UIBezierPath *)bezierPath;"
-    }
-   ],
-   "containsPoint:": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 63,
-     "decl": "- (BOOL)containsPoint:(CGPoint)point;"
-    }
-   ],
-   "stroke": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h",
-     "line": 80,
-     "decl": "- (void)stroke;"
-    }
-   ]
-  }
+  "declared_in_headers": false,
+  "interface": null,
+  "headers": [],
+  "all_interface_lines": [],
+  "referenced_selector_decls": {}
  },
  "UIBlurEffect": {
   "declared_in_headers": true,
@@ -21294,24 +21083,10 @@
   }
  },
  "UIHoverGestureRecognizer": {
-  "declared_in_headers": true,
-  "interface": {
-   "header": "System/Library/Frameworks/UIKit.framework/Headers/UIHoverGestureRecognizer.h",
-   "line": 22,
-   "decl": "UIKIT_EXTERN API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, tvos) @interface UIHoverGestureRecognizer : UIGestureRecognizer",
-   "superclass": "UIGestureRecognizer",
-   "protocols": []
-  },
-  "headers": [
-   "System/Library/Frameworks/UIKit.framework/Headers/UIHoverGestureRecognizer.h"
-  ],
-  "all_interface_lines": [
-   {
-    "header": "System/Library/Frameworks/UIKit.framework/Headers/UIHoverGestureRecognizer.h",
-    "line": 22,
-    "decl": "UIKIT_EXTERN API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, tvos) @interface UIHoverGestureRecognizer : UIGestureRecognizer"
-   }
-  ],
+  "declared_in_headers": false,
+  "interface": null,
+  "headers": [],
+  "all_interface_lines": [],
   "referenced_selector_decls": {}
  },
  "UIImage": {
@@ -22420,7 +22195,6 @@
    "System/Library/Frameworks/UIKit.framework/Headers/UIPointerLockState.h",
    "System/Library/Frameworks/UIKit.framework/Headers/UIScene+AVAudioSession.h",
    "System/Library/Frameworks/UIKit.framework/Headers/UIScene.h",
-   "System/Library/Frameworks/UIKit.framework/Headers/UISceneEnhancedStateRestoration.h",
    "System/Library/Frameworks/UIKit.framework/Headers/UISceneSystemProtectionManager.h"
   ],
   "all_interface_lines": [
@@ -22428,11 +22202,6 @@
     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIPointerLockState.h",
     "line": 28,
     "decl": "@interface UIScene (PointerLockState)"
-   },
-   {
-    "header": "System/Library/Frameworks/UIKit.framework/Headers/UISceneEnhancedStateRestoration.h",
-    "line": 13,
-    "decl": "API_AVAILABLE(ios(15.0)) @interface UIScene (UISceneEnhancedStateRestoration)"
    },
    {
     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIScene+AVAudioSession.h",
@@ -24601,16 +24370,10 @@
   "headers": [
    "System/Library/Frameworks/UIKit.framework/Headers/NSToolbar+UIKitAdditions.h",
    "System/Library/Frameworks/UIKit.framework/Headers/UIFocusSystem+UIKitAdditions.h",
-   "System/Library/Frameworks/UIKit.framework/Headers/UIScreenshotService.h",
    "System/Library/Frameworks/UIKit.framework/Headers/UIStatusBarManager.h",
    "System/Library/Frameworks/UIKit.framework/Headers/UIWindowScene.h"
   ],
   "all_interface_lines": [
-   {
-    "header": "System/Library/Frameworks/UIKit.framework/Headers/UIScreenshotService.h",
-    "line": 36,
-    "decl": "UIKIT_EXTERN API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(visionos) @interface UIWindowScene (UIScreenshotService)"
-   },
    {
     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIWindowScene.h",
     "line": 21,
@@ -24640,22 +24403,12 @@
   "referenced_selector_decls": {
    "init": [
     {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIScreenshotService.h",
-     "line": 20,
-     "decl": "- (instancetype)init NS_UNAVAILABLE;"
-    },
-    {
      "header": "System/Library/Frameworks/UIKit.framework/Headers/UIStatusBarManager.h",
      "line": 16,
      "decl": "- (instancetype)init NS_UNAVAILABLE;"
     }
    ],
    "new": [
-    {
-     "header": "System/Library/Frameworks/UIKit.framework/Headers/UIScreenshotService.h",
-     "line": 21,
-     "decl": "+ (instancetype)new NS_UNAVAILABLE;"
-    },
     {
      "header": "System/Library/Frameworks/UIKit.framework/Headers/UIStatusBarManager.h",
      "line": 17,
@@ -25047,26 +24800,12 @@
  },
  "UTType": {
   "declared_in_headers": true,
-  "interface": {
-   "header": "System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UTType.h",
-   "line": 33,
-   "decl": "UT_EXPORT_CLASS UT_SUBCLASSING_RESTRICTED NS_SWIFT_SENDABLE @interface UTType : NSObject <NSCopying, NSSecureCoding>",
-   "superclass": "NSObject",
-   "protocols": [
-    "NSCopying",
-    "NSSecureCoding"
-   ]
-  },
+  "interface": null,
   "headers": [
    "System/Library/Frameworks/ShazamKit.framework/Headers/UTType+SHShazamAdditions.h",
    "System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UTType.h"
   ],
   "all_interface_lines": [
-   {
-    "header": "System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UTType.h",
-    "line": 33,
-    "decl": "UT_EXPORT_CLASS UT_SUBCLASSING_RESTRICTED NS_SWIFT_SENDABLE @interface UTType : NSObject <NSCopying, NSSecureCoding>"
-   },
    {
     "header": "System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UTType.h",
     "line": 225,
