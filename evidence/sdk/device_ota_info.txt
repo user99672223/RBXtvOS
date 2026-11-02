@@ -1,0 +1,25 @@
+
+[OTA Info]
+==========
+Version        = 27.2 
+BuildVersion   = 24K122
+OS Type        = PreRelease
+FileSystem     = 141-10510-176.dmg
+RestoreRamDisk = [arm64eSURamDisk.dmg]
+RestoreVersion = 24.11.122.0.0,0
+
+Devices
+-------
+
+Apple TV 4K (3rd generation)
+ > AppleTV14,1_J255AP_24K122
+   - TimeStamp: 14 Oct 2026 03:42:00 UTC
+   - KernelCache: kernelcache.release.j255
+   - CPU: A15 Bionic (ARMv8.5-A), ID: t8110
+   - BootLoaders
+       * iBEC.j255.RELEASE.im4p
+       * iBoot.j255.RELEASE.im4p
+       * iBSS.j255.RELEASE.im4p
+       * LLB.j255.RELEASE.im4p
+       * sep-firmware.j255.RELEASE.im4p
+
