@@ -1,7 +1,7 @@
 {
  "sdk_version": "27.2",
  "target": "arm64-apple-tvos27.0",
- "build_id": "fd9faf9",
+ "build_id": "1a6489f",
  "libraries": {
   "libtvport.dylib": {
    "install_name": "@rpath/libtvport.dylib",
@@ -54,6 +54,16 @@
     "_CTServiceRadioAccessTechnologyDidChangeNotification"
    ]
   },
+  "libtvportshim-EventKitUI.dylib": {
+   "install_name": "@rpath/libtvportshim-EventKitUI.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 1,
+   "exports": [
+    "_tvport_EventKitUI_standin_present"
+   ]
+  },
   "libtvportshim-FileProvider.dylib": {
    "install_name": "@rpath/libtvportshim-FileProvider.dylib",
    "platform": "3",
@@ -100,6 +110,16 @@
     "_PKPushTypeVoIP"
    ]
   },
+  "libtvportshim-QuickLook.dylib": {
+   "install_name": "@rpath/libtvportshim-QuickLook.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 1,
+   "exports": [
+    "_tvport_QuickLook_standin_present"
+   ]
+  },
   "libtvportshim-SafariServices.dylib": {
    "install_name": "@rpath/libtvportshim-SafariServices.dylib",
    "platform": "3",
@@ -136,6 +156,16 @@
     "_$s9WidgetKit0A6CenterC18reloadAllTimelinesyyFTj",
     "_$s9WidgetKit0A6CenterC6sharedACvgZ",
     "_$s9WidgetKit0A6CenterCMa"
+   ]
+  },
+  "libtvportshim-iAd.dylib": {
+   "install_name": "@rpath/libtvportshim-iAd.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 1,
+   "exports": [
+    "_tvport_iAd_standin_present"
    ]
   },
   "libtvportshim-libswiftCallKit.dylib": {
