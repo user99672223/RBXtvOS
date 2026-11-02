@@ -137,6 +137,9 @@ SHIMS=(
   "libswiftDataDetection|TVPORT_SHIM_SWIFTDATADETECTION|"
   "libswiftFileProvider|TVPORT_SHIM_SWIFTFILEPROVIDER|"
   "libswiftPassKit|TVPORT_SHIM_SWIFTPASSKIT|"
+  "QuickLook|TVPORT_SHIM_QUICKLOOK|"
+  "iAd|TVPORT_SHIM_IAD|"
+  "EventKitUI|TVPORT_SHIM_EVENTKITUI|"
 )
 
 # Which source file carries each shim's implementation. The one-symbol shims

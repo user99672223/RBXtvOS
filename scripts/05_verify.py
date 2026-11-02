@@ -14,12 +14,21 @@ It re-derives the import tables, the LC_RPATHs and the library ordinals from
 the patched files, so a load command this phase got wrong shows up here as an
 unresolved import rather than being papered over.
 
+Two independent checks, because they fail for different reasons:
+
+  1. every load command resolves -- a non-weak LC_LOAD_DYLIB names a library
+     that must be loadable whether or not anything is imported from it. Roblox
+     links QuickLook, iAd and EventKitUI this way while importing zero symbols
+     from them, so a symbol-only check reports nothing and the app still dies
+     at launch. This check exists because that nearly slipped through.
+  2. every import resolves -- the symbol-level pass condition.
+
 Reported separately, because they are not launch blockers and counting them
 would make the gate meaningless:
   * weak imports  -- dyld binds a missing one to NULL and the app still loads
   * lazy imports  -- dyld leaves them unbound until first call
 
-Exit status is 0 only when there are no unresolved non-weak eager imports.
+Exit status is 0 only when both checks find nothing.
 """
 from __future__ import annotations
 
@@ -302,6 +311,50 @@ def main():
             main_rp = rpaths(parse(p)[0])
             break
 
+    # ---------------------------------------------------------------- check 1
+    # Load commands. A non-weak LC_LOAD_DYLIB must name something loadable.
+    lib_blockers, lib_weak_absent = [], []
+    for p in machos:
+        r = str(p.relative_to(app))
+        b = parse(p)[0]
+        search_rp = list(dict.fromkeys(rpaths(b) + main_rp))
+        self_name = install_name(b)
+        for l in b.libraries:
+            if "ID_DYLIB" in str(l.command):
+                continue
+            weak_lib = "WEAK" in str(l.command)
+            found, tried = False, []
+            for kind, key in candidates(r, l.name, search_rp, self_name):
+                if kind == "flat" or key is None:
+                    continue
+                tried.append(f"{kind}:{key}")
+                if kind == "device":
+                    if key in dev_images or safe(key) in dev_by_lib:
+                        found = True
+                        break
+                elif kind == "bundle":
+                    if key.startswith("shim:"):
+                        if key[5:] in shim_exports:
+                            found = True
+                            break
+                    elif key in bundle_exports:
+                        found = True
+                        break
+            if found:
+                continue
+            row = {"binary": r, "library": l.name,
+                   "load_command": str(l.command).split(".")[-1],
+                   "weak": weak_lib, "tried": tried}
+            (lib_weak_absent if weak_lib else lib_blockers).append(row)
+
+    print("--- load commands ---")
+    print(f"non-weak load commands naming an unloadable library: {len(lib_blockers)}")
+    for row in lib_blockers:
+        print(f"  BLOCKER {row['binary']}  {row['library']}  ({row['load_command']})")
+    print(f"weak load commands naming an absent library (fine): {len(lib_weak_absent)}")
+    print()
+
+    # ---------------------------------------------------------------- check 2
     blockers, weak_rows, lazy_rows = [], [], []
     ok = 0
     per_binary = {}
@@ -352,7 +405,11 @@ def main():
         "device_evidence": dev_label,
         "shim_dylibs": sorted(shim_exports),
         "totals": {"resolved": ok, "blockers": len(blockers),
-                   "weak_missing": len(weak_rows), "lazy_missing": len(lazy_rows)},
+                   "weak_missing": len(weak_rows), "lazy_missing": len(lazy_rows),
+                   "unloadable_non_weak_libraries": len(lib_blockers),
+                   "absent_weak_libraries": len(lib_weak_absent)},
+        "unloadable_non_weak_libraries": lib_blockers,
+        "absent_weak_libraries": lib_weak_absent,
         "per_binary": per_binary,
         "blockers": blockers,
         "weak_missing": weak_rows,
@@ -368,8 +425,14 @@ def main():
     print(f"resolved        : {ok}")
     print(f"weak-missing    : {len(weak_rows)}  (dyld binds these to NULL; app still loads)")
     print(f"lazy-missing    : {len(lazy_rows)}  (bound on first call, not at launch)")
+    print(f"unloadable libs : {len(lib_blockers)}  <- must be 0 to pass")
     print(f"BLOCKERS        : {len(blockers)}  <- must be 0 to pass")
     print("=" * 70)
+    if lib_blockers:
+        print("\nNon-weak load commands naming a library that cannot be loaded:")
+        for row in lib_blockers:
+            print(f"  {row['binary']}  {row['library']}")
+            print(f"      tried: {', '.join(row['tried']) or '(nothing)'}")
     if blockers:
         print("\nUnresolved non-weak eager imports:")
         for row in blockers[:60]:
@@ -378,7 +441,7 @@ def main():
         if len(blockers) > 60:
             print(f"  ... and {len(blockers) - 60} more (see {out})")
     print(f"\nwrote {out}")
-    return 1 if blockers else 0
+    return 1 if (blockers or lib_blockers) else 0
 
 
 if __name__ == "__main__":

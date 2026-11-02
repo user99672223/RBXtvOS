@@ -252,3 +252,47 @@ TVPORT_SWIFT_FORCE_LOAD(tvport_fl_swiftPassKit, "__swift_FORCE_LOAD_$_swiftPassK
 TVPORT_SHIM_LIBRARY("standin_FileProvider")
 TVPORT_SWIFT_FORCE_LOAD(tvport_fl_swiftFileProvider_framework, "__swift_FORCE_LOAD_$_swiftFileProvider");
 #endif
+
+// ---------------------------------------------------------------------------
+// Load-command-only stand-ins: QuickLook, iAd, EventKitUI
+//
+// These three are a different kind of problem from everything above, and the
+// symbol-level analysis missed them completely.
+//
+// Roblox's main binary links all three with a NON-weak LC_LOAD_DYLIB, and all
+// three are absent from the tvOS 27.2 (24K122) device cache. But Roblox
+// imports *zero* symbols from any of them, so they never appeared in
+// missing.json: there was no unresolved symbol to report.
+//
+// dyld does not care. A non-weak LC_LOAD_DYLIB names a library that must be
+// loadable, whether or not anything is imported from it; if it cannot be
+// found, the process fails at launch before any of Roblox's code runs. So
+// these are launch blockers with no missing symbols at all, and the only thing
+// needed to clear them is a loadable library with the right install name.
+//
+// Hence: a stand-in that defines nothing. One marker symbol exists purely so
+// the dylib has a non-empty export table and so the startup banner can show it
+// was loaded; nothing references it.
+//
+// Decision: STUB (load-command satisfaction only).
+// Reason: with no imported symbols there is no behaviour to reproduce. An
+// empty library is exactly equivalent to the real one from this process's
+// point of view, and is verifiable as such.
+// ---------------------------------------------------------------------------
+#ifdef TVPORT_SHIM_QUICKLOOK
+TVPORT_SHIM_LIBRARY("standin_QuickLook (load command only; no symbols imported)")
+TVPORT_DEFINE_DATA(tvport_quicklook_present, "_tvport_QuickLook_standin_present",
+                   const int, 1);
+#endif
+
+#ifdef TVPORT_SHIM_IAD
+TVPORT_SHIM_LIBRARY("standin_iAd (load command only; no symbols imported)")
+TVPORT_DEFINE_DATA(tvport_iad_present, "_tvport_iAd_standin_present",
+                   const int, 1);
+#endif
+
+#ifdef TVPORT_SHIM_EVENTKITUI
+TVPORT_SHIM_LIBRARY("standin_EventKitUI (load command only; no symbols imported)")
+TVPORT_DEFINE_DATA(tvport_eventkitui_present, "_tvport_EventKitUI_standin_present",
+                   const int, 1);
+#endif
