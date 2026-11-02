@@ -1,0 +1,211 @@
+{
+ "sdk_version": "27.2",
+ "target": "arm64-apple-tvos27.0",
+ "build_id": "fd9faf9",
+ "libraries": {
+  "libtvport.dylib": {
+   "install_name": "@rpath/libtvport.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 18,
+   "exports": [
+    "_OBJC_CLASS_$_TVPortCursor",
+    "_OBJC_CLASS_$_TVPortCursorView",
+    "_OBJC_CLASS_$_TVPortEventViewController",
+    "_OBJC_CLASS_$_TVPortTouchSynth",
+    "_OBJC_METACLASS_$_TVPortCursor",
+    "_OBJC_METACLASS_$_TVPortCursorView",
+    "_OBJC_METACLASS_$_TVPortEventViewController",
+    "_OBJC_METACLASS_$_TVPortTouchSynth",
+    "_tvlog_banner",
+    "_tvlog_enabled",
+    "_tvlog_file_path",
+    "_tvlog_flush_counters",
+    "_tvlog_init",
+    "_tvlog_level",
+    "_tvlog_register_shim_library",
+    "_tvlog_shim_enter",
+    "_tvlog_vwrite",
+    "_tvlog_write"
+   ]
+  },
+  "libtvportshim-CoreFoundation.dylib": {
+   "install_name": "@rpath/libtvportshim-CoreFoundation.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [
+    "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+   ],
+   "export_count": 1,
+   "exports": [
+    "_NSURLVolumeAvailableCapacityForImportantUsageKey"
+   ]
+  },
+  "libtvportshim-CoreTelephony.dylib": {
+   "install_name": "@rpath/libtvportshim-CoreTelephony.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [
+    "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony"
+   ],
+   "export_count": 1,
+   "exports": [
+    "_CTServiceRadioAccessTechnologyDidChangeNotification"
+   ]
+  },
+  "libtvportshim-FileProvider.dylib": {
+   "install_name": "@rpath/libtvportshim-FileProvider.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 1,
+   "exports": [
+    "__swift_FORCE_LOAD_$_swiftFileProvider"
+   ]
+  },
+  "libtvportshim-MessageUI.dylib": {
+   "install_name": "@rpath/libtvportshim-MessageUI.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 4,
+   "exports": [
+    "_OBJC_CLASS_$_MFMailComposeViewController",
+    "_OBJC_CLASS_$_MFMessageComposeViewController",
+    "_OBJC_METACLASS_$_MFMailComposeViewController",
+    "_OBJC_METACLASS_$_MFMessageComposeViewController"
+   ]
+  },
+  "libtvportshim-PDFKit.dylib": {
+   "install_name": "@rpath/libtvportshim-PDFKit.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 2,
+   "exports": [
+    "_OBJC_CLASS_$_PDFDocument",
+    "_OBJC_METACLASS_$_PDFDocument"
+   ]
+  },
+  "libtvportshim-PushKit.dylib": {
+   "install_name": "@rpath/libtvportshim-PushKit.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [
+    "/System/Library/Frameworks/PushKit.framework/PushKit"
+   ],
+   "export_count": 1,
+   "exports": [
+    "_PKPushTypeVoIP"
+   ]
+  },
+  "libtvportshim-SafariServices.dylib": {
+   "install_name": "@rpath/libtvportshim-SafariServices.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 4,
+   "exports": [
+    "_OBJC_CLASS_$_SFSafariViewController",
+    "_OBJC_CLASS_$_SFSafariViewControllerConfiguration",
+    "_OBJC_METACLASS_$_SFSafariViewController",
+    "_OBJC_METACLASS_$_SFSafariViewControllerConfiguration"
+   ]
+  },
+  "libtvportshim-UIKit.dylib": {
+   "install_name": "@rpath/libtvportshim-UIKit.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [
+    "/System/Library/Frameworks/UIKit.framework/UIKit"
+   ],
+   "export_count": 2,
+   "exports": [
+    "_OBJC_CLASS_$_UIHoverGestureRecognizer",
+    "_OBJC_METACLASS_$_UIHoverGestureRecognizer"
+   ]
+  },
+  "libtvportshim-WidgetKit.dylib": {
+   "install_name": "@rpath/libtvportshim-WidgetKit.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 3,
+   "exports": [
+    "_$s9WidgetKit0A6CenterC18reloadAllTimelinesyyFTj",
+    "_$s9WidgetKit0A6CenterC6sharedACvgZ",
+    "_$s9WidgetKit0A6CenterCMa"
+   ]
+  },
+  "libtvportshim-libswiftCallKit.dylib": {
+   "install_name": "@rpath/libtvportshim-libswiftCallKit.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 2,
+   "exports": [
+    "_$sSo23CXProviderConfigurationC7CallKitE20supportedHandleTypesShySo12CXHandleTypeVGvs",
+    "__swift_FORCE_LOAD_$_swiftCallKit"
+   ]
+  },
+  "libtvportshim-libswiftCoreMIDI.dylib": {
+   "install_name": "@rpath/libtvportshim-libswiftCoreMIDI.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 1,
+   "exports": [
+    "__swift_FORCE_LOAD_$_swiftCoreMIDI"
+   ]
+  },
+  "libtvportshim-libswiftDarwin.dylib": {
+   "install_name": "@rpath/libtvportshim-libswiftDarwin.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [
+    "/usr/lib/swift/libswiftDarwin.dylib"
+   ],
+   "export_count": 7,
+   "exports": [
+    "__swift_FORCE_LOAD_$_swift_errno",
+    "__swift_FORCE_LOAD_$_swift_math",
+    "__swift_FORCE_LOAD_$_swift_signal",
+    "__swift_FORCE_LOAD_$_swift_stdio",
+    "__swift_FORCE_LOAD_$_swift_time",
+    "__swift_FORCE_LOAD_$_swiftsys_time",
+    "__swift_FORCE_LOAD_$_swiftunistd"
+   ]
+  },
+  "libtvportshim-libswiftDataDetection.dylib": {
+   "install_name": "@rpath/libtvportshim-libswiftDataDetection.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 1,
+   "exports": [
+    "__swift_FORCE_LOAD_$_swiftDataDetection"
+   ]
+  },
+  "libtvportshim-libswiftFileProvider.dylib": {
+   "install_name": "@rpath/libtvportshim-libswiftFileProvider.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 1,
+   "exports": [
+    "__swift_FORCE_LOAD_$_swiftFileProvider"
+   ]
+  },
+  "libtvportshim-libswiftPassKit.dylib": {
+   "install_name": "@rpath/libtvportshim-libswiftPassKit.dylib",
+   "platform": "3",
+   "minos": "27.0",
+   "reexports": [],
+   "export_count": 1,
+   "exports": [
+    "__swift_FORCE_LOAD_$_swiftPassKit"
+   ]
+  }
+ }
+}

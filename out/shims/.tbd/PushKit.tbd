@@ -1,0 +1,10 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/System/Library/Frameworks/PushKit.framework/PushKit'
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    symbols:           [ '_PKNonMacTokenName', '_PKPushIncomingCallReportedNotification', '_PKPushTypeUserNotifications' ]
+    objc-classes:      [ 'PKPublicChannel', 'PKPushCredentials', 'PKPushPayload', 'PKPushRegistry', 'PKUserNotificationsRemoteNotificationServiceConnection', 'PKVoIPPushMetadata' ]
+    objc-ivars:        [ 'PKPublicChannel._channelID', 'PKPublicChannel._channelTopic', 'PKPublicChannel._checkpoint', 'PKPublicChannel._environment', 'PKPublicChannel._tokenName', 'PKPushCredentials._token', 'PKPushCredentials._type', 'PKPushPayload._dictionaryPayload', 'PKPushPayload._type', 'PKPushRegistry._complicationToken', 'PKPushRegistry._delegate', 'PKPushRegistry._delegateQueue', 'PKPushRegistry._desiredPushTypes', 'PKPushRegistry._fileProviderToken', 'PKPushRegistry._ivarQueue', 'PKPushRegistry._lastReportedCallTime', 'PKPushRegistry._outstandingVoIPPushes', 'PKPushRegistry._pushTypeToConnection', 'PKPushRegistry._pushTypeToToken', 'PKPushRegistry._voipToken', 'PKUserNotificationsRemoteNotificationServiceConnection._bundleIdentifier', 'PKUserNotificationsRemoteNotificationServiceConnection._callOutQueue', 'PKUserNotificationsRemoteNotificationServiceConnection._connection', 'PKUserNotificationsRemoteNotificationServiceConnection._queue', 'PKUserNotificationsRemoteNotificationServiceConnection._registries', 'PKVoIPPushMetadata._mustReport' ]
+...
