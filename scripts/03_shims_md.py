@@ -198,6 +198,27 @@ def main():
             L.append(f"- **Status:** {e.get('status','UNTESTED')}")
             L.append(f"- **Shim:** `{e['shim']}`")
 
+    # ------------------------------------------------- lazy, deliberately unshimmed
+    lazy = decisions.get("lazy_not_shimmed", {})
+    if lazy:
+        L.append("\n---\n")
+        L.append("\n## Missing but lazily bound (deliberately not shimmed)\n")
+        L.append("dyld does not resolve a lazy binding at launch, so these cannot stop\n"
+                 "the app loading; it binds them on first call. Shimming them would add\n"
+                 "behaviour the iOS build does not have, so each is recorded with the\n"
+                 "reason it is left alone.\n")
+        for lib, e in sorted(lazy.items()):
+            L.append(f"\n### {lib.rstrip('/').split('/')[-1]}\n")
+            L.append(f"`{lib}`\n")
+            L.append(f"- **Imported by:** {', '.join('`'+b+'`' for b in e['imported_by'])}")
+            L.append(f"- **Missing on device — evidence:** {e['missing_evidence']}")
+            L.append(f"- **Decision:** {e['decision']}")
+            L.append(f"- **Reason:** {e['reason']}")
+            L.append(f"- **Status:** {e.get('status','UNTESTED')}")
+            L.append("\n  Symbols:\n")
+            for s in e["symbols"]:
+                L.append(f"  - `{s}`")
+
     # ---------------------------------------------------------------- our code
     ours = decisions.get("our_code", {})
     if ours:
@@ -216,8 +237,8 @@ def main():
     out = EVIDENCE / "shims.md"
     out.write_text("\n".join(L) + "\n")
     print(f"wrote {out} ({len(L)} lines)")
-    undecided = [lib for lib in by_lib
-                 if lib not in decisions.get("libraries", {})]
+    known = set(decisions.get("libraries", {})) | set(decisions.get("lazy_not_shimmed", {}))
+    undecided = [lib for lib in by_lib if lib not in known]
     if undecided:
         print(f"\n{len(undecided)} libraries have missing symbols but no decision entry:")
         for lib in undecided:

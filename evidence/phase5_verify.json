@@ -1,0 +1,1467 @@
+{
+ "device_evidence": "device_24K122",
+ "shim_dylibs": [
+  "libtvport.dylib",
+  "libtvportshim-CoreFoundation.dylib",
+  "libtvportshim-CoreTelephony.dylib",
+  "libtvportshim-EventKitUI.dylib",
+  "libtvportshim-FileProvider.dylib",
+  "libtvportshim-MessageUI.dylib",
+  "libtvportshim-PDFKit.dylib",
+  "libtvportshim-PushKit.dylib",
+  "libtvportshim-QuickLook.dylib",
+  "libtvportshim-SafariServices.dylib",
+  "libtvportshim-UIKit.dylib",
+  "libtvportshim-WidgetKit.dylib",
+  "libtvportshim-iAd.dylib",
+  "libtvportshim-libswiftCallKit.dylib",
+  "libtvportshim-libswiftCoreMIDI.dylib",
+  "libtvportshim-libswiftDarwin.dylib",
+  "libtvportshim-libswiftDataDetection.dylib",
+  "libtvportshim-libswiftFileProvider.dylib",
+  "libtvportshim-libswiftPassKit.dylib"
+ ],
+ "totals": {
+  "resolved": 7150,
+  "blockers": 0,
+  "weak_missing": 104,
+  "lazy_missing": 6,
+  "unloadable_non_weak_libraries": 0,
+  "absent_weak_libraries": 6
+ },
+ "unloadable_non_weak_libraries": [],
+ "absent_weak_libraries": [
+  {
+   "binary": "Frameworks/Backtrace.framework/Backtrace",
+   "library": "@rpath/libswiftCloudKit.dylib",
+   "load_command": "LOAD_WEAK_DYLIB",
+   "weak": true,
+   "tried": [
+    "device:/usr/lib/swift/libswiftCloudKit.dylib",
+    "device:/usr/lib/swift/libswiftCloudKit.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/System/Library/Frameworks/VisionKit.framework/VisionKit",
+   "load_command": "LOAD_WEAK_DYLIB",
+   "weak": true,
+   "tried": [
+    "device:/System/Library/Frameworks/VisionKit.framework/VisionKit"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "load_command": "LOAD_WEAK_DYLIB",
+   "weak": true,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "load_command": "LOAD_WEAK_DYLIB",
+   "weak": true,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/Social.framework/Social",
+   "load_command": "LOAD_WEAK_DYLIB",
+   "weak": true,
+   "tried": [
+    "device:/System/Library/Frameworks/Social.framework/Social"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit",
+   "load_command": "LOAD_WEAK_DYLIB",
+   "weak": true,
+   "tried": [
+    "device:/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit"
+   ]
+  }
+ ],
+ "per_binary": {
+  "Frameworks/Backtrace.framework/Backtrace": {
+   "resolved": 504,
+   "blockers": 0,
+   "weak_missing": 2,
+   "lazy_missing": 2
+  },
+  "Frameworks/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter": {
+   "resolved": 232,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/Persona2.framework/Persona2": {
+   "resolved": 1938,
+   "blockers": 0,
+   "weak_missing": 32,
+   "lazy_missing": 0
+  },
+  "Frameworks/Reaper.framework/Reaper": {
+   "resolved": 98,
+   "blockers": 0,
+   "weak_missing": 2,
+   "lazy_missing": 0
+  },
+  "Frameworks/RobloxLib.framework/RobloxLib": {
+   "resolved": 1339,
+   "blockers": 0,
+   "weak_missing": 9,
+   "lazy_missing": 4
+  },
+  "Frameworks/libswift_Concurrency.dylib": {
+   "resolved": 237,
+   "blockers": 0,
+   "weak_missing": 2,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvport.dylib": {
+   "resolved": 160,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-CoreFoundation.dylib": {
+   "resolved": 3,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-CoreTelephony.dylib": {
+   "resolved": 3,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-EventKitUI.dylib": {
+   "resolved": 2,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-FileProvider.dylib": {
+   "resolved": 2,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-MessageUI.dylib": {
+   "resolved": 21,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-PDFKit.dylib": {
+   "resolved": 18,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-PushKit.dylib": {
+   "resolved": 3,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-QuickLook.dylib": {
+   "resolved": 2,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-SafariServices.dylib": {
+   "resolved": 41,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-UIKit.dylib": {
+   "resolved": 11,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-WidgetKit.dylib": {
+   "resolved": 3,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-iAd.dylib": {
+   "resolved": 2,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-libswiftCallKit.dylib": {
+   "resolved": 3,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-libswiftCoreMIDI.dylib": {
+   "resolved": 2,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-libswiftDarwin.dylib": {
+   "resolved": 8,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-libswiftDataDetection.dylib": {
+   "resolved": 2,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-libswiftFileProvider.dylib": {
+   "resolved": 2,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Frameworks/libtvportshim-libswiftPassKit.dylib": {
+   "resolved": 2,
+   "blockers": 0,
+   "weak_missing": 0,
+   "lazy_missing": 0
+  },
+  "Roblox": {
+   "resolved": 2512,
+   "blockers": 0,
+   "weak_missing": 57,
+   "lazy_missing": 0
+  }
+ },
+ "blockers": [],
+ "weak_missing": [
+  {
+   "binary": "Frameworks/Backtrace.framework/Backtrace",
+   "library": "@rpath/libswiftCloudKit.dylib",
+   "symbol": "__swift_FORCE_LOAD_$_swiftCloudKit",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftCloudKit.dylib",
+    "device:/usr/lib/swift/libswiftCloudKit.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Backtrace.framework/Backtrace",
+   "library": "@rpath/libswiftCoreData.dylib",
+   "symbol": "__swift_FORCE_LOAD_$_swiftCoreData",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "device:/usr/lib/swift/libswiftCoreData.dylib",
+    "device:/usr/lib/swift/libswiftCoreData.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/System/Library/Frameworks/VisionKit.framework/VisionKit",
+   "symbol": "_OBJC_CLASS_$_VNDocumentCameraViewController",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/VisionKit.framework/VisionKit"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/System/Library/Frameworks/PassKit.framework/PassKit",
+   "symbol": "_OBJC_CLASS_$_PKIdentityButton",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "device:/System/Library/Frameworks/PassKit.framework/PassKit"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/System/Library/Frameworks/PhotosUI.framework/PhotosUI",
+   "symbol": "_OBJC_CLASS_$_PHPickerViewController",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "device:/System/Library/Frameworks/PhotosUI.framework/PhotosUI"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss15ContinuousClockV7InstantVMn",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss15ContinuousClockV7InstantVSEsMc",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss15ContinuousClockV7InstantVSesMc",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss23withCheckedContinuation9isolation8function_xScA_pSgYi_SSyScCyxs5NeverOGXEtYalFTu",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss27withTaskCancellationHandler9operation8onCancel9isolationxxyYaKXE_yyYbXEScA_pSgYitYaKlFTu",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss31withCheckedThrowingContinuation9isolation8function_xScA_pSgYi_SSyScCyxs5Error_pGXEtYaKlFTu",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss15ContinuousClockV3nowAB7InstantVvg",
+   "weak": true,
+   "lazy": true,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss15ContinuousClockV7InstantV8duration2tos8DurationVAD_tF",
+   "weak": true,
+   "lazy": true,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss15ContinuousClockV7InstantVMa",
+   "weak": true,
+   "lazy": true,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss15ContinuousClockVABycfC",
+   "weak": true,
+   "lazy": true,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss15ContinuousClockVMa",
+   "weak": true,
+   "lazy": true,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss23withCheckedContinuation9isolation8function_xScA_pSgYi_SSyScCyxs5NeverOGXEtYalF",
+   "weak": true,
+   "lazy": true,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss27withTaskCancellationHandler9operation8onCancel9isolationxxyYaKXE_yyYbXEScA_pSgYitYaKlF",
+   "weak": true,
+   "lazy": true,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss31withCheckedThrowingContinuation9isolation8function_xScA_pSgYi_SSyScCyxs5Error_pGXEtYaKlF",
+   "weak": true,
+   "lazy": true,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$s8PhotosUI14PHPickerFilterVMn",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$s8PhotosUI30PHPickerViewControllerDelegateMp",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$s8PhotosUI30PHPickerViewControllerDelegateP6picker_16didFinishPickingySo0cdE0C_SayAA0C6ResultVGtFTq",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$s8PhotosUI14PHPickerFilterV6imagesACvgZ",
+   "weak": true,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$s8PhotosUI14PHPickerFilterVMa",
+   "weak": true,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$s8PhotosUI14PHPickerResultV12itemProviderSo06NSItemF0Cvg",
+   "weak": true,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$s8PhotosUI14PHPickerResultVMa",
+   "weak": true,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$s8PhotosUI21PHPickerConfigurationV14selectionLimitSivs",
+   "weak": true,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$s8PhotosUI21PHPickerConfigurationV6filterAA0C6FilterVSgvs",
+   "weak": true,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$s8PhotosUI21PHPickerConfigurationVACycfC",
+   "weak": true,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$s8PhotosUI21PHPickerConfigurationVMa",
+   "weak": true,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$sSo22PHPickerViewControllerC8PhotosUIE13configurationAbC0A13ConfigurationV_tcfC",
+   "weak": true,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "/usr/lib/swift/libswiftPhotosUI.dylib",
+   "symbol": "_$sSo22PHPickerViewControllerC8PhotosUIE8delegateAC0abC8Delegate_pSgvs",
+   "weak": true,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "device:/usr/lib/swift/libswiftPhotosUI.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/Persona2.framework/Persona2",
+   "symbol": "__ZdlPv",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/Persona2.framework/Persona2"
+   ]
+  },
+  {
+   "binary": "Frameworks/Persona2.framework/Persona2",
+   "library": "@rpath/Persona2.framework/Persona2",
+   "symbol": "__Znwm",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/Persona2.framework/Persona2"
+   ]
+  },
+  {
+   "binary": "Frameworks/Reaper.framework/Reaper",
+   "library": "@rpath/Reaper.framework/Reaper",
+   "symbol": "__ZdlPv",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/Reaper.framework/Reaper"
+   ]
+  },
+  {
+   "binary": "Frameworks/Reaper.framework/Reaper",
+   "library": "@rpath/Reaper.framework/Reaper",
+   "symbol": "__Znwm",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/Reaper.framework/Reaper"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "@rpath/libtvportshim-UIKit.dylib",
+   "symbol": "_OBJC_CLASS_$_UIPointerInteraction",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libtvportshim-UIKit.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "@rpath/libtvportshim-UIKit.dylib",
+   "symbol": "_OBJC_CLASS_$_UIPointerStyle",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libtvportshim-UIKit.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "@rpath/RobloxLib.framework/RobloxLib",
+   "symbol": "__ZTISt11range_error",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/RobloxLib.framework/RobloxLib"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "@rpath/RobloxLib.framework/RobloxLib",
+   "symbol": "__ZTISt12domain_error",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/RobloxLib.framework/RobloxLib"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "@rpath/RobloxLib.framework/RobloxLib",
+   "symbol": "__ZTISt12length_error",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/RobloxLib.framework/RobloxLib"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "@rpath/RobloxLib.framework/RobloxLib",
+   "symbol": "__ZTISt12out_of_range",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/RobloxLib.framework/RobloxLib"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "@rpath/RobloxLib.framework/RobloxLib",
+   "symbol": "__ZTISt14overflow_error",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/RobloxLib.framework/RobloxLib"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "@rpath/RobloxLib.framework/RobloxLib",
+   "symbol": "__ZTISt15underflow_error",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/RobloxLib.framework/RobloxLib"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "@rpath/RobloxLib.framework/RobloxLib",
+   "symbol": "__ZTISt16invalid_argument",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/RobloxLib.framework/RobloxLib"
+   ]
+  },
+  {
+   "binary": "Frameworks/libswift_Concurrency.dylib",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "__ZdlPv",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/libswift_Concurrency.dylib",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "__Znwm",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices",
+   "symbol": "_OBJC_CLASS_$_ASAuthorizationSecurityKeyPublicKeyCredentialProvider",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "device:/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV013isEligibleForB8FeaturesSbvg",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV013isEligibleForB8FeaturesSbvgTu",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV07requestbC08ageGates__2inAC8ResponseOSi_SiSgAISo16UIViewControllerCtYaKF",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV07requestbC08ageGates__2inAC8ResponseOSi_SiSgAISo16UIViewControllerCtYaKFTu",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC0V03ageC11DeclarationAC0bcF0OSgvg",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC0V10lowerBoundSiSgvg",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC0V10upperBoundSiSgvg",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC0V22activeParentalControlsAC0fG0Vvg",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC0VMa",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC11DeclarationO04selfA0yA2EmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC11DeclarationO08guardianA0yA2EmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC11DeclarationO14paymentCheckedyA2EmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC11DeclarationO19governmentIDCheckedyA2EmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC11DeclarationO20checkedByOtherMethodyA2EmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC11DeclarationO22guardianPaymentCheckedyA2EmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC11DeclarationO27guardianGovernmentIDCheckedyA2EmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC11DeclarationO28guardianCheckedByOtherMethodyA2EmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC11DeclarationOMa",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV0bC11DeclarationOMn",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV16ParentalControlsV19communicationLimitsAEvgZ",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV16ParentalControlsV36significantAppChangeApprovalRequiredAEvgZ",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV16ParentalControlsVMa",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV16ParentalControlsVs10SetAlgebraAAMc",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV5ErrorO12notAvailableyA2EmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV5ErrorO14invalidRequestyA2EmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV5ErrorO2eeoiySbAE_AEtFZ",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV5ErrorOMa",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV5ErrorOsAdAMc",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV6sharedACvgZ",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV8ResponseO15declinedSharingyA2EmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV8ResponseO7sharingyAeC0bC0V_tcAEmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceV8ResponseOMa",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange",
+   "symbol": "_$s16DeclaredAgeRange0bC7ServiceVMa",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/Social.framework/Social",
+   "symbol": "_SLServiceTypeFacebook",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/Social.framework/Social"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/Social.framework/Social",
+   "symbol": "_SLServiceTypeTwitter",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/Social.framework/Social"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/Social.framework/Social",
+   "symbol": "_OBJC_CLASS_$_SLComposeViewController",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/Social.framework/Social"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/StoreKit.framework/StoreKit",
+   "symbol": "_$s8StoreKit03AppA0O13requestReview2inySo13UIWindowSceneC_tFZ",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "device:/System/Library/Frameworks/StoreKit.framework/StoreKit"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit",
+   "symbol": "_$s14MarketplaceKit14AppDistributorO10testFlightyA2CmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit",
+   "symbol": "_$s14MarketplaceKit14AppDistributorO11marketplaceyACSScACmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit",
+   "symbol": "_$s14MarketplaceKit14AppDistributorO3webyA2CmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit",
+   "symbol": "_$s14MarketplaceKit14AppDistributorO5otheryA2CmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit",
+   "symbol": "_$s14MarketplaceKit14AppDistributorO7currentACvgZ",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit",
+   "symbol": "_$s14MarketplaceKit14AppDistributorO7currentACvgZTu",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit",
+   "symbol": "_$s14MarketplaceKit14AppDistributorO8appStoreyA2CmFWC",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit",
+   "symbol": "_$s14MarketplaceKit14AppDistributorOMa",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit",
+   "symbol": "_$s14MarketplaceKit14AppDistributorOMn",
+   "weak": true,
+   "lazy": false,
+   "library_found": false,
+   "tried": [
+    "device:/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$sScG4next9isolationxSgScA_pSgYi_tYaF",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$sScG4next9isolationxSgScA_pSgYi_tYaFTu",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss13withTaskGroup2of9returning9isolation4bodyq_xm_q_mScA_pSgYiq_ScGyxGzYaXEtYas8SendableRzr0_lF",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss13withTaskGroup2of9returning9isolation4bodyq_xm_q_mScA_pSgYiq_ScGyxGzYaXEtYas8SendableRzr0_lFTu",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss23withCheckedContinuation9isolation8function_xScA_pSgYi_SSyScCyxs5NeverOGXEtYalF",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss23withCheckedContinuation9isolation8function_xScA_pSgYi_SSyScCyxs5NeverOGXEtYalFTu",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss27withTaskCancellationHandler9operation8onCancel9isolationxxyYaKXE_yyYbXEScA_pSgYitYaKlF",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss27withTaskCancellationHandler9operation8onCancel9isolationxxyYaKXE_yyYbXEScA_pSgYitYaKlFTu",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss31withCheckedThrowingContinuation9isolation8function_xScA_pSgYi_SSyScCyxs5Error_pGXEtYaKlF",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  },
+  {
+   "binary": "Roblox",
+   "library": "@rpath/libswift_Concurrency.dylib",
+   "symbol": "_$ss31withCheckedThrowingContinuation9isolation8function_xScA_pSgYi_SSyScCyxs5Error_pGXEtYaKlFTu",
+   "weak": true,
+   "lazy": false,
+   "library_found": true,
+   "tried": [
+    "bundle:Frameworks/libswift_Concurrency.dylib"
+   ]
+  }
+ ],
+ "lazy_missing": [
+  {
+   "binary": "Frameworks/Backtrace.framework/Backtrace",
+   "library": "@rpath/libswiftCoreData.dylib",
+   "symbol": "_$sSo22NSManagedObjectContextC8CoreDataE5count3forSiSo14NSFetchRequestCyxG_tKSo0hI6ResultRzlF",
+   "weak": false,
+   "lazy": true,
+   "library_found": true,
+   "tried": [
+    "device:/usr/lib/swift/libswiftCoreData.dylib",
+    "device:/usr/lib/swift/libswiftCoreData.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/Backtrace.framework/Backtrace",
+   "library": "@rpath/libswiftCoreData.dylib",
+   "symbol": "_$sSo22NSManagedObjectContextC8CoreDataE5fetchySayxGSo14NSFetchRequestCyxGKSo0gH6ResultRzlF",
+   "weak": false,
+   "lazy": true,
+   "library_found": true,
+   "tried": [
+    "device:/usr/lib/swift/libswiftCoreData.dylib",
+    "device:/usr/lib/swift/libswiftCoreData.dylib"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "<flat-namespace>",
+   "symbol": "___MIG_check__Request__exception_raise_state_identity_t",
+   "weak": false,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "flat-namespace"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "<flat-namespace>",
+   "symbol": "___MIG_check__Request__exception_raise_state_t",
+   "weak": false,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "flat-namespace"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "<flat-namespace>",
+   "symbol": "___MIG_check__Request__mach_exception_raise_state_identity_t",
+   "weak": false,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "flat-namespace"
+   ]
+  },
+  {
+   "binary": "Frameworks/RobloxLib.framework/RobloxLib",
+   "library": "<flat-namespace>",
+   "symbol": "___MIG_check__Request__mach_exception_raise_state_t",
+   "weak": false,
+   "lazy": true,
+   "library_found": false,
+   "tried": [
+    "flat-namespace"
+   ]
+  }
+ ]
+}

@@ -35,8 +35,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import lief  # noqa: E402
-from lib_macho import (EVIDENCE, WORK, app_dir, build_version, find_machos,  # noqa: E402
-                       parse, rel)
+from lib_macho import (EVIDENCE, ROOT, WORK, app_dir, build_version,  # noqa: E402
+                       find_machos, parse, rel)
 
 PATCHED = WORK / "patched"
 
@@ -264,6 +264,44 @@ def remove_extensions(app: Path, log: list):
     return removed
 
 
+def is_ours(rel_path: str) -> bool:
+    """True for the dylibs this project builds.
+
+    They must be excluded from the patch loop. They are already tvOS-targeted,
+    they already link libtvport, and repointing their load commands turns a
+    proxy's re-export of the real framework into a re-export of itself.
+    """
+    name = rel_path.rsplit("/", 1)[-1]
+    return name == "libtvport.dylib" or name.startswith("libtvportshim-")
+
+
+def install_shims(app: Path, log: list):
+    """Copy the built shim dylibs into the bundle's Frameworks directory.
+
+    Their install names are @rpath/..., and every binary that now links them
+    gets an LC_RPATH reaching Frameworks/ (see ensure_rpath), so this is where
+    dyld will look. dSYMs stay in out/ and are shipped separately: they are for
+    the laptop's debugger, not for the device.
+    """
+    shims = ROOT / "out" / "shims"
+    if not shims.is_dir():
+        raise SystemExit(
+            f"{shims} is missing. Run the build-shims workflow and fetch it with "
+            f"scripts/fetch_outputs.sh; Phase 5 cannot repoint load commands at "
+            f"dylibs that are not there.")
+    frameworks = app / "Frameworks"
+    frameworks.mkdir(exist_ok=True)
+    copied = []
+    for src in sorted(shims.glob("*.dylib")):
+        shutil.copy2(src, frameworks / src.name)
+        copied.append(src.name)
+        log.append(f"installed Frameworks/{src.name}")
+    if not copied:
+        raise SystemExit(f"no .dylib files in {shims}")
+    print(f"installed {len(copied)} dylibs into Frameworks/")
+    return copied
+
+
 def main():
     tvos_min = "27.0"
     tvos_sdk = "27.2"
@@ -290,13 +328,31 @@ def main():
     remove_extensions(dst_app, log)
     log.append("")
 
+    log.append("## Shim libraries installed into the bundle")
+    install_shims(dst_app, log)
+    log.append("")
+
     log.append("## Info.plist")
     patch_info_plist(dst_app, tvos_min, log)
     log.append("")
 
     log.append("## Mach-O binaries")
+    log.append("")
+    log.append("Our own dylibs are **not** patched. The runner already built them for "
+               "tvOS 27.0, and running them through the repointing pass is actively "
+               "harmful: the first attempt rewrote the UIKit proxy's own "
+               "LC_REEXPORT_DYLIB for the real UIKit into a reference to itself, which "
+               "would have left every UIKit symbol Roblox imports resolving into a "
+               "dylib that defines one class. The verifier would have caught it, but "
+               "the right fix is not to touch them at all.")
+    log.append("")
     for p in find_machos(dst_app):
         r = rel(p, dst_app)
+        if is_ours(r):
+            log.append(f"\n### {r}")
+            log.append("- skipped: built by the shim build for tvOS; not patched")
+            print(f"{r}: skipped (ours)")
+            continue
         per: list[str] = []
         b = parse(p)[0]
         if strip_signature(b):

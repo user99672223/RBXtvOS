@@ -4,7 +4,8 @@
   "only hand-maintained input: scripts/03_shims_md.py joins everything else",
   "from the collected evidence so the log cannot drift from it.",
   "Decision is STUB | REIMPLEMENT | REDIRECT; Status is UNTESTED | CALLED AT",
-  "RUNTIME | VERIFIED and only moves off UNTESTED on device-log evidence."
+  "RUNTIME | VERIFIED and only moves off UNTESTED on device-log evidence.",
+  "lazy_not_shimmed records items that are missing but bound CLASS.LAZY, so dyld leaves them unbound until first call and they cannot block the launch. They are listed rather than shimmed, with the reason, so the decision is on the record."
  ],
  "libraries": {
   "/System/Library/Frameworks/UIKit.framework/UIKit": {
@@ -248,6 +249,36 @@
    "evidence": "Apple's tvOS guide states an app \"can only access 500 KB of persistent storage that is local to the device (using the NSUserDefaults class)\" and that \"all other data must be purgeable by the operating system when space is low\", so the file mirror is a convenience and os_log is the record.",
    "decision": "REDIRECT",
    "reason": "The device is the only place the UNTESTED statuses above can be settled, so the build has to say what it did. The signal handler is async-signal-safe (write(2) only, no malloc, no os_log, no stdio) and both it and the uncaught-exception handler chain to whatever was installed before, so the process still dies and tvOS still writes its own crash report.",
+   "status": "UNTESTED"
+  }
+ },
+ "lazy_not_shimmed": {
+  "<flat-namespace>": {
+   "symbols": [
+    "___MIG_check__Request__exception_raise_state_identity_t",
+    "___MIG_check__Request__exception_raise_state_t",
+    "___MIG_check__Request__mach_exception_raise_state_identity_t",
+    "___MIG_check__Request__mach_exception_raise_state_t"
+   ],
+   "imported_by": [
+    "Frameworks/RobloxLib.framework/RobloxLib"
+   ],
+   "missing_evidence": "Not exported by anything in the bundle, anywhere in the device cache (2,709 images), or in iOS SDK 26.2. Bound CLASS.LAZY with the flat-namespace (dynamic lookup) ordinal.",
+   "decision": "NO SHIM",
+   "reason": "Lazy bindings are not resolved at launch, so these cannot stop the app loading; dyld binds them on first call. They are equally unresolved in Roblox's own iOS build, which means matching iOS behaviour is to leave them alone. They are MIG message-validation functions inside Roblox's crash reporter, and inventing semantics for them would change crash handling in a way iOS does not. If the log ever shows them being reached, that is new information and is worth revisiting.",
+   "status": "UNTESTED"
+  },
+  "@rpath/libswiftCoreData.dylib": {
+   "symbols": [
+    "_$sSo22NSManagedObjectContextC8CoreDataE5count3forSiSo14NSFetchRequestCyxG_tKSo0hI6ResultRzlF",
+    "_$sSo22NSManagedObjectContextC8CoreDataE5fetchySayxGSo14NSFetchRequestCyxGKSo0gH6ResultRzlF"
+   ],
+   "imported_by": [
+    "Frameworks/Backtrace.framework/Backtrace"
+   ],
+   "missing_evidence": "The overlay itself IS present on the device: /usr/lib/swift/libswiftCoreData.dylib appears in the cache's image list. It does not export these two Swift extension members (NSManagedObjectContext.fetch and .count). Both are bound CLASS.LAZY; a third symbol from the same library, __swift_FORCE_LOAD_$_swiftCoreData, is weak.",
+   "decision": "NO SHIM",
+   "reason": "Lazy, so not a launch blocker. The library is present, so its non-weak LC_LOAD_DYLIB in Backtrace.framework is satisfied -- which is the part that would have mattered, and which was an open question until the device image list settled it. Shimming would mean standing in front of a library that is present and short only two generic-constrained Swift extension members, whose ABI cannot be reproduced from C.",
    "status": "UNTESTED"
   }
  }

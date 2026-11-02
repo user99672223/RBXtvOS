@@ -190,15 +190,29 @@ def main():
 
     dev_by_lib, dev_images, dev_reex, dev_label = load_device()
 
-    # Roblox's own frameworks, re-read from the patched bundle.
+    # Everything in the patched bundle, re-read from it: Roblox's own
+    # frameworks and the shim dylibs now installed alongside them.
     bundle_exports, bundle_by_install, bundle_by_relpath = {}, {}, {}
+    bundle_reexports, bundle_defined = {}, {}
     machos = find_machos(app)
     for p in machos:
         r = str(p.relative_to(app))
         b = parse(p)[0]
         names, _src = exported_names(b, p)
         bundle_exports[r] = names
+        # Symbols the image *defines*, from the symbol table rather than the
+        # export trie. Compiler-generated coalesced symbols -- block
+        # descriptors, _OBJC_PROTOCOL_$_ records -- are emitted as a local
+        # definition plus an undefined reference in the same image, and dyld
+        # resolves the reference against that definition. They never appear in
+        # the export trie, so a trie-only check reports them as unresolved:
+        # libtvport.dylib has 18 trie entries and 7 such descriptor pairs.
+        bundle_defined[r] = {
+            s.name for s in b.symbols
+            if s.name and str(s.type) == "TYPE.SECTION"}
         bundle_by_relpath[r] = r
+        bundle_reexports[r] = [c.name for c in b.commands
+                               if c.command == lief.MachO.LoadCommand.TYPE.REEXPORT_DYLIB]
         inst = install_name(b)
         if inst:
             bundle_by_install[inst] = r
@@ -221,28 +235,49 @@ def main():
     else:
         print(f"::warning:: {SHIMS} not found; shim exports cannot be checked")
 
-    def lookup(kind, key, sym):
+    def lookup(kind, key, sym, seen=None):
+        """Does `key` provide `sym`, following LC_REEXPORT_DYLIB as dyld does?
+
+        dyld's staticLink resolution consults the named library's own exports
+        and then recurses into each LC_REEXPORT_DYLIB dependent
+        (evidence/dyld_reexport.md, dyld-1378 Loader.cpp:3196). The proxies
+        depend on exactly that, and they live inside the bundle, so the bundle
+        side has to follow re-exports too -- not just the device side. Missing
+        that made every symbol Roblox imports through a proxy look unresolved.
+        """
+        seen = seen if seen is not None else set()
+        tag = (kind, key)
+        if tag in seen:
+            return False
+        seen.add(tag)
+
         if kind == "device":
             if key not in dev_images and safe(key) not in dev_by_lib:
                 return None   # library absent: cannot answer
             return sym in closure(dev_by_lib, dev_reex, key)
+
         if kind == "bundle":
-            if key.startswith("shim:"):
-                name = key[5:]
-                if name not in shim_exports:
-                    return None
-                if sym in shim_exports[name]:
-                    return True
-                # follow the shim's own re-exports into the real framework
-                inst = next((i for i, n in shim_by_install.items() if n == name), None)
-                for r in shim_reex.get(inst or name, []):
-                    v = lookup("device", r, sym)
-                    if v:
-                        return True
-                return False
             if key not in bundle_exports:
                 return None
-            return sym in bundle_exports[key]
+            if sym in bundle_exports[key]:
+                return True
+            if sym in bundle_defined.get(key, ()):
+                return True  # defined in-image (coalesced / not exported)
+            for r in bundle_reexports.get(key, []):
+                # a re-export target is itself an install name: absolute for a
+                # system library, @rpath/... for one of ours
+                if r.startswith("/"):
+                    if lookup("device", r, sym, seen):
+                        return True
+                else:
+                    sub = bundle_by_install.get(r) or bundle_by_relpath.get(
+                        f"Frameworks/{r.rsplit('/', 1)[-1]}")
+                    if sub and lookup("bundle", sub, sym, seen):
+                        return True
+                    tail = r.rsplit("/", 1)[-1]
+                    if lookup("device", f"/usr/lib/swift/{tail}", sym, seen):
+                        return True
+            return False
         return None
 
     def candidates(binary, lib, rp, self_name):

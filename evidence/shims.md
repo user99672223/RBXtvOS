@@ -18,11 +18,11 @@ those three come from `shim/decisions.json`.
 ## Totals
 
 - imports that resolve on the device: **7333**
-- unresolved non-weak eager imports (launch blockers): **80**
+- unresolved non-weak eager imports (launch blockers): **74**
 - libraries absent from the device: **10**
 - missing ObjC classes: **6**
 - weak-missing (dyld binds to NULL; app still loads): 109
-- lazy-missing (bound on first call, not at launch): 0
+- lazy-missing (bound on first call, not at launch): 6
 - present on the device but absent from the tvOS SDK (private on tvOS): 311
 
 ---
@@ -342,42 +342,6 @@ those three come from `shim/decisions.json`.
 
   - `__swift_FORCE_LOAD_$_swiftPassKit` ← Frameworks/Persona2.framework/Persona2, Roblox
 
-### <flat-namespace>
-
-`<flat-namespace>`
-
-- **Imported by:** `Frameworks/RobloxLib.framework/RobloxLib`
-- **Missing on device — evidence:** see missing.json
-- **Contract — evidence:** see `evidence/sdk/ios26.2_*` 
-- **Referenced selectors / call sites:** none found in `__objc_selrefs` (symbol is referenced, no selector is)
-- **Decision:** UNDECIDED
-- **Reason:** —
-- **Status:** UNTESTED
-
-  Symbols:
-
-  - `___MIG_check__Request__exception_raise_state_identity_t` ← Frameworks/RobloxLib.framework/RobloxLib
-  - `___MIG_check__Request__exception_raise_state_t` ← Frameworks/RobloxLib.framework/RobloxLib
-  - `___MIG_check__Request__mach_exception_raise_state_identity_t` ← Frameworks/RobloxLib.framework/RobloxLib
-  - `___MIG_check__Request__mach_exception_raise_state_t` ← Frameworks/RobloxLib.framework/RobloxLib
-
-### libswiftCoreData.dylib
-
-`@rpath/libswiftCoreData.dylib`
-
-- **Imported by:** `Frameworks/Backtrace.framework/Backtrace`
-- **Missing on device — evidence:** see missing.json
-- **Contract — evidence:** see `evidence/sdk/ios26.2_*` 
-- **Referenced selectors / call sites:** none found in `__objc_selrefs` (symbol is referenced, no selector is)
-- **Decision:** UNDECIDED
-- **Reason:** —
-- **Status:** UNTESTED
-
-  Symbols:
-
-  - `_$sSo22NSManagedObjectContextC8CoreDataE5count3forSiSo14NSFetchRequestCyxG_tKSo0hI6ResultRzlF` ← Frameworks/Backtrace.framework/Backtrace
-  - `_$sSo22NSManagedObjectContextC8CoreDataE5fetchySayxGSo14NSFetchRequestCyxGKSo0gH6ResultRzlF` ← Frameworks/Backtrace.framework/Backtrace
-
 ---
 
 
@@ -426,6 +390,49 @@ symbols for exactly this reason.
 - **Reason:** With no imported symbols there is no behaviour to reproduce, so an empty loadable library is exactly equivalent to the real one from this process's point of view. It is needed because dyld requires a non-weak LC_LOAD_DYLIB to name something loadable whether or not anything is imported from it -- these would have killed the launch while the symbol-level report said everything resolved.
 - **Status:** UNTESTED
 - **Shim:** `libtvportshim-iAd.dylib`
+
+---
+
+
+## Missing but lazily bound (deliberately not shimmed)
+
+dyld does not resolve a lazy binding at launch, so these cannot stop
+the app loading; it binds them on first call. Shimming them would add
+behaviour the iOS build does not have, so each is recorded with the
+reason it is left alone.
+
+
+### <flat-namespace>
+
+`<flat-namespace>`
+
+- **Imported by:** `Frameworks/RobloxLib.framework/RobloxLib`
+- **Missing on device — evidence:** Not exported by anything in the bundle, anywhere in the device cache (2,709 images), or in iOS SDK 26.2. Bound CLASS.LAZY with the flat-namespace (dynamic lookup) ordinal.
+- **Decision:** NO SHIM
+- **Reason:** Lazy bindings are not resolved at launch, so these cannot stop the app loading; dyld binds them on first call. They are equally unresolved in Roblox's own iOS build, which means matching iOS behaviour is to leave them alone. They are MIG message-validation functions inside Roblox's crash reporter, and inventing semantics for them would change crash handling in a way iOS does not. If the log ever shows them being reached, that is new information and is worth revisiting.
+- **Status:** UNTESTED
+
+  Symbols:
+
+  - `___MIG_check__Request__exception_raise_state_identity_t`
+  - `___MIG_check__Request__exception_raise_state_t`
+  - `___MIG_check__Request__mach_exception_raise_state_identity_t`
+  - `___MIG_check__Request__mach_exception_raise_state_t`
+
+### libswiftCoreData.dylib
+
+`@rpath/libswiftCoreData.dylib`
+
+- **Imported by:** `Frameworks/Backtrace.framework/Backtrace`
+- **Missing on device — evidence:** The overlay itself IS present on the device: /usr/lib/swift/libswiftCoreData.dylib appears in the cache's image list. It does not export these two Swift extension members (NSManagedObjectContext.fetch and .count). Both are bound CLASS.LAZY; a third symbol from the same library, __swift_FORCE_LOAD_$_swiftCoreData, is weak.
+- **Decision:** NO SHIM
+- **Reason:** Lazy, so not a launch blocker. The library is present, so its non-weak LC_LOAD_DYLIB in Backtrace.framework is satisfied -- which is the part that would have mattered, and which was an open question until the device image list settled it. Shimming would mean standing in front of a library that is present and short only two generic-constrained Swift extension members, whose ABI cannot be reproduced from C.
+- **Status:** UNTESTED
+
+  Symbols:
+
+  - `_$sSo22NSManagedObjectContextC8CoreDataE5count3forSiSo14NSFetchRequestCyxG_tKSo0hI6ResultRzlF`
+  - `_$sSo22NSManagedObjectContextC8CoreDataE5fetchySayxGSo14NSFetchRequestCyxGKSo0gH6ResultRzlF`
 
 ---
 
