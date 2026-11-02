@@ -46,6 +46,23 @@
    "weak": false
   }
  ],
+ "rpaths": [
+  "@executable_path/Frameworks"
+ ],
+ "install_name": null,
+ "ordinal_table": {
+  "1": "@rpath/Backtrace.framework/Backtrace",
+  "2": "@rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter",
+  "3": "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+  "4": "/System/Library/Frameworks/Foundation.framework/Foundation",
+  "5": "/usr/lib/libobjc.A.dylib",
+  "6": "/usr/lib/libSystem.B.dylib",
+  "7": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+  "8": "/System/Library/Frameworks/Intents.framework/Intents",
+  "9": "/System/Library/Frameworks/Security.framework/Security",
+  "10": "/System/Library/Frameworks/UIKit.framework/UIKit",
+  "11": "/System/Library/Frameworks/UserNotifications.framework/UserNotifications"
+ },
  "imports": {
   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
    {

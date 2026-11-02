@@ -70,6 +70,65 @@ def selrefs(b):
     return sorted(out)
 
 
+def rpaths(b):
+    return [c.path for c in b.commands
+            if c.command == lief.MachO.LoadCommand.TYPE.RPATH]
+
+
+def ordinal_table(b):
+    """1-based library ordinal -> install name, in load-command order.
+
+    Two-level-namespace imports name their library by ordinal, and the ordinal
+    indexes the dylib load commands in the order they appear (1-based). LIEF
+    resolves most of them itself but leaves some unmapped, which showed up as
+    `<ordinal 48>` buckets that no evidence source could answer. Mapping them
+    here is what makes the Phase 5 "zero unresolved non-weak imports" check
+    mean anything.
+    """
+    DYLIB_CMDS = (
+        lief.MachO.LoadCommand.TYPE.LOAD_DYLIB,
+        lief.MachO.LoadCommand.TYPE.LOAD_WEAK_DYLIB,
+        lief.MachO.LoadCommand.TYPE.REEXPORT_DYLIB,
+        lief.MachO.LoadCommand.TYPE.LOAD_UPWARD_DYLIB,
+        lief.MachO.LoadCommand.TYPE.LAZY_LOAD_DYLIB,
+        lief.MachO.LoadCommand.TYPE.ID_DYLIB,
+    )
+    table, idx = {}, 0
+    for c in b.commands:
+        if c.command in DYLIB_CMDS:
+            if c.command == lief.MachO.LoadCommand.TYPE.ID_DYLIB:
+                # LC_ID_DYLIB is not part of the ordinal numbering
+                continue
+            idx += 1
+            table[idx] = c.name
+    return table
+
+
+# Mach-O special library ordinals (mach-o/loader.h).
+SELF_LIBRARY_ORDINAL = 0
+MAX_LIBRARY_ORDINAL = 0xfd
+DYNAMIC_LOOKUP_ORDINAL = 0xfe   # flat namespace: search every loaded image
+EXECUTABLE_ORDINAL = 0xff
+
+
+def resolve_ordinal(ordinal, table, self_name):
+    """Turn a raw library ordinal into something an evidence source can answer."""
+    try:
+        o = int(ordinal)
+    except (TypeError, ValueError):
+        return "<ordinal ?>"
+    # LIEF reports the special high ordinals as small negatives.
+    if o in (DYNAMIC_LOOKUP_ORDINAL, -2):
+        return "<flat-namespace>"
+    if o in (EXECUTABLE_ORDINAL, -1):
+        return "<executable>"
+    if o == SELF_LIBRARY_ORDINAL:
+        return self_name or "<self>"
+    if 1 <= o <= MAX_LIBRARY_ORDINAL and o in table:
+        return table[o]
+    return f"<ordinal {o}>"
+
+
 def main():
     app = app_dir()
     OUT.mkdir(parents=True, exist_ok=True)
@@ -79,12 +138,22 @@ def main():
         b = parse(p)[0]
         libs = [{"name": l.name, "weak": "WEAK" in str(l.command)} for l in b.libraries
                 if "ID_DYLIB" not in str(l.command)]
+        self_name = None
+        for l in b.libraries:
+            if "ID_DYLIB" in str(l.command):
+                self_name = l.name
+                break
+        table = ordinal_table(b)
+        rp = rpaths(b)
         imports = defaultdict(dict)
         for bi in b.bindings:
             if not bi.has_symbol:
                 continue
             name = bi.symbol.name
-            lib = bi.library.name if bi.has_library else f"<ordinal {getattr(bi, 'library_ordinal', '?')}>"
+            if bi.has_library:
+                lib = bi.library.name
+            else:
+                lib = resolve_ordinal(getattr(bi, "library_ordinal", None), table, self_name)
             weak = bool(getattr(bi, "weak_import", False))
             prev = imports[lib].get(name)
             imports[lib][name] = weak if prev is None else (prev and weak)
@@ -92,13 +161,18 @@ def main():
         for s in b.imported_symbols:
             if s.has_binding_info:
                 continue
-            lib = s.library.name if getattr(s, "library", None) else f"<ordinal {s.library_ordinal}>"
+            if getattr(s, "library", None):
+                lib = s.library.name
+            else:
+                lib = resolve_ordinal(getattr(s, "library_ordinal", None), table, self_name)
             imports[lib].setdefault(s.name, False)
         imp_out = {lib: [{"name": n, "weak": w} for n, w in sorted(d.items())] for lib, d in sorted(imports.items())}
         objc = {lib: sorted({n.split("$_", 1)[1] for n in d if n.startswith(("_OBJC_CLASS_$_", "_OBJC_METACLASS_$_"))})
                 for lib, d in imports.items()}
         objc = {k: v for k, v in sorted(objc.items()) if v}
-        rec = {"binary": r, "libraries": libs, "imports": imp_out, "objc_classes": objc,
+        rec = {"binary": r, "libraries": libs, "rpaths": rp,
+               "install_name": self_name, "ordinal_table": table,
+               "imports": imp_out, "objc_classes": objc,
                "selrefs": selrefs(b), "methtypes": sorted(set(cstrings(section(b, "__TEXT", "__objc_methtype"))))}
         (OUT / f"{safe_name(r)}.json").write_text(json.dumps(rec, indent=1))
         with open(OUT / f"{safe_name(r)}.imports.tsv", "w") as f:

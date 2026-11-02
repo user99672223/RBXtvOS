@@ -54,6 +54,25 @@
    "weak": false
   }
  ],
+ "rpaths": [
+  "/usr/lib/swift"
+ ],
+ "install_name": "@rpath/Reaper.framework/Reaper",
+ "ordinal_table": {
+  "1": "/usr/lib/libc++.1.dylib",
+  "2": "/System/Library/Frameworks/Foundation.framework/Foundation",
+  "3": "/usr/lib/libobjc.A.dylib",
+  "4": "/usr/lib/libSystem.B.dylib",
+  "5": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+  "6": "/System/Library/Frameworks/UIKit.framework/UIKit",
+  "7": "/usr/lib/swift/libswiftCore.dylib",
+  "8": "/usr/lib/swift/libswiftCoreFoundation.dylib",
+  "9": "/usr/lib/swift/libswiftDarwin.dylib",
+  "10": "/usr/lib/swift/libswiftDispatch.dylib",
+  "11": "/usr/lib/swift/libswiftObjectiveC.dylib",
+  "12": "/usr/lib/swift/libswiftXPC.dylib",
+  "13": "/usr/lib/swift/libswiftFoundation.dylib"
+ },
  "imports": {
   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
    {
@@ -421,6 +440,24 @@
     "weak": false
    }
   ],
+  "/usr/lib/swift/libswiftCoreFoundation.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftDarwin.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swift_Builtin_float",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftDispatch.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftDispatch",
+    "weak": false
+   }
+  ],
   "/usr/lib/swift/libswiftFoundation.dylib": [
    {
     "name": "_$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF",
@@ -437,9 +474,25 @@
    {
     "name": "_$sSS10FoundationE8EncodingVMa",
     "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftFoundation",
+    "weak": false
    }
   ],
-  "<ordinal 0>": [
+  "/usr/lib/swift/libswiftObjectiveC.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftXPC.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftXPC",
+    "weak": false
+   }
+  ],
+  "@rpath/Reaper.framework/Reaper": [
    {
     "name": "__ZdlPv",
     "weak": true
@@ -447,42 +500,6 @@
    {
     "name": "__Znwm",
     "weak": true
-   }
-  ],
-  "<ordinal 10>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftDispatch",
-    "weak": false
-   }
-  ],
-  "<ordinal 11>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
-    "weak": false
-   }
-  ],
-  "<ordinal 12>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftXPC",
-    "weak": false
-   }
-  ],
-  "<ordinal 13>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftFoundation",
-    "weak": false
-   }
-  ],
-  "<ordinal 8>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
-    "weak": false
-   }
-  ],
-  "<ordinal 9>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swift_Builtin_float",
-    "weak": false
    }
   ]
  },

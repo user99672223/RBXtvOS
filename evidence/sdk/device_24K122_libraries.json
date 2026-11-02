@@ -1,0 +1,2401 @@
+{
+ "/System/Library/Frameworks/AVFoundation.framework/AVFoundation": {
+  "present_in_cache": true,
+  "exports": 9953,
+  "reexports": [
+   "/System/Library/Frameworks/AVFAudio.framework/AVFAudio",
+   "/System/Library/Frameworks/AVRouting.framework/AVRouting",
+   "/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture",
+   "/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/AVFAudio.framework/AVFAudio",
+   "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+   "/System/Library/Frameworks/AVRouting.framework/AVRouting",
+   "/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture",
+   "/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Accelerate": {
+  "present_in_cache": true,
+  "exports": 778,
+  "reexports": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Accelerate",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/AdSupport.framework/AdSupport": {
+  "present_in_cache": true,
+  "exports": 2,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/AdSupport.framework/AdSupport"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/AppIntents.framework/AppIntents": {
+  "present_in_cache": true,
+  "exports": 16981,
+  "reexports": [
+   "/System/Library/Frameworks/RelevanceKit.framework/RelevanceKit"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/AppIntents.framework/AppIntents",
+   "/System/Library/Frameworks/RelevanceKit.framework/RelevanceKit"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox": {
+  "present_in_cache": true,
+  "exports": 2537,
+  "reexports": [
+   "/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+   "/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices": {
+  "present_in_cache": true,
+  "exports": 458,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks": {
+  "present_in_cache": true,
+  "exports": 93,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CFNetwork.framework/CFNetwork": {
+  "present_in_cache": true,
+  "exports": 2377,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CFNetwork.framework/CFNetwork"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CallKit.framework/CallKit": {
+  "present_in_cache": true,
+  "exports": 782,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CallKit.framework/CallKit"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/Combine.framework/Combine": {
+  "present_in_cache": true,
+  "exports": 2039,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Combine.framework/Combine"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/Contacts.framework/Contacts": {
+  "present_in_cache": true,
+  "exports": 3742,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Contacts.framework/Contacts"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreAudio.framework/CoreAudio": {
+  "present_in_cache": true,
+  "exports": 783,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreAudio.framework/CoreAudio"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreData.framework/CoreData": {
+  "present_in_cache": true,
+  "exports": 3560,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreData.framework/CoreData"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": {
+  "present_in_cache": true,
+  "exports": 3798,
+  "reexports": [
+   "/usr/lib/libobjc.A.dylib"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+   "/usr/lib/libobjc.A.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics": {
+  "present_in_cache": true,
+  "exports": 4635,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics": {
+  "present_in_cache": true,
+  "exports": 329,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreImage.framework/CoreImage": {
+  "present_in_cache": true,
+  "exports": 3679,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreImage.framework/CoreImage"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreLocation.framework/CoreLocation": {
+  "present_in_cache": true,
+  "exports": 1292,
+  "reexports": [
+   "/System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+   "/System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreML.framework/CoreML": {
+  "present_in_cache": true,
+  "exports": 3136,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreML.framework/CoreML"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreMedia.framework/CoreMedia": {
+  "present_in_cache": true,
+  "exports": 9288,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreMedia.framework/CoreMedia"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreMotion.framework/CoreMotion": {
+  "present_in_cache": true,
+  "exports": 2384,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreMotion.framework/CoreMotion"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreServices.framework/CoreServices": {
+  "present_in_cache": true,
+  "exports": 1702,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreServices.framework/CoreServices"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight": {
+  "present_in_cache": true,
+  "exports": 3111,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony": {
+  "present_in_cache": true,
+  "exports": 5167,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreText.framework/CoreText": {
+  "present_in_cache": true,
+  "exports": 1038,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreText.framework/CoreText"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CoreVideo.framework/CoreVideo": {
+  "present_in_cache": true,
+  "exports": 2121,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreVideo.framework/CoreVideo"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/CryptoKit.framework/CryptoKit": {
+  "present_in_cache": true,
+  "exports": 1899,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CryptoKit.framework/CryptoKit"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/DeclaredAgeRange.framework/DeclaredAgeRange": {
+  "present_in_cache": false
+ },
+ "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck": {
+  "present_in_cache": true,
+  "exports": 38,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/EventKit.framework/EventKit": {
+  "present_in_cache": true,
+  "exports": 1677,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/EventKit.framework/EventKit"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/EventKitUI.framework/EventKitUI": {
+  "present_in_cache": false
+ },
+ "/System/Library/Frameworks/FileProvider.framework/FileProvider": {
+  "present_in_cache": false
+ },
+ "/System/Library/Frameworks/Foundation.framework/Foundation": {
+  "present_in_cache": true,
+  "exports": 21894,
+  "reexports": [
+   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+   "/usr/lib/libobjc.A.dylib"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+   "/System/Library/Frameworks/Foundation.framework/Foundation",
+   "/usr/lib/libobjc.A.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/GLKit.framework/GLKit": {
+  "present_in_cache": true,
+  "exports": 457,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/GLKit.framework/GLKit"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/GameController.framework/GameController": {
+  "present_in_cache": true,
+  "exports": 3115,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/GameController.framework/GameController"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/IOSurface.framework/IOSurface": {
+  "present_in_cache": true,
+  "exports": 678,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/IOSurface.framework/IOSurface"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/Intents.framework/Intents": {
+  "present_in_cache": true,
+  "exports": 9409,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Intents.framework/Intents"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore": {
+  "present_in_cache": true,
+  "exports": 5850,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation": {
+  "present_in_cache": true,
+  "exports": 1864,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication": {
+  "present_in_cache": true,
+  "exports": 155,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit": {
+  "present_in_cache": false
+ },
+ "/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer": {
+  "present_in_cache": true,
+  "exports": 5419,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/MessageUI.framework/MessageUI": {
+  "present_in_cache": false
+ },
+ "/System/Library/Frameworks/Metal.framework/Metal": {
+  "present_in_cache": true,
+  "exports": 3418,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Metal.framework/Metal"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/MetalKit.framework/MetalKit": {
+  "present_in_cache": true,
+  "exports": 194,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/MetalKit.framework/MetalKit"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders": {
+  "present_in_cache": true,
+  "exports": 4207,
+  "reexports": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSBenchmarkLoop.framework/MPSBenchmarkLoop",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSFunctions.framework/MPSFunctions",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSHost.framework/MPSHost",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSBenchmarkLoop.framework/MPSBenchmarkLoop",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSFunctions.framework/MPSFunctions",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSHost.framework/MPSHost",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector",
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/MetricKit.framework/MetricKit": {
+  "present_in_cache": true,
+  "exports": 1726,
+  "reexports": [
+   "/System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/MetricKit.framework/MetricKit",
+   "/System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices": {
+  "present_in_cache": true,
+  "exports": 1704,
+  "reexports": [
+   "/System/Library/Frameworks/CoreServices.framework/CoreServices"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/CoreServices.framework/CoreServices",
+   "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/Network.framework/Network": {
+  "present_in_cache": true,
+  "exports": 20244,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Network.framework/Network"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/OSLog.framework/OSLog": {
+  "present_in_cache": true,
+  "exports": 126,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/OSLog.framework/OSLog"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/OpenGLES.framework/OpenGLES": {
+  "present_in_cache": true,
+  "exports": 493,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/OpenGLES.framework/OpenGLES"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/PDFKit.framework/PDFKit": {
+  "present_in_cache": false
+ },
+ "/System/Library/Frameworks/PassKit.framework/PassKit": {
+  "present_in_cache": true,
+  "exports": 41057,
+  "reexports": [
+   "/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore",
+   "/System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/PassKit.framework/PassKit",
+   "/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore",
+   "/System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/Photos.framework/Photos": {
+  "present_in_cache": true,
+  "exports": 5400,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Photos.framework/Photos"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/PhotosUI.framework/PhotosUI": {
+  "present_in_cache": true,
+  "exports": 29,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/PhotosUI.framework/PhotosUI"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/PushKit.framework/PushKit": {
+  "present_in_cache": true,
+  "exports": 41,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/PushKit.framework/PushKit"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/QuartzCore.framework/QuartzCore": {
+  "present_in_cache": true,
+  "exports": 1767,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/QuartzCore.framework/QuartzCore"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/QuickLook.framework/QuickLook": {
+  "present_in_cache": false
+ },
+ "/System/Library/Frameworks/SafariServices.framework/SafariServices": {
+  "present_in_cache": false
+ },
+ "/System/Library/Frameworks/Security.framework/Security": {
+  "present_in_cache": true,
+  "exports": 3913,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Security.framework/Security"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/Social.framework/Social": {
+  "present_in_cache": false
+ },
+ "/System/Library/Frameworks/StoreKit.framework/StoreKit": {
+  "present_in_cache": true,
+  "exports": 3002,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/StoreKit.framework/StoreKit"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/SwiftUI.framework/SwiftUI": {
+  "present_in_cache": true,
+  "exports": 69206,
+  "reexports": [
+   "/System/Library/Frameworks/CoreTransferable.framework/CoreTransferable",
+   "/System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport",
+   "/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore",
+   "/System/Library/Frameworks/UIKit.framework/UIKit"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/CoreTransferable.framework/CoreTransferable",
+   "/System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport",
+   "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+   "/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore",
+   "/System/Library/Frameworks/UIKit.framework/UIKit"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration": {
+  "present_in_cache": true,
+  "exports": 1062,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/UIKit.framework/UIKit": {
+  "present_in_cache": true,
+  "exports": 51191,
+  "reexports": [
+   "/System/Library/PrivateFrameworks/PrintKitUI.framework/PrintKitUI",
+   "/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet",
+   "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/UIKit.framework/UIKit",
+   "/System/Library/PrivateFrameworks/PrintKitUI.framework/PrintKitUI",
+   "/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet",
+   "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers": {
+  "present_in_cache": true,
+  "exports": 260,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/UserNotifications.framework/UserNotifications": {
+  "present_in_cache": true,
+  "exports": 425,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/UserNotifications.framework/UserNotifications"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox": {
+  "present_in_cache": true,
+  "exports": 1601,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/Vision.framework/Vision": {
+  "present_in_cache": true,
+  "exports": 14102,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Vision.framework/Vision"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/VisionKit.framework/VisionKit": {
+  "present_in_cache": false
+ },
+ "/System/Library/Frameworks/WebKit.framework/WebKit": {
+  "present_in_cache": true,
+  "exports": 4823,
+  "reexports": [
+   "/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/WebKit.framework/WebKit",
+   "/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/WidgetKit.framework/WidgetKit": {
+  "present_in_cache": false
+ },
+ "/System/Library/Frameworks/iAd.framework/iAd": {
+  "present_in_cache": false
+ },
+ "/usr/lib/libSystem.B.dylib": {
+  "present_in_cache": true,
+  "exports": 9116,
+  "reexports": [
+   "/usr/lib/system/libcache.dylib",
+   "/usr/lib/system/libcommonCrypto.dylib",
+   "/usr/lib/system/libcompiler_rt.dylib",
+   "/usr/lib/system/libcopyfile.dylib",
+   "/usr/lib/system/libcorecrypto.dylib",
+   "/usr/lib/system/libdispatch.dylib",
+   "/usr/lib/system/libdyld.dylib",
+   "/usr/lib/system/libmacho.dylib",
+   "/usr/lib/system/libremovefile.dylib",
+   "/usr/lib/system/libsystem_asl.dylib",
+   "/usr/lib/system/libsystem_blocks.dylib",
+   "/usr/lib/system/libsystem_c.dylib",
+   "/usr/lib/system/libsystem_collections.dylib",
+   "/usr/lib/system/libsystem_configuration.dylib",
+   "/usr/lib/system/libsystem_containermanager.dylib",
+   "/usr/lib/system/libsystem_coreservices.dylib",
+   "/usr/lib/system/libsystem_darwin.dylib",
+   "/usr/lib/system/libsystem_dnssd.dylib",
+   "/usr/lib/system/libsystem_eligibility.dylib",
+   "/usr/lib/system/libsystem_featureflags.dylib",
+   "/usr/lib/system/libsystem_info.dylib",
+   "/usr/lib/system/libsystem_kernel.dylib",
+   "/usr/lib/system/libsystem_m.dylib",
+   "/usr/lib/system/libsystem_malloc.dylib",
+   "/usr/lib/system/libsystem_networkextension.dylib",
+   "/usr/lib/system/libsystem_notify.dylib",
+   "/usr/lib/system/libsystem_platform.dylib",
+   "/usr/lib/system/libsystem_pthread.dylib",
+   "/usr/lib/system/libsystem_sandbox.dylib",
+   "/usr/lib/system/libsystem_sanitizers.dylib",
+   "/usr/lib/system/libsystem_symptoms.dylib",
+   "/usr/lib/system/libsystem_trace.dylib",
+   "/usr/lib/system/libsystem_trial.dylib",
+   "/usr/lib/system/libunwind.dylib",
+   "/usr/lib/system/libxpc.dylib"
+  ],
+  "install_names": [
+   "/usr/lib/libSystem.B.dylib",
+   "/usr/lib/system/libcache.dylib",
+   "/usr/lib/system/libcommonCrypto.dylib",
+   "/usr/lib/system/libcompiler_rt.dylib",
+   "/usr/lib/system/libcopyfile.dylib",
+   "/usr/lib/system/libcorecrypto.dylib",
+   "/usr/lib/system/libdispatch.dylib",
+   "/usr/lib/system/libdyld.dylib",
+   "/usr/lib/system/libmacho.dylib",
+   "/usr/lib/system/libremovefile.dylib",
+   "/usr/lib/system/libsystem_asl.dylib",
+   "/usr/lib/system/libsystem_blocks.dylib",
+   "/usr/lib/system/libsystem_c.dylib",
+   "/usr/lib/system/libsystem_collections.dylib",
+   "/usr/lib/system/libsystem_configuration.dylib",
+   "/usr/lib/system/libsystem_containermanager.dylib",
+   "/usr/lib/system/libsystem_coreservices.dylib",
+   "/usr/lib/system/libsystem_darwin.dylib",
+   "/usr/lib/system/libsystem_dnssd.dylib",
+   "/usr/lib/system/libsystem_eligibility.dylib",
+   "/usr/lib/system/libsystem_featureflags.dylib",
+   "/usr/lib/system/libsystem_info.dylib",
+   "/usr/lib/system/libsystem_kernel.dylib",
+   "/usr/lib/system/libsystem_m.dylib",
+   "/usr/lib/system/libsystem_malloc.dylib",
+   "/usr/lib/system/libsystem_networkextension.dylib",
+   "/usr/lib/system/libsystem_notify.dylib",
+   "/usr/lib/system/libsystem_platform.dylib",
+   "/usr/lib/system/libsystem_pthread.dylib",
+   "/usr/lib/system/libsystem_sandbox.dylib",
+   "/usr/lib/system/libsystem_sanitizers.dylib",
+   "/usr/lib/system/libsystem_symptoms.dylib",
+   "/usr/lib/system/libsystem_trace.dylib",
+   "/usr/lib/system/libsystem_trial.dylib",
+   "/usr/lib/system/libunwind.dylib",
+   "/usr/lib/system/libxpc.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/libc++.1.dylib": {
+  "present_in_cache": true,
+  "exports": 2310,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/libc++.1.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/libcompression.dylib": {
+  "present_in_cache": true,
+  "exports": 54,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/libcompression.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/libhvf.dylib": {
+  "present_in_cache": true,
+  "exports": 545,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/libhvf.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/libobjc.A.dylib": {
+  "present_in_cache": true,
+  "exports": 415,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/libobjc.A.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/libresolv.9.dylib": {
+  "present_in_cache": true,
+  "exports": 155,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/libresolv.9.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/libsqlite3.dylib": {
+  "present_in_cache": true,
+  "exports": 388,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/libsqlite3.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/libxml2.2.dylib": {
+  "present_in_cache": true,
+  "exports": 1683,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/libxml2.2.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/libz.1.dylib": {
+  "present_in_cache": true,
+  "exports": 82,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/libz.1.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftAVFoundation.dylib": {
+  "present_in_cache": true,
+  "exports": 1927,
+  "reexports": [
+   "/System/Library/Frameworks/AVFAudio.framework/AVFAudio"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/AVFAudio.framework/AVFAudio",
+   "/usr/lib/swift/libswiftAVFoundation.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftAccelerate.dylib": {
+  "present_in_cache": true,
+  "exports": 4150,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftAccelerate.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftCallKit.dylib": {
+  "present_in_cache": false
+ },
+ "/usr/lib/swift/libswiftCompression.dylib": {
+  "present_in_cache": true,
+  "exports": 77,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftCompression.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftCore.dylib": {
+  "present_in_cache": true,
+  "exports": 15284,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftCore.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftCoreAudio.dylib": {
+  "present_in_cache": true,
+  "exports": 137,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftCoreAudio.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftCoreFoundation.dylib": {
+  "present_in_cache": true,
+  "exports": 153,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftCoreFoundation.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftCoreGraphics.dylib": {
+  "present_in_cache": true,
+  "exports": 4635,
+  "reexports": [
+   "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+   "/usr/lib/swift/libswiftCoreGraphics.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftCoreImage.dylib": {
+  "present_in_cache": true,
+  "exports": 1,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftCoreImage.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftCoreLocation.dylib": {
+  "present_in_cache": true,
+  "exports": 452,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftCoreLocation.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftCoreMIDI.dylib": {
+  "present_in_cache": false
+ },
+ "/usr/lib/swift/libswiftCoreMedia.dylib": {
+  "present_in_cache": true,
+  "exports": 9288,
+  "reexports": [
+   "/System/Library/Frameworks/CoreMedia.framework/CoreMedia"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+   "/usr/lib/swift/libswiftCoreMedia.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftDarwin.dylib": {
+  "present_in_cache": true,
+  "exports": 285,
+  "reexports": [
+   "/usr/lib/swift/libswift_Builtin_float.dylib",
+   "/usr/lib/swift/libswift_DarwinFoundation1.dylib",
+   "/usr/lib/swift/libswift_DarwinFoundation2.dylib",
+   "/usr/lib/swift/libswift_DarwinFoundation3.dylib"
+  ],
+  "install_names": [
+   "/usr/lib/swift/libswiftDarwin.dylib",
+   "/usr/lib/swift/libswift_Builtin_float.dylib",
+   "/usr/lib/swift/libswift_DarwinFoundation1.dylib",
+   "/usr/lib/swift/libswift_DarwinFoundation2.dylib",
+   "/usr/lib/swift/libswift_DarwinFoundation3.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftDataDetection.dylib": {
+  "present_in_cache": false
+ },
+ "/usr/lib/swift/libswiftDispatch.dylib": {
+  "present_in_cache": true,
+  "exports": 746,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftDispatch.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftFileProvider.dylib": {
+  "present_in_cache": false
+ },
+ "/usr/lib/swift/libswiftFoundation.dylib": {
+  "present_in_cache": true,
+  "exports": 18098,
+  "reexports": [
+   "/System/Library/Frameworks/Foundation.framework/Foundation"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/Foundation.framework/Foundation",
+   "/usr/lib/swift/libswiftFoundation.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftIntents.dylib": {
+  "present_in_cache": true,
+  "exports": 162,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftIntents.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftMetal.dylib": {
+  "present_in_cache": true,
+  "exports": 172,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftMetal.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftMetalKit.dylib": {
+  "present_in_cache": true,
+  "exports": 4,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftMetalKit.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftModelIO.dylib": {
+  "present_in_cache": true,
+  "exports": 77,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftModelIO.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftOSLog.dylib": {
+  "present_in_cache": true,
+  "exports": 13,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftOSLog.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftObjectiveC.dylib": {
+  "present_in_cache": true,
+  "exports": 85,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftObjectiveC.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftObservation.dylib": {
+  "present_in_cache": true,
+  "exports": 106,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftObservation.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftPassKit.dylib": {
+  "present_in_cache": false
+ },
+ "/usr/lib/swift/libswiftPhotosUI.dylib": {
+  "present_in_cache": false
+ },
+ "/usr/lib/swift/libswiftQuartzCore.dylib": {
+  "present_in_cache": true,
+  "exports": 15,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftQuartzCore.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftSpatial.dylib": {
+  "present_in_cache": true,
+  "exports": 2028,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftSpatial.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftUIKit.dylib": {
+  "present_in_cache": true,
+  "exports": 0,
+  "reexports": [
+   "/System/Library/Frameworks/UIKit.framework/UIKit"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/UIKit.framework/UIKit",
+   "/usr/lib/swift/libswiftUIKit.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib": {
+  "present_in_cache": true,
+  "exports": 610,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftVision.dylib": {
+  "present_in_cache": true,
+  "exports": 14102,
+  "reexports": [
+   "/System/Library/Frameworks/Vision.framework/Vision"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/Vision.framework/Vision",
+   "/usr/lib/swift/libswiftVision.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftXPC.dylib": {
+  "present_in_cache": true,
+  "exports": 639,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftXPC.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswift_Concurrency.dylib": {
+  "present_in_cache": true,
+  "exports": 1370,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswift_Concurrency.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftos.dylib": {
+  "present_in_cache": true,
+  "exports": 752,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftos.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftsimd.dylib": {
+  "present_in_cache": true,
+  "exports": 1610,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswiftsimd.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/System/Library/Frameworks/AVFAudio.framework/AVFAudio": {
+  "present_in_cache": true,
+  "exports": 912,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/AVFAudio.framework/AVFAudio"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/AVRouting.framework/AVRouting": {
+  "present_in_cache": true,
+  "exports": 798,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/AVRouting.framework/AVRouting"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture": {
+  "present_in_cache": true,
+  "exports": 3183,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore": {
+  "present_in_cache": true,
+  "exports": 5060,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage": {
+  "present_in_cache": true,
+  "exports": 778,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib": {
+  "present_in_cache": true,
+  "exports": 8462,
+  "reexports": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib",
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/RelevanceKit.framework/RelevanceKit": {
+  "present_in_cache": true,
+  "exports": 335,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/RelevanceKit.framework/RelevanceKit"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore": {
+  "present_in_cache": true,
+  "exports": 1959,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials": {
+  "present_in_cache": true,
+  "exports": 107,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSBenchmarkLoop.framework/MPSBenchmarkLoop": {
+  "present_in_cache": true,
+  "exports": 181,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSBenchmarkLoop.framework/MPSBenchmarkLoop"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore": {
+  "present_in_cache": true,
+  "exports": 687,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSFunctions.framework/MPSFunctions": {
+  "present_in_cache": true,
+  "exports": 20,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSFunctions.framework/MPSFunctions"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSHost.framework/MPSHost": {
+  "present_in_cache": true,
+  "exports": 79,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSHost.framework/MPSHost"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage": {
+  "present_in_cache": true,
+  "exports": 386,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix": {
+  "present_in_cache": true,
+  "exports": 132,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray": {
+  "present_in_cache": true,
+  "exports": 1034,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork": {
+  "present_in_cache": true,
+  "exports": 1505,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector": {
+  "present_in_cache": true,
+  "exports": 179,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics": {
+  "present_in_cache": true,
+  "exports": 3,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore": {
+  "present_in_cache": true,
+  "exports": 25441,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI": {
+  "present_in_cache": true,
+  "exports": 15616,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/CoreTransferable.framework/CoreTransferable": {
+  "present_in_cache": true,
+  "exports": 278,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/CoreTransferable.framework/CoreTransferable"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport": {
+  "present_in_cache": true,
+  "exports": 468,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore": {
+  "present_in_cache": true,
+  "exports": 47330,
+  "reexports": [
+   "/System/Library/Frameworks/CoreTransferable.framework/CoreTransferable",
+   "/System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/CoreTransferable.framework/CoreTransferable",
+   "/System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport",
+   "/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/PrintKitUI.framework/PrintKitUI": {
+  "present_in_cache": true,
+  "exports": 134,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/PrintKitUI.framework/PrintKitUI"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet": {
+  "present_in_cache": true,
+  "exports": 1642,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore": {
+  "present_in_cache": true,
+  "exports": 51424,
+  "reexports": [
+   "/System/Library/PrivateFrameworks/CollectionViewCore.framework/CollectionViewCore",
+   "/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation",
+   "/System/Library/SubFrameworks/UIUtilities.framework/UIUtilities"
+  ],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/CollectionViewCore.framework/CollectionViewCore",
+   "/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation",
+   "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore",
+   "/System/Library/SubFrameworks/UIUtilities.framework/UIUtilities"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy": {
+  "present_in_cache": true,
+  "exports": 940,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libcache.dylib": {
+  "present_in_cache": true,
+  "exports": 34,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libcache.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libcommonCrypto.dylib": {
+  "present_in_cache": true,
+  "exports": 247,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libcommonCrypto.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libcompiler_rt.dylib": {
+  "present_in_cache": true,
+  "exports": 72,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libcompiler_rt.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libcopyfile.dylib": {
+  "present_in_cache": true,
+  "exports": 11,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libcopyfile.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libcorecrypto.dylib": {
+  "present_in_cache": true,
+  "exports": 1140,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libcorecrypto.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libdispatch.dylib": {
+  "present_in_cache": true,
+  "exports": 420,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libdispatch.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libdyld.dylib": {
+  "present_in_cache": true,
+  "exports": 196,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libdyld.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libmacho.dylib": {
+  "present_in_cache": true,
+  "exports": 90,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libmacho.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libremovefile.dylib": {
+  "present_in_cache": true,
+  "exports": 14,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libremovefile.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_asl.dylib": {
+  "present_in_cache": true,
+  "exports": 216,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_asl.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_blocks.dylib": {
+  "present_in_cache": true,
+  "exports": 37,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_blocks.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_c.dylib": {
+  "present_in_cache": true,
+  "exports": 1303,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_c.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_collections.dylib": {
+  "present_in_cache": true,
+  "exports": 65,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_collections.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_configuration.dylib": {
+  "present_in_cache": true,
+  "exports": 36,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_configuration.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_containermanager.dylib": {
+  "present_in_cache": true,
+  "exports": 476,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_containermanager.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_coreservices.dylib": {
+  "present_in_cache": true,
+  "exports": 17,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_coreservices.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_darwin.dylib": {
+  "present_in_cache": true,
+  "exports": 74,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_darwin.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_dnssd.dylib": {
+  "present_in_cache": true,
+  "exports": 61,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_dnssd.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_eligibility.dylib": {
+  "present_in_cache": true,
+  "exports": 24,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_eligibility.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_featureflags.dylib": {
+  "present_in_cache": true,
+  "exports": 2,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_featureflags.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_info.dylib": {
+  "present_in_cache": true,
+  "exports": 428,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_info.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_kernel.dylib": {
+  "present_in_cache": true,
+  "exports": 1606,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_kernel.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_m.dylib": {
+  "present_in_cache": true,
+  "exports": 444,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_m.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_malloc.dylib": {
+  "present_in_cache": true,
+  "exports": 118,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_malloc.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_networkextension.dylib": {
+  "present_in_cache": true,
+  "exports": 188,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_networkextension.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_notify.dylib": {
+  "present_in_cache": true,
+  "exports": 23,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_notify.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_platform.dylib": {
+  "present_in_cache": true,
+  "exports": 182,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_platform.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_pthread.dylib": {
+  "present_in_cache": true,
+  "exports": 204,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_pthread.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_sandbox.dylib": {
+  "present_in_cache": true,
+  "exports": 163,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_sandbox.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_sanitizers.dylib": {
+  "present_in_cache": true,
+  "exports": 64,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_sanitizers.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_symptoms.dylib": {
+  "present_in_cache": true,
+  "exports": 10,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_symptoms.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_trace.dylib": {
+  "present_in_cache": true,
+  "exports": 228,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_trace.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libsystem_trial.dylib": {
+  "present_in_cache": true,
+  "exports": 5,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libsystem_trial.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libunwind.dylib": {
+  "present_in_cache": true,
+  "exports": 44,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libunwind.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/system/libxpc.dylib": {
+  "present_in_cache": true,
+  "exports": 871,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/system/libxpc.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/swift/libswift_Builtin_float.dylib": {
+  "present_in_cache": true,
+  "exports": 16,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswift_Builtin_float.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/swift/libswift_DarwinFoundation1.dylib": {
+  "present_in_cache": true,
+  "exports": 94,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswift_DarwinFoundation1.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/swift/libswift_DarwinFoundation2.dylib": {
+  "present_in_cache": true,
+  "exports": 15,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswift_DarwinFoundation2.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/usr/lib/swift/libswift_DarwinFoundation3.dylib": {
+  "present_in_cache": true,
+  "exports": 6,
+  "reexports": [],
+  "install_names": [
+   "/usr/lib/swift/libswift_DarwinFoundation3.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib": {
+  "present_in_cache": true,
+  "exports": 987,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib": {
+  "present_in_cache": true,
+  "exports": 392,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib": {
+  "present_in_cache": true,
+  "exports": 5595,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib": {
+  "present_in_cache": true,
+  "exports": 44,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib": {
+  "present_in_cache": true,
+  "exports": 1,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib": {
+  "present_in_cache": true,
+  "exports": 462,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib": {
+  "present_in_cache": true,
+  "exports": 131,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib": {
+  "present_in_cache": true,
+  "exports": 469,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib": {
+  "present_in_cache": true,
+  "exports": 381,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/CollectionViewCore.framework/CollectionViewCore": {
+  "present_in_cache": true,
+  "exports": 158,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/CollectionViewCore.framework/CollectionViewCore"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation": {
+  "present_in_cache": true,
+  "exports": 1856,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ },
+ "/System/Library/SubFrameworks/UIUtilities.framework/UIUtilities": {
+  "present_in_cache": true,
+  "exports": 18,
+  "reexports": [],
+  "install_names": [
+   "/System/Library/SubFrameworks/UIUtilities.framework/UIUtilities"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": false
+ }
+}

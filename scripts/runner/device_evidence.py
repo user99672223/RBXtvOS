@@ -22,6 +22,7 @@ usage: device_evidence.py <dyld_shared_cache> <label>
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -101,6 +102,90 @@ def tbd_for(cache: Path, install_name: str, workdir: Path):
         return None, f"{type(e).__name__}: {e}"
 
 
+def run_device_queries(cache: Path, label: str):
+    """Run arbitrary `ipsw` queries against the cache while the runner has it.
+
+    This is the `evidence-query` mechanism CLAUDE.md asks for, folded into the
+    job that already holds the extracted cache: re-extracting it for each
+    question would cost another multi-GB download and decompression.
+
+    Driven by evidence/queries/device_queries.json:
+
+      {"queries": [
+         {"id": "uitouch-ivars", "why": "...",
+          "args": ["dyld", "macho", "<CACHE>",
+                   "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore",
+                   "--objc"],
+          "grep": "UITouch"}
+      ]}
+
+    "<CACHE>" is replaced with the cache path. `grep` optionally narrows huge
+    outputs (a full UIKitCore class dump is enormous) to the lines that matter
+    plus context. Output is derived text about Apple's own system libraries,
+    which CLAUDE.md permits; the cache itself never leaves the runner.
+    """
+    spec_path = ROOT / "evidence" / "queries" / "device_queries.json"
+    if not spec_path.is_file():
+        print("no device_queries.json; skipping targeted cache queries")
+        return
+    spec = json.loads(spec_path.read_text())
+    out_dir = EVIDENCE / "device_queries"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    index = {}
+    for q in spec.get("queries", []):
+        qid = q.get("id")
+        args = q.get("args")
+        if not qid or not args:
+            continue
+        argv = [IPSW] + [str(cache) if a == "<CACHE>" else a for a in args]
+        timeout = int(q.get("timeout", 1800))
+        try:
+            r = subprocess.run(argv, capture_output=True, text=True, timeout=timeout)
+            text = r.stdout or ""
+            err = (r.stderr or "").strip()
+            rc = r.returncode
+        except subprocess.TimeoutExpired:
+            text, err, rc = "", f"timed out after {timeout}s", -1
+
+        pattern = q.get("grep")
+        if pattern and text:
+            ctx = int(q.get("grep_context", 4))
+            keep, lines = [], text.splitlines()
+            rx = re.compile(pattern)
+            hit_lines = [i for i, l in enumerate(lines) if rx.search(l)]
+            shown = set()
+            for i in hit_lines:
+                for j in range(max(0, i - ctx), min(len(lines), i + ctx + 1)):
+                    shown.add(j)
+            for j in sorted(shown):
+                keep.append(lines[j])
+            text = "\n".join(keep)
+            matched = len(hit_lines)
+        else:
+            matched = None
+
+        limit = int(q.get("max_bytes", 400_000))
+        truncated = len(text) > limit
+        if truncated:
+            text = text[:limit] + "\n...(truncated)\n"
+
+        header = (f"# device query {qid}\n"
+                  f"# why: {q.get('why','')}\n"
+                  f"# argv: {' '.join(argv)}\n"
+                  f"# label: {label}\n"
+                  f"# returncode: {rc}\n")
+        if pattern:
+            header += f"# grep: {pattern}  (matching lines: {matched})\n"
+        if err:
+            header += "# stderr: " + err.replace("\n", " ")[:600] + "\n"
+        (out_dir / f"{qid}.txt").write_text(header + "\n" + text)
+        index[qid] = {"why": q.get("why", ""), "argv": argv[1:], "returncode": rc,
+                      "grep": pattern, "matching_lines": matched,
+                      "truncated": truncated, "bytes": len(text)}
+        print(f"  query {qid}: rc={rc} bytes={len(text)} matches={matched}")
+    (out_dir / "_index.json").write_text(json.dumps(index, indent=1))
+
+
 def main():
     if len(sys.argv) < 3:
         print(__doc__)
@@ -158,6 +243,8 @@ def main():
     shutil.rmtree(workdir, ignore_errors=True)
 
     (sdk_dir / f"device_{label}_libraries.json").write_text(json.dumps(results, indent=1))
+
+    run_device_queries(cache, label)
     present = sum(1 for v in results.values() if v.get("present_in_cache"))
     absent = [k for k, v in results.items() if not v.get("present_in_cache")]
     print(f"resolved {len(results)} libraries ({present} present, {len(absent)} absent)")

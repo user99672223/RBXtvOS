@@ -282,6 +282,84 @@
    "weak": false
   }
  ],
+ "rpaths": [
+  "/usr/lib/swift",
+  "@executable_path/Frameworks",
+  "@loader_path/Frameworks"
+ ],
+ "install_name": "@rpath/Persona2.framework/Persona2",
+ "ordinal_table": {
+  "1": "/System/Library/Frameworks/VisionKit.framework/VisionKit",
+  "2": "/System/Library/Frameworks/Foundation.framework/Foundation",
+  "3": "/usr/lib/libobjc.A.dylib",
+  "4": "/usr/lib/libSystem.B.dylib",
+  "5": "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+  "6": "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+  "7": "/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices",
+  "8": "/System/Library/Frameworks/Combine.framework/Combine",
+  "9": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+  "10": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+  "11": "/System/Library/Frameworks/CoreImage.framework/CoreImage",
+  "12": "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+  "13": "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+  "14": "/System/Library/Frameworks/CoreMotion.framework/CoreMotion",
+  "15": "/System/Library/Frameworks/CoreServices.framework/CoreServices",
+  "16": "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+  "17": "/System/Library/Frameworks/CoreText.framework/CoreText",
+  "18": "/System/Library/Frameworks/CoreVideo.framework/CoreVideo",
+  "19": "/System/Library/Frameworks/CryptoKit.framework/CryptoKit",
+  "20": "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck",
+  "21": "/System/Library/Frameworks/Metal.framework/Metal",
+  "22": "/System/Library/Frameworks/MetalKit.framework/MetalKit",
+  "23": "/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders",
+  "24": "/System/Library/Frameworks/OSLog.framework/OSLog",
+  "25": "/System/Library/Frameworks/PDFKit.framework/PDFKit",
+  "26": "/System/Library/Frameworks/PassKit.framework/PassKit",
+  "27": "/System/Library/Frameworks/PhotosUI.framework/PhotosUI",
+  "28": "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+  "29": "/System/Library/Frameworks/SafariServices.framework/SafariServices",
+  "30": "/System/Library/Frameworks/Security.framework/Security",
+  "31": "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+  "32": "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+  "33": "/System/Library/Frameworks/UIKit.framework/UIKit",
+  "34": "/System/Library/Frameworks/Vision.framework/Vision",
+  "35": "/usr/lib/libc++.1.dylib",
+  "36": "/usr/lib/libcompression.dylib",
+  "37": "/usr/lib/libxml2.2.dylib",
+  "38": "/usr/lib/libz.1.dylib",
+  "39": "/usr/lib/swift/libswiftAVFoundation.dylib",
+  "40": "/usr/lib/swift/libswiftCompression.dylib",
+  "41": "/usr/lib/swift/libswiftCore.dylib",
+  "42": "/usr/lib/swift/libswiftCoreAudio.dylib",
+  "43": "/usr/lib/swift/libswiftCoreFoundation.dylib",
+  "44": "/usr/lib/swift/libswiftCoreImage.dylib",
+  "45": "/usr/lib/swift/libswiftCoreLocation.dylib",
+  "46": "/usr/lib/swift/libswiftCoreMIDI.dylib",
+  "47": "/usr/lib/swift/libswiftCoreMedia.dylib",
+  "48": "/usr/lib/swift/libswiftDarwin.dylib",
+  "49": "/usr/lib/swift/libswiftDataDetection.dylib",
+  "50": "/usr/lib/swift/libswiftDispatch.dylib",
+  "51": "/usr/lib/swift/libswiftFileProvider.dylib",
+  "52": "/usr/lib/swift/libswiftMetal.dylib",
+  "53": "/usr/lib/swift/libswiftMetalKit.dylib",
+  "54": "/usr/lib/swift/libswiftModelIO.dylib",
+  "55": "/usr/lib/swift/libswiftOSLog.dylib",
+  "56": "/usr/lib/swift/libswiftObjectiveC.dylib",
+  "57": "/usr/lib/swift/libswiftObservation.dylib",
+  "58": "/usr/lib/swift/libswiftPassKit.dylib",
+  "59": "/usr/lib/swift/libswiftQuartzCore.dylib",
+  "60": "/usr/lib/swift/libswiftSpatial.dylib",
+  "61": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+  "62": "/usr/lib/swift/libswiftXPC.dylib",
+  "63": "/usr/lib/swift/libswiftos.dylib",
+  "64": "/usr/lib/swift/libswiftsimd.dylib",
+  "65": "@rpath/libswift_Concurrency.dylib",
+  "66": "/usr/lib/swift/libswiftFoundation.dylib",
+  "67": "/usr/lib/swift/libswiftUIKit.dylib",
+  "68": "/usr/lib/swift/libswiftCoreGraphics.dylib",
+  "69": "/usr/lib/swift/libswiftPhotosUI.dylib",
+  "70": "/usr/lib/swift/libswiftVision.dylib"
+ },
  "imports": {
   "/System/Library/Frameworks/AVFoundation.framework/AVFoundation": [
    {
@@ -3559,6 +3637,16 @@
    {
     "name": "_$sSo20AVCapturePhotoOutputC12AVFoundationE19supportedFlashModesSaySo0aF4ModeVGvg",
     "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftAVFoundation",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftCompression.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCompression",
+    "weak": false
    }
   ],
   "/usr/lib/swift/libswiftCore.dylib": [
@@ -6211,6 +6299,12 @@
     "weak": true
    }
   ],
+  "/usr/lib/swift/libswiftCoreAudio.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreAudio",
+    "weak": false
+   }
+  ],
   "/usr/lib/swift/libswiftCoreFoundation.dylib": [
    {
     "name": "_$s14CoreFoundation9_CFObjectMp",
@@ -6230,6 +6324,10 @@
    },
    {
     "name": "_$s14CoreFoundation9_CFObjectPSHTb",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
     "weak": false
    }
   ],
@@ -6323,6 +6421,24 @@
     "weak": false
    }
   ],
+  "/usr/lib/swift/libswiftCoreImage.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreImage",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftCoreLocation.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreLocation",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftCoreMIDI.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreMIDI",
+    "weak": false
+   }
+  ],
   "/usr/lib/swift/libswiftCoreMedia.dylib": [
    {
     "name": "_$sSo6CMTimea9CoreMediaE7isValidSbvg",
@@ -6330,6 +6446,10 @@
    },
    {
     "name": "_$sSo6CMTimea9CoreMediaE7secondsSdvg",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftCoreMedia",
     "weak": false
    }
   ],
@@ -6352,6 +6472,48 @@
    },
    {
     "name": "_$s6Darwin7S_IFREGs6UInt16Vvg",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftDarwin",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swift_Builtin_float",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swift_errno",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swift_math",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swift_signal",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swift_stdio",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swift_time",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftsys_time",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftunistd",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftDataDetection.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftDataDetection",
     "weak": false
    }
   ],
@@ -6498,6 +6660,16 @@
    },
    {
     "name": "_$sSo17OS_dispatch_queueC8DispatchE6global3qosAbC0D3QoSV0G6SClassO_tFZ",
+    "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftDispatch",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftFileProvider.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftFileProvider",
     "weak": false
    }
   ],
@@ -7693,12 +7865,38 @@
    {
     "name": "_$ss5ErrorP10FoundationE20localizedDescriptionSSvg",
     "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftFoundation",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftMetal.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftMetal",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftMetalKit.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftMetalKit",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftModelIO.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftModelIO",
+    "weak": false
    }
   ],
   "/usr/lib/swift/libswiftOSLog.dylib": [
    {
     "name": "_$sSo10OSLogStoreC0A0E10getEntries4with2at8matchings11AnySequenceVySo0A5EntryCGSo0A17EnumeratorOptionsV_So0A8PositionCSgSo11NSPredicateCSgtKF",
     "weak": true
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftOSLog",
+    "weak": false
    }
   ],
   "/usr/lib/swift/libswiftObjectiveC.dylib": [
@@ -7725,12 +7923,22 @@
    {
     "name": "_$sSo8NSObjectCSH10ObjectiveCMc",
     "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
+    "weak": false
    }
   ],
   "/usr/lib/swift/libswiftObservation.dylib": [
    {
     "name": "_$s11Observation10ObservableMp",
     "weak": true
+   }
+  ],
+  "/usr/lib/swift/libswiftPassKit.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftPassKit",
+    "weak": false
    }
   ],
   "/usr/lib/swift/libswiftPhotosUI.dylib": [
@@ -7791,6 +7999,16 @@
    {
     "name": "_$sSo13CATransform3DV10QuartzCoreE19_bridgeToObjectiveCSo7NSValueCyF",
     "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftQuartzCore",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftSpatial.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftSpatial",
+    "weak": false
    }
   ],
   "/usr/lib/swift/libswiftUIKit.dylib": [
@@ -7845,6 +8063,10 @@
    {
     "name": "_$sSo8UIButtonC5UIKitE13configurationAbCE13ConfigurationVSgvs",
     "weak": true
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftUIKit",
+    "weak": false
    }
   ],
   "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib": [
@@ -7871,11 +8093,21 @@
    {
     "name": "_$s22UniformTypeIdentifiers6UTTypeVMn",
     "weak": true
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers",
+    "weak": false
    }
   ],
   "/usr/lib/swift/libswiftVision.dylib": [
    {
     "name": "_$sSo22VNFaceLandmarkRegion2DC6VisionE13pointsInImage9imageSizeSaySo7CGPointVGSo6CGSizeV_tF",
+    "weak": false
+   }
+  ],
+  "/usr/lib/swift/libswiftXPC.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftXPC",
     "weak": false
    }
   ],
@@ -7907,9 +8139,19 @@
    {
     "name": "_$sSo9OS_os_logC0B0E9subsystem8categoryABSS_SStcfC",
     "weak": false
+   },
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftos",
+    "weak": false
    }
   ],
-  "<ordinal 0>": [
+  "/usr/lib/swift/libswiftsimd.dylib": [
+   {
+    "name": "__swift_FORCE_LOAD_$_swiftsimd",
+    "weak": false
+   }
+  ],
+  "@rpath/Persona2.framework/Persona2": [
    {
     "name": "__ZdlPv",
     "weak": true
@@ -7917,194 +8159,6 @@
    {
     "name": "__Znwm",
     "weak": true
-   }
-  ],
-  "<ordinal 39>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftAVFoundation",
-    "weak": false
-   }
-  ],
-  "<ordinal 40>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftCompression",
-    "weak": false
-   }
-  ],
-  "<ordinal 42>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftCoreAudio",
-    "weak": false
-   }
-  ],
-  "<ordinal 43>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
-    "weak": false
-   }
-  ],
-  "<ordinal 44>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftCoreImage",
-    "weak": false
-   }
-  ],
-  "<ordinal 45>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftCoreLocation",
-    "weak": false
-   }
-  ],
-  "<ordinal 46>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftCoreMIDI",
-    "weak": false
-   }
-  ],
-  "<ordinal 47>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftCoreMedia",
-    "weak": false
-   }
-  ],
-  "<ordinal 48>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftDarwin",
-    "weak": false
-   },
-   {
-    "name": "__swift_FORCE_LOAD_$_swift_Builtin_float",
-    "weak": false
-   },
-   {
-    "name": "__swift_FORCE_LOAD_$_swift_errno",
-    "weak": false
-   },
-   {
-    "name": "__swift_FORCE_LOAD_$_swift_math",
-    "weak": false
-   },
-   {
-    "name": "__swift_FORCE_LOAD_$_swift_signal",
-    "weak": false
-   },
-   {
-    "name": "__swift_FORCE_LOAD_$_swift_stdio",
-    "weak": false
-   },
-   {
-    "name": "__swift_FORCE_LOAD_$_swift_time",
-    "weak": false
-   },
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftsys_time",
-    "weak": false
-   },
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftunistd",
-    "weak": false
-   }
-  ],
-  "<ordinal 49>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftDataDetection",
-    "weak": false
-   }
-  ],
-  "<ordinal 50>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftDispatch",
-    "weak": false
-   }
-  ],
-  "<ordinal 51>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftFileProvider",
-    "weak": false
-   }
-  ],
-  "<ordinal 52>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftMetal",
-    "weak": false
-   }
-  ],
-  "<ordinal 53>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftMetalKit",
-    "weak": false
-   }
-  ],
-  "<ordinal 54>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftModelIO",
-    "weak": false
-   }
-  ],
-  "<ordinal 55>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftOSLog",
-    "weak": false
-   }
-  ],
-  "<ordinal 56>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
-    "weak": false
-   }
-  ],
-  "<ordinal 58>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftPassKit",
-    "weak": false
-   }
-  ],
-  "<ordinal 59>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftQuartzCore",
-    "weak": false
-   }
-  ],
-  "<ordinal 60>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftSpatial",
-    "weak": false
-   }
-  ],
-  "<ordinal 61>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers",
-    "weak": false
-   }
-  ],
-  "<ordinal 62>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftXPC",
-    "weak": false
-   }
-  ],
-  "<ordinal 63>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftos",
-    "weak": false
-   }
-  ],
-  "<ordinal 64>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftsimd",
-    "weak": false
-   }
-  ],
-  "<ordinal 66>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftFoundation",
-    "weak": false
-   }
-  ],
-  "<ordinal 67>": [
-   {
-    "name": "__swift_FORCE_LOAD_$_swiftUIKit",
-    "weak": false
    }
   ],
   "@rpath/libswift_Concurrency.dylib": [

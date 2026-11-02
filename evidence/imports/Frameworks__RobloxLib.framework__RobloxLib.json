@@ -134,6 +134,43 @@
    "weak": false
   }
  ],
+ "rpaths": [],
+ "install_name": "@rpath/RobloxLib.framework/RobloxLib",
+ "ordinal_table": {
+  "1": "/usr/lib/libhvf.dylib",
+  "2": "/System/Library/Frameworks/Contacts.framework/Contacts",
+  "3": "/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers",
+  "4": "/System/Library/Frameworks/WebKit.framework/WebKit",
+  "5": "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics",
+  "6": "/System/Library/Frameworks/CoreMotion.framework/CoreMotion",
+  "7": "/System/Library/Frameworks/GameController.framework/GameController",
+  "8": "/System/Library/Frameworks/CoreServices.framework/CoreServices",
+  "9": "/System/Library/Frameworks/CallKit.framework/CallKit",
+  "10": "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck",
+  "11": "/System/Library/Frameworks/CoreText.framework/CoreText",
+  "12": "/System/Library/Frameworks/Photos.framework/Photos",
+  "13": "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+  "14": "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+  "15": "/System/Library/Frameworks/IOSurface.framework/IOSurface",
+  "16": "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox",
+  "17": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+  "18": "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+  "19": "/System/Library/Frameworks/CoreAudio.framework/CoreAudio",
+  "20": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+  "21": "/usr/lib/libSystem.B.dylib",
+  "22": "/System/Library/Frameworks/Foundation.framework/Foundation",
+  "23": "/System/Library/Frameworks/CoreML.framework/CoreML",
+  "24": "/System/Library/Frameworks/CoreVideo.framework/CoreVideo",
+  "25": "/System/Library/Frameworks/Network.framework/Network",
+  "26": "/System/Library/Frameworks/Metal.framework/Metal",
+  "27": "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+  "28": "/System/Library/Frameworks/OpenGLES.framework/OpenGLES",
+  "29": "/usr/lib/libresolv.9.dylib",
+  "30": "/System/Library/Frameworks/UIKit.framework/UIKit",
+  "31": "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+  "32": "/usr/lib/libobjc.A.dylib",
+  "33": "/usr/lib/libc++.1.dylib"
+ },
  "imports": {
   "/System/Library/Frameworks/AVFoundation.framework/AVFoundation": [
    {
@@ -5499,7 +5536,7 @@
     "weak": false
    }
   ],
-  "<ordinal -2>": [
+  "<flat-namespace>": [
    {
     "name": "___MIG_check__Request__exception_raise_state_identity_t",
     "weak": false
@@ -5517,7 +5554,7 @@
     "weak": false
    }
   ],
-  "<ordinal 0>": [
+  "@rpath/RobloxLib.framework/RobloxLib": [
    {
     "name": "__ZGVZN13opentelemetry2v15trace10TraceState10GetDefaultEvE2ts",
     "weak": true

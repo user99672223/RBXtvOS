@@ -133,9 +133,9 @@ library	symbol	weak
 /usr/lib/libobjc.A.dylib	_objc_retainAutoreleaseReturnValue	0
 /usr/lib/libobjc.A.dylib	_objc_retainAutoreleasedReturnValue	0
 /usr/lib/libobjc.A.dylib	_objc_setHook_getClass	1
-<ordinal 0>	___llvm_profile_filename	1
-<ordinal 0>	___llvm_profile_raw_version	1
-<ordinal 0>	_lprofDirMode	1
+@rpath/Backtrace.framework/Backtrace	___llvm_profile_filename	1
+@rpath/Backtrace.framework/Backtrace	___llvm_profile_raw_version	1
+@rpath/Backtrace.framework/Backtrace	_lprofDirMode	1
 @rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter	_OBJC_CLASS_$_PLCrashReport	0
 @rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter	_OBJC_CLASS_$_PLCrashReporter	0
 @rpath/Backtrace_PLCrashReporter.framework/Backtrace_PLCrashReporter	_OBJC_CLASS_$_PLCrashReporterConfig	0

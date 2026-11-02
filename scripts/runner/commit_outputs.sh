@@ -25,10 +25,19 @@ for p in "${ALLOW[@]}"; do
   fi
 done
 
+# The generated files sit under paths this repo also tracks on the working
+# branch, so switching to the outputs branch would refuse with "Your local
+# changes to the following files would be overwritten by checkout". Everything
+# worth keeping is already copied into $STAGE (which is outside the worktree),
+# so the worktree is reset before switching.
+git reset --hard HEAD >/dev/null 2>&1 || true
+git clean -fdq >/dev/null 2>&1 || true
+
 for attempt in 1 2 3 4 5; do
   git fetch origin "$BRANCH" --depth 1 2>/dev/null || true
+  git reset --hard HEAD >/dev/null 2>&1 || true
   if git rev-parse --verify "origin/$BRANCH" >/dev/null 2>&1; then
-    git checkout -B "$BRANCH" "origin/$BRANCH"
+    git checkout -B "$BRANCH" "origin/$BRANCH" --
   else
     # orphan branch: outputs carries only runner products, no source history
     git checkout --orphan "$BRANCH"

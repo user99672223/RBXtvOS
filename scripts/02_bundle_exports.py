@@ -14,7 +14,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from lib_macho import EVIDENCE, app_dir, find_machos, parse, rel  # noqa: E402
+from lib_macho import (EVIDENCE, app_dir, exported_names, find_machos,  # noqa: E402
+                       parse, rel)
 
 OUT = EVIDENCE / "exports" / "bundle"
 
@@ -26,10 +27,7 @@ def main():
     for p in find_machos(app):
         r = rel(p, app)
         b = parse(p)[0]
-        names = set()
-        for s in b.exported_symbols:
-            if s.name:
-                names.add(s.name)
+        names, source = exported_names(b, p)
         # LC_ID_DYLIB install name is how other binaries in the bundle name it
         install = None
         for lib in b.libraries:
@@ -39,8 +37,8 @@ def main():
         safe = r.replace("/", "__")
         (OUT / f"{safe}.txt").write_text("\n".join(sorted(names)) + "\n")
         index[r] = {"install_name": install, "exports": len(names),
-                    "file": f"{safe}.txt"}
-        print(f"{r}: {len(names)} exports  install_name={install}")
+                    "source": source, "file": f"{safe}.txt"}
+        print(f"{r}: {len(names)} exports via {source}  install_name={install}")
     (OUT / "_index.json").write_text(json.dumps(index, indent=1))
 
 

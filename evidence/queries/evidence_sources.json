@@ -1,0 +1,17 @@
+{
+  "_comment": [
+    "Which collected evidence set each CLAUDE.md source resolves to. Pinned",
+    "rather than inferred: sdk_ios26.5 sorts above sdk_ios26.2, but 26.2 is",
+    "the SDK Roblox was built against (Info.plist DTSDKName=iphoneos26.2,",
+    "DTXcode=26.3) and is the authority on the contract of missing API.",
+    "Consumed by scripts/02_missing.py."
+  ],
+  "device": "device_24K122",
+  "tvos_sdk": "sdk_tvos27.2",
+  "ios_sdk": "sdk_ios26.2",
+  "_provenance": {
+    "device": "tvOS 27.2 build 24K122, AppleTV14,1 / J255AP, dyld shared cache arm64e from the full SoftwareUpdate OTA (sha256 b436615c...45f85c9c), extracted on the xcode-27 runner (macOS 27.0.1)",
+    "tvos_sdk": "AppleTVOS27.2.sdk from Xcode 27.2 on the xcode-27 image; matches the device's tvOS 27.2 exactly",
+    "ios_sdk": "iPhoneOS26.2.sdk from Xcode 26.3 on macos-26; matches Roblox's own build SDK exactly"
+  }
+}

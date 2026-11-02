@@ -1,0 +1,3 @@
+_OBJC_CLASS_$_SignpostMetricsSnapshotter
+_OBJC_METACLASS_$_SignpostMetricsSnapshotter
+__MXSignpostMetricsSnapshot
