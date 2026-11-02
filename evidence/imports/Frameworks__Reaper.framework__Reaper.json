@@ -77,429 +77,529 @@
   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
    {
     "name": "_OBJC_CLASS_$_NSMutableArray",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSMutableSet",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_EHTYPE_$_NSException",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "___CFConstantStringClassReference",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/System/Library/Frameworks/Foundation.framework/Foundation": [
    {
     "name": "_OBJC_CLASS_$_NSBundle",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSNotificationCenter",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSProcessInfo",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSRegularExpression",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSString",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/System/Library/Frameworks/UIKit.framework/UIKit": [
    {
     "name": "_UIApplicationDidEnterBackgroundNotification",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_UIApplicationWillTerminateNotification",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/libSystem.B.dylib": [
    {
     "name": "__Block_object_assign",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "__NSConcreteGlobalBlock",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__NSConcreteStackBlock",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__Unwind_Resume",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "___chkstk_darwin",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "___stack_chk_fail",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "___stack_chk_guard",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__dyld_get_image_header",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "__dyld_get_image_name",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "__dyld_image_count",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "__dyld_register_func_for_add_image",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_abort",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_dispatch_async",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_dispatch_once",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_dispatch_once_f",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_dispatch_queue_attr_make_with_qos_class",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_dispatch_queue_create",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_dlsym",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_free",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_getsectiondata",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_malloc",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_memcmp",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_memmove",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_os_release",
-    "weak": true
+    "weak": true,
+    "lazy": true
    },
    {
     "name": "_os_unfair_lock_lock",
-    "weak": true
+    "weak": true,
+    "lazy": true
    },
    {
     "name": "_os_unfair_lock_unlock",
-    "weak": true
+    "weak": true,
+    "lazy": true
    },
    {
     "name": "_posix_memalign",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_pthread_getspecific",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_pthread_mutex_init",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_pthread_mutex_lock",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_pthread_mutex_unlock",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_pthread_setspecific",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_realloc",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_strcmp",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_strlen",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_voucher_adopt",
-    "weak": true
+    "weak": true,
+    "lazy": true
    },
    {
     "name": "dyld_stub_binder",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/libc++.1.dylib": [
    {
     "name": "__ZdlPv",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__Znwm",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/libobjc.A.dylib": [
    {
     "name": "_OBJC_CLASS_$_NSObject",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_METACLASS_$_NSObject",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "___objc_personality_v0",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__objc_empty_cache",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_class_getName",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_allocWithZone",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_alloc_init",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_autoreleasePoolPop",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_autoreleasePoolPush",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_autoreleaseReturnValue",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_begin_catch",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_end_catch",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_enumerationMutation",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_getClass",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_lookUpClass",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_msgSend",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_msgSendSuper2",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_opt_self",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_release",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_retain",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_retainAutoreleaseReturnValue",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_retainAutoreleasedReturnValue",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_retainBlock",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_objc_storeStrong",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_object_getClass",
-    "weak": false
+    "weak": false,
+    "lazy": true
    }
   ],
   "/usr/lib/swift/libswiftCore.dylib": [
    {
     "name": "_$sBOWV",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$sSRMa",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_$sSRyxGSTsMc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5UInt8VMn",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_$ss5UInt8VN",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__swift_stdlib_operatingSystemVersion",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_swift_bridgeObjectRelease",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_swift_errorRetain",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_swift_getObjectType",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_swift_getTypeByMangledNameInContext",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_swift_getTypeName",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_swift_getWitnessTable",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_swift_once",
-    "weak": false
+    "weak": false,
+    "lazy": true
    }
   ],
   "/usr/lib/swift/libswiftCoreFoundation.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftCoreFoundation",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftDarwin.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swift_Builtin_float",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftDispatch.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftDispatch",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftFoundation.dylib": [
    {
     "name": "_$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_$sSS10FoundationE5bytes8encodingSSSgxh_SSAAE8EncodingVtcSTRzs5UInt8V7ElementRtzlufC",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_$sSS10FoundationE8EncodingV4utf8ACvgZ",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "_$sSS10FoundationE8EncodingVMa",
-    "weak": false
+    "weak": false,
+    "lazy": true
    },
    {
     "name": "__swift_FORCE_LOAD_$_swiftFoundation",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftObjectiveC.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftObjectiveC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/swift/libswiftXPC.dylib": [
    {
     "name": "__swift_FORCE_LOAD_$_swiftXPC",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "@rpath/Reaper.framework/Reaper": [
    {
     "name": "__ZdlPv",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "__Znwm",
-    "weak": true
+    "weak": true,
+    "lazy": false
    }
   ]
  },

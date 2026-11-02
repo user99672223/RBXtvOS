@@ -41,7 +41,16 @@ Outcomes per import:
   MISSING_SYMBOL      the library is present but does not export the symbol
   weak-missing        missing but weakly imported, so dyld binds it to NULL and
                       the app still loads; recorded, never shimmed
+  lazy-missing        missing but LAZILY bound: dyld leaves it unbound until
+                      the first call, so it cannot stop the app launching. It
+                      aborts only if that code path runs. Recorded separately
+                      so the pass condition counts launch blockers and not
+                      these.
   UNVERIFIED          no evidence source can answer for that library
+
+The Phase 5 pass condition is therefore "zero unresolved non-weak EAGER
+imports". Counting lazy ones would fail a build that launches perfectly; not
+counting them at all would hide a real call-time abort.
 
 Separately flagged: symbols the device exports that the tvOS SDK does not.
 Those link and run but have no public contract.
@@ -317,6 +326,7 @@ def main():
     missing_frameworks = defaultdict(set)
     missing_symbols = defaultdict(lambda: defaultdict(set))
     weak_missing = defaultdict(lambda: defaultdict(set))
+    lazy_missing = defaultdict(lambda: defaultdict(set))
     unverified = defaultdict(lambda: defaultdict(set))
     private_on_tvos = defaultdict(set)
     not_in_ios_sdk = defaultdict(set)
@@ -327,6 +337,7 @@ def main():
         for lib, entries in d["imports"].items():
             for e in entries:
                 sym, weak = e["name"], e["weak"]
+                lazy = bool(e.get("lazy", False))
                 status, detail = resolver.resolve(binary, lib, sym)
                 if status == "ok":
                     ok_count += 1
@@ -338,6 +349,10 @@ def main():
                 details.setdefault(f"{lib}|{sym}", detail)
                 if weak:
                     weak_missing[lib][sym].add(binary)
+                    continue
+                if lazy:
+                    # not a launch blocker: dyld binds it on first call
+                    lazy_missing[lib][sym].add(binary)
                     continue
                 if status == "UNVERIFIED":
                     unverified[lib][sym].add(binary)
@@ -393,6 +408,8 @@ def main():
         "missing_classes": dict(sorted(missing_classes.items())),
         "weak_missing": {lib: {s: sorted(b) for s, b in sorted(syms.items())}
                          for lib, syms in sorted(weak_missing.items())},
+        "lazy_missing": {lib: {s: sorted(b) for s, b in sorted(syms.items())}
+                         for lib, syms in sorted(lazy_missing.items())},
         "unverified": {lib: {s: sorted(b) for s, b in sorted(syms.items())}
                        for lib, syms in sorted(unverified.items())},
         "private_on_tvos": {k: sorted(v) for k, v in sorted(private_on_tvos.items())},
@@ -405,6 +422,7 @@ def main():
         "missing_symbols": sum(len(v) for v in out["missing_symbols"].values()),
         "missing_classes": len(out["missing_classes"]),
         "weak_missing": sum(len(v) for v in out["weak_missing"].values()),
+        "lazy_missing": sum(len(v) for v in out["lazy_missing"].values()),
         "unverified": sum(len(v) for v in out["unverified"].values()),
         "private_on_tvos": sum(len(v) for v in out["private_on_tvos"].values()),
     }

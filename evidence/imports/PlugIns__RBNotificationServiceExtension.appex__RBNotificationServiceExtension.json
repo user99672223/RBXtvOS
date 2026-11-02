@@ -67,485 +67,602 @@
   "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation": [
    {
     "name": "_OBJC_CLASS_$_NSArray",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSData",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSDate",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSDictionary",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSLocale",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSMutableArray",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSMutableDictionary",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSMutableSet",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSURL",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSUserDefaults",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "___CFConstantStringClassReference",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "___NSArray0__struct",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "___NSDictionary0__struct",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kCFBooleanTrue",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/System/Library/Frameworks/Foundation.framework/Foundation": [
    {
     "name": "_NSExtensionMain",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_NSLog",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_NSStringFromClass",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_NSTemporaryDirectory",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSBundle",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSCharacterSet",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSDateFormatter",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSFileManager",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSHTTPURLResponse",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSJSONSerialization",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSMutableString",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSMutableURLRequest",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSNumber",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSPersonNameComponents",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSString",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSURLComponents",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSURLQueryItem",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSURLSession",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSURLSessionConfiguration",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_NSUUID",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/System/Library/Frameworks/Intents.framework/Intents": [
    {
     "name": "_OBJC_CLASS_$_INImage",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_INPerson",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_INPersonHandle",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_INSendMessageIntent",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/System/Library/Frameworks/Security.framework/Security": [
    {
     "name": "_SecItemAdd",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_SecItemCopyMatching",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_SecItemDelete",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_SecItemUpdate",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kSecAttrAccessible",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kSecAttrGeneric",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kSecAttrService",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kSecClass",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kSecClassGenericPassword",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kSecMatchLimit",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kSecMatchLimitOne",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kSecReturnAttributes",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kSecReturnData",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_kSecValueData",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/System/Library/Frameworks/UIKit.framework/UIKit": [
    {
     "name": "_OBJC_CLASS_$_UIColor",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_UIDevice",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_UIGraphicsImageRenderer",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_UIGraphicsImageRendererFormat",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_UIImage",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_UIScreen",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_UITraitCollection",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "_UIImagePNGRepresentation",
-    "weak": true
+    "weak": true,
+    "lazy": false
    }
   ],
   "/System/Library/Frameworks/UserNotifications.framework/UserNotifications": [
    {
     "name": "_OBJC_CLASS_$_UNNotificationAction",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_UNNotificationAttachment",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_UNNotificationCategory",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_UNNotificationServiceExtension",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_CLASS_$_UNUserNotificationCenter",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_METACLASS_$_UNNotificationServiceExtension",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/libSystem.B.dylib": [
    {
     "name": "__Block_object_assign",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__Block_object_dispose",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__NSConcreteGlobalBlock",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__NSConcreteStackBlock",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__Unwind_Resume",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "___stack_chk_fail",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "___stack_chk_guard",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__availability_version_check",
-    "weak": true
+    "weak": true,
+    "lazy": false
    },
    {
     "name": "__dispatch_main_q",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_dispatch_async",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_dispatch_get_global_queue",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_dispatch_group_create",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_dispatch_group_enter",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_dispatch_group_leave",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_dispatch_group_notify",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_dispatch_once",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_dispatch_once_f",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_dlsym",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_fclose",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_fopen",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_fread",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_free",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_fseek",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_ftell",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_malloc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_rewind",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_sscanf",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ],
   "/usr/lib/libobjc.A.dylib": [
    {
     "name": "_OBJC_CLASS_$_NSObject",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_OBJC_METACLASS_$_NSObject",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "___objc_personality_v0",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "__objc_empty_cache",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_alloc",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_alloc_init",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_autoreleaseReturnValue",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_enumerationMutation",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_msgSend",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_msgSendSuper2",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_opt_class",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_opt_isKindOfClass",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_opt_new",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_release",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_retain",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_retainAutoreleaseReturnValue",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_retainAutoreleasedReturnValue",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_retainBlock",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_setProperty_nonatomic_copy",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_storeStrong",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_sync_enter",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_sync_exit",
-    "weak": false
+    "weak": false,
+    "lazy": false
    },
    {
     "name": "_objc_unsafeClaimAutoreleasedReturnValue",
-    "weak": false
+    "weak": false,
+    "lazy": false
    }
   ]
  },

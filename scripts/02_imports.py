@@ -145,7 +145,24 @@ def main():
                 break
         table = ordinal_table(b)
         rp = rpaths(b)
+        # Record the binding class per import, not just the weak flag.
+        # A non-weak import that is LAZY is not a launch blocker: dyld leaves
+        # it unbound until the first call, so a missing symbol only aborts if
+        # the code path actually runs. Four of RobloxLib's flat-namespace MIG
+        # symbols are exactly this, and treating them as launch blockers would
+        # make the Phase 5 pass condition wrong in both directions.
         imports = defaultdict(dict)
+
+        def record(lib, name, weak, lazy):
+            prev = imports[lib].get(name)
+            if prev is None:
+                imports[lib][name] = {"weak": weak, "lazy": lazy}
+            else:
+                # the strictest observation wins: if any binding of this
+                # symbol is non-weak and eager, that is what dyld must satisfy
+                prev["weak"] = prev["weak"] and weak
+                prev["lazy"] = prev["lazy"] and lazy
+
         for bi in b.bindings:
             if not bi.has_symbol:
                 continue
@@ -155,9 +172,12 @@ def main():
             else:
                 lib = resolve_ordinal(getattr(bi, "library_ordinal", None), table, self_name)
             weak = bool(getattr(bi, "weak_import", False))
-            prev = imports[lib].get(name)
-            imports[lib][name] = weak if prev is None else (prev and weak)
-        # symbols imported without a binding (e.g. only lazy / unused) still matter for resolution
+            cls = str(getattr(bi, "binding_class", ""))
+            lazy = cls.endswith("LAZY")
+            if cls.endswith("WEAK"):
+                weak = True
+            record(lib, name, weak, lazy)
+        # symbols imported without a binding still matter for resolution
         for s in b.imported_symbols:
             if s.has_binding_info:
                 continue
@@ -165,8 +185,11 @@ def main():
                 lib = s.library.name
             else:
                 lib = resolve_ordinal(getattr(s, "library_ordinal", None), table, self_name)
-            imports[lib].setdefault(s.name, False)
-        imp_out = {lib: [{"name": n, "weak": w} for n, w in sorted(d.items())] for lib, d in sorted(imports.items())}
+            if s.name not in imports[lib]:
+                imports[lib][s.name] = {"weak": False, "lazy": False}
+        imp_out = {lib: [{"name": n, "weak": v["weak"], "lazy": v["lazy"]}
+                         for n, v in sorted(d.items())]
+                   for lib, d in sorted(imports.items())}
         objc = {lib: sorted({n.split("$_", 1)[1] for n in d if n.startswith(("_OBJC_CLASS_$_", "_OBJC_METACLASS_$_"))})
                 for lib, d in imports.items()}
         objc = {k: v for k, v in sorted(objc.items()) if v}
@@ -176,10 +199,10 @@ def main():
                "selrefs": selrefs(b), "methtypes": sorted(set(cstrings(section(b, "__TEXT", "__objc_methtype"))))}
         (OUT / f"{safe_name(r)}.json").write_text(json.dumps(rec, indent=1))
         with open(OUT / f"{safe_name(r)}.imports.tsv", "w") as f:
-            f.write("library\tsymbol\tweak\n")
+            f.write("library\tsymbol\tweak\tlazy\n")
             for lib, lst in imp_out.items():
                 for e in lst:
-                    f.write(f"{lib}\t{e['name']}\t{int(e['weak'])}\n")
+                    f.write(f"{lib}\t{e['name']}\t{int(e['weak'])}\t{int(e['lazy'])}\n")
         summary[r] = {"libraries": len(libs), "imported_symbols": sum(len(v) for v in imp_out.values()),
                       "objc_class_imports": sum(len(v) for v in objc.values()), "selrefs": len(rec["selrefs"])}
         print(r, summary[r])

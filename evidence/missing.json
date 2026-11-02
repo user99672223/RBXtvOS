@@ -309,28 +309,6 @@
     "Frameworks/Persona2.framework/Persona2",
     "Roblox"
    ]
-  },
-  "<flat-namespace>": {
-   "___MIG_check__Request__exception_raise_state_identity_t": [
-    "Frameworks/RobloxLib.framework/RobloxLib"
-   ],
-   "___MIG_check__Request__exception_raise_state_t": [
-    "Frameworks/RobloxLib.framework/RobloxLib"
-   ],
-   "___MIG_check__Request__mach_exception_raise_state_identity_t": [
-    "Frameworks/RobloxLib.framework/RobloxLib"
-   ],
-   "___MIG_check__Request__mach_exception_raise_state_t": [
-    "Frameworks/RobloxLib.framework/RobloxLib"
-   ]
-  },
-  "@rpath/libswiftCoreData.dylib": {
-   "_$sSo22NSManagedObjectContextC8CoreDataE5count3forSiSo14NSFetchRequestCyxG_tKSo0hI6ResultRzlF": [
-    "Frameworks/Backtrace.framework/Backtrace"
-   ],
-   "_$sSo22NSManagedObjectContextC8CoreDataE5fetchySayxGSo14NSFetchRequestCyxGKSo0gH6ResultRzlF": [
-    "Frameworks/Backtrace.framework/Backtrace"
-   ]
   }
  },
  "missing_classes": {
@@ -761,6 +739,30 @@
    ],
    "__Znwm": [
     "Frameworks/libswift_Concurrency.dylib"
+   ]
+  }
+ },
+ "lazy_missing": {
+  "<flat-namespace>": {
+   "___MIG_check__Request__exception_raise_state_identity_t": [
+    "Frameworks/RobloxLib.framework/RobloxLib"
+   ],
+   "___MIG_check__Request__exception_raise_state_t": [
+    "Frameworks/RobloxLib.framework/RobloxLib"
+   ],
+   "___MIG_check__Request__mach_exception_raise_state_identity_t": [
+    "Frameworks/RobloxLib.framework/RobloxLib"
+   ],
+   "___MIG_check__Request__mach_exception_raise_state_t": [
+    "Frameworks/RobloxLib.framework/RobloxLib"
+   ]
+  },
+  "@rpath/libswiftCoreData.dylib": {
+   "_$sSo22NSManagedObjectContextC8CoreDataE5count3forSiSo14NSFetchRequestCyxG_tKSo0hI6ResultRzlF": [
+    "Frameworks/Backtrace.framework/Backtrace"
+   ],
+   "_$sSo22NSManagedObjectContextC8CoreDataE5fetchySayxGSo14NSFetchRequestCyxGKSo0gH6ResultRzlF": [
+    "Frameworks/Backtrace.framework/Backtrace"
    ]
   }
  },
@@ -1299,9 +1301,10 @@
  "totals": {
   "resolved_ok": 7333,
   "missing_frameworks": 10,
-  "missing_symbols": 80,
+  "missing_symbols": 74,
   "missing_classes": 6,
   "weak_missing": 109,
+  "lazy_missing": 6,
   "unverified": 0,
   "private_on_tvos": 311
  }
