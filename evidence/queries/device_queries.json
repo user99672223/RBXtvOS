@@ -9,57 +9,30 @@
     "<CACHE> is substituted with the cache path. 'grep' narrows the output,",
     "because a full UIKitCore class dump is far larger than anything that",
     "should be committed. Output is derived text about Apple's system",
-    "libraries; the cache never leaves the runner."
+    "libraries; the cache never leaves the runner.",
+    "Two invocation bugs were fixed after the nonce-4 run: `ipsw dyld objc class` takes a single positional argument (the cache), so per-class queries must instead grep an `ipsw dyld macho <image> --objc` dump; and each grep must be anchored on the class declaration, because an unanchored @property pattern matches tens of thousands of lines in UIKitCore and is truncated long before the class of interest."
   ],
   "queries": [
     {
       "id": "cache-images-count",
       "why": "Sanity check on the cache and a record of its header.",
-      "args": ["dyld", "info", "<CACHE>"]
-    },
-    {
-      "id": "uitouch-ivars",
-      "why": "Phase 6 click-to-tap preference 2 needs to set a synthesized UITouch's location, window, view and phase. Those are private ivars, so their presence and names on tvOS 27.2 must come from the device itself before any code touches them.",
-      "args": ["dyld", "macho", "<CACHE>", "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore", "--objc"],
-      "grep": "^\\s*(@interface|@property|\\s+[A-Za-z_].*_(location|window|view|phase|tapCount|timestamp))",
-      "grep_context": 0,
-      "max_bytes": 200000,
-      "timeout": 2400
-    },
-    {
-      "id": "uitouch-class",
-      "why": "The UITouch class declaration as the device actually has it, including ivar layout.",
-      "args": ["dyld", "objc", "class", "<CACHE>", "UITouch"],
-      "max_bytes": 120000
-    },
-    {
-      "id": "uievent-class",
-      "why": "Synthesizing a touch needs a UIEvent to carry it; same private-ivar question.",
-      "args": ["dyld", "objc", "class", "<CACHE>", "UIEvent"],
-      "max_bytes": 120000
-    },
-    {
-      "id": "gcmicrogamepad-class",
-      "why": "Confirm the Siri Remote's micro gamepad profile exists on the device, not just in the SDK.",
-      "args": ["dyld", "objc", "class", "<CACHE>", "GCMicroGamepad"],
-      "max_bytes": 80000
-    },
-    {
-      "id": "gceventviewcontroller-class",
-      "why": "Confirm the focus-engine bypass class exists on the device.",
-      "args": ["dyld", "objc", "class", "<CACHE>", "GCEventViewController"],
-      "max_bytes": 80000
-    },
-    {
-      "id": "uidatepicker-class",
-      "why": "Phase 1 flagged UIDatePicker (RBBirthdayPickerController.nib) as the class most likely missing on tvOS. This asks the device directly.",
-      "args": ["dyld", "objc", "class", "<CACHE>", "UIDatePicker"],
-      "max_bytes": 80000
+      "args": [
+        "dyld",
+        "info",
+        "<CACHE>"
+      ]
     },
     {
       "id": "metal-newlibrarywithdata",
       "why": "Phase 1's biggest launch risk: whether tvOS Metal accepts Roblox's iOS-compiled metallib blobs. Looks for the loader entry point in the device's Metal.",
-      "args": ["dyld", "symaddr", "<CACHE>", "--image", "/System/Library/Frameworks/Metal.framework/Metal", "--all"],
+      "args": [
+        "dyld",
+        "symaddr",
+        "<CACHE>",
+        "--image",
+        "/System/Library/Frameworks/Metal.framework/Metal",
+        "--all"
+      ],
       "grep": "(?i)(newlibrarywithdata|librarywithdata|AIR|metallib)",
       "grep_context": 1,
       "max_bytes": 120000,
@@ -68,21 +41,96 @@
     {
       "id": "coreui-deployment-platform",
       "why": "Phase 1: whether the device's CoreUI refuses an asset catalog whose deploymentPlatform is ios.",
-      "args": ["dyld", "str", "<CACHE>", "deploymentPlatform"],
+      "args": [
+        "dyld",
+        "str",
+        "<CACHE>",
+        "deploymentPlatform"
+      ],
       "max_bytes": 80000,
       "timeout": 2400
     },
     {
+      "id": "uitouch-ivars",
+      "why": "Phase 6 click-to-tap preference 2 sets a synthesized UITouch's location, window, view and phase. Those are private ivars, so their names on tvOS 27.2 must come from the device. Anchored on the class declaration this time: the previous broad @property pattern matched 36,320 lines and was truncated before UITouch appeared.",
+      "args": [
+        "dyld",
+        "macho",
+        "<CACHE>",
+        "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore",
+        "--objc"
+      ],
+      "grep": "@interface UITouch[^A-Za-z0-9_]",
+      "grep_context": 90,
+      "max_bytes": 150000,
+      "timeout": 2400
+    },
+    {
+      "id": "uievent-ivars",
+      "why": "A synthesized touch is carried by a UIEvent; same private-ivar question.",
+      "args": [
+        "dyld",
+        "macho",
+        "<CACHE>",
+        "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore",
+        "--objc"
+      ],
+      "grep": "@interface UIEvent[^A-Za-z0-9_]",
+      "grep_context": 90,
+      "max_bytes": 150000,
+      "timeout": 2400
+    },
+    {
+      "id": "uidatepicker-class",
+      "why": "Cross-check the nib-class finding against the class dump: UIDatePicker is exported by the device's UIKit and by tvOS SDK 27.2's UIKit.tbd, so it should appear here with its real superclass.",
+      "args": [
+        "dyld",
+        "macho",
+        "<CACHE>",
+        "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore",
+        "--objc"
+      ],
+      "grep": "@interface UIDatePicker[^A-Za-z0-9_]",
+      "grep_context": 25,
+      "max_bytes": 60000,
+      "timeout": 2400
+    },
+    {
+      "id": "gc-cursor-classes",
+      "why": "Confirm on the device, not just in the SDK, that the two classes the cursor depends on exist: GCEventViewController (focus-engine bypass) and GCMicroGamepad (the Siri Remote profile).",
+      "args": [
+        "dyld",
+        "macho",
+        "<CACHE>",
+        "/System/Library/Frameworks/GameController.framework/GameController",
+        "--objc"
+      ],
+      "grep": "@interface (GCEventViewController|GCMicroGamepad|GCController)[^A-Za-z0-9_]",
+      "grep_context": 35,
+      "max_bytes": 120000,
+      "timeout": 2400
+    },
+    {
       "id": "dyld-version",
-      "why": "Evidence source 5: match Apple's open-source dyld to the version this device ships.",
-      "args": ["dyld", "str", "<CACHE>", "dyld-1"],
+      "why": "Evidence source 5: the dyld version this device ships, to compare against the dyld-1378 source the proxy mechanism was checked against. The previous search term 'dyld-1' matched only its own prefix.",
+      "args": [
+        "dyld",
+        "str",
+        "<CACHE>",
+        "PROJECT:dyld"
+      ],
       "max_bytes": 40000,
       "timeout": 2400
     },
     {
       "id": "objc-version",
-      "why": "Evidence source 5: match Apple's open-source objc4 to the version this device ships.",
-      "args": ["dyld", "str", "<CACHE>", "objc4-"],
+      "why": "Evidence source 5: the objc4 version this device ships. The previous term 'objc4-' returned nothing.",
+      "args": [
+        "dyld",
+        "str",
+        "<CACHE>",
+        "objc4"
+      ],
       "max_bytes": 40000,
       "timeout": 2400
     }

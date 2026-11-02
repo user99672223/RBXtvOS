@@ -1,0 +1,7 @@
+# device query uievent-class
+# why: Synthesizing a touch needs a UIEvent to carry it; same private-ivar question.
+# argv: /opt/homebrew/bin/ipsw dyld objc class /tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e UIEvent
+# label: 24K122
+# returncode: 1
+# stderr: ⨯ accepts 1 arg(s), received 2
+

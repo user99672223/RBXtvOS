@@ -1056,6 +1056,9 @@
  "/usr/lib/swift/libswiftCallKit.dylib": {
   "present_in_cache": false
  },
+ "/usr/lib/swift/libswiftCloudKit.dylib": {
+  "present_in_cache": false
+ },
  "/usr/lib/swift/libswiftCompression.dylib": {
   "present_in_cache": true,
   "exports": 77,
@@ -1086,6 +1089,21 @@
   "reexports": [],
   "install_names": [
    "/usr/lib/swift/libswiftCoreAudio.dylib"
+  ],
+  "targets": [
+   "arm64e-tvos"
+  ],
+  "queried": true
+ },
+ "/usr/lib/swift/libswiftCoreData.dylib": {
+  "present_in_cache": true,
+  "exports": 3560,
+  "reexports": [
+   "/System/Library/Frameworks/CoreData.framework/CoreData"
+  ],
+  "install_names": [
+   "/System/Library/Frameworks/CoreData.framework/CoreData",
+   "/usr/lib/swift/libswiftCoreData.dylib"
   ],
   "targets": [
    "arm64e-tvos"

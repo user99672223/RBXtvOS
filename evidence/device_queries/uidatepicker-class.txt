@@ -1,0 +1,7 @@
+# device query uidatepicker-class
+# why: Phase 1 flagged UIDatePicker (RBBirthdayPickerController.nib) as the class most likely missing on tvOS. This asks the device directly.
+# argv: /opt/homebrew/bin/ipsw dyld objc class /tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e UIDatePicker
+# label: 24K122
+# returncode: 1
+# stderr: ⨯ accepts 1 arg(s), received 2
+

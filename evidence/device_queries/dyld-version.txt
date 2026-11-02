@@ -1,0 +1,8 @@
+# device query dyld-version
+# why: Evidence source 5: match Apple's open-source dyld to the version this device ships.
+# argv: /opt/homebrew/bin/ipsw dyld str /tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e dyld-1
+# label: 24K122
+# returncode: 0
+# stderr: • Searching for strings: dyld-1
+
+0x1877bacd0: "@(#)PROGRAM:Dyld  PROJECT:dyld-1"	image=Dyld
