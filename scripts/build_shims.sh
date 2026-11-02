@@ -27,6 +27,7 @@ ARCH="${ARCH:-arm64}"
 OUT="$ROOT/out/shims"
 OBJ="$ROOT/out/shims/.obj"
 
+DEVICE_EXPORTS="${DEVICE_EXPORTS:-$ROOT/evidence/exports/device_24K122}"
 SDK=$(xcrun --sdk appletvos --show-sdk-path)
 SDK_VER=$(xcrun --sdk appletvos --show-sdk-version)
 CLANG=$(xcrun --sdk appletvos -f clang)
@@ -45,6 +46,41 @@ echo "clang      : $CLANG"
 
 BUILD_ID="${TVPORT_BUILD_ID:-$(git rev-parse --short HEAD 2>/dev/null || echo unknown)}"
 echo "build id   : $BUILD_ID"
+
+# ------------------------------------------------- stubs for private-on-tvOS
+# CoreTelephony and PushKit exist on the device but the tvOS SDK ships no .tbd
+# for either, so ld has nothing to re-export against. The stubs are generated
+# from the device's own export lists (evidence source 1) and carry the real
+# install name, so at runtime dyld re-exports the framework on the device.
+GEN="$OUT/.tbd"
+mkdir -p "$GEN"
+gen_tbd() {
+  local install="$1" listfile="$2" out="$3"
+  if [ -f "$SDK/${install#/}.tbd" ]; then
+    echo "    $install: using the SDK's own stub"
+    echo "$SDK/${install#/}.tbd"
+    return
+  fi
+  if [ ! -f "$listfile" ]; then
+    echo "::error::no SDK stub and no device export list for $install ($listfile)" >&2
+    return 1
+  fi
+  python3 "$ROOT/scripts/runner/make_tbd.py" "$install" "$listfile" "$out" >&2
+  echo "$out"
+}
+
+echo
+echo "--- stubs for frameworks the tvOS SDK does not ship"
+CORETELEPHONY_TBD=$(gen_tbd \
+  "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony" \
+  "$DEVICE_EXPORTS/System__Library__Frameworks__CoreTelephony.framework__CoreTelephony.txt" \
+  "$GEN/CoreTelephony.tbd")
+PUSHKIT_TBD=$(gen_tbd \
+  "/System/Library/Frameworks/PushKit.framework/PushKit" \
+  "$DEVICE_EXPORTS/System__Library__Frameworks__PushKit.framework__PushKit.txt" \
+  "$GEN/PushKit.tbd")
+echo "    CoreTelephony stub: $CORETELEPHONY_TBD"
+echo "    PushKit stub      : $PUSHKIT_TBD"
 
 COMMON=(
   -target "$TARGET"
@@ -88,8 +124,8 @@ echo "    sources: ${TVPORT_SRCS[*]}"
 SHIMS=(
   "UIKit|TVPORT_SHIM_UIKIT_UNUSED|-Wl,-reexport_framework,UIKit -framework UIKit"
   "CoreFoundation|TVPORT_SHIM_COREFOUNDATION|-Wl,-reexport_framework,CoreFoundation -framework CoreFoundation"
-  "CoreTelephony|TVPORT_SHIM_CORETELEPHONY|-Wl,-reexport_library,$SDK/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony.tbd"
-  "PushKit|TVPORT_SHIM_PUSHKIT|-Wl,-reexport_library,$SDK/System/Library/Frameworks/PushKit.framework/PushKit.tbd"
+  "CoreTelephony|TVPORT_SHIM_CORETELEPHONY|-Wl,-reexport_library,$CORETELEPHONY_TBD"
+  "PushKit|TVPORT_SHIM_PUSHKIT|-Wl,-reexport_library,$PUSHKIT_TBD"
   "libswiftDarwin|TVPORT_SHIM_SWIFTDARWIN|-Wl,-reexport_library,$SDK/usr/lib/swift/libswiftDarwin.tbd"
   "MessageUI|TVPORT_SHIM_MESSAGEUI_UNUSED|"
   "SafariServices|TVPORT_SHIM_SAFARISERVICES_UNUSED|"
