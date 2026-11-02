@@ -157,7 +157,8 @@ def run_tvos(sdk: Path, out_dir: Path, label: str):
     avail = {}
     if wanted:
         # one grep for all @interface declarations, then filter
-        hits = grep_headers(sdk, r"^\s*(@interface|@protocol)\s+[A-Za-z_][A-Za-z0-9_]*")
+        hits = grep_headers(
+            sdk, r"^[[:space:]]*(@interface|@protocol)[[:space:]]+[A-Za-z_][A-Za-z0-9_]*")
         by_class = {}
         for rel, ln, text in hits:
             m = re.match(r"^\s*@(?:interface|protocol)\s+([A-Za-z_][A-Za-z0-9_]*)", text)
@@ -181,7 +182,8 @@ def run_tvos(sdk: Path, out_dir: Path, label: str):
     run_header_targets(sdk, out_dir, label)
 
 
-def run_header_targets(sdk: Path, out_dir: Path, label: str):
+def run_header_targets(sdk: Path, out_dir: Path, label: str,
+                       filename: str = "header_targets.json"):
     """Dump declarations this project needs the *contract* of, from this SDK.
 
     Driven by evidence/queries/header_targets.json. Roblox does not import the
@@ -191,14 +193,24 @@ def run_header_targets(sdk: Path, out_dir: Path, label: str):
     mechanism to be verified in headers rather than assumed, which is what this
     produces.
     """
-    targets_path = EVIDENCE / "queries" / "header_targets.json"
+    targets_path = EVIDENCE / "queries" / filename
     if not targets_path.is_file():
-        print(f"[{label}] no header_targets.json; skipping targeted header dump")
+        print(f"[{label}] no {filename}; skipping targeted header dump")
         return
     spec = json.loads(targets_path.read_text())
     results = {}
     for item in spec.get("targets", []):
         tid = item.get("id") or item.get("pattern", "?")
+        if item.get("list_dir"):
+            # Answers "does this header directory exist in the SDK at all",
+            # which a grep that finds nothing cannot distinguish from "the
+            # declaration is spelled differently".
+            d = sdk / item["list_dir"].lstrip("/")
+            listing = sorted(x.name for x in d.iterdir()) if d.is_dir() else []
+            results[tid] = {"list_dir": item["list_dir"], "why": item.get("why", ""),
+                            "exists": d.is_dir(), "entries": listing[:400]}
+            print(f"[{label}] list_dir {tid!r}: exists={d.is_dir()} entries={len(listing)}")
+            continue
         pattern = item.get("pattern")
         if not pattern:
             continue
@@ -343,7 +355,8 @@ def run_ios(sdk: Path, out_dir: Path, label: str, targets_file: Path | None):
         selectors = set(q["selectors"])
         symbols = []
 
-    hits = grep_headers(sdk, r"^\s*@interface\s+[A-Za-z_][A-Za-z0-9_]*")
+    hits = grep_headers(
+        sdk, r"^[[:space:]]*@interface[[:space:]]+[A-Za-z_][A-Za-z0-9_]*")
     by_class = {}
     for rel, ln, text in hits:
         m = re.match(r"^\s*@interface\s+([A-Za-z_][A-Za-z0-9_]*)", text)
@@ -382,6 +395,8 @@ def run_ios(sdk: Path, out_dir: Path, label: str, targets_file: Path | None):
         hits = grep_headers(sdk, r"\b" + re.escape(bare) + r"\b", extra_args=("-m", "4"))
         sym_out[s] = [{"header": r, "line": int(l), "text": t} for r, l, t in hits[:8]]
     (out_dir / "sdk" / f"{label}_symbol_contracts.json").write_text(json.dumps(sym_out, indent=1))
+
+    run_header_targets(sdk, out_dir, label, "ios_header_targets.json")
 
     print(f"[{label}] libraries with .tbd: {sum(1 for v in per_lib.values() if v['present'])}/{len(per_lib)}")
     print(f"[{label}] class contracts: {sum(1 for v in contracts.values() if v['interface'])}/{len(contracts)} resolved an @interface")

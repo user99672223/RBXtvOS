@@ -48,6 +48,8 @@ on:
       - 'scripts/runner/commit_outputs.sh'
       - 'evidence/queries/sdk_query.json'
       - 'evidence/queries/ios_targets.json'
+      - 'evidence/queries/header_targets.json'
+      - 'evidence/queries/ios_header_targets.json'
 
 permissions:
   contents: write

@@ -1,0 +1,122 @@
+{
+  "_comment": [
+    "Contracts needed from the iOS SDK Roblox was built against (CLAUDE.md",
+    "evidence source 3). tvOS headers do not declare these classes at all, so",
+    "the iOS SDK is the only authority on superclass, protocols and method",
+    "signatures -- which a shim has to match for isKindOfClass: and",
+    "subclassing to keep working (Phase 4).",
+    "",
+    "The bulk @interface scan resolved MFMailComposeViewController,",
+    "MFMessageComposeViewController and PDFDocument but not",
+    "SFSafariViewController, SFSafariViewControllerConfiguration or",
+    "UIHoverGestureRecognizer, even though the .tbd files export all six. The",
+    "list_dir targets establish whether those headers are in the SDK at all,",
+    "so a grep that finds nothing can be told apart from a declaration that is",
+    "simply spelled differently."
+  ],
+  "targets": [
+    {
+      "id": "SafariServices-headers-dir",
+      "list_dir": "System/Library/Frameworks/SafariServices.framework/Headers",
+      "why": "Is SFSafariViewController.h present in this SDK?"
+    },
+    {
+      "id": "PDFKit-headers-dir",
+      "list_dir": "System/Library/Frameworks/PDFKit.framework/Headers",
+      "why": "Cross-check: PDFDocument did resolve, so this directory should list it."
+    },
+    {
+      "id": "MessageUI-headers-dir",
+      "list_dir": "System/Library/Frameworks/MessageUI.framework/Headers",
+      "why": "Cross-check against the two MF classes that did resolve."
+    },
+    {
+      "id": "SFSafariViewController-decl",
+      "pattern": "SFSafariViewController",
+      "why": "Superclass, protocols and the initialisers Persona2 may use.",
+      "before": 6,
+      "after": 30,
+      "max_hits": 20
+    },
+    {
+      "id": "SFSafariViewControllerConfiguration-decl",
+      "pattern": "SFSafariViewControllerConfiguration",
+      "why": "Same, for the configuration object.",
+      "before": 6,
+      "after": 20,
+      "max_hits": 20
+    },
+    {
+      "id": "UIHoverGestureRecognizer-decl",
+      "pattern": "UIHoverGestureRecognizer",
+      "why": "RobloxLib imports this class NON-weakly, so RobloxLib will not load without it. Its superclass must match or subclassing and isKindOfClass: break.",
+      "before": 6,
+      "after": 25,
+      "max_hits": 20
+    },
+    {
+      "id": "MFMailComposeViewController-decl",
+      "pattern": "@interface MFMailComposeViewController",
+      "why": "Confirm the superclass recorded by the bulk scan (UINavigationController).",
+      "before": 6,
+      "after": 40
+    },
+    {
+      "id": "MFMessageComposeViewController-decl",
+      "pattern": "@interface MFMessageComposeViewController",
+      "why": "Same.",
+      "before": 6,
+      "after": 40
+    },
+    {
+      "id": "PDFDocument-decl",
+      "pattern": "@interface PDFDocument",
+      "why": "Confirm NSObject <NSCopying> and the initialisers Persona2 uses.",
+      "before": 6,
+      "after": 40
+    },
+    {
+      "id": "WidgetCenter-swift",
+      "pattern": "(WidgetCenter|reloadAllTimelines)",
+      "why": "Roblox's main binary needs WidgetCenter.shared and reloadAllTimelines; WidgetKit is absent on the device.",
+      "after": 10,
+      "max_hits": 20
+    },
+    {
+      "id": "PKPushTypeVoIP",
+      "why": "PushKit exists on the device but does not export _PKPushTypeVoIP; this records its declared type.",
+      "pattern": "PKPushTypeVoIP",
+      "after": 6,
+      "max_hits": 10
+    },
+    {
+      "id": "NSURLVolumeAvailableCapacityForImportantUsageKey",
+      "why": "Present in iOS Foundation, absent from the device's; records its type.",
+      "pattern": "NSURLVolumeAvailableCapacityForImportantUsageKey",
+      "after": 6,
+      "max_hits": 10
+    },
+    {
+      "id": "CTServiceRadioAccessTechnologyDidChangeNotification",
+      "why": "CoreTelephony exists on the device but lacks this notification name.",
+      "pattern": "CTServiceRadioAccessTechnologyDidChange",
+      "after": 6,
+      "max_hits": 10
+    },
+    {
+      "id": "UIDevice-identity",
+      "why": "Genuineness shim: the declared types of systemName, systemVersion, model and userInterfaceIdiom, so the shim returns exactly what iOS would.",
+      "pattern": "(systemName|userInterfaceIdiom|@interface UIDevice)",
+      "after": 8,
+      "max_hits": 30
+    },
+    {
+      "id": "UIUserInterfaceIdiom-enum",
+      "why": "Genuineness shim: the enum values, including which one iPad reports.",
+      "pattern": "UIUserInterfaceIdiom(Phone|Pad|TV|Unspecified)",
+      "before": 4,
+      "after": 10,
+      "max_hits": 20
+    }
+  ]
+}
