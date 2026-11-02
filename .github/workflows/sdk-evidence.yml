@@ -1,0 +1,147 @@
+name: sdk-evidence
+
+# Evidence sources 2 and 3 (see CLAUDE.md): the tvOS SDK that matches the device
+# major version, and the iOS SDK Roblox was built against. Only derived text is
+# committed back (symbol lists, availability annotations, header excerpts).
+# No Apple SDK files and no Roblox files are ever uploaded or printed here.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tvos_runner:
+        description: 'Runner label carrying the tvOS SDK (e.g. macos-26, macos-15)'
+        default: 'macos-26'
+      tvos_xcode:
+        description: 'Xcode version to select for the tvOS SDK (blank = runner default)'
+        default: ''
+      ios_runner:
+        description: 'Runner label carrying the iOS SDK Roblox used'
+        default: 'macos-26'
+      ios_xcode:
+        description: 'Xcode version to select for the iOS SDK (blank = runner default)'
+        default: ''
+      outputs_branch:
+        description: 'Branch to commit derived evidence to'
+        default: 'outputs'
+  push:
+    branches:
+      - 'claude/**'
+    paths:
+      - '.github/workflows/sdk-evidence.yml'
+      - 'scripts/runner/sdk_evidence.py'
+      - 'scripts/runner/tbd.py'
+      - 'evidence/queries/sdk_query.json'
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    # Report what every available macOS image actually has, so the exact SDK
+    # versions used are recorded rather than assumed.
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [macos-26, macos-15]
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - name: Available Xcodes and SDKs
+        run: |
+          echo "### ${{ matrix.runner }}"
+          sw_vers
+          ls /Applications | grep -i '^Xcode' || true
+          for app in /Applications/Xcode*.app; do
+            [ -d "$app" ] || continue
+            echo "--- $app"
+            "$app/Contents/Developer/usr/bin/xcodebuild" -version 2>/dev/null || true
+            DEVELOPER_DIR="$app/Contents/Developer" xcodebuild -showsdks 2>/dev/null | sed -n '1,80p' || true
+          done
+
+  tvos:
+    needs: probe
+    runs-on: ${{ github.event_name == 'workflow_dispatch' && inputs.tvos_runner || 'macos-26' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode
+        run: |
+          WANT="${{ github.event_name == 'workflow_dispatch' && inputs.tvos_xcode || '' }}"
+          if [ -n "$WANT" ] && [ -d "/Applications/Xcode_${WANT}.app" ]; then
+            sudo xcode-select -s "/Applications/Xcode_${WANT}.app/Contents/Developer"
+          fi
+          xcodebuild -version
+      - name: Record environment
+        run: |
+          mkdir -p evidence/sdk
+          {
+            echo "## tvOS SDK runner"
+            echo '```'
+            echo "runner: ${{ runner.os }} / $(sw_vers -productVersion) / image ${ImageVersion:-unknown}"
+            echo "runner label: ${{ github.event_name == 'workflow_dispatch' && inputs.tvos_runner || 'macos-26' }}"
+            xcodebuild -version
+            echo "DEVELOPER_DIR=$(xcode-select -p)"
+            echo "--- xcodebuild -showsdks ---"
+            xcodebuild -showsdks
+            echo "--- appletvos SDK path/version ---"
+            xcrun --sdk appletvos --show-sdk-path || true
+            xcrun --sdk appletvos --show-sdk-version || true
+            xcrun --sdk appletvos --show-sdk-build-version || true
+            echo '```'
+          } > evidence/sdk/tvos_environment.md
+          cat evidence/sdk/tvos_environment.md
+      - name: Extract tvOS SDK evidence
+        run: |
+          set -euo pipefail
+          SDK=$(xcrun --sdk appletvos --show-sdk-path)
+          VER=$(xcrun --sdk appletvos --show-sdk-version)
+          echo "tvOS SDK $VER at $SDK"
+          python3 -m pip install --quiet pyyaml || true
+          python3 scripts/runner/sdk_evidence.py tvos "$SDK" "tvos${VER}"
+          echo "tvos_label=tvos${VER}" >> "$GITHUB_ENV"
+      - name: Commit derived evidence
+        env:
+          BRANCH: ${{ github.event_name == 'workflow_dispatch' && inputs.outputs_branch || 'outputs' }}
+        run: ./scripts/runner/commit_outputs.sh "$BRANCH" "sdk-evidence: tvOS SDK ($tvos_label)"
+
+  ios:
+    needs: probe
+    runs-on: ${{ github.event_name == 'workflow_dispatch' && inputs.ios_runner || 'macos-26' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode
+        run: |
+          WANT="${{ github.event_name == 'workflow_dispatch' && inputs.ios_xcode || '' }}"
+          if [ -n "$WANT" ] && [ -d "/Applications/Xcode_${WANT}.app" ]; then
+            sudo xcode-select -s "/Applications/Xcode_${WANT}.app/Contents/Developer"
+          fi
+          xcodebuild -version
+      - name: Record environment
+        run: |
+          mkdir -p evidence/sdk
+          {
+            echo "## iOS SDK runner"
+            echo '```'
+            echo "runner label: ${{ github.event_name == 'workflow_dispatch' && inputs.ios_runner || 'macos-26' }}"
+            xcodebuild -version
+            echo "DEVELOPER_DIR=$(xcode-select -p)"
+            xcodebuild -showsdks
+            xcrun --sdk iphoneos --show-sdk-path || true
+            xcrun --sdk iphoneos --show-sdk-version || true
+            xcrun --sdk iphoneos --show-sdk-build-version || true
+            echo '```'
+          } > evidence/sdk/ios_environment.md
+          cat evidence/sdk/ios_environment.md
+      - name: Extract iOS SDK evidence
+        run: |
+          set -euo pipefail
+          SDK=$(xcrun --sdk iphoneos --show-sdk-path)
+          VER=$(xcrun --sdk iphoneos --show-sdk-version)
+          echo "iOS SDK $VER at $SDK"
+          python3 -m pip install --quiet pyyaml || true
+          TARGETS=""
+          [ -f evidence/queries/ios_targets.json ] && TARGETS=evidence/queries/ios_targets.json
+          python3 scripts/runner/sdk_evidence.py ios "$SDK" "ios${VER}" $TARGETS
+          echo "ios_label=ios${VER}" >> "$GITHUB_ENV"
+      - name: Commit derived evidence
+        env:
+          BRANCH: ${{ github.event_name == 'workflow_dispatch' && inputs.outputs_branch || 'outputs' }}
+        run: ./scripts/runner/commit_outputs.sh "$BRANCH" "sdk-evidence: iOS SDK ($ios_label)"
