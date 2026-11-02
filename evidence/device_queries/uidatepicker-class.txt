@@ -1,7 +1,58 @@
 # device query uidatepicker-class
-# why: Phase 1 flagged UIDatePicker (RBBirthdayPickerController.nib) as the class most likely missing on tvOS. This asks the device directly.
-# argv: /opt/homebrew/bin/ipsw dyld objc class /tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e UIDatePicker
+# why: Cross-check the nib-class finding against the class dump: UIDatePicker is exported by the device's UIKit and by tvOS SDK 27.2's UIKit.tbd, so it should appear here with its real superclass.
+# argv: /opt/homebrew/bin/ipsw dyld macho /tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore --objc
 # label: 24K122
-# returncode: 1
-# stderr: ⨯ accepts 1 arg(s), received 2
+# returncode: 0
+# grep: @interface UIDatePicker[^A-Za-z0-9_]  (matching lines: 1)
 
+-[UIDateLabel _dateString];
+-[UIDateLabel _dateWithDayDiffFromToday:];
+-[UIDateLabel _didUpdateDate];
+-[UIDateLabel _noon];
+-[UIDateLabel _recomputeTextIfNecessary];
+-[UIDateLabel _stringDrawingContext];
+-[UIDateLabel _today];
+-[UIDateLabel _todayDate];
+-[UIDateLabel _tomorrow];
+-[UIDateLabel _weekdayFormatCutoff];
+-[UIDateLabel _yesterday];
+-[UIDateLabel boldForAllLocales];
+-[UIDateLabel forceTimeOnly];
+-[UIDateLabel paddingFromTimeToDesignator];
+-[UIDateLabel setBoldForAllLocales:];
+-[UIDateLabel setForceTimeOnly:];
+-[UIDateLabel setShouldRecomputeText:];
+-[UIDateLabel shouldRecomputeText];
+-[UIDateLabel timeDesignator];
+-[UIDateLabel timeDesignatorFont];
+-[UIDateLabel timeDesignatorSize];
+-[UIDateLabel use24HourTime];
+
+@end
+
+@interface UIDatePicker : UIControl <UIPickerViewScrollTesting, NSCoding> {
+    /* instance variables */
+    {?="selectionBarIgnoresInset"I} _datePickerViewFlags;
+    @"UIView<_UIDatePickerViewComponent>" _pickerView;
+    @"_UIDatePickerDataModel" _data;
+    B _useCurrentDateDuringDecoding;
+    B _ignoresEmitValueChanged;
+    @"_UIDatePickerStyle" _style;
+    B __useCurrentDateDuringDecoding;
+    B __displaysTimeZone;
+    @"<_UIDatePickerCompactStyleDelegate>" __compactStyleDelegate;
+    q _preferredDatePickerStyle;
+    @"_UIDatePickerOverlayPresentation" __overlayPresentation;
+}
+
+@property (T@"_UIDatePickerStyle",R,N,V_style) _style;
+@property (T@"_UIDatePickerOverlayPresentation",W,N,V__overlayPresentation) _overlayPresentation;
+@property (Td,D,N) timeInterval;
+@property (TB,N,S_setUseCurrentDateDuringDecoding:,V__useCurrentDateDuringDecoding) _useCurrentDateDuringDecoding;
+@property (TB,N,S_setDisplaysTimeZone:,V__displaysTimeZone) _displaysTimeZone;
+@property (T@"<_UIDatePickerCompactStyleDelegate>",W,N,S_setCompactStyleDelegate:,V__compactStyleDelegate) _compactStyleDelegate;
+@property (T@"NSDictionary",&,N,S_setOverrideCompactTextAttributes:) _overrideCompactTextAttributes;
+@property (TB,D,N,G_allowsZeroCountDownDuration,S_setAllowsZeroCountDownDuration:) allowsZeroCountDownDuration;
+@property (TB,D,N,G_allowsZeroTimeInterval,S_setAllowsZeroTimeInterval:) allowsZeroTimeInterval;
+@property (T@"NSDate",R,D,N,G_dateUnderSelectionBar) dateUnderSelectionBar;
+@property (T@"UIColor",&,N,G_highlightColor,S_setHighlightColor:) highlightColor;
