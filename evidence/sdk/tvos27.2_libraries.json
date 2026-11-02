@@ -1475,6 +1475,23 @@
   "tbd_version": null,
   "parser": null
  },
+ "/usr/lib/swift/libswiftCloudKit.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCloudKit.dylib",
+  "tbd": "usr/lib/swift/libswiftCloudKit.tbd",
+  "present": true,
+  "symbols": 5484,
+  "objc_classes": 413,
+  "reexports": [],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/System/Library/Frameworks/CloudKit.framework/CloudKit"
+  ]
+ },
  "/usr/lib/swift/libswiftCompression.dylib": {
   "install_name": "/usr/lib/swift/libswiftCompression.dylib",
   "tbd": "usr/lib/swift/libswiftCompression.tbd",
@@ -1524,6 +1541,25 @@
   "parser": "yaml",
   "install_names": [
    "/usr/lib/swift/libswiftCoreAudio.dylib"
+  ]
+ },
+ "/usr/lib/swift/libswiftCoreData.dylib": {
+  "install_name": "/usr/lib/swift/libswiftCoreData.dylib",
+  "tbd": "usr/lib/swift/libswiftCoreData.tbd",
+  "present": true,
+  "symbols": 0,
+  "objc_classes": 0,
+  "reexports": [
+   "/System/Library/Frameworks/CoreData.framework/CoreData"
+  ],
+  "targets": [
+   "arm64-tvos",
+   "arm64e-tvos"
+  ],
+  "tbd_version": 4,
+  "parser": "yaml",
+  "install_names": [
+   "/usr/lib/swift/libswiftCoreData.dylib"
   ]
  },
  "/usr/lib/swift/libswiftCoreFoundation.dylib": {

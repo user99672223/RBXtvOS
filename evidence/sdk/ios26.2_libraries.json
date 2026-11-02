@@ -865,15 +865,6 @@
   "reexports": [],
   "tbd_version": 4
  },
- "/usr/lib/swift/libswiftCloudKit.dylib": {
-  "install_name": "/usr/lib/swift/libswiftCloudKit.dylib",
-  "present": true,
-  "tbd": "usr/lib/swift/libswiftCloudKit.tbd",
-  "symbols": 4693,
-  "objc_classes": 401,
-  "reexports": [],
-  "tbd_version": 4
- },
  "/usr/lib/swift/libswiftCompression.dylib": {
   "install_name": "/usr/lib/swift/libswiftCompression.dylib",
   "present": true,
@@ -899,17 +890,6 @@
   "symbols": 155,
   "objc_classes": 0,
   "reexports": [],
-  "tbd_version": 4
- },
- "/usr/lib/swift/libswiftCoreData.dylib": {
-  "install_name": "/usr/lib/swift/libswiftCoreData.dylib",
-  "present": true,
-  "tbd": "usr/lib/swift/libswiftCoreData.tbd",
-  "symbols": 0,
-  "objc_classes": 0,
-  "reexports": [
-   "/System/Library/Frameworks/CoreData.framework/CoreData"
-  ],
   "tbd_version": 4
  },
  "/usr/lib/swift/libswiftCoreFoundation.dylib": {
