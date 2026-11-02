@@ -1,0 +1,7 @@
+# device query gceventviewcontroller-class
+# why: Confirm the focus-engine bypass class exists on the device.
+# argv: /opt/homebrew/bin/ipsw dyld objc class /tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e GCEventViewController
+# label: 24K122
+# returncode: 1
+# stderr: ⨯ accepts 1 arg(s), received 2
+

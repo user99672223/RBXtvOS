@@ -1,0 +1,7 @@
+# device query objc-version
+# why: Evidence source 5: match Apple's open-source objc4 to the version this device ships.
+# argv: /opt/homebrew/bin/ipsw dyld str /tmp/dsc/24K122__AppleTV14,1/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e objc4-
+# label: 24K122
+# returncode: 0
+# stderr: • Searching for strings: objc4-
+
