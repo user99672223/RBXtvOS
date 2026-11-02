@@ -178,6 +178,51 @@ def run_tvos(sdk: Path, out_dir: Path, label: str):
     print(f"[{label}] libraries: {sum(1 for v in per_lib.values() if v['present'])}/{len(per_lib)} have a .tbd")
     print(f"[{label}] classes queried: {len(wanted)}, declared in headers: {sum(1 for v in avail.values() if v['declared_in_headers'])}")
 
+    run_header_targets(sdk, out_dir, label)
+
+
+def run_header_targets(sdk: Path, out_dir: Path, label: str):
+    """Dump declarations this project needs the *contract* of, from this SDK.
+
+    Driven by evidence/queries/header_targets.json. Roblox does not import the
+    APIs our own cursor and logging code uses (GameController, the focus-engine
+    switches, UIControl action dispatch), so they are not in sdk_query.json and
+    would otherwise never be recorded. CLAUDE.md Phase 6 requires the exact
+    mechanism to be verified in headers rather than assumed, which is what this
+    produces.
+    """
+    targets_path = EVIDENCE / "queries" / "header_targets.json"
+    if not targets_path.is_file():
+        print(f"[{label}] no header_targets.json; skipping targeted header dump")
+        return
+    spec = json.loads(targets_path.read_text())
+    results = {}
+    for item in spec.get("targets", []):
+        tid = item.get("id") or item.get("pattern", "?")
+        pattern = item.get("pattern")
+        if not pattern:
+            continue
+        before = int(item.get("before", 2))
+        after = int(item.get("after", 12))
+        hits = grep_headers(sdk, pattern)
+        entries = []
+        for rel_p, ln, text in hits[: int(item.get("max_hits", 12))]:
+            entries.append({
+                "header": rel_p,
+                "line": int(ln),
+                "match": text,
+                "context": context_around(sdk, rel_p, int(ln), before, after),
+            })
+        results[tid] = {
+            "pattern": pattern,
+            "why": item.get("why", ""),
+            "hit_count": len(hits),
+            "hits": entries,
+        }
+        print(f"[{label}] header target {tid!r}: {len(hits)} hits")
+    (out_dir / "sdk" / f"{label}_header_targets.json").write_text(
+        json.dumps(results, indent=1))
+
 
 # -------------------------------------------------------------------- iOS (src 3)
 

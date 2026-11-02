@@ -1,0 +1,146 @@
+{
+  "_comment": [
+    "Declarations whose contract this project needs from the tvOS SDK, for code",
+    "we write ourselves (Phase 6 cursor, Phase 7 logging). Roblox does not import",
+    "these, so they are absent from sdk_query.json and would never be recorded by",
+    "the import-driven pass. CLAUDE.md Phase 6 says the exact mechanism for keeping",
+    "the focus engine off the remote must be verified in headers, not assumed.",
+    "Consumed by scripts/runner/sdk_evidence.py (run_header_targets)."
+  ],
+  "targets": [
+    {
+      "id": "GCMicroGamepad",
+      "pattern": "@interface GCMicroGamepad",
+      "why": "Siri Remote as a micro gamepad: which profile the remote reports.",
+      "after": 40
+    },
+    {
+      "id": "GCMicroGamepad-properties",
+      "pattern": "(reportsAbsoluteDpadValues|allowsRotation|dpad|buttonA|buttonX|valueChangedHandler)",
+      "why": "Clickpad as d-pad, and whether values are absolute or relative.",
+      "after": 6,
+      "max_hits": 40
+    },
+    {
+      "id": "GCEventViewController",
+      "pattern": "@interface GCEventViewController",
+      "why": "Documented way to stop UIKit's focus engine consuming remote input.",
+      "after": 30
+    },
+    {
+      "id": "controllerUserInteractionEnabled",
+      "pattern": "controllerUserInteractionEnabled",
+      "why": "The property that hands remote input to the app instead of the focus engine.",
+      "after": 8,
+      "max_hits": 20
+    },
+    {
+      "id": "GCController-current",
+      "pattern": "@interface GCController",
+      "why": "Discovery, connect/disconnect notifications, controllers list.",
+      "after": 60
+    },
+    {
+      "id": "GCControllerDirectionPad",
+      "pattern": "@interface GCControllerDirectionPad",
+      "why": "Axis values for cursor movement.",
+      "after": 30
+    },
+    {
+      "id": "GCExtendedGamepad",
+      "pattern": "@interface GCExtendedGamepad",
+      "why": "Detecting that a real game controller is in use, to hide the cursor.",
+      "after": 20
+    },
+    {
+      "id": "GC-notifications",
+      "pattern": "GCControllerDid(Connect|Disconnect|BecomeCurrent|StopBeingCurrent)Notification",
+      "why": "Controller lifecycle notifications.",
+      "after": 4,
+      "max_hits": 20
+    },
+    {
+      "id": "UIPress-and-type",
+      "pattern": "(UIPressType|@interface UIPress\\b|pressesBegan|pressesEnded)",
+      "why": "Play/Pause and Menu presses arrive as UIPress on tvOS; needed for the cursor toggle.",
+      "after": 10,
+      "max_hits": 30
+    },
+    {
+      "id": "UIControl-sendActions",
+      "pattern": "sendActionsForControlEvents",
+      "why": "Click to tap, preference 1: dispatch a UIControl's actions directly.",
+      "after": 6,
+      "max_hits": 10
+    },
+    {
+      "id": "UIView-hitTest",
+      "pattern": "- \\(nullable UIView \\*\\)hitTest",
+      "why": "Finding the view under the cursor.",
+      "after": 6,
+      "max_hits": 10
+    },
+    {
+      "id": "UIWindow-tvos",
+      "pattern": "@interface UIWindow",
+      "why": "Overlaying the cursor above the key window; tvOS window/scene shape.",
+      "after": 40
+    },
+    {
+      "id": "UITouch-and-event",
+      "pattern": "(@interface UITouch\\b|@interface UIEvent\\b|touchesBegan:withEvent:)",
+      "why": "Click to tap, preference 2: delivering touches to the engine's render view.",
+      "after": 12,
+      "max_hits": 20
+    },
+    {
+      "id": "UIFocus-environment",
+      "pattern": "(@protocol UIFocusEnvironment|preferredFocusEnvironments|UIFocusSystem)",
+      "why": "What the focus engine expects, to confirm the cursor overlay does not fight it.",
+      "after": 10,
+      "max_hits": 20
+    },
+    {
+      "id": "UIHoverGesture-or-pointer",
+      "pattern": "(UIHoverGestureRecognizer|UIPointerInteraction)",
+      "why": "Whether tvOS offers any pointer concept we should use instead of a custom cursor.",
+      "after": 8,
+      "max_hits": 12
+    },
+    {
+      "id": "UIApplicationMain-tvos",
+      "pattern": "(UIApplicationMain|@interface UIApplication\\b)",
+      "why": "Lifecycle hooks for installing the overlay at the right moment.",
+      "after": 14,
+      "max_hits": 12
+    },
+    {
+      "id": "metal-newLibraryWithData",
+      "pattern": "newLibraryWithData",
+      "why": "Phase 1 risk: whether tvOS Metal accepts Roblox's iOS-compiled metallib blobs.",
+      "after": 10,
+      "max_hits": 12
+    },
+    {
+      "id": "metal-device-family",
+      "pattern": "(MTLGPUFamilyApple[0-9]|supportsFamily)",
+      "why": "A15 GPU family on Apple TV 4K vs the iPhone Roblox's shaders target.",
+      "after": 6,
+      "max_hits": 30
+    },
+    {
+      "id": "UILaunchStoryboard-keys",
+      "pattern": "(UILaunchStoryboardName|UILaunchScreen)",
+      "why": "Phase 1 open question: whether tvOS honours UILaunchStoryboardName.",
+      "after": 6,
+      "max_hits": 12
+    },
+    {
+      "id": "NSSearchPath-dirs",
+      "pattern": "(NSApplicationSupportDirectory|NSDocumentDirectory|NSCachesDirectory)",
+      "why": "Phase 2.5 storage: which container directories tvOS declares at all.",
+      "after": 4,
+      "max_hits": 20
+    }
+  ]
+}
