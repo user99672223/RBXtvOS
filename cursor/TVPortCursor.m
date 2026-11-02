@@ -203,17 +203,43 @@ static const CGFloat kDeadZone = 0.12;
     return nil;
 }
 
+/// Scene bounds, preferring the API that is current on tvOS 27.
+/// -[UIWindowScene coordinateSpace] is deprecated as of tvOS 26 in favour of
+/// effectiveGeometry.coordinateSpace, so the new path is used when present and
+/// the old one only as a fallback.
+- (CGRect)boundsOfScene:(UIWindowScene *)scene {
+    if (!scene) return CGRectMake(0, 0, 1920, 1080);
+    if ([scene respondsToSelector:@selector(effectiveGeometry)]) {
+        id geometry = [scene valueForKey:@"effectiveGeometry"];
+        if ([geometry respondsToSelector:@selector(coordinateSpace)]) {
+            id space = [geometry valueForKey:@"coordinateSpace"];
+            if ([space respondsToSelector:@selector(bounds)]) {
+                return [(id<UICoordinateSpace>)space bounds];
+            }
+        }
+    }
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    return scene.coordinateSpace.bounds;
+#pragma clang diagnostic pop
+}
+
 - (void)installOnMainThread {
     UIWindowScene *scene = [self activeScene];
-    CGRect bounds = scene ? scene.coordinateSpace.bounds
-                          : CGRectMake(0, 0, 1920, 1080);
+    CGRect bounds = [self boundsOfScene:scene];
 
     if (scene) {
         self.overlayWindow = [[UIWindow alloc] initWithWindowScene:scene];
     } else {
+        // No scene yet. -initWithFrame: is deprecated on tvOS 26+, but it is
+        // the only way to make a window without one, and this path exists only
+        // so the cursor still appears if install races scene connection.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         self.overlayWindow = [[UIWindow alloc] initWithFrame:bounds];
+#pragma clang diagnostic pop
         TVLOG_W(TVLogCursor, "no UIWindowScene yet; overlay created with a frame "
-                             "of %.0fx%.0f and will be resized on the first tick",
+                             "of %.0fx%.0f",
                 bounds.size.width, bounds.size.height);
     }
     self.overlayWindow.frame = bounds;

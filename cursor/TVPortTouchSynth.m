@@ -106,8 +106,11 @@ static void note(NSMutableString *out, const char *slot, Ivar iv, const char *na
 /// unretained store is correct and avoids over-releasing UIKit's objects.
 static void set_object_ivar(id obj, Ivar iv, id value) {
     if (!iv) return;
-    void *slot = (char *)(__bridge void *)obj + ivar_getOffset(iv);
-    *(void *__unsafe_unretained *)slot = (__bridge void *)value;
+    // Unretained store: the touch is short-lived and the referents (window,
+    // view) outlive the call, so taking no ownership is correct here and
+    // avoids over-releasing UIKit's objects when the touch is freed.
+    void **slot = (void **)((char *)(__bridge void *)obj + ivar_getOffset(iv));
+    *slot = (__bridge void *)value;
 }
 
 static void set_cgpoint_ivar(id obj, Ivar iv, CGPoint p) {
