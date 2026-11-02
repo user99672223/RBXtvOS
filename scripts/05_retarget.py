@@ -264,6 +264,33 @@ def remove_extensions(app: Path, log: list):
     return removed
 
 
+def remove_signature_artifacts(app: Path, log: list):
+    """Delete _CodeSignature directories and any embedded provisioning profile.
+
+    Removing LC_CODE_SIGNATURE from each Mach-O leaves the on-disk side of the
+    old signature behind: a _CodeSignature/CodeResources per bundle, listing
+    hashes of files this phase has just rewritten. Those manifests are stale by
+    construction. Most signing tools replace them, but a stale CodeResources is
+    a known cause of a resigned bundle being rejected, and keeping a hash list
+    that no longer matches anything serves no purpose.
+
+    embedded.mobileprovision is the previous signer's profile and is replaced by
+    whatever the user's tool embeds.
+    """
+    removed = []
+    for d in sorted(app.rglob("_CodeSignature")):
+        if d.is_dir():
+            shutil.rmtree(d)
+            removed.append(str(d.relative_to(app)))
+    for f in sorted(app.rglob("embedded.mobileprovision")):
+        f.unlink()
+        removed.append(str(f.relative_to(app)))
+    for r in removed:
+        log.append(f"removed {r}")
+    print(f"removed {len(removed)} stale signature artifacts")
+    return removed
+
+
 def is_ours(rel_path: str) -> bool:
     """True for the dylibs this project builds.
 
@@ -326,6 +353,10 @@ def main():
 
     log.append("## App extensions")
     remove_extensions(dst_app, log)
+    log.append("")
+
+    log.append("## Stale on-disk signature artifacts")
+    remove_signature_artifacts(dst_app, log)
     log.append("")
 
     log.append("## Shim libraries installed into the bundle")

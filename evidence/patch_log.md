@@ -7,6 +7,14 @@ removed PlugIns/RBNotificationServiceExtension.appex (com.apple.usernotification
 removed PlugIns/RBWidgetExtension.appex (com.apple.widgetkit-extension): A WidgetKit extension draws Home Screen / Lock Screen widgets. WidgetKit.framework is absent from the tvOS 27.2 device cache altogether (evidence source 1), and tvOS has no widgets, so the extension cannot load. Removing it also drops 46 of the 49 unresolved WidgetKit symbols.
 removed the now-empty PlugIns directory
 
+## Stale on-disk signature artifacts
+removed Frameworks/Backtrace.framework/_CodeSignature
+removed Frameworks/Backtrace_PLCrashReporter.framework/_CodeSignature
+removed Frameworks/Persona2.framework/_CodeSignature
+removed Frameworks/Reaper.framework/_CodeSignature
+removed Frameworks/RobloxLib.framework/_CodeSignature
+removed _CodeSignature
+
 ## Shim libraries installed into the bundle
 installed Frameworks/libtvport.dylib
 installed Frameworks/libtvportshim-CoreFoundation.dylib
