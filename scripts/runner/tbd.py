@@ -18,8 +18,28 @@ try:  # pragma: no cover - availability depends on runner image
     import yaml  # type: ignore
 
     HAVE_YAML = True
+
+    class _TBDLoader(yaml.SafeLoader):
+        """SafeLoader that tolerates Apple's document tags.
+
+        Real stubs start with `--- !tapi-tbd` (and older ones with
+        `!tapi-tbd-v3` / `!tapi-tbd-v2`). SafeLoader refuses unknown tags with
+        "could not determine a constructor for the tag", so every tag is mapped
+        to the plain node it decorates.
+        """
+
+    def _ignore_tag(loader, suffix, node):  # noqa: ARG001
+        if isinstance(node, yaml.MappingNode):
+            return loader.construct_mapping(node, deep=True)
+        if isinstance(node, yaml.SequenceNode):
+            return loader.construct_sequence(node, deep=True)
+        return loader.construct_scalar(node)
+
+    _TBDLoader.add_multi_constructor("", _ignore_tag)
+    _TBDLoader.add_multi_constructor("tag:yaml.org,2002:", _ignore_tag)
 except Exception:  # pragma: no cover
     HAVE_YAML = False
+    _TBDLoader = None  # type: ignore
 
 
 # --------------------------------------------------------------------------- v5
@@ -190,7 +210,10 @@ def read(path: Path) -> dict:
         out["parser"] = "json-v5"
         return _finish(out)
     if HAVE_YAML:
-        docs = [d for d in yaml.safe_load_all(text) if isinstance(d, dict)]
+        try:
+            docs = [d for d in yaml.load_all(text, Loader=_TBDLoader) if isinstance(d, dict)]
+        except Exception:
+            docs = []
         if docs:
             out = None
             for d in docs:

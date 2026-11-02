@@ -118,7 +118,14 @@ def run_tvos(sdk: Path, out_dir: Path, label: str):
                "symbols": 0, "objc_classes": 0, "reexports": [], "targets": [],
                "tbd_version": None, "parser": None}
         if t is not None:
-            info = tbd.read(t)
+            try:
+                info = tbd.read(t)
+            except Exception as e:  # keep going; a single bad stub is recorded
+                rec.update(present=True, tbd=str(t.relative_to(sdk)),
+                           error=f"{type(e).__name__}: {e}")
+                per_lib[lib] = rec
+                print(f"  !! {lib}: {rec['error']}")
+                continue
             rec.update(present=True, tbd=str(t.relative_to(sdk)),
                        symbols=len(info["symbols"]),
                        objc_classes=len(info["objc_classes"]),
@@ -249,7 +256,13 @@ def run_ios(sdk: Path, out_dir: Path, label: str, targets_file: Path | None):
         t = find_tbd(sdk, lib)
         rec = {"install_name": lib, "present": t is not None}
         if t is not None:
-            info = tbd.read(t)
+            try:
+                info = tbd.read(t)
+            except Exception as e:
+                rec.update(tbd=str(t.relative_to(sdk)), error=f"{type(e).__name__}: {e}")
+                per_lib[lib] = rec
+                print(f"  !! {lib}: {rec['error']}")
+                continue
             rec.update(tbd=str(t.relative_to(sdk)), symbols=len(info["symbols"]),
                        objc_classes=len(info["objc_classes"]),
                        reexports=info["reexports"], tbd_version=info["tbd_version"])

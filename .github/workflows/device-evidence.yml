@@ -1,0 +1,151 @@
+name: device-evidence
+
+# Evidence source 1: the device's own system libraries, from the dyld shared
+# cache in Apple's OTA for AppleTV14,1 at the target tvOS build.
+#
+# This has to run on macOS. The tvOS 27.x OTA stores its payloadv2 members with
+# LZRaven (pbzm) compression, which cannot be decoded on Linux at all -- ipsw
+# shells out to Apple's `aa` for it. The session therefore downloads nothing
+# here and only fetches the derived text back from the outputs branch.
+#
+# Only export lists, install names and re-export edges are committed. The cache
+# and the OTA stay on the runner (CLAUDE.md "Hard data rules").
+
+on:
+  workflow_dispatch:
+    inputs:
+      runner:
+        description: 'macOS runner label (needs an `aa` that decodes LZRaven)'
+        default: 'macos-26'
+      device:
+        description: 'Device identifier'
+        default: 'AppleTV14,1'
+      tvos_build:
+        description: 'tvOS build to use (blank = latest signed for the device)'
+        default: ''
+      tvos_version:
+        description: 'tvOS version to use (blank = latest signed)'
+        default: ''
+      dyld_arch:
+        description: 'dyld_shared_cache architecture'
+        default: 'arm64e'
+      outputs_branch:
+        description: 'Branch to commit derived evidence to'
+        default: 'outputs'
+
+permissions:
+  contents: write
+
+jobs:
+  device:
+    runs-on: ${{ github.event.inputs.runner || 'macos-26' }}
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Record environment
+        run: |
+          mkdir -p evidence/sdk
+          {
+            echo "## device-evidence runner (evidence source 1)"
+            echo
+            echo '```'
+            echo "runner label: ${{ github.event.inputs.runner || 'macos-26' }}"
+            echo "image version: ${ImageVersion:-unknown}"
+            sw_vers
+            echo "aa: $(which aa || echo 'NOT FOUND')"
+            otool -L "$(which aa)" 2>/dev/null | head -5 || true
+            echo '```'
+          } > evidence/sdk/device_environment.md
+          cat evidence/sdk/device_environment.md
+
+      - name: Install ipsw
+        run: |
+          brew install blacktop/tap/ipsw
+          ipsw version || true
+
+      - name: Resolve the OTA
+        id: resolve
+        env:
+          DEVICE: ${{ github.event.inputs.device || 'AppleTV14,1' }}
+          WANT_BUILD: ${{ github.event.inputs.tvos_build }}
+          WANT_VER: ${{ github.event.inputs.tvos_version }}
+        run: |
+          set -euo pipefail
+          ARGS=(--platform tvos --device "$DEVICE" --json)
+          if [ -n "$WANT_BUILD" ]; then ARGS+=(--build "$WANT_BUILD"); fi
+          if [ -n "$WANT_VER" ]; then ARGS+=(--version "$WANT_VER"); fi
+          if [ -z "$WANT_BUILD" ] && [ -z "$WANT_VER" ]; then ARGS+=(--latest); fi
+          ipsw download ota "${ARGS[@]}" > /tmp/ota.json
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          d = json.load(open('/tmp/ota.json'))
+          # the full SoftwareUpdate asset is the one holding the shared cache;
+          # RecoveryOS is a minimal system and delta assets are patches only
+          full = [o for o in d['otas']
+                  if o['provenance']['asset_type'] == 'com.apple.MobileAsset.SoftwareUpdate'
+                  and o['delivery'] == 'full']
+          assert full, 'no full SoftwareUpdate OTA found'
+          full.sort(key=lambda o: o.get('download_size') or 0, reverse=True)
+          o = full[0]
+          print(f"url={o['url']}")
+          print(f"build={o['build']}")
+          print(f"version={o['version']}")
+          print(f"sha256={o['sha256']}")
+          print(f"size={o['download_size']}")
+          PY
+          echo "--- resolved ---"; cat "$GITHUB_OUTPUT"
+
+      - name: Download the OTA
+        run: |
+          set -euo pipefail
+          URL='${{ steps.resolve.outputs.url }}'
+          EXPECT='${{ steps.resolve.outputs.sha256 }}'
+          SIZE='${{ steps.resolve.outputs.size }}'
+          mkdir -p /tmp/ota
+          for i in 1 2 3 4 5 6 7 8; do
+            CUR=$(stat -f%z /tmp/ota/asset.aea 2>/dev/null || echo 0)
+            if [ "$CUR" -ge "$SIZE" ]; then break; fi
+            echo "attempt $i: have $CUR / $SIZE"
+            curl -fsSL -C - -o /tmp/ota/asset.aea "$URL" || true
+            sleep $((i * 3))
+          done
+          ACTUAL=$(shasum -a 256 /tmp/ota/asset.aea | awk '{print $1}')
+          echo "expected $EXPECT"; echo "actual   $ACTUAL"
+          [ "$EXPECT" = "$ACTUAL" ] || { echo "::error::OTA sha256 mismatch"; exit 1; }
+          ls -lh /tmp/ota/
+
+      - name: Extract the dyld shared cache
+        env:
+          ARCH: ${{ github.event.inputs.dyld_arch || 'arm64e' }}
+        run: |
+          set -euo pipefail
+          # decrypt the AppleEncryptedArchive wrapper (key comes from Apple)
+          ipsw fw aea /tmp/ota/asset.aea -o /tmp/ota/dec
+          ls -lh /tmp/ota/dec/
+          OTA=$(ls /tmp/ota/dec/* | head -1)
+          ipsw ota info "$OTA" | tee evidence/sdk/device_ota_info.txt
+          mkdir -p /tmp/dsc
+          ipsw ota extract "$OTA" --dyld --dyld-arch "$ARCH" --confirm --output /tmp/dsc
+          echo "--- extracted ---"
+          find /tmp/dsc -type f -name 'dyld_shared_cache*' | head -40
+          df -h /
+
+      - name: Dump device export lists
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet --break-system-packages pyyaml 2>/dev/null \
+            || python3 -m pip install --quiet pyyaml 2>/dev/null || true
+          CACHE=$(find /tmp/dsc -type f -name 'dyld_shared_cache_*' ! -name '*.*' | head -1)
+          if [ -z "$CACHE" ]; then
+            CACHE=$(find /tmp/dsc -type f -name 'dyld_shared_cache_*' | sort | head -1)
+          fi
+          echo "using cache: $CACHE"
+          LABEL='${{ steps.resolve.outputs.build }}'
+          python3 scripts/runner/device_evidence.py "$CACHE" "$LABEL"
+
+      - name: Commit derived evidence
+        run: |
+          ./scripts/runner/commit_outputs.sh \
+            "${{ github.event.inputs.outputs_branch || 'outputs' }}" \
+            "device-evidence: tvOS ${{ steps.resolve.outputs.version }} (${{ steps.resolve.outputs.build }}) ${{ github.event.inputs.device || 'AppleTV14,1' }}"
